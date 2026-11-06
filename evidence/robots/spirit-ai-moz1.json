@@ -123,7 +123,8 @@
       "notes": "RoboBoom directory lists price $150,000 and availability Pilot. No official company price or purchase path was found in the reviewed sources.",
       "source_ids": [
         "spirit-ai-moz1_source_002"
-      ]
+      ],
+      "price_type": "reported"
     }
   },
   "capability_evidence_summary": {

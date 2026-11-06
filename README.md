@@ -14,7 +14,7 @@ Every number links back to a source. If something is wrong, outdated or missing,
 - [All humanoid robots](https://humanoidarena.ai/robots) and [humanoid robot companies](https://humanoidarena.ai/companies)
 - [Humanoid robot prices](https://humanoidarena.ai/humanoid-robot-price) and [humanoid robots for sale](https://humanoidarena.ai/best/humanoid-robots-for-sale)
 - [Compare humanoid robots side by side](https://humanoidarena.ai/compare) and the [size comparison](https://humanoidarena.ai/humanoid-robot-size-comparison)
-- [Humanoid robot ranking](https://humanoidarena.ai/arena/leaderboard), rated with a [published methodology](https://humanoidarena.ai/methodology)
+- [Humanoid robot leaderboard](https://humanoidarena.ai/), rated with a [published methodology](https://humanoidarena.ai/methodology), and the [people's ranking](https://humanoidarena.ai/arena/leaderboard)
 - Lists: [best](https://humanoidarena.ai/best/best-humanoid-robots), [cheapest](https://humanoidarena.ai/best/cheapest-humanoid-robots), [for home](https://humanoidarena.ai/best/humanoid-robots-for-home), [industrial](https://humanoidarena.ai/best/industrial-humanoid-robots), [for research](https://humanoidarena.ai/best/humanoid-robots-for-research), [Chinese](https://humanoidarena.ai/best/chinese-humanoid-robots), [American](https://humanoidarena.ai/best/american-humanoid-robots)
 - [Humanoid robot news](https://humanoidarena.ai/news), every claim linked to its source
 
@@ -32,7 +32,7 @@ curl -s https://raw.githubusercontent.com/humanoid-arena-ai/humanoid-robot-datab
 
 ## Humanoid robot leaderboard
 
-Top 10 of the [Humanoid Arena leaderboard](https://humanoidarena.ai/arena/leaderboard). Full table with confidence intervals and evidence grades: [`leaderboard/ratings.csv`](leaderboard/ratings.csv); head-to-head results: [`leaderboard/pairwise.csv`](leaderboard/pairwise.csv). How robots are rated: [methodology](https://humanoidarena.ai/methodology).
+Top 10 of the [Humanoid Arena leaderboard](https://humanoidarena.ai/). Full table with confidence intervals and evidence grades: [`leaderboard/ratings.csv`](leaderboard/ratings.csv); head-to-head results: [`leaderboard/pairwise.csv`](leaderboard/pairwise.csv). How robots are rated: [methodology](https://humanoidarena.ai/methodology).
 
 | # | Robot | Company | Rating | Evidence |
 |---|---|---|---|---|
