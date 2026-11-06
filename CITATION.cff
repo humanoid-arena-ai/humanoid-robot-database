@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Humanoid Robot Database"
+abstract: "Open, source-cited dataset of 68 humanoid robots: specs, prices, availability, deployments and the public evidence behind each value."
+authors:
+  - name: "Humanoid Arena"
+    website: "https://humanoidarena.ai"
+repository-code: "https://github.com/humanoid-arena-ai/humanoid-robot-database"
+url: "https://humanoidarena.ai/open-data"
+license: CC-BY-4.0
+date-released: "2026-11-06"
+keywords:
+  - humanoid robots
+  - robot specifications
+  - humanoid robot prices
+  - robotics dataset
+  - embodied AI

@@ -1,11 +1,53 @@
 # Humanoid Robot Database
 
-An open, source-cited dataset of humanoid robots: specs, prices, availability, companies and the public evidence behind each claim.
-It powers [Humanoid Arena](https://humanoidarena.ai) and is maintained in the open. **68 robots from 45 companies.**
+**Specs, prices and availability of every humanoid robot, with a source for each value.**
+
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)](LICENSE) ![Robots](https://img.shields.io/badge/robots-68-blue) ![Companies](https://img.shields.io/badge/companies-45-blue) ![Updated](https://img.shields.io/badge/updated-2026--11--06-green)
+
+An open dataset of 68 humanoid robots from 45 companies (Tesla Optimus, Figure, Unitree, 1X NEO, Boston Dynamics Atlas, Agility Digit, UBTECH Walker, AgiBot and more): height, weight, payload, battery runtime, degrees of freedom, speed, price, status, deployments and the public evidence behind each claim.
+It powers [Humanoid Arena](https://humanoidarena.ai), where the same data is browsable, comparable and ranked.
 
 Every number links back to a source. If something is wrong, outdated or missing, open a pull request or an issue: corrections are reviewed and appear on the site after merge.
 
-## Robots
+## Browse the data
+
+- [All humanoid robots](https://humanoidarena.ai/robots) and [humanoid robot companies](https://humanoidarena.ai/companies)
+- [Humanoid robot prices](https://humanoidarena.ai/humanoid-robot-price) and [humanoid robots for sale](https://humanoidarena.ai/best/humanoid-robots-for-sale)
+- [Compare humanoid robots side by side](https://humanoidarena.ai/compare) and the [size comparison](https://humanoidarena.ai/humanoid-robot-size-comparison)
+- [Humanoid robot ranking](https://humanoidarena.ai/arena/leaderboard), rated with a [published methodology](https://humanoidarena.ai/methodology)
+- Lists: [best](https://humanoidarena.ai/best/best-humanoid-robots), [cheapest](https://humanoidarena.ai/best/cheapest-humanoid-robots), [for home](https://humanoidarena.ai/best/humanoid-robots-for-home), [industrial](https://humanoidarena.ai/best/industrial-humanoid-robots), [for research](https://humanoidarena.ai/best/humanoid-robots-for-research), [Chinese](https://humanoidarena.ai/best/chinese-humanoid-robots), [American](https://humanoidarena.ai/best/american-humanoid-robots)
+- [Humanoid robot news](https://humanoidarena.ai/news), every claim linked to its source
+
+## Quick start
+
+```python
+import pandas as pd
+robots = pd.read_csv("https://raw.githubusercontent.com/humanoid-arena-ai/humanoid-robot-database/main/data/robots.csv")
+print(robots.sort_values("price").head())
+```
+
+```bash
+curl -s https://raw.githubusercontent.com/humanoid-arena-ai/humanoid-robot-database/main/data/robots.json | jq '.[] | select(.status=="purchasable") | .name'
+```
+
+## Humanoid robot prices
+
+Public USD prices, cheapest first. Price type in brackets when it is not a list price.
+
+| Robot | Company | Price | Status |
+|---|---|---|---|
+| [Unitree R1](https://humanoidarena.ai/robots/unitree-r1) | Unitree Robotics | $4,900 | purchasable |
+| [Unitree G1](https://humanoidarena.ai/robots/unitree-g1) | Unitree Robotics | $13,500 | purchasable |
+| [1X NEO](https://humanoidarena.ai/robots/1x-neo) | 1X Technologies | $20,000 (preorder) | purchasable |
+| [MenteeBot V3](https://humanoidarena.ai/robots/menteebot-v3) | Mentee Robotics | $20,000 (reported) | pilot |
+| [Tesla Optimus Gen 2 / v2.5](https://humanoidarena.ai/robots/tesla-optimus-gen-2-v2-5) | Tesla | $20,000 (target) | prototype |
+| [DOBOT ATOM](https://humanoidarena.ai/robots/dobot-atom) | DOBOT | $27,500 (reported) | commercial |
+| [Unitree H2](https://humanoidarena.ai/robots/unitree-h2) | Unitree Robotics | $29,900 | purchasable |
+| [AgiBot A2](https://humanoidarena.ai/robots/agibot-a2) | AgiBot | $44,560 | commercial |
+| [Apptronik Apollo](https://humanoidarena.ai/robots/apptronik-apollo) | Apptronik | $50,000 (target) | pilot |
+| [UBTECH Walker S2](https://humanoidarena.ai/robots/ubtech-walker-s2) | UBTECH Robotics | $246,600 | commercial |
+
+## All robots
 
 | Robot | Company | Country | Status | Height | Weight | Payload | Runtime | Price | Data |
 |---|---|---|---|---|---|---|---|---|---|
@@ -95,6 +137,20 @@ Machine-readable: [`data/robots.csv`](data/robots.csv), [`data/robots.json`](dat
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). The short version: edit the JSON file, add a source URL for every value you change, open a pull request. You can also [report a correction](../../issues/new?template=data-correction.yml) without touching JSON.
 
+## Cite
+
+Use GitHub's "Cite this repository" button, or:
+
+```bibtex
+@misc{humanoid_robot_database,
+  title  = {Humanoid Robot Database},
+  author = {{Humanoid Arena}},
+  year   = {2026},
+  url    = {https://github.com/humanoid-arena-ai/humanoid-robot-database},
+  note   = {Open dataset of humanoid robot specifications and prices, CC BY 4.0}
+}
+```
+
 ## License
 
-Data: [CC BY 4.0](LICENSE). Attribution: "Humanoid Robot Database, Humanoid Arena (https://humanoidarena.ai)" with a link.
+Data: [CC BY 4.0](LICENSE). Free to use, including commercially. Attribution: "Humanoid Robot Database, Humanoid Arena (https://humanoidarena.ai)" with a link.
