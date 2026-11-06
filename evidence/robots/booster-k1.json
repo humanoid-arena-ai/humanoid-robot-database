@@ -1,0 +1,1220 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "booster-k1",
+    "name": "Booster K1",
+    "company_id": "booster-robotics",
+    "company_name": "Booster Robotics",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2025-10-21",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Official product page and distributor pages show 'Buy now' and list prices; Booster Robotics claims launch equals shipment. Press release says Geek Edition USD 5,999 with limited-time USD 4,999 before Nov 11. Generation Robots lists from €9,000 incl VAT; Robotics Center lists from $11,998. No home consumer sale found; intended for education/research.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "education",
+      "research",
+      "exhibitions",
+      "robotics competitions (RoboCup)",
+      "STEM learning",
+      "embodied AI development"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "Approx. 95 cm",
+      "value": 95,
+      "unit": "cm",
+      "notes": "Official product page lists approximately 95 cm standing height.",
+      "source_ids": [
+        "booster-k1_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "Approx. 19.5 kg",
+      "value": 19.5,
+      "unit": "kg",
+      "notes": "Official product page lists approximately 19.5 kg.",
+      "source_ids": [
+        "booster-k1_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload specification found in reviewed sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "70 minutes walking (Education/Professional, 5Ah); 20 minutes (Geek, 2Ah)",
+      "value": 1.17,
+      "unit": "hours",
+      "notes": "Battery life varies by edition. Official page lists 70 min for 5 Ah models and 20 min for 2 Ah Geek. Generation Robots indicates up to 1h20 in practical use.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "2 Ah (Geek); 5 Ah (Education/Professional)",
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity specified per edition. Charging time ≤ 1 hour per Generation Robots.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 22,
+      "notes": "6 per leg, 4 per arm, 2 head. Total DoF 22.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2 m/s",
+      "value": 2,
+      "unit": "m/s",
+      "notes": "Official product page spec. Robotics Center lists walk speed ±0.5 m/s; conflict kept in researcher_notes.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_005"
+      ]
+    },
+    "hands": {
+      "description": "No dedicated hand specification found. Arms have 4 DoF each; no hand DoF, force feedback, or dexterous manipulation details published.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": []
+    },
+    "sensors": {
+      "items": [
+        "Binocular stereo depth camera",
+        "9-axis IMU",
+        "Microphone array",
+        "Speaker",
+        "Tactile sensors (listed by Generation Robots, not explicitly on official product page)"
+      ],
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ]
+    },
+    "compute": {
+      "description": "48 TOPS (Geek, Qualcomm QCS8550), 117 TOPS (Education, NVIDIA Jetson Orin NX 8GB), 200 TOPS (Professional, NVIDIA Jetson Orin AGX 32GB) depending on version.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "Max peak torque 60 N·m, dual encoders, torque-controlled joints.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 4999,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.booster.tech/store?key=k1&target=en",
+      "notes": "Starting price $4,999 was a limited-time offer before Nov 11, 2025; list price for Geek is $5,999. Generation Robots lists from €9,000 incl VAT; Robotics Center lists from $11,998. Prices vary by region and version.",
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_002",
+        "booster-k1_source_003",
+        "booster-k1_source_004",
+        "booster-k1_source_005",
+        "booster-k1_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Arms have 4 DoF each and Generation Robots lists tactile sensors, but no hand dexterity, grasping, or manipulation demos are described in the sources. The product page mentions Agents including dance and martial arts, but without specific manipulation tasks.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ],
+      "caveats": [
+        "No hand DoF published.",
+        "No manipulation demos, success rates, or independent benchmarks found.",
+        "Tactile sensors listed only by distributor."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Official product page claims the Soccer Agent 'tracks, chases, and shoots—all on its own', and fall recovery is described as autonomous. The RoboCup 2025 KidSize league win (platform used by winning team) provides some external validation of autonomous soccer behavior, but no autonomous manipulation or other task execution is documented.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_002"
+      ],
+      "caveats": [
+        "Autonomy claims are company-asserted.",
+        "RoboCup win is attributed to the team using the platform, not directly to K1 autonomous capabilities.",
+        "No intervention logs or independent audits."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs list 2 m/s walking speed and 1.5 rad/s turning. Product page claims active balance recovery and auto get-up. Competition success (RoboCup KidSize) suggests agility, but no independent mobility measurements or disturbance tests are published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_002"
+      ],
+      "caveats": [
+        "Official 2 m/s spec conflicts with Robotics Center listing ±0.5 m/s.",
+        "Balance recovery is a company claim without video or independent verification in sources.",
+        "No fall rate or recovery success rate published."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Integrated sensors include stereo depth camera, 9-axis IMU, microphone array, speaker, and tactile sensors (distributor). The official page mentions visual perception and voice interaction, but no specific perception tasks, benchmarks, or scene understanding demos are provided.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ],
+      "caveats": [
+        "No object recognition, tracking, or SLAM results published.",
+        "Tactile sensors not confirmed on official page."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official page claims real-time voice conversations in Chinese/English, multiple personas, and customizable conversation settings. Handheld controller and app control are described.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "caveats": [
+        "No measured conversational accuracy or user studies.",
+        "Voice interaction is a company claim."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Battery life 20–70 minutes depending on edition; charging time ≤ 1 hour. Company press release claims 30 hours of 500N impact testing and 100 hours of real-machine operation. Generation Robots mentions CE/FCC certification.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_004",
+        "booster-k1_source_006",
+        "booster-k1_source_003"
+      ],
+      "caveats": [
+        "Durability testing is company-reported without test protocol.",
+        "Battery life is spec, not independently measured.",
+        "CE/FCC listed by distributor; full certification details not provided."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Compact size (95 cm, 19.5 kg) with carrying handle, designed for classrooms, labs, and competitions. Safety features include soft/hard emergency stop, automatic stop on fall, low battery and overheat warnings.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ],
+      "caveats": [
+        "No full safety certification beyond CE/FCC listing.",
+        "Intended for research/education, not home use."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Purchasable from official store and distributors (Generation Robots, Robotics Center). Company press release claims over 700 units shipped globally (company-wide, not K1-specific) serving 200+ clients, 20+ countries, 70+ universities. Competition wins provide proof of field use.",
+      "evidence_level": 3,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003",
+        "booster-k1_source_004",
+        "booster-k1_source_005",
+        "booster-k1_source_006"
+      ],
+      "caveats": [
+        "700+ units is company-wide across all Booster products, not K1-specific.",
+        "No revenue or model breakdown provided.",
+        "No named customer deployment with output metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Strong evidence of accessibility: public pricing from $4,999 (limited launch offer) to $5,999 list for Geek, €9,000 incl VAT from Generation Robots, $11,998 from Robotics Center. SDK support for Python and C++, ROS2 compatibility, open simulation resources.",
+      "evidence_level": 3,
+      "source_ids": [
+        "booster-k1_source_002",
+        "booster-k1_source_003",
+        "booster-k1_source_004",
+        "booster-k1_source_005",
+        "booster-k1_source_006"
+      ],
+      "caveats": [
+        "Prices vary by region and version.",
+        "$4,999 was a limited-time offer.",
+        "No subscription or additional software costs detailed."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "booster-k1_evidence_001",
+      "date": null,
+      "title": "Booster K1 official product page height/weight",
+      "claim": "Booster K1 has standing height approximately 95 cm and weight approximately 19.5 kg.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official spec page.",
+      "arena_relevance": "Defines physical footprint and portability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Height (standing): ~95 cm",
+      "source_location": "Booster K1 product page, Specification Comparison table",
+      "verification_notes": "Company spec; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_002",
+      "date": null,
+      "title": "Booster K1 official product page degrees of freedom",
+      "claim": "Booster K1 has 22 degrees of freedom: 2 head, 8 arms (4 each), 12 legs (6 each).",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ],
+      "confidence": 0.9,
+      "notes": "Official spec page and distributor agree.",
+      "arena_relevance": "Defines kinematic capability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Total DoFs: 22",
+      "source_location": "Booster K1 product page, Specification Comparison table",
+      "verification_notes": "Company spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_003",
+      "date": null,
+      "title": "Booster K1 walking speed spec",
+      "claim": "Walking speed up to 2 m/s, turning speed up to 1.5 rad/s.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec page.",
+      "arena_relevance": "Mobility benchmark.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Walking speed**2** m/s",
+      "source_location": "Booster K1 product page, Locomotion Performance section",
+      "verification_notes": "Company spec; conflict with Robotics Center ±0.5 m/s noted.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_004",
+      "date": null,
+      "title": "Booster K1 battery life",
+      "claim": "Education/Professional battery 5 Ah gives 70 minutes walking; Geek 2 Ah gives 20 minutes.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec page.",
+      "arena_relevance": "Endurance and runtime expectations.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Battery life: 1 h 10 min (walking at 1.1 m/s)",
+      "source_location": "Booster K1 product page, Specification Comparison table (Education)",
+      "verification_notes": "Company spec; practical use may differ.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_005",
+      "date": null,
+      "title": "Booster K1 compute options",
+      "claim": "Compute options: 48 TOPS (Geek), 117 TOPS (Education), 200 TOPS (Professional).",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_003"
+      ],
+      "confidence": 0.9,
+      "notes": "Official and distributor list same TOPS.",
+      "arena_relevance": "Onboard AI performance for research.",
+      "claim_type": "spec",
+      "supporting_excerpt": "GPU: 200 TOPS AI computing power",
+      "source_location": "Booster K1 product page, Specification Comparison table (Professional)",
+      "verification_notes": "Company spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_006",
+      "date": null,
+      "title": "Booster K1 sensors",
+      "claim": "Integrated sensors include stereo depth camera, 9-axis IMU, microphone array, speaker.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official product page.",
+      "arena_relevance": "Perception and interaction hardware.",
+      "claim_type": "spec",
+      "supporting_excerpt": "With a stereo depth camera, a 9-axis IMU, a microphone array, and a speaker, the robot brings together the sensing and computing capabilities needed to develop visual perception, voice interaction, and motion algorithms.",
+      "source_location": "Booster K1 product page, Open Ecosystem section",
+      "verification_notes": "Company spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_007",
+      "date": null,
+      "title": "Generation Robots tactile sensors",
+      "claim": "Generation Robots lists tactile sensors for physical contact detection for safer interaction.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Distributor spec; not confirmed on official page.",
+      "arena_relevance": "Adds safety interaction capability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Tactile sensors: physical contact detection for safer interaction",
+      "source_location": "Generation Robots product page, Integrated sensors section",
+      "verification_notes": "Secondary source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_008",
+      "date": "2025-10-30",
+      "title": "Launch price from press release",
+      "claim": "Geek Edition list price USD 5,999 with limited-time offer USD 4,999 before November 11th.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_006"
+      ],
+      "confidence": 0.9,
+      "notes": "Official press release via PR Newswire.",
+      "arena_relevance": "Price point for accessibility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The K1 **Geek Edition** is priced at **USD 5,999**, with a **limited-time offer starting at USD 4,999 before November 11th**",
+      "source_location": "Yahoo Finance / PR Newswire article",
+      "verification_notes": "Company claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_009",
+      "date": null,
+      "title": "Generation Robots EU pricing",
+      "claim": "Generation Robots lists Booster K1 from €9,000 incl VAT (€7,500 excl VAT).",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_003"
+      ],
+      "confidence": 0.95,
+      "notes": "Distributor listed price.",
+      "arena_relevance": "Regional pricing for Europe.",
+      "claim_type": "spec",
+      "supporting_excerpt": "From €9,000.00 VAT incl.",
+      "source_location": "Generation Robots product page",
+      "verification_notes": "Distributor price.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_010",
+      "date": null,
+      "title": "Robotics Center US pricing",
+      "claim": "Robotics Center lists purchase price from $11,998.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "Distributor listed price.",
+      "arena_relevance": "Regional pricing for US.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Purchase Price From $11,998.00",
+      "source_location": "Robotics Center product page",
+      "verification_notes": "Distributor price.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_011",
+      "date": "2025-10-21",
+      "title": "RoboCup 2025 KidSize winner platform",
+      "claim": "Booster K1 was the platform used by winning team Boosted HTWK in the KidSize Humanoid League at RoboCup 2025.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "booster-k1_source_002",
+        "booster-k1_source_003"
+      ],
+      "confidence": 0.85,
+      "notes": "Media report; distributor also confirms.",
+      "arena_relevance": "Independent competition validation of platform robustness and autonomy.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Booster K1 was the platform of choice for the winning team, Boosted HTWK from Germany, in the **KidSize (small-sized) Humanoid League**.",
+      "source_location": "Humanoids Daily article",
+      "verification_notes": "Media report based on RoboCup results; no official RoboCup source reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_012",
+      "date": null,
+      "title": "Booster K1 product page competition claims",
+      "claim": "Booster K1 product page lists RoboCup 2026 Middle Division Champion B-Human (Germany) and a clean sweep of top three places in Middle-Size Group at the World Humanoid Robot Games.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claim on official page.",
+      "arena_relevance": "Further competition validation.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "RoboCup 2026 Middle Division Champion — B-Human (Germany)",
+      "source_location": "Booster K1 product page, Customer Cases section",
+      "verification_notes": "Company claim; not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_013",
+      "date": "2025-10-30",
+      "title": "Durability testing claim",
+      "claim": "Booster claims K1 validated by 30 hours of continuous 500N impact testing and 100 hours of real-machine operation.",
+      "category": [
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Company press release.",
+      "arena_relevance": "Reliability evidence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Exceptional Durability: Validated by 30 hours of continuous 500N impact testing and 100 hours of real-machine operation.",
+      "source_location": "Yahoo Finance / PR Newswire article",
+      "verification_notes": "Company claim; test protocol not provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_014",
+      "date": "2025-10-30",
+      "title": "Company-wide shipments",
+      "claim": "Booster Robotics claims over 700 units shipped globally, 200+ clients, 20+ countries, 70+ universities and research institutions (company-wide, not K1-specific).",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "booster-k1_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Company data, not broken down by model.",
+      "arena_relevance": "Commercial scale of company.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "the company has shipped over 700 units globally, serving more than 200 clients across over 20 countries and more than 70 universities and research institutions.",
+      "source_location": "Yahoo Finance / PR Newswire article",
+      "verification_notes": "Company figure; no external audit.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_015",
+      "date": null,
+      "title": "Autonomous soccer agent claim",
+      "claim": "Soccer Agent is described as autonomous: tracks, chases, shoots all on its own.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claim from official product page.",
+      "arena_relevance": "Autonomy evidence for specific task.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "It tracks, chases, and shoots—all on its own.",
+      "source_location": "Booster K1 product page, Intelligent Experiences > Soccer Agent section",
+      "verification_notes": "Company claim; no independent verification of out-of-box agent.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_016",
+      "date": null,
+      "title": "Balance recovery claim",
+      "claim": "K1 has active balance recovery and automatic get-up after falls.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claim.",
+      "arena_relevance": "Whole-body control and robustness.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "When pushed or hit, K1 actively adjusts its posture to recover balance. If knocked down, it can get back up autonomously and keep moving.",
+      "source_location": "Booster K1 product page, Locomotion Performance section",
+      "verification_notes": "Company claim; no video or independent verification in sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_017",
+      "date": null,
+      "title": "SDK and software support",
+      "claim": "Supports Python, C++, Agent development framework, and open-source simulation resources.",
+      "category": [
+        "accessibility_value",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official product page.",
+      "arena_relevance": "Developer accessibility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "SDK support for Python and C++, an Agent development framework, and open-source resources for simulation-based training make it easy to get started and support advanced custom development.",
+      "source_location": "Booster K1 product page, Open Ecosystem section",
+      "verification_notes": "Company spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_018",
+      "date": null,
+      "title": "Walking speed discrepancy",
+      "claim": "Official product page lists 2 m/s while Robotics Center lists ±0.5 m/s forward/lateral.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-k1_source_001",
+        "booster-k1_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Conflict between official and distributor specs.",
+      "arena_relevance": "Cautions mobility scoring.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Walk Speed | ±0.5 m/s forward/lateral · ±1.0 rad/s rotation",
+      "source_location": "Robotics Center product page, Technical Overview table",
+      "verification_notes": "Distributor spec conflicts with official page; no independent resolution.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "booster-k1_evidence_019",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No total hand DoF, payload, specific manipulation success rates, independent autonomy verification, or per-model shipment breakdown were found.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.9,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy and manipulation.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "booster-k1_demo_001",
+      "title": "I Took the Booster K1 Humanoid Robot to the Playground!",
+      "date": "2026-07-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-k1_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript provided; only video title available. No capabilities observed from this source."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on autonomy mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-k1_demo_002",
+      "title": "This $4,999 Humanoid Robot Just SHOCKED the World! (Booster K1)",
+      "date": "2026-03-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-k1_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript provided; only video title available. No capabilities observed from this source."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on autonomy mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-k1_demo_003",
+      "title": "Booster K1 Humanoid Robot for Education, Research and ROS 2",
+      "date": "2026-04-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-k1_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript provided; only video title available. No capabilities observed from this source."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on autonomy mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-k1_demo_004",
+      "title": "Booster Robotics humanoid robot K1 at CES 2026",
+      "date": "2026-01-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CES 2026 event",
+      "source_ids": [
+        "booster-k1_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript provided; only video title available. No capabilities observed from this source."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on autonomy mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-k1_demo_005",
+      "title": "Meet Noetix Bumi & Booster K1 – The Future is Here in 2026",
+      "date": "2026-03-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-k1_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript provided; only video title available. No capabilities observed from this source."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on autonomy mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-k1_demo_006",
+      "title": "Booster K1 Humanoid Robot (Geek): Unboxing and First Steps",
+      "date": "2026-07-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-k1_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript provided; only video title available. No capabilities observed from this source."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on autonomy mode.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Manipulation and hands",
+      "description": "No hand DoF or dexterous manipulation details are published. Only arms with 4 DoF each and distributor-listed tactile sensors.",
+      "impact_on_arena_scoring": "Manipulation evidence remains minimal; no specific tasks or success rates."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claims (soccer agent, fall recovery) are company-asserted. RoboCup win provides some independent validation but no intervention logs or audits for K1.",
+      "impact_on_arena_scoring": "Credit autonomy for competition scenario but keep confidence moderate."
+    },
+    {
+      "topic": "Mobility spec conflict",
+      "description": "Official walking speed 2 m/s conflicts with Robotics Center listing ±0.5 m/s. No independent measurement found.",
+      "impact_on_arena_scoring": "Do not over-credit speed until confirmed."
+    },
+    {
+      "topic": "Shipment data scope",
+      "description": "700+ units shipped is company-wide, not K1-specific. Per-model breakdown not provided.",
+      "impact_on_arena_scoring": "Commercial proof of company exists but K1-specific deployment unknown."
+    },
+    {
+      "topic": "Video sources",
+      "description": "All six YouTube videos provided have no transcript; only titles are available.",
+      "impact_on_arena_scoring": "Cannot credit any capabilities from video demos beyond titles."
+    },
+    {
+      "topic": "Payload and hands",
+      "description": "No payload specification or hand details found.",
+      "impact_on_arena_scoring": "Cannot compare lifting or manipulation capacity."
+    }
+  ],
+  "source_ids": [
+    "booster-k1_source_001",
+    "booster-k1_source_002",
+    "booster-k1_source_003",
+    "booster-k1_source_004",
+    "booster-k1_source_005",
+    "booster-k1_source_006",
+    "booster-k1_source_007",
+    "booster-k1_source_008",
+    "booster-k1_source_009",
+    "booster-k1_source_010",
+    "booster-k1_source_011",
+    "booster-k1_source_012"
+  ],
+  "sources": [
+    {
+      "id": "booster-k1_source_001",
+      "title": "Booster K1 | Introductory Embodied Development Platform",
+      "publisher": "Booster Robotics",
+      "url": "https://www.booster.tech/booster-k1?target=en",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims."
+    },
+    {
+      "id": "booster-k1_source_002",
+      "title": "Booster Robotics Launches K1: A RoboCup-Winning Humanoid for $5,000",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/news/booster-robotics-launches-k1-robocup-champion-platform",
+      "date_published": "2025-10-21",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Media report; includes company claims and competition results."
+    },
+    {
+      "id": "booster-k1_source_003",
+      "title": "Booster K1 humanoid robot | Generation Robots",
+      "publisher": "Génération Robots",
+      "url": "https://www.generationrobots.com/en/404324-booster-k1-humanoid-robot.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Distributor product page; specs and pricing."
+    },
+    {
+      "id": "booster-k1_source_004",
+      "title": "Booster Robotics Unveils Booster K1, Ushering in the Era of Embodied Agents  | RoboticsTomorrow",
+      "publisher": "Robotics Tomorrow",
+      "url": "https://www.roboticstomorrow.com/news/2025/10/30/booster-robotics-unveils-booster-k1-ushering-in-the-era-of-embodied-agents/25748/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Press release republished; company claims."
+    },
+    {
+      "id": "booster-k1_source_005",
+      "title": "Booster K1",
+      "publisher": "Robotics Center of Silicon Valley",
+      "url": "https://www.roboticscenter.ai/hardware/booster-k1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Distributor product page; specs and pricing."
+    },
+    {
+      "id": "booster-k1_source_006",
+      "title": "Booster Robotics Unveils Booster K1, Ushering in the Era of Embodied Agents",
+      "publisher": "Yahoo Finance (PR Newswire)",
+      "url": "https://finance.yahoo.com/news/booster-robotics-unveils-booster-k1-120000585.html",
+      "date_published": "2025-10-30",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official press release via PR Newswire."
+    },
+    {
+      "id": "booster-k1_source_007",
+      "title": "I Took the Booster K1 Humanoid Robot to the Playground! 🤖",
+      "publisher": "YouTube KhanFlicks",
+      "url": "https://www.youtube.com/watch?v=o5wYGc-Zfjs",
+      "date_published": "2026-07-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript available."
+    },
+    {
+      "id": "booster-k1_source_008",
+      "title": "This $4,999 Humanoid Robot Just SHOCKED the World! (Booster K1)",
+      "publisher": "YouTube NextGen Humanoids",
+      "url": "https://www.youtube.com/watch?v=9MlJzKotjP8",
+      "date_published": "2026-03-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript available."
+    },
+    {
+      "id": "booster-k1_source_009",
+      "title": "Booster K1 Humanoid Robot for Education, Research and ROS 2",
+      "publisher": "YouTube Generation Robots",
+      "url": "https://www.youtube.com/watch?v=37NQHx6d4yw",
+      "date_published": "2026-04-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Distributor video; no transcript available."
+    },
+    {
+      "id": "booster-k1_source_010",
+      "title": "Booster Robotics humanoid robot K1 at CES 2026",
+      "publisher": "YouTube Peter Kappes",
+      "url": "https://www.youtube.com/watch?v=YrQm5wFTBaQ",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript available."
+    },
+    {
+      "id": "booster-k1_source_011",
+      "title": "Meet Noetix Bumi & Booster K1 – The Future is Here in 2026",
+      "publisher": "YouTube Zoom Vantage",
+      "url": "https://www.youtube.com/watch?v=1VMp5NeaQKI",
+      "date_published": "2026-03-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript available."
+    },
+    {
+      "id": "booster-k1_source_012",
+      "title": "Booster K1 Humanoid Robot (Geek): Unboxing and First Steps",
+      "publisher": "YouTube Martin Cooney",
+      "url": "https://www.youtube.com/watch?v=xUfkFKLCZ_I",
+      "date_published": "2026-07-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Booster K1 is a compact, purchasable research humanoid with strong accessibility (from ~$5k) and competition validation (RoboCup KidSize 2025 winner platform). However, most capability claims are company-asserted, and video sources lack transcripts, limiting independent verification.",
+    "strongest_positive_evidence": [
+      "Public pricing and buy-now availability from multiple distributors.",
+      "RoboCup 2025 KidSize league win using K1 as platform.",
+      "Official specs: 22 DoF, up to 200 TOPS, 2 m/s claimed walking speed.",
+      "Company-reported durability testing (30h 500N impact, 100h operation)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No hand dexterity or manipulation demos.",
+      "No independent autonomy verification or intervention logs.",
+      "No per-model shipment breakdown.",
+      "Video demos have no transcripts.",
+      "Walking speed conflict between official and distributor specs."
+    ],
+    "conflicting_claims": [
+      "Walking speed: official 2 m/s vs Robotics Center ±0.5 m/s.",
+      "Price: $4,999 limited-time vs $5,999 list vs €9,000 (EU) vs $11,998 (Robotics Center).",
+      "Battery life: official 70 min (5Ah) vs Generation Robots 'up to 1h20'."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit T1 championship to K1; that is Booster T1.",
+      "Do not treat 700+ units as K1-specific.",
+      "Do not treat video titles as evidence of capabilities without transcripts.",
+      "Do not describe manipulation capabilities beyond 4-DoF arms and tactile sensor listing."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Booster K1 appears current as of 2026-10-29; no superseding model found in sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Booster T1 RoboCup AdultSize championship details",
+      "reason": "Belongs to Booster T1, not K1.",
+      "source_ids": [
+        "booster-k1_source_002",
+        "booster-k1_source_004",
+        "booster-k1_source_006"
+      ]
+    },
+    {
+      "claim": "Any specific manipulation capabilities (grasping, hand dexterity)",
+      "reason": "No hand specification or manipulation demos in sources.",
+      "source_ids": []
+    },
+    {
+      "claim": "700+ units shipped are all K1",
+      "reason": "Press release says company-wide, not model-specific.",
+      "source_ids": [
+        "booster-k1_source_006"
+      ]
+    },
+    {
+      "claim": "Video demonstration content beyond titles",
+      "reason": "No transcripts provided for YouTube sources.",
+      "source_ids": [
+        "booster-k1_source_007",
+        "booster-k1_source_008",
+        "booster-k1_source_009",
+        "booster-k1_source_010",
+        "booster-k1_source_011",
+        "booster-k1_source_012"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Booster K1 is a compact (95 cm, 19.5 kg) bipedal humanoid from Booster Robotics (China), positioned as an entry-level research/education platform with 22 DoF, up to 200 TOPS compute, stereo depth camera, voice interaction, and official walking speed 2 m/s. It is purchasable from distributors from about $4,999 (limited launch offer) to €9,000 or $11,998 depending on region. Its strongest validation is being the platform of the winning team in RoboCup 2025 KidSize league. However, most capability claims (autonomous soccer, balance recovery, durability) are company-asserted without independent verification, and video demos lack transcripts. No hand dexterity, payload, or per-model shipment data is available.",
+    "strongest_evidence": [
+      "Public purchase availability and pricing (multiple sources).",
+      "RoboCup 2025 KidSize win using K1 platform.",
+      "Official specs: 22 DoF, 2 m/s, up to 200 TOPS.",
+      "Company-reported durability testing."
+    ],
+    "weakest_evidence": [
+      "No independent autonomy verification.",
+      "No manipulation/hand demos or specs.",
+      "Video sources have no transcripts.",
+      "Walking speed conflict."
+    ],
+    "known_do_not_credit": [
+      "Booster T1 championship details.",
+      "700+ units as K1-specific.",
+      "Video content beyond titles.",
+      "Manipulation capabilities beyond listed arms/tactile sensors."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

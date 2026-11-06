@@ -1,0 +1,779 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "engineai-pm01",
+    "name": "EngineAI PM01",
+    "company_id": "engineai",
+    "company_name": "EngineAI",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2024-12-27",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Launched as a lightweight, highly-dynamic, fully-open embodied intelligent agent. The Robot Report reported release for commercial and educational use in late December 2024. FIRGELLI review describes it as an accessible bipedal platform for research and demos, with commercial readiness 5.5/10. No named customer deployments found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "research and education",
+      "commercial demos"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.38 m (4.5 ft.)",
+      "value": 138,
+      "unit": "cm",
+      "notes": "Identical 138 cm height on EngineAI official site PM01 card.",
+      "source_ids": [
+        "engineai-pm01_source_001",
+        "engineai-pm01_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "40 kg (88 lb.)",
+      "value": 40,
+      "unit": "kg",
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Payload not published in reviewed sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "2 hours",
+      "value": 2,
+      "unit": "h",
+      "notes": "Reported by Robotic Gizmos, added 2026-10-29 by automated spec fill.",
+      "source_ids": [
+        "engineai-pm01_source_011"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity not published in reviewed sources.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "2 m/sec. (4.4 mph)",
+      "value": 2,
+      "unit": "m/s",
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 24,
+      "notes": "Total DOF 24 per EngineAI official site PM01 card and The Robot Report.",
+      "source_ids": [
+        "engineai-pm01_source_001",
+        "engineai-pm01_source_002"
+      ]
+    },
+    "hands": {
+      "description": null,
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": []
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": "The robot's computing suite is based on X86 architecture and NVIDIA Jetson Orin high-performance modules, supporting cross-platform algorithm deployment.",
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Peak torque density of 130 N\u00b7m/kg per EngineAI official site.",
+      "source_ids": [
+        "engineai-pm01_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 13700,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://en.engineai.com.cn/product-pm01.html",
+      "notes": "No official price found in reviewed sources. Third-party YouTube video title says $13,700. The Robot Report mentions 88,000 yuan price in context of the SE01, not PM01. FIRGELLI review says 'Quoted and shown; verify current shop listing and export support.'",
+      "source_ids": [
+        "engineai-pm01_source_001",
+        "engineai-pm01_source_002",
+        "engineai-pm01_source_003",
+        "engineai-pm01_source_009"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "No manipulation demos, hand specifications, or grasping evidence found. PM01 is presented as a research platform for motion demos rather than fine manipulation.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No hand information found.",
+        "No manipulation video or task success data found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No autonomous task execution evidence found. Motion demos and video titles do not disclose autonomy. FIRGELLI review rates autonomy confidence low to medium and says demos are motion demos, not independent task studies.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No disclosed autonomous task execution.",
+        "No independent task studies."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs list 2 m/s walking speed and 320-degree waist rotation. Video titles claim dancing and front flipping demonstrations. Official introduction video also exists.",
+      "evidence_level": 2,
+      "source_ids": [
+        "engineai-pm01_source_001",
+        "engineai-pm01_source_002",
+        "engineai-pm01_source_006",
+        "engineai-pm01_source_007",
+        "engineai-pm01_source_009"
+      ],
+      "caveats": [
+        "Video content not independently verified; only titles available.",
+        "Front flip and dancing are claimed in video titles, no transcripts or technical confirmation."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "No sensors or perception algorithms disclosed. Compute is x86 plus NVIDIA Jetson Orin.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No sensor list published.",
+        "No perception benchmarks or demos."
+      ]
+    },
+    "human_interaction": {
+      "summary": "The Robot Report describes a control interface inspired by Iron Man with a core screen integrating various functions to issue commands and access information.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ],
+      "caveats": [
+        "No demonstrated interactive reliability or command-following evidence."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery, payload, failure rate, or reliability data found.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No endurance or reliability disclosure."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "PM01 is compact at 1.38 m and about 40 kg, described as lightweight, highly dynamic, and open. It is intended for labs and demos.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-pm01_source_001",
+        "engineai-pm01_source_002"
+      ],
+      "caveats": [
+        "Small size may limit human-scale task usefulness.",
+        "No safety certification or home deployment evidence."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Launched for commercial and educational use according to The Robot Report and listed on EngineAI official site. FIRGELLI review gives commercial readiness 5.5/10 and says it is a real small humanoid vendor.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-pm01_source_001",
+        "engineai-pm01_source_002",
+        "engineai-pm01_source_003"
+      ],
+      "caveats": [
+        "No named customer or units deployed disclosed.",
+        "Not verified with end-user production output."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "PM01 is an open-platform, purchasable research robot with a product page on EngineAI site. Third-party video title says $13,700. FIRGELLI confirms it is aimed at labs that want a cheaper biped.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-pm01_source_002",
+        "engineai-pm01_source_003",
+        "engineai-pm01_source_009"
+      ],
+      "caveats": [
+        "Price originates from a third-party video title, not official pricing.",
+        "The Robot Report's 88,000 yuan price belongs to SE01, not PM01."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "engineai-pm01_evidence_001",
+      "date": "2024-12-27",
+      "title": "PM01 core physical specifications",
+      "claim": "PM01 is 1.38 m tall, weighs about 40 kg, has 24 degrees of freedom, and moves at 2 m/sec.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Specifications reported by reputable robotics media based on company information.",
+      "arena_relevance": "Defines size, weight, DOF and speed for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The PM01 is 1.38 m (4.5 ft.) tall, weighs about 40 kg (88 lb.), and features 24 degrees of freedom (DoF), achieving a movement speed of 2 m/sec. (4.4 mph).",
+      "source_location": "The Robot Report, PM01 humanoid builds on SE01 section",
+      "verification_notes": "Official spec relayed by media; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_002",
+      "date": null,
+      "title": "EngineAI official site PM01 card",
+      "claim": "EngineAI official site lists PM01 height as 138 cm, total DOF 24, and peak torque density 130 N\u00b7m/kg.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "actuators"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_002"
+      ],
+      "confidence": 0.9,
+      "notes": "Official product page.",
+      "arena_relevance": "Confirms height, DOF and actuator torque density.",
+      "claim_type": "spec",
+      "supporting_excerpt": "138CM\nHeight\n##### 24-DOF\nTotal DOF\n##### 130N\u2022m/Kg\nPeak Torque Density",
+      "source_location": "EngineAI homepage PM01 card",
+      "verification_notes": "Official spec; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_003",
+      "date": "2024-12-27",
+      "title": "PM01 compute architecture",
+      "claim": "PM01 compute suite is based on x86 architecture and NVIDIA Jetson Orin modules and supports cross-platform algorithm deployment.",
+      "category": [
+        "specs",
+        "compute"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Company claim reported by media.",
+      "arena_relevance": "Shows development platform capability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot\u2019s computing suite is based on X86 architecture and NVIDIA Jetson Orin high-performance modules, and it supports cross-platform algorithm deployment and application development.",
+      "source_location": "The Robot Report, PM01 humanoid builds on SE01 section",
+      "verification_notes": "No independent verification of compute performance.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_004",
+      "date": "2024-12-27",
+      "title": "320-degree waist rotation and gait modes",
+      "claim": "PM01 has 320-degree waist rotation and mechanical plus natural humanoid gait walking modes per EngineAI Robotics.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claim; no demo transcript in this source.",
+      "arena_relevance": "Supports mobility capabilities.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Its 320-degree waist rotation enables complex motions, complemented by mechanical and natural humanoid gait walking modes according to EngineAI Robotics.",
+      "source_location": "The Robot Report, PM01 humanoid builds on SE01 section",
+      "verification_notes": "Company claim relayed by media.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_005",
+      "date": "2024-12-27",
+      "title": "Open-source and hardware stability claims",
+      "claim": "Compared with predecessor, PM01 offers enhanced open-source capabilities, compatibility, dynamic performance, power, and hardware stability.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Company claim.",
+      "arena_relevance": "Indicates research platform value.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Compared with its predecessor, the PM01 offers enhanced open-source capabilities, compatibility, dynamic performance, power, and hardware stability, said EngineAI.",
+      "source_location": "The Robot Report, PM01 humanoid builds on SE01 section",
+      "verification_notes": "No independent validation of open-source ecosystem quality.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_009",
+      "date": null,
+      "title": "FIRGELLI review verdict",
+      "claim": "PM01 is a real small humanoid vendor platform with overall review score 6.4/10; public specs and support vary.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Vendor blog review, not an independent benchmark.",
+      "arena_relevance": "Moderates commercial readiness expectations.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Overall Review Score | 6.4 / 10 | Real small humanoid vendor. Public specs and support vary. Not a default 9.0.",
+      "source_location": "FIRGELLI Robots EngineAI PM01 Review, Our Verdict table",
+      "verification_notes": "Commercial interest; not an independent lab test.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_010",
+      "date": null,
+      "title": "Duplicate listing correction",
+      "claim": "The /pm-01-review URL is a leftover second listing of PM01, not a separate product.",
+      "category": [
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-pm01_source_004"
+      ],
+      "confidence": 0.8,
+      "notes": "Useful data hygiene correction.",
+      "arena_relevance": "Avoids overcounting PM01 variants.",
+      "claim_type": "correction",
+      "supporting_excerpt": "This slug, `/blogs/robot-reviews/pm-01-review`, is a leftover second listing of EngineAI\u2019s PM01. It is not a second robot. It is not \u201cPm 01\u201d as a distinct product. The canonical review is EngineAI PM01 Review.",
+      "source_location": "FIRGELLI Robots duplicate Pm 01 listing page",
+      "verification_notes": "Source itself corrects duplicate slug.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "engineai-pm01_evidence_012",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No payload, runtime, battery, hand DOF, sensor list, autonomy task execution, or independent benchmarks were found for PM01.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on endurance, manipulation and autonomy.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "engineai-pm01_demo_001",
+      "title": "Introducing ENGINEAI PM01 \u2013 The Ultimate Embodied Intelligent Humanoid Hardware",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-pm01_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; only video title reviewed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not stated in title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Official introduction video title only; no transcript available.",
+          "verification_notes": "Manual video review required before using as audit-grade evidence."
+        }
+      ]
+    },
+    {
+      "id": "engineai-pm01_demo_002",
+      "title": "ENGINE AI 's Humanoid \"PM01\" Dancing Demo by GMO Humanoid Robot Lab Shibuya",
+      "date": "2026-04-29",
+      "observed_capabilities": [
+        "dancing"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "GMO Humanoid Robot Lab Shibuya",
+      "source_ids": [
+        "engineai-pm01_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Third-party video title only; no transcript.",
+        "No autonomy disclosure."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state whether motion was autonomous or teleoperated.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Dancing demo per video title.",
+          "verification_notes": "Manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "engineai-pm01_demo_003",
+      "title": "Watch $13,700 EngineAI PM01 Humanoid Robot Perform World's First Front Flipping!",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "front flip"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-pm01_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Third-party video title only; no transcript.",
+        "Front flip claim not independently verified.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode or control method disclosed in title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Front flip per video title.",
+          "verification_notes": "Manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public price",
+      "description": "No official PM01 price found. Third-party YouTube title says $13,700; The Robot Report's 88,000 yuan price refers to SE01, not PM01.",
+      "impact_on_arena_scoring": "Accessibility/value should remain low confidence."
+    },
+    {
+      "topic": "Payments/availability",
+      "description": "Product page exists but no purchase path confirmation beyond 'purchasable' status inferred from launch coverage and reseller listing.",
+      "impact_on_arena_scoring": "Treat as purchasable platform for labs, not consumer product."
+    },
+    {
+      "topic": "Runtime, payload, battery, hands, sensors",
+      "description": "None of these were published in reviewed sources.",
+      "impact_on_arena_scoring": "Endurance, manipulation and perception dimensions remain at level 0."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "Demos do not disclose teleoperation; no autonomous task execution evidence.",
+      "impact_on_arena_scoring": "Do not credit autonomy for motion demos."
+    },
+    {
+      "topic": "Video verification",
+      "description": "Video sources have no transcripts; titles only reviewed.",
+      "impact_on_arena_scoring": "Dynamic capabilities suggested but not independently verified."
+    },
+    {
+      "topic": "T800 confusion",
+      "description": "A YouTube video titled T800 robot is a different robot and should not be credited to PM01.",
+      "impact_on_arena_scoring": "Avoid cross-robot overclaiming."
+    }
+  ],
+  "source_ids": [
+    "engineai-pm01_source_001",
+    "engineai-pm01_source_002",
+    "engineai-pm01_source_003",
+    "engineai-pm01_source_004",
+    "engineai-pm01_source_006",
+    "engineai-pm01_source_007",
+    "engineai-pm01_source_009",
+    "engineai-pm01_source_010",
+    "engineai-pm01_source_011"
+  ],
+  "sources": [
+    {
+      "id": "engineai-pm01_source_001",
+      "title": "EngineAI releases PM01 humanoid robot for commercial, educational use",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/engineai-releases-pm01-humanoid-robot-for-commercial-educational-use/",
+      "date_published": "2024-12-27",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable robotics trade media; reports company claims and specs."
+    },
+    {
+      "id": "engineai-pm01_source_002",
+      "title": "ENGINEAI",
+      "publisher": "EngineAI",
+      "url": "https://en.engineai.com.cn/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims."
+    },
+    {
+      "id": "engineai-pm01_source_003",
+      "title": "EngineAI PM01 Review: Specs, Price, Autonomy and Buyer Guide",
+      "publisher": "FIRGELLI Robots",
+      "url": "https://www.firgellirobots.com/blogs/robot-reviews/engineai-pm01-review",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Vendor review blog; commercial interest; useful for duplicate correction and readiness caveats."
+    },
+    {
+      "id": "engineai-pm01_source_004",
+      "title": "EngineAI PM01 (Pm 01 listing): Same Robot as the Canonical PM01 Review",
+      "publisher": "FIRGELLI Robots",
+      "url": "https://www.firgellirobots.com/blogs/robot-reviews/pm-01-review",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Duplicate listing correction page."
+    },
+    {
+      "id": "engineai-pm01_source_006",
+      "title": "Introducing ENGINEAI PM01 \u2013 The Ultimate Embodied Intelligent Humanoid Hardware",
+      "publisher": "Engineai Robot",
+      "url": "https://www.youtube.com/watch?v=j-uMnH_f7cU",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; no transcript reviewed."
+    },
+    {
+      "id": "engineai-pm01_source_007",
+      "title": "ENGINE AI 's Humanoid \"PM01\" Dancing Demo by GMO Humanoid Robot Lab Shibuya",
+      "publisher": "\u30ed\u30dc\u30b9\u30bf",
+      "url": "https://www.youtube.com/watch?v=LuuctRV22mk",
+      "date_published": "2026-04-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party demo video; title only."
+    },
+    {
+      "id": "engineai-pm01_source_009",
+      "title": "Watch $13,700 EngineAI PM01 Humanoid Robot Perform World's First Front Flipping!",
+      "publisher": "Global Update",
+      "url": "https://www.youtube.com/watch?v=n8VbHVdiEjU",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube title; not official; price and front flip unverified."
+    },
+    {
+      "id": "engineai-pm01_source_010",
+      "title": "SHOCK FOOTAGE: China\u2019s T800 Robot Performs Moves No Human Could Survive!",
+      "publisher": "AI Tech Academy",
+      "url": "https://www.youtube.com/watch?v=fZbqBia8rGM",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Used only to exclude T800 footage from PM01."
+    },
+    {
+      "id": "engineai-pm01_source_011",
+      "title": "EngineAI PM01 Dual-chip Humanoid Robot Running, Doing Front Flips - Robotic Gizmos",
+      "publisher": "Robotic Gizmos",
+      "url": "https://www.roboticgizmos.com/engineai-pm01-running/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "EngineAI PM01 is a compact, purchasable research humanoid with official 1.38 m/40 kg/24 DOF specs and dynamic motion video titles. There is no evidence of autonomous task execution, manipulation dexterity, endurance or named customer deployments, so confidence should remain low.",
+    "strongest_positive_evidence": [
+      "Official specs from The Robot Report and EngineAI product page.",
+      "Official introduction video exists.",
+      "Third-party video titles suggest dancing and front flip demos.",
+      "Accessible/open-platform positioning for labs."
+    ],
+    "weakest_or_missing_evidence": [
+      "No payload, runtime, battery, hand or sensor disclosure.",
+      "No autonomous task execution or manipulation evidence.",
+      "No named customer deployments or production metrics.",
+      "No independently verified dynamic demos; only titles."
+    ],
+    "conflicting_claims": [
+      "Price: third-party video title says $13,700; The Robot Report's 88,000 yuan price belongs to SE01, not PM01.",
+      "Dynamic capability: front flip/dancing only in video titles, not verified transcripts.",
+      "T800 video is a different robot and must not be credited to PM01."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit PM01 with SE01 pricing or metrics.",
+      "Do not credit T800 video or capabilities to PM01.",
+      "Do not infer autonomy from motion demos; teleoperation not disclosed.",
+      "Do not claim payload/runtime/hand specs beyond official sources."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "PM01 remains listed on EngineAI official site as of 2026-10-29 and appeared at WRC in August 2026 per FIRGELLI review. T800 exists as a separate newer model, but PM01 is not listed as discontinued."
+  },
+  "excluded_claims": [
+    {
+      "claim": "88,000 yuan ($12,000) PM01 launch price",
+      "reason": "The Robot Report's 88,000 yuan price sentence is about the SE01, not the PM01. No official PM01 price was found.",
+      "source_ids": [
+        "engineai-pm01_source_001"
+      ]
+    },
+    {
+      "claim": "T800 robot dynamic capabilities",
+      "reason": "T800 is a different EngineAI robot; the AI Tech Academy video title is excluded from PM01 evidence.",
+      "source_ids": [
+        "engineai-pm01_source_010"
+      ]
+    },
+    {
+      "claim": "Autonomous task execution or manipulation on PM01",
+      "reason": "No source shows autonomous task execution or manipulation; motion demos do not disclose autonomy.",
+      "source_ids": []
+    },
+    {
+      "claim": "PM01 front flip is independently verified",
+      "reason": "Only a third-party YouTube title; no transcript or independent confirmation.",
+      "source_ids": [
+        "engineai-pm01_source_009"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 4,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "EngineAI PM01 is a compact Chinese bipedal research humanoid listed as 1.38 m, about 40 kg, 24 DOF, 2 m/s, with 320-degree waist rotation and a third-party video title claiming a front flip. Official sources confirm the platform and an official introduction video, but no payload, runtime, battery, hands, sensors, autonomy task execution, manipulation, or named customer deployments have been found. Price is uncertain: a third-party video title says $13,700, while a commonly cited 88,000 yuan launch price belongs to SE01, not PM01. Treat as a purchasable motion/research platform with low confidence on reliability and commercial readiness.",
+    "strongest_evidence": [
+      "Official PM01 specs from EngineAI product page and The Robot Report.",
+      "Official introduction video exists.",
+      "Third-party video titles suggest dancing and front flip demos.",
+      "FIRGELLI review confirms a real small humanoid vendor with commercial readiness 5.5/10."
+    ],
+    "weakest_evidence": [
+      "No payload, runtime, battery, hand or sensor data.",
+      "No autonomous task execution or manipulation evidence.",
+      "No named customer deployments.",
+      "Dynamic video titles unverified; no transcripts."
+    ],
+    "known_do_not_credit": [
+      "SE01 price or metrics to PM01.",
+      "T800 robot video to PM01.",
+      "Autonomy from motion demos.",
+      "Independent front flip verification."
+    ],
+    "recommended_confidence": "low"
+  }
+}

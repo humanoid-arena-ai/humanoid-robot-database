@@ -1,0 +1,1114 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "hanson-sophia",
+    "name": "Sophia",
+    "company_id": "hanson-robotics",
+    "company_name": "Hanson Robotics",
+    "country": "Hong Kong",
+    "generation": null,
+    "first_announced_date": "2016-02-14",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Sophia was activated on 14 February 2016 and has appeared widely at events and interviews. Hanson Robotics announced plans to mass produce and sell thousands of robots including Sophia in 2021, but no public price, named customer deployment, or direct sales channel was found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "upper_body_humanoid",
+    "intended_use_cases": [
+      "entertainment",
+      "education",
+      "research",
+      "customer service",
+      "healthcare",
+      "therapy",
+      "elderly companion",
+      "events"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "167 cm | 65.7 in",
+      "value": 167,
+      "unit": "cm",
+      "notes": "Wevolver spec table lists 167 cm / 65.7 in.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "20 kg | 45 lb",
+      "value": 20,
+      "unit": "kg",
+      "notes": "Wevolver spec table lists 20 kg / 45 lb.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "600grams",
+      "value": 0.6,
+      "unit": "kg",
+      "notes": "Reported by Wevolver, added 2026-10-29 by automated spec fill; per hand.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime found in any reviewed source.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": "24-V lithium-polymer battery",
+      "value": null,
+      "unit": null,
+      "notes": "Wevolver lists power as 110/220-V power supply or 24-V lithium-polymer battery. Battery capacity/runtime not provided.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 83,
+      "notes": "Wevolver spec table says 83 total: head and neck 36; arm and hand 15 x2; torso 3; mobile base 14. Wevolver overview separately says 74 degrees of freedom in mobility and articulated fingers, arms, and shoulders; conflict noted.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed found. Wikipedia says Sophia was upgraded with functional legs and ability to walk around January 2018, but no speed metric is given.",
+      "source_ids": [
+        "hanson-sophia_source_002"
+      ]
+    },
+    "hands": {
+      "description": "Arms and hands with 15 DoF each side; finger touch sensors; each hand has payload capacity of 600 grams per Wevolver overview.",
+      "degrees_of_freedom": 15,
+      "force_feedback": "finger touch sensors",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Intel RealSense camera",
+        "custom wide-angle 1080p chest camera",
+        "two custom 720p HD eye cameras",
+        "external USB microphone",
+        "joint angle sensors and force sensors in arm joints",
+        "finger touch sensors",
+        "audio localization array",
+        "inertial measurement unit (IMU)"
+      ],
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "compute": {
+      "description": "3 GHz Intel i7 with 32 GB RAM, integrated GPU; Ubuntu Linux OS; Ethernet, Wi-Fi.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Head and face: five Dynamixel XM430 servos and 23 Xpert servos; Eyes: two Hitec HS-65MG servos; Neck: three Dynamixel XM430 servos; Arms and hands: two Dynamixel MX64 servos, one Dynamixel MX106 servo, four Dynamixel XM430 servos, six Xpert servos, and two MKS servos per arm/hand.",
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No public price or purchase path found. element14 reported in 2021 that Hanson Robotics planned to mass produce and sell robots, but no direct sales channel for full-size Sophia is listed.",
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Wevolver lists 15 DoF per arm/hand, finger touch sensors, and 600 g hand payload. Wikipedia reports Sophia displayed the ability to create drawings, including portraits, in 2019. No dexterity benchmark or task success rates found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or success rates.",
+        "Drawing claim is from Wikipedia, not a directly observed video in this source set.",
+        "Wevolver overview contradicts spec table on total DoF."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Wevolver says Sophia mostly operates in 'fully independent AI mode' but mingles with human-written words; Wikipedia says dialogue is generated via a decision tree; Squarespace ethnography describes scripted responses and hybrid human-AI intelligence. No autonomous task execution demos are evidenced.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002",
+        "hanson-sophia_source_004"
+      ],
+      "caveats": [
+        "Autonomy claims are conflicts: Wevolver says fully independent AI mode, but sources describe scripted/decision-tree dialogue and human control.",
+        "No autonomous task execution demonstration or intervention logs found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Wevolver lists 83 total DoF including mobile base and three rolling base options. Wikipedia says Sophia was upgraded with functional legs and ability to walk around January 2018. No speed, stability, or fall data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002"
+      ],
+      "caveats": [
+        "Walking claim is not supported by a video transcript or measured speed.",
+        "No fall-rate or balance metric."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Sensors include RealSense, eye cameras, face detection, body tracking, audio localization and IMU. Wikipedia says computer vision processes input from eye cameras to follow faces, sustain eye contact, and recognize individuals. A non-authoritative Scribd presentation claims 93% emotion recognition accuracy in one study.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002",
+        "hanson-sophia_source_006"
+      ],
+      "caveats": [
+        "The 93% emotion recognition figure is from a student Scribd presentation, not an independent peer-reviewed benchmark.",
+        "No official perception benchmark or accuracy metric found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Sophia is designed for social interaction with life-like facial expressions, over 60 facial expressions per CNBC, speech synthesis, and many public interviews and events. She has received Saudi citizenship and UNDP Innovation Champion title. However, dialogue is largely scripted via decision tree.",
+      "evidence_level": 2,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002",
+        "hanson-sophia_source_008",
+        "hanson-sophia_source_009",
+        "hanson-sophia_source_012",
+        "hanson-sophia_source_013"
+      ],
+      "caveats": [
+        "Video transcripts are not available in this source set; titles indicate interviews but content cannot be verified.",
+        "Sources describe pre-written responses and chatbot-like behavior, not open-ended conversational reliability."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, MTBF, or reliability metrics found. An ethnography by an insider (Squarespace) states Sophia is far from stable, consistent, and operationally reliable, fragile and apt to malfunction.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hanson-sophia_source_004"
+      ],
+      "caveats": [
+        "Single observational account from an ethnography, not a measured reliability test.",
+        "No runtime or battery capacity published."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized (167 cm, 20 kg) with wheeled base and intended for nursing homes, events, retail, customer service, therapy and education. Frubber skin and facial expressions support human-robot interaction. No safety certification or formal human-environment fit testing found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002",
+        "hanson-sophia_source_003"
+      ],
+      "caveats": [
+        "No safety certification or formal fit testing.",
+        "Fragility reported; wheeled base may require even floors."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "element14 reported in 2021 that Hanson Robotics planned to mass produce robots, including Sophia, with factories starting production in first half 2021, and aimed to sell thousands for healthcare and customer assistance. No named customer, units sold, or deployment metrics found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "hanson-sophia_source_003"
+      ],
+      "caveats": [
+        "Company aim reported by a community blog, not verified sales data.",
+        "No specific customer or operating metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price, purchase path, or waitlist for full-size Sophia found. A Scribd presentation lists a cost in PKR, but it appears to refer to Little Sophia, not the full-size robot.",
+      "evidence_level": 0,
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_003",
+        "hanson-sophia_source_005"
+      ],
+      "caveats": [
+        "No official price or sales channel.",
+        "Scribd cost figure likely refers to Little Sophia and is not reliable."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "hanson-sophia_evidence_001",
+      "date": null,
+      "title": "Sophia purpose and category (Wevolver)",
+      "claim": "Wevolver describes Sophia as a humanoid robot created by Hanson Robotics for research, education, and entertainment, with life-like facial expressions.",
+      "category": [
+        "human_interaction",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Third-party spec aggregator.",
+      "arena_relevance": "Establishes Sophia as a social/entertainment humanoid.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Sophia is intended for use in research, education, and entertainment, and it aids in fostering societal debate on AI ethics and the potential of robotics.",
+      "source_location": "Wevolver Overview, Problem/Solution paragraph",
+      "verification_notes": "Wevolver is a third-party directory; not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_002",
+      "date": null,
+      "title": "Wevolver degree-of-freedom and hand payload claims",
+      "claim": "Wevolver overview says Sophia has 74 degrees of freedom in mobility and articulated fingers/arms/shoulders and each hand has 600 g payload, with three rolling base options.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicts with Wevolver spec table total of 83 DoF.",
+      "arena_relevance": "Spec basis for manipulation and mobility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The AI robot has 74 degrees of freedom in its mobility and articulated fingers, arms, and shoulders. Each hand has a payload capacity of 600grams. Including self-navigation, Sophia has three distinct rolling base options.",
+      "source_location": "Wevolver Overview, Motion section",
+      "verification_notes": "Conflict with spec table 83 DoF; both from same source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_003",
+      "date": null,
+      "title": "Wevolver sensors and AI SDK",
+      "claim": "Wevolver says Sophia includes face detection, body tracking, and sensors for physical interaction; Hanson AI SDK controls perception, NLP, chat, non-verbal language and actuation.",
+      "category": [
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-descended spec via third party.",
+      "arena_relevance": "Supports perception and interaction capabilities.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Sophia is incorporated with face detection and body tracking features. These sensors can be programmed for a wide range of physical interaction tasks.",
+      "source_location": "Wevolver Overview, Sensor section",
+      "verification_notes": "No independent benchmark.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_004",
+      "date": null,
+      "title": "Wevolver hybrid autonomy statement",
+      "claim": "Wevolver states Sophia mostly operates in fully independent AI mode but mingles with human-written words; engineers control conversations, behaviors, and mind (hybrid human-AI intelligence).",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hanson-sophia_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicting with later sources saying scripted decision tree.",
+      "arena_relevance": "Moderates autonomy credit.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Most of the time, it operates in fully independent AI mode, but occasionally, its AI mingles with words created by humans. Engineers, artists, and scientists still control AI robots' conversations, behaviors, and mind. Hence, Sophia can be referred to as having \"hybrid human-AI intelligence.\"",
+      "source_location": "Wevolver Overview, Artificial Intelligence section",
+      "verification_notes": "Company claim via third party; not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_006",
+      "date": null,
+      "title": "Wikipedia citizenship and UNDP title",
+      "claim": "Sophia was granted Saudi Arabian citizenship in October 2017 and named UNDP Innovation Champion in November 2017.",
+      "category": [
+        "human_interaction",
+        "status"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Wikipedia tertiary source with citations.",
+      "arena_relevance": "Highlights recognition, not capability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "In October 2017 Sophia was granted Saudi Arabian citizenship, becoming the first robot to receive legal personhood in any country.",
+      "source_location": "Wikipedia, History section",
+      "verification_notes": "Well-reported in multiple outlets.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_007",
+      "date": null,
+      "title": "Wikipedia facial expressions",
+      "claim": "CNBC commented on Sophia's lifelike skin and ability to emulate more than 60 facial expressions.",
+      "category": [
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Media summary in Wikipedia.",
+      "arena_relevance": "Supports social interaction capability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "CNBC has commented on Sophia's \"lifelike\" skin and her ability to emulate more than 60 facial expressions.",
+      "source_location": "Wikipedia, Software section",
+      "verification_notes": "No direct video transcript in sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_008",
+      "date": null,
+      "title": "Wikipedia dialogue decision tree",
+      "claim": "Sophia's dialogue is generated via a decision tree.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Contradicts full autonomy claims.",
+      "arena_relevance": "Limits autonomy credit.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Sophia's dialogue is generated via a decision tree, and is uniquely integrated with these outputs.",
+      "source_location": "Wikipedia, Software section",
+      "verification_notes": "Consistent with Squarespace critique.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_010",
+      "date": null,
+      "title": "Wikipedia drawing ability",
+      "claim": "In 2019 Sophia displayed the ability to create drawings, including portraits.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Wikipedia report; no video transcript.",
+      "arena_relevance": "Supports manipulation beyond simple gripper.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "In 2019 Sophia displayed the ability to create drawings, including portraits.",
+      "source_location": "Wikipedia, History section",
+      "verification_notes": "Not independently verified in this source set.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_011",
+      "date": "2021-01-29",
+      "title": "element14 mass production report",
+      "claim": "Hanson Robotics planned to mass produce robots, including Sophia, with factories starting production in first half 2021.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Community blog reporting Reuters.",
+      "arena_relevance": "Only commercial production claim found.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Hong Kong company said its factories would start producing four models, including Sophia, in the first half of 2021.",
+      "source_location": "element14 Community blog, first paragraph",
+      "verification_notes": "Company aim via media; no actual sales data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_012",
+      "date": null,
+      "title": "Squarespace ethnography reliability limitations",
+      "claim": "Sophia is far from stable, consistent, and operationally reliable; she is fragile and apt to malfunction.",
+      "category": [
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Ethnography by an insider, observational account.",
+      "arena_relevance": "Caution on reliability.",
+      "claim_type": "security_caution",
+      "supporting_excerpt": "She did not, and does not, possess the most advanced artificial intelligence and robotic hardware and is far from being stable, consistent, and operationally reliable. She is fragile and is apt to malfunction for any number of reasons.",
+      "source_location": "Squarespace PDF, Sophia Robot: An Emergent Ethnography, opening paragraphs",
+      "verification_notes": "Single qualitative account, not a measured failure rate.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_013",
+      "date": null,
+      "title": "Squarespace chatbot critique",
+      "claim": "Sophia is described as a chatbot with a face; responses are pre-loaded text matched with facial expressions.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hanson-sophia_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Independent critique.",
+      "arena_relevance": "Limits autonomy and conversational intelligence credit.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "At best, Sophia is described as a chatbot with a face; researchers assert that what humanmachine interaction designers have done is link narrow AI algorithms together to give the functionality of a more capable algorithm. The result is a speech-reciting robot that can drum up witty conversations with pre-loaded text, follow it up with machine learning to match facial expressions and pauses to the text.",
+      "source_location": "Squarespace PDF, Sophia Robot: An Emergent Ethnography, page 2",
+      "verification_notes": "Critique from an insider; consistent with Wikipedia decision-tree statement.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "human_interaction"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_014",
+      "date": null,
+      "title": "Scribd cost correction",
+      "claim": "A Scribd presentation lists a cost in PKR and says Little Sophia is available on Indiegogo; likely refers to Little Sophia, not full-size Sophia.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "hanson-sophia_source_005"
+      ],
+      "confidence": 0.2,
+      "notes": "Low-quality user-uploaded presentation; do not credit price.",
+      "arena_relevance": "Prevents crediting a likely incorrect price.",
+      "claim_type": "correction",
+      "supporting_excerpt": "It costs between 16703PKR and 25136PKR. Availability: little Sophia is available on Indiegogo.",
+      "source_location": "Scribd presentation, Cost and Availability sections",
+      "verification_notes": "The document does not clearly specify whether cost applies to full-size Sophia or Little Sophia.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_015",
+      "date": null,
+      "title": "Non-authoritative emotion recognition claim",
+      "claim": "A Scribd student presentation says Sophia achieved 93% accuracy in identifying human emotions through facial expressions in controlled testing.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hanson-sophia_source_006"
+      ],
+      "confidence": 0.3,
+      "notes": "Student presentation, not peer-reviewed or independent.",
+      "arena_relevance": "Weak perception evidence; do not overcredit.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "In one study, Sophia achieved 93% accuracy in identifying human emotions through facial expressions during controlled testing.",
+      "source_location": "Scribd document, Statistical Result/Report section",
+      "verification_notes": "No original study cited; low reliability.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hanson-sophia_evidence_016",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No total runtime, battery capacity, walking speed, named customer deployment, public price, or independent benchmark was found for Sophia.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.9,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should lower confidence on autonomy, reliability, and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "hanson-sophia_demo_001",
+      "title": "Interview With The Lifelike Hot Robot Named Sophia (Full) | CNBC",
+      "date": "2017-10-29",
+      "observed_capabilities": [
+        "Participates in a full interview (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CNBC studio interview",
+      "source_ids": [
+        "hanson-sophia_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; content not verified.",
+        "Title does not disclose autonomy mode."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Interview with Sophia (title only)",
+          "verification_notes": "No transcript reviewed."
+        }
+      ]
+    },
+    {
+      "id": "hanson-sophia_demo_002",
+      "title": "Hot Robot At SXSW Says She Wants To Destroy Humans | The Pulse",
+      "date": "2016-10-29",
+      "observed_capabilities": [
+        "Speaks at SXSW and makes provocative statements (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "SXSW event",
+      "source_ids": [
+        "hanson-sophia_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title is inflammatory; no transcript.",
+        "No execution mode disclosed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "SXSW stage appearance with provocative statement (title only)",
+          "verification_notes": "No transcript reviewed."
+        }
+      ]
+    },
+    {
+      "id": "hanson-sophia_demo_003",
+      "title": "The Most Disturbing Phrases Sophia AI Robot has Ever Said!",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "Makes disturbing statements (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Compilation video",
+      "source_ids": [
+        "hanson-sophia_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Compilation; no transcript; likely curated clips.",
+        "Title only."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Compilation of disturbing phrases (title only)",
+          "verification_notes": "No transcript reviewed."
+        }
+      ]
+    },
+    {
+      "id": "hanson-sophia_demo_004",
+      "title": "Humanoid robot: The story of Sophia",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "Documentary on Sophia (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Documentary video",
+      "source_ids": [
+        "hanson-sophia_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; likely documentary with multiple clips.",
+        "No execution mode disclosure."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Story of Sophia documentary (title only)",
+          "verification_notes": "No transcript reviewed."
+        }
+      ]
+    },
+    {
+      "id": "hanson-sophia_demo_005",
+      "title": "Will Smith Tries Online Dating",
+      "date": "2018-10-29",
+      "observed_capabilities": [
+        "Interacts with Will Smith in a video (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Entertainment video",
+      "source_ids": [
+        "hanson-sophia_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title suggests a skit, not a formal demo.",
+        "No transcript or execution mode."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Will Smith interaction with Sophia (title only)",
+          "verification_notes": "No transcript reviewed."
+        }
+      ]
+    },
+    {
+      "id": "hanson-sophia_demo_006",
+      "title": "We Talked To Sophia — The AI Robot That Once Said It Would 'Destroy Humans'",
+      "date": "2018-10-29",
+      "observed_capabilities": [
+        "Conversation with Insider Tech (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Interview video",
+      "source_ids": [
+        "hanson-sophia_source_013"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; title only.",
+        "No execution mode disclosure."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Insider Tech conversation with Sophia (title only)",
+          "verification_notes": "No transcript reviewed."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "Wevolver says Sophia mostly operates in fully independent AI mode, but Wikipedia and Squarespace say dialogue is scripted via decision tree and pre-loaded text.",
+      "impact_on_arena_scoring": "Do not credit Sophia as autonomous; evidence is conflicting and no autonomous task demos exist."
+    },
+    {
+      "topic": "Reliability",
+      "description": "No runtime, MTBF, or failure metrics found. An insider ethnography describes Sophia as fragile and apt to malfunction.",
+      "impact_on_arena_scoring": "Endurance/reliability should be scored low."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "Only a 2021 report of mass production plans exists; no named customer, units sold, or deployment metrics found.",
+      "impact_on_arena_scoring": "Commercial proof remains minimal."
+    },
+    {
+      "topic": "Public availability",
+      "description": "No official price or purchase path for full-size Sophia. A Scribd presentation lists a PKR cost but likely refers to Little Sophia.",
+      "impact_on_arena_scoring": "Accessibility/value should be scored as missing evidence."
+    },
+    {
+      "topic": "Perception benchmark",
+      "description": "A Scribd student presentation claims 93% emotion recognition, but this is not an independent or peer-reviewed source.",
+      "impact_on_arena_scoring": "Do not use this figure as verified perception capability."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "Several YouTube video titles indicate interviews and demos, but no transcripts were provided.",
+      "impact_on_arena_scoring": "Cannot verify content or autonomy from video titles alone."
+    }
+  ],
+  "source_ids": [
+    "hanson-sophia_source_001",
+    "hanson-sophia_source_002",
+    "hanson-sophia_source_003",
+    "hanson-sophia_source_004",
+    "hanson-sophia_source_005",
+    "hanson-sophia_source_006",
+    "hanson-sophia_source_008",
+    "hanson-sophia_source_009",
+    "hanson-sophia_source_010",
+    "hanson-sophia_source_011",
+    "hanson-sophia_source_012",
+    "hanson-sophia_source_013"
+  ],
+  "sources": [
+    {
+      "id": "hanson-sophia_source_001",
+      "title": "Sophia: A realistic humanoid robot",
+      "publisher": "Wevolver",
+      "url": "https://www.wevolver.com/specs/sophia-a-realistic-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party spec aggregator; values not independently verified."
+    },
+    {
+      "id": "hanson-sophia_source_002",
+      "title": "Sophia (robot) - Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sophia_(robot)",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Tertiary encyclopedia; generally reliable for well-cited facts but not an independent test."
+    },
+    {
+      "id": "hanson-sophia_source_003",
+      "title": "Makers of Sophia robot to mass produce robots this year",
+      "publisher": "element14 Community",
+      "url": "https://community.element14.com/technologies/industrial-automation-space/b/blog/posts/makers-of-sophia-robot-to-mass-produce-robots-this-year",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "medium",
+      "reliability_notes": "Community blog reporting on Reuters; not an official Hanson source."
+    },
+    {
+      "id": "hanson-sophia_source_004",
+      "title": "sophia-robot-an-emergent-ethnography copy",
+      "publisher": "Squarespace",
+      "url": "https://static1.squarespace.com/static/592709a4ebbd1adfd985c6de/t/614fad06203339032889073f/1632611629227/TDR_sophia-robot.pdf",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Ethnographic essay by a former Hanson collaborator; qualitative and opinionated."
+    },
+    {
+      "id": "hanson-sophia_source_005",
+      "title": "Sophia: The Humanoid Robot by Hanson Robotics | PDF | Robotics | Robot",
+      "publisher": "Scribd",
+      "url": "https://www.scribd.com/presentation/533511392/A-Humanoid-Robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "low",
+      "reliability_notes": "User-uploaded presentation; cost information unreliable and likely refers to Little Sophia."
+    },
+    {
+      "id": "hanson-sophia_source_006",
+      "title": "Exploring Sophia the Humanoid Robot | PDF | Robotics | Robot",
+      "publisher": "Scribd",
+      "url": "https://www.scribd.com/document/924028198/Robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "low",
+      "reliability_notes": "Student presentation; statistical result is not peer-reviewed or independently verified."
+    },
+    {
+      "id": "hanson-sophia_source_008",
+      "title": "Interview With The Lifelike Hot Robot Named Sophia (Full) | CNBC",
+      "publisher": "YouTube CNBC",
+      "url": "https://www.youtube.com/watch?v=S5t6K9iwcdw",
+      "date_published": "2017-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Video title only; no transcript provided."
+    },
+    {
+      "id": "hanson-sophia_source_009",
+      "title": "Hot Robot At SXSW Says She Wants To Destroy Humans | The Pulse",
+      "publisher": "YouTube CNBC",
+      "url": "https://www.youtube.com/watch?v=W0_DPi0PmF0",
+      "date_published": "2016-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Video title only; no transcript provided."
+    },
+    {
+      "id": "hanson-sophia_source_010",
+      "title": "The Most Disturbing Phrases Sophia AI Robot has Ever Said!",
+      "publisher": "YouTube NextGen AI",
+      "url": "https://www.youtube.com/watch?v=m4WJEvULxkM",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Compilation video; title only."
+    },
+    {
+      "id": "hanson-sophia_source_011",
+      "title": "Humanoid robot: The story of Sophia",
+      "publisher": "YouTube South China Morning Post",
+      "url": "https://www.youtube.com/watch?v=y6TUPW9C454",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Documentary title only; no transcript."
+    },
+    {
+      "id": "hanson-sophia_source_012",
+      "title": "Will Smith Tries Online Dating",
+      "publisher": "YouTube Will Smith",
+      "url": "https://www.youtube.com/watch?v=Ml9v3wHLuWI",
+      "date_published": "2018-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Entertainment video; title only."
+    },
+    {
+      "id": "hanson-sophia_source_013",
+      "title": "We Talked To Sophia — The AI Robot That Once Said It Would 'Destroy Humans'",
+      "publisher": "YouTube Insider Tech",
+      "url": "https://www.youtube.com/watch?v=78-1MlkxyqI",
+      "date_published": "2018-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Interview title only; no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Sophia is best documented as a social/entertainment humanoid with strong media presence, but has minimal evidence of autonomous task execution, reliability, or verified commercial deployment in the provided sources.",
+    "strongest_positive_evidence": [
+      "Detailed third-party spec sheet from Wevolver listing height, weight, DOF, sensors, compute and actuators.",
+      "Wikipedia confirmation of Saudi citizenship and UNDP Innovation Champion title, indicating high public recognition.",
+      "Wikipedia report of drawing ability and walking upgrade in 2018, suggesting some manipulation and mobility beyond static talking.",
+      "Multiple public interview videos (titles only) with CNBC, Will Smith, Insider Tech, and South China Morning Post."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark, intervention log, or measured success rates.",
+      "No runtime, battery capacity, or reliability metrics.",
+      "No named customer deployment or sales figures.",
+      "No public price or purchase path for full-size Sophia.",
+      "No video transcript to verify the claims in YouTube titles."
+    ],
+    "conflicting_claims": [
+      "Wevolver spec table says 83 total DoF, while its overview says 74 DoF in mobility and articulated fingers/arms/shoulders.",
+      "Wevolver says Sophia mostly operates in fully independent AI mode, but Wikipedia and Squarespace describe scripted decision-tree dialogue.",
+      "A Scribd presentation lists a cost in PKR, but it likely refers to Little Sophia, not the full-size Sophia."
+    ],
+    "recommended_arena_categories": [
+      "upper_body_humanoid",
+      "service_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit the 93% emotion recognition figure from a Scribd student presentation as verified.",
+      "Do not use the PKR cost as the price of full-size Sophia.",
+      "Do not describe Sophia as autonomous based on Wevolver's 'fully independent AI mode' claim; multiple sources say scripted/hybrid.",
+      "Do not credit walking speed or total payload; only per-hand payload of 600 g is specified."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Sophia remains Hanson Robotics' most recognizable robot as of 2026-10-29. No explicit successor in the provided sources, though Little Sophia and Grace exist."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Cost of full-size Sophia is between 16703 PKR and 25136 PKR",
+      "reason": "The Scribd presentation likely refers to Little Sophia, not the full-size Sophia, and is low reliability.",
+      "source_ids": [
+        "hanson-sophia_source_005"
+      ]
+    },
+    {
+      "claim": "Sophia achieved 93% accuracy in emotion recognition as an established benchmark",
+      "reason": "The claim is from a student Scribd presentation, not an independent or peer-reviewed source.",
+      "source_ids": [
+        "hanson-sophia_source_006"
+      ]
+    },
+    {
+      "claim": "Sophia is fully autonomous",
+      "reason": "Wevolver says hybrid human-AI intelligence; Wikipedia and Squarespace describe scripted decision-tree dialogue and human control.",
+      "source_ids": [
+        "hanson-sophia_source_001",
+        "hanson-sophia_source_002",
+        "hanson-sophia_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 12,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Sophia is a social humanoid robot from Hanson Robotics, activated in 2016, best known for media appearances and lifelike facial expressions. It has a patented Frubber skin, 83 total DoF per Wevolver spec (though overview says 74), 167 cm, 20 kg, and a wheeled base; around January 2018 it was upgraded with functional legs and walking. Its main evidence is in human interaction—over 60 facial expressions, many high-profile interviews, Saudi citizenship, and UNDP title. However, dialogue is largely scripted via decision tree, an insider ethnography says the robot is fragile and operationally unreliable, and no autonomous task demos exist. Hanson Robotics announced mass production plans in 2021, but no public price, named customer deployment, or independent benchmark was found.",
+    "strongest_evidence": [
+      "Detailed third-party spec sheet from Wevolver (hanson-sophia_evidence_002, hanson-sophia_evidence_003).",
+      "Wikipedia confirmation of Saudi citizenship and UNDP title (hanson-sophia_evidence_006).",
+      "Wikipedia report of drawing ability and walking upgrade (hanson-sophia_evidence_009, hanson-sophia_evidence_010).",
+      "Multiple public interview videos with CNBC, Will Smith, and Insider Tech (titles only) in demos."
+    ],
+    "weakest_evidence": [
+      "No independent benchmark, intervention log, or measured success rates.",
+      "No runtime, battery capacity, or reliability metrics.",
+      "No named customer deployment or sales figures.",
+      "No public price or purchase path for full-size Sophia."
+    ],
+    "known_do_not_credit": [
+      "The 93% emotion recognition figure from a Scribd student presentation.",
+      "PKR cost as the price of full-size Sophia.",
+      "Full autonomy based on Wevolver's 'fully independent AI mode' claim.",
+      "Walking speed or total payload; only per-hand payload of 600 g is specified."
+    ],
+    "recommended_confidence": "low"
+  }
+}

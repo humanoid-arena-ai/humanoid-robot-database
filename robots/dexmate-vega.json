@@ -1,0 +1,77 @@
+{
+  "id": "dexmate-vega",
+  "name": "Dexmate Vega",
+  "aliases": [
+    "Vega",
+    "Vega 1 Pro"
+  ],
+  "companyId": "dexmate",
+  "companyName": "Dexmate",
+  "country": "United States",
+  "announced": null,
+  "status": "purchasable",
+  "category": "research",
+  "summary": "Vega is a foldable wheeled humanoid from Dexmate in Santa Clara, sold to researchers and developers. The Vega 1 Pro weighs 135 kg, has 24 DoF and two 7-DoF arms, and the torso extends to reach about 2.2 m. Press reported a price of $89,999 with a $999 deposit.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": {
+      "value": 135,
+      "original": "298 lbs (135 kg)",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 5,
+      "original": "10+ lbs (5 kg) per arm",
+      "sourceId": "s1"
+    },
+    "runtime_h": {
+      "value": 20,
+      "original": "20 hours of operation",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 24,
+      "original": "24 total",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "Stereo RGB head camera, two LiDARs and four RGB cameras on the base.",
+  "compute": "NVIDIA Jetson AGX Thor.",
+  "price": {
+    "value": 89999,
+    "currency": "USD",
+    "priceType": "list",
+    "configuration": "Vega ($999 non-refundable deposit)",
+    "sourceId": "s2"
+  },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.dexmate.com/vega",
+  "highlights": [
+    "Folds to 0.66 x 0.56 x 0.66 m for transport.",
+    "Python API for developers.",
+    "Company says it was developed in under six months."
+  ],
+  "caveats": [
+    "Wheeled base, not a biped.",
+    "Official page does not show the price; the figure comes from press coverage."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Vega",
+      "publisher": "Dexmate",
+      "url": "https://www.dexmate.com/vega",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Dexmate Opens Preorders for Vega Mobile Humanoid Robot",
+      "publisher": "Mike Kalil",
+      "url": "https://mikekalil.com/blog/dexmate-vega/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

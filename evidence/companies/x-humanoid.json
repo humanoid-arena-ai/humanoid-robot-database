@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "x-humanoid",
+    "name": "Beijing Humanoid Robot Innovation Center (X-Humanoid)",
+    "country": "China",
+    "website": null,
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "tiangong-ultra",
+    "tiangong"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "x-humanoid_source_001",
+      "title": "China's home-grown general-purpose humanoid jogs out at 6 km/h",
+      "publisher": "newatlas.com",
+      "url": "https://newatlas.com/robotics/china-tiangong-general-purpose-humanoid/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "x-humanoid_source_002",
+      "title": "Beijing's Tiangong Upgraded as Humanoid Robot Prepares for Race Day",
+      "publisher": "mikekalil.com",
+      "url": "https://mikekalil.com/blog/tiangong-humanoid-updates/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

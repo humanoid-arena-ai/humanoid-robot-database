@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "italian-institute-of-technology",
+    "name": "Italian Institute of Technology (IIT)",
+    "country": "Italy",
+    "website": null,
+    "founded": 2003,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "iit-ergocub"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Public research institute."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "italian-institute-of-technology_source_001",
+      "title": "A new robot for the first 20 years of IIT",
+      "publisher": "opentalk.iit.it",
+      "url": "https://opentalk.iit.it/en/a-new-robot-for-the-first-20-years-of-iit/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "italian-institute-of-technology_source_002",
+      "title": "ergoCub humanoid robot",
+      "publisher": "ergocub.eu",
+      "url": "https://ergocub.eu/robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

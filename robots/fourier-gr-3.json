@@ -1,0 +1,39 @@
+{
+  "id": "fourier-gr-3",
+  "name": "Fourier GR-3",
+  "aliases": ["GR-3", "GR3", "Care-bot GR-3"],
+  "companyId": "fourier",
+  "companyName": "Fourier",
+  "country": "China",
+  "announced": "2025-08-07",
+  "status": "pilot",
+  "category": "service",
+  "summary": "GR-3 is Fourier's full-size care humanoid, about 165 cm and 71 kg with 55 DoF and a soft exterior. It is designed for companionship, health monitoring and rehabilitation support in care homes and rehabilitation centers. It made its CES debut in January 2026.",
+  "specs": {
+    "height_cm": { "value": 165, "original": "165cm", "sourceId": "s1" },
+    "weight_kg": { "value": 71, "original": "71kg", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 55, "original": "55 degrees of freedom", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "Multimodal interaction system combining visual, audio and tactile sensing.",
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Supports emotion recognition and natural dialogue, per Fourier.",
+    "Demonstrated chess, conversation and dance at CES 2026."
+  ],
+  "caveats": [
+    "No official price or delivery schedule is published.",
+    "Care-home use cases are company-described; independent deployment data is limited."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Fourier Intelligence unveils the Care-bot GR-3, its first full-sized companion humanoid robot", "publisher": "TechNode", "url": "https://technode.com/2025/08/07/fourier-intelligence-unveils-the-care-bot-gr-3-its-first-full-sized-companion-humanoid-robot/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Fourier Makes CES Debut With GR-3, a Next-Generation Care-Focused Humanoid Robot", "publisher": "PR Newswire", "url": "https://www.prnewswire.com/news-releases/fourier-makes-ces-debut-with-gr-3-a-next-generation-care-focused-humanoid-robot-302654565.html", "accessed": "2026-10-14" }
+  ]
+}

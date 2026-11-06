@@ -1,0 +1,14 @@
+{
+  "id": "noetix-robotics",
+  "name": "Noetix Robotics",
+  "country": "China",
+  "headquarters": "Beijing, China",
+  "founded": 2023,
+  "website": "https://www.noetixrobotics.com/en",
+  "summary": "Noetix Robotics (Songyan Dynamics) is a Beijing startup founded in September 2023 by a team from Tsinghua and Zhejiang universities. It sells low-cost small humanoids such as N2 and the consumer Bumi.",
+  "funding": null,
+  "sources": [
+    { "id": "s1", "title": "China's Noetix Robotics launches $1,400 consumer-grade humanoid robot", "url": "https://roboticsandautomationnews.com/2025/10/22/beijing-startup-noetix-robotics-launches-consumer-grade-humanoid-robot-at-1400/95731/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Startup NOETIX Robotics Launches Affordable Humanoid Robot Capable of Backflips", "url": "https://en.tmtpost.com/post/7497178", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "robotId": "sanctuary-phoenix",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "Phoenix was never sold. Sanctuary offered its robots as 'labor as a service' in pilots, and its current website sells physical AI software and robotic hands for other robots, with no Phoenix offer.",
+  "configurations": [],
+  "sellers": [
+    {
+      "name": "Sanctuary AI (official)",
+      "type": "official",
+      "url": "https://www.sanctuary.ai/",
+      "region": "Global",
+      "offers": "No Phoenix offer or price; 'Commercial Inquiry' form for its physical AI software and hydraulic hands.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy Sanctuary AI Phoenix?",
+      "a": "No. Sanctuary has never sold Phoenix, and its website no longer lists it as a product.",
+      "sourceUrl": "https://www.sanctuary.ai/"
+    },
+    {
+      "q": "How much does Phoenix cost?",
+      "a": "Sanctuary never published a price. In 2023 its CMO said the model was 'labor as a service', with hourly pricing that varies by business and task.",
+      "sourceUrl": "https://www.theregister.com/software/2023/03/08/humanoid-robot-takes-a-turn-as-a-marks-store-clerk/555192"
+    },
+    {
+      "q": "Can you lease Phoenix as a service?",
+      "a": "Sanctuary described a labor-as-a-service model when it launched Phoenix in 2023, but its current site offers software and hands, not Phoenix robots.",
+      "sourceUrl": "https://www.geekwire.com/2023/with-new-phoenix-robot-sanctuary-ai-looks-to-usher-in-a-new-era-of-labor-as-a-service/"
+    }
+  ],
+  "notes": "Hourly figures (for example CAD 20-30 per hour) and $150,000-$300,000 unit prices on third-party sites have no primary source and are not included. Sanctuary's site now presents hardware-agnostic physical AI for existing industrial robots."
+}

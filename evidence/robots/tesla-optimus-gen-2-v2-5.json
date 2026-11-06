@@ -1,0 +1,747 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "tesla-optimus-gen-2-v2-5",
+    "name": "Tesla Optimus Gen 2 / v2.5",
+    "company_id": "tesla",
+    "company_name": "Tesla",
+    "country": "United States",
+    "generation": "second-generation Optimus plus reported v2.5 intermediate prototype",
+    "first_announced_date": "2023-12-13",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Prototype/R&D program with company demos, human-assisted event interactions, disputed factory-use claims, and official 2026 manufacturing updates that list Optimus capacity as construction/pre-volume-production rather than active commercial deployment.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "factory R&D",
+      "general-purpose humanoid research"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as current public Optimus Gen 2/v2.5 prototype evidence as of 2026-05-16, but Tesla's Q4 2025 update says Gen 3 would include major upgrades from v2.5, including the latest hand design."
+  },
+  "specs": {
+    "height": {
+      "original_value": "Standing 5 feet 8 inches (1.73 m) tall",
+      "value": 173,
+      "unit": "cm",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_010"
+      ],
+      "notes": "Reported by blog.robozaps.com, added 2026-10-29 by automated spec fill."
+    },
+    "weight": {
+      "original_value": "57 kg (125 lb)",
+      "value": 57,
+      "unit": "kg",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_010"
+      ],
+      "notes": "Reported by blog.robozaps.com, added 2026-10-29 by automated spec fill."
+    },
+    "payload": {
+      "original_value": "20 kg payload (verified at Tesla AI Day 2023); no peak-lift figure published by Tesla",
+      "value": 20,
+      "unit": "kg",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_010"
+      ],
+      "notes": "Reported by blog.robozaps.com, added 2026-10-29 by automated spec fill; No peak-lift figure published by Tesla."
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 40,
+      "notes": "Reported by blog.robozaps.com, added 2026-10-29 by automated spec fill; Approximate total body DOF; 11 DOF per hand.",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_010"
+      ],
+      "original_value": "~40 (11 per hand)",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "Up to 5 mph (~8 km/h)",
+      "value": 2.2352,
+      "unit": "m/s",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_010"
+      ],
+      "notes": "Reported by blog.robozaps.com, added 2026-10-29 by automated spec fill; Top walking speed; 5 mph converted to m/s."
+    },
+    "hands": {
+      "description": "Tesla Gen 2 demo coverage reported tactile sensing on fingers and 11-DoF hands.",
+      "degrees_of_freedom": 11,
+      "force_feedback": "tactile sensing claimed in demo coverage",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": null,
+      "source_ids": []
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_007",
+        "tesla-optimus-gen-2-v2-5_source_009"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Tesla has claimed autonomous navigation and simple factory tasks, but public evidence remains company-controlled and later reporting/call commentary frames Optimus as basic-task/R&D rather than proven autonomous work.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002",
+        "tesla-optimus-gen-2-v2-5_source_004",
+        "tesla-optimus-gen-2-v2-5_source_005",
+        "tesla-optimus-gen-2-v2-5_source_008"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Company demos show improving locomotion; no independent benchmark.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Tesla has official Optimus factory construction/mass-production plans, but no customer deployment and no public evidence of productive commercial work; 2026 reporting/call commentary says only simple/basic factory tasks had been done.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_005",
+        "tesla-optimus-gen-2-v2-5_source_007",
+        "tesla-optimus-gen-2-v2-5_source_008",
+        "tesla-optimus-gen-2-v2-5_source_009"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001",
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_001",
+      "date": null,
+      "title": "Gen 2 investor update",
+      "claim": "Tesla said it introduced second-generation Optimus using Tesla-designed actuators/sensors and improved AI capabilities.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official investor update, sparse detail.",
+      "arena_relevance": "Current generation identity.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Tesla investor update says second-generation Optimus was introduced.",
+      "source_location": "Tesla Q4/FY 2023 update PDF",
+      "verification_notes": "Official but high-level.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_002",
+      "date": null,
+      "title": "Gen 2 demo claims",
+      "claim": "Tesla-produced Gen 2 demo coverage reported walking, squatting, egg handling, dancing, tactile fingers, 11-DoF hands, and a 30 percent walking-speed improvement.",
+      "category": [
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-produced video reported by media.",
+      "arena_relevance": "Demo evidence only.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Ars summarized the Tesla Gen 2 video and claimed improvements.",
+      "source_location": "Ars Technica Gen 2 demo report",
+      "verification_notes": "Observable clips; no independent benchmark.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_003",
+      "date": null,
+      "title": "Laundry demo was not autonomous",
+      "claim": "The January 2024 shirt-folding demo should not be credited as autonomous; Musk clarified Optimus could not yet do that autonomously.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_003"
+      ],
+      "confidence": 0.86,
+      "notes": "Negative/correction evidence.",
+      "arena_relevance": "Prevents demo overclaiming.",
+      "claim_type": "correction",
+      "supporting_excerpt": "TechCrunch reported the demo was pre-scripted/not autonomous.",
+      "source_location": "TechCrunch laundry demo report",
+      "verification_notes": "Strong caution for autonomy scoring.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "prevents_overclaim"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_004",
+      "date": null,
+      "title": "Event interactions human-assisted",
+      "claim": "We Robot service/social interactions were reported as human-assisted to some extent and should not count as autonomous service evidence.",
+      "category": [
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_004"
+      ],
+      "confidence": 0.78,
+      "notes": "Human assistance reported.",
+      "arena_relevance": "Separates event showmanship from autonomy.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Axios reported Tesla Optimus interactions needed human help.",
+      "source_location": "Axios event report",
+      "verification_notes": "Use as teleoperation caution.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [
+          "human_interaction",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "prevents_overclaim"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_005",
+      "date": "2026-01-28",
+      "title": "Q4 2025 call keeps factory work at basic/R&D level",
+      "claim": "On Tesla's Q4 2025 earnings call, Musk described Optimus as having done some basic factory tasks while older versions are deprecated during iteration; heise separately summarized the same call as Optimus still being in R&D and not materially productive.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_005",
+        "tesla-optimus-gen-2-v2-5_source_008"
+      ],
+      "confidence": 0.82,
+      "notes": "Strong negative/caveat evidence for deployment scoring; transcript is secondary-hosted but reports Tesla's earnings-call statements.",
+      "arena_relevance": "Prevents treating factory claims as sustained productive deployment.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Q4 2025 call transcript says Optimus had done basic tasks and older versions were deprecated; heise reports Musk said the robot remained in R&D.",
+      "source_location": "Tesla Q4 2025 earnings call transcript and heise call coverage",
+      "verification_notes": "Use as current caveat against productive deployment; no unit count, uptime, task duration, or customer validation was provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "negative"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_006",
+      "date": "2026-04-22",
+      "title": "Official updates show Optimus factory capacity under construction",
+      "claim": "Tesla's Q4 2025/Q1 2026 update decks list Optimus manufacturing capacity in California/Texas as construction or being installed in anticipation of volume production, not current production output.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_007",
+        "tesla-optimus-gen-2-v2-5_source_009"
+      ],
+      "confidence": 0.9,
+      "notes": "Official manufacturing-status evidence; supports future production intent but not current robot capability.",
+      "arena_relevance": "Distinguishes manufacturing preparation from deployed robot usefulness.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Tesla update decks list Optimus capacity as construction and production lines being installed in anticipation of volume production.",
+      "source_location": "Tesla Q4 2025 and Q1 2026 update decks",
+      "verification_notes": "Official source; should not be scored as customer deployment or active production volume.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "prevents_overclaim"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_evidence_007",
+      "date": "2026-01-28",
+      "title": "v2.5 framed as transitional before Gen 3",
+      "claim": "Tesla's Q4 2025 update says Gen 3 will include major upgrades from version 2.5, including Tesla's latest hand design, making v2.5 a transitional prototype rather than the expected production design.",
+      "category": [
+        "manipulation_dexterity",
+        "currentness"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_007"
+      ],
+      "confidence": 0.88,
+      "notes": "Official currentness and hardware-transition evidence.",
+      "arena_relevance": "Prevents over-weighting v2.5 demos as production-hardware proof.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Tesla says Gen 3 would include major upgrades from v2.5, including the latest hand design.",
+      "source_location": "Tesla Q4 2025 update deck robotics section",
+      "verification_notes": "Official roadmap claim; no independent Gen 3 benchmark or production evidence included.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "prevents_overclaim"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "tesla-optimus-gen-2-v2-5_demo_001",
+      "title": "Tesla Gen 2 promotional video",
+      "date": "2023-12-13",
+      "observed_capabilities": [
+        "walking",
+        "squats",
+        "egg handling",
+        "dancing"
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "walking; squats; egg handling; dancing",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_demo_002",
+      "title": "We Robot event interactions",
+      "date": "2024-10-10",
+      "observed_capabilities": [
+        "bartending/service interaction reported at event"
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Reporting says interactions were human-assisted to some extent.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "bartending/service interaction reported at event",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted; official 2026 update decks show Optimus production capacity under construction rather than reporting deployed customer or production fleet metrics.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Autonomous laundry folding",
+      "reason": "Musk clarified the demo was not autonomous.",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_003"
+      ]
+    },
+    {
+      "claim": "Autonomous We Robot service interactions",
+      "reason": "Reporting described human assistance.",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_004"
+      ]
+    },
+    {
+      "claim": "Current productive factory deployment",
+      "reason": "Later reporting/call commentary conflicts with earlier Musk claims, and official update decks show production preparation rather than active production deployment metrics.",
+      "source_ids": [
+        "tesla-optimus-gen-2-v2-5_source_005",
+        "tesla-optimus-gen-2-v2-5_source_007",
+        "tesla-optimus-gen-2-v2-5_source_008",
+        "tesla-optimus-gen-2-v2-5_source_009"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 3,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Tesla Optimus Gen 2/v2.5 has company demo evidence for locomotion and basic manipulation, but public autonomy and deployment claims are heavily caveated by disclosed non-autonomous or human-assisted demos, official construction/pre-volume-production status, and 2026 call/reporting that frames factory work as basic/R&D rather than productive deployment.",
+    "strongest_evidence": [
+      "Tesla Gen 2 demo clips",
+      "Official investor mention of second-generation Optimus",
+      "Official 2026 manufacturing-status updates",
+      "Clear teleoperation/autonomy cautions"
+    ],
+    "weakest_evidence": [
+      "No customer deployment",
+      "No independent benchmark",
+      "v2.5 specs are thin",
+      "Official sources do not provide uptime, intervention rate, cycle time, or task success metrics"
+    ],
+    "known_do_not_credit": [
+      "Autonomous laundry folding",
+      "Autonomous event service interactions",
+      "Verified productive factory work"
+    ],
+    "recommended_confidence": "low"
+  },
+  "source_ids": [
+    "tesla-optimus-gen-2-v2-5_source_001",
+    "tesla-optimus-gen-2-v2-5_source_002",
+    "tesla-optimus-gen-2-v2-5_source_003",
+    "tesla-optimus-gen-2-v2-5_source_004",
+    "tesla-optimus-gen-2-v2-5_source_005",
+    "tesla-optimus-gen-2-v2-5_source_006",
+    "tesla-optimus-gen-2-v2-5_source_007",
+    "tesla-optimus-gen-2-v2-5_source_008",
+    "tesla-optimus-gen-2-v2-5_source_009",
+    "tesla-optimus-gen-2-v2-5_source_010"
+  ],
+  "sources": [
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_001",
+      "title": "Q4 and FY 2023 Update",
+      "publisher": "Tesla via Electrek PDF mirror",
+      "url": "https://electrek.co/wp-content/uploads/sites/3/2024/01/TSLA-Q4-2023-Update.pdf",
+      "date_published": "2024-01-24",
+      "date_accessed": "2026-05-16",
+      "source_type": "regulatory_or_filing",
+      "reliability": "medium",
+      "reliability_notes": "Tesla investor update mentions second-generation Optimus."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_002",
+      "title": "Tesla unveils its latest humanoid robot, Optimus Gen 2",
+      "publisher": "Ars Technica",
+      "url": "https://arstechnica.com/information-technology/2023/12/teslas-latest-humanoid-robot-optimus-gen-2-can-handle-eggs-without-cracking-them/",
+      "date_published": "2023-12-13",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reports Tesla Gen 2 demo claims and observable clips."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_003",
+      "title": "Elon’s Tesla robot is sort of ok at folding laundry in pre-scripted demo",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2024/01/15/elons-tesla-robot-is-sort-of-ok-at-folding-laundry-in-pre-scripted-demo/",
+      "date_published": "2024-01-15",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reports Musk clarification that laundry folding was not autonomous."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_004",
+      "title": "Tesla Optimus humanoid robot needed human help at AI event",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2024/10/17/elon-musk-tesla-optimus-humanoid-robot",
+      "date_published": "2024-10-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reports human assistance for We Robot interactions."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_005",
+      "title": "Musk admits no Optimus robots are doing useful work",
+      "publisher": "Electrek",
+      "url": "https://electrek.co/2026/01/28/musk-admits-no-optimus-robots-are-doing-useful-work-at-tesla-after-claiming-otherwise/",
+      "date_published": "2026-01-28",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary report of currentness conflict around factory usefulness."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_006",
+      "title": "Tesla Optimus 2.5 humanoid robot: slow AI assistant, bumpy gait",
+      "publisher": "heise online",
+      "url": "https://www.heise.de/en/news/Tesla-Optimus-2-5-humanoid-robot-slow-AI-assistant-bumpy-gait-10637320.html",
+      "date_published": "2025-09-09",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary v2.5 report; thin evidence."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_007",
+      "title": "Q4 and FY 2025 Update",
+      "publisher": "Tesla Investor Relations / SEC filing exhibit",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003837/tsla-20260128-gen.pdf",
+      "date_published": "2026-01-28",
+      "date_accessed": "2026-05-16",
+      "source_type": "regulatory_or_filing",
+      "reliability": "high",
+      "reliability_notes": "Official Tesla update filed with the SEC; includes Optimus manufacturing status and v2.5-to-Gen-3 roadmap language."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_008",
+      "title": "Tesla Q4 2025 Earnings Call Transcript",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/01/28/tesla-tsla-q4-2025-earnings-call-transcript/",
+      "date_published": "2026-01-28",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Third-party transcript of Tesla's Q4 2025 earnings call; used for Musk statements about Optimus basic factory tasks and deprecating older versions."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_009",
+      "title": "Q1 2026 Update",
+      "publisher": "Tesla via Electrek PDF mirror",
+      "url": "https://electrek.co/wp-content/uploads/sites/3/2026/04/TSLA-Q1-2026-Update.pdf",
+      "date_published": "2026-04-22",
+      "date_accessed": "2026-05-16",
+      "source_type": "regulatory_or_filing",
+      "reliability": "medium",
+      "reliability_notes": "Tesla quarterly update PDF mirror; lists Optimus capacity in California/Texas as construction and factory preparations ahead of mass production."
+    },
+    {
+      "id": "tesla-optimus-gen-2-v2-5_source_010",
+      "title": "Tesla Optimus vs Boston Dynamics Atlas: 2026 Specs & Price",
+      "publisher": "blog.robozaps.com",
+      "url": "https://blog.robozaps.com/b/tesla-optimus-vs-boston-dynamics-atlas",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Tesla Optimus Gen 2/v2.5 is a current prototype line with strong hype and weak verified deployment proof.",
+    "strongest_positive_evidence": [
+      "Visible Gen 2 demo behaviors",
+      "Official Tesla manufacturing-status evidence showing Optimus lines under construction",
+      "Explicit negative evidence against overclaiming"
+    ],
+    "weakest_or_missing_evidence": [
+      "No useful autonomous deployment evidence",
+      "No independent benchmark",
+      "No public uptime, intervention-rate, cycle-time, or useful-work metrics"
+    ],
+    "conflicting_claims": [
+      "Earlier factory-use claims conflict with later reporting/call commentary that Optimus had only done basic tasks and remained in R&D/pre-volume-production."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Autonomous laundry folding",
+      "Autonomous We Robot service interactions",
+      "Current productive factory deployment"
+    ]
+  }
+}

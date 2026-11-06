@@ -1,0 +1,1051 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "engineai-t800",
+    "name": "EngineAI T800",
+    "company_id": "engineai",
+    "company_name": "EngineAI",
+    "country": "China",
+    "generation": "full-size high-mobility general-purpose humanoid",
+    "first_announced_date": "2025-12-02",
+    "release_date": "2026-05-29",
+    "status": "purchasable",
+    "status_notes": "Officially launched 2025-12-02 with pricing from 180,000 yuan and four versions. First batch rolled off production line 2026-05-29 and mass delivery was announced. No public retail checkout or named customer deployment was found. addoobot lists the robot as commercially available.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "industrial and commercial deployment",
+      "warehouse logistics",
+      "hotel and retail services",
+      "human-robot collaboration",
+      "high-dynamic and heavy-duty operational environments"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.73m",
+      "value": 173,
+      "unit": "cm",
+      "notes": "Official launch press release says 1.73m; official site lists 173CM.",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "75kg",
+      "value": 75,
+      "unit": "kg",
+      "notes": "Official launch press release says optimized self-weight of 75kg. addoobot technical specifications list 84.5 kg; the official value is used and the conflict is kept in researcher_notes.",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ]
+    },
+    "payload": {
+      "original_value": "5 kg (per arm)",
+      "value": 5,
+      "unit": "kg",
+      "notes": "addoobot lists max payload as 5 kg per arm. No official payload figure was found in EngineAI sources.",
+      "source_ids": [
+        "engineai-t800_source_005"
+      ]
+    },
+    "runtime": {
+      "original_value": "4-5 hours on solid-state battery",
+      "value": 4,
+      "unit": "hours",
+      "notes": "Official press release claims stable 4-5 hour runtime. addoobot lists average runtime as 2 hours; this conflict is noted in researcher_notes.",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ]
+    },
+    "battery": {
+      "original_value": "solid-state power battery",
+      "value": null,
+      "unit": null,
+      "notes": "EngineAI claims the industry's first high-performance solid-state power battery for humanoid robots. addoobot lists a removable ternary lithium battery with 1.22 kWh capacity; this conflict is not used as primary.",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 29,
+      "notes": "Official site lists 29-DOF total excluding the dexterous hand. addoobot describes Basic 25 DoF body, Pro 43 total DoF including hands, Max 46 total DoF including hands; no official total including hand was found in EngineAI sources.",
+      "source_ids": [
+        "engineai-t800_source_002",
+        "engineai-t800_source_005"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.5 m/s",
+      "value": 1.5,
+      "unit": "m/s",
+      "notes": "addoobot lists max locomotion speed as 1.5 m/s. No official walking speed was found in EngineAI sources.",
+      "source_ids": [
+        "engineai-t800_source_005"
+      ]
+    },
+    "hands": {
+      "description": "EngineAI describes a fully self-developed multi-dimensional sensing dexterous hand with biomimetic design, tactile sensing systems and precise force control. Pro and Max configurations offer seven degrees of freedom per hand according to addoobot.",
+      "degrees_of_freedom": 7,
+      "force_feedback": "tactile sensing and precise force control (company claim)",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "360-degree omnidirectional LiDAR (official claim)",
+        "binocular cameras on development-oriented configurations (addoobot)"
+      ],
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ]
+    },
+    "compute": {
+      "description": "addoobot lists Basic with Orin NX 16 GB, Developer/Pro with NVIDIA Jetson AGX Orin 64 GB, and Max with 5G connectivity. No official compute disclosure was found in EngineAI sources.",
+      "source_ids": [
+        "engineai-t800_source_005"
+      ]
+    },
+    "actuators": {
+      "description": "EngineAI claims a full-stack integrated joint module with peak torque of 450 N·m and instantaneous 14,000 W peak joint power. addoobot lists high-speed internal-rotor permanent magnet synchronous motors. Full-joint active cooling system for legs is claimed.",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 180000,
+      "price_currency": "CNY",
+      "purchase_or_waitlist_url": "https://en.engineai.com.cn/product-t800",
+      "notes": "Official launch states T800 priced from 180,000 yuan with Base, Ecosystem, Pro and Max versions. Purchase path is contact sales; no online checkout or public waitlist was found.",
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "EngineAI claims a self-developed dexterous hand with tactile sensing and force control, and addoobot describes Pro/Max configurations with seven degrees of freedom per hand. A CES 2026 press release mentions live demonstrations of T800 full-body coordination and fine motor control, but no specific fine-manipulation task success rates or video transcripts were reviewed.",
+      "evidence_level": 2,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_003",
+        "engineai-t800_source_005"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or success rates.",
+        "Video content beyond titles was not reviewed; no transcript available."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "EngineAI claims AI-powered intelligent path planning and millisecond-level environmental modeling. addoobot lists operation as semi-autonomous and teleoperation. No autonomous task completion, intervention logs, or success rate was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ],
+      "caveats": [
+        "Autonomy is company-claimed only.",
+        "No autonomous task demo or independent audit."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official claims include 450 N·m peak torque, 14,000 W instantaneous joint peak power, and high-dynamic scenarios like martial arts and running. A CES 2026 press release describes live demonstrations of full-body coordination. Public video titles from EngineAI and third parties reference T800 dynamic moves and CGI rumor rebuttals, but no video content was reviewed.",
+      "evidence_level": 2,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_003",
+        "engineai-t800_source_006",
+        "engineai-t800_source_008",
+        "engineai-t800_source_009",
+        "engineai-t800_source_010",
+        "engineai-t800_source_011"
+      ],
+      "caveats": [
+        "No fall-rate or disturbance recovery data.",
+        "Video titles only; no transcript or independent measurement."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "EngineAI claims a 360-degree omnidirectional LiDAR system enabling millisecond-level environmental modeling and AI path planning for obstacle avoidance. addoobot describes binocular cameras on development configurations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ],
+      "caveats": [
+        "No third-party perception benchmark or obstacle avoidance demo detail."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official press release describes a dynamic interactive light strip with multi-mode lighting language to display device status and interaction commands, enhancing human-machine collaboration. No conversational AI or instruction-following demonstration was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "caveats": [
+        "No demonstrated conversational reliability or natural language interaction."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "EngineAI claims a 4-5 hour solid-state battery runtime and a full-joint active cooling system for legs. The Shenzhen manufacturing base press release states each robot passes 79 full-dimensional quality inspections and 46 working condition simulation tests before delivery, with a new robot rolling off the line every 15 minutes. addoobot lists a conflicting average runtime of 2 hours.",
+      "evidence_level": 3,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_004",
+        "engineai-t800_source_005"
+      ],
+      "caveats": [
+        "Runtime conflict between 4-5 hours official and 2 hours directory.",
+        "Production/test counts are company-reported; no independent audit."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Official launch describes a 1.73m, 75kg humanoid with ergonomic design, biomimetic noise-resistant foot, anti-slip wear-resistant components, and an interactive light strip. addoobot warns users to maintain safe distances from the high-power drive system.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_005"
+      ],
+      "caveats": [
+        "No third-party safety certification of the full robot was found.",
+        "Powerful joints and heavy weight raise safety concerns."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "The May 2026 press release announces the first batch of T800 robots rolling off the Shenzhen production line and mass delivery, with a 10,000-unit scalable delivery capability. No named external customer, operating hours, or output metrics were found.",
+      "evidence_level": 3,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_004"
+      ],
+      "caveats": [
+        "No named customer deployment or external use case metrics.",
+        "Production and delivery claims are company-reported."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Official launch states T800 is priced from 180,000 yuan with four versions (Base, Ecosystem, Pro, Max). Official site links to a product page. Purchase path is contact sales; no online checkout or waitlist was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_002"
+      ],
+      "caveats": [
+        "Price is from the Base version; higher versions cost more.",
+        "No independent verification of actual transaction prices or availability."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "engineai-t800_evidence_001",
+      "date": "2025-12-02",
+      "title": "T800 launch and starting price",
+      "claim": "EngineAI officially launched the T800 full-size universal humanoid robot at a starting price of 180,000 yuan with four versions.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official paid press release; company claims.",
+      "arena_relevance": "Establishes market availability and price for comparison.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The product launch campaign was promptly initiated, with the T800 priced from 180,000 yuan.",
+      "source_location": "PR Newswire via Yahoo Finance, launch announcement",
+      "verification_notes": "Company press release; no independent transaction data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_002",
+      "date": "2025-12-02",
+      "title": "T800 height and weight",
+      "claim": "T800 is designed for average adult height of 1.73m and optimized self-weight of 75kg.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official launch claim.",
+      "arena_relevance": "Defines size and weight for human environment fit.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Designed for the average adult height of 1.73m and an optimized self-weight of 75kg, it achieves a human-like form that aligns with mainstream aesthetics.",
+      "source_location": "PR Newswire via Yahoo Finance, Bionic Aesthetics section",
+      "verification_notes": "Company spec; conflict with addoobot weight of 84.5 kg.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_003",
+      "date": "2025-12-02",
+      "title": "T800 peak joint torque and power",
+      "claim": "T800 delivers peak torque of 450 N·m and instantaneous 14,000 W peak joint power through integrated joint modules.",
+      "category": [
+        "mobility_whole_body_control",
+        "actuators"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001",
+        "engineai-t800_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Official launch and CES press release; not independently measured.",
+      "arena_relevance": "High dynamic capability claim for mobility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Powered by a full-stack integrated joint module, the system delivers a peak torque of 450N,m through coordinated output. Its instantaneous 14,000W peak power joint, combined with multi-degree-of-freedom joints in critical areas like the neck, waist, and hands, enables highly anthropomorphic flexibility.",
+      "source_location": "PR Newswire via Yahoo Finance, Full-Stack Self-Developed Core Empowerment section",
+      "verification_notes": "Company claim repeated at CES.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_004",
+      "date": "2025-12-02",
+      "title": "T800 solid-state battery and runtime",
+      "claim": "T800 features an industry-first high-performance solid-state power battery enabling a stable 4-5 hour runtime.",
+      "category": [
+        "endurance_reliability",
+        "battery"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official company claim; no independent battery test.",
+      "arena_relevance": "Endurance claim for industrial use.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "the EngineAI T800 features the industry's first high-performance solid-state power battery specifically designed for humanoid robots. This innovation enables a stable 4-5 hour runtime, effectively overcoming the endurance limitations of conventional batteries in this field.",
+      "source_location": "PR Newswire via Yahoo Finance, Energy Cornerstone section",
+      "verification_notes": "Conflict with addoobot's 2-hour average runtime and ternary lithium battery.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_005",
+      "date": "2025-12-02",
+      "title": "T800 dexterous hand",
+      "claim": "T800 is equipped with a fully self-developed multi-dimensional sensing dexterous hand integrating tactile sensing and precise force control.",
+      "category": [
+        "manipulation_dexterity",
+        "hands"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official claim; no dexterity benchmarks.",
+      "arena_relevance": "Supports manipulation capability.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The EngineAI T800 is equipped with a fully self-developed multi-dimensional sensing dexterous hand, providing core technical support for precision operations.",
+      "source_location": "PR Newswire via Yahoo Finance, Full-Stack Self-Developed Perception Dexterous Hand section",
+      "verification_notes": "No independent dexterity test or success rate.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_006",
+      "date": "2025-12-02",
+      "title": "T800 360-degree LiDAR and path planning",
+      "claim": "T800 integrates 360-degree omnidirectional LiDAR with millisecond-level environmental modeling and AI-powered intelligent path planning.",
+      "category": [
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official company claim; no autonomous navigation demo detail.",
+      "arena_relevance": "Perception and autonomy hardware claim.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The T800 integrates its proprietary micro-joint electromechanical technology with a 360° omnidirectional LiDAR system, enabling millisecond-level environmental modeling and AI-powered intelligent path planning.",
+      "source_location": "PR Newswire via Yahoo Finance, Full-Stack Self-Developed Core Empowerment section",
+      "verification_notes": "No benchmark or independent testing.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_007",
+      "date": "2025-12-02",
+      "title": "T800 full-joint active cooling system",
+      "claim": "T800 features a full-joint active cooling system for the legs to regulate component operating temperature.",
+      "category": [
+        "endurance_reliability",
+        "actuators"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official claim; no thermal testing data.",
+      "arena_relevance": "Reliability under continuous operation.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The product features a full-joint active cooling system for the legs, which employs high-precision temperature control technology to dynamically regulate core components' operating temperature.",
+      "source_location": "PR Newswire via Yahoo Finance, Energy Cornerstone section",
+      "verification_notes": "Company claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_008",
+      "date": null,
+      "title": "Official site T800 specs",
+      "claim": "Official EngineAI site lists T800 at 173CM height, 29-DOF total excluding dexterous hand, and maximum joint torque up to 450N·m.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page.",
+      "arena_relevance": "Confirms core specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "173CM Height\n29-DOF Total DOF(excluding the dexterous hand)\n450N·m Maximum joint torque up to",
+      "source_location": "EngineAI official site, T800 product card",
+      "verification_notes": "Official page; values are company specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_009",
+      "date": "2026-01-07",
+      "title": "CES 2026 live demonstrations",
+      "claim": "At CES 2026, EngineAI showcased T800 and PM01 with live demonstrations highlighting full-body coordination and fine motor control capabilities.",
+      "category": [
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "engineai-t800_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Official trade show press release; no video transcript.",
+      "arena_relevance": "Public live demonstration evidence, though unverified.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "The ENGINEAI booth attracted steady visitor interest through live demonstrations of the T800 and PM01, highlighting full-body coordination and fine motor control capabilities.",
+      "source_location": "PR Newswire UK, CES 2026 announcement",
+      "verification_notes": "Company description of live demos; no specific tasks or autonomy mode.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_010",
+      "date": "2026-01-07",
+      "title": "CES 2026 T800 joint torque",
+      "claim": "T800 is equipped with a fully-integrated high-torque joint module architecture capable of delivering up to 450 N·m peak torque and 14,000 W instantaneous joint peak power.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Repeated official claim.",
+      "arena_relevance": "Supports high dynamic mobility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "the T800 is equipped with a fully-integrated, high-torque joint module architecture capable of delivering up to 450 N•m of peak torque and 14,000 W of instantaneous joint peak power.",
+      "source_location": "PR Newswire UK, CES 2026 announcement",
+      "verification_notes": "Company claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_012",
+      "date": "2026-05-29",
+      "title": "T800 production cadence and quality checks",
+      "claim": "A new humanoid robot can roll off the production line every 15 minutes, and each robot passes 79 full-dimensional quality inspections and 46 working condition simulation tests before delivery.",
+      "category": [
+        "endurance_reliability",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "engineai-t800_source_004"
+      ],
+      "confidence": 0.75,
+      "notes": "Company-reported production data.",
+      "arena_relevance": "Quantified reliability and manufacturing capability claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Each robot must pass 79 full-dimensional quality inspections and 46 working condition simulation tests before delivery, ensuring consistent high performance and stability across every unit.",
+      "source_location": "PR Newswire, Four Strategic Pillars section",
+      "verification_notes": "No independent verification of inspection counts.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_013",
+      "date": null,
+      "title": "addoobot conflicting specs",
+      "claim": "addoobot lists T800 max payload 5 kg per arm, weight 84.5 kg, max locomotion speed 1.5 m/s, average runtime 2 hours, and battery recharge time 2.5 hours.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_005"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory aggregation; conflicts with official weight and runtime.",
+      "arena_relevance": "Conflicting specs should lower confidence in official endurance.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Max. Payload: 5 kg (per arm)",
+      "source_location": "addoobot technical specifications",
+      "verification_notes": "Not independently verified; likely based on different configuration or prototype.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "human_environment_fit"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_014",
+      "date": null,
+      "title": "addoobot T800 configurations",
+      "claim": "addoobot describes four T800 editions: Basic 25 DoF body with no dexterous hands, Developer 25 DoF with LiDAR, Pro 43 total DoF including 7 DoF hands, and Max 46 total DoF including additional waist articulation and 5G.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory detail; not confirmed by EngineAI sources.",
+      "arena_relevance": "Shows configuration differences affecting capability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Basic: 25 DoF body, five-axis arms, no dexterous hands, Orin NX 16 GB and basic camera sensing.",
+      "source_location": "addoobot, Four versions for different needs",
+      "verification_notes": "Potentially outdated or based on dealer information.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-t800_evidence_015",
+      "date": null,
+      "title": "addoobot operational status",
+      "claim": "addoobot lists T800 as commercially available, with operation semi-autonomous and teleoperation, and tasks including bipedal walking, running, object handling, and logistics research.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-t800_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory summary; not official.",
+      "arena_relevance": "Indicates commercial availability and autonomy mode classification.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Status: Commercially available",
+      "source_location": "addoobot, Summary section",
+      "verification_notes": "Autonomy classification from directory, not verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "engineai-t800_demo_001",
+      "title": "EngineAI T800: Born to Disrupt!",
+      "date": "2025-12-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-t800_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not reviewed."
+      ],
+      "editing_notes": "Manual video review required; no timestamps verified.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation disclosure in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-t800_demo_002",
+      "title": "EngineAI T800 BTS Footage: Setting the Record Straight on CGI Rumors",
+      "date": "2025-12-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-t800_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not reviewed."
+      ],
+      "editing_notes": "Manual video review required; no timestamps verified.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation disclosure in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-t800_demo_003",
+      "title": "Watch : EngineAI T800's Reveal Video To Refute Claims CGI Rumors",
+      "date": "2025-12-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-t800_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not reviewed."
+      ],
+      "editing_notes": "Manual video review required; no timestamps verified.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation disclosure in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-t800_demo_004",
+      "title": "Watch : EngineAI’s T800 Humanoid Kicks Own CEO To Shut Down CGI Claims",
+      "date": "2025-12-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-t800_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not reviewed."
+      ],
+      "editing_notes": "Manual video review required; no timestamps verified.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation disclosure in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-t800_demo_005",
+      "title": "CES 2026 | EngineAI Humanoid Robots Featuring the T800",
+      "date": "2026-01-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CES 2026 booth",
+      "source_ids": [
+        "engineai-t800_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not reviewed."
+      ],
+      "editing_notes": "Manual video review required; no timestamps verified.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation disclosure in title.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Named customer deployments",
+      "description": "No named external customer, operating hours, or output metrics were found for T800. Production rollout and mass delivery are announced but not linked to specific customer use cases.",
+      "impact_on_arena_scoring": "Commercial deployment proof remains weak despite production claims."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "addoobot lists weight 84.5 kg, average runtime 2 hours, and a removable ternary lithium battery, while EngineAI claims 75 kg, 4-5 hours runtime, and solid-state battery. Official values are used but confidence is reduced.",
+      "impact_on_arena_scoring": "Endurance and human_environment_fit scores should be cautious."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "No autonomous task execution, intervention logs, or independent audit was found. addoobot classifies operation as semi-autonomous/teleoperation. Video titles do not disclose execution mode.",
+      "impact_on_arena_scoring": "Do not credit autonomous task execution beyond company claims."
+    },
+    {
+      "topic": "Video content",
+      "description": "Only video titles were available; no transcripts or content descriptions were reviewed. Demo capabilities cannot be confirmed.",
+      "impact_on_arena_scoring": "Mobility and manipulation demos remain weakly evidenced."
+    },
+    {
+      "topic": "Safety certification",
+      "description": "No full-robot safety certification or independent safety testing was found. The robot has powerful joints and a heavy body.",
+      "impact_on_arena_scoring": "Human-proximity scenarios should be treated cautiously."
+    },
+    {
+      "topic": "Purchase path",
+      "description": "Price is from 180,000 yuan for the Base version, but purchase is via contact sales. No online checkout or public waitlist was found.",
+      "impact_on_arena_scoring": "Accessibility is limited to enterprise inquiries."
+    }
+  ],
+  "source_ids": [
+    "engineai-t800_source_001",
+    "engineai-t800_source_002",
+    "engineai-t800_source_003",
+    "engineai-t800_source_004",
+    "engineai-t800_source_005",
+    "engineai-t800_source_006",
+    "engineai-t800_source_007",
+    "engineai-t800_source_008",
+    "engineai-t800_source_009",
+    "engineai-t800_source_010",
+    "engineai-t800_source_011"
+  ],
+  "sources": [
+    {
+      "id": "engineai-t800_source_001",
+      "title": "The Pinnacle of Humanoid Technology - The EngineAI T800 Is Officially Unveiled",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/pinnacle-humanoid-technology-engineai-t800-113100318.html",
+      "date_published": "2025-12-02",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Paid press release via Newsfile; company claims."
+    },
+    {
+      "id": "engineai-t800_source_002",
+      "title": "ENGINEAI",
+      "publisher": "EngineAI",
+      "url": "https://en.engineai.com.cn/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official site; company specs."
+    },
+    {
+      "id": "engineai-t800_source_003",
+      "title": "ENGINEAI Robotics Technology Introduces the T800 Humanoid Robot at CES 2026",
+      "publisher": "PR Newswire UK",
+      "url": "https://www.prnewswire.co.uk/news-releases/engineai-robotics-technology-introduces-the-t800-humanoid-robot-at-ces-2026-302655099.html",
+      "date_published": "2026-01-07",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official trade show press release."
+    },
+    {
+      "id": "engineai-t800_source_004",
+      "title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/il/news-releases/engineai-launches-shenzhen-intelligent-manufacturing-base-as-first-batch-of-t800-humanoid-robots-roll-off-the-production-line-to-begin-mass-delivery-302785446.html",
+      "date_published": "2026-05-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official production and quality claims."
+    },
+    {
+      "id": "engineai-t800_source_005",
+      "title": "ENGINEAI T800 Humanoid Robot | Explore, Learn & Compare",
+      "publisher": "addoobot",
+      "url": "https://www.addoobot.com/robots-&-AI/humanoids/338/engineai-t800-humanoid-robot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party directory; some specs conflict with official."
+    },
+    {
+      "id": "engineai-t800_source_006",
+      "title": "EngineAI T800: Born to Disrupt! #EngineAI #robotics  #newtechnology  #newproduct",
+      "publisher": "YouTube Engineai Robot",
+      "url": "https://www.youtube.com/watch?v=FGcQqyCaG5s",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; no transcript reviewed."
+    },
+    {
+      "id": "engineai-t800_source_007",
+      "title": "EngineAI T800 Robot Review: Why This $25K Humanoid Has A HUGE Problem",
+      "publisher": "YouTube AI Perspectives",
+      "url": "https://www.youtube.com/watch?v=PTB_Z6vBq5I",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party review; no transcript reviewed."
+    },
+    {
+      "id": "engineai-t800_source_008",
+      "title": "EngineAI T800 BTS Footage: Setting the Record Straight on CGI Rumors",
+      "publisher": "YouTube Engineai Robot",
+      "url": "https://www.youtube.com/watch?v=Ts7oiCRK5Qw",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; no transcript reviewed."
+    },
+    {
+      "id": "engineai-t800_source_009",
+      "title": "Watch : EngineAI T800's Reveal Video To Refute Claims CGI Rumors",
+      "publisher": "YouTube OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=-fTmRGbiS50",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript reviewed."
+    },
+    {
+      "id": "engineai-t800_source_010",
+      "title": "Watch : EngineAI’s T800 Humanoid Kicks Own CEO To Shut Down CGI Claims",
+      "publisher": "YouTube OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=kfXopA3C5Nw",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript reviewed."
+    },
+    {
+      "id": "engineai-t800_source_011",
+      "title": "CES 2026 | EngineAI Humanoid Robots Featuring the T800",
+      "publisher": "YouTube RobotShopTV",
+      "url": "https://www.youtube.com/watch?v=G0QDsbjeqe8",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "EngineAI T800 is a full-size humanoid with strong official high-torque and production claims, but evidence is dominated by company sources. No named customer deployment or independent verification was found. Spec conflicts reduce confidence in endurance and weight.",
+    "strongest_positive_evidence": [
+      "Official launch with price from 180,000 yuan and four versions.",
+      "450 N·m peak torque and 14,000 W peak joint power claims repeated at CES 2026.",
+      "CES live demonstrations of full-body coordination and fine motor control.",
+      "May 2026 mass production first batch and 10,000-unit scalable delivery claim.",
+      "79 quality inspections and 46 working condition tests per robot before delivery."
+    ],
+    "weakest_or_missing_evidence": [
+      "No named customer deployment or external use case metrics.",
+      "No autonomous task execution or intervention logs.",
+      "No independent benchmark for mobility, manipulation, or perception.",
+      "Video contents not reviewed; only titles available.",
+      "No full-robot safety certification."
+    ],
+    "conflicting_claims": [
+      "Weight: 75 kg official vs 84.5 kg addoobot.",
+      "Runtime: 4-5 hours official vs 2 hours addoobot.",
+      "Battery type: solid-state official vs removable ternary lithium addoobot.",
+      "Walking speed: 1.5 m/s addoobot only; not in official sources."
+    ],
+    "recommended_arena_categories": [
+      "industrial_humanoid",
+      "service_humanoid",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit any specific customer deployment.",
+      "Do not treat production line cadence as proof of field reliability.",
+      "Do not credit autonomous task execution; addoobot lists semi-autonomous/teleoperation.",
+      "Do not describe video content beyond titles; no transcript reviewed.",
+      "Do not use addoobot conflicting specs as primary."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "T800 is EngineAI's current full-size high-mobility humanoid as of 2026-10-29. No successor model was found in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "T800 achieved world's first truly commercially mass-produced full-size general-purpose humanoid robot.",
+      "reason": "Marketing language in company press release; no independent verification.",
+      "source_ids": [
+        "engineai-t800_source_001"
+      ]
+    },
+    {
+      "claim": "T800 has payload of 5 kg per arm from addoobot.",
+      "reason": "Conflicting with absence of official payload; treated as secondary only.",
+      "source_ids": [
+        "engineai-t800_source_005"
+      ]
+    },
+    {
+      "claim": "T800 average runtime is 2 hours.",
+      "reason": "Conflicts with official 4-5 hours; addoobot likely different configuration; not used as primary.",
+      "source_ids": [
+        "engineai-t800_source_005"
+      ]
+    },
+    {
+      "claim": "T800 battery is a removable ternary lithium battery with 1.22 kWh.",
+      "reason": "Conflicts with official solid-state battery claim; no official capacity found.",
+      "source_ids": [
+        "engineai-t800_source_005"
+      ]
+    },
+    {
+      "claim": "Any specific video content shows T800 performing martial arts, running, or kicking CEO.",
+      "reason": "Only video titles were reviewed; no transcript or content description was available.",
+      "source_ids": [
+        "engineai-t800_source_006",
+        "engineai-t800_source_008",
+        "engineai-t800_source_009",
+        "engineai-t800_source_010",
+        "engineai-t800_source_011"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 6,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "EngineAI T800 is a full-size bipedal humanoid (1.73 m, 75 kg official) with 29 body DoF excluding dexterous hand, 450 N·m peak joint torque, and a claimed 4-5 hour solid-state battery runtime. It launched on 2025-12-02 from 180,000 yuan with four versions and was demonstrated at CES 2026. In May 2026, EngineAI announced mass production with first batch delivery and a 10,000-unit scalable capability. However, all strong evidence is company-reported. No named customer deployment, autonomous task execution, or independent verification was found. addoobot lists conflicting specs (84.5 kg, 2 h runtime, 1.22 kWh ternary battery) that lower confidence in endurance.",
+    "strongest_evidence": [
+      "Official launch with price and four versions (engineai-t800_evidence_001).",
+      "CES 2026 live demonstrations of full-body coordination and fine motor control (engineai-t800_evidence_009).",
+      "May 2026 mass production first batch and 10,000-unit delivery capability (engineai-t800_evidence_011).",
+      "79 quality inspections and 46 working condition tests before delivery (engineai-t800_evidence_012)."
+    ],
+    "weakest_evidence": [
+      "No named customer or deployment metrics.",
+      "Spec conflicts on weight, runtime, and battery type.",
+      "No video content reviewed; only titles.",
+      "No autonomy verification."
+    ],
+    "known_do_not_credit": [
+      "Named customer deployments.",
+      "Autonomous task execution.",
+      "Specific video capabilities beyond titles.",
+      "addoobot conflicting specs as primary values."
+    ],
+    "recommended_confidence": "low"
+  }
+}

@@ -1,0 +1,955 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "spirit-ai-moz1",
+    "name": "Spirit AI Moz1",
+    "company_id": "spirit-ai",
+    "company_name": "Spirit AI",
+    "country": "China",
+    "generation": "First-generation Moz wheeled humanoid",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "RoboBoom directory lists availability as Pilot. Gasgoo reports Moz robots have been introduced into JD.com retail settings for customer interaction and product demonstration. No official product page, price confirmation, or public sale channel was found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "office, meeting room cleaning and supply sorting",
+      "retail customer interaction and product demonstration",
+      "long-horizon room tidying from natural-language instructions",
+      "tea delivery and assistant scenarios (video titles only)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "160 cm",
+      "value": 160,
+      "unit": "cm",
+      "notes": "RoboBoom directory spec; not independently confirmed by the company or a primary source.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "70 kg",
+      "value": 70,
+      "unit": "kg",
+      "notes": "RoboBoom directory spec; not independently confirmed by the company or a primary source.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "Strength26 kg",
+      "value": 26,
+      "unit": "kg",
+      "notes": "Reported by RoboBoom, added 2026-10-29 by automated spec fill; Listed under Motion as 'Strength', not explicitly 'payload'; the same page also states a payload-to-weight ratio of 1:1 with 70 kg weight, so this figure is ambiguous..",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "3 h",
+      "value": 3,
+      "unit": "hours",
+      "notes": "RoboBoom directory spec. A later video title claims a 4-hour stress test, but the content was not transcribed.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity was not published in the reviewed sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 26,
+      "notes": "26 DoF excluding the dexterous hand. Gasgoo reports 26 DoF; RoboBoom also lists 26 DoF excluding dex hand.",
+      "source_ids": [
+        "spirit-ai-moz1_source_001",
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "3.5 km/h",
+      "value": 3.5,
+      "unit": "km/h",
+      "notes": "RoboBoom lists walking speed 3.5 km/h and max speed 3.6 km/h. Moz1 uses a wheeled omnidirectional base, so 'walking speed' is a directory term for platform movement.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "hands": {
+      "description": "Dual 7-DoF force/torque-position-hybrid bionic arms with 5 fingers per hand, according to RoboBoom. Full-body force control is claimed.",
+      "degrees_of_freedom": null,
+      "force_feedback": "full-body force control system (company claim via Gasgoo and RoboBoom)",
+      "source_ids": [
+        "spirit-ai-moz1_source_001",
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "RGB + depth cameras, approximately 1080p",
+        "full-body force control system",
+        "whole-body STO safety with high-precision collision detection"
+      ],
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Industrial CPU + AI accelerator/GPU (assumed) according to RoboBoom. Runs Spirit AI's self-developed VLA model Spirit V1 / V1.6. Operating system Linux-based/ROS.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Electric servo motors with harmonic/compact precision gears. Gasgoo reports high power-density force-control joints and high-speed whole-body control algorithms.",
+      "source_ids": [
+        "spirit-ai-moz1_source_001",
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "pilot",
+      "price": 150000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": null,
+      "notes": "RoboBoom directory lists price $150,000 and availability Pilot. No official company price or purchase path was found in the reviewed sources.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "RoboBoom and GlobalGPT describe Moz1 folding clothes, tidying offices, grabbing tissues, and executing dishwashing-related tasks such as loading dirty bowls. The WAIC 2026 demo reportedly put a cola in the refrigerator and loaded dirty bowls into the dishwasher. A video title claims office tea delivery using null space control.",
+      "evidence_level": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_002",
+        "spirit-ai-moz1_source_003",
+        "spirit-ai-moz1_source_006"
+      ],
+      "caveats": [
+        "No third-party dexterity benchmark or published success rates for Moz1 were found.",
+        "GlobalGPT's ~80% laundry success claim is a media summary, not a company-published metric.",
+        "Video content was not transcribed; titles only."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "RoboBoom timeline describes Moz1 executing a single natural-language instruction to tidy a living room at WAIC 2026, autonomously decomposing and replanning. A later training log is described as single-take with zero teleoperation under Spirit v1.6. Spirit v1.6 also topped the RoboArena benchmark at 1,924, but that is a model score, not robot execution.",
+      "evidence_level": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "caveats": [
+        "Autonomy is company-asserted or summarized by RoboBoom; no intervention logs or independent audit were found.",
+        "The RoboArena benchmark evaluates the model, not the whole robot in a real environment."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Moz1 uses a high-dynamic omnidirectional wheeled base with dual 7-DoF arms and whole-body force control. RoboBoom lists max speed 3.6 km/h and walking speed 3.5 km/h.",
+      "evidence_level": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "caveats": [
+        "Wheeled base, not a legged humanoid.",
+        "No independent mobility test, fall rate, or disturbance-recovery metric was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Spirit V1/V1.6 VLA model powers Moz1 with RGB+depth cameras and full-body force sensing. RoboBoom describes the robot re-perceiving the scene and replanning after disturbances during a tidy-up demo. The Spirit v1.6 model scored 1,924 on RoboArena.",
+      "evidence_level": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_002",
+        "spirit-ai-moz1_source_003"
+      ],
+      "caveats": [
+        "No third-party perception benchmark for the integrated robot.",
+        "RoboArena is a model benchmark, not an onboard perception test."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Gasgoo reports Moz robots have been introduced into JD.com retail settings for customer interaction and product demonstration. RoboBoom lists voice command support. A video title shows an assistant scenario.",
+      "evidence_level": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_001",
+        "spirit-ai-moz1_source_002",
+        "spirit-ai-moz1_source_004"
+      ],
+      "caveats": [
+        "No conversational reliability or interaction success metric was found.",
+        "JD.com deployment details are limited to a media summary."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "RoboBoom lists runtime 3 h. A 2026 video title claims a 4-hour stress test, but the video was not transcribed, so no results can be credited.",
+      "evidence_level": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002",
+        "spirit-ai-moz1_source_005"
+      ],
+      "caveats": [
+        "No failure rates, uptime logs, or independent endurance test data were found.",
+        "The stress test video title is not sufficient to verify performance."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Moz1 is 160 cm tall and 70 kg according to RoboBoom, with a wheeled base and whole-body STO safety plus collision detection. Directory lists 'Safe with humans' as yes.",
+      "evidence_level": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "caveats": [
+        "No third-party safety certification was found.",
+        "Directory safety rating is not verified."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Gasgoo reports Spirit AI's Moz robots have been introduced into JD.com retail settings. RoboBoom timeline also records a JD.com partnership announced 2026-03-19 to deploy Moz robots in JD MALL retail.",
+      "evidence_level": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_001",
+        "spirit-ai-moz1_source_002"
+      ],
+      "caveats": [
+        "No unit count, hours, or performance metrics for the JD.com deployment were published.",
+        "The CATL Zhongzhou battery line deployment is attributed to a robot called Xiaomo, not Moz1, by Gasgoo and must not be credited to Moz1."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "RoboBoom lists a price of $150,000 and availability Pilot, but no official purchase path or company-confirmed price was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "caveats": [
+        "Directory price is unverified and may not reflect actual commercial terms."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "spirit-ai-moz1_evidence_001",
+      "date": "2026-02-24",
+      "title": "Gasgoo reports Spirit AI funding and Moz1 core specs",
+      "claim": "Gasgoo reports Spirit AI raised nearly 2 billion yuan and that its in-house VLA model underpins Moz1, a full-body force-controlled humanoid robot with 26 degrees of freedom and a claimed 1:1 payload-to-weight ratio.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claims reported by trade media.",
+      "arena_relevance": "Establishes the robot's core force-control architecture and funding for deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Its in-house VLA model underpins the development of Moz1, a full-body force-controlled humanoid robot with 26 degrees of freedom.",
+      "source_location": "Gasgoo article, paragraph on Moz1",
+      "verification_notes": "Not an official spec page; relative improvements and payload ratio are company claims.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_002",
+      "date": "2026-02-24",
+      "title": "JD.com retail deployment for Moz robots",
+      "claim": "Gasgoo reports Spirit AI's Moz robots have been introduced into JD.com retail settings for customer interaction and product demonstration tasks.",
+      "category": [
+        "deployment_commercial_proof",
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "The CATL battery line deployment in the same article is attributed to a robot called Xiaomo, not Moz1.",
+      "arena_relevance": "Provides named-customer deployment evidence for Moz robots, but without performance data.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Elsewhere, Spirit AI's Moz robots have been introduced into JD.com retail settings, taking on customer interaction and product demonstration tasks.",
+      "source_location": "Gasgoo article, commercialization paragraph",
+      "verification_notes": "No unit count, hours, or autonomy details for the JD.com deployment were published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_003",
+      "date": null,
+      "title": "RoboBoom key architectural specs",
+      "claim": "RoboBoom lists Moz1 as having 26 DoF excluding dex hand, dual 7-DoF force/torque-position-hybrid bionic arms, a high-dynamic omnidirectional wheeled base, whole-body STO safety with collision detection, and a payload-to-weight ratio of 1:1.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory spec; not independently verified by the company or a primary source.",
+      "arena_relevance": "Defines the wheeled humanoid architecture and safety features.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Key specs: 26 DoF (excluding dex hand) on a high-dynamic omnidirectional wheeled base; dual 7-DoF force / torque-position-hybrid bionic arms for anthropomorphic fine-grained operations; whole-body STO safety + high-precision collision detection; payload-to-weight ratio of 1:1.",
+      "source_location": "RoboBoom page, Key facts section",
+      "verification_notes": "RoboBoom is a directory; values should be treated cautiously.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_004",
+      "date": null,
+      "title": "RoboBoom body specifications",
+      "claim": "RoboBoom lists Moz1 as 160 cm tall, 70 kg, 26 degrees of freedom, with 5 fingers per hand.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory spec.",
+      "arena_relevance": "Provides size and weight for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Height160 cm Weight70 kg Degrees of freedom26 Fingers5",
+      "source_location": "RoboBoom page, Specifications / Body section",
+      "verification_notes": "Not confirmed by official product page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_005",
+      "date": null,
+      "title": "RoboBoom motion and runtime specs",
+      "claim": "RoboBoom lists Moz1 max speed 3.6 km/h, walking speed 3.5 km/h, strength 26 kg, and runtime 3 hours.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory spec.",
+      "arena_relevance": "Provides runtime and speed figures, but unverified.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Max speed3.6 km/h Walking speed3.5 km/h Strength26 kg Runtime3 h Motor techElectric servo motors",
+      "source_location": "RoboBoom page, Specifications / Motion section",
+      "verification_notes": "No third-party measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_006",
+      "date": null,
+      "title": "RoboBoom price and availability",
+      "claim": "RoboBoom lists Moz1 availability as Pilot and price $150,000.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.4,
+      "notes": "Directory price; no official purchase path found.",
+      "arena_relevance": "Only public price signal, but not from Spirit AI.",
+      "claim_type": "spec",
+      "supporting_excerpt": "AvailabilityPilot Price$ 150 000",
+      "source_location": "RoboBoom page, Safety & Market section",
+      "verification_notes": "Price may be speculative or estimated by the directory.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_007",
+      "date": "2025-07-19",
+      "title": "GlobalGPT article on Moz1 capabilities",
+      "claim": "GlobalGPT reports Moz1 has 26 degrees of freedom, a 15% power density lead over Tesla Optimus, and can fold laundry with about 80% success rates.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "spirit-ai-moz1_source_003"
+      ],
+      "confidence": 0.4,
+      "notes": "Article refers to the company as Qianxun Intelligence, possibly the same as Spirit AI. Claims are not independently verified.",
+      "arena_relevance": "Provides early third-party media summary of dexterity and autonomy.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "For instance, folding laundry—a seemingly simple but actually complex task due to fabric variability—becomes possible with ~80% success rates.",
+      "source_location": "GlobalGPT article, Under the Hood section",
+      "verification_notes": "Not a primary source; success rate source not cited beyond article.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_008",
+      "date": "2026-07-17",
+      "title": "WAIC 2026 single-instruction room tidying demo",
+      "claim": "At WAIC 2026, Spirit AI demonstrated Moz1 running Spirit v1.6 performing a single natural-language instruction to tidy a living/dining area, autonomously decomposing and replanning, including putting a cola in the refrigerator and loading dirty bowls into the dishwasher.",
+      "category": [
+        "autonomy_task_execution",
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Timeline summary from RoboBoom, not a primary video source.",
+      "arena_relevance": "Demonstrates long-horizon task execution from natural language.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "At the 2026 World Artificial Intelligence Conference in Shanghai, Spirit AI demonstrated Moz1 running the upgraded Spirit v1.6 embodied model.",
+      "source_location": "RoboBoom timeline item 3",
+      "verification_notes": "Secondary summary; video content not transcribed. Autonomy described as autonomous but no intervention log.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_009",
+      "date": "2026-08-07",
+      "title": "Single-take training log with zero teleoperation",
+      "claim": "Spirit AI released a single-take training log in which Moz1 is given one instruction to tidy up a living room and executes the whole long-horizon task autonomously under Spirit v1.6, including three rounds of unexpected disturbances, with the company stating zero teleoperation.",
+      "category": [
+        "autonomy_task_execution",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "RoboBoom summary of company video. Zero teleoperation is a company claim.",
+      "arena_relevance": "Strongest autonomy claim for Moz1, but not independently verified.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Spirit AI released a single-take training log in which Moz1 is given one instruction - 'Tidy up the living room' - and executes the whole long-horizon task autonomously under Spirit v1.6.",
+      "source_location": "RoboBoom timeline item 2",
+      "verification_notes": "Company-asserted autonomy; no external audit. Disturbance details from RoboBoom summary.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_010",
+      "date": "2026-06-04",
+      "title": "Spirit v1.6 tops RoboArena benchmark",
+      "claim": "Spirit AI's foundation model Spirit v1.6, which powers Moz1, scored 1,924 on the RoboArena benchmark, surpassing Nvidia's Cosmos3-Nano-Policy at 1,881 to become the first Chinese model to top the leaderboard.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Benchmark result for the model, not the integrated robot.",
+      "arena_relevance": "Provides some external benchmark evidence for the underlying VLA model.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Spirit AI's foundation model for embodied intelligence, Spirit v1.6 (powering Moz1), scored 1,924 on the RoboArena benchmark, surpassing Nvidia's Cosmos3-Nano-Policy at 1,881 to become the first Chinese model to top the leaderboard.",
+      "source_location": "RoboBoom timeline item 4",
+      "verification_notes": "RoboArena is a benchmark, but this is a model score, not whole-robot validation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "spirit-ai-moz1_evidence_014",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No battery capacity, hand DoF, official price, purchase path, intervention logs, or independent verification were found for Spirit AI Moz1. Video titles provide only limited claims without transcripts.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on endurance, accessibility, and autonomy.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "spirit-ai-moz1_deployment_001",
+      "customer_or_partner": "JD.com (JD MALL retail)",
+      "site_or_context": "JD MALL retail settings",
+      "task": "Customer interaction and product demonstration",
+      "start_date": "2026-03-19",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "spirit-ai-moz1_source_001",
+        "spirit-ai-moz1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No unit count, hours, or performance metrics were published.",
+        "Gasgoo says 'Moz robots' were introduced; it is not explicit that all are Moz1 units.",
+        "The CATL Zhongzhou battery line deployment is attributed to a robot called Xiaomo, not Moz1, and is excluded."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "spirit-ai-moz1_demo_001",
+      "title": "WAIC 2026 single-instruction room tidying",
+      "date": "2026-07-17",
+      "observed_capabilities": [
+        "single natural-language instruction to tidy living/dining area",
+        "autonomous task decomposition and dynamic replanning",
+        "putting a cola in the refrigerator",
+        "loading dirty bowls into the dishwasher"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "RoboBoom describes the demo as autonomous, but does not explicitly state zero teleoperation for this event.",
+      "environment": "WAIC 2026, Shanghai",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Secondary summary; video not reviewed.",
+        "Autonomy is company-asserted; no intervention log."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a public demo summary until video review is possible.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "RoboBoom says Moz1 'autonomously decomposed the task and replanned dynamically', which is an autonomy claim but not independently verified.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "room tidying with object placement in refrigerator and dishwasher",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "spirit-ai-moz1_demo_002",
+      "title": "Single-take long-horizon tidy-up with disturbances",
+      "date": "2026-08-07",
+      "observed_capabilities": [
+        "single spoken instruction 'Tidy up the living room'",
+        "long-horizon task execution",
+        "three rounds of unexpected disturbances with re-perception and replanning"
+      ],
+      "appears_edited": false,
+      "teleoperation_disclosed": "Company states there is zero teleoperation.",
+      "environment": "company training log setting",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Company-asserted zero teleoperation; no independent verification.",
+        "Secondary summary from RoboBoom."
+      ],
+      "editing_notes": "Described as single-take, but not manually verified.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Company claim of zero teleoperation from RoboBoom timeline.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "living room tidy-up with disturbances",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "spirit-ai-moz1_demo_003",
+      "title": "4-hour stress test video",
+      "date": "2026-10-15",
+      "observed_capabilities": [
+        "stress test scenario of 4 hours duration (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company setting (title only)",
+      "source_ids": [
+        "spirit-ai-moz1_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content not reviewed.",
+        "Cannot confirm actual duration, autonomy, or results."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not mention autonomy or teleoperation.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "4-hour chaos stress test (title only)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "spirit-ai-moz1_demo_004",
+      "title": "Office tea delivery with null space control",
+      "date": "2026-06-29",
+      "observed_capabilities": [
+        "office tea delivery",
+        "null space control"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "office-like setting (title only)",
+      "source_ids": [
+        "spirit-ai-moz1_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content not reviewed.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not mention autonomy.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "tea delivery using null space control (title only)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "spirit-ai-moz1_demo_005",
+      "title": "Assistant humanoid robot video",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "assistant scenario (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "assistant context (title only)",
+      "source_ids": [
+        "spirit-ai-moz1_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content not reviewed.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not mention autonomy.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "assistant scenario (title only)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability and official specs",
+      "description": "No official Spirit AI product page, official price, or purchase path was found. Height, weight, runtime, and price are from RoboBoom directory, not company-confirmed.",
+      "impact_on_arena_scoring": "Accessibility/value and spec confidence remain low."
+    },
+    {
+      "topic": "Endurance and reliability",
+      "description": "Runtime is only a directory spec (3 h). A video title claims a 4-hour stress test, but no transcript or data is available.",
+      "impact_on_arena_scoring": "Endurance should not be credited beyond directory spec."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claims for WAIC and the single-take tidy-up are company-asserted via RoboBoom. No intervention logs or independent audit.",
+      "impact_on_arena_scoring": "Credit observable demos only with moderate confidence."
+    },
+    {
+      "topic": "Deployment specifics",
+      "description": "JD.com retail deployment is mentioned for 'Moz robots' but lacks unit counts, hours, or metrics. CATL battery line deployment is Xiaomo, not Moz1.",
+      "impact_on_arena_scoring": "Do not credit CATL zero-defect battery claim to Moz1."
+    },
+    {
+      "topic": "Spec gaps",
+      "description": "Battery capacity, hand DoF, payload, and onboard compute details are not published by reliable sources.",
+      "impact_on_arena_scoring": "Do not infer these values from directory or media summaries."
+    }
+  ],
+  "source_ids": [
+    "spirit-ai-moz1_source_001",
+    "spirit-ai-moz1_source_002",
+    "spirit-ai-moz1_source_003",
+    "spirit-ai-moz1_source_004",
+    "spirit-ai-moz1_source_005",
+    "spirit-ai-moz1_source_006"
+  ],
+  "sources": [
+    {
+      "id": "spirit-ai-moz1_source_001",
+      "title": "Spirit AI secures nearly 2 billion yuan in back-to-back funding rounds as embodied intelligence race heats up",
+      "publisher": "Gasgoo",
+      "url": "https://autonews.gasgoo.com/articles/icv/spirit-ai-secures-nearly-2-billion-yuan-in-back-to-back-funding-rounds-as-embodied-intelligence-race-heats-up-2026146686038994944",
+      "date_published": "2026-02-24",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Automotive trade media reporting company claims; not a primary source."
+    },
+    {
+      "id": "spirit-ai-moz1_source_002",
+      "title": "Moz1 by Spirit AI",
+      "publisher": "RoboBoom",
+      "url": "https://roboboom.com/robot/spirit-ai/moz1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory with spec sheet and timeline summaries; values not independently confirmed."
+    },
+    {
+      "id": "spirit-ai-moz1_source_003",
+      "title": "Moz1 Robot and China’s Race for Real-World AI",
+      "publisher": "GlobalGPT",
+      "url": "https://www.glbgpt.com/resource/moz1-robot-and-chinas-race-for-real-world-ai",
+      "date_published": "2025-07-19",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Editorial article referring to company as Qianxun Intelligence; claims not independently verified."
+    },
+    {
+      "id": "spirit-ai-moz1_source_004",
+      "title": "What if Your Assistant Was a Humanoid Robot? | Spirit AI’s Moz1",
+      "publisher": "YouTube Spirit AI",
+      "url": "https://www.youtube.com/watch?v=WjO5u6pZP4Y",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company video, but no transcript available."
+    },
+    {
+      "id": "spirit-ai-moz1_source_005",
+      "title": "Can This Robot Survive 4 Hours of Endless Chaos? (Moz1 Stress Test) | Spirit AI Training Log",
+      "publisher": "YouTube Spirit AI",
+      "url": "https://www.youtube.com/watch?v=q_WSXHN6eCA",
+      "date_published": "2026-10-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company video, title only; no transcript."
+    },
+    {
+      "id": "spirit-ai-moz1_source_006",
+      "title": "Moz1’s Office Tea Delivery Powered by Null Space Control | Spirit AI Training Log",
+      "publisher": "YouTube Spirit AI",
+      "url": "https://www.youtube.com/watch?v=Qe41XgRpaxg",
+      "date_published": "2026-06-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company video, title only; no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Spirit AI Moz1 is a wheeled humanoid with force-controlled arms and a VLA model. Public evidence shows promising long-horizon room tidying demos and JD.com retail deployment mentions, but most claims are company-asserted or directory-sourced, and official specs, price, endurance data, and independent verification are missing.",
+    "strongest_positive_evidence": [
+      "RoboBoom timeline describes a single-take, zero-teleoperation long-horizon tidy-up with disturbance replanning under Spirit v1.6.",
+      "Gasgoo reports JD.com retail deployment for Moz robots with customer interaction and product demonstration.",
+      "RoboBoom records Spirit v1.6 topping RoboArena benchmark at 1,924.",
+      "Multiple official video titles suggest real-world assistant, tea delivery, and stress-test scenarios."
+    ],
+    "weakest_or_missing_evidence": [
+      "No official product page, official price, battery capacity, hand DoF, or purchase path.",
+      "No independent endurance or autonomy benchmark for the integrated robot.",
+      "Video content for all titles is not transcribed; no capability can be verified from them.",
+      "No performance metrics for JD.com deployment."
+    ],
+    "conflicting_claims": [
+      "Company naming: Gasgoo and RoboBoom use 'Spirit AI', while GlobalGPT uses 'Qianxun Intelligence'.",
+      "CATL deployment: Gasgoo attributes the CATL Zhongzhou battery line deployment to a robot called 'Xiaomo', not Moz1, while RoboBoom's funding item says 'Moz1 force-controlled humanoid already on CATL battery production lines.'",
+      "Payload: Gasgoo claims 1:1 payload-to-weight ratio, but RoboBoom lists 'Strength 26 kg' without clear payload definition.",
+      "Price: RoboBoom lists $150,000, but no official Spirit AI price or store was found."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "service_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit CATL Zhongzhou zero-defect battery production to Moz1; that is Xiaomo per Gasgoo.",
+      "Do not treat RoboBoom directory specs (height, weight, runtime, price) as official.",
+      "Do not treat video titles as evidence of autonomy or endurance without transcript review.",
+      "Do not describe Moz1 as bipedal; it is a wheeled humanoid."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Moz1 remains current as of 2026-10-29 based on recent official video title from 2026-10-15 and RoboBoom timeline through August 2026."
+  },
+  "excluded_claims": [
+    {
+      "claim": "CATL Zhongzhou production base zero-defect battery unit deployment",
+      "reason": "Gasgoo explicitly attributes this to a robot called 'Xiaomo', not Moz1.",
+      "source_ids": [
+        "spirit-ai-moz1_source_001"
+      ]
+    },
+    {
+      "claim": "Moz1 is a bipedal humanoid",
+      "reason": "RoboBoom and catalog describe Moz1 as wheeled; no bipedal walking evidence.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    {
+      "claim": "Official price $150,000",
+      "reason": "Only a RoboBoom directory listing; no official Spirit AI product page or store.",
+      "source_ids": [
+        "spirit-ai-moz1_source_002"
+      ]
+    },
+    {
+      "claim": "Detailed performance from video titles (e.g., 4-hour stress test success, tea delivery autonomy)",
+      "reason": "Video transcripts were not available; titles alone are insufficient.",
+      "source_ids": [
+        "spirit-ai-moz1_source_004",
+        "spirit-ai-moz1_source_005",
+        "spirit-ai-moz1_source_006"
+      ]
+    },
+    {
+      "claim": "Battery capacity or hand DoF specifications",
+      "reason": "Not published in any reviewed source.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 3,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Spirit AI Moz1 is a Chinese wheeled humanoid with 26 DoF, dual 7-DoF force-controlled arms, and an omnidirectional base, running the Spirit VLA model. Evidence includes RoboBoom directory specs (160 cm, 70 kg, 3 h runtime, $150,000 price) and company-related demos of long-horizon room tidying from a single instruction, including a single-take video claimed to have zero teleoperation. Gasgoo reports Moz robots in JD.com retail settings for customer interaction. No official product page, official price, battery capacity, or independent endurance/autonomy verification was found; video titles for several demos are not transcribed. The CATL battery line deployment is attributed to Xiaomo, not Moz1, and must not be credited here.",
+    "strongest_evidence": [
+      "RoboBoom timeline describes a single-take, zero-teleoperation long-horizon tidy-up with disturbances under Spirit v1.6.",
+      "Gasgoo reports JD.com retail deployment for Moz robots.",
+      "RoboBoom records Spirit v1.6 topping RoboArena benchmark.",
+      "Official video titles suggest real-world scenarios such as tea delivery and stress testing."
+    ],
+    "weakest_evidence": [
+      "No official specs, price, or purchase path.",
+      "No independent endurance or autonomy benchmark for the integrated robot.",
+      "Video titles only; no transcripts to verify capabilities.",
+      "No JD.com deployment metrics."
+    ],
+    "known_do_not_credit": [
+      "CATL Zhongzhou battery line deployment (Xiaomo, not Moz1).",
+      "Bipedal walking capability.",
+      "Official price or availability beyond pilot status.",
+      "Endurance or autonomy claims from video titles only."
+    ],
+    "recommended_confidence": "low_to_medium"
+  }
+}

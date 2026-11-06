@@ -1,0 +1,82 @@
+{
+  "id": "pal-talos",
+  "name": "PAL Robotics TALOS",
+  "aliases": [
+    "TALOS"
+  ],
+  "companyId": "pal-robotics",
+  "companyName": "PAL Robotics",
+  "country": "Spain",
+  "announced": null,
+  "status": "commercial",
+  "category": "research",
+  "summary": "TALOS is a full-size torque-controlled biped from PAL Robotics, sold to research labs since 2017. It is 175 cm tall, weighs 95 kg, has 32 DoF and can lift 6 kg per arm with arms stretched. Torque sensing in nearly every joint makes it a common platform for whole-body control research.",
+  "specs": {
+    "height_cm": {
+      "value": 175,
+      "original": "175 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 95,
+      "original": "95 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 6,
+      "original": "6 Kg (arm stretched)",
+      "sourceId": "s1"
+    },
+    "runtime_h": {
+      "value": 1.5,
+      "original": "1.5 hours (walking)",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 32,
+      "original": "32 total",
+      "sourceId": "s2"
+    },
+    "hand_dof": {
+      "value": 1,
+      "original": "Grippers: 1 DoF x 2",
+      "sourceId": "s2"
+    },
+    "speed_mps": {
+      "value": 0.83,
+      "original": "3 km/h",
+      "sourceId": "s2"
+    }
+  },
+  "hands": "Customizable grippers, 1 DoF each.",
+  "sensors": "Joint torque sensors, force/torque sensors at wrists and ankles, IMU, RGB-D camera.",
+  "compute": "Two Intel Core i7 CPUs, Ubuntu with real-time OS, ROS.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://pal-robotics.com/robot/talos/",
+  "highlights": [
+    "EtherCAT control loops at 2 kHz, up to 5 kHz.",
+    "1080 Wh battery.",
+    "Used at research sites such as the University of Waterloo RoboHub."
+  ],
+  "caveats": [
+    "Research platform; no public price.",
+    "Short walking runtime of about 1.5 hours."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TALOS",
+      "publisher": "PAL Robotics",
+      "url": "https://pal-robotics.com/robot/talos/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "TALOS",
+      "publisher": "IEEE ROBOTS guide",
+      "url": "https://robotsguide.com/robots/talos",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

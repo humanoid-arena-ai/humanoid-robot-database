@@ -1,0 +1,950 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "iit-ergocub",
+    "name": "ergoCub",
+    "company_id": "italian-institute-of-technology",
+    "company_name": "Italian Institute of Technology (IIT)",
+    "country": "Italy",
+    "generation": "ergoCub 1.0 with ergoCub 2.0 joint modules in development",
+    "first_announced_date": "2023-09-21",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Presented on 2023-09-21 at IIT's 20th-anniversary event in Genoa. Developed with INAIL as a research platform for ergonomic human-robot collaboration in industrial and hospital settings. Not for sale; no customer deployments found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "workplace ergonomics and physical risk reduction",
+      "collaborative payload lifting in industry and healthcare",
+      "warehouse and hospital assistance",
+      "research on human-aware humanoids"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "150 cm",
+      "value": 150,
+      "unit": "cm",
+      "notes": "Official IIT announcement states 150 cm tall.",
+      "source_ids": [
+        "iit-ergocub_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "55.7 kg",
+      "value": 55.7,
+      "unit": "kg",
+      "notes": "Official IIT announcement; also repeated by SteelReel.",
+      "source_ids": [
+        "iit-ergocub_source_001",
+        "iit-ergocub_source_005"
+      ]
+    },
+    "payload": {
+      "original_value": "≈10 kg",
+      "value": 10,
+      "unit": "kg",
+      "notes": "SteelReel reports approximately 10 kg official load-bearing capability, but not necessarily an isolated max lift benchmark.",
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime was published in reviewed sources.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No public battery pack details found in reviewed sources.",
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 17,
+      "notes": "Reported by emergentmind.com, added 2026-10-29 by automated spec fill; Partial scope only: the 17 DoF cited are the two 7-DoF arms plus the 3-DoF torso (upper body), not the robot's total-body degrees of freedom, which no supplied page states..",
+      "source_ids": [
+        "iit-ergocub_source_003"
+      ],
+      "original_value": "17 DoF",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed was published in reviewed sources.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "No detailed hand specification or hand DoF count found in reviewed sources.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": []
+    },
+    "sensors": {
+      "items": [
+        "Force Torque (F/T) sensors with inertial measurement units (IMUs)",
+        "Intel RealSense depth camera",
+        "LiDAR for navigation",
+        "Joint encoders, motor current sensors, F/T sensors, inertial sensors"
+      ],
+      "source_ids": [
+        "iit-ergocub_source_002",
+        "iit-ergocub_source_003",
+        "iit-ergocub_source_005"
+      ]
+    },
+    "compute": {
+      "description": "SteelReel AI reports onboard NVIDIA Jetson AGX Xavier and 11th-generation Intel Core i7; Wi-Fi 6E connectivity.",
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ]
+    },
+    "actuators": {
+      "description": "Compact, powerful joint modules were under development for ergoCub 2.0. No detailed actuator specifications found.",
+      "source_ids": [
+        "iit-ergocub_source_004"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Research prototype; not for sale. No price or purchase path found.",
+      "source_ids": [
+        "iit-ergocub_source_001",
+        "iit-ergocub_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "A peer-reviewed Nature Machine Intelligence figure shows ergoCub collaborating on a payload lifting task while adapting to a human partner; Emergent Mind describes 7-DoF arms plus 3-DoF torso control and hardware optimized for lifting. No fine-manipulation benchmarks or hand DoF were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "iit-ergocub_source_002",
+        "iit-ergocub_source_003",
+        "iit-ergocub_source_005"
+      ],
+      "caveats": [
+        "No success rates or precision dexterity benchmarks.",
+        "No hand DoF or tactile fingertip specification found.",
+        "The 'heavy lifting' video is title-only and does not support detailed dexterity claims."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Autonomous warehouse navigation is reported only in simulation. WMF live demonstrations are stated to include live teleoperation and autonomy demonstrations, but control mode for individual videos is not verified. No real-world autonomous task execution evidence was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ],
+      "caveats": [
+        "No independent autoload, intervention or success rate data.",
+        "Autonomy claims are directory or secondary reports, not verified.",
+        "Teleoperation status for most demos is not disclosed."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "The robot walked during a live demo on stage per a peer-reviewed figure and official IIT debut text mentions movement skills. Emergent Mind describes DNN-driven nonlinear MPC walking with step adjustment. No walking speed or fall data was published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "iit-ergocub_source_001",
+        "iit-ergocub_source_002",
+        "iit-ergocub_source_003"
+      ],
+      "caveats": [
+        "No walking speed, fall rate or disturbance-recovery metrics.",
+        "Videos are mostly title-only or secondary listings.",
+        "Teleoperation status for walking demos is unknown."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "F/T sensors with IMUs, Intel RealSense depth camera, LiDAR, and multimodal sensor fusion are reported. Emergent Mind summarizes perception and sensor fusion work. No independent perception benchmark was found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "iit-ergocub_source_002",
+        "iit-ergocub_source_003",
+        "iit-ergocub_source_005"
+      ],
+      "caveats": [
+        "Sensor list comes from a technical dossier and a figure caption, not measured specs.",
+        "No scene-understanding success rates or object recognition benchmarks."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Human-aware collaboration is the core purpose. A peer-reviewed figure shows ergoCub monitoring a human's ergonomic state and adapting its motion during payload lifting. No quantitative HRI metrics were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "iit-ergocub_source_001",
+        "iit-ergocub_source_002"
+      ],
+      "caveats": [
+        "No interaction questionnaires, safety studies, or worked-hours data.",
+        "Human ergonomic outcomes are described qualitatively."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No battery capacity, runtime, endurance test, or reliability data were found in reviewed sources.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Complete absence of public endurance/reliability evidence."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "ergoCub is 150 cm tall, weighs 55.7 kg, and is designed for industrial and hospital collaborative tasks. No safety certification or human-proximity standard compliance was found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "iit-ergocub_source_001",
+        "iit-ergocub_source_002"
+      ],
+      "caveats": [
+        "No full-robot safety certification found.",
+        "Human-size and weight are official claims, not independently measured."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "ergoCub is a research prototype with no named customer deployment or commercial pilot found.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No customer sources or deployment metrics exist."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Not for sale. No price, lease, or purchase path found.",
+      "evidence_level": 0,
+      "source_ids": [
+        "iit-ergocub_source_001",
+        "iit-ergocub_source_005"
+      ],
+      "caveats": [
+        "Research platform; public accessibility is not offered."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "iit-ergocub_evidence_001",
+      "date": "2023-09-21",
+      "title": "Official ergoCub physical specifications",
+      "claim": "IIT's official announcement states ergoCub is 150 cm tall and weighs 55.7 kg.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "iit-ergocub_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official IIT news article; values not independently measured.",
+      "arena_relevance": "Defines size and weight for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "ergoCub is 150 cm tall and weights 55.7 kg.",
+      "source_location": "IIT OpenTalk announcement body",
+      "verification_notes": "Official source; spelling 'weights' is in original.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_002",
+      "date": "2023-09-21",
+      "title": "ergoCub purpose and AI system",
+      "claim": "The robot is equipped with AI and designed to assess, manage, reduce, and prevent physical risk for workers in industrial and hospital settings.",
+      "category": [
+        "human_interaction",
+        "intended_use_cases"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "iit-ergocub_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official design intent claim.",
+      "arena_relevance": "Establishes target scenario and human-interaction focus.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The new robot is equipped with artificial intelligence and has been designed to have a system capable of assessing, managing, reducing, and preventing physical risk for workers in industrial and hospital settings.",
+      "source_location": "IIT OpenTalk announcement body",
+      "verification_notes": "Company design claim; not an independently verified capability.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_003",
+      "date": null,
+      "title": "Payload capability",
+      "claim": "SteelReel reports ergoCub has about 10 kg official load-bearing capability, but not an isolated lifting benchmark.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Aggregated technical dossier citing official project page.",
+      "arena_relevance": "Indicates load-bearing ability for collaborative tasks.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Official project specification reports ≈10 kg load-bearing capability. This is not entered as max lift because the published test basis is not equivalent to an isolated lifting benchmark.",
+      "source_location": "SteelReel AI ErgoCub Technical Dossier, hardware evidence notes",
+      "verification_notes": "Directory source; actual primary project page not opened in this pack.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_004",
+      "date": null,
+      "title": "Onboard compute",
+      "claim": "SteelReel identifies an NVIDIA Jetson AGX Xavier and 11th-generation Intel Core i7 onboard ergoCub.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Reported from an IIT page; no primary spec page fully reviewed.",
+      "arena_relevance": "Gives hardware compute basis for perception and AI.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "IIT identifies Jetson AGX Xavier and an 11th-generation Intel i7 onboard ergoCub.",
+      "source_location": "SteelReel AI ErgoCub Technical Dossier compute note",
+      "verification_notes": "Directory source; exact Xavier memory SKU not stated.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_005",
+      "date": null,
+      "title": "Force/torque and IMU sensors",
+      "claim": "ergoCub is endowed with Force Torque sensors and inertial measurement units.",
+      "category": [
+        "sensors",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "iit-ergocub_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Figure caption from a peer-reviewed Nature Machine Intelligence article preview on ResearchGate.",
+      "arena_relevance": "Supports contact sensing for human-robot interaction.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "The robot is endowed with Force Torque (F/T) sensors with inertial measurement units (IMUs).",
+      "source_location": "ResearchGate figure caption, main characteristics",
+      "verification_notes": "Only figure caption visible; full article not reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_006",
+      "date": null,
+      "title": "Human-robot collaborative payload lifting",
+      "claim": "ergoCub collaborates with a human to perform a payload lifting task, adapting its motion and monitoring the human's ergonomic state.",
+      "category": [
+        "manipulation_dexterity",
+        "human_interaction"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "iit-ergocub_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Peer-reviewed article figure; still images, not continuous video.",
+      "arena_relevance": "Strongest evidence for ergonomic human-robot collaboration.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "The ergoCub robot collaborates with a human to perform a payload lifting task, adapting its motion to the human partner and monitoring the human’s ergonomic state to reduce physical stress.",
+      "source_location": "ResearchGate figure caption, collaborative task panels",
+      "verification_notes": "No task duration, success rate, or teleoperation disclosure in caption.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_007",
+      "date": null,
+      "title": "Walking demonstrated live on stage",
+      "claim": "ergoCub walked during a live demo on stage.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "iit-ergocub_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Peer-reviewed figure caption with successive frames.",
+      "arena_relevance": "Confirms bipedal walking in a live setting, without speed metrics.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "The ergoCub robot walks during a live demo on stage; the different panels show succesive moments of the walking motion.",
+      "source_location": "ResearchGate figure caption, live demo panels",
+      "verification_notes": "Still frames only; no walking speed, duration, or teleoperation disclosure.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_008",
+      "date": null,
+      "title": "Energy and joint torque optimization",
+      "claim": "Emergent Mind states ergoCub's optimization reduces energy expenditure by up to 43% and lowers critical joint torques during payload handling.",
+      "category": [
+        "human_environment_fit",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "iit-ergocub_source_003"
+      ],
+      "confidence": 0.55,
+      "notes": "Secondary research summary, not primary paper.",
+      "arena_relevance": "Supports efficient human-robot collaborative lifting claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "It utilizes bilevel and model-based optimization to reduce energy expenditure by up to 43% and lower critical joint torques during payload handling.",
+      "source_location": "Emergent Mind ErgoCub Humanoid Robot overview, first bullet",
+      "verification_notes": "Not independently verified; underlying paper not reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_009",
+      "date": null,
+      "title": "Optimized load lifting height",
+      "claim": "Optimized hardware extends load lifting heights to 0.8–1.5 m for ergoCub versus 0.8–1.2 m for iCub.",
+      "category": [
+        "manipulation_dexterity",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "iit-ergocub_source_003"
+      ],
+      "confidence": 0.5,
+      "notes": "Secondary summary of Sartore et al. 2022.",
+      "arena_relevance": "Quantifies improvement in lifting envelope over iCub.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The optimized hardware design extends load lifting heights (0.8–1.5 m for ergoCub, vs 0.8–1.2 m for iCub) ( Sartore et al., 2022 ).",
+      "source_location": "Emergent Mind ErgoCub Humanoid Robot, hardware optimization key outcomes",
+      "verification_notes": "Underlying paper not directly reviewed in this pack.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_011",
+      "date": null,
+      "title": "ergoCub 2.0 joint modules",
+      "claim": "IIT researcher Divya Shah contributed to compact and powerful joint modules for the forthcoming ergoCub 2.0 humanoid robot.",
+      "category": [
+        "actuators"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "iit-ergocub_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "First-person researcher page; no detailed actuator specs.",
+      "arena_relevance": "Indicates ongoing actuator development for next generation.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "My contributions involve mechanical design, testing and development of complex integrated mechanical and electrical components to form compact and powerful joint modules for the forthcoming version ergoCub 2.0 humanoid robot.",
+      "source_location": "Divya Shah Ergocub project page, contributions",
+      "verification_notes": "Self-reported; no performance data provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_012",
+      "date": null,
+      "title": "Missing battery details",
+      "claim": "No public battery pack details were found in the current source set.",
+      "category": [
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "SteelReel explicitly notes the absence.",
+      "arena_relevance": "Limits endurance/reliability scoring.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "No public battery pack details found in current source set.",
+      "source_location": "SteelReel AI ErgoCub Technical Dossier, power-management notes",
+      "verification_notes": "Directory source recognition of a gap.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "iit-ergocub_evidence_013",
+      "date": null,
+      "title": "Missing core disclosures",
+      "claim": "No total DoF, hand DoF, battery capacity, runtime, walking speed, price, or commercial deployment metrics were found for ergoCub.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Reduces confidence on autonomy, endurance, and accessibility.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "iit-ergocub_demo_001",
+      "title": "ergoCub debut at IIT 20th anniversary",
+      "date": "2023-09-21",
+      "observed_capabilities": [
+        "greeted institutional and scientific guests",
+        "demonstrated movement skills"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "IIT Auditorium, Genoa, Italy",
+      "source_ids": [
+        "iit-ergocub_source_001"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Text-only official description; no video in source.",
+        "Movement skills are not specified."
+      ],
+      "editing_notes": "Text source only; not manually video-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Source does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Greeting and movement demonstration described in official IIT text.",
+          "verification_notes": "Timestamp not verified; manual review required if using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "iit-ergocub_demo_002",
+      "title": "Human-robot payload lifting and walking",
+      "date": null,
+      "observed_capabilities": [
+        "adapting motion to human partner during payload lifting",
+        "monitoring human ergonomic state",
+        "walking during live demo"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Stage and collaborative setting",
+      "source_ids": [
+        "iit-ergocub_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Only still frames from a peer-reviewed figure caption; no continuous video.",
+        "No teleoperation or autonomy disclosure."
+      ],
+      "editing_notes": "Not manually video-reviewed; still image caption only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The caption does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Panels showing human-robot payload collaboration and walking on stage.",
+          "verification_notes": "Timestamps not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "iit-ergocub_demo_003",
+      "title": "WMF live demonstrations and indexed videos",
+      "date": null,
+      "observed_capabilities": [
+        "live teleoperation demonstrations",
+        "autonomy demonstrations",
+        "DNN-driven nonlinear MPC walking with step adjustment",
+        "walking and interacting with people"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "SteelReel lists teleoperation training plus live teleoperation and autonomy demonstrations.",
+      "environment": "Unknown",
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Directory listing; videos not reviewed directly.",
+        "Control mode for individual videos is not verified."
+      ],
+      "editing_notes": "Not manually video-reviewed; only indexed titles and descriptions.",
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Source mentions teleoperation training and autonomy demos, but each video's control mode is unknown.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Indexed video titles only; no transcript reviewed.",
+          "verification_notes": "Timestamps not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "iit-ergocub_demo_004",
+      "title": "Meet Ergocub: Robot that can do all your heavy lifting",
+      "date": "2023-10-29",
+      "observed_capabilities": [
+        "heavy lifting (title claim only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Unknown",
+      "source_ids": [
+        "iit-ergocub_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title/channel/date available; no transcript reviewed.",
+        "Cannot describe what the video shows beyond the title."
+      ],
+      "editing_notes": "Not manually video-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode information available.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title-only capability claim.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "iit-ergocub_demo_005",
+      "title": "Italian humanoid robot ergoCub makes its US debut",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "US debut (title claim only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Unknown",
+      "source_ids": [
+        "iit-ergocub_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title/channel/date available; no transcript reviewed.",
+        "Cannot describe what the video shows beyond the title."
+      ],
+      "editing_notes": "Not manually video-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode information available.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title-only US debut claim.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No price, lease, or purchase path found. ergoCub is a research prototype and not available to the public.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence."
+    },
+    {
+      "topic": "Specification gaps",
+      "description": "No total DoF, hand DoF, battery capacity, runtime, or walking speed were published in reviewed sources.",
+      "impact_on_arena_scoring": "Endurance, dexterity, and mobility comparisons are severely limited."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomous warehouse navigation is only demonstrated in simulation; live demos show unknown or mixed teleoperation/autonomy. No intervention logs or independent verification.",
+      "impact_on_arena_scoring": "Avoid crediting real-world autonomy beyond simulation or title-only claims."
+    },
+    {
+      "topic": "Source quality",
+      "description": "Most evidence beyond the IIT announcement and peer-reviewed figure comes from directories and secondary research summaries, not primary specs or independent tests.",
+      "impact_on_arena_scoring": "Confidence should remain low-to-medium for technical performance claims."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "No named customer deployment, pilot, or commercial use has been found; ergoCub remains a research platform.",
+      "impact_on_arena_scoring": "Deployment/commercial proof is zero."
+    }
+  ],
+  "source_ids": [
+    "iit-ergocub_source_001",
+    "iit-ergocub_source_002",
+    "iit-ergocub_source_003",
+    "iit-ergocub_source_004",
+    "iit-ergocub_source_005",
+    "iit-ergocub_source_006",
+    "iit-ergocub_source_007"
+  ],
+  "sources": [
+    {
+      "id": "iit-ergocub_source_001",
+      "title": "A new robot for the first 20 years of IIT - Talk iit",
+      "publisher": "IIT OpenTalk",
+      "url": "https://opentalk.iit.it/en/a-new-robot-for-the-first-20-years-of-iit/",
+      "date_published": "2023-09-21",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official IIT news article; company claims about design intent and capabilities."
+    },
+    {
+      "id": "iit-ergocub_source_002",
+      "title": "The ergoCub robot, a humanoid robot developed to minimize workers’...",
+      "publisher": "ResearchGate (Nature Machine Intelligence figure)",
+      "url": "https://www.researchgate.net/figure/The-ergoCub-robot-a-humanoid-robot-developed-to-minimize-workers-fatigue-and-risks-in_fig1_409245460",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Figure page from a peer-reviewed Nature Machine Intelligence article; only caption is visible."
+    },
+    {
+      "id": "iit-ergocub_source_003",
+      "title": "ErgoCub Humanoid Robot",
+      "publisher": "Emergent Mind",
+      "url": "https://www.emergentmind.com/topics/ergocub-humanoid-robot",
+      "date_published": "2025-10-06",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Secondary topic summary of research papers; not primary evidence."
+    },
+    {
+      "id": "iit-ergocub_source_004",
+      "title": "Ergocub | Divya Shah",
+      "publisher": "Divya Shah (IIT)",
+      "url": "https://divyashah.github.io/project/ergocub/",
+      "date_published": "2022-01-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Academic personal page of an IIT researcher; self-reported work on ergoCub 2.0 joint modules."
+    },
+    {
+      "id": "iit-ergocub_source_005",
+      "title": "Italian Institute of Technology (IIT) ErgoCub Technical Dossier | SteelReel AI",
+      "publisher": "SteelReel AI",
+      "url": "https://steelreel.ai/Robots/Bipedal-humanoids/italian-institute-of-technology-iit/ergocub",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Aggregated technical dossier; claims link to official project and IIT pages."
+    },
+    {
+      "id": "iit-ergocub_source_006",
+      "title": "Meet Ergocub: Robot that can do all your heavy lifting",
+      "publisher": "YouTube A News",
+      "url": "https://www.youtube.com/watch?v=S70BV-iI-oc",
+      "date_published": "2023-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title/channel/date only; no transcript reviewed."
+    },
+    {
+      "id": "iit-ergocub_source_007",
+      "title": "Italian humanoid robot ergoCub makes its US debut",
+      "publisher": "YouTube KINO Club",
+      "url": "https://www.youtube.com/watch?v=2SoOM_BGv70",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title/channel/date only; no transcript reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "ergoCub is a research humanoid from IIT/INAIL with a clear ergonomic human-robot collaboration purpose. The best public evidence is a peer-reviewed figure showing human-robot payload lifting and walking, plus official height/weight specs. However, there are no battery/runtime, total DoF, walking speed, price, or commercial deployment disclosures, and most detailed technical performance numbers come from secondary summaries.",
+    "strongest_positive_evidence": [
+      "Peer-reviewed Nature Machine Intelligence figure documents human-robot collaboration and walking (iit-ergocub_evidence_006, iit-ergocub_evidence_007).",
+      "Official IIT announcement confirms 150 cm, 55.7 kg, and ergonomic workplace intent (iit-ergocub_evidence_001, iit-ergocub_evidence_002).",
+      "Secondary technical summaries describe up to 43% energy reduction and DNN-driven locomotion research (iit-ergocub_evidence_008, iit-ergocub_evidence_010)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No battery capacity, runtime, walking speed, total DoF, hand DoF, or price.",
+      "No named customer deployment or independent verification.",
+      "Autonomy is simulation-only or title-only; no intervention logs or autonomous task execution evidence."
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not treat secondary summaries as independently verified research.",
+      "Do not claim commercial availability or customer deployment.",
+      "Do not infer total DoF from the 17-DoF arms+torso controller figure.",
+      "Do not describe video content beyond its title for unviewed YouTube sources."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "ergoCub is current as a research platform. ergoCub 2.0 joint modules were in development as of the reviewed sources, but no full successor release was found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Unrelated robots in SOURCES 10-13 (AGIBOT A3, Unitree H2-X, Figure Gen 4)",
+      "reason": "These sources do not describe ergoCub and were excluded from this pack.",
+      "source_ids": []
+    },
+    {
+      "claim": "Video content beyond title for 'Meet Ergocub: Robot that can do all your heavy lifting' and 'Italian humanoid robot ergoCub makes its US debut'",
+      "reason": "Only titles, channels, and dates were provided; no transcript was available.",
+      "source_ids": [
+        "iit-ergocub_source_006",
+        "iit-ergocub_source_007"
+      ]
+    },
+    {
+      "claim": "Independent verification of optimization figures such as 43% energy reduction",
+      "reason": "These figures come from a secondary research summary, not a primary reviewed paper in this source set.",
+      "source_ids": [
+        "iit-ergocub_source_003"
+      ]
+    },
+    {
+      "claim": "Real-world autonomous deployment in warehouses",
+      "reason": "Source indicates autonomous warehouse navigation was demonstrated only in simulation.",
+      "source_ids": [
+        "iit-ergocub_source_005"
+      ]
+    },
+    {
+      "claim": "Total body degrees of freedom",
+      "reason": "The 17 DoF mention in a secondary source covers arms and torso only, not whole-body DoF.",
+      "source_ids": [
+        "iit-ergocub_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 2,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "ergoCub is IIT and INAIL's research humanoid, standing 150 cm tall, weighing 55.7 kg, and designed to reduce physical strain on workers in industrial and hospital settings. Its strongest evidence is a peer-reviewed Nature Machine Intelligence figure showing collaborative payload lifting with a human and live walking on stage. Official IIT sources confirm the 2023 debut and ergonomic purpose, while secondary dossiers report about 10 kg load-bearing, NVIDIA Jetson AGX Xavier plus Intel i7 onboard compute, depth/LiDAR sensing, and research claims such as up to 43% energy reduction and DNN-driven locomotion. However, no battery, runtime, walking speed, total DoF, hand DoF, price, or customer deployment exists in the reviewed evidence; autonomy is mostly simulation-only or title-only.",
+    "strongest_evidence": [
+      "Peer-reviewed figure documents human-robot payload lifting, ergonomic state monitoring, and walking (iit-ergocub_evidence_006, iit-ergocub_evidence_007).",
+      "Official IIT announcement confirms 150 cm, 55.7 kg, and ergonomic workplace intent (iit-ergocub_evidence_001, iit-ergocub_evidence_002).",
+      "Technical dossier and summaries report onboard compute, sensors, and optimization research (iit-ergocub_evidence_004, iit-ergocub_evidence_008)."
+    ],
+    "weakest_evidence": [
+      "No battery capacity, runtime, walking speed, total DoF, hand DoF, or price.",
+      "No customer deployment or independent verification.",
+      "Autonomous warehouse navigation is demonstrated only in simulation; live teleoperation/autonomy not verified."
+    ],
+    "known_do_not_credit": [
+      "Do not credit unrelated AGIBOT, Unitree, or Figure videos from excluded sources.",
+      "Do not treat secondary research summaries as independent verification.",
+      "Do not claim commercial availability or customer deployment.",
+      "Do not infer total DoF from the 17-DoF arms+torso controller figure."
+    ],
+    "recommended_confidence": "low"
+  }
+}

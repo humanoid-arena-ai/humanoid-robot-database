@@ -1,0 +1,918 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "unitree-g1",
+    "name": "Unitree G1",
+    "company_id": "unitree-robotics",
+    "company_name": "Unitree Robotics",
+    "country": "China",
+    "generation": "G1 humanoid agent",
+    "first_announced_date": "2024-05-15",
+    "release_date": "2024-05-15",
+    "status": "purchasable",
+    "status_notes": "Unitree's official shop lists the base G1 with a public price and backorder status; EDU variants require contact or separate configuration.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "robotics research",
+      "education",
+      "humanoid algorithm development",
+      "developer platform"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1320 mm",
+      "value": 132,
+      "unit": "cm",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "35 kg",
+      "value": 35,
+      "unit": "kg",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "2 kg",
+      "value": 2,
+      "unit": "kg",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "2 hours",
+      "value": 2,
+      "unit": "hours",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": "9000 mAh",
+      "value": 9000,
+      "unit": "mAh",
+      "notes": "Official product page describes a quick-release battery.",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 23,
+      "notes": "Official page lists 23 DoF for base G1 and 23-43 DoF for EDU configurations depending on options.",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "about 2m/s",
+      "value": 2,
+      "unit": "m/s",
+      "source_ids": [
+        "unitree-g1_source_003"
+      ],
+      "notes": "Official figure, added 2026-10-29 by automated spec fill; walking speed."
+    },
+    "hands": {
+      "description": "Base G1 listing has no dexterous hand; EDU options include Dex3-1, a 7-DoF three-finger hand, with optional tactile arrays.",
+      "degrees_of_freedom": 7,
+      "force_feedback": "optional tactile arrays listed for EDU hand options; force feedback not independently verified",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "depth camera",
+        "3D LiDAR",
+        "four-microphone array",
+        "speaker",
+        "Wi-Fi 6",
+        "Bluetooth 5.2"
+      ],
+      "source_ids": [
+        "unitree-g1_source_001",
+        "unitree-g1_source_003"
+      ]
+    },
+    "compute": {
+      "description": "Official page lists secondary development and NVIDIA Jetson Orin for EDU configurations; base model does not include secondary development according to the product table.",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Official page lists 6 DoF per leg, 5 DoF per arm, 90 Nm knee torque on base G1, and 120 Nm knee torque on EDU configurations.",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 13500,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://shop.unitree.com/en-ca/products/unitree-g1",
+      "source_ids": [
+        "unitree-g1_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Base G1 has arms but no dexterous hands in the shop configuration; EDU options and academic work show G1-based grasping, tray transport, and manipulation experiments.",
+      "evidence_level": 5,
+      "source_ids": [
+        "unitree-g1_source_001",
+        "unitree-g1_source_007",
+        "unitree-g1_source_008"
+      ],
+      "caveats": [
+        "Do not assume the base model includes EDU hands.",
+        "Academic task results are not shipped-product autonomy."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Academic papers report real-G1 behaviors including self-recovery, RGB-based loco-manipulation, tray transport, and structured grasping tasks.",
+      "evidence_level": 5,
+      "source_ids": [
+        "unitree-g1_source_005",
+        "unitree-g1_source_006",
+        "unitree-g1_source_007",
+        "unitree-g1_source_008"
+      ],
+      "caveats": [
+        "Research results depend on external algorithms and experimental setups.",
+        "No named commercial customer deployment with hours or output was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs establish a compact biped platform, and research reports real-G1 self-recovery from face-up and face-down falls across varied surfaces.",
+      "evidence_level": 5,
+      "source_ids": [
+        "unitree-g1_source_001",
+        "unitree-g1_source_005"
+      ],
+      "caveats": [
+        "No public official walking-speed value found.",
+        "Research policies may not ship with the base robot."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official specs list depth camera and 3D LiDAR; academic work reports RGB-based loco-manipulation and visual grasping experiments on G1.",
+      "evidence_level": 5,
+      "source_ids": [
+        "unitree-g1_source_001",
+        "unitree-g1_source_006",
+        "unitree-g1_source_008"
+      ],
+      "caveats": [
+        "Scene-understanding results come from research systems."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official specs list a microphone array and speaker, but no strong public evidence of robust conversational interaction was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-g1_source_001"
+      ],
+      "caveats": [
+        "Audio hardware is not proof of conversational autonomy."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official page lists about 2 hours of runtime and an 8-month base warranty, but no fleet reliability or commercial operating-hour data was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-g1_source_001"
+      ],
+      "caveats": [
+        "Runtime is a company specification.",
+        "Security research raises separate operational-risk questions."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "G1 is a compact biped humanoid sized for indoor research and human-designed lab environments, with public research demonstrations on real hardware.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-g1_source_001",
+        "unitree-g1_source_005",
+        "unitree-g1_source_007"
+      ],
+      "caveats": [
+        "Industrial or home deployment proof was not found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "The robot is publicly sold and appears in academic lab inventories, but no commercial customer deployment with task, hours, or output was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-g1_source_002",
+        "unitree-g1_source_009",
+        "unitree-g1_source_010"
+      ],
+      "caveats": [
+        "Purchasability is not production deployment."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Unitree's official shop lists a 13500 USD base price, making G1 unusually accessible relative to many humanoids; EDU and option pricing is separate or contact-based.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-g1_source_002"
+      ],
+      "caveats": [
+        "Price and shop status are time-sensitive.",
+        "Shipping, taxes, backorder timing, and EDU options change total cost."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "unitree-g1_evidence_001",
+      "date": null,
+      "title": "Official G1 product specifications",
+      "claim": "Unitree's official G1 page lists a 1320 mm standing height, about 35 kg weight, about 2 hours runtime, 23 base DoF, depth camera, 3D LiDAR, and base arm payload around 2 kg.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-g1_source_001"
+      ],
+      "confidence": 0.84,
+      "notes": "Official product specs; base and EDU variants differ.",
+      "arena_relevance": "Establishes morphology, sensors, and base capabilities.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official G1 product page lists size, weight, runtime, DoF, sensors, and payload.",
+      "source_location": "Unitree G1 product specifications table",
+      "verification_notes": "Official company specs; base and EDU variants differ.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_002",
+      "date": null,
+      "title": "Official shop price and availability",
+      "claim": "Unitree's official shop lists the G1 base model at 13500 USD with backorder status and separate sales handling for EDU variants.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-g1_source_002"
+      ],
+      "confidence": 0.82,
+      "notes": "Price and stock status are time-sensitive.",
+      "arena_relevance": "Strong accessibility evidence, not deployment evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official shop lists base G1 price and order/backorder status.",
+      "source_location": "Unitree shop product listing",
+      "verification_notes": "Time-sensitive price and availability source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_003",
+      "date": "2024-05-15",
+      "title": "Launch release and initial price/spec claims",
+      "claim": "Unitree's launch release introduced G1 and gave an initial price claim of about 16000 USD excluding tax and shipping, plus sensor and battery details.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-g1_source_003"
+      ],
+      "confidence": 0.76,
+      "notes": "Current shop price is preferred for current price; launch price is historical context.",
+      "arena_relevance": "Preserves price conflict/context.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Launch release introduced G1 and gave historical launch pricing and sensor/battery claims.",
+      "source_location": "PR Newswire launch release",
+      "verification_notes": "Current shop price should be preferred for current price.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_004",
+      "date": "2024-08-19",
+      "title": "Mass-production version presentation",
+      "claim": "Unitree presented G1 at the World Robot Conference and described a mass-production version.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-g1_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Official event/news claim; not customer deployment evidence.",
+      "arena_relevance": "Supports availability status.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Unitree described a mass-production version at World Robot Conference.",
+      "source_location": "Unitree WRC news page",
+      "verification_notes": "Official company event claim, not customer deployment.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_005",
+      "date": "2025-02-17",
+      "title": "Real G1 self-recovery research",
+      "claim": "A technical paper reported G1 getting up from face-up and face-down falls on flat, deformable, slippery, and sloped surfaces.",
+      "category": [
+        "mobility_whole_body_control",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "unitree-g1_source_005"
+      ],
+      "confidence": 0.82,
+      "notes": "Real-hardware research; policy may not ship with product.",
+      "arena_relevance": "Strong evidence for whole-body recovery control.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Technical paper reports real-G1 self-recovery across postures and surfaces.",
+      "source_location": "arXiv paper abstract/experiment sections",
+      "verification_notes": "Research-policy capability, not necessarily shipped product behavior.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium_high",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_006",
+      "date": null,
+      "title": "RGB-based loco-manipulation research",
+      "claim": "The VIRAL paper reports RGB-based real-world loco-manipulation experiments on Unitree G1.",
+      "category": [
+        "perception_scene_understanding",
+        "autonomy_task_execution",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "unitree-g1_source_006"
+      ],
+      "confidence": 0.78,
+      "notes": "Technical research result; verify final publication and metrics before detailed scoring.",
+      "arena_relevance": "Relevant to visual perception and task execution on real G1 hardware.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "VIRAL paper reports RGB-based loco-manipulation experiments on G1.",
+      "source_location": "arXiv paper experiment sections",
+      "verification_notes": "Research result; final publication and metrics should be rechecked.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium_high",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_007",
+      "date": null,
+      "title": "Tray transport and balancing research",
+      "claim": "The SteadyTray paper reports tray/object balancing and transport experiments on Unitree G1.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "unitree-g1_source_007"
+      ],
+      "confidence": 0.76,
+      "notes": "Research result, not default product capability.",
+      "arena_relevance": "Evidence for coordinated locomotion and manipulation.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "SteadyTray paper reports tray/object transport experiments on Unitree G1.",
+      "source_location": "arXiv paper experiment sections",
+      "verification_notes": "Research result, not default product capability.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium_high",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_008",
+      "date": null,
+      "title": "Structured grasping research",
+      "claim": "A technical paper reports a foundation-model grasping pipeline on Unitree G1 for workspace positions and a window glue-application task.",
+      "category": [
+        "manipulation_dexterity",
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "unitree-g1_source_008"
+      ],
+      "confidence": 0.74,
+      "notes": "Research pipeline result on G1.",
+      "arena_relevance": "Supports perception-guided manipulation evidence.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Technical paper reports a G1 grasping pipeline for structured workspace tasks.",
+      "source_location": "arXiv paper experiment sections",
+      "verification_notes": "Research result; exact metadata should be rechecked.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium_high",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_009",
+      "date": null,
+      "title": "Academic lab ownership evidence",
+      "claim": "University lab pages and documents list Unitree G1 hardware for robotics research or education.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-g1_source_009",
+        "unitree-g1_source_010"
+      ],
+      "confidence": 0.68,
+      "notes": "Research adoption, not customer production deployment.",
+      "arena_relevance": "Supports research-platform status.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "University pages list G1 hardware in academic research or education settings.",
+      "source_location": "UCL robot inventory and WPU material",
+      "verification_notes": "Research adoption only; no output or operating-hour metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-g1_evidence_010",
+      "date": null,
+      "title": "Cybersecurity caution evidence",
+      "claim": "Independent security reporting and research describe exploit or cybersecurity concerns involving Unitree robots, including humanoid-platform risk discussion.",
+      "category": [
+        "limitations",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "unitree-g1_source_011",
+        "unitree-g1_source_012"
+      ],
+      "confidence": 0.7,
+      "notes": "Exact applicability to current G1 firmware should be checked.",
+      "arena_relevance": "Potential negative evidence for deployment readiness.",
+      "claim_type": "security_caution",
+      "supporting_excerpt": "Security reporting and research discuss Unitree robot exploit/cybersecurity concerns.",
+      "source_location": "IEEE Spectrum report and arXiv security paper",
+      "verification_notes": "Exact applicability to current G1 firmware should be checked.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium_high",
+        "rating_effect": "risk_caution"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "unitree-g1_deployment_001",
+      "customer_or_partner": "Academic research labs",
+      "site_or_context": "University robotics research and education settings",
+      "task": "Research and education platform use",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "unitree-g1_source_009",
+        "unitree-g1_source_010"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No operating-hour, output, or production task metrics found.",
+        "Research adoption, not commercial deployment proof."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "unitree-g1_demo_001",
+      "title": "Official G1 product-page demonstrations",
+      "date": null,
+      "observed_capabilities": [
+        "biped movement in promotional footage",
+        "folded and standing configurations",
+        "research-platform presentation"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "official product and promotional materials",
+      "source_ids": [
+        "unitree-g1_source_001",
+        "unitree-g1_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Promotional demos are not independent benchmarks."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "biped movement in promotional footage; folded and standing configurations; research-platform presentation",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "unitree-g1_demo_002",
+      "title": "Real-hardware self-recovery experiments",
+      "date": "2025-02-17",
+      "observed_capabilities": [
+        "getting up from face-up posture",
+        "getting up from face-down posture",
+        "recovery on varied surfaces"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "research experiment settings",
+      "source_ids": [
+        "unitree-g1_source_005"
+      ],
+      "evidence_tier": 5,
+      "caveats": [
+        "Research policy may not be included in the commercial base robot."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "getting up from face-up posture; getting up from face-down posture; recovery on varied surfaces",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "unitree-g1_demo_003",
+      "title": "Research manipulation and loco-manipulation experiments",
+      "date": null,
+      "observed_capabilities": [
+        "RGB-guided loco-manipulation",
+        "tray balancing and transport",
+        "structured grasping pipeline experiments"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "academic research settings",
+      "source_ids": [
+        "unitree-g1_source_006",
+        "unitree-g1_source_007",
+        "unitree-g1_source_008"
+      ],
+      "evidence_tier": 5,
+      "caveats": [
+        "Capabilities depend on research software and hardware options."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "RGB-guided loco-manipulation; tray balancing and transport; structured grasping pipeline experiments",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Base versus EDU configuration",
+      "description": "The base model, EDU model, optional hands, tactile arrays, and secondary-development compute differ materially.",
+      "impact_on_arena_scoring": "Do not credit base G1 with EDU-only hardware unless specified."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "No named commercial customer deployment with task, hours, units, or output was found.",
+      "impact_on_arena_scoring": "Deployment proof should be low despite public purchasability."
+    },
+    {
+      "topic": "Price conflict",
+      "description": "Launch release claimed about 16000 USD excluding tax and shipping; current official shop lists 13500 USD for the base model.",
+      "impact_on_arena_scoring": "Use current shop price for current accessibility and keep historical conflict visible."
+    },
+    {
+      "topic": "Security risk",
+      "description": "Security reporting and research should be reviewed before high-stakes deployment claims are made.",
+      "impact_on_arena_scoring": "May reduce deployment readiness confidence if confirmed for current G1 configurations."
+    }
+  ],
+  "source_ids": [
+    "unitree-g1_source_001",
+    "unitree-g1_source_002",
+    "unitree-g1_source_003",
+    "unitree-g1_source_004",
+    "unitree-g1_source_005",
+    "unitree-g1_source_006",
+    "unitree-g1_source_007",
+    "unitree-g1_source_008",
+    "unitree-g1_source_009",
+    "unitree-g1_source_010",
+    "unitree-g1_source_011",
+    "unitree-g1_source_012"
+  ],
+  "sources": [
+    {
+      "id": "unitree-g1_source_001",
+      "title": "Unitree G1",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/g1/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official current product page; authoritative for listed specs but company-supplied."
+    },
+    {
+      "id": "unitree-g1_source_002",
+      "title": "Unitree G1 Humanoid Agent",
+      "publisher": "Unitree Robotics Shop",
+      "url": "https://shop.unitree.com/en-ca/products/unitree-g1",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official shop page for price and order status; time-sensitive."
+    },
+    {
+      "id": "unitree-g1_source_003",
+      "title": "Unitree Robotics Introduces G1 Humanoid Agent AI Avatar",
+      "publisher": "Unitree Robotics via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/unitree-robotics-introduces-g1-humanoid-agent-ai-avatar-302146198.html",
+      "date_published": "2024-05-15",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official launch source; use current shop for current price."
+    },
+    {
+      "id": "unitree-g1_source_004",
+      "title": "Unitree G1 humanoid robot and Go2 robot dog presented at World Robot Conference",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/news1/",
+      "date_published": "2024-08-19",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official event/news source; not customer deployment evidence."
+    },
+    {
+      "id": "unitree-g1_source_005",
+      "title": "Humanoid Getup Control Across Diverse Postures and Surfaces",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2502.12152",
+      "date_published": "2025-02-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "high",
+      "reliability_notes": "Technical paper reporting real-hardware G1 self-recovery experiments."
+    },
+    {
+      "id": "unitree-g1_source_006",
+      "title": "VIRAL: Visuomotor Policies for Agile Humanoid Loco-Manipulation",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2511.15200",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "high",
+      "reliability_notes": "Technical paper source for G1 loco-manipulation; verify final publication details."
+    },
+    {
+      "id": "unitree-g1_source_007",
+      "title": "SteadyTray: Humanoid Whole-Body Control for Object Transportation",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2603.10306",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "high",
+      "reliability_notes": "Technical paper source for tray/object transport experiments on G1."
+    },
+    {
+      "id": "unitree-g1_source_008",
+      "title": "Foundation-Model Grasping Pipeline on Unitree G1",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2604.17258",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "high",
+      "reliability_notes": "Technical paper source for structured G1 grasping experiments; title should be rechecked against final metadata."
+    },
+    {
+      "id": "unitree-g1_source_009",
+      "title": "Robots",
+      "publisher": "UCL Robot Perception and Learning Lab",
+      "url": "https://rpl-as-ucl.github.io/robots/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Academic lab inventory source for research adoption."
+    },
+    {
+      "id": "unitree-g1_source_010",
+      "title": "Unitree G1 Edu material",
+      "publisher": "William Paterson University",
+      "url": "https://www.wpunj.edu/cosh/macs-scholars-program/assets/2025-10-29_WangNan.pdf",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "University-hosted material indicating G1 Edu use."
+    },
+    {
+      "id": "unitree-g1_source_011",
+      "title": "Unitree Robot Exploit",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/unitree-robot-exploit",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Security reporting; exact applicability to current G1 configurations should be checked."
+    },
+    {
+      "id": "unitree-g1_source_012",
+      "title": "Cybersecurity Assessment of Unitree Robots",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2509.14139",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "high",
+      "reliability_notes": "Technical security research; check exact tested models and firmware."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Unitree G1 is best treated as an accessible purchasable humanoid research platform with strong academic evidence for specific tasks, but weak commercial deployment proof.",
+    "strongest_positive_evidence": [
+      "Official public price and order page.",
+      "Technical papers using real G1 hardware.",
+      "Compact biped form and useful research sensor suite."
+    ],
+    "weakest_or_missing_evidence": [
+      "No commercial production deployment with output or hours.",
+      "Base versus EDU ambiguity.",
+      "No independent endurance benchmark.",
+      "No strong built-in conversational autonomy evidence."
+    ],
+    "conflicting_claims": [
+      "Current shop lists 13500 USD; launch release gave about 16000 USD excluding tax and shipping.",
+      "Current product page uses a 1320 mm standing dimension; launch-era materials may describe height differently."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not treat research policies as default shipped behavior.",
+      "Do not assume base model includes EDU hands or Jetson Orin.",
+      "Do not treat public sale as commercial task deployment."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as a current purchasable Unitree platform as of the 2026-05-16 shop/source review; price and stock should be rechecked frequently."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Base G1 includes EDU dexterous hands, tactile arrays, or Jetson Orin secondary-development compute",
+      "reason": "Official product page distinguishes base and EDU configurations.",
+      "source_ids": [
+        "unitree-g1_source_001"
+      ]
+    },
+    {
+      "claim": "Research-policy results are default shipped autonomy",
+      "reason": "Academic papers demonstrate external research systems on G1 hardware, not default product behavior.",
+      "source_ids": [
+        "unitree-g1_source_005",
+        "unitree-g1_source_006",
+        "unitree-g1_source_007",
+        "unitree-g1_source_008"
+      ]
+    },
+    {
+      "claim": "Commercial customer deployment with task hours or output",
+      "reason": "No named commercial deployment with measurable output was found.",
+      "source_ids": [
+        "unitree-g1_source_002",
+        "unitree-g1_source_009"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 8,
+    "independent_sources_count": 5,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Unitree G1 is a current, publicly listed humanoid research platform with strong accessibility evidence and multiple real-hardware research papers. Its commercial deployment proof is weak, and base versus EDU configuration differences must not be merged.",
+    "strongest_evidence": [
+      "Official public price and product specs.",
+      "Real-hardware technical papers.",
+      "Academic adoption evidence."
+    ],
+    "weakest_evidence": [
+      "No named commercial deployment with output.",
+      "Base/EDU configuration ambiguity.",
+      "No independent endurance benchmark."
+    ],
+    "known_do_not_credit": [
+      "EDU-only hardware on the base model.",
+      "Research policies as shipped autonomy.",
+      "Commercial production deployment."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "magiclab-magicbot-gen1",
+    "name": "MagicLab MagicBot Gen1",
+    "company_id": "magiclab",
+    "company_name": "MagicLab",
+    "country": "China",
+    "generation": "first-generation MagicLab full-size industrial humanoid",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "MagicLab product page positions Gen1 for flexible manufacturing, intelligent guidance and service deployment. Secondary sources report December 2024 factory footage at an unnamed electronics factory with human oversight, and Robots International claims factory deployment since Dec 2024. No named customer or public price from MagicLab was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "flexible manufacturing",
+      "intelligent guidance",
+      "service deployment",
+      "embodied AI research",
+      "research & education",
+      "smart hospitality & guiding",
+      "sports & entertainment"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "174 cm",
+      "value": 174,
+      "unit": "cm",
+      "notes": "Official product page dimensions table lists 174 cm height; source 3 converts to 1740 mm.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "weight": {
+      "original_value": "Approximately 70 kg",
+      "value": 70,
+      "unit": "kg",
+      "notes": "Official product page says approximately 70 kg. Source 3 also lists Total Weight Approximately 70kg but its Key Specifications incorrectly shows Net weight 40 kg; source 4 says weight not disclosed.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": "Max Load (Both Arms): 15kg; up to 7.5 kg single-arm",
+      "value": 15,
+      "unit": "kg",
+      "notes": "Official product page table says Max Load (Both Arms) 15kg and body text says up to 7.5 kg single-arm load. Third-party source 2 table claims 20 kg per arm / 40 kg total, which conflicts and is excluded.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "3-5 hours",
+      "value": 3,
+      "unit": "hours",
+      "notes": "Official range; source 3 says 3-5 hours, source 7 says ~4-5 hours.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "25 Ah (1.35 kWh)",
+      "value": 25,
+      "unit": "Ah",
+      "notes": "Official product page table; source 3 lists 25 Ah (1.35 kWh).",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "≥2 m/s (≥4 km/h)",
+      "value": 2,
+      "unit": "m/s",
+      "notes": "Official product page table lists ≥2m/s; source 3 lists ≥4 km/h equivalent.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 42,
+      "notes": "Official page says 42-active-DoF body; source 3 breaks down neck 2, arm 7 each, waist 2, leg 6 each, optional hand 11.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "hands": {
+      "description": "Optional 11-DoF tactile dexterous hand; source 3 says 11 DoF (6 active, 5 passive). Source 2 claims standard configuration uses 6 mini high-torque servo actuators with pressure sensors and enables sub-millimeter precision and 70% coverage of human hand gestures (company claim).",
+      "degrees_of_freedom": 11,
+      "force_feedback": "tactile/pressure sensing (company claim)",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_002",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "3D LiDAR",
+        "Depth cameras",
+        "Fisheye cameras / triple camera",
+        "Omnidirectional microphone and speaker"
+      ],
+      "notes": "Official page lists 3D LiDAR, Depth Camera, Triple Camera; source 3 says Depth Cameras ×2 + Fisheye Cameras ×3.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "compute": {
+      "description": "8-core CPU + 100 TOPS AI processor; Wi-Fi 6, Bluetooth 5.2, optional 5G.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "In-house joint modules, maximum joint torque ≥350 N·m per joint, harmonic/planetary reducers; fully electric high-torque servos per source 2.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_002",
+        "magiclab-magicbot-gen1_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.magiclabglobal.com/products/magicbot-gen1/",
+      "notes": "MagicLab uses contact sales; no public price from official source. Third-party resellers list conflicting prices: Robots International $119,800, AIFITLAB $218,000, Robofy $120K.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_004",
+        "magiclab-magicbot-gen1_source_005",
+        "magiclab-magicbot-gen1_source_007"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official product page lists an optional 11-DoF tactile dexterous hand and up to 7.5 kg single-arm load. Robozaps describes December 2024 factory footage showing precision assembly with dexterous hands and sub-millimeter precision, but this is a third-party description of a company-released video.",
+      "evidence_level": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_002"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or success rates.",
+        "Sub-millimeter precision is a company claim reported by Robozaps, not independently verified.",
+        "Hands are optional; base configuration may differ."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "MagicLab claims autonomous navigation, obstacle avoidance, voice interaction, face recognition, OTA and secondary development. Robozaps reports MagicLab researcher Albert Wei says factory robots were still in skill training and learning phase, not fully autonomous, with human oversight.",
+      "evidence_level": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_002"
+      ],
+      "caveats": [
+        "No independent autonomy test, intervention rate or success rate found.",
+        "Current factory deployment appears supervised."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official product page says motion speed ≥2 m/s, max slope climbing ≥20°, stable straight-knee walking and full-body coordination, with a referenced motion video. No independent mobility benchmark or fall-rate data found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ],
+      "caveats": [
+        "Video not directly reviewed in this pack; only official text description used.",
+        "Speed is a company spec; not independently measured."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official page lists 3D LiDAR, depth and fisheye vision, face recognition, autonomous navigation and obstacle avoidance. Robozaps reports factory footage included visual inspection and barcode scanning with real-time location tracking.",
+      "evidence_level": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_002"
+      ],
+      "caveats": [
+        "No third-party perception benchmark.",
+        "Factory footage described by media, not directly audited."
+      ]
+    },
+    "human_interaction": {
+      "summary": "MagicLab lists voice interaction, voice commands, chatbot and intelligent voice guidance, omnidirectional microphone and speaker, and face recognition. No conversational reliability or instruction-following metric found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ],
+      "caveats": [
+        "No demonstrated conversational ability in reviewed sources."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official runtime is 3-5 hours with 25 Ah battery. Robots International claims Gen1 has been deployed on electronics-manufacturing lines since December 2024, but no uptime, failure rate or maintenance data were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_002",
+        "magiclab-magicbot-gen1_source_004"
+      ],
+      "caveats": [
+        "No independent endurance test or uptime logs.",
+        "IP66 and 8.7 kN impact ratings from Robozaps are not confirmed by MagicLab and are excluded from official specs."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Gen1 is 174 cm tall, about 70 kg, with a humanoid footprint 174×58×28 cm and supported terrains described as 'All Terrains' by source 1/3. No safety certification or human-proximity safety study found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_003"
+      ],
+      "caveats": [
+        "No full-robot safety certification found.",
+        "A 70 kg moving robot may pose safety risks; no human-proximity safety disclosures found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Robozaps describes a December 2024 company-released video of multiple Gen1 robots collaborating at an unnamed electronics factory. Robots International claims Gen1 has been deployed on electronics-manufacturing lines since December 2024. The Mimic's evidence ledger found zero linked customer deployment records.",
+      "evidence_level": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002",
+        "magiclab-magicbot-gen1_source_004",
+        "magiclab-magicbot-gen1_source_006"
+      ],
+      "caveats": [
+        "Factory is unnamed; no customer confirmation.",
+        "MagicLab researcher says robots were in skill training phase, not fully autonomous.",
+        "No commercial metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "MagicLab uses contact sales with no public price. Third-party resellers list conflicting prices: Robots International $119,800, AIFITLAB $218,000, Robofy $120K. Official SDK and secondary development support lower barriers for researchers, but there is no public purchase path from MagicLab.",
+      "evidence_level": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001",
+        "magiclab-magicbot-gen1_source_004",
+        "magiclab-magicbot-gen1_source_005",
+        "magiclab-magicbot-gen1_source_007"
+      ],
+      "caveats": [
+        "No official price or direct online purchase from MagicLab.",
+        "Reseller prices conflict and may not reflect final sold prices."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "magiclab-magicbot-gen1_evidence_001",
+      "date": null,
+      "title": "MagicBot Gen1 product page architecture",
+      "claim": "MagicBot Gen1 is a 42-active-DoF full-size general-purpose humanoid with optional 11-DoF tactile hand, 3D LiDAR, depth and fisheye vision, and high-performance computing.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official spec page.",
+      "arena_relevance": "Defines core hardware for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Its 42-active-DoF body integrates in-house joint modules, an optional 11-DoF tactile dexterous hand, 3D LiDAR, depth and fisheye vision, and high-performance computing.",
+      "source_location": "MagicBot Gen1 product page, Full-Body Specifications section",
+      "verification_notes": "Company spec page; independent measurement not available.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "magiclab-magicbot-gen1_evidence_002",
+      "date": null,
+      "title": "MagicBot Gen1 official performance and payload",
+      "claim": "MagicBot Gen1 weighs approximately 70 kg, has max joint torque at least 350 N·m, up to 7.5 kg single-arm load, and 3-5 hours operation.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official product page body.",
+      "arena_relevance": "Core performance claims.",
+      "claim_type": "spec",
+      "supporting_excerpt": "With an approximately 70 kg body, maximum joint torque of at least 350 N·m, up to 7.5 kg single-arm load and 3-5 hours of operation, Gen1 combines human-like locomotion with accurate manipulation in real environments.",
+      "source_location": "MagicBot Gen1 product page, introductory paragraph",
+      "verification_notes": "Company spec; runtime range not independently tested. Official table also lists Max Load (Both Arms) 15kg.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "magiclab-magicbot-gen1_evidence_003",
+      "date": null,
+      "title": "MagicBot Gen1 autonomous feature claims",
+      "claim": "MagicBot Gen1 supports autonomous navigation, obstacle avoidance, voice interaction, face recognition, OTA upgrades and secondary development.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official capability claims, not demonstrated independently.",
+      "arena_relevance": "Basis for autonomy and interaction scoring.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The platform supports autonomous navigation, obstacle avoidance, voice interaction, face recognition, OTA upgrades and secondary development.",
+      "source_location": "MagicBot Gen1 product page, introductory section",
+      "verification_notes": "No independent validation of autonomy level.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "magiclab-magicbot-gen1_evidence_004",
+      "date": null,
+      "title": "MagicBot Gen1 official motion video description",
+      "claim": "MagicBot Gen1 demonstrates stable straight-knee walking, human-like locomotion and full-body coordination.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official product page references a demo video; video not directly reviewed, only text description used.",
+      "arena_relevance": "Supports mobility claims.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Watch MagicBot Gen1 demonstrate stable straight-knee walking, human-like locomotion and full-body coordination, highlighting balance control, dynamic motion performance and deployment potential for embodied AI applications.",
+      "source_location": "MagicBot Gen1 product page, 'MagicBot Gen1 in Motion' section",
+      "verification_notes": "No teleoperation status disclosed; no speed measurement; video not directly reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "magiclab-magicbot-gen1_evidence_005",
+      "date": "2026-03-10",
+      "title": "Robozaps reports December 2024 factory footage",
+      "claim": "MagicLab released footage of multiple Gen1 robots collaborating on a production line at an unnamed electronics factory in December 2024.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Secondary report of company-released video; factory unnamed; no metrics.",
+      "arena_relevance": "Earliest known Gen1 factory deployment evidence.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "In December 2024, MagicLab released footage of multiple Gen1 robots collaborating on a production line at an unnamed electronics factory.",
+      "source_location": "Robozaps MagicLab MagicBot Review, MagicBot Gen1: Industrial Workhorse section",
+      "verification_notes": "Video not directly reviewed; company-released footage described by media. No customer name or output data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "magiclab-magicbot-gen1_evidence_006",
+      "date": "2026-03-10",
+      "title": "Robozaps reports MagicLab researcher autonomy caveat",
+      "claim": "A MagicLab researcher said the Gen1 factory robots were still in skill training and learning phase and not yet fully autonomous, suggesting human oversight.",
+      "category": [
+        "autonomy_task_execution",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Company researcher statement via media; important limitation.",
+      "arena_relevance": "Caps autonomy claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "According to MagicLab researcher Albert Wei, the robots are \"still in the skill training and learning phase\" and not yet fully autonomous, suggesting current deployments operate with human oversight.",
+      "source_location": "Robozaps MagicLab MagicBot Review, MagicBot Gen1: Industrial Workhorse section",
+      "verification_notes": "Quote from company researcher reported by Robozaps; no independent audit.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "magiclab-magicbot-gen1_evidence_008",
+      "date": null,
+      "title": "The Mimic finds no deployment records for Gen1",
+      "claim": "No customer or partner evidence meeting the ledger threshold is attached to this generation.",
+      "category": [
+        "deployment_commercial_proof",
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Independent evidence ledger; absence of records is not proof none exist.",
+      "arena_relevance": "Reduces confidence on commercial proof.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "No customer or partner evidence meeting the ledger threshold is attached to this generation.",
+      "source_location": "The Mimic MagicBot Gen1 profile, Deployment Evidence section",
+      "verification_notes": "Directory with methodology; no linked records for Gen1.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "magiclab-magicbot-gen1_demo_001",
+      "title": "MagicBot Gen1 in Motion (official product page video)",
+      "date": null,
+      "observed_capabilities": [
+        "stable straight-knee walking",
+        "human-like locomotion",
+        "full-body coordination"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company setting (described on product page)",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_001"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video not directly reviewed; no timestamps or autonomy disclosure."
+      ],
+      "editing_notes": "Not manually reviewed; text description only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": []
+    },
+    {
+      "id": "magiclab-magicbot-gen1_demo_002",
+      "title": "December 2024 Gen1 electronics factory deployment footage",
+      "date": null,
+      "observed_capabilities": [
+        "product inspection",
+        "material transport",
+        "precision assembly",
+        "barcode scanning and inventory management"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unnamed electronics factory",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Company-released footage described by Robozaps; not directly reviewed.",
+        "Factory unnamed; human oversight per MagicLab researcher."
+      ],
+      "editing_notes": "Not directly reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation or autonomy disclosure in the reviewed article for this footage; MagicLab said training phase with human oversight.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Official price",
+      "description": "MagicLab uses contact sales and has not published a price. Third-party resellers list conflicting prices ($119,800, $120K, $218,000).",
+      "impact_on_arena_scoring": "Accessibility and value remain unclear; do not use a single reseller price."
+    },
+    {
+      "topic": "Deployment details",
+      "description": "No named customer, unit count, operating hours or output metrics were found. The Mimic's evidence ledger found zero linked customer deployment records.",
+      "impact_on_arena_scoring": "Commercial proof is weak despite factory footage; cap deployment claim."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "A MagicLab researcher stated the factory robots were still in skill training and learning phase and not fully autonomous, with human oversight.",
+      "impact_on_arena_scoring": "Autonomy should not be credited beyond supervised/assisted operation."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "Official motion and factory videos were not directly reviewed; this pack relies on text descriptions and secondary reporting.",
+      "impact_on_arena_scoring": "Do not treat video observations as independently verified."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "Third-party payload claims (20 kg per arm / 40 kg total) conflict with official 7.5 kg single-arm / 15 kg both arms. Source 3 key spec net weight 40 kg conflicts with total weight approximately 70 kg. Robozaps IP66 rating is not in official MagicLab page.",
+      "impact_on_arena_scoring": "Use official spec page values and flag conflicts."
+    },
+    {
+      "topic": "Safety",
+      "description": "No full-robot safety certification or human-proximity safety study found.",
+      "impact_on_arena_scoring": "Caution when scoring human environment fit."
+    }
+  ],
+  "source_ids": [
+    "magiclab-magicbot-gen1_source_001",
+    "magiclab-magicbot-gen1_source_002",
+    "magiclab-magicbot-gen1_source_003",
+    "magiclab-magicbot-gen1_source_004",
+    "magiclab-magicbot-gen1_source_005",
+    "magiclab-magicbot-gen1_source_006",
+    "magiclab-magicbot-gen1_source_007"
+  ],
+  "sources": [
+    {
+      "id": "magiclab-magicbot-gen1_source_001",
+      "title": "MagicBot Gen1 - General-Purpose Humanoid AI Robot",
+      "publisher": "MagicLab",
+      "url": "https://www.magiclabglobal.com/products/magicbot-gen1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company specs and claims."
+    },
+    {
+      "id": "magiclab-magicbot-gen1_source_002",
+      "title": "MagicBot Price 2026: MagicLab Specs & Factory Deployment",
+      "publisher": "Robozaps",
+      "url": "https://blog.robozaps.com/b/magiclab-magicbot-review",
+      "date_published": "2026-03-10",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Tech blog/review; reports company footage and includes a third-party spec table with conflicts."
+    },
+    {
+      "id": "magiclab-magicbot-gen1_source_003",
+      "title": "MagicLab MagicBot Gen1",
+      "publisher": "Robotics Center of Silicon Valley",
+      "url": "https://www.roboticscenter.ai/store/product/magiclab-magicbot-gen1-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller/store listing; mirrors official specs but has a key spec weight conflict (40 kg net weight vs 70 kg total)."
+    },
+    {
+      "id": "magiclab-magicbot-gen1_source_004",
+      "title": "MagicLab – MagicBot Z1 & Gen1 Humanoids for Sale | Robots International",
+      "publisher": "Robots International",
+      "url": "https://www.robotsinternational.com/Magiclab.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "E-commerce/directory with product listing; claims factory deployment but no primary evidence."
+    },
+    {
+      "id": "magiclab-magicbot-gen1_source_005",
+      "title": "MagicLab MagicBot Gen1 Humanoid Robot",
+      "publisher": "AIFITLAB",
+      "url": "https://aifitlab.com/products/magiclab-magicbot-gen1-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller product page; mirrors specs but lists $218,000 price not confirmed by MagicLab."
+    },
+    {
+      "id": "magiclab-magicbot-gen1_source_006",
+      "title": "MagicBot Gen1 by MagicLab: Specs & Evidence | The Mimic",
+      "publisher": "The Mimic",
+      "url": "https://themimic.io/robots/magiclab-magicbot-gen1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Evidence ledger directory; no customer-linked records for Gen1."
+    },
+    {
+      "id": "magiclab-magicbot-gen1_source_007",
+      "title": "MagicLab MagicBot Gen1 vs Poppy Project Poppy Humanoid — Robofy",
+      "publisher": "Robofy",
+      "url": "https://robofy.world/compare/magiclab-magicbot-gen1-vs-poppy-project-poppy-humanoid",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Comparison page; price estimate $120K and specs."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "MagicBot Gen1 has credible official specs and a company-released December 2024 factory deployment video, but all deployment evidence is unnamed and autonomy is acknowledged by MagicLab as still in training with human oversight. No public price or customer metrics were found.",
+    "strongest_positive_evidence": [
+      "Official product page with full-size biped specs, 42 DoF, 7.5 kg single-arm load, 3-5 h runtime.",
+      "Robozaps report of December 2024 multi-robot factory footage with inspection, assembly and scanning.",
+      "Robots International claim of Gen1 deployed on electronics-manufacturing lines since Dec 2024."
+    ],
+    "weakest_or_missing_evidence": [
+      "No named customer or independent verification of deployment.",
+      "No output metrics, uptime, failure rates or autonomy logs.",
+      "No official price; third-party reseller prices conflict."
+    ],
+    "conflicting_claims": [
+      "Payload: official 7.5 kg single-arm / 15 kg both arms vs Robozaps table 20 kg per arm / 40 kg total.",
+      "Weight: source 3 key spec says Net weight 40 kg while All Specifications says Total Weight Approximately 70kg; official says approx 70 kg.",
+      "IP66 rating listed by Robozaps but not in official product page.",
+      "Reseller prices vary: $119,800 (Robots International), $120K (Robofy), $218,000 (AIFITLAB)."
+    ],
+    "recommended_arena_categories": [
+      "industrial_humanoid",
+      "research_platform",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Z1 specs or Spring Festival Gala performance to Gen1.",
+      "Do not claim a named customer deployment.",
+      "Do not treat factory footage as evidence of full autonomy.",
+      "Do not use third-party payload 20 kg per arm as official."
+    ],
+    "compiler_note": "This pack was compiled automatically from public sources on 2026-10-29 and needs human review."
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "MagicBot Gen1 is MagicLab's full-size industrial humanoid still listed on the company product page as of 2026-10-29. No source in this review indicated it has been discontinued or replaced."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Gen1 payload 20 kg per arm / 40 kg total",
+      "reason": "Conflicts with official MagicLab product page which says up to 7.5 kg single-arm load and Max Load (Both Arms) 15kg. Robozaps table is third-party and likely mixes models.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ]
+    },
+    {
+      "claim": "Gen1 IP66 rating",
+      "reason": "Not present in official MagicLab product page; listed only by Robozaps third-party table.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ]
+    },
+    {
+      "claim": "525 N·m peak joint torque per joint for Gen1",
+      "reason": "Conflicts with official MagicLab product page which states maximum joint torque at least 350 N·m.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ]
+    },
+    {
+      "claim": "MagicBot Gen1 sold out on JD.com after Spring Festival Gala",
+      "reason": "Source 2 says MagicLab robots sold out, but the Gala robot was MagicBot Z1; no evidence Gen1 was listed or sold out on JD.com.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_002"
+      ]
+    },
+    {
+      "claim": "Any named customer or commercial output metrics for Gen1",
+      "reason": "No primary customer confirmation, units, hours or output metrics were found; The Mimic found zero linked deployment records.",
+      "source_ids": [
+        "magiclab-magicbot-gen1_source_006"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "MagicBot Gen1 is MagicLab's full-size electric humanoid (174 cm, approx 70 kg, 42 active DoF) with optional 11-DoF tactile hands, 3D LiDAR, depth and fisheye vision, and an 8-core CPU + 100 TOPS AI processor. MagicLab lists contact sales and 3-5 hours runtime with 7.5 kg single-arm load. Secondary sources report MagicLab released December 2024 footage of multiple Gen1 robots doing inspection, material handling, assembly and barcode scanning at an unnamed electronics factory, with a researcher saying the robots were still in skill training with human oversight. No named customer or output metrics were found, and third-party resale prices conflict ($119,800-$218,000).",
+    "strongest_evidence": [
+      "Official product page confirms full-size biped specs and autonomous feature claims.",
+      "Robozaps describes December 2024 factory footage of multiple Gen1 robots collaborating.",
+      "Robots International states Gen1 has been deployed on electronics-manufacturing lines since December 2024."
+    ],
+    "weakest_evidence": [
+      "No named customer deployment or output metrics.",
+      "No independent autonomy verification; MagicLab says training phase with human oversight.",
+      "Conflicting third-party payload and price data; no official price."
+    ],
+    "known_do_not_credit": [
+      "Do not credit Z1 specs or Gala performance to Gen1.",
+      "Do not use 20 kg per arm / 40 kg total payload from Robozaps table.",
+      "Do not use IP66 rating as official Gen1 spec.",
+      "Do not treat JD.com sellout as Gen1 sales."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

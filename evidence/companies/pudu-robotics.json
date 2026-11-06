@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "pudu-robotics",
+    "name": "PUDU Robotics",
+    "country": "China",
+    "website": "https://www.pudurobotics.com/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "pudu-d9"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "pudu-robotics_company_source_001",
+      "title": "PUDU Robotics website",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/en/products/d9",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

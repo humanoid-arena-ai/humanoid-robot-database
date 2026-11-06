@@ -1,0 +1,24 @@
+{
+  "id": "k-scale-labs",
+  "name": "K-Scale Labs",
+  "country": "United States",
+  "headquarters": "Palo Alto, California, United States",
+  "founded": 2024,
+  "website": null,
+  "summary": "K-Scale Labs built open-source humanoid robots for developers, including K-Bot. It laid off most staff and canceled pre-orders in November 2025, then released its designs under open licenses.",
+  "funding": "Y Combinator Winter 2024 batch; small pre-seed round. Ran out of funding in November 2025.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "K-Scale Labs: Open-source humanoid robots",
+      "url": "https://www.ycombinator.com/companies/k-scale-labs",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "K-Scale Labs Cancels K-Bot Orders, Open-Sources All IP After Funding Fails",
+      "url": "https://www.humanoidsdaily.com/news/k-scale-labs-cancels-k-bot-orders-open-sources-all-ip-after-funding-fails",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

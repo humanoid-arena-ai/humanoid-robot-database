@@ -1,0 +1,24 @@
+{
+  "id": "italian-institute-of-technology",
+  "name": "Italian Institute of Technology (IIT)",
+  "country": "Italy",
+  "headquarters": "Genoa, Italy",
+  "founded": 2003,
+  "website": null,
+  "summary": "IIT is a publicly funded Italian research institute that developed the iCub and ergoCub humanoids. It was established by law in 2003.",
+  "funding": "Public research institute.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A new robot for the first 20 years of IIT",
+      "url": "https://opentalk.iit.it/en/a-new-robot-for-the-first-20-years-of-iit/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "ergoCub humanoid robot",
+      "url": "https://ergocub.eu/robot",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

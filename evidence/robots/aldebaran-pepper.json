@@ -1,0 +1,813 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "aldebaran-pepper",
+    "name": "Pepper",
+    "company_id": "aldebaran",
+    "company_name": "Aldebaran",
+    "country": "France",
+    "generation": "First-generation Pepper social humanoid",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Pepper was released in 2014. Production reportedly stopped in 2020 or 2021. RobotLAB still lists units for sale from $32,000. Maxvision acquired Aldebaran assets, including Pepper, in July 2025.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "retail and hospitality customer service",
+      "education and STEM",
+      "assisted living and eldercare",
+      "research and human-robot interaction",
+      "healthcare"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "120 cm | 47.2 in",
+      "value": 120,
+      "unit": "cm",
+      "notes": "Wevolver spec table lists 120 cm; no conflicting height in other used sources.",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "28 kg | 62 lb",
+      "value": 28,
+      "unit": "kg",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload specification was found in reviewed sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "12 hours of operation",
+      "value": 12,
+      "unit": "hours",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": "30-Ah lithium-ion battery",
+      "value": 30,
+      "unit": "Ah",
+      "notes": "Capacity is given in amp-hours, not watt-hours.",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 19,
+      "notes": "Wevolver lists 19 total DOF: Head 2; Shoulder 2x2; Elbow 2x2; Wrist 1x2; Hand 1x2; Hip 2; Knee 1; Mobile base 2. Studocu's 17 joints is excluded as uncorroborated.",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "3 km/h | 1.7 mph",
+      "value": 0.83,
+      "unit": "m/s",
+      "notes": "Pepper is wheeled; this is driving speed, not walking speed.",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Simple hands with 1 DoF each; no fine manipulation or force feedback described in reviewed sources.",
+      "degrees_of_freedom": 1,
+      "force_feedback": null,
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Head with two HD 5-megapixel cameras (mouth and forehead)",
+        "3D sensor behind eyes",
+        "four microphones",
+        "three touch sensors on head",
+        "torso gyroscope",
+        "hands with two touch sensors",
+        "leg/mobile base with two sonars, six lasers, three bumper sensors, and gyroscope"
+      ],
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Intel Atom E3845 computer; NAOqi operating system; supports Python, C++, Java, JavaScript, and ROS interface.",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "20 DC motors according to Wevolver specs.",
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 32000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.robotlab.com/store/pepper-robot/",
+      "notes": "RobotLAB lists Pepper starting at $32,000 with purchase and lease options. The Robot Report says production stopped in 2020 or 2021.",
+      "source_ids": [
+        "aldebaran-pepper_source_002",
+        "aldebaran-pepper_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Pepper has 1 DoF per hand and no payload spec; no manipulation tasks or grasping evidence found. Wheels and social design prioritize interaction over manipulation.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ],
+      "caveats": [
+        "No payload, grip force, or manipulation demo/benchmark found.",
+        "Hands are simple, single-DoF end effectors."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Official documentation states Pepper ships with Autonomous Life on, reacting to sounds, movement, tactile contacts, looking for people, listening and answering. Sonars enable distance estimation for obstacle avoidance. No task-level autonomy or success rate found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_004",
+        "aldebaran-pepper_source_005"
+      ],
+      "caveats": [
+        "Autonomous Life is a reactive behavior package, not full task execution.",
+        "No independent evaluation; video demos have no transcripts."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Pepper has a wheeled mobile base with 2 DoF, 19 total DOF, and top speed 3 km/h. Sonar specs support obstacle distance estimation.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001",
+        "aldebaran-pepper_source_005"
+      ],
+      "caveats": [
+        "Wheeled, not bipedal; walking_speed is actually driving speed.",
+        "No whole-body control benchmark, stability or navigation test found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Sensors include two 5 MP HD cameras, 3D sensor, 4 microphones, touch sensors, sonars, lasers, bumpers, gyroscope. Wevolver says Pepper recognizes faces and basic emotions; sonar specs provide obstacle detection range.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001",
+        "aldebaran-pepper_source_005"
+      ],
+      "caveats": [
+        "Face/emotion recognition is a directory summary, not independently benchmarked.",
+        "No scene understanding or object recognition evaluation."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Designed for social interaction: speech, tablet, 15 languages claimed, emotion recognition claimed. RobotLAB describes use in customer service/education. Video demos exist but only titles available.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001",
+        "aldebaran-pepper_source_002"
+      ],
+      "caveats": [
+        "Language and emotion claims not independently tested.",
+        "Six video sources have no transcript; do not credit specific interactions."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Originally specified for 12 hours of operation with 30 Ah battery. No field reliability metrics, failure rates, or independent verification found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ],
+      "caveats": [
+        "Spec value only; actual runtime depends on usage.",
+        "No MTBF, repair, or fleet reliability data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "120 cm, 28 kg, wheeled base, curvy design; Wevolver describes Pepper as danger-free with high user acceptance. Studocu safety-standard claims are excluded as uncorroborated.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001",
+        "aldebaran-pepper_source_006"
+      ],
+      "caveats": [
+        "Safety claims are marketing/uncorroborated; Studocu is not reliable.",
+        "No third-party safety certification found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Robot Report reports Aldebaran sold about 17,000 Pepper humanoids to 70 countries; Wevolver says more than 2000 companies adopt it. No named customer or deployment metrics found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "aldebaran-pepper_source_001",
+        "aldebaran-pepper_source_003"
+      ],
+      "caveats": [
+        "Unit and adoption figures are company-reported via media/directory, not independently verified.",
+        "No named deployment cases, hours, or customer outcomes."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "RobotLAB reseller page lists Pepper from $32,000 with purchase/lease, demo and quote path, nationwide service; production stopped 2020/2021.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_002",
+        "aldebaran-pepper_source_003"
+      ],
+      "caveats": [
+        "Reseller listing, not original manufacturer; price may be for legacy stock.",
+        "No official SoftBank store found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "aldebaran-pepper_evidence_001",
+      "date": null,
+      "title": "Pepper technical specifications",
+      "claim": "Wevolver lists Pepper as 120 cm tall, 28 kg, 3 km/h, 30-Ah lithium-ion battery with 12 hours of operation, 19 degrees of freedom, Intel Atom E3845, two HD 5-megapixel cameras, 3D sensor, four microphones, and 20 DC motors.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Third-party spec directory, not official manufacturer page. Values not independently measured.",
+      "arena_relevance": "Defines physical and hardware baseline for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Degrees of freedom (DOF) | 19 (Head: 2 DoF; Shoulder: 2 DoF x 2; Elbow: 2 DoF x 2; Wrist: 1 DoF x 2; Hand: 1 DoF x 2; Hip: 2 DoF; Knee: 1 DoF; Mobile base: 2 DoF)",
+      "source_location": "Wevolver Technical Specifications table",
+      "verification_notes": "Wevolver is a directory aggregating specs; should be compared with official documentation where possible.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-pepper_evidence_002",
+      "date": null,
+      "title": "Pepper social and interaction capabilities",
+      "claim": "Pepper is described as a social robot that recognizes faces and basic human emotions, speaks 15 languages, and has a 10.1-inch chest tablet.",
+      "category": [
+        "human_interaction",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Directory summary, not official demo or independent evaluation.",
+      "arena_relevance": "Supports social interaction claims but weakly.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Pepper, a social robot, recognizes faces and makes sense of basic human emotions.",
+      "source_location": "Wevolver Overview section",
+      "verification_notes": "Wevolver overview may be promotional; no benchmark or demo evidence.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-pepper_evidence_003",
+      "date": null,
+      "title": "RobotLAB Pepper listing and price",
+      "claim": "RobotLAB lists Pepper starting at $32,000 and offers purchase, lease, demo, delivery, setup, training and nationwide service.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Reseller product page; price is for reseller bundle, not original manufacturer.",
+      "arena_relevance": "Establishes that Pepper can still be purchased through an integrator.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The Softbank Pepper Robot is listed at $32,000 by RobotLAB.",
+      "source_location": "RobotLAB Q&A section",
+      "verification_notes": "Reseller page current as of access date; production stopped per media.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-pepper_evidence_004",
+      "date": null,
+      "title": "RobotLAB package contents and purchase path",
+      "claim": "RobotLAB box includes Pepper, charger, 2 batteries, English language; buyers can request quote or demo through RobotLAB.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Purchase path is through an integrator, not original manufacturer.",
+      "arena_relevance": "Supports practical acquisition and support for US customers.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Request a free demo or quote for the Softbank Pepper Robot through RobotLAB.",
+      "source_location": "RobotLAB product page Q&A",
+      "verification_notes": "Reseller page, not independent confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-pepper_evidence_005",
+      "date": "2025-07-19",
+      "title": "Pepper production stopped and asset acquisition",
+      "claim": "The Robot Report says Aldebaran released the first Pepper in 2014, sold about 17,000 Pepper humanoids, stopped producing Pepper in 2020 or 2021, and Maxvision acquired core assets in July 2025.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-pepper_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Media report relaying company figures; not independent verification.",
+      "arena_relevance": "Provides sales scale and end-of-production status.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The company said it had sold about 20,000 Nao robots and 17,000 Pepper humanoids to 70 countries, but it stopped producing Pepper in 2020 or 2021.",
+      "source_location": "The Robot Report article",
+      "verification_notes": "The Robot Report is reputable, but the 17,000 figure is company-reported.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-pepper_evidence_007",
+      "date": null,
+      "title": "Pepper sonar obstacle detection specs",
+      "claim": "Official documentation states Pepper is equipped with two ultrasonic sensors to estimate distance to obstacles, frequency 42kHz, detection range 0-5 m, 60 degree cone.",
+      "category": [
+        "perception_scene_understanding",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "aldebaran-pepper_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "Detailed official technical disclosure.",
+      "arena_relevance": "Provides measurable obstacle detection capabilities.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot is equipped with two ultrasonic sensors (or sonars) which allow it to estimate the distance to obstacles in its environment.",
+      "source_location": "Sonars specification page",
+      "verification_notes": "Official documentation with numeric specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "aldebaran-pepper_demo_001",
+      "title": "We Interviewed Pepper — The Humanoid Robot",
+      "date": "2018-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-pepper_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title and date available; no transcript or visual content reviewed. Cannot credit specific capabilities."
+      ],
+      "editing_notes": "Title only; no transcript or visual review performed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-pepper_demo_002",
+      "title": "First date with humanoid robot Pepper",
+      "date": "2017-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-pepper_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title and date available; no transcript or visual content reviewed. Cannot credit specific capabilities."
+      ],
+      "editing_notes": "Title only; no transcript or visual review performed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-pepper_demo_003",
+      "title": "Meet Pepper, the Friendly Humanoid Robot",
+      "date": "2015-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-pepper_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title and date available; no transcript or visual content reviewed. Cannot credit specific capabilities."
+      ],
+      "editing_notes": "Title only; no transcript or visual review performed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-pepper_demo_004",
+      "title": "Pepper the humanoid robot knows how you feel",
+      "date": "2016-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-pepper_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title and date available; no transcript or visual content reviewed. Cannot credit specific capabilities."
+      ],
+      "editing_notes": "Title only; no transcript or visual review performed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-pepper_demo_005",
+      "title": "Meet Pepper the Robot | Softbank Robotics",
+      "date": "2016-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-pepper_source_013"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title and date available; no transcript or visual content reviewed. Cannot credit specific capabilities."
+      ],
+      "editing_notes": "Title only; no transcript or visual review performed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-pepper_demo_006",
+      "title": "Meet Pepper – the social robot",
+      "date": "2024-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-pepper_source_014"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title and date available; no transcript or visual content reviewed. Cannot credit specific capabilities."
+      ],
+      "editing_notes": "Title only; no transcript or visual review performed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in metadata.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "RobotLAB lists Pepper for sale at $32,000, but production reportedly stopped in 2020 or 2021. No original manufacturer store found.",
+      "impact_on_arena_scoring": "Accessibility is conditional on reseller stock and legacy support."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Official docs describe Autonomous Life but no independent evaluation. Video demos have no transcripts.",
+      "impact_on_arena_scoring": "Keep autonomy confidence low."
+    },
+    {
+      "topic": "Manipulation and payload",
+      "description": "No payload spec or manipulation tests found; hands are 1 DoF.",
+      "impact_on_arena_scoring": "Do not credit Pepper for manipulation tasks."
+    },
+    {
+      "topic": "Reliability",
+      "description": "12-hour runtime is a spec only; no field failure or uptime data found.",
+      "impact_on_arena_scoring": "Endurance/reliability should be scored cautiously."
+    },
+    {
+      "topic": "Safety and compliance",
+      "description": "Safety-related claims appear in directory and Studocu, but no independent certification was found.",
+      "impact_on_arena_scoring": "Do not credit official safety compliance."
+    },
+    {
+      "topic": "Human interaction video evidence",
+      "description": "Six video titles suggest social demos, but no transcripts or visual review were available.",
+      "impact_on_arena_scoring": "Cannot credit specific interaction capabilities from videos."
+    }
+  ],
+  "source_ids": [
+    "aldebaran-pepper_source_001",
+    "aldebaran-pepper_source_002",
+    "aldebaran-pepper_source_003",
+    "aldebaran-pepper_source_004",
+    "aldebaran-pepper_source_005",
+    "aldebaran-pepper_source_006",
+    "aldebaran-pepper_source_009",
+    "aldebaran-pepper_source_010",
+    "aldebaran-pepper_source_011",
+    "aldebaran-pepper_source_012",
+    "aldebaran-pepper_source_013",
+    "aldebaran-pepper_source_014"
+  ],
+  "sources": [
+    {
+      "id": "aldebaran-pepper_source_001",
+      "title": "SoftBank Robotics - Pepper",
+      "publisher": "Wevolver",
+      "url": "https://www.wevolver.com/specs/softbank-robotics-pepper",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party spec directory; aggregates manufacturer specs but not independently verified."
+    },
+    {
+      "id": "aldebaran-pepper_source_002",
+      "title": "Softbank Pepper Robot — Price, Specs & Demo",
+      "publisher": "RobotLAB",
+      "url": "https://www.robotlab.com/store/pepper-robot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Reseller/integrator product page; price and availability may be legacy stock."
+    },
+    {
+      "id": "aldebaran-pepper_source_003",
+      "title": "Maxvision buys core robot assets of Aldebaran, including Nao and Pepper",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/maxvision-buys-core-robot-assets-including-nao-pepper-aldebaran/",
+      "date_published": "2025-07-19",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reliable trade media, but appears to relay company statements."
+    },
+    {
+      "id": "aldebaran-pepper_source_004",
+      "title": "Understanding Autonomous Life settings",
+      "publisher": "SoftBank Robotics Documentation",
+      "url": "https://doc.aldebaran.com/2-5/family/pepper_user_guide/life_pep.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "high",
+      "reliability_notes": "Official technical documentation for Pepper."
+    },
+    {
+      "id": "aldebaran-pepper_source_005",
+      "title": "Sonars",
+      "publisher": "SoftBank Robotics Documentation",
+      "url": "https://doc.aldebaran.com/2-5/family/pepper_technical/sonar_pep.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "high",
+      "reliability_notes": "Official technical documentation with sensor specifications."
+    },
+    {
+      "id": "aldebaran-pepper_source_006",
+      "title": "Aldebaran's Humanoid Robotics: Platform Leadership Analysis",
+      "publisher": "Studocu",
+      "url": "https://www.studocu.com/row/document/kenyatta-university/mathematics-and-computer-science/aldebaran-robots-document-copy/99547016?sid=898307e3-6f6a-4a2b-9a4b-cc139887125f1793259615",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "low",
+      "reliability_notes": "User-uploaded student paper; not authoritative; excluded from primary evidence."
+    },
+    {
+      "id": "aldebaran-pepper_source_009",
+      "title": "We Interviewed Pepper — The Humanoid Robot",
+      "publisher": "Insider Tech",
+      "url": "https://www.youtube.com/watch?v=zJHyaD1psMc",
+      "date_published": "2018-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "No transcript available; only title metadata reviewed."
+    },
+    {
+      "id": "aldebaran-pepper_source_010",
+      "title": "First date with humanoid robot Pepper",
+      "publisher": "CNN",
+      "url": "https://www.youtube.com/watch?v=aZ5VkgvQFBU",
+      "date_published": "2017-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "No transcript available; only title metadata reviewed."
+    },
+    {
+      "id": "aldebaran-pepper_source_011",
+      "title": "Meet Pepper, the Friendly Humanoid Robot",
+      "publisher": "IEEE Spectrum",
+      "url": "https://www.youtube.com/watch?v=lqlyxg1-gE0",
+      "date_published": "2015-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "No transcript available; only title metadata reviewed."
+    },
+    {
+      "id": "aldebaran-pepper_source_012",
+      "title": "Pepper the humanoid robot knows how you feel",
+      "publisher": "CNET",
+      "url": "https://www.youtube.com/watch?v=3PPEpybFSdg",
+      "date_published": "2016-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "No transcript available; only title metadata reviewed."
+    },
+    {
+      "id": "aldebaran-pepper_source_013",
+      "title": "Meet Pepper the Robot | Softbank Robotics",
+      "publisher": "NAO by Maxtronics",
+      "url": "https://www.youtube.com/watch?v=kr05reBxVRs",
+      "date_published": "2016-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "No transcript available; only title metadata reviewed."
+    },
+    {
+      "id": "aldebaran-pepper_source_014",
+      "title": "Meet Pepper – the social robot",
+      "publisher": "Chalmers University of Technology",
+      "url": "https://www.youtube.com/watch?v=hUrjxjwqRk0",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "No transcript available; only title metadata reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Pepper is a widely sold wheeled social humanoid, not a manipulation or industrial platform; public evidence is mostly specs and reseller listing, with official docs for basic autonomous life. No independent performance data.",
+    "strongest_positive_evidence": [
+      "Official specs from Wevolver: 120 cm, 28 kg, 19 DOF, 12 h runtime, 20 DC motors.",
+      "RobotLAB reseller listing at $32,000 with purchase/demo path.",
+      "The Robot Report report of 17,000 Pepper humanoids sold and production stopped.",
+      "Official documentation on default Autonomous Life and sonar specs."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmarks, deployment metrics, or named customer cases.",
+      "No transcript or visual review of six video demos.",
+      "No payload or manipulation capability evidence.",
+      "Autonomy and social claims not independently verified."
+    ],
+    "conflicting_claims": [
+      "Studocu says 17 joints; Wevolver lists 19 DOF.",
+      "Production status: still listed by RobotLAB but Robot Report says stopped 2020/2021.",
+      "Some video titles suggest emotion recognition, but no transcript to verify."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "service_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit video titles as demonstrated capabilities.",
+      "Do not credit Studocu safety compliance or 17 joints.",
+      "Do not describe Pepper as a manipulation or industrial humanoid.",
+      "Do not treat the 17,000-unit figure as independently verified."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [],
+    "currentness_notes": "Pepper is not a current-generation product; production reportedly stopped in 2020 or 2021 and Maxvision acquired Aldebaran assets in 2025. Reseller RobotLAB still lists units as of 2026-10-29."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Pepper complies with IEC12100, ISO10218, and ISO13482 and has 17 joints.",
+      "reason": "Uncorroborated user-uploaded Studocu document; conflicts with Wevolver's 19 DOF and lacks official or independent verification.",
+      "source_ids": [
+        "aldebaran-pepper_source_006"
+      ]
+    },
+    {
+      "claim": "Video titles (e.g., 'knows how you feel') demonstrate verified emotion recognition or social interaction.",
+      "reason": "Only titles and dates available; no transcripts or visual review performed.",
+      "source_ids": [
+        "aldebaran-pepper_source_009",
+        "aldebaran-pepper_source_010",
+        "aldebaran-pepper_source_012",
+        "aldebaran-pepper_source_014"
+      ]
+    },
+    {
+      "claim": "Pepper is currently produced by SoftBank or original manufacturer.",
+      "reason": "The Robot Report reports production stopped in 2020 or 2021 and assets acquired by Maxvision.",
+      "source_ids": [
+        "aldebaran-pepper_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 9,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Pepper is Aldebaran/SoftBank's 120 cm wheeled social humanoid with 19 DOF, 28 kg, 12 h listed runtime, 20 DC motors, Intel Atom E3845, HD cameras, 3D sensor, sonars, touch sensors, and a chest tablet. RobotLAB lists it from $32,000, but production reportedly stopped in 2020 or 2021 and Maxvision acquired Aldebaran assets in 2025. Official docs describe default Autonomous Life reacting to sounds, movement and touch; media relay Aldebaran's claim of about 17,000 Pepper humanoids sold. Manipulation, payload, autonomy, and reliability lack independent evidence; video demos are titles only.",
+    "strongest_evidence": [
+      "Official specs from Wevolver: 120 cm, 28 kg, 19 DOF, 12 h runtime, 20 DC motors.",
+      "RobotLAB reseller listing at $32,000 with purchase/demo path.",
+      "The Robot Report report of 17,000 Pepper humanoids sold and production stopped.",
+      "Official documentation on default Autonomous Life and sonar specs."
+    ],
+    "weakest_evidence": [
+      "No independent benchmarks, deployment metrics, or named customer cases.",
+      "No transcript or visual review of six video demos.",
+      "No payload or manipulation capability evidence.",
+      "Autonomy and social claims not independently verified."
+    ],
+    "known_do_not_credit": [
+      "Video titles alone as capability demonstrations.",
+      "Studocu safety compliance and 17 joints (uncorroborated).",
+      "Production ongoing by SoftBank; production stopped per Robot Report.",
+      "Pepper as a manipulation or industrial robot."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

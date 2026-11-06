@@ -1,0 +1,39 @@
+{
+  "id": "noetix-bumi",
+  "name": "Noetix Bumi",
+  "aliases": ["Bumi"],
+  "companyId": "noetix-robotics",
+  "companyName": "Noetix Robotics",
+  "country": "China",
+  "announced": "2025-10-22",
+  "status": "purchasable",
+  "category": "home",
+  "summary": "Bumi is a 94 cm, 12 kg consumer humanoid priced at 9,998 yuan, marketed as the first sub-10,000 yuan humanoid in China. It walks, runs and dances, and supports voice interaction and drag-and-drop programming for children. It is meant for education and family entertainment, not household chores.",
+  "specs": {
+    "height_cm": { "value": 94, "original": "approximately 94 cm", "sourceId": "s1" },
+    "weight_kg": { "value": 12, "original": "around 12 kg", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": { "value": 1, "original": "1-2 hours of runtime", "sourceId": "s1" },
+    "dof": { "value": 21, "original": "21 DOF", "sourceId": "s2" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "Cameras and microphone array.",
+  "compute": "Rockchip processor (per Robozaps).",
+  "price": { "value": 9998, "currency": "CNY", "priceType": "list", "configuration": "Bumi standard", "sourceId": "s1" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": null,
+  "highlights": [
+    "Robozaps reports the first 500 units sold within 48 hours on JD.com.",
+    "48 V battery of 3.5 Ah or more."
+  ],
+  "caveats": [
+    "Sold in China only as of early 2026, per Robozaps; deliveries were delayed.",
+    "Not designed for household labor."
+  ],
+  "sources": [
+    { "id": "s1", "title": "China's Noetix Robotics launches $1,400 consumer-grade humanoid robot", "publisher": "Robotics and Automation News", "url": "https://roboticsandautomationnews.com/2025/10/22/beijing-startup-noetix-robotics-launches-consumer-grade-humanoid-robot-at-1400/95731/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Noetix Bumi Price 2026: $1,400 World's Cheapest Humanoid", "publisher": "Robozaps", "url": "https://blog.robozaps.com/b/noetix-bumi-review", "accessed": "2026-10-14" }
+  ]
+}

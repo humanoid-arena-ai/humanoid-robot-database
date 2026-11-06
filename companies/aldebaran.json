@@ -1,0 +1,18 @@
+{
+  "id": "aldebaran",
+  "name": "Aldebaran",
+  "country": "France",
+  "headquarters": "Paris, France",
+  "founded": 2005,
+  "website": null,
+  "summary": "Aldebaran created the NAO and Pepper humanoids, selling about 20,000 NAO and 17,000 Pepper units. After its 2025 bankruptcy, Shenzhen-based Maxvision bought its core assets and IP.",
+  "funding": "Formerly owned by SoftBank; core assets acquired by Maxvision Technology in July 2025.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Maxvision buys core robot assets of Aldebaran, including Nao and Pepper",
+      "url": "https://www.therobotreport.com/maxvision-buys-core-robot-assets-including-nao-pepper-aldebaran/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

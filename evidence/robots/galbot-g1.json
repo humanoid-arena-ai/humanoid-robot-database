@@ -1,0 +1,1207 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "galbot-g1",
+    "name": "Galbot G1",
+    "company_id": "galbot",
+    "company_name": "Galbot",
+    "country": "China",
+    "generation": "Flagship wheeled humanoid/mobile manipulator",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Galbot describes G1 as in scaled commercial deployment across retail, industry, logistics, healthcare and services. Product page shows a Buy Now link to JD.com, but RoboZaps reports no official list price and that the only public sale was two units during the 2026 Spring Festival Gala; enterprise sales are quote-based. Deployments include Galbot Space Cabin kiosks, warehouses, Xuanwu Hospital, and a Beijing pharmacy with a medicinal-distribution permit.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "autonomous retail stores and kiosks",
+      "warehouse picking, packing and dispatch",
+      "hospital pharmacy and patient-room assistance",
+      "industrial sorting and loading/unloading",
+      "home services (cleaning, tidying, fetching)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1730 mm",
+      "value": 173,
+      "unit": "cm",
+      "notes": "Official product page and developer manual list max height 1730 mm. Source6 claims a maximum reach height of 240 cm with torso lift.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "weight": {
+      "original_value": "92.5 kg",
+      "value": 92.5,
+      "unit": "kg",
+      "notes": "Official weight. Humanoid.guide lists 88 kg; Robots International lists 85 kg; these are not Galbot official figures.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "payload": {
+      "original_value": "Single Arm 5 kg / Total 10 kg",
+      "value": 10,
+      "unit": "kg",
+      "notes": "Payload at wrist center: 5 kg per arm, 10 kg combined.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": "8 hours",
+      "value": 8,
+      "unit": "hours",
+      "notes": "Official runtime is 8 hours under laboratory conditions at an average speed of 60%. Some resellers claim 10-hour runtime, but that is not confirmed by Galbot.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "battery": {
+      "original_value": "48 V 30 Ah",
+      "value": 30,
+      "unit": "Ah",
+      "notes": "Battery capacity 48 V 30 Ah; charging specification 54.6 V 10 A; wired charger standard, wireless dock and spare battery optional.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.5 m/s",
+      "value": 1.5,
+      "unit": "m/s",
+      "notes": "Max speed of 4-wheel omnidirectional chassis; this is wheeled motion, not bipedal walking.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 21,
+      "notes": "Official: 21 total DoF excluding chassis and end effector (neck 2, arms 7x2, waist 3, legs 2). Robots International claims 47 total including a 12-DOF dexterous hand; that is not from Galbot official sources.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "hands": {
+      "description": "End effectors swappable between dexterous hands, suction cups and grippers. RoboZaps describes actual left arm as suction-cup module and right arm as adaptive parallel gripper in some deployments.",
+      "degrees_of_freedom": null,
+      "force_feedback": "Wrist 6-axis force sensors x2 (official)",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004",
+        "galbot-g1_source_007"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Head stereo/binocular camera x1",
+        "Torso RGB camera x4 and IMU x2",
+        "Wrist depth camera x2 and wrist 6-axis force sensor x2",
+        "Chassis 3D LiDAR x1, ultrasonic sensors x8, IMU x1",
+        "Linear 4-microphone array x2, 5.5-inch touchscreen"
+      ],
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    "compute": {
+      "description": "Official: NVIDIA AGX Orin 64GB 275 TOPS. G1 Premium variant is reported to use NVIDIA Jetson AGX Thor with higher AI compute; source video title claims it is powered by NVIDIA Jetson Thor.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004",
+        "galbot-g1_source_009"
+      ]
+    },
+    "actuators": {
+      "description": "Official spec sheet does not list actuator type or torque. It lists 21 DoF excluding chassis and end effector, and a 4-wheel omnidirectional chassis. Robots International claims 47 total DoF including a 12-DOF dexterous hand, which conflicts with official information.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004",
+        "galbot-g1_source_005"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://item.m.jd.com/product/100296074780.html",
+      "notes": "Galbot product page has a 'Buy Now' link to JD.com, but RoboZaps reports no official list price, no consumer channel, and only a two-unit flash sale in February 2026 for about 630,000 yuan each. Enterprise sales are quote-based. Western storefront prices are not confirmed Galbot channels.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_007"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specs list swappable end effectors, 5 kg per arm payload, and 21 DoF excluding end effector. Robots International describes a 2026 CCTV Spring Festival Gala performance with rolling walnuts, picking glass fragments, handing objects, and retrieving items from dense shelves. RoboZaps reports a certified pharmacy deployment for picking and sorting medicines, but also reports a FamilyMart trial where chip-bag grasping failed about 4 times out of 10 on fewer than 10 product types.",
+      "evidence_level": 3,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_005",
+        "galbot-g1_source_007"
+      ],
+      "caveats": [
+        "The Gala performance is described by a reseller, not confirmed by the official Galbot video transcript.",
+        "Official Galbot sources do not publish grasping success rates or hand DoF.",
+        "RoboZaps found real-store manipulation was narrow and brittle."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Galbot product page claims fully autonomous perception-to-action. Official video title claims the world's first 100% autonomous humanoid robot-operated store. RoboZaps reports the G1 won a pharmaceutical-sorting competition fully autonomously while competitors were teleoperated. However, reporters found stores still needed human staff and the robot handled only a small subset of products.",
+      "evidence_level": 3,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_005",
+        "galbot-g1_source_007",
+        "galbot-g1_source_008"
+      ],
+      "caveats": [
+        "Autonomy is company-asserted; no intervention logs or independent audit are published.",
+        "Actual store operations described by RoboZaps show limited autonomy breadth and human oversight.",
+        "No video transcripts are available for the official store video; title-only credit."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "The G1 uses a 4-wheel omnidirectional chassis with 1.5 m/s max speed, a lifting torso with 650 mm leg lift range, and a workspace from 0 to 2100 mm vertical and 1900 mm horizontal. It has 21 DoF excluding chassis and end effector across neck, arms, waist, and legs. It is a wheeled humanoid, not bipedal.",
+      "evidence_level": 2,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ],
+      "caveats": [
+        "No fall-rate or disturbance-recovery metric is published.",
+        "Wheeled base limits mobility to flat or gently ramped surfaces; it cannot climb stairs.",
+        "No independent whole-body control benchmark was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official sensor suite includes stereo camera, four RGB cameras, two depth cameras, 3D LiDAR, eight ultrasonic sensors, and IMUs. Galbot describes foundation models GraspVLA, GroceryVLA, TrackVLA, and NavFoM for grasping, retail, navigation, and target following. RoboZaps reports TrackVLA as vision-only, no mapping or remote control.",
+      "evidence_level": 2,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004",
+        "galbot-g1_source_006"
+      ],
+      "caveats": [
+        "Perception claims are company/reseller descriptions; no third-party benchmark.",
+        "RoboZaps reports a pharmacy robot had not yet learned medicine locations, indicating scene understanding is still limited in unfamiliar layouts."
+      ]
+    },
+    "human_interaction": {
+      "summary": "G1 has a 5.5-inch touchscreen, two 4-mic linear arrays, and two 5 W speakers. Galbot product page claims natural dialogue and human-like interaction. No third-party evaluation of conversation reliability was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ],
+      "caveats": [
+        "No demonstrated conversational accuracy or instruction-following metric.",
+        "Safety manual requires keeping personnel at least 1.5 m away during arm operation."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official specs list 8-hour operating time under lab conditions at 60% average speed, IP54 ingress protection, and 3.5-hour wired charging. The Robot Report reports multiple warehouse locations with stable continuous 24/7 operations for over a year. Product page claims hundreds of instant-retail warehouses running 24/7 for over a year and a half. Autonomy is company-asserted; no independent uptime logs.",
+      "evidence_level": 3,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_002",
+        "galbot-g1_source_004"
+      ],
+      "caveats": [
+        "24/7 operation figures come from company statements relayed by media.",
+        "Official runtime is lab-tested, not real-world continuous operation.",
+        "Actual output may be lower than claimed; RoboZaps reports fewer than 150 robots/year produced."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Height 173 cm, max reach 240 cm with torso lift, IP54, 0-40°C indoor environment, 5.5-inch touchscreen for interaction, emergency stop button, and a wheeled base that reduces fall risk compared with bipedal robots. Safety manual specifies 1.5 m human-robot distance and indoor use only.",
+      "evidence_level": 2,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004",
+        "galbot-g1_source_005"
+      ],
+      "caveats": [
+        "Wheeled base requires flat surfaces; not suitable for stairs or rough terrain.",
+        "No full-robot safety certification found in reviewed sources.",
+        "Manual warns to avoid using on uneven roads and to keep distance during arm movement."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Galbot product page reports more than 170 Space Cabin sites across 40+ cities and hundreds of instant-retail warehouses 24/7 for over 1.5 years. The Robot Report reports Xuanwu Hospital deployments, order partnerships with CATL, Bosch, Toyota, Hyundai, and Galbot Store in 30+ cities. RoboZaps reports a Haidian medicinal-distribution permit for a Beijing Nepstar pharmacy, making G1 the first certified robot pharmacy assistant in China. However, industrial partner names are not confirmed live production deployments.",
+      "evidence_level": 3,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_002",
+        "galbot-g1_source_007"
+      ],
+      "caveats": [
+        "Named industrial partners are orders and collaborations, not confirmed live production lines.",
+        "RoboZaps says 'thousands of units' refers to order backlog, not installed base; actual output may be under 150 robots/year.",
+        "No primary customer press releases were found; all deployment data come from company claims or secondary media."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No official list price or consumer purchase channel. The only public sale was two units on JD.com during the 2026 Spring Festival Gala for about 630,000 yuan (~$91,000) each; standing JD listing later around 690,000-700,000 yuan. Enterprise pricing is quote-based, primarily in China. Western storefront prices ($119,995, $55,000, $175,000 AUD) are not confirmed Galbot channels.",
+      "evidence_level": 2,
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_007"
+      ],
+      "caveats": [
+        "No confirmed western retail or leasing channel.",
+        "Price signals come from RoboZaps, not Galbot official list price.",
+        "One unit was imported to Japan for business testing in 2026, but no established outside-China channel."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "galbot-g1_evidence_001",
+      "date": null,
+      "title": "Galbot G1 official product page specs and reliability claims",
+      "claim": "Galbot official product page lists G1 at 1730 mm max height, 92.5 kg, 10 kg total payload (5 kg per arm), 8-hour runtime, 48 V 30 Ah battery, 21 DoF excluding chassis/end effector, max speed 1.5 m/s, IP54, NVIDIA AGX Orin 64GB 275 TOPS, and scenarios including Space Cabin, retail, home, warehousing, and industrial.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec page; values are company claims, not independently measured.",
+      "arena_relevance": "Primary source for G1 physical size, payload, runtime, sensors, compute, and intended use cases.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Each arm carries 5 kg, 10 kg combined, with end effectors swappable between suction cups and grippers; a 5.5-inch touchscreen and a four-microphone array keep it readable, controllable, and collaborative on site.",
+      "source_location": "Galbot G1 product page, Reliability and Specifications sections",
+      "verification_notes": "Official company spec sheet. No independent measurement or third-party verification of runtime or payload.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_002",
+      "date": null,
+      "title": "Galbot G1 Space Cabin and warehousing deployment claims",
+      "claim": "Galbot says Space Cabin deployed at more than 170 sites across over 40 cities and instant-retail warehouses run 24/7 for over a year and a half.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim; scale may include kiosks, not full robots.",
+      "arena_relevance": "Supports commercial deployment presence but lacks third-party verification.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Deployed at more than 170 sites across over 40 cities nationwide — among the world's first humanoid robots to achieve city-scale, large-scale commercial operation.",
+      "source_location": "Galbot G1 product page, Scenarios section",
+      "verification_notes": "Company statement; no unit counts, customer names, or independent audit linked here.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_003",
+      "date": null,
+      "title": "Galbot G1 AstraBrain autonomy claim",
+      "claim": "Galbot says AstraBrain gives G1 real-time closed-loop control and fully autonomous perception, understanding, decision, and action in dynamic environments.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Company claim; no intervention logs or independent audit provided.",
+      "arena_relevance": "Core autonomy claim for G1 operations.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Perceive, Understand, Decide, Act — Fully Autonomous, Even in the Most Dynamic Environments.",
+      "source_location": "Galbot G1 product page, Technology section",
+      "verification_notes": "Marketing claim; not directly verifiable from published sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_004",
+      "date": "2025-12-23",
+      "title": "The Robot Report on G1 warehouse, hospital and Galbot Store deployments",
+      "claim": "The Robot Report reports G1 robots in multiple warehouses with stable continuous 24/7 operations for over a year, working with Xuanwu Hospital, exploring deployments with CATL, Bosch, Toyota, Hyundai, and operating Galbot Store in over 30 cities.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "galbot-g1_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Reputable media outlet reports company claims; no customer primary sources cited.",
+      "arena_relevance": "Third-party coverage of commercial deployment breadth.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Galbot’s robots are also deployed in multiple warehouse locations, where they’ve demonstrated stable and continuous 24/7 operations for over a year. In healthcare, Galbot is working with hospitals like Xuanwu Hospital, where G1 assists in patient rooms, pharmacies, and hospital guidance systems.",
+      "source_location": "The Robot Report article, Galbot deploys G1 section",
+      "verification_notes": "No independent verification of 24/7 hours or hospital performance in the article.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_005",
+      "date": "2025-12-23",
+      "title": "Galbot claims thousands of unit orders",
+      "claim": "Galbot claimed it has secured orders for thousands of units and Galbot Store is operational in over 30 cities across China.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "galbot-g1_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Media relays company claim; 'orders' not installed base.",
+      "arena_relevance": "Indicates demand but not delivered deployments.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The company claimed that it has secured orders for thousands of units.",
+      "source_location": "The Robot Report article",
+      "verification_notes": "No order contract or delivery evidence in article.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_006",
+      "date": null,
+      "title": "Humanoid.guide directory conflicts with official specs",
+      "claim": "Humanoid.guide lists conflicting unverified figures: 25 DoF, 88 kg weight, 5 km/h max speed, 2 hours runtime, prototype availability, and $55,000 price, which contradict official Galbot sources.",
+      "category": [
+        "specs",
+        "missing_evidence"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_003"
+      ],
+      "confidence": 0.4,
+      "notes": "Directory not verified; use official Galbot specs over these values.",
+      "arena_relevance": "Highlights conflicting public information and limits confidence in third-party spec aggregators.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Degrees of freedom, overall | 25",
+      "source_location": "Humanoid.guide Galbot page, Specifications and details table",
+      "verification_notes": "Row copied from table; directory did not cite any Galbot source.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "specs"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_007",
+      "date": null,
+      "title": "Galbot G1 safety distance and operating environment",
+      "claim": "Galbot developer manual requires personnel to keep at least 1.5 meters away from the robot during use and specifies indoor 0-40°C operation, no uneven roads, and reduced speed over pits or bumps.",
+      "category": [
+        "human_environment_fit",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_004"
+      ],
+      "confidence": 0.75,
+      "notes": "Official safety instruction.",
+      "arena_relevance": "Shows limitations on close human-robot collaboration and safe operating environment.",
+      "claim_type": "spec",
+      "supporting_excerpt": "During use, personnel should keep at least 1.5 meters away from the robot.",
+      "source_location": "Galbot G1 Quick Start Guide, Operating Environment section",
+      "verification_notes": "Official safety directive.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "human_environment_fit"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_008",
+      "date": null,
+      "title": "Galbot G1 runtime is lab-based",
+      "claim": "Galbot developer manual states the 8-hour operating time is based on comprehensive test data under laboratory conditions at an average speed of 60%.",
+      "category": [
+        "endurance_reliability",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_004"
+      ],
+      "confidence": 0.75,
+      "notes": "This qualifies the company runtime claim; real-world runtime may differ.",
+      "arena_relevance": "Important for comparing endurance across robots.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Operating time is based on comprehensive test data under laboratory conditions at an average speed of 60%.",
+      "source_location": "Galbot G1 Quick Start Guide, Specifications footnotes",
+      "verification_notes": "Lab-condition caveat.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_009",
+      "date": null,
+      "title": "Galbot G1 official developer manual specs",
+      "claim": "Developer manual lists NVIDIA AGX Orin 64GB 275 TOPS, 21 DoF excluding chassis and end effector, sensor suite including stereo camera, 4 RGB cameras, 2 depth cameras, 3D LiDAR, 8 ultrasonic sensors, and battery 48V 30Ah.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_004"
+      ],
+      "confidence": 0.8,
+      "notes": "Official technical document; more detailed than product page.",
+      "arena_relevance": "Primary source for hardware specifications.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Platform | NVIDIA AGX Orin 64GB 275TOPS",
+      "source_location": "Galbot G1 Quick Start Guide, System table",
+      "verification_notes": "Official spec table; not independently benchmarked.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_010",
+      "date": "2026-02-17",
+      "title": "CCTV Spring Festival Gala performance described by Robots International",
+      "claim": "Robots International reports G1 appeared on the 2026 CCTV Spring Festival Gala performing fully autonomous tasks including rolling walnuts, picking up glass fragments, handing objects to actors, and retrieving items from densely packed retail shelves without pre-programmed movement scripts.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "galbot-g1_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Reseller description of a public demo; no official video transcript available in the numbered sources.",
+      "arena_relevance": "Strong public dexterity and autonomy claim, but not independently verified here.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The G1 entered national prominence in China when it appeared on the 2026 CCTV Spring Festival Gala — the world's most-watched television broadcast, reaching an estimated 679 million viewers — performing fully autonomous tasks including rolling walnuts in its palm, picking up glass fragments, handing objects to actors, and retrieving items from densely packed retail shelves, all without pre-programmed movement scripts.",
+      "source_location": "Robots International Galbot G1 product page, Complete Guide opening",
+      "verification_notes": "No official Galbot video or transcript provided in the sources; treat as secondary claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_011",
+      "date": null,
+      "title": "Robots International claims 47 total DoF and 12-DOF dexterous hand",
+      "claim": "Robots International claims G1 has 47 total degrees of freedom including a 12-DOF dexterous hand, conflicting with Galbot's official 21 DoF excluding chassis and end effector.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_005"
+      ],
+      "confidence": 0.4,
+      "notes": "Conflict; official source is preferred.",
+      "arena_relevance": "Caution against over-crediting hand dexterity based on reseller claims.",
+      "claim_type": "correction",
+      "supporting_excerpt": "The G1 incorporates 47 total degrees of freedom including a 12-DOF dexterous hand.",
+      "source_location": "Robots International Galbot G1 product page, 47 Degrees of Freedom section",
+      "verification_notes": "Not corroborated by Galbot official sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_012",
+      "date": null,
+      "title": "Galbot About page scaled commercial deployment claim",
+      "claim": "Galbot About page says AstraBrain is world's first end-to-end embodied foundation model unifying cerebrum, cerebellum and neural control, and that Galbot G1 and S1 have achieved scaled commercial deployment across retail, industry, logistics, healthcare and services.",
+      "category": [
+        "autonomy_task_execution",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "galbot-g1_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim; scaled deployment figures not broken down by robot.",
+      "arena_relevance": "Company-level autonomy and deployment positioning.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Across retail, industry, logistics, healthcare and services, Galbot has launched product families including Galbot G1 and Galbot S1 and achieved scaled commercial deployment.",
+      "source_location": "Galbot About Us page",
+      "verification_notes": "No unit counts or customer evidence on page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_013",
+      "date": "2026-02-24",
+      "title": "RoboZaps on Galbot G1 price and purchase channel",
+      "claim": "RoboZaps reports no official list price; the only public sale was two units on JD.com during the 2026 Spring Festival Gala at about 630,000 yuan (~$91,000) each; enterprise price around 700,000 yuan per unit; Western storefront prices are not confirmed Galbot channels.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "galbot-g1_source_007"
+      ],
+      "confidence": 0.7,
+      "notes": "Independent media analysis of price channels.",
+      "arena_relevance": "Clarifies lack of public consumer availability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "You cannot walk in and buy a Galbot G1, and the one time the public could, it was a stunt. The G1 is an enterprise robot sold in China by quote, not a product with a shelf price.",
+      "source_location": "RoboZaps Galbot G1 Price 2026 article, opening",
+      "verification_notes": "RoboZaps is not a Galbot official channel but provides sourced price signals.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_014",
+      "date": "2026-02-24",
+      "title": "RoboZaps reports certified pharmacy deployment",
+      "claim": "RoboZaps reports Haidian regulator issued a medicinal-distribution permit to a Beijing Nepstar branch, making it China's first pharmacy licensed to run with a robot and the G1 the first certified robot pharmacy assistant; the 24/7 store stocks 5,000-6,000 items and peaks around 370 orders per day.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "galbot-g1_source_007"
+      ],
+      "confidence": 0.65,
+      "notes": "Named deployment with regulatory permit; not a primary customer press release.",
+      "arena_relevance": "Strongest named deployment evidence for G1.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Haidian regulator issued a medicinal-distribution permit to the store (a Beijing Nepstar branch), making it China's first pharmacy licensed to run with a robot and the G1 the first certified robot pharmacy assistant.",
+      "source_location": "RoboZaps deployment record table, Certified Beijing pharmacy section",
+      "verification_notes": "Secondary media report; no permit document or customer primary source included.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_015",
+      "date": "2026-02-24",
+      "title": "RoboZaps reports FamilyMart trial limitations",
+      "claim": "RoboZaps reporters found G1 slow and brittle at a FamilyMart: it handled fewer than 10 of about 1,000 products and failed to grasp chip bags about 4 times in 10; the store still ran four human staff.",
+      "category": [
+        "autonomy_task_execution",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "galbot-g1_source_007"
+      ],
+      "confidence": 0.65,
+      "notes": "On-the-ground journalistic observation; no raw data published.",
+      "arena_relevance": "Temper's autonomy and manipulation scores.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "At a FamilyMart it handled fewer than ten of the store's roughly one thousand products and failed to grasp chip bags about four times in ten, and the store still ran four human staff.",
+      "source_location": "RoboZaps Galbot G1 Price 2026 article, autonomy section",
+      "verification_notes": "Independent report but anecdotal, limited sample.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "medium_negative"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_016",
+      "date": "2026-02-24",
+      "title": "RoboZaps notes industrial partner orders are not confirmed deployments",
+      "claim": "RoboZaps notes industrial partners CATL, Bosch, Toyota and Hyundai are orders and collaborations, not confirmed live production deployments; actual output may be under 150 robots per year, while 'thousands of units' refers to order backlog.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "galbot-g1_source_007"
+      ],
+      "confidence": 0.6,
+      "notes": "Caveat against inflated deployment claims.",
+      "arena_relevance": "Limits commercial proof attribution.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The impressive industrial names are orders and collaborations, not confirmed running deployments, and CATL is also an investor, which blurs 'customer.'",
+      "source_location": "RoboZaps deployment record caveats",
+      "verification_notes": "Secondary media analysis.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "medium_negative"
+      }
+    },
+    {
+      "id": "galbot-g1_evidence_019",
+      "date": null,
+      "title": "Missing evidence for Galbot G1",
+      "claim": "No independent benchmark, intervention log, hand DoF per Galbot official source, primary customer press release, official list price, or video transcript was found for G1 in the reviewed sources.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, dexterity and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "galbot-g1_deployment_001",
+      "customer_or_partner": "Galbot Space Cabin / Galaxy Space Capsule kiosks",
+      "site_or_context": "More than 170 sites across over 40 cities in China",
+      "task": "Autonomous retail kiosk: picking, restocking, inventory, and customer service",
+      "start_date": "2025",
+      "end_date": null,
+      "operating_hours": "24/7 (company claim)",
+      "units_deployed": 170,
+      "output_metrics": [],
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Company-reported site count; may include kiosks rather than full robot units.",
+        "No unit counts or revenue metrics published.",
+        "No independent verification of 24/7 uptime."
+      ]
+    },
+    {
+      "id": "galbot-g1_deployment_002",
+      "customer_or_partner": "Xuanwu Hospital",
+      "site_or_context": "Beijing, patient rooms, pharmacies, hospital guidance systems",
+      "task": "Assist in patient rooms, pharmacies, and hospital guidance",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "galbot-g1_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Named hospital from media, not a customer press release.",
+        "No specific task counts or reliability data."
+      ]
+    },
+    {
+      "id": "galbot-g1_deployment_003",
+      "customer_or_partner": "Beijing Nepstar pharmacy / Meituan Medicine",
+      "site_or_context": "Haidian district, Beijing, China",
+      "task": "Robot pharmacy assistant: picking, sorting, packing medicines and handing orders to Meituan riders",
+      "start_date": "2026-03",
+      "end_date": null,
+      "operating_hours": "24/7 (reported)",
+      "units_deployed": "About 10 Beijing robot-pharmacy deployments by March 2026",
+      "output_metrics": [
+        "Stocks 5,000-6,000 items",
+        "Peaks around 370 orders per day (reported)"
+      ],
+      "source_ids": [
+        "galbot-g1_source_007"
+      ],
+      "evidence_tier": 4,
+      "caveats": [
+        "Regulatory permit is a major milestone but source is secondary media, not primary regulator.",
+        "No permit document ID or formal notice included.",
+        "No ongoing error rates or pharmacist oversight metrics."
+      ]
+    },
+    {
+      "id": "galbot-g1_deployment_004",
+      "customer_or_partner": "Multiple unnamed warehouse locations",
+      "site_or_context": "China instant-retail warehouses (company claim)",
+      "task": "Inventory, replenishment, delivery, and packaging",
+      "start_date": "Over 1.5 years before 2026-10",
+      "end_date": null,
+      "operating_hours": "24/7 (company claim)",
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "No customer names or independent warehouse audit.",
+        "Company claims hundreds of warehouses; actual unit counts not disclosed."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "galbot-g1_demo_001",
+      "title": "CCTV Spring Festival Gala 2026 performance (described by Robots International)",
+      "date": "2026-02-17",
+      "observed_capabilities": [
+        "rolling walnuts in palm",
+        "picking up glass fragments",
+        "handing objects to actors",
+        "retrieving items from densely packed retail shelves"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Source says fully autonomous, no pre-programmed movement scripts",
+      "environment": "national television broadcast stage",
+      "source_ids": [
+        "galbot-g1_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No official Galbot video or transcript in the numbered sources.",
+        "Description is from a reseller page, not an official source."
+      ],
+      "editing_notes": "No direct video review possible from the provided source.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Claim of full autonomy by secondary source; not independently verified.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "described Gala tasks",
+          "verification_notes": "No timestamps verifiable."
+        }
+      ]
+    },
+    {
+      "id": "galbot-g1_demo_002",
+      "title": "World's first 100% autonomous humanoid robot-operated store (official Galbot video)",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title claims 100% autonomous robot-operated store",
+      "environment": "unknown (no transcript)",
+      "source_ids": [
+        "galbot-g1_source_008"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Only video title available; no transcript to confirm what is shown."
+      ],
+      "editing_notes": "Cannot assess editing without video content.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Title claim only; not directly verifiable.",
+      "observed_segments": []
+    },
+    {
+      "id": "galbot-g1_demo_003",
+      "title": "Galbot G1 Premium demo (official Galbot video)",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown (no transcript)",
+      "source_ids": [
+        "galbot-g1_source_009"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Only title available; no transcript.",
+        "Does not describe specific tasks or autonomy."
+      ],
+      "editing_notes": "Not timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed in title.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability and price",
+      "description": "No official list price or consumer purchase channel. Only a two-unit flash sale on JD.com is documented. Western storefront prices are not confirmed Galbot channels.",
+      "impact_on_arena_scoring": "Accessibility/value remains low."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claims for stores and Gala are company/reseller statements with no intervention logs, video transcripts, or independent audit. Real-store reports show narrow, brittle task coverage.",
+      "impact_on_arena_scoring": "Credit observable deployment but keep autonomy confidence moderate."
+    },
+    {
+      "topic": "Manipulation and hand specs",
+      "description": "Official Galbot sources do not publish hand DoF or grasping success rates. Robots International claims 47 total DoF and 12-DOF hand conflict with official 21 DoF excluding end effector. No independent benchmark found.",
+      "impact_on_arena_scoring": "Do not over-credit dexterity based on reseller claims."
+    },
+    {
+      "topic": "Industrial deployment vs orders",
+      "description": "CATL, Bosch, Toyota, Hyundai are orders/collaborations, not confirmed live production deployments. 'Thousands of units' are order backlog; actual annual output may be under 150 robots.",
+      "impact_on_arena_scoring": "Commercial proof is early despite big names."
+    },
+    {
+      "topic": "Runtime realism",
+      "description": "Official 8-hour runtime is lab-based at 60% average speed. Some resellers claim 10 hours; not confirmed.",
+      "impact_on_arena_scoring": "Endurance comparison should use lab caveat."
+    },
+    {
+      "topic": "No primary customer evidence",
+      "description": "No primary press releases from Xuanwu Hospital, Beijing pharmacy, or any industrial partner were found in the sources.",
+      "impact_on_arena_scoring": "Deployment proof relies on secondary media."
+    },
+    {
+      "topic": "Wheeled base limitation",
+      "description": "G1 is not a bipedal humanoid; it uses a 4-wheel omnidirectional base. It cannot climb stairs and is suited to flat indoor environments.",
+      "impact_on_arena_scoring": "Do not compare directly with legged humanoids for terrain mobility."
+    }
+  ],
+  "source_ids": [
+    "galbot-g1_source_001",
+    "galbot-g1_source_002",
+    "galbot-g1_source_003",
+    "galbot-g1_source_004",
+    "galbot-g1_source_005",
+    "galbot-g1_source_006",
+    "galbot-g1_source_007",
+    "galbot-g1_source_008",
+    "galbot-g1_source_009"
+  ],
+  "sources": [
+    {
+      "id": "galbot-g1_source_001",
+      "title": "Galbot G1 - Embodied Large-Model Robot",
+      "publisher": "Galbot 银河通用",
+      "url": "http://galbot.com/g1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims."
+    },
+    {
+      "id": "galbot-g1_source_002",
+      "title": "Galbot brings in $300M to scale mobile manipulator deployments - The Robot Report",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/galbot-brings-in-300m-to-scale-mobile-manipulator-deployments/",
+      "date_published": "2025-12-23",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade press reporting company claims and deployments; no primary customer sources."
+    },
+    {
+      "id": "galbot-g1_source_003",
+      "title": "Beijing Galbot AI… Galbot Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/galbot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Directory with unverified spec data; conflicts with official source."
+    },
+    {
+      "id": "galbot-g1_source_004",
+      "title": "GALBOT G1 | Galbot Developer Platform",
+      "publisher": "Galbot",
+      "url": "https://developer.galbot.com/docs/g1/2.2.4/en/g1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "high",
+      "reliability_notes": "Official quick start guide with detailed specs and safety instructions."
+    },
+    {
+      "id": "galbot-g1_source_005",
+      "title": "Galbot G1 Wheeled Humanoid Robot",
+      "publisher": "Robots International",
+      "url": "https://www.robotsinternational.com/Galbot-G1.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller/directory; contains claims not found in official sources and unconfirmed pricing."
+    },
+    {
+      "id": "galbot-g1_source_006",
+      "title": "Galbot - About Us",
+      "publisher": "Galbot 银河通用",
+      "url": "http://www.galbot.com/about/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official company about page with technology and deployment claims."
+    },
+    {
+      "id": "galbot-g1_source_007",
+      "title": "Galbot G1 Price 2026: Cost, Can You Buy It & What It Is",
+      "publisher": "RoboZaps",
+      "url": "https://blog.robozaps.com/b/galbot-g1-review",
+      "date_published": "2026-02-24",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Independent media analysis with on-the-ground observations and price research."
+    },
+    {
+      "id": "galbot-g1_source_008",
+      "title": "The World’s First 100% Autonomous Humanoid Robot-Operated Store is Here",
+      "publisher": "YouTube Galbot",
+      "url": "https://www.youtube.com/watch?v=QrqvDQoMnFo",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Official video but only title available, no transcript."
+    },
+    {
+      "id": "galbot-g1_source_009",
+      "title": "Galbot G1 Premium: The Swiftest Humanoid Robot Worker, Powered by NVIDIA Jetson Thor",
+      "publisher": "YouTube Galbot",
+      "url": "https://www.youtube.com/watch?v=SgmhntLZaEE",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Official video but only title available, no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Galbot G1 is a wheeled humanoid mobile manipulator with strong company-reported commercial deployment in China retail and pharmacy, including a regulatory first for robot pharmacy assistant. It has official detailed specs, but autonomy, manipulation, and industrial deployments remain only partially verified, with real-store reports revealing limited task breadth.",
+    "strongest_positive_evidence": [
+      "Certified Beijing pharmacy deployment with medicinal-distribution permit (reported by RoboZaps).",
+      "Official 8-hour runtime, IP54, 21 DoF excluding chassis, 1.5 m/s wheeled speed.",
+      "Company-reported 170+ Space Cabin kiosks across 40+ cities and 24/7 warehouse operations for over a year.",
+      "CCTV Spring Festival Gala performance described as fully autonomous with dexterous manipulation."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark or intervention log.",
+      "No official list price or consumer purchase channel.",
+      "No primary customer press release from Xuanwu Hospital or pharmacy.",
+      "Industrial partner names are order collaborations, not live deployments."
+    ],
+    "conflicting_claims": [
+      "DoF: official 21 excluding end effector vs Robots International 47 including 12-DOF hand.",
+      "Weight: official 92.5 kg vs Humanoid.guide 88 kg vs Robots International 85 kg.",
+      "Runtime: official 8 hours lab vs Robots International 10 hours.",
+      "Price: Western storefront $119,995 and $55,000 are unconfirmed.",
+      "Autonomy: official claims 100% autonomous store, but RoboZaps FamilyMart report shows limited product coverage and 4/10 chip-bag grasp failures."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "service_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit G1 as a legged bipedal humanoid.",
+      "Do not treat Western storefront prices as official channels.",
+      "Do not treat industrial partner names as confirmed live deployments.",
+      "Do not treat 'thousands of units' as installed base; it is order backlog.",
+      "Do not use Unitree G1 prices or specs for Galbot G1."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Galbot G1 is the company's current flagship wheeled humanoid as of 2026-10-29. A G1 Premium variant with NVIDIA Jetson Thor is mentioned; Galbot also has S1 heavy-load robot, not covered here."
+  },
+  "excluded_claims": [
+    {
+      "claim": "G1 is a bipedal walking humanoid",
+      "reason": "Official sources state it is a 4-wheel omnidirectional chassis, not legs.",
+      "source_ids": [
+        "galbot-g1_source_001",
+        "galbot-g1_source_004"
+      ]
+    },
+    {
+      "claim": "47 total DOF including 12-DOF dexterous hand",
+      "reason": "Only Robots International claims this; official Galbot says 21 DoF excluding chassis and end effector.",
+      "source_ids": [
+        "galbot-g1_source_005"
+      ]
+    },
+    {
+      "claim": "Western storefront prices $119,995, $55,000, $175,000 AUD are valid purchase channels",
+      "reason": "RoboZaps says these are not confirmed Galbot channels and Galbot sells via enterprise quote.",
+      "source_ids": [
+        "galbot-g1_source_007"
+      ]
+    },
+    {
+      "claim": "CATL, Bosch, Toyota and Hyundai are confirmed live production deployments",
+      "reason": "RoboZaps notes they are orders and collaborations, not confirmed running deployments; CATL is also an investor.",
+      "source_ids": [
+        "galbot-g1_source_007"
+      ]
+    },
+    {
+      "claim": "Thousands of Galbot G1 units are operating",
+      "reason": "RoboZaps says 'thousands of units' refers to order backlog; actual output may be under 150 robots/year.",
+      "source_ids": [
+        "galbot-g1_source_007"
+      ]
+    },
+    {
+      "claim": "Unitree G1 prices and specs apply to Galbot G1",
+      "reason": "Unitree G1 is a different bipedal humanoid from a different company.",
+      "source_ids": [
+        "galbot-g1_source_007"
+      ]
+    },
+    {
+      "claim": "Galbot G1 robot tennis match (AstraTennis) source applies to G1",
+      "reason": "The video title is about Galbot but not explicitly tied to G1, and likely concerns a different product or research platform.",
+      "source_ids": []
+    },
+    {
+      "claim": "10-hour runtime for Galbot G1",
+      "reason": "Official source says 8-hour lab runtime; 10-hour claim appears only on a reseller page.",
+      "source_ids": [
+        "galbot-g1_source_005"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 5,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Galbot G1 is a 173 cm, 92.5 kg wheeled humanoid mobile manipulator from China with official specs: 5 kg per arm / 10 kg total payload, 8-hour lab runtime, 48 V 30 Ah battery, 1.5 m/s wheeled speed, 21 DoF excluding end effector, NVIDIA AGX Orin 64GB 275 TOPS, and IP54. Galbot claims full autonomy and scaled commercial deployment across retail, warehousing, healthcare, and industry. The strongest named deployment is a Beijing pharmacy that received a medicinal-distribution permit, making G1 the first certified robot pharmacy assistant; Galbot also reports 170+ Space Cabin kiosks and 24/7 warehouse operations. However, industrial partner names are orders not confirmed deployments, no official price or consumer channel exists, and on-the-ground reports show limited autonomy breadth with chip-bag grasp failures. G1 is wheeled, not legged, and no independent benchmark or intervention log is available.",
+    "strongest_evidence": [
+      "Certified Beijing pharmacy deployment with regulatory permit (galbot-g1_evidence_014).",
+      "Official detailed specs and safety manual from Galbot developer platform (galbot-g1_evidence_009).",
+      "Company-reported 170+ Space Cabin sites and 24/7 warehouse operations (galbot-g1_evidence_002).",
+      "CCTV Spring Festival Gala dexterous performance described as fully autonomous (galbot-g1_evidence_010)."
+    ],
+    "weakest_evidence": [
+      "No independent benchmark, intervention log, or video transcript.",
+      "No official list price or public purchase channel (galbot-g1_evidence_013).",
+      "Industrial partner orders not confirmed live deployments (galbot-g1_evidence_016).",
+      "Real-store FamilyMart report of 4/10 chip-bag grasp failures (galbot-g1_evidence_015)."
+    ],
+    "known_do_not_credit": [
+      "Galbot G1 as a bipedal legged humanoid.",
+      "Western storefront prices or consumer availability.",
+      "Industrial partner names as live production deployments.",
+      "Thousands of units as installed base; it is order backlog.",
+      "Reseller claims of 47 DoF or 12-DOF hand not confirmed by official sources."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

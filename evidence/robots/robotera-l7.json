@@ -1,0 +1,1022 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "robotera-l7",
+    "name": "RobotEra L7",
+    "company_id": "robotera",
+    "company_name": "RobotEra",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2025-07-29",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "China Daily reported official launch on 2025-07-29 with 200 robots shipped company-wide in 2025, but MERA Robotics lists L7 as in development and not selling openly yet. No public price, named L7 customer deployment, or proven autonomy was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "logistics sorting and scanning",
+      "industrial screw-driving and assembly",
+      "research and developer platforms",
+      "entertainment (dance, sword dance, breakdancing)",
+      "service (massage, CES demonstrations)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "171 cm",
+      "value": 171,
+      "unit": "cm",
+      "notes": "Source 1 and 3 state 171 cm; Source 4 datasheet lists 1.71 m.",
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_003",
+        "robotera-l7_source_004"
+      ]
+    },
+    "weight": {
+      "original_value": "65 kg",
+      "value": 65,
+      "unit": "kg",
+      "notes": "TechEBlog says 65 kg; MERA Robotics says 65 kg without hands. Source 1 does not list weight.",
+      "source_ids": [
+        "robotera-l7_source_003",
+        "robotera-l7_source_004"
+      ]
+    },
+    "payload": {
+      "original_value": "20 kg (double-arm load)",
+      "value": 20,
+      "unit": "kg",
+      "notes": "Source 1 says 20 kg double-arm load; Source 4 specifies with elbows bent 90° the two arms hold 20 kg together.",
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime rating found in reviewed sources.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": "60 V, 15 Ah",
+      "value": null,
+      "unit": null,
+      "notes": "MERA Robotics lists battery capacity as 60 V 15 Ah based on Robotera datasheet; capacity in Wh not specified directly.",
+      "source_ids": [
+        "robotera-l7_source_004"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 55,
+      "notes": "Full-body DoF includes 31 body DoF plus 12 per hand = 55; Source 3 says 55 total with each arm 7 and hands 12.",
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_003",
+        "robotera-l7_source_004"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "4 m/s (running speed)",
+      "value": 4,
+      "unit": "m/s",
+      "notes": "All sources list 4 m/s running speed; walking speed not published.",
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_003",
+        "robotera-l7_source_004"
+      ]
+    },
+    "hands": {
+      "description": "XHAND1 dexterous hands with 12 active directly driven DoF per hand; five-finger.",
+      "degrees_of_freedom": 12,
+      "force_feedback": null,
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_004"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "binocular vision",
+        "3D LiDAR with 360° field of view",
+        "stereo camera",
+        "microphones",
+        "speaker"
+      ],
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_004"
+      ]
+    },
+    "compute": {
+      "description": "80 TOPS (x86) plus 275 TOPS (NVIDIA Orin) according to MERA Robotics catalog.",
+      "source_ids": [
+        "robotera-l7_source_004"
+      ]
+    },
+    "actuators": {
+      "description": "In-house knee joints peak at 400 N·m and 25 rad/s according to MERA Robotics catalog.",
+      "source_ids": [
+        "robotera-l7_source_004"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No official price published; MERA Robotics says status in development and not selling openly yet; inquiries go to sales team.",
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "L7 has XHAND1 12-DoF hands and 20 kg double-arm load. Demos described in media show sword dancing with mid-motion grip changes, screw-driving, tearing paper towels, pulling curtains, and a massage at CES 2026.",
+      "evidence_level": 2,
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_003",
+        "robotera-l7_source_004",
+        "robotera-l7_source_005",
+        "robotera-l7_source_011"
+      ],
+      "caveats": [
+        "No success rates or repeatability data.",
+        "Sword dance is observed via media description, not independent video review.",
+        "YouTube titles only; no transcript confirms massage details beyond title."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "ERA-42 VLA model is claimed to drive full-body control. Founder describes hybrid training with teleoperation data. No demo explicitly states autonomous execution; teleoperation_status is not_disclosed for all reviewed L7 demos.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_002",
+        "robotera-l7_source_004"
+      ],
+      "caveats": [
+        "No autonomy statement in any L7 demo video or article.",
+        "Teleoperation use for data generation is confirmed by founder but not for real-time demos.",
+        "No independent autonomy benchmark."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "171 cm, 65 kg robot performs 360-degree spins, breakdancing, sword dance with leaps, flips, and stable landings; listed running speed 4 m/s.",
+      "evidence_level": 2,
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_003",
+        "robotera-l7_source_005",
+        "robotera-l7_source_006",
+        "robotera-l7_source_007",
+        "robotera-l7_source_008"
+      ],
+      "caveats": [
+        "No fall-rate or disturbance recovery data.",
+        "Media descriptions and video titles only; not independently verified."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Binocular vision, 3D LiDAR with 360° FOV, stereo camera, microphones; ERA-42 fuses perception with generative capabilities.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_002",
+        "robotera-l7_source_004"
+      ],
+      "caveats": [
+        "No perception benchmark or real-world task evidence shown.",
+        "Hardware spec claims from directory, not official product page."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Speaker and microphone listed; massage demo at CES 2026 indicated by video title only.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-l7_source_004",
+        "robotera-l7_source_011"
+      ],
+      "caveats": [
+        "No demonstrated conversation or instruction-following.",
+        "Massage claim is only a video title, no transcript."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Company reports 200 robots shipped across products in 2025 and hundreds more in production; however no runtime, MTBF, or reliability test specific to L7.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-l7_source_002",
+        "robotera-l7_source_005"
+      ],
+      "caveats": [
+        "Shipment figures are company-wide, not L7-specific.",
+        "No independent audit of deliveries or reliability."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized height 171 cm, weight 65 kg, titanium/carbon fiber build; intended for logistics, industrial, and service roles.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-l7_source_001",
+        "robotera-l7_source_003",
+        "robotera-l7_source_004"
+      ],
+      "caveats": [
+        "No safety certification found.",
+        "Weight is 65 kg without hands per datasheet; actual total may differ."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No named L7 customer deployment found. Company claims nine of top ten most valuable tech companies as customers, but not necessarily for L7; MERA datasheet names no L7 customers.",
+      "evidence_level": 0,
+      "source_ids": [
+        "robotera-l7_source_004",
+        "robotera-l7_source_005"
+      ],
+      "caveats": [
+        "Commercial claims are company-level, not L7-specific.",
+        "No units, hours, or output metrics for L7."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No official price or public purchase path. MERA Robotics lists status as in development and not selling openly yet; inquiries go to sales team.",
+      "evidence_level": 0,
+      "source_ids": [
+        "robotera-l7_source_004",
+        "robotera-l7_source_001"
+      ],
+      "caveats": [
+        "Not openly purchasable as of review date.",
+        "Reseller estimates vary but no official price."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "robotera-l7_evidence_001",
+      "date": null,
+      "title": "Robot Era L7 product listing",
+      "claim": "L7 is a bipedal humanoid robot using the ERA-42 VLA model to drive full-body 55 degrees of freedom, with 20 kg double-arm load, 4 m/s running speed, 12-DoF dexterous hand, and 360-degree perception.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory listing, not official product page; specs appear to be from manufacturer.",
+      "arena_relevance": "Provides baseline specs for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Robot Era’s L7 bipedal humanoid robot is a Vision-Language-Action (VLA) model.",
+      "source_location": "Humanoid Robotics Technology product page, description section",
+      "verification_notes": "No independent measurement; source is a directory, not the manufacturer.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_002",
+      "date": null,
+      "title": "L7 sensor suite",
+      "claim": "L7 is equipped with binocular vision and 3D LiDAR, offering a 360° field of view and full-area perception.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory listing; sensor claim not independently verified.",
+      "arena_relevance": "Perception hardware for scene understanding.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Equipped with binocular vision and 3D LiDAR, the system offers complex environmental adaptability, a 360° field of view, and full-area perception.",
+      "source_location": "Humanoid Robotics Technology product page, description section",
+      "verification_notes": "No independent perception test available.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_003",
+      "date": "2025-07-18",
+      "title": "ERA-42 VLA model development",
+      "claim": "Robot Era has developed ERA-42, a vision-language-action model that fuses perception with generative capabilities.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Founder interview in reputable media; not a formal company press release.",
+      "arena_relevance": "Software foundation for autonomy claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "On the software side, Robot Era has developed ERA-42, a vision-language-action (VLA) model that fuses perception with generative capabilities.",
+      "source_location": "KrASIA article, software section",
+      "verification_notes": "No technical paper or benchmark linked in article.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_004",
+      "date": "2025-07-18",
+      "title": "Teleoperation data generation",
+      "claim": "Robot Era uses a hybrid approach starting with massive video datasets, then fine-tunes using high-quality teleoperation data.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Founder statement; does not address whether L7 demos are teleoperated.",
+      "arena_relevance": "Indicates teleoperation involved in training, not necessarily deployment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "We start with massive video datasets to pretrain generalist models, then fine-tune using high-quality teleoperation data.",
+      "source_location": "KrASIA article, interview answer about teleoperation",
+      "verification_notes": "Teleoperation for data collection is disclosed, but teleoperation_status of demos is not.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_005",
+      "date": "2026-02-14",
+      "title": "L7 physical specifications",
+      "claim": "L7 is 171 cm tall, 65 kg, built with titanium and carbon fiber, with 55 degrees of freedom, each arm 7 DoF, and hands with 12 DoF between them.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Media report likely based on company specs; weight may exclude hands according to MERA.",
+      "arena_relevance": "Confirms size and build materials.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The L7 is a 171 cm tall, 65 kg robot with a lightweight build constructed of titanium and carbon fiber, complete with tons of flexibility.",
+      "source_location": "TechEBlog article, product description",
+      "verification_notes": "No direct measurement; conflict with MERA's '65 kg without hands' noted.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_006",
+      "date": "2026-02-14",
+      "title": "Sword dance performance",
+      "claim": "L7 performed a sword dance with leaps, flips, precise sword control, mid-motion grip changes, and stable landings without wobbles or stumbles.",
+      "category": [
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "robotera-l7_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Descriptive media account of a video; not independently reviewed.",
+      "arena_relevance": "Strong observable whole-body control and dexterity, but no autonomy claim.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Jumps land cleanly, with no wobbles or stumbles, as it accelerates and increases until it comes to a rest with the sword extended.",
+      "source_location": "TechEBlog article, sword dance performance description",
+      "verification_notes": "Teleoperation_status not disclosed; article does not state autonomous.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_007",
+      "date": null,
+      "title": "MERA Robotics detailed specs",
+      "claim": "L7 datasheet lists 1.71 m height, 65 kg without hands, 31 body DoF, 55 including XHAND1 hands, each arm 7 DoF, 20 kg payload, knee joints peak 400 N·m and 25 rad/s.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory entry based on Robotera datasheet, but not the official datasheet itself.",
+      "arena_relevance": "Detailed specs for comparison, but lower confidence due to indirect source.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The datasheet lists 1.71 m height and 65 kg without hands.",
+      "source_location": "MERA Robotics catalogue, Robotera L7 design and technology section",
+      "verification_notes": "Conflicts with TechEBlog's 65 kg (implied with hands); directory not manufacturer.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_008",
+      "date": null,
+      "title": "Battery and compute specs",
+      "claim": "Battery capacity is listed as 60 V, 15 Ah, compute as 80 TOPS (x86) plus 275 TOPS (NVIDIA Orin).",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Indirect source; no runtime given.",
+      "arena_relevance": "Provides compute and battery specification.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Battery capacity is listed as 60 V, 15 Ah, and compute as 80 TOPS (x86) plus 275 TOPS (NVIDIA Orin).",
+      "source_location": "MERA Robotics catalogue, Robotera L7 design section",
+      "verification_notes": "No runtime extrapolation possible without official data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_009",
+      "date": null,
+      "title": "Availability status",
+      "claim": "L7 is in development and not selling openly yet; manufacturer has shown the robot but no open sale.",
+      "category": [
+        "accessibility_value",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_004"
+      ],
+      "confidence": 0.8,
+      "notes": "Directory status; consistent with no price found.",
+      "arena_relevance": "Limits commercial scoring.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Status: In development: the manufacturer has shown the robot but is not selling it openly yet.",
+      "source_location": "MERA Robotics catalogue, FAQ section",
+      "verification_notes": "No purchase path or price available.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_010",
+      "date": "2025-07-29",
+      "title": "Official launch of ROBOTERA L7",
+      "claim": "Robotera officially launched L7, a full-sized bipedal humanoid capable of high-dynamic movement and fine manipulation.",
+      "category": [
+        "status",
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "China Daily state media; reports company statements.",
+      "arena_relevance": "Confirms official launch.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Chinese robotics startup Robotera, backed by Tsinghua University, has officially launched its next-generation full-sized humanoid robot, the ROBOTERA L7.",
+      "source_location": "China Daily article, introduction",
+      "verification_notes": "Launch does not imply public sale.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_011",
+      "date": "2025-07-29",
+      "title": "L7 demonstrated capabilities",
+      "claim": "L7 can perform 360-degree spins, breakdancing, sorting, scanning, screw-driving, tearing paper towels, and pulling curtains.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "robotera-l7_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Media description of demos; teleoperation not mentioned.",
+      "arena_relevance": "Broad capability set, but no autonomy confirmation.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Showcasing a wide range of capabilities, the L7 can perform high-dynamic maneuvers like explosive 360-degree spins and breakdancing moves, while also handling practical industrial functions such as sorting, scanning, and screw-driving in logistics and factory settings.",
+      "source_location": "China Daily article, capabilities section",
+      "verification_notes": "No autonomous statement; demos may be scripted or teleoperated.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_012",
+      "date": "2025-07-29",
+      "title": "Company commercial claims",
+      "claim": "Robotera has shipped 200 humanoid robots in 2025, with over one hundred orders in progress and nine of top ten most valuable tech companies as customers.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-l7_source_005"
+      ],
+      "confidence": 0.5,
+      "notes": "Company-wide figures, not specific to L7.",
+      "arena_relevance": "Shows company traction, not L7 deployment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Highlighting the company's rapid commercial growth fueled by its technological advancements, Robotera revealed that, so far it has shipped 200 humanoid robots shipped in 2025, with over one hundred orders currently in progress.",
+      "source_location": "China Daily article, commercial growth section",
+      "verification_notes": "No independent audit; may include other models like XHand, Q5, STAR1.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-l7_evidence_016",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No runtime, walking speed, autonomy confirmation, price, or named L7 customer deployment was found in reviewed sources.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, endurance, and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "robotera-l7_demo_001",
+      "title": "Sword dance for Chinese New Year",
+      "date": "2026-02-14",
+      "observed_capabilities": [
+        "sword dance with traditional music",
+        "leaps and flips",
+        "360-degree spins",
+        "precise sword control",
+        "mid-motion grip changes",
+        "stable landings"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "courtyard",
+      "source_ids": [
+        "robotera-l7_source_003",
+        "robotera-l7_source_006",
+        "robotera-l7_source_007",
+        "robotera-l7_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No autonomy statement.",
+        "Article is media description of video; not independently verified."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "TechEBlog article does not state whether the performance was autonomous or teleoperated.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Sword dance with leaps, flips, spins, and stable landings",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "robotera-l7_demo_002",
+      "title": "CES 2026 showcase",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "showcase of L7 full-size humanoid and XHAND1 at CES 2026",
+        "massage demo suggested by title"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CES 2026 trade show",
+      "source_ids": [
+        "robotera-l7_source_009",
+        "robotera-l7_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video titles available; no transcript.",
+        "No autonomy or teleoperation disclosure."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode information from titles.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "L7 and XHAND1 showcased at CES; massage title suggests interaction",
+          "verification_notes": "Title only; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "robotera-l7_demo_003",
+      "title": "Humanoid logistic workflow",
+      "date": "2026-09-29",
+      "observed_capabilities": [
+        "logistic workflow demonstration"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown (not specified in title)",
+      "source_ids": [
+        "robotera-l7_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript or description.",
+        "No details on task success or autonomy."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode information from title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Logistic workflow demonstration",
+          "verification_notes": "Title only; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No official price, pre-order, or retail channel found. MERA Robotics lists L7 as in development and not selling openly yet.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "No L7 demo in reviewed sources states autonomous operation. Founder confirms teleoperation is used for training data. Teleoperation_status for all demos is not_disclosed.",
+      "impact_on_arena_scoring": "Do not credit autonomy beyond company claims of ERA-42 VLA model."
+    },
+    {
+      "topic": "Deployment proof",
+      "description": "No named L7 customer deployment found. Company shipments of 200 robots are company-wide, not L7-specific.",
+      "impact_on_arena_scoring": "Commercial proof for L7 remains at zero."
+    },
+    {
+      "topic": "Reliability and endurance",
+      "description": "No runtime, battery life in hours, MTBF, or reliability test results were published.",
+      "impact_on_arena_scoring": "Endurance/reliability dimension has no firm evidence."
+    },
+    {
+      "topic": "Specs confidence",
+      "description": "Detailed specs (weight, battery, compute, actuators) come from MERA Robotics directory based on Robotera datasheet, not the official datasheet itself; conflicts exist (65 kg with or without hands).",
+      "impact_on_arena_scoring": "Use specs with low confidence; do not overstate."
+    },
+    {
+      "topic": "Video evidence quality",
+      "description": "YouTube sources 6-11 provide titles only; no transcripts, so content beyond titles cannot be described or credited.",
+      "impact_on_arena_scoring": "Demo evidence from video titles is weak and should be manually reviewed before scoring."
+    }
+  ],
+  "source_ids": [
+    "robotera-l7_source_001",
+    "robotera-l7_source_002",
+    "robotera-l7_source_003",
+    "robotera-l7_source_004",
+    "robotera-l7_source_005",
+    "robotera-l7_source_006",
+    "robotera-l7_source_007",
+    "robotera-l7_source_008",
+    "robotera-l7_source_009",
+    "robotera-l7_source_010",
+    "robotera-l7_source_011"
+  ],
+  "sources": [
+    {
+      "id": "robotera-l7_source_001",
+      "title": "Robot Era L7",
+      "publisher": "Humanoid Robotics Technology",
+      "url": "https://humanoidroboticstechnology.com/company/robot-era/l7/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory listing of product specs; not official manufacturer page."
+    },
+    {
+      "id": "robotera-l7_source_002",
+      "title": "More than a hardware play: Robot Era’s founder sets the record straight on the company’s true ambitions",
+      "publisher": "KrASIA",
+      "url": "https://kr-asia.com/more-than-a-hardware-play-robot-eras-founder-sets-the-record-straight-on-the-companys-true-ambitions",
+      "date_published": "2025-07-18",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Founder interview in reputable tech media; company claims not independently verified."
+    },
+    {
+      "id": "robotera-l7_source_003",
+      "title": "Robotera L7 Humanoid Robot Just Wielded a Sword Like it was Born for the Blade Ahead of Chinese New Year",
+      "publisher": "TechEBlog",
+      "url": "https://www.techeblog.com/robotera-l7-humanoid-robot-sword-dance-chinese-new-year/",
+      "date_published": "2026-02-14",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Tech blog; provides detailed demo description but no autonomy statement."
+    },
+    {
+      "id": "robotera-l7_source_004",
+      "title": "Robotera L7: specs, price, availability | MERA humanoid catalogue",
+      "publisher": "MERA Robotics",
+      "url": "https://merarobotics.com/blog/humanoids/robotera-l7",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory based on Robotera datasheet, but not the official datasheet itself; includes status."
+    },
+    {
+      "id": "robotera-l7_source_005",
+      "title": "Chinese startup Robotera unveils new humanoid robot",
+      "publisher": "China Daily",
+      "url": "https://subsites.chinadaily.com.cn/wic/2025-07/29/c_1113056.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "State media article reporting company launch and claims; date in content is 2025-07-29 but header date unknown."
+    },
+    {
+      "id": "robotera-l7_source_006",
+      "title": "Robotera L7 Humanoid Robot Performs Epic Sword Dance ⚔️  | Future of Robotics",
+      "publisher": "YouTube AwesomeTech",
+      "url": "https://www.youtube.com/watch?v=u0kzZZpaxSU",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only, no transcript."
+    },
+    {
+      "id": "robotera-l7_source_007",
+      "title": "Robotera Sword Dance for Chinese New Year — Tradition Meets Technology",
+      "publisher": "YouTube ROBOTERA",
+      "url": "https://www.youtube.com/watch?v=9Ti9Mi8rbIQ",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Channel appears official but not verified; title only."
+    },
+    {
+      "id": "robotera-l7_source_008",
+      "title": "You Won’t Believe a Robot Can Performs Sword Dance | Robotera L7",
+      "publisher": "YouTube OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=M1Wg4uPQjiU",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only."
+    },
+    {
+      "id": "robotera-l7_source_009",
+      "title": "Robotera showcases L7 Full Size Humanoid and XHAND1 at CES 2026",
+      "publisher": "YouTube Peter Kappes",
+      "url": "https://www.youtube.com/watch?v=sF0fg2maCY4",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only."
+    },
+    {
+      "id": "robotera-l7_source_010",
+      "title": "Ai Robot RobotEra L7 Humanoid Logistic Workflow. humanoid robots 2026, future robots.",
+      "publisher": "YouTube FAQ_that",
+      "url": "https://www.youtube.com/watch?v=GBrg-qcJKPc",
+      "date_published": "2026-09-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only."
+    },
+    {
+      "id": "robotera-l7_source_011",
+      "title": "This Humanoid Robot Just Gave Me a Massage… | CES 2026 | ROBOTERA L7",
+      "publisher": "YouTube KhanFlicks",
+      "url": "https://www.youtube.com/watch?v=6NXerYBsLzQ",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "RobotEra L7 shows impressive mobility (sword dance, 360-degree spins, breakdancing) and fine manipulation (screw-driving, paper tearing, massage) in media-described demos, but no autonomy confirmation, no price, no runtime, and no named L7 customer deployment. Treat as a prototype with strong kinematic demos but unproven autonomy and commercial readiness.",
+    "strongest_positive_evidence": [
+      "Detailed sword dance description with stable landings and mid-motion grip changes (TechEBlog, 2026-02-14).",
+      "China Daily reports 360-degree spins, breakdancing, sorting, scanning, screw-driving, paper towel tearing, curtain pulling.",
+      "Multiple YouTube titles corroborate sword dance and CES 2026 showcase.",
+      "Detailed specs from MERA Robotics including battery, compute, actuators."
+    ],
+    "weakest_or_missing_evidence": [
+      "No autonomy statement in any L7 demo; teleoperation_status not disclosed.",
+      "No price or public purchase path.",
+      "No runtime or endurance data.",
+      "No named L7 customer deployment; company shipments are company-wide.",
+      "YouTube video evidence limited to titles; no transcripts."
+    ],
+    "conflicting_claims": [
+      "Weight: 65 kg (TechEBlog) vs 65 kg without hands (MERA Robotics).",
+      "Degrees of freedom: 'each arm having 7 and hands having 12 between them' ambiguous in TechEBlog; MERA says 31 body + 12 per hand = 55.",
+      "Availability: catalog orientation says purchasable, but MERA says in development and not selling openly."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "service_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit L7 with autonomy because no demo states autonomous operation.",
+      "Do not credit company-wide shipment figures as L7-specific commercial proof.",
+      "Do not claim L7 is purchasable or has an official price.",
+      "Do not describe YouTube title content beyond the title itself.",
+      "Do not treat directory specs as official manufacturer specifications without verification."
+    ],
+    "auto_compiled_note": "This pack was compiled automatically from public sources on 2026-10-29 and needs human review."
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "L7 is RobotEra's current full-size bipedal humanoid as of 2026-10, with demos and CES appearances through 2026. No newer model found in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Robot Era has shipped 200 humanoid robots in 2025",
+      "reason": "Company-wide shipments across all products, not specific to L7.",
+      "source_ids": [
+        "robotera-l7_source_005"
+      ]
+    },
+    {
+      "claim": "Nine of world's top ten most valuable tech companies are customers",
+      "reason": "Company-level customer claim, not evidence of L7 deployment.",
+      "source_ids": [
+        "robotera-l7_source_005",
+        "robotera-l7_source_004"
+      ]
+    },
+    {
+      "claim": "L7 is purchasable",
+      "reason": "MERA Robotics lists status as in development and not selling openly; no price or purchase path found.",
+      "source_ids": [
+        "robotera-l7_source_004"
+      ]
+    },
+    {
+      "claim": "Specific autonomy in L7 demos",
+      "reason": "No source states autonomous operation; teleoperation_status not disclosed.",
+      "source_ids": [
+        "robotera-l7_source_003",
+        "robotera-l7_source_005"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "RobotEra L7 is a 171 cm, 65 kg full-size bipedal humanoid with 55 DoF and XHAND1 12-DoF hands, claimed to run the ERA-42 VLA model. It has demonstrated impressive whole-body mobility in media-described videos: 360-degree spins, breakdancing, and a sword dance with leaps and stable landings, plus fine manipulation such as screw-driving, paper towel tearing, and a CES 2026 massage title. However, no L7 demo discloses autonomy, no price or runtime is published, and no named L7 customer deployment exists. Commercial claims of 200 robots shipped are company-wide. Overall, strong kinematic demos but unproven autonomy and accessibility.",
+    "strongest_evidence": [
+      "Sword dance with stable landings and mid-motion grip changes (TechEBlog, 2026-02-14).",
+      "China Daily lists broad industrial and dynamic capabilities.",
+      "Detailed specs from MERA Robotics including battery, compute, actuators."
+    ],
+    "weakest_evidence": [
+      "No autonomy statement in any demo.",
+      "No price, runtime, or named customer for L7.",
+      "YouTube video evidence limited to titles."
+    ],
+    "known_do_not_credit": [
+      "Autonomy in L7 demos.",
+      "Company-wide 200 robot shipments as L7 deployment.",
+      "Purchasability or official price.",
+      "Content beyond YouTube video titles."
+    ],
+    "recommended_confidence": "low"
+  }
+}

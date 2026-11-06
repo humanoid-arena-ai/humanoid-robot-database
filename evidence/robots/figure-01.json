@@ -1,0 +1,836 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "figure-01",
+    "name": "Figure 01",
+    "company_id": "figure-ai",
+    "company_name": "Figure AI",
+    "country": "United States",
+    "generation": "first-generation Figure humanoid",
+    "first_announced_date": "2023-03-02",
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Figure's current company page frames F.01 as the first-generation robot; later customer-confirmed BMW production evidence is Figure 02-specific.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "general-purpose labor research",
+      "warehouse and industrial work",
+      "AI robotics demonstrations"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "specs": {
+    "height": {
+      "original_value": "5 ft 6 in",
+      "value": 167.6,
+      "unit": "cm",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "60 kg",
+      "value": 60,
+      "unit": "kg",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "20 kg",
+      "value": 20,
+      "unit": "kg",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "5 hours",
+      "value": 5,
+      "unit": "hours",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Archived official page listed an electric system but did not provide battery capacity.",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "Public sources reviewed did not provide total robot degrees of freedom.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "1.2 m/s",
+      "value": 1.2,
+      "unit": "m/s",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "hands": {
+      "description": "OpenAI-demo reporting described learned behaviors outputting wrist and finger actions across a 24-DoF action space; no public Figure 01 hand hardware DoF spec was found.",
+      "degrees_of_freedom": 24,
+      "force_feedback": null,
+      "source_ids": [
+        "figure-01_source_007",
+        "figure-01_source_012"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": null,
+      "source_ids": []
+    },
+    "actuators": {
+      "description": "Archived official page described an electric system; actuator details were not found.",
+      "source_ids": [
+        "figure-01_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "superseded",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "source_ids": [
+        "figure-01_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Figure 01 demos showed object handling, coffee preparation behavior, and simple task execution in controlled settings.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-01_source_004",
+        "figure-01_source_005",
+        "figure-01_source_006",
+        "figure-01_source_007"
+      ],
+      "caveats": [
+        "Demos are controlled and curated.",
+        "No customer-confirmed Figure 01 manipulation deployment was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Company demos and media reports show narrow tasks such as coffee making after training and responding to spoken prompts.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-01_source_004",
+        "figure-01_source_005",
+        "figure-01_source_007"
+      ],
+      "caveats": [
+        "Autonomy limits, retries, and intervention rates were not disclosed."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Public walking demo coverage shows Figure 01 taking biped steps in a controlled environment.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-01_source_003"
+      ],
+      "caveats": [
+        "No independent mobility benchmark or rough-terrain evidence found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "The OpenAI-integrated demo reported visual scene interpretation and task planning from user prompts.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-01_source_007"
+      ],
+      "caveats": [
+        "Company demo reported by media, not independent benchmark testing."
+      ]
+    },
+    "human_interaction": {
+      "summary": "The OpenAI speech-to-speech demo showed Figure 01 conversing with a person and selecting actions from the scene.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-01_source_007"
+      ],
+      "caveats": [
+        "Reliability across unconstrained conversations was not independently tested."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Archived official specs listed 5 hours of runtime, but no public reliability or fleet-operation data was found for Figure 01.",
+      "evidence_level": 1,
+      "source_ids": [
+        "figure-01_source_001"
+      ],
+      "caveats": [
+        "Runtime is an official spec claim."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Figure 01 was human-sized and intended for human-designed workplaces; demos were in controlled human-scale spaces.",
+      "evidence_level": 1,
+      "source_ids": [
+        "figure-01_source_001",
+        "figure-01_source_003",
+        "figure-01_source_007"
+      ],
+      "caveats": [
+        "No Figure 01 customer site evidence was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Figure signed a BMW agreement while Figure 01 was public, but current Figure and BMW production evidence specifically identifies Figure 02, not Figure 01.",
+      "evidence_level": 1,
+      "source_ids": [
+        "figure-01_source_008",
+        "figure-01_source_009",
+        "figure-01_source_010",
+        "figure-01_source_011"
+      ],
+      "caveats": [
+        "Do not credit Figure 01 with Figure 02 BMW production metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": null,
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No public price, purchase path, or research-platform availability found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "figure-01_evidence_001",
+      "date": "2023-03-10",
+      "title": "Archived official Figure 01 specifications",
+      "claim": "An archived official Figure page listed Figure 01 at 5 ft 6 in, 60 kg, 20 kg payload, 5 hours runtime, 1.2 m/s speed, and electric power.",
+      "category": [
+        "specs",
+        "human_environment_fit",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-01_source_001"
+      ],
+      "confidence": 0.82,
+      "notes": "Archived official source.",
+      "arena_relevance": "Provides core physical and endurance specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Archived official product page showed the listed dimensions, payload, runtime, speed, and electric system.",
+      "source_location": "Internet Archive snapshot, product/specification block",
+      "verification_notes": "Normalized height from 5 ft 6 in to 167.6 cm; original value preserved.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_002",
+      "date": "2023-10-17",
+      "title": "Walking demo coverage",
+      "claim": "Public coverage of Figure 01 showed the robot walking in a controlled setting after Figure reported first steps in 2023.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-01_source_002",
+        "figure-01_source_003"
+      ],
+      "confidence": 0.68,
+      "notes": "Observable demo, no benchmark metrics.",
+      "arena_relevance": "Supports basic biped mobility.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Secondary coverage describes the public walking demo and first-steps milestone.",
+      "source_location": "New Atlas article covering Figure walking demo",
+      "verification_notes": "Observable walking only; no speed, terrain, stability, or endurance metric.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_003",
+      "date": "2024-01-07",
+      "title": "Coffee-making learning demo",
+      "claim": "Public demo material showed Figure 01 interacting with a coffee-machine task setup in a controlled setting.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-01_source_004",
+        "figure-01_source_005"
+      ],
+      "confidence": 0.64,
+      "notes": "Narrow task demo.",
+      "arena_relevance": "Shows manipulation and learned task execution.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Public demo material showed Figure 01 interacting with a coffee-machine task setup.",
+      "source_location": "Official Figure LinkedIn demo post and Live Science coverage",
+      "verification_notes": "Observable coffee-machine interaction separated from the company claim about AI training.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_004",
+      "date": "2024-02-26",
+      "title": "Real-world task demo",
+      "claim": "Figure published a Figure 01 real-world task video showing controlled object manipulation and task behavior.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-01_source_006"
+      ],
+      "confidence": 0.62,
+      "notes": "Official video; repeatability not disclosed.",
+      "arena_relevance": "Adds observable manipulation behavior.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Official real-world task video showed controlled object manipulation behavior.",
+      "source_location": "Figure YouTube real-world task video",
+      "verification_notes": "No repeatability, failure, or intervention-rate data found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_005",
+      "date": "2024-03-13",
+      "title": "OpenAI speech-to-speech interaction demo",
+      "claim": "Public demo coverage showed Figure 01 conversing with a person and performing simple visible actions in a controlled setting.",
+      "category": [
+        "human_interaction",
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-01_source_007"
+      ],
+      "confidence": 0.66,
+      "notes": "Media report of a public company demo.",
+      "arena_relevance": "Relevant to language-grounded action.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Public demo coverage showed speech interaction and simple scene-grounded action.",
+      "source_location": "The Decoder coverage of Figure/OpenAI demo",
+      "verification_notes": "Visible interaction separated from claims about internal planning or model architecture.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_006",
+      "date": "2024-01-18",
+      "title": "BMW agreement was not Figure 01 deployment proof",
+      "claim": "Figure announced a BMW manufacturing agreement while Figure 01 was public, but later Figure and BMW production evidence identifies Figure 02 in the BMW trial/deployment.",
+      "category": [
+        "deployment_commercial_proof",
+        "missing_data"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-01_source_008",
+        "figure-01_source_009",
+        "figure-01_source_010",
+        "figure-01_source_011"
+      ],
+      "confidence": 0.9,
+      "notes": "Prevents misattribution of Figure 02 metrics.",
+      "arena_relevance": "Keeps generation-specific scoring conservative.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Current Figure and BMW production evidence identifies the BMW robot as Figure 02, not Figure 01.",
+      "source_location": "Figure BMW agreement release; BMW Spartanburg release; Figure production-at-BMW writeup; BMW 2026 Physical AI release",
+      "verification_notes": "Anti-misattribution item; prevents crediting Figure 01 with Figure 02 deployment metrics such as hours, parts, shifts, or X3 production.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "prevents_overclaim"
+      }
+    },
+    {
+      "id": "figure-01_evidence_007",
+      "date": "2024-01-07",
+      "title": "Company claim that coffee behavior followed AI training",
+      "claim": "Figure claimed the coffee-machine behavior followed AI training; this is treated separately from the observable demo.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-01_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Company claim about training/autonomy, not independently verified.",
+      "arena_relevance": "Prevents over-crediting a visible demo as verified autonomous learning.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Official Figure social post framed the coffee behavior as AI-trained.",
+      "source_location": "Figure LinkedIn coffee demo post text",
+      "verification_notes": "Use only as company claim about training; observable action is in a separate Tier 2 item.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "tiny_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_008",
+      "date": "2024-03-13",
+      "title": "Reported OpenAI demo control-stack details",
+      "claim": "Media coverage described the Figure/OpenAI demo as involving speech, vision, planning, and learned visuomotor behaviors, including a reported 10 Hz camera input rate and 200 Hz action generation over a 24-DoF wrist/finger action space.",
+      "category": [
+        "manipulation_dexterity",
+        "human_interaction",
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-01_source_007"
+      ],
+      "confidence": 0.55,
+      "notes": "Internal model behavior and rates are reported, not independently benchmarked.",
+      "arena_relevance": "Adds technical context for the visible language-grounded manipulation demo while keeping it below benchmark or deployment evidence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The article summarized the demo as chat, vision, planning, and task performance, with reported camera and action-generation rates.",
+      "source_location": "The Decoder article body and technical demo summary",
+      "verification_notes": "Treat as secondary reporting of Figure/OpenAI technical claims; do not convert the 24-DoF action-space detail into a confirmed hardware hand DoF spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_interaction",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "tiny_positive"
+      }
+    },
+    {
+      "id": "figure-01_evidence_009",
+      "date": "2025-11-19",
+      "title": "Current Figure BMW metrics are Figure 02-specific",
+      "claim": "Figure's current BMW production writeup attributes the 10-hour shifts, 90,000+ loaded parts, 1,250+ runtime hours, 30,000+ X3 contribution, and retirement learnings to Figure 02, not Figure 01.",
+      "category": [
+        "deployment_commercial_proof",
+        "missing_data"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-01_source_010",
+        "figure-01_source_011"
+      ],
+      "confidence": 0.92,
+      "notes": "Strong current primary-source exclusion evidence.",
+      "arena_relevance": "Prevents Figure 01 from inheriting later BMW deployment proof.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Figure and BMW both identify the production/pilot robot as Figure 02 for the BMW metrics.",
+      "source_location": "Figure production-at-BMW news page and BMW 2026 Physical AI press release",
+      "verification_notes": "Use these metrics only for Figure 02; Figure 01 remains without customer-confirmed deployment metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "prevents_overclaim"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "figure-01_demo_001",
+      "title": "Walking demo",
+      "date": "2023-10-17",
+      "observed_capabilities": [
+        "biped walking in a controlled setting"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "controlled company demo setting",
+      "source_ids": [
+        "figure-01_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No independent locomotion metrics found."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "biped walking in a controlled setting",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-01_demo_002",
+      "title": "Coffee-making task demo",
+      "date": "2024-01-07",
+      "observed_capabilities": [
+        "object handling",
+        "coffee-machine interaction",
+        "learned task execution"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "controlled lab setting",
+      "source_ids": [
+        "figure-01_source_004",
+        "figure-01_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Repeatability and failure cases not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "object handling; coffee-machine interaction; learned task execution",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-01_demo_003",
+      "title": "OpenAI-integrated conversation and task demo",
+      "date": "2024-03-13",
+      "observed_capabilities": [
+        "speech interaction",
+        "visual scene interpretation",
+        "simple action planning",
+        "object movement"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "controlled demo table setting",
+      "source_ids": [
+        "figure-01_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo, not sustained deployment or benchmark."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "speech interaction; visual scene interpretation; simple action planning; object movement",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Generation-specific deployment",
+      "description": "No customer-confirmed Figure 01 deployment with task, hours, or output was found.",
+      "impact_on_arena_scoring": "Deployment/commercial proof should remain low."
+    },
+    {
+      "topic": "BMW attribution",
+      "description": "Current Figure and BMW production metrics should be attributed to Figure 02, not Figure 01.",
+      "impact_on_arena_scoring": "Prevents overstating Figure 01."
+    },
+    {
+      "topic": "Missing specs",
+      "description": "No public total DoF, hand DoF, sensor suite, compute, battery capacity, or price was found.",
+      "impact_on_arena_scoring": "Limits detailed comparisons."
+    }
+  ],
+  "source_ids": [
+    "figure-01_source_001",
+    "figure-01_source_002",
+    "figure-01_source_003",
+    "figure-01_source_004",
+    "figure-01_source_005",
+    "figure-01_source_006",
+    "figure-01_source_007",
+    "figure-01_source_008",
+    "figure-01_source_009",
+    "figure-01_source_010",
+    "figure-01_source_011",
+    "figure-01_source_012"
+  ],
+  "sources": [
+    {
+      "id": "figure-01_source_001",
+      "title": "Figure AI Archived Homepage",
+      "publisher": "Figure AI via Internet Archive",
+      "url": "https://web.archive.org/web/20230310182353/https://www.figure.ai/",
+      "date_published": "2023-03-10",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Archived official page for historical specs."
+    },
+    {
+      "id": "figure-01_source_002",
+      "title": "Company",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/company",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Current official timeline and generation context."
+    },
+    {
+      "id": "figure-01_source_003",
+      "title": "Figure's humanoid robot takes its first tentative steps",
+      "publisher": "New Atlas",
+      "url": "https://newatlas.com/robotics/figure-humanoid-walking/",
+      "date_published": "2023-10-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary coverage of a public walking demo."
+    },
+    {
+      "id": "figure-01_source_004",
+      "title": "Figure status update: AI trained coffee demo",
+      "publisher": "Figure AI on LinkedIn",
+      "url": "https://www.linkedin.com/posts/figure-ai_figure-status-update-ai-trained-coffee-activity-7149751796863819776-IDoq",
+      "date_published": "2024-01-07",
+      "date_accessed": "2026-05-16",
+      "source_type": "social_media",
+      "reliability": "medium",
+      "reliability_notes": "Official company social post; not independent evidence."
+    },
+    {
+      "id": "figure-01_source_005",
+      "title": "Video of Figure 01 robot making coffee could signal a huge step in the future of AI robotics",
+      "publisher": "Live Science",
+      "url": "https://www.livescience.com/technology/robotics/video-of-figure-01-robot-making-coffee-could-signal-a-huge-step-in-the-future-of-ai-robotics",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary context for the coffee demo."
+    },
+    {
+      "id": "figure-01_source_006",
+      "title": "Figure Status Update - Real World Task",
+      "publisher": "Figure AI on YouTube",
+      "url": "https://www.youtube.com/watch?v=gEjXcEU3Bbw",
+      "date_published": "2024-02-26",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo video; controlled and not independently measured."
+    },
+    {
+      "id": "figure-01_source_007",
+      "title": "Figure 01 powered by OpenAI is a robot that can chat, see, plan and perform tasks",
+      "publisher": "The Decoder",
+      "url": "https://the-decoder.com/figure-01-powered-by-openai-is-a-robot-that-can-chat-see-plan-and-perform-tasks/",
+      "date_published": "2024-03-13",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary report of a public company demo."
+    },
+    {
+      "id": "figure-01_source_008",
+      "title": "Figure Announces Commercial Agreement with BMW Manufacturing to Bring General Purpose Robots into Automotive Production",
+      "publisher": "Figure AI via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/figure-announces-commercial-agreement-with-bmw-manufacturing-to-bring-general-purpose-robots-into-automotive-production-302036263.html",
+      "date_published": "2024-01-18",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Agreement source; not Figure 01 deployment proof."
+    },
+    {
+      "id": "figure-01_source_009",
+      "title": "Successful Test of Humanoid Robots at BMW Group Plant Spartanburg",
+      "publisher": "BMW Group",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0444268EN_US/successful-test-of-humanoid-robots-at-bmw-group-plant-spartanburg",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "customer_press_release",
+      "reliability": "high",
+      "reliability_notes": "Customer source identifying later BMW trial/deployment context as Figure 02."
+    },
+    {
+      "id": "figure-01_source_010",
+      "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/production-at-bmw",
+      "date_published": "2025-11-19",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official company writeup with Figure 02-specific BMW deployment metrics; useful as exclusion evidence for Figure 01."
+    },
+    {
+      "id": "figure-01_source_011",
+      "title": "BMW Group to deploy humanoid robots in production in Germany for the first time",
+      "publisher": "BMW Group",
+      "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0455870EN_GB/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time?language=en_GB",
+      "date_published": "2026-03-03",
+      "date_accessed": "2026-05-16",
+      "source_type": "customer_press_release",
+      "reliability": "high",
+      "reliability_notes": "Current customer source stating the Spartanburg humanoid production pilot used Figure 02 and reporting production metrics."
+    },
+    {
+      "id": "figure-01_source_012",
+      "title": "Figure 01 + OpenAI’s Remarkable Humanoid Robot",
+      "publisher": "Medium",
+      "url": "https://medium.com/@aiexplorersblog/figure-01-openais-remarkable-humanoid-robot-618da852cf5b",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Figure 01 has useful early demo evidence but no Figure 01-specific customer deployment. Keep it separate from Figure 02's BMW metrics.",
+    "strongest_positive_evidence": [
+      "Archived official specs.",
+      "Walking, coffee, and speech-grounded action demos.",
+      "OpenAI-integrated interaction demo."
+    ],
+    "weakest_or_missing_evidence": [
+      "No Figure 01-specific deployment.",
+      "No independent benchmark.",
+      "No detailed hand, sensor, compute, battery, or total DoF specs.",
+      "No price."
+    ],
+    "conflicting_claims": [
+      "BMW agreement happened during the Figure 01 period, but BMW production evidence is Figure 02-specific."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Figure 01 with BMW Figure 02 production hours or output.",
+      "Do not treat demos as sustained deployment.",
+      "Do not infer current availability from archived specs."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "figure-02",
+      "figure-03"
+    ],
+    "currentness_notes": "Evidence should be interpreted historically; Figure 01 is not treated as a current product or deployment platform unless new evidence appears."
+  },
+  "excluded_claims": [
+    {
+      "claim": "BMW production hours, output, components, and vehicle-support metrics",
+      "reason": "Later Figure and BMW evidence identifies the production robot as Figure 02, not Figure 01.",
+      "source_ids": [
+        "figure-01_source_008",
+        "figure-01_source_009",
+        "figure-01_source_010",
+        "figure-01_source_011"
+      ]
+    },
+    {
+      "claim": "Current purchasability or active platform availability",
+      "reason": "No public purchase path or current product page for Figure 01 was found.",
+      "source_ids": [
+        "figure-01_source_002"
+      ]
+    },
+    {
+      "claim": "Verified autonomous planning architecture",
+      "reason": "The OpenAI demo shows interaction, but internal planning/model details are not independently verified.",
+      "source_ids": [
+        "figure-01_source_007"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 6,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 2,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Figure 01 is a superseded first-generation Figure prototype with useful early demos for walking, coffee-machine interaction, and speech-grounded action, but no customer-confirmed deployment. Do not credit it with BMW production metrics, which belong to Figure 02.",
+    "strongest_evidence": [
+      "Archived official specs.",
+      "Controlled public walking and manipulation demos.",
+      "Public OpenAI interaction demo."
+    ],
+    "weakest_evidence": [
+      "No Figure 01 deployment metrics.",
+      "No independent benchmark.",
+      "No detailed sensor, hand, compute, or battery spec."
+    ],
+    "known_do_not_credit": [
+      "BMW Figure 02 production output.",
+      "Current purchasability.",
+      "Verified internal autonomy beyond visible demos."
+    ],
+    "recommended_confidence": "medium_low"
+  }
+}

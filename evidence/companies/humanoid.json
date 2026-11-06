@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "humanoid",
+    "name": "Humanoid",
+    "country": "United Kingdom",
+    "website": "https://thehumanoid.ai",
+    "founded": 2024,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "humanoid-hmnd-01"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "$152 million Series A at a $1.35 billion post-money valuation in July 2026; $270 million raised in total."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "humanoid_source_001",
+      "title": "U.K.-based Humanoid secures $152M in Series A funding",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

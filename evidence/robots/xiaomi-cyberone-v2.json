@@ -1,0 +1,1249 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "xiaomi-cyberone-v2",
+    "name": "Xiaomi CyberOne V2",
+    "company_id": "xiaomi",
+    "company_name": "Xiaomi",
+    "country": "China",
+    "generation": "second-generation CyberOne (also described in sources as the 'new-generation CyberOne')",
+    "first_announced_date": "2026-04-29",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "A second-generation CyberOne appeared publicly at Xiaomi's Investor Day in April 2026 and, after roughly four months of factory training, at the World Robot Conference (August 2026) and IFA Berlin (3 September 2026). Xiaomi reports the robot is being validated on a nut-fastening station at its own Beijing EV plant, with success rising from about 90% to 98%. The trade-press company profile lists CyberOne V2 as a 'Prototype'; this pack uses 'pilot' because the only evidence is an internal, company-reported factory trial. Xiaomi has published no price, specification sheet or release date, and denied reports of imminent mass production in March 2025 (that denial concerned the first-generation CyberOne).",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "nut-fastening / self-tapping screw installation on Xiaomi's own EV assembly line (internal pilot)",
+      "factory perception, control and task-execution validation",
+      "public demonstration and visitor interaction at trade shows"
+    ],
+    "last_updated": "2026-10-30"
+  },
+  "specs": {
+    "height": {
+      "original_value": "approximately 1.70 meters tall",
+      "value": 170,
+      "unit": "cm",
+      "notes": "Only value given for the new-generation machine, in a trade-press description of the World Robot Conference showing. The 177 cm figure widely published for CyberOne belongs to the 2022 first-generation robot and is not used here.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No weight was published for the second-generation machine in any reviewed source. The 52 kg figure in sources 005 and 006 refers to the 2022 first-generation CyberOne and must not be applied here.",
+      "source_ids": []
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload specification published. The 1.5 kg per hand figure in source 005 is a 2022 first-generation specification.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No rated runtime published. The longest reported continuous operation is a three-hour autonomous nut-installation run (source 001), which is a trial duration, not a rated runtime.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No battery capacity or chemistry disclosed in any reviewed source.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed published for the second-generation machine. The roughly 3.6 km/h figure in source 005 is a 2022 first-generation specification.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Total body DoF not published for the second-generation machine. Trade press reports the redesigned hand raised degrees of freedom 'into the 22–27 range' without stating whether that is per hand; the 21-DoF figure in sources 003, 005 and 006 is the 2022 first-generation robot.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Redesigned bionic hand, March 2026: roughly 60% smaller than its predecessor and cut to a 1:1 human form factor, with degrees of freedom reported in the 22–27 range, full-palm touch sensing and an evaporative liquid-cooling system described as bionic sweat glands; trade press reports 150,000-cycle durability. All figures are company claims relayed by trade press.",
+      "degrees_of_freedom": null,
+      "force_feedback": "full-palm touch sensing (company claim, relayed by trade press)",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "full-palm touch sensing in the redesigned bionic hand (company claim, relayed at headline level)",
+        "no vision, depth, audio or IMU sensor disclosure was found for the second-generation machine"
+      ],
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Onboard compute not disclosed. Xiaomi open-sourced Xiaomi-Robotics-0, a 4.7-billion-parameter vision-language-action model pairing a Qwen3-VL-4B-Instruct backbone with a diffusion transformer, reported at 80 ms inference latency and 30 Hz control on a consumer RTX 4090; the sources do not state that this model or that hardware runs onboard the robot.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "No actuator specification was published for the second-generation machine. The redesign work described is on the hand, where an evaporative liquid-cooling system manages motor heat. Torque figures appearing in sources 004, 005 and 006 (500 g / 30 Nm upper-limb motors, 300 Nm peak hip torque) are 2022 first-generation specifications.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Trade press states CyberOne is not for sale and Xiaomi has published no price, specification sheet or release date for the current generation. A reseller page (source 005) lists the 2022 first-generation CyberOne at $99,999 on an enquiry basis; that is not a Xiaomi offer and does not apply to the V2. Lei Jun's 2022 statement that CyberOne would cost 600,000–700,000 yuan refers to the first-generation robot and is excluded.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "The only quantified manipulation evidence is a company-reported self-tapping nut-installation task on Xiaomi's own EV line, at 90.2% success over a three-hour run and about 98% after roughly four months. Xiaomi also describes a redesigned bionic hand at human scale with degrees of freedom reported in the 22–27 range, full-palm touch sensing, 150,000-cycle durability and evaporative motor cooling.",
+      "evidence_level": 3,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "caveats": [
+        "All numbers are company-reported and relayed by trade press; no Xiaomi primary document was in the source set.",
+        "No per-attempt failure log, force data or independent dexterity benchmark.",
+        "Hand specifications (DoF range, cycle life) are not published by Xiaomi directly.",
+        "No manipulation video was reviewed; the hand videos in the source set are title-only."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Trade press reports a three-hour autonomous self-tapping-nut installation run inside a 76-second line cycle at the Beijing EV plant, with success rising from about 90% to 98% over roughly four months of on-site application. Xiaomi frames its own factories as the validation environment for perception, control and task execution.",
+      "evidence_level": 3,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "caveats": [
+        "Autonomy is a company description; no intervention count, uptime log or independent audit was found.",
+        "It is unclear whether the March 2026 90.2% run used the first- or second-generation machine; the V2's first public appearance was April 2026.",
+        "No third-party benchmark or replication."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "The robot is described as a roughly 1.70 m biped shown walking at trade events, and one third-party video title refers to a CyberOne V2 performing a florist task at WRC 2026. No walking speed, gait metric, stair or terrain performance, or locomotion success data was found for the second-generation machine.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_007"
+      ],
+      "caveats": [
+        "No locomotion specification or metric is published for the V2.",
+        "The locomotion video is title-only and was not reviewed.",
+        "All published walking figures (about 3.6 km/h) belong to the 2022 first-generation robot."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Xiaomi says it is refining the robot's perception, control and task-execution abilities in its own manufacturing environment, and the nut-installation task implies locating fastening points; Xiaomi also cites its proprietary AI models as reasoning/task-execution enablers. No perception specification, dataset or benchmark was published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_002",
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "caveats": [
+        "Purely qualitative company description; no sensor suite, resolution, latency or accuracy data.",
+        "No independent perception evaluation."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Xiaomi showed the robot at its April 2026 Investor Day handing out gift bags and interacting with attendees, and at IFA Berlin 2026 it demonstrated real-time interaction with visitors including finger-heart and thumbs-up gestures.",
+      "evidence_level": 2,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "caveats": [
+        "Described by trade press; no footage was reviewed and no interaction metric exists.",
+        "Gesture-level interaction only; no speech, instruction-following or safety-in-proximity data."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Xiaomi reports a three-hour autonomous nut-installation run and roughly four months of on-site application at its EV plant with success improving from about 90% to 98%, plus 150,000-cycle durability for the redesigned hand.",
+      "evidence_level": 3,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "caveats": [
+        "No MTBF, duty cycle, uptime percentage or battery runtime published.",
+        "'Roughly four months' of application and the 98% figure are company statements relayed at a trade show.",
+        "No independent reliability audit."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-scale form factor of roughly 1.70 m, used on an assembly line inside Xiaomi's own plant and interacting with visitors on trade-show floors.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "caveats": [
+        "No weight, force, pinch-point, e-stop or safety-certification disclosure for the V2.",
+        "Working proximity to factory staff and the public is shown but not safety-quantified.",
+        "No independent safety assessment found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Internal-only pilot: Xiaomi is validating CyberOne on a nut-fastening station at its own Beijing EV plant, with company-reported success of about 98% after roughly four months. No external customer, shipment count, lease or sale was found, and Xiaomi denied mass-production reports in March 2025.",
+      "evidence_level": 2,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002",
+        "xiaomi-cyberone-v2_source_003"
+      ],
+      "caveats": [
+        "Self-deployment is not third-party commercial validation.",
+        "No unit count, operating hours, output or cost figures published.",
+        "Lei Jun's expectation of large-scale internal deployment within five years is a forward-looking statement, not evidence of deployment."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No price, purchase path, lease or waitlist was found for the second-generation CyberOne; trade press states it is not for sale and Xiaomi has published no specification sheet.",
+      "evidence_level": 0,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_005"
+      ],
+      "caveats": [
+        "Not purchasable by the public or by third-party companies as of the review date.",
+        "The $99,999 reseller listing covers the 2022 first-generation robot, not the V2."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "xiaomi-cyberone-v2_evidence_001",
+      "date": "2026-03",
+      "title": "90.2% success rate in three-hour EV factory nut-installation run",
+      "claim": "Xiaomi reported a 90.2% success rate over a three-hour autonomous self-tapping-nut installation run at its Beijing EV plant, inside the line's 76-second cycle time.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Trade-press profile relaying Xiaomi data; the same profile notes the second-generation machine only appeared publicly in April 2026.",
+      "arena_relevance": "The single strongest quantified task result for this robot, and the basis of the internal-pilot status.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "In March 2026 the company reported a 90.2% success rate over a three-hour autonomous self-tapping-nut installation run at the Beijing EV plant, inside the line's 76-second cycle time.",
+      "source_location": "Humanoids Daily company profile, 'Deployment' section",
+      "verification_notes": "Company-reported figure relayed by trade press; no primary Xiaomi release, intervention log or independent measurement was available. Attribution to the second-generation machine is not explicit.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_002",
+      "date": "2026-09-03",
+      "title": "Success rate rose from about 90% to 98% over four months on the nut-fastening line",
+      "claim": "At IFA 2026 Xiaomi stated that after approximately four months of on-site application on the nut-fastening process at its EV factory, the task success rate improved from around 90% to 98%.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "endurance_reliability",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_002",
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Stated by Xiaomi at a trade show and reported by finance/tech media.",
+      "arena_relevance": "Best available reliability/learning signal; still a company claim about an internal line.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "After approximately four months of on-site application, the task success rate improved from around 90% to 98%.",
+      "source_location": "BigGo Finance IFA 2026 report, nut-fastening section",
+      "verification_notes": "No primary Xiaomi document, trial count or failure taxonomy published; the improvement mechanism is not described.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "manipulation_dexterity",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_003",
+      "date": "2026-08",
+      "title": "New-generation CyberOne shown at WRC and IFA at about 1.70 m",
+      "claim": "Xiaomi presented a new-generation CyberOne, about 1.70 m tall, at the World Robot Conference after roughly four months of factory training, and gave it an overseas debut at IFA Berlin on 3 September 2026.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Only published height figure for the second-generation machine.",
+      "arena_relevance": "Establishes human-scale form factor for environment-fit comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "In August 2026 a new-generation CyberOne, about 1.70 m tall, was shown at the World Robot Conference after roughly four months of factory training, and on 3 September 2026 the robot made its overseas debut at IFA in Berlin, where Xiaomi said the nut-fastening success rate had risen from about 90% to 98% over that period.",
+      "source_location": "Humanoids Daily company profile, 'Deployment' section",
+      "verification_notes": "Height is approximate ('about 1.70 m') and relayed by trade press; no Xiaomi spec sheet exists.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_004",
+      "date": null,
+      "title": "Not for sale; no price, spec sheet or release date",
+      "claim": "CyberOne is not for sale and Xiaomi has published no price, specification sheet or release date for the current generation; the company denied reports of imminent mass production in March 2025.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Consistent with the absence of any Xiaomi product page or store listing in the source set.",
+      "arena_relevance": "Caps commercial and accessibility scoring.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "CyberOne is not for sale, and Xiaomi has published no price, specification sheet or release date for the current generation; the company denied reports of imminent mass production in March 2025.",
+      "source_location": "Humanoids Daily company profile, 'Commercial position' section",
+      "verification_notes": "Negative evidence from a trade-press profile; corroborated indirectly by the absence of first-party sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_005",
+      "date": "2026-04-29",
+      "title": "Public debut at Xiaomi Investor Day",
+      "claim": "A second-generation CyberOne handed out gift bags and interacted with attendees at Xiaomi's April 2026 Investor Day, its first public outing away from the factory, with no specifications or pricing released.",
+      "category": [
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Described from trade-press coverage of a public event; footage not reviewed.",
+      "arena_relevance": "Human-interaction evidence in a public, non-factory setting.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "A second-generation CyberOne handed out gift bags and interacted with attendees, its first public outing away from the factory; Xiaomi released no specifications or pricing.",
+      "source_location": "Humanoids Daily company profile, timeline entry 'April 2026'",
+      "verification_notes": "Media description of a public appearance; no video, duration or performance data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_006",
+      "date": "2026-03-27",
+      "title": "Redesigned bionic hand with human form factor, full-palm touch and evaporative cooling",
+      "claim": "Xiaomi redesigned the CyberOne hand to roughly 1:1 human scale, cutting volume by about 60%, raising degrees of freedom into the 22–27 range, adding full-palm touch sensing, 150,000-cycle durability and an evaporative liquid-cooling system that Xiaomi describes as bionic sweat glands.",
+      "category": [
+        "manipulation_dexterity",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Detailed company claim relayed by trade press; Xiaomi has not published a hand data sheet.",
+      "arena_relevance": "Main hardware evidence for dexterity beyond the single factory task.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Following a successful pilot in its EV factory, Xiaomi has completely redesigned its humanoid hand, introducing a 1:1 human form factor, 150,000-cycle durability, and an evaporative liquid-cooling system to manage motor heat.",
+      "source_location": "Humanoids Daily profile, 'Latest on Xiaomi Robotics' summary of the hand article",
+      "verification_notes": "Trade-press summary of a Xiaomi disclosure; the 22–27 DoF range is reported in the profile body without stating per-hand or whole-body basis.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_007",
+      "date": "2026-02",
+      "title": "Xiaomi-Robotics-0 vision-language-action model open-sourced",
+      "claim": "Xiaomi open-sourced Xiaomi-Robotics-0, a 4.7-billion-parameter VLA model pairing a Qwen3-VL-4B-Instruct backbone with a flow-matching diffusion transformer, reporting 80 ms inference latency and 30 Hz control on a consumer RTX 4090.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Public code release is comparatively checkable, but the sources do not state that the V2 runs this model onboard.",
+      "arena_relevance": "Supports a claim that Xiaomi has an in-house VLA stack; not proof of V2 autonomy.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "It pairs a pre-trained Qwen3-VL-4B-Instruct backbone with a diffusion transformer that generates action chunks by flow matching, and Xiaomi reports 80 ms inference latency and 30 Hz control running on a consumer RTX 4090.",
+      "source_location": "Humanoids Daily company profile, 'Technical approach' section",
+      "verification_notes": "Latency and control-rate figures are company-reported; the RTX 4090 is an external workstation GPU, not stated to be onboard.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_008",
+      "date": null,
+      "title": "Internal factory demand is the near-term measure",
+      "claim": "Lei Jun has said Xiaomi expects to deploy large numbers of humanoids across its own factories within five years, making internal manufacturing demand rather than third-party orders the near-term measure of the programme.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Forward-looking executive statement, included as context rather than as deployment proof.",
+      "arena_relevance": "Explains why there are no external customers; should not be scored as deployment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Lei Jun has said Xiaomi expects to deploy large numbers of humanoids across its own factories within five years, which makes internal manufacturing demand, rather than third-party orders, the near-term measure of the programme.",
+      "source_location": "Humanoids Daily company profile, 'Commercial position' section",
+      "verification_notes": "Executive expectation relayed by trade press; no committed volume or timetable.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_009",
+      "date": "2026-09-03",
+      "title": "IFA Berlin show-floor interaction with visitors",
+      "claim": "At IFA 2026 the robot demonstrated real-time interaction with visitors, performing finger-heart and thumbs-up gestures, while Xiaomi tested perception, control and task execution at its own manufacturing facilities.",
+      "category": [
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Media description of a public demonstration; no video reviewed.",
+      "arena_relevance": "Only human-interaction evidence besides the Investor Day appearance.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "On the show floor, CyberOne demonstrated real-time interaction with visitors, performing finger-heart and thumbs-up gestures.",
+      "source_location": "BigGo Finance IFA 2026 report, show-floor paragraph",
+      "verification_notes": "Trade-press description; no execution mode, duration or success data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_010",
+      "date": "2026-09-03",
+      "title": "Xiaomi uses its own factory as the validation environment",
+      "claim": "Xiaomi says it is using its own manufacturing environment as a testing ground, refining the robot's perception, control and task-execution abilities while validating humanoids for smart manufacturing.",
+      "category": [
+        "perception_scene_understanding",
+        "autonomy_task_execution",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Company framing relayed by media.",
+      "arena_relevance": "Confirms deployment is internal validation rather than customer work.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Xiaomi is using its own manufacturing environment as a testing ground for robotics technology, refining CyberOne's perception, control, and task-execution abilities while validating the potential of humanoid robots in smart manufacturing.",
+      "source_location": "BigGo Finance IFA 2026 report, validation paragraph",
+      "verification_notes": "Statement of intent/process; no measurement attached.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_011",
+      "date": "2025-03-13",
+      "title": "Xiaomi denied CyberOne mass-production reports",
+      "claim": "Xiaomi dismissed reports that CyberOne was entering mass production at its Yizhuang facility, calling the circulating information inaccurate.",
+      "category": [
+        "deployment_commercial_proof",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Concerns the first-generation CyberOne and March 2025 reporting, but is the only company correction on manufacturing status in the source set.",
+      "arena_relevance": "Caps any claim of volume production or shipments.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Xiaomi has dismissed recent reports indicating that its humanoid robot, CyberOne, is entering mass production at its Yizhuang facility.",
+      "source_location": "Tech in Asia news item, opening paragraph",
+      "verification_notes": "Short trade-press item sourcing Pandaily; Xiaomi's statement is paraphrased, not quoted verbatim.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_012",
+      "date": "2022-08-12",
+      "title": "First-generation CyberOne specifications (context only)",
+      "claim": "The 2022 first-generation CyberOne was a 21-DoF, 13-joint biped with up to 300 Nm peak hip torque, 500 g upper-limb motors rated at 30 Nm, roughly 3.6 km/h walking speed, 1.5 kg per hand, a Mi-Sense depth module and a curved OLED face.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_006",
+        "xiaomi-cyberone-v2_source_003",
+        "xiaomi-cyberone-v2_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Included only to prevent misattribution to the V2; the pack does not use these numbers in the V2 spec table.",
+      "arena_relevance": "Historical baseline for the programme.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The Xiaomi CyberOne is fitted with advanced arms and legs, supports bipedal-motion posture balancing, and reaches a peak torque of up to 300Nm.",
+      "source_location": "Inceptive Mind 2022 launch article, technical paragraph",
+      "verification_notes": "Launch-era reporting of a 2022 research platform; source 005 itself warns that later revisions may differ.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_013",
+      "date": null,
+      "title": "Adviser page claims wider plant deployment and a 2030 rollout",
+      "claim": "An independent robot-adviser page says Xiaomi is actively deploying CyberOne units in its own automobile plants to monitor die-casting quality and assist parts delivery, as a pilot for broad industrial rollout by 2030.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_004"
+      ],
+      "confidence": 0.25,
+      "notes": "Unattributed marketing copy with no citations; task description conflicts with trade-press reports of nut-fastening.",
+      "arena_relevance": "Kept as a flagged claim only; not credited.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robots are being used to monitor die-casting quality and assist in parts delivery, serving as a live pilot for broad-scale industrial rollout by 2030.",
+      "source_location": "The Robot Group CyberOne page, 'Deployment' section",
+      "verification_notes": "No evidence, date or source given; the same page also repeats 2022 first-generation figures and a speculative consumer-home roadmap.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_014",
+      "date": null,
+      "title": "Reseller listing is not a commercial offer",
+      "claim": "A reseller page states that Xiaomi has not offered CyberOne as a commercial product and that early cost figures were manufacturing references rather than prices, while listing the 2022 robot for sale on an enquiry basis.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_005"
+      ],
+      "confidence": 0.3,
+      "notes": "Reseller page of low reliability; used only to flag that its $99,999 listing is not V2 pricing.",
+      "arena_relevance": "Prevents mis-scoring price or purchasability for the V2.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Xiaomi has not offered CyberOne as a commercial product, and early cost figures were manufacturing references rather than prices.",
+      "source_location": "American Satellite CyberOne page, FAQ 'Where can I buy'",
+      "verification_notes": "The page simultaneously displays a 99.999,00 $ SKU for the 2022 model with 'subject to availability', which contradicts the 'not commercial' framing; treat both as unverified reseller content.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_015",
+      "date": "2022-08-12",
+      "title": "Lei Jun's 2022 cost estimate (first generation, not V2)",
+      "claim": "Lei Jun said in 2022 that CyberOne would cost somewhere in the range of 600,000 to 700,000 yuan when it goes on sale, with no sale date announced.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Excluded from the V2 price field; kept for transparency because it circulates as a CyberOne price.",
+      "arena_relevance": "Only pricing statement in the source set, and it is for the 2022 robot.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Lei Jun stated that CyberOne would cost somewhere in the range of 600,000 to 700,000 yuan (about $89,100 to $104,000) when it goes on sale.",
+      "source_location": "Inceptive Mind 2022 launch article, final paragraph",
+      "verification_notes": "Second-hand reporting of a 2022 launch-event remark; Xiaomi has published no price since.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_016",
+      "date": "2022-08-12",
+      "title": "2022 assessment: prototype without many practical tasks",
+      "claim": "At launch, reporting characterised CyberOne as a prototype that did not appear able to perform many practical tasks, with adoption in homes a distant prospect.",
+      "category": [
+        "autonomy_task_execution",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Applies to the 2022 first-generation robot and is used as historical context, not as a judgment of the V2.",
+      "arena_relevance": "Shows the programme's starting point before the 2026 factory pilot.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "At the moment, CyberOne should probably be seen mostly as a prototype that so far does not seem to be able to perform many practical tasks.",
+      "source_location": "Inceptive Mind 2022 launch article, third paragraph",
+      "verification_notes": "Single-outlet 2022 opinion; superseded in principle by the 2026 factory claims, which are themselves unverified.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone-v2_evidence_023",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No Xiaomi first-party product page, press release or technical paper; no weight, payload, battery, runtime, walking speed, total DoF, compute or actuator specification; no price, unit count, operating hours, intervention rate or independent benchmark was found for CyberOne V2.",
+      "category": [
+        "missing_evidence",
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list compiled during this review.",
+      "arena_relevance": "Judges should keep confidence low on specs, autonomy and availability.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure is not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "xiaomi-cyberone-v2_deployment_001",
+      "customer_or_partner": "Xiaomi (internal deployment — Beijing Xiaomi Robot Technology, Xiaomi EV plant, Yizhuang)",
+      "site_or_context": "Xiaomi EV plant, Beijing Yizhuang district — vehicle assembly line, self-tapping nut-fastening station",
+      "task": "Autonomous self-tapping nut installation on the assembly line, operating inside the line's 76-second cycle time.",
+      "start_date": "2026",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [
+        "90.2% success over a three-hour autonomous run (company-reported, March 2026)",
+        "about 98% success after roughly four months of on-site application (Xiaomi at IFA, September 2026)",
+        "76-second line cycle time (company-reported)"
+      ],
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002",
+        "xiaomi-cyberone-v2_source_010",
+        "xiaomi-cyberone-v2_source_012"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Internal, self-owned site: this is not a third-party customer deployment.",
+        "No unit count, total operating hours, parts-per-hour or intervention rate published.",
+        "Execution mode is described as autonomous by trade press relaying Xiaomi; no audit.",
+        "Start date is approximate; the March 2026 report and the 'roughly four months' statement do not align precisely."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "xiaomi-cyberone-v2_demo_001",
+      "title": "Factory nut-fastening pilot run",
+      "date": "2026-03",
+      "observed_capabilities": [
+        "repeated self-tapping nut installation on an EV assembly line",
+        "operation inside a 76-second cycle time",
+        "success improving from about 90% to 98% over roughly four months"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Xiaomi describes the run as autonomous; no video was reviewed in this pack.",
+      "environment": "Xiaomi Beijing EV plant, Yizhuang",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_002",
+        "xiaomi-cyberone-v2_source_010",
+        "xiaomi-cyberone-v2_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Reported via trade press; no footage reviewed and no intervention log published.",
+        "The two factory videos in the source set are title-only, so their content is unverified."
+      ],
+      "editing_notes": "No video was reviewed; the factory videos (sources 010 and 012) are available in the source set by title only and require manual review.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "The three-hour run is described as autonomous by Xiaomi via trade press; this is a company claim with no external verification or intervention count.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "self-tapping nut installation on the assembly line within the 76-second cycle",
+          "verification_notes": "Timestamp not verified; no footage reviewed; manual video review required before using this as audit-grade evidence."
+        }
+      ]
+    },
+    {
+      "id": "xiaomi-cyberone-v2_demo_002",
+      "title": "Investor Day public appearance",
+      "date": "2026-04-29",
+      "observed_capabilities": [
+        "handing out gift bags",
+        "interacting with attendees away from the factory"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Xiaomi Investor Day event, China",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No footage reviewed; described by trade press only.",
+        "No execution mode, duration or success data."
+      ],
+      "editing_notes": "No video reviewed; treat as a curated public appearance unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The reviewed coverage does not state whether the appearance was autonomous or remotely operated.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "gift-bag handout and attendee interaction",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "xiaomi-cyberone-v2_demo_003",
+      "title": "IFA Berlin 2026 show-floor demonstration",
+      "date": "2026-09-03",
+      "observed_capabilities": [
+        "real-time interaction with visitors",
+        "finger-heart and thumbs-up gestures"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "IFA 2026, Berlin, Xiaomi exhibition hall",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Media description only; no footage reviewed.",
+        "Gesture-level interaction; no autonomy statement."
+      ],
+      "editing_notes": "No video reviewed; trade-show demos are typically scripted.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The reviewed report does not state execution mode for the show-floor interaction.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "visitor interaction and hand gestures on the Xiaomi stand",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "xiaomi-cyberone-v2_demo_004",
+      "title": "WRC 2026 'florist' video (third-party upload)",
+      "date": "2026-08-30",
+      "observed_capabilities": [
+        "claimed: CyberOne V2 performing a florist task at WRC 2026 (title-level only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "World Robot Conference 2026 (per title)",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only the title, channel and date are available; nothing about the content can be confirmed.",
+        "The title's 'Completely Alone' is the uploader's framing, not a Xiaomi disclosure."
+      ],
+      "editing_notes": "Not reviewed; title-only source. Any use requires manual frame-by-frame review for cuts and for hidden operators or cables.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation disclosure in the source; the uploader's autonomy wording is not a company statement.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "unverified; title refers to a florist task at WRC 2026",
+          "verification_notes": "Timestamp not verified; manual video review required before any use."
+        }
+      ]
+    },
+    {
+      "id": "xiaomi-cyberone-v2_demo_005",
+      "title": "Bionic hand demonstration videos (third-party uploads)",
+      "date": "2026-03-30",
+      "observed_capabilities": [
+        "claimed: CyberOne hand with full-palm touch and evaporative cooling (title-level only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unspecified; one title references ZGC 2026",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_008",
+        "xiaomi-cyberone-v2_source_009",
+        "xiaomi-cyberone-v2_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title-only sources; no transcripts and no frame review.",
+        "One is a compilation including other manufacturers' robots."
+      ],
+      "editing_notes": "Not reviewed; title-only sources. Manual review required.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation disclosure in any of the three titles.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "unverified hand demonstration",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "No first-party Xiaomi evidence",
+      "description": "The source set contains no Xiaomi product page, press release, technical paper or official video. All substantive claims arrive through trade press, a directory/adviser page, a reseller page and third-party YouTube uploads.",
+      "impact_on_arena_scoring": "Caps confidence; every quantitative claim is at best company-reported and second-hand."
+    },
+    {
+      "topic": "Physical specification gaps",
+      "description": "Weight, payload, battery capacity, rated runtime, walking speed, total degrees of freedom, sensor suite, onboard compute and actuator specifications are all unpublished for the second-generation machine.",
+      "impact_on_arena_scoring": "Do not fill these from 2022 CyberOne data or from directories; the spec table stays mostly null."
+    },
+    {
+      "topic": "Generation attribution of the factory result",
+      "description": "The 90.2% nut-installation result is dated March 2026, while the second-generation machine first appeared publicly in April 2026. The sources do not say which machine ran the March trial, although Xiaomi's IFA statement links the nut-fastening task to CyberOne generally.",
+      "impact_on_arena_scoring": "Some credit may belong to the first-generation platform; keep manipulation and autonomy confidence moderate."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "The 'autonomous' description of the factory run is a company statement relayed by media; there is no intervention log, uptime record or independent observation. Third-party video titles asserting autonomy are not company disclosures.",
+      "impact_on_arena_scoring": "Credit the reported result but not verified autonomy."
+    },
+    {
+      "topic": "Commercial proof",
+      "description": "Deployment is entirely internal to Xiaomi's own plant. No external customer, lease, sale, unit count or output metric exists, and Xiaomi denied mass-production reports.",
+      "impact_on_arena_scoring": "Deployment/commercial proof should stay modest despite a genuine factory task."
+    },
+    {
+      "topic": "Video evidence unreviewed",
+      "description": "Six third-party YouTube items are present as title, channel and date only. Nothing about their content, editing, execution mode or continuity can be asserted.",
+      "impact_on_arena_scoring": "Cannot be used as audit-grade demonstration evidence without manual review."
+    },
+    {
+      "topic": "Conflicting third-party claims",
+      "description": "An adviser page reports die-casting quality monitoring and parts delivery plus a 2030 rollout, which no other source corroborates; a reseller lists the 2022 robot at $99,999; a 2022 article reports a 600,000–700,000 yuan cost estimate.",
+      "impact_on_arena_scoring": "Do not use any of these for the V2; they are excluded or flagged at tier 0/1."
+    },
+    {
+      "topic": "Safety",
+      "description": "No safety certification, force limit, e-stop or worker-proximity assessment was found, although the robot is described working on an assembly line and interacting with trade-show visitors.",
+      "impact_on_arena_scoring": "Slight caution on human-environment fit; absence of disclosure is not evidence of risk."
+    }
+  ],
+  "source_ids": [
+    "xiaomi-cyberone-v2_source_001",
+    "xiaomi-cyberone-v2_source_002",
+    "xiaomi-cyberone-v2_source_003",
+    "xiaomi-cyberone-v2_source_004",
+    "xiaomi-cyberone-v2_source_005",
+    "xiaomi-cyberone-v2_source_006",
+    "xiaomi-cyberone-v2_source_007",
+    "xiaomi-cyberone-v2_source_008",
+    "xiaomi-cyberone-v2_source_009",
+    "xiaomi-cyberone-v2_source_010",
+    "xiaomi-cyberone-v2_source_011",
+    "xiaomi-cyberone-v2_source_012"
+  ],
+  "sources": [
+    {
+      "id": "xiaomi-cyberone-v2_source_001",
+      "title": "Xiaomi Robotics — company profile, robots and news",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/companies/xiaomi-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Trade-press company profile aggregating Xiaomi disclosures and third-party reporting; no first-party Xiaomi document, but the most detailed single source available."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_002",
+      "title": "Xiaomi Makes IFA 2026 Debut, Unveils Humanoid Robot 'CyberOne' — BigGo Finance",
+      "publisher": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/38dcf6e1-1d78-4821-b30c-b08c8a2187fb",
+      "date_published": "2026-09-03",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade-show report relaying Xiaomi statements; no independent measurement."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_003",
+      "title": "Xiaomi denies mass production of CyberOne humanoid robot",
+      "publisher": "Tech in Asia",
+      "url": "https://www.techinasia.com/news/xiaomi-denies-mass-production-cyberone-humanoid-robot",
+      "date_published": "2025-03-13",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Short news item sourcing Pandaily; company statement paraphrased."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_004",
+      "title": "Xiaomi CyberOne - independent comparison | The Robot Group",
+      "publisher": "The Robot Group",
+      "url": "https://www.therobotgroup.co.uk/robot/xiaomi-cyberone",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Adviser/marketing page with no citations; mixes 2022 first-generation figures with unattributed 2026 deployment and roadmap claims."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_005",
+      "title": "Xiaomi Cyberone Humanoid Robot",
+      "publisher": "American Satellite",
+      "url": "https://www.americansatellite.us/sp/Xiaomi-Cyberone.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller/enquiry page describing the 2022 first-generation robot and listing a price Xiaomi has not confirmed."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_006",
+      "title": "Xiaomi unveils its first full-size humanoid robot, CyberOne",
+      "publisher": "Inceptive Mind",
+      "url": "https://www.inceptivemind.com/xiaomi-unveils-first-full-size-humanoid-robot-cyberone/25828/",
+      "date_published": "2022-08-12",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Launch-era reporting of the 2022 first-generation robot; not applicable to the V2 specifications."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_007",
+      "title": "Xiaomi CyberOne V2 Just Became a Florist… Completely Alone (WRC 2026)",
+      "publisher": "YouTube (OTOFOOTAGE)",
+      "url": "https://www.youtube.com/watch?v=3IdLLXNovFs",
+      "date_published": "2026-08-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party upload; only title, channel and date captured; content not reviewed."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_008",
+      "title": "Xiaomi CyberOne Sweating Hand: Dancing Luca, Unitree G1 Plays with Kids & ZGC 2026",
+      "publisher": "YouTube (Zoom Vantage)",
+      "url": "https://www.youtube.com/watch?v=ZknRcH7KlM4",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party compilation upload; only title, channel and date captured; content not reviewed."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_009",
+      "title": "First look: Xiaomi CyberOne 2026 updates including new bionic hand (Mar/2026)",
+      "publisher": "YouTube (Dr Alan D. Thompson)",
+      "url": "https://www.youtube.com/watch?v=7AyjDxnADkw",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party upload; only title, channel and date captured; content not reviewed."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_010",
+      "title": "Inside Xiaomi’s EV Factory : Xiaomi’s Robot Breakthrough Revealed.",
+      "publisher": "YouTube (OTOFOOTAGE)",
+      "url": "https://www.youtube.com/watch?v=GFpWjNJnsQc",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party upload; only title, channel and date captured; content not reviewed."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_011",
+      "title": "Xiaomi’s CyberOne Hand Just Got a Huge Upgrade — Full-Palm Touch + “Sweating” Cooling",
+      "publisher": "YouTube (OTOFOOTAGE)",
+      "url": "https://www.youtube.com/watch?v=WQYk0TtDg-g",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party upload; only title, channel and date captured; content not reviewed."
+    },
+    {
+      "id": "xiaomi-cyberone-v2_source_012",
+      "title": "Mind-Blowing: Xiaomi CyberOne V2 Continuous Operation on Production Line",
+      "publisher": "YouTube (OTOFOOTAGE)",
+      "url": "https://www.youtube.com/watch?v=LL--FDlWPik",
+      "date_published": "2026-07-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party upload; only title, channel and date captured; content not reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "This pack was compiled automatically from public sources on 2026-10-30 and has not been manually reviewed; every figure below needs a human check before use. On the available evidence, CyberOne V2 is a Xiaomi-internal factory pilot: trade press reports a self-tapping nut-installation task on the company's own Beijing EV line, with success rising from about 90% to 98% over roughly four months, and public appearances at Investor Day, WRC 2026 and IFA Berlin. There is no first-party Xiaomi source, no specification sheet, no price and no external customer, so confidence in the substance and in the autonomy claims is low.",
+    "strongest_positive_evidence": [
+      "Company-reported 90.2% success over a three-hour autonomous nut-installation run inside a 76-second line cycle (xiaomi-cyberone-v2_evidence_001).",
+      "Company-reported improvement to about 98% after roughly four months of on-site application at the EV plant (xiaomi-cyberone-v2_evidence_002).",
+      "Redesigned bionic hand at 1:1 human scale with reported 22–27 degrees of freedom, full-palm touch, 150,000-cycle durability and evaporative motor cooling (xiaomi-cyberone-v2_evidence_006).",
+      "Open-sourced Xiaomi-Robotics-0 VLA model, a comparatively checkable artefact of the programme (xiaomi-cyberone-v2_evidence_007).",
+      "Public human-interaction appearances at Investor Day and IFA Berlin (xiaomi-cyberone-v2_evidence_005, xiaomi-cyberone-v2_evidence_009)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No first-party Xiaomi source of any kind in the source set.",
+      "No weight, payload, battery, runtime, walking speed, total DoF, sensor or compute disclosure.",
+      "No price, purchase path, unit count or output metric; deployment is internal only.",
+      "No independent benchmark, intervention log or uptime record.",
+      "All six videos are title-only and were not reviewed."
+    ],
+    "conflicting_claims": [
+      "Status: the trade profile lists CyberOne V2 as a 'Prototype', while the same profile and the IFA coverage describe an ongoing factory pilot; this pack uses 'pilot'.",
+      "Generation attribution: the 90.2% nut-fastening run is dated March 2026 but the second-generation machine only appeared publicly in April 2026; sources do not say which machine ran it.",
+      "Task: nut-fastening (sources 001, 002) versus die-casting quality monitoring and parts delivery (source 004, uncorroborated).",
+      "Availability: not for sale (source 001) versus a $99,999 reseller SKU (source 005) that actually covers the 2022 first-generation robot.",
+      "Dimensions: about 1.70 m for the new-generation machine (source 001) versus 177 cm for the 2022 CyberOne (sources 005, 006).",
+      "Hand DoF: a reported '22–27 range' (source 001) with no stated basis, versus 21 total body DoF for the 2022 robot (sources 003, 005, 006)."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit 2022 first-generation figures (177 cm, 52 kg, 21 DoF, 0.5 ms joint response, 300 Nm hip torque, 30 Nm upper-limb motors, 3.6 km/h, 1.5 kg per hand) to CyberOne V2.",
+      "Do not state a V2 price or purchasability; the $99,999 listing and the 600,000–700,000 yuan figure are not V2 pricing.",
+      "Do not describe the robot as mass-produced, shipped or deployed at a customer site.",
+      "Do not present the factory autonomy as verified; it is a company description with no intervention log or external audit.",
+      "Do not treat YouTube titles ('Completely Alone', 'Continuous Operation') as evidence of autonomy or endurance.",
+      "Do not credit the adviser-page claims about die-casting quality monitoring, parts delivery or a 2030 industrial rollout.",
+      "Do not assume Xiaomi-Robotics-0 runs onboard the robot; the reported hardware is an external RTX 4090."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "The second-generation CyberOne is Xiaomi's current humanoid platform as of 2026-10-30, shown at WRC and IFA in 2026. No successor was found in the source set; the 2022 CyberOne is superseded."
+  },
+  "excluded_claims": [
+    {
+      "claim": "2022 CyberOne specifications: 177 cm, 52 kg, 21 DoF across 13 joints, 0.5 ms joint response, 300 Nm peak hip torque, 30 Nm upper-limb motors, 1.5 kg per hand, about 3.6 km/h walking speed, 45 emotion classifications, 85 environmental sounds, Mi-Sense depth module",
+      "reason": "These describe the first-generation 2022 robot, not CyberOne V2; no source applies them to the current machine.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_003",
+        "xiaomi-cyberone-v2_source_005",
+        "xiaomi-cyberone-v2_source_006"
+      ]
+    },
+    {
+      "claim": "A purchasable Xiaomi CyberOne at $99,999",
+      "reason": "Reseller/enquiry listing for the 2022 robot on a third-party site; Xiaomi has published no price or sales channel.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_005"
+      ]
+    },
+    {
+      "claim": "CyberOne would cost 600,000–700,000 yuan",
+      "reason": "A 2022 statement by Lei Jun about the first-generation robot; no price has been published for the V2.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_006"
+      ]
+    },
+    {
+      "claim": "CyberOne units monitor die-casting quality and assist parts delivery, with broad industrial rollout by 2030 and a consumer home version by the end of the decade",
+      "reason": "Unattributed adviser-page copy with no corroboration in any other source.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_004"
+      ]
+    },
+    {
+      "claim": "Xiaomi has committed to an open-source robotics platform based on CyberOne hardware",
+      "reason": "Stated only on the adviser page; the only open-source item corroborated elsewhere is the Xiaomi-Robotics-0 model.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_004"
+      ]
+    },
+    {
+      "claim": "CyberOne V2 is in mass production or being mass-produced on the Yizhuang line",
+      "reason": "Xiaomi denied mass-production reports, and trade press states the robot is not for sale with no release date.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_001",
+        "xiaomi-cyberone-v2_source_003"
+      ]
+    },
+    {
+      "claim": "Full autonomy demonstrated at WRC 2026 ('Completely Alone') and continuous production-line operation",
+      "reason": "These are third-party YouTube titles with no transcript, no company disclosure and no review of content.",
+      "source_ids": [
+        "xiaomi-cyberone-v2_source_007",
+        "xiaomi-cyberone-v2_source_012"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Xiaomi CyberOne V2 is the second-generation of Xiaomi's biped humanoid, described as roughly 1.70 m tall and shown publicly at Xiaomi's April 2026 Investor Day, at the World Robot Conference in August 2026 and at IFA Berlin in September 2026. Its only quantified capability evidence is a company-reported self-tapping nut-installation task on Xiaomi's own Beijing EV assembly line: 90.2% success over a three-hour autonomous run inside a 76-second cycle, rising to about 98% after roughly four months of on-site application. Xiaomi also reports a redesigned hand at human scale with degrees of freedom in the 22–27 range, full-palm touch, 150,000-cycle durability and evaporative cooling, and has open-sourced a 4.7-billion-parameter VLA model. Nothing here is independently verified: there is no Xiaomi spec sheet, no price, no external customer, and the six videos in the source set are title-only.",
+    "strongest_evidence": [
+      "Company-reported 90.2% success over a three-hour autonomous nut-installation run at 76-second cycle time (xiaomi-cyberone-v2_evidence_001).",
+      "Company-reported rise to about 98% success after roughly four months on the EV line (xiaomi-cyberone-v2_evidence_002).",
+      "Redesigned bionic hand with reported 22–27 DoF range, full-palm touch and evaporative cooling (xiaomi-cyberone-v2_evidence_006).",
+      "Open-sourced Xiaomi-Robotics-0 VLA model at 80 ms latency and 30 Hz control on an RTX 4090 (xiaomi-cyberone-v2_evidence_007)."
+    ],
+    "weakest_evidence": [
+      "No first-party Xiaomi source; everything is trade press, directories, a reseller page or third-party YouTube.",
+      "No weight, payload, battery, runtime, walking speed, total DoF, sensor or compute specification.",
+      "No independent benchmark, intervention log or uptime data.",
+      "No price, unit count or external customer; Xiaomi denied mass production.",
+      "No video reviewed; all six video sources are title-only."
+    ],
+    "known_do_not_credit": [
+      "2022 first-generation CyberOne specifications (177 cm, 52 kg, 21 DoF, 300 Nm, 3.6 km/h, 1.5 kg per hand).",
+      "Any V2 price, including the $99,999 reseller listing and the 600,000–700,000 yuan 2022 estimate.",
+      "Mass production, shipments, or deployment at a third-party customer.",
+      "Independently verified autonomy on the factory line.",
+      "Die-casting quality monitoring, parts delivery and 2030 rollout claims from the adviser page.",
+      "YouTube title claims such as 'Completely Alone' or 'Continuous Operation'.",
+      "Onboard operation of Xiaomi-Robotics-0 on robot hardware."
+    ],
+    "recommended_confidence": "low"
+  }
+}

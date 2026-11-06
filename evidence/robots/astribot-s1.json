@@ -1,0 +1,877 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "astribot-s1",
+    "name": "Astribot S1",
+    "company_id": "astribot",
+    "company_name": "Astribot (Stardust Intelligence)",
+    "country": "China",
+    "generation": "S flagship series",
+    "first_announced_date": null,
+    "release_date": "2024-08",
+    "status": "commercial_deployment",
+    "status_notes": "Astribot S1 is sold business-to-business by quote. BigGo Finance reports the S flagship series began taking thousand-unit orders in September 2025, combined S and T production capacity reached 10,000-unit level, and Robot MART stores operate across six Chinese cities. RoboZaps reports commercial sales since August 2024. No public price or consumer purchase channel was found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "AI and embodied model development",
+      "retail and commercial service",
+      "scientific research and education",
+      "food preparation and household chore demonstrations",
+      "VR teleoperation data collection"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "170cm",
+      "value": 170,
+      "unit": "cm",
+      "notes": "Official product page lists 170 cm. Secondary sources RoboZaps and Interesting Engineering also report about 170 cm.",
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "80kg",
+      "value": 80,
+      "unit": "kg",
+      "notes": "Official product page lists 80 kg. RoboZaps and Interesting Engineering report around 90 kg production weight; the conflict is noted in researcher notes and excluded from hidden claims.",
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "5kg",
+      "value": 5,
+      "unit": "kg",
+      "notes": "Payload per arm at horizontal reach per official product page. RoboZaps comparison table also mentions 10 kg bimanual, but official product page does not list bimanual payload.",
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": "4~6hoursSupports plug-in",
+      "value": 4,
+      "unit": "h",
+      "notes": "Official figure, added 2026-10-29 by automated spec fill; Stated range is 4–6 hours; supports plug-in power. Value is lower bound of range..",
+      "source_ids": [
+        "astribot-s1_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity in Wh, charge time, and power draw are not published. Humanoid Press notes exactly this gap. RoboZaps reports about 1.5 hours charging with a dedicated docking station, but that is not official.",
+      "source_ids": [
+        "astribot-s1_source_004",
+        "astribot-s1_source_005"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 23,
+      "notes": "Official product page has a 'Single arm DoF' comparison row but the copied page does not contain the numeric value. RoboZaps and Interesting Engineering report 23 total DoF: 7 DoF per arm, 4-DoF torso, 2-DoF head, 3-DoF omnidirectional base. This is secondary, not officially confirmed in the reviewed official text.",
+      "source_ids": [
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "≥10m/s",
+      "value": 10,
+      "unit": "m/s",
+      "notes": "Official figure, added 2026-10-29 by automated spec fill; End-effector maximum velocity; not walking or base travel speed..",
+      "source_ids": [
+        "astribot-s1_source_003"
+      ]
+    },
+    "hands": {
+      "description": "Official sources do not specify hand type. RoboZaps reports parallel-jaw grippers. Secondary sources also mention force/torque sensors at wrists and tactile fingertip sensors.",
+      "degrees_of_freedom": null,
+      "force_feedback": "Fingertip tactile sensors and wrist force/torque sensors reported by RoboZaps; not confirmed in official product page.",
+      "source_ids": [
+        "astribot-s1_source_004"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Official product page advertises multimodal fusion and comprehensive perception of the real environment.",
+        "RoboZaps reports RGB cameras, depth camera, LiDAR, IMU, force/torque sensors, tactile fingertip sensors, ultrasonic sensors, microphone array.",
+        "Interesting Engineering reports RGB-D cameras, LiDAR, IMUs, force and tactile sensors."
+      ],
+      "source_ids": [
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ]
+    },
+    "compute": {
+      "description": "No official onboard compute specification was found. Humanoid Press says Astribot has not released detailed compute but the robot uses onboard AI processors optimized for real-time control. This is not an official detailed disclosure.",
+      "source_ids": [
+        "astribot-s1_source_005"
+      ]
+    },
+    "actuators": {
+      "description": "Cable-driven hardware, described by official source as a software-hardware integrated system architecture for AI. Official product page lists end-effector speed >=10 m/s, acceleration about 100 m/s^2, and repeatability +/-0.1 mm. Secondary sources describe cable-driven arms mimicking human musculature with compliant motion and high payload efficiency.",
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.astribot.com/en/contact",
+      "notes": "No public price or online checkout. Astribot sells business-to-business by quote. RoboZaps reports Chinese reports cite about 500,000 yuan for the research edition; Interesting Engineering reports the flagship S1 costs nearly $100,000; these estimates are unattributed and vary.",
+      "source_ids": [
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official product page lists extreme arm speeds: end-effector speed >=10 m/s, acceleration about 100 m/s^2, repeatability +/-0.1 mm, and 5 kg per arm payload. RoboZaps and Interesting Engineering report demonstrations such as wine pouring, vegetable preparation, cooking, calligraphy, laundry folding, shoe organization, and item delivery.",
+      "evidence_level": 2,
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "Demo descriptions are from secondary media and were not directly viewed for this review.",
+        "No per-task success rates or attempt counts were found for the listed demos except the paper-level reported aggregate success rates of 80-100 percent."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Secondary sources state S1 is designed for full autonomy and uses whole-body imitation learning; RoboZaps says the 'Hello World' demo ran at 1x speed without teleoperation. Astribot's official product page frames S1 as able to learn, think, and work like humans, with VR teleoperation positioned as an AI training data collection tool.",
+      "evidence_level": 1,
+      "source_ids": [
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "No independent intervention logs or audit of execution mode were found.",
+        "Official teleoperation is disclosed for data collection, so autonomy is not to be inferred from all S1 motions.",
+        "Source 4 is a review and source 6 is media; neither primary official source explicitly audits autonomy."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "S1 is a wheeled humanoid upper body with a 3-DoF omnidirectional base, 4-DoF torso, 2-DoF head, and 7-DoF arms per secondary reports. Official specs emphasize arm speed and precision but no bipedal walking speed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "Wheeled base only; no human-like walking mobility.",
+        "No walking speed, step height, incline, or fall-recovery data published.",
+        "Official source does not list base or torso DoF in the copied table."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official product page advertises multimodal fusion and comprehensive perception of the real environment. Secondary sources report RGB-D cameras, LiDAR, IMU, force/tactile sensors, and microphone array. The Astribot Suite is reported to use RGB-based visual perception with pre-trained vision encoders.",
+      "evidence_level": 1,
+      "source_ids": [
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "No official camera resolution, depth sensor type, field of view, microphone count, or perception benchmark found.",
+        "Humanoid Press notes Astribot does not publish a full sensor list."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Astribot official product page says S1 enables safe and intelligent interaction with people. RoboZaps reports integration of large language models for natural language understanding and voice commands.",
+      "evidence_level": 1,
+      "source_ids": [
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "No public conversational or instruction-following benchmark was found.",
+        "Voice and LLM interaction claims are secondary and not thoroughly demonstrated in reviewed sources."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official product page lists 4-6 hours endurance with plug-in support. No failure rate, MTBF, uptime, or intervention logs were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_005"
+      ],
+      "caveats": [
+        "Runtime is a company claim and no independent endurance test was found.",
+        "Battery capacity and power draw are not published, limiting reliability assessment.",
+        "No field deployment uptime or long-duration task logs were found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "S1 is human-scale at 170 cm and 80 kg with human-like arm span of 194 cm per official product page. Cable-driven design is described by secondary sources as safer and compliant for human interaction. It has a wheeled base, which suits flat indoor environments.",
+      "evidence_level": 1,
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "Wheeled base limits unstructured and uneven terrain use.",
+        "No full-robot safety certification published.",
+        "Weight conflict between official 80 kg and secondary 90 kg creates uncertainty."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "BigGo Finance reports Astribot customers including Golden Horse, ThunderSoft, JD.com, Boden Intelligence, Seer Robotics, and CCTV; combined S and T production capacity reached 10,000 units; S flagship series began taking thousand-unit orders in September 2025; Robot MART stores deployed across six Chinese cities.",
+      "evidence_level": 2,
+      "source_ids": [
+        "astribot-s1_source_002"
+      ],
+      "caveats": [
+        "No customer press release or primary deployment metrics were found.",
+        "Named customers are relayed by BigGo Finance, not by the customers themselves.",
+        "No unit counts deployed specifically with S1, no operating hours, success rates, or output metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price or purchase path was found in primary sources. Astribot sells by contact/quote. Media estimates range from about 500,000 yuan to nearly $100,000 for S1; T1 is reported at around $13,000 but is a different model.",
+      "evidence_level": 0,
+      "source_ids": [
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "caveats": [
+        "Not available as a consumer product as of the review date.",
+        "Price estimates are unattributed and conflicting."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "astribot-s1_evidence_001",
+      "date": null,
+      "title": "Astribot S1 official product page hardware specifications",
+      "claim": "Astribot lists S1 height 170 cm, weight 80 kg, arm span 194 cm, payload per arm 5 kg, end-effector speed >=10 m/s, acceleration about 100 m/s^2, repeatability +/-0.1 mm, and runtime 4-6 hours with plug-in support.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page comparison table. Values are company claims; no independent measurement.",
+      "arena_relevance": "Defines size, speed, payload and runtime for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Astribot S1 mirrors an adult male's operational parameters, delivering exceptional performance, stability\nand safety-empowering researchers and explorers to bring imagination to life",
+      "source_location": "Astribot product page, S1 comparison table and overview section",
+      "verification_notes": "Official product page; exact wording copied from English page. Speed and precision are unrelated to walking mobility.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_002",
+      "date": null,
+      "title": "Astribot S1 design-for-AI and learning claims",
+      "claim": "Astribot says S1 uses a software-hardware integrated system architecture for AI, enabling it to learn, think, and work like humans.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Official positioning claim. The specific autonomy level of public demos is not stated.",
+      "arena_relevance": "Supports but does not prove autonomous task execution.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Our company has pioneered a software-hardware integrated system architecture for AI (Design for AI, DFAI),\ndeeply coupling 'AI capabilities' with 'optimal operation', This innovation enables S1 to learn, think, and work more like humans",
+      "source_location": "Astribot English product page, overview section",
+      "verification_notes": "Company statement; no audit of autonomy. VR teleoperation section shows teleoperation is used for training.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_003",
+      "date": null,
+      "title": "Astribot S1 VR teleoperation and developer toolchain",
+      "claim": "Astribot provides VR teleoperation for AI training, a no-code UI, comprehensive API, development guides, visual development interface, simulation support, and technical support.",
+      "category": [
+        "autonomy_task_execution",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Official page. Shows teleoperation is an intentional data collection and training feature.",
+      "arena_relevance": "Important for judging autonomy: teleoperation exists for data collection, so autonomy must be independently confirmed for deployed demos.",
+      "claim_type": "spec",
+      "supporting_excerpt": "VR Teleoperation: Let Astribot Become Your AI Training Partner",
+      "source_location": "Astribot English product page, VR teleoperation section",
+      "verification_notes": "Official page heading. No execution mode disclosure for demos.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_004",
+      "date": "2026-10-13",
+      "title": "Astribot fourth funding round, 15 billion yuan valuation, production capacity and customers",
+      "claim": "Astribot completed a 1 billion yuan round at 15 billion yuan valuation and has combined S and T series production capacity at the 10,000-unit level, with customers including Golden Horse, ThunderSoft, and JD.com, and Robot MART stores in six Chinese cities.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "astribot-s1_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "BigGo Finance reports company announcement. Not an official company press release, but detailed financial and production claims.",
+      "arena_relevance": "Provides commercial deployment signal and named customers.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Embodied AI company Astribot announced on October 13 the completion of a new 1 billion yuan (approximately $149.4 million) funding round, lifting its valuation to 15 billion yuan (approximately $2.2 billion).",
+      "source_location": "BigGo Finance article, first paragraph",
+      "verification_notes": "Secondary financial media relaying company announcement; not independently audited.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_005",
+      "date": "2026-10-13",
+      "title": "Astribot S flagship series thousand-unit orders",
+      "claim": "Astribot's S flagship series began taking thousand-unit orders in September 2025.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "astribot-s1_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "BigGo Finance reports company timeline.",
+      "arena_relevance": "Shows B2B commercial traction but no delivered unit count.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The S flagship series began taking thousand-unit orders in September 2025, and the next-generation humanoid robot T1 began shipping in June 2026, with pricing entering the 90,000 yuan (approximately $13,000) range.",
+      "source_location": "BigGo Finance article, product delivery section",
+      "verification_notes": "Company-published number relayed by media; no independent customer confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_006",
+      "date": "2026-02-02",
+      "title": "RoboZaps S1 review autonomy and demo claims",
+      "claim": "RoboZaps says S1 is designed to operate fully autonomously, unlike prototypes relying on teleoperation.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Secondary review. Official product page also shows VR teleoperation for training, so blanket autonomy is not primary confirmed.",
+      "arena_relevance": "Supports autonomy framing but cannot be considered independent audit.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Unlike many humanoid prototypes that rely on teleoperation, the S1 is designed to operate **fully autonomously**.",
+      "source_location": "RoboZaps S1 review, 'What Is the Astribot S1?' section",
+      "verification_notes": "Review statement; no intervention logs. The official product page has VR teleoperation for data collection.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_008",
+      "date": null,
+      "title": "Interesting Engineering S1 technical specifications",
+      "claim": "Interesting Engineering reports S1 is about 170 cm, 198 pounds (90 kg), 23 degrees of freedom, 7-DoF per arm, 4-DoF torso, 2-DoF head, 3-DoF omnidirectional base, 5 kg per arm payload, RGB-D cameras, LiDAR, IMUs, force/tactile sensors.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Reputable media summary, but not official and weight conflicts with official 80 kg.",
+      "arena_relevance": "Fills DoF and sensor gaps, but secondary.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Technically, the S1 stands about 170 cm tall and weighs around 198 pounds (90 kilograms). It features 23 degrees of freedom, including 7-DoF per arm, a 4-DoF torso, a 2-DoF head, and a 3-DoF omnidirectional base. Its cable-driven architecture mimics human musculature, offering smooth motion, high payload efficiency, and safer human interaction. Each arm can lift to 11 pounds (5 kilograms), while advanced sensors include RGB-D cameras, LiDAR, IMUs, force and tactile sensors, and more.",
+      "source_location": "Interesting Engineering article, 'Advanced robot learning' section",
+      "verification_notes": "Media summary of S1; weight likely approximate and conflicts with official 80 kg.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_009",
+      "date": null,
+      "title": "Astribot Suite research result reported by media",
+      "claim": "Powered by Astribot Suite, the system combines VR-based data collection, imitation learning policies, and real-time trajectory optimization, achieving task success rates of 80-100 percent.",
+      "category": [
+        "autonomy_task_execution",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "astribot-s1_source_006"
+      ],
+      "confidence": 0.55,
+      "notes": "Media summary of July 2025 arXiv paper. The paper itself was not reviewed directly.",
+      "arena_relevance": "Provides quantified task success rates, though not from a direct source.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Powered by the Astribot Suite, the system combines VR-based data collection, imitation learning policies, and real-time trajectory optimization, achieving task success rates of 80–100 percent.",
+      "source_location": "Interesting Engineering article, 'Advanced robot learning' section",
+      "verification_notes": "Secondary report of research paper; not peer-reviewed or independently audited. Average success rate is reported as 80 percent with peak 100 percent across six tasks by RoboZaps.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_010",
+      "date": null,
+      "title": "S1 price estimate in media",
+      "claim": "Interesting Engineering reports Astribot T1 is priced from around $13,000 and the flagship S1 costs nearly $100,000.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_006"
+      ],
+      "confidence": 0.5,
+      "notes": "Unattributed media estimate; official Astribot does not publish price.",
+      "arena_relevance": "Shows S1 is enterprise-tier and not directly comparable to low-cost consumer robots.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The company has officially opened orders for the T1, a compact humanoid model priced from around $13,000, significantly lower than its flagship S1 robot, which costs nearly $100,000.",
+      "source_location": "Interesting Engineering article, first paragraphs",
+      "verification_notes": "Price for S1 is not official; RoboZaps reports Chinese reports cite about 500,000 yuan for research edition.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_011",
+      "date": null,
+      "title": "Missing disclosures for Astribot S1",
+      "claim": "Astribot has not published walking speed, step height, incline capability, fall-recovery data, battery capacity, charge time, or power draw; no full sensor list is published.",
+      "category": [
+        "missing_evidence",
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "astribot-s1_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "Gap list from Humanoid Press database.",
+      "arena_relevance": "Judges should reduce confidence on mobility, endurance and perception.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Note: Astribot has not published walking speed, step height, incline capability, or fall-recovery data.",
+      "source_location": "Humanoid Press database, Mobility section",
+      "verification_notes": "Directory note; absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control",
+          "perception_scene_understanding"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "astribot-s1_evidence_012",
+      "date": null,
+      "title": "Weight conflict: official 80 kg vs secondary 90 kg",
+      "claim": "Official Astribot product page lists S1 weight at 80 kg, but Interesting Engineering and RoboZaps report around 90 kg production weight.",
+      "category": [
+        "specs",
+        "correction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "astribot-s1_source_001",
+        "astribot-s1_source_003",
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Official value used in specs; conflict noted.",
+      "arena_relevance": "Minor; does not change core assessment.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Technically, the S1 stands about 170 cm tall and weighs around 198 pounds (90 kilograms).",
+      "source_location": "Interesting Engineering article, 'Advanced robot learning' section",
+      "verification_notes": "The official product page table copied in SOURCE 3 lists Weight 80kg. Secondary sources may be approximate or include production differences.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "astribot-s1_deployment_001",
+      "customer_or_partner": "Multiple named customers including Golden Horse, ThunderSoft, JD.com, Boden Intelligence, Seer Robotics, and CCTV",
+      "site_or_context": "China; retail, cultural tourism, industrial, scientific research, and education; Robot MART retail stores across six Chinese cities",
+      "task": "Retail service, guided tours, artistic performances, AI platform deployment, scientific research",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "astribot-s1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No customer press releases or primary customer evidence were found.",
+        "Names and store deployments are reported by BigGo Finance, not by the customers themselves.",
+        "No specific S1 unit counts, operating hours, or output metrics are published."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "astribot-s1_demo_001",
+      "title": "Astribot S1 demonstration tasks reported by RoboZaps",
+      "date": null,
+      "observed_capabilities": [
+        "wine pouring",
+        "vegetable preparation",
+        "cooking and sandwich flipping",
+        "laundry folding",
+        "shoe organization",
+        "trash disposal",
+        "item delivery",
+        "Wing Chun martial arts",
+        "basketball shots",
+        "calligraphy"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "RoboZaps states S1 is designed for full autonomy and a 'Hello World' demo was verified at 1x speed without teleoperation; primary official sources do not explicitly state autonomy per demo.",
+      "environment": "Lab and home-like settings per RoboZaps",
+      "source_ids": [
+        "astribot-s1_source_004"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Descriptions are from secondary media and were not directly viewed for this review.",
+        "No video timestamps were manually verified.",
+        "Some visual elements may have been post-processed per the reviewer's caveat."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo description unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Secondary source alleges full autonomy, but the official product page shows VR teleoperation for training. Do not credit autonomy beyond the reported company/paper claims.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Multiple task demos described by RoboZaps across cooking, cleaning, manipulation, calligraphy, etc.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public price and availability",
+      "description": "No official price or online checkout exists; Astribot sells by quote. Estimates range from about 500,000 yuan to nearly $100,000 for S1.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence; S1 is enterprise-only."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Secondary sources state full autonomy and a 1x-speed demo, but official product page positions VR teleoperation as a training tool. No intervention logs or independent autonomy audits were found.",
+      "impact_on_arena_scoring": "Credit dexterity and task demos, keep autonomy confidence low to moderate."
+    },
+    {
+      "topic": "Mobility limitations",
+      "description": "S1 has a wheeled omnidirectional base, not bipedal locomotion. Walking speed, incline, step height, and fall recovery are not published.",
+      "impact_on_arena_scoring": "Do not compare directly with bipedal humanoids on whole-body mobility; use only as a wheeled upper-body humanoid."
+    },
+    {
+      "topic": "Spec gaps",
+      "description": "Battery capacity, charge time, power draw, camera resolution, sensor details, actuator torques, and onboarding compute are not officially published.",
+      "impact_on_arena_scoring": "Do not infer numbers from secondary sources or directories."
+    },
+    {
+      "topic": "Deployment metrics",
+      "description": "BigGo Finance names customers and production capacity but no S1-specific unit counts, operating hours, success rates, or output data.",
+      "impact_on_arena_scoring": "Commercial proof is real but early and not independently verified."
+    },
+    {
+      "topic": "Weight conflict",
+      "description": "Official product page lists 80 kg; secondary sources report about 90 kg production weight.",
+      "impact_on_arena_scoring": "Minor; use official value and note conflict."
+    }
+  ],
+  "source_ids": [
+    "astribot-s1_source_001",
+    "astribot-s1_source_002",
+    "astribot-s1_source_003",
+    "astribot-s1_source_004",
+    "astribot-s1_source_005",
+    "astribot-s1_source_006"
+  ],
+  "sources": [
+    {
+      "id": "astribot-s1_source_001",
+      "title": "星尘产品 | 星尘智能",
+      "publisher": "星尘智能",
+      "url": "https://www.astribot.com/product",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official Chinese product page; company specs and claims."
+    },
+    {
+      "id": "astribot-s1_source_002",
+      "title": "China's Astribot Raises Fourth Round in Six Months, Valuation Jumps to 15 Billion Yuan — BigGo Finance",
+      "publisher": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/94976559-8f69-4359-ab0d-7f8cf6cb665f",
+      "date_published": "2026-10-13",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Financial media reporting company announcements and production/customer claims."
+    },
+    {
+      "id": "astribot-s1_source_003",
+      "title": "Astribot Products | Astribot",
+      "publisher": "Astribot",
+      "url": "https://www.astribot.com/en/product",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official English product page; company claims."
+    },
+    {
+      "id": "astribot-s1_source_004",
+      "title": "Astribot S1 Price 2026: Specs & Is It For Sale? (Review)",
+      "publisher": "RoboZaps",
+      "url": "https://blog.robozaps.com/b/astribot-s1-review",
+      "date_published": "2026-02-02",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Review blog with spec table and demo descriptions; not a primary source. Tends to overstate autonomy."
+    },
+    {
+      "id": "astribot-s1_source_005",
+      "title": "Astribot S1 | Ultra-Fast Autonomous Humanoid Robot",
+      "publisher": "Humanoid Press",
+      "url": "https://humanoid.press/database/database-astribot-s1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Database profile with caveats on missing specs; editorial opinion."
+    },
+    {
+      "id": "astribot-s1_source_006",
+      "title": "Video: Chinese startup unveils $13K humanoid robot for wider adoption",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/humanoid-robot-china-video",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media covering S1 and T1; S1 specs are secondary and may conflict with official values."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Astribot S1 is a fast, precise wheeled humanoid upper-body robot with strong official arm speed specs and secondary reports of varied manipulation demos, named Chinese customers, and B2B traction. However autonomy is not independently verified, no public price exists, and mobility is limited to a wheeled base.",
+    "strongest_positive_evidence": [
+      "Official product page lists end-effector speed >=10 m/s, acceleration about 100 m/s^2, repeatability +/-0.1 mm, 5 kg per arm payload, 4-6 hours runtime.",
+      "BigGo Finance reports 1 billion yuan round, 15 billion yuan valuation, 10,000-unit S and T production capacity, and customers including Golden Horse, ThunderSoft, and JD.com.",
+      "RoboZaps and Interesting Engineering report varied demos and Astribot Suite task success rates of 80-100 percent."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent autonomy audit or intervention logs.",
+      "No official price or purchase path.",
+      "No walking speed, battery capacity, sensor details, or compute specs.",
+      "No S1-specific deployment units, hours, or output metrics from customers."
+    ],
+    "conflicting_claims": [
+      "Weight: official 80 kg vs secondary around 90 kg.",
+      "Price: RoboZaps reports about 500,000 yuan research edition; Interesting Engineering reports nearly $100,000; neither is official.",
+      "Autonomy: RoboZaps says fully autonomous; official product page includes VR teleoperation for training, so autonomy is not universal."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "service_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not describe S1 as bipedal or credit walking speed.",
+      "Do not state full autonomy as independently verified.",
+      "Do not treat media price estimates as official.",
+      "Do not credit T1's $13,000 pricing to S1.",
+      "Do not treat named customers as primary customer evidence with output metrics."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "S1 is Astribot's flagship S-series product as of 2026-10-29. BigGo Finance notes the next-generation T1 began shipping in June 2026 at a lower price point, but S1 remains the high-performance S flagship and was still promoted on the official product page at access time."
+  },
+  "excluded_claims": [
+    {
+      "claim": "T1 specifications and $13,000 price applied to S1",
+      "reason": "T1 is a different model; Interesting Engineering reports T1 price, not S1 price.",
+      "source_ids": [
+        "astribot-s1_source_006"
+      ]
+    },
+    {
+      "claim": "Bipedal walking or fall-recovery capability",
+      "reason": "S1 uses a wheeled omnidirectional base; no walking speed or fall recovery published.",
+      "source_ids": [
+        "astribot-s1_source_005"
+      ]
+    },
+    {
+      "claim": "Official price of 500,000 yuan or nearly $100,000",
+      "reason": "These are unattributed media estimates; Astribot publishes no price.",
+      "source_ids": [
+        "astribot-s1_source_004",
+        "astribot-s1_source_006"
+      ]
+    },
+    {
+      "claim": "Fully autonomous without qualification",
+      "reason": "Secondary sources claim full autonomy, but official product page includes VR teleoperation for data collection; no independent audit found.",
+      "source_ids": [
+        "astribot-s1_source_003",
+        "astribot-s1_source_004"
+      ]
+    },
+    {
+      "claim": "Official total DoF of 23 and sensor suite details",
+      "reason": "Official product page does not show total DoF in the copied text and does not publish a full sensor list; secondary sources may be approximate.",
+      "source_ids": [
+        "astribot-s1_source_005",
+        "astribot-s1_source_006"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Astribot S1 is a China-built wheeled humanoid upper-body robot with official specs of 170 cm, 80 kg, 5 kg per-arm payload, end-effector speed >=10 m/s, acceleration about 100 m/s^2, repeatability +/-0.1 mm, and 4-6 hours runtime. It uses cable-driven arms and is sold B2B by quote, with no public price. BigGo Finance reports a 15 billion yuan valuation, 10,000-unit S and T production capacity, and customers including Golden Horse, ThunderSoft, JD.com, and Robot MART stores across six Chinese cities. Secondary reviews describe cooking, food prep, cleaning, calligraphy, and other demos, and report Astribot Suite task success rates of 80-100 percent. Autonomy is claimed but not independently audited, S1 has no bipedal walking speed, and no S1-specific deployment output metrics are published.",
+    "strongest_evidence": [
+      "Official product page extreme arm speed and precision specs.",
+      "BigGo Finance reported 1 billion yuan round and 10,000-unit production capacity with named customers.",
+      "Secondary reports of varied manipulation demos and 80-100 percent task success from Astribot Suite."
+    ],
+    "weakest_evidence": [
+      "No independent autonomy verification or intervention logs.",
+      "No official price, battery capacity, sensor details, or compute specs.",
+      "No S1-specific deployment units, hours, or customer output metrics."
+    ],
+    "known_do_not_credit": [
+      "Bipedal walking or fall recovery.",
+      "Official price of 500,000 yuan or nearly $100,000.",
+      "Independently verified full autonomy.",
+      "T1 specifications applied to S1.",
+      "Named customers as primary customer deployment proof with metrics."
+    ],
+    "recommended_confidence": "low_to_medium"
+  }
+}

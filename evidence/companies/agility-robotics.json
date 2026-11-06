@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "agility-robotics",
+    "name": "Agility Robotics",
+    "country": "United States",
+    "website": "https://www.agilityrobotics.com/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "agility-digit"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "agility-robotics_company_source_001",
+      "title": "Agility Robotics website",
+      "publisher": "Agility Robotics",
+      "url": "https://www.agilityrobotics.com/solutions",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

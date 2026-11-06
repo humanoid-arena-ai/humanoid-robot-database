@@ -1,0 +1,24 @@
+{
+  "id": "honda",
+  "name": "Honda",
+  "country": "Japan",
+  "headquarters": "Minato, Tokyo, Japan",
+  "founded": 1946,
+  "website": null,
+  "summary": "Honda is a Japanese maker of cars, motorcycles and engines. Its R&D program built the ASIMO humanoid, which was retired in 2022.",
+  "funding": "Publicly listed company.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Honda",
+      "url": "https://en.wikipedia.org/wiki/Honda",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "ASIMO",
+      "url": "https://en.wikipedia.org/wiki/ASIMO",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

@@ -1,0 +1,960 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "1x-eve",
+    "name": "1X EVE",
+    "company_id": "1x-technologies",
+    "company_name": "1X Technologies",
+    "country": "Norway / United States",
+    "generation": "Original wheeled EVE platform",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Official 1X product page historically said EVE is available now and directs to contact sales. Multiple directories report EVE was deployed in customer facilities globally since 2022 and remains commercially active/industrial. No named customer evidence or current availability confirmation was found in the reviewed sources.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "security patrol and telepresence",
+      "logistics and warehouse tasks",
+      "facility and office work",
+      "data collection for embodied AI",
+      "healthcare support (secondary directory claims)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "6 foot 2 inches",
+      "value": 188,
+      "unit": "cm",
+      "notes": "Official 1X page lists 6 foot 2 inches (about 188 cm). Directories list 183 cm, 186 cm, and 188 cm; the official value is used here.",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_004"
+      ]
+    },
+    "weight": {
+      "original_value": "192 pounds",
+      "value": 87.1,
+      "unit": "kg",
+      "notes": "Official 1X page lists 192 pounds (about 87.1 kg). Directories list 83 kg and 86 kg; the official value is used here.",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_004"
+      ]
+    },
+    "payload": {
+      "original_value": "33 pound carry capacity",
+      "value": 15,
+      "unit": "kg",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": "6-hour run time",
+      "value": 6,
+      "unit": "hours",
+      "notes": "Official 1X page says up to 6 hours on a 1-hour charge. IEEE ROBOTS guide lists 4 hours of operation and directories list 4-6 hours.",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_002",
+        "1x-eve_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "1.05-kWh lithium-ion battery pack",
+      "value": 1.05,
+      "unit": "kWh",
+      "notes": "Battery capacity from IEEE ROBOTS guide. Official 1X page did not list battery capacity.",
+      "source_ids": [
+        "1x-eve_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "9 miles/hour top speed",
+      "value": 4,
+      "unit": "m/s",
+      "notes": "Wheeled top speed, not walking. 9 mph converts to about 4.02 m/s; directories list 4 m/s (14.4 km/h).",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_004"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 25,
+      "notes": "IEEE guide breakdown: neck 1 DoF; arm 7 DoF x 2; leg 6 DoF x 1; hand 1 DoF x 2; wheels 1 DoF x 2.",
+      "source_ids": [
+        "1x-eve_source_002"
+      ]
+    },
+    "hands": {
+      "description": "Simple grippers, 1 DoF per hand, with 7 DoF per arm for manipulation.",
+      "degrees_of_freedom": 1,
+      "force_feedback": false,
+      "source_ids": [
+        "1x-eve_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "High-resolution HDR cameras with panoramic views",
+        "Two front cameras and one rear camera"
+      ],
+      "source_ids": [
+        "1x-eve_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Intel i7 for real-time control and Nvidia Xavier for AI inference (per IEEE ROBOTS guide).",
+      "source_ids": [
+        "1x-eve_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "1X Technologies Revo1 quasi direct-drive technology.",
+      "source_ids": [
+        "1x-eve_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "mailto:sales@1x.tech",
+      "notes": "Official 1X page says EVE is available now and provides a sales email. No public price or retail path was found; directories state no public pricing and current availability requires confirmation.",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_006",
+        "1x-eve_source_007"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official 1X videos are titled for real-world manipulation and logistics, and Inverse reports a multi-robot demo of tidying an office, picking up a hoodie, and delivering drinks. EVE has 25 total DoF with 7 DoF per arm and 1 DoF grippers. No success rates or task durations are available.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-eve_source_004",
+        "1x-eve_source_002",
+        "1x-eve_source_008",
+        "1x-eve_source_009",
+        "1x-eve_source_010"
+      ],
+      "caveats": [
+        "No transcript for official manipulation/logistics videos; only titles were available.",
+        "Inverse reports the demo robots were not completely autonomous."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "1X says EVE operates autonomously by default and can call in remote operators for shared autonomy. Inverse reports the 2024 multi-robot demo had someone behind the scenes telling robots when to switch tasks.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_008"
+      ],
+      "caveats": [
+        "Company claim; no intervention logs or independent audit.",
+        "Shared autonomy means teleoperation can be involved; not clear how much was autonomous."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "EVE uses a wheeled self-balancing base with multi-terrain wheels and a 4 m/s top speed, and can navigate corners and elevators. IEEE guide notes it can go down stairs but not up.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_002",
+        "1x-eve_source_004"
+      ],
+      "caveats": [
+        "Wheeled platform; no independent mobility tests.",
+        "Stair-down claim from directory, not official video."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official page claims EVE can open doors, see people or objects from a distance, and navigate unstructured space. IEEE guide details HDR cameras (two front, one rear) and compute.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_002"
+      ],
+      "caveats": [
+        "No independent perception benchmark."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Inverse reports a voice-controlled natural language interface demo with multiple robots understanding office tidying commands; official page says EVE understands natural language.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_008"
+      ],
+      "caveats": [
+        "The demo was not completely autonomous; someone switched tasks.",
+        "No conversational reliability metrics."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official 1X page lists 6-hour run time on 1-hour charge; IEEE guide lists 4 hours and 1.05 kWh battery; directories list 4-6 hours. No reliability or failure data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_002",
+        "1x-eve_source_003"
+      ],
+      "caveats": [
+        "Runtime conflicting: 4h vs 6h.",
+        "No field reliability data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "EVE is 188 cm and 87 kg with soft, organically-inspired mechanics and 1X claims it is safe for trained teams. It is a large wheeled robot and cannot go up stairs according to IEEE guide.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_002"
+      ],
+      "caveats": [
+        "No safety certification evidence; warranty void up stairs."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Directories report EVE deployed in customer facilities globally since 2022, in guarding/monitoring and factories, but no named customer or metrics were found; official page says available now.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-eve_source_003",
+        "1x-eve_source_005",
+        "1x-eve_source_006",
+        "1x-eve_source_007"
+      ],
+      "caveats": [
+        "Unverified unnamed deployments.",
+        "Current availability unclear as 1X focuses on NEO."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price or retail path; 1X page provides contact sales email. Directories state no public pricing and confirmation required.",
+      "evidence_level": 0,
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_006",
+        "1x-eve_source_007"
+      ],
+      "caveats": [
+        "Contact sales only; no price, lease, or waitlist.",
+        "Not available to consumers."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "1x-eve_evidence_001",
+      "date": null,
+      "title": "EVE directory spec summary",
+      "claim": "HumanoidHub lists EVE at 188 cm, 87 kg, 4 m/s top speed, 15 kg payload, and 6 hours runtime.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_004"
+      ],
+      "confidence": 0.75,
+      "notes": "Directory summary; official 1X page lists comparable values in imperial units.",
+      "arena_relevance": "Provides normalized spec values for comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Standing 188 cm (6’2″) tall and weighing 87 kg, EVE can travel at speeds up to 4 m/s (9 mph), carry 15 kg payloads, and operate for 6 hours on a single charge.",
+      "source_location": "HumanoidHub 1X EVE overview paragraph",
+      "verification_notes": "Third-party directory; values align with official page except weight 87 kg vs 192 lb (87.1 kg).",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_002",
+      "date": null,
+      "title": "1X official EVE shared autonomy claim",
+      "claim": "1X says an operator can control a fleet of EVEs remotely, using their cameras and movement.",
+      "category": [
+        "autonomy_task_execution",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official claim; no independent verification.",
+      "arena_relevance": "Establishes shared autonomy as core operating mode.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "A human operator can control a fleet of EVEs, tap into their cameras and control their movement to take action from a distance.",
+      "source_location": "EVE product page, meet eve section",
+      "verification_notes": "Official 1X page; older Webflow site.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_003",
+      "date": null,
+      "title": "1X official EVE runtime/safety claim",
+      "claim": "1X says EVE's soft mechanics allow trained-team operation for up to 6 hours on a 1-hour charge.",
+      "category": [
+        "endurance_reliability",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Official claim; runtime varies in directories (4-6h).",
+      "arena_relevance": "Runtime and safety framing.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "EVE’s human-inspired musculature makes them durable enough for work but safe enough to operate with trained teams, for up to 6 hours on a 1-hour charge.",
+      "source_location": "EVE product page, about EVE",
+      "verification_notes": "Company claim; charge time not independently tested.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_004",
+      "date": null,
+      "title": "IEEE ROBOTS guide DoF and actuator details",
+      "claim": "IEEE guide lists 25 total DoF: neck 1, arms 7x2, leg 6x1, hands 1x2, wheels 1x2; Revo1 quasi direct-drive technology.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary technical directory; not official but detailed.",
+      "arena_relevance": "Defines manipulation and mobility joint count.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Degrees of Freedom (DoF)25 (Neck: 1 DoF; Arm: 7 DoF x 2; Leg: 6 DoF x 1; Hand: 1 DoF x 2; Wheels 1 DoF x 2)",
+      "source_location": "ROBOTS guide spec table",
+      "verification_notes": "Matches RoboHuman directory and other profiles.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_005",
+      "date": null,
+      "title": "IEEE guide compute and battery details",
+      "claim": "IEEE guide reports Intel i7 for real-time control and Nvidia Xavier for AI inference, plus 1.05-kWh lithium-ion battery with 4 hours of operation.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Directory specs; runtime conflicts with official 6h.",
+      "arena_relevance": "Compute and battery for endurance/autonomy assessment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Intel i7 for real-time control and Nvidia Xavier for AI inference",
+      "source_location": "ROBOTS guide compute field; power field",
+      "verification_notes": "Compute and power entries are adjacent; battery runtime discrepancy noted.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_006",
+      "date": null,
+      "title": "IEEE guide stair capability caveat",
+      "claim": "EVE can go down stairs while keeping balance, but not up; warranty voided if attempted up.",
+      "category": [
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Unique mobility caveat from directory; not official.",
+      "arena_relevance": "Limits claimed multi-terrain capability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "EVE can go down stairs while keeping its balance, but not up (warranty will be voided).",
+      "source_location": "ROBOTS guide Did you know? quote",
+      "verification_notes": "Third-party statement; warranty language anecdotal.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_007",
+      "date": null,
+      "title": "RoboHuman global deployment claim",
+      "claim": "RoboHuman says EVE has been deployed in customer facilities globally since 2022.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_003"
+      ],
+      "confidence": 0.55,
+      "notes": "Unnamed customer claim, not independently verified.",
+      "arena_relevance": "Shows claimed operational use but no named customer.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Proven Deployment: EVE has been deployed in customer facilities globally (since 2022), demonstrating real-world operational capability.",
+      "source_location": "RoboHuman.org EVE unique selling points",
+      "verification_notes": "Directory claim; no customer names or metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_008",
+      "date": null,
+      "title": "Hellonoid commercial deployment summary",
+      "claim": "Hellonoid says EVE is already deployed commercially in guarding and monitoring roles and is 1X's revenue-generating product.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Directory media summary; no named customer.",
+      "arena_relevance": "Commercial deployment signal.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Already deployed commercially in guarding and monitoring roles, serving as 1X's revenue-generating product.",
+      "source_location": "Hellonoid EVE overview",
+      "verification_notes": "Not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_009",
+      "date": null,
+      "title": "ui44 deployment and pricing note",
+      "claim": "ui44 says EVE was deployed in customer factories in 2022 and is marketed for industrial deployment, not consumer; no public pricing.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory synthesis of 1X company timeline.",
+      "arena_relevance": "Clarifies availability status and lack of public price.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "According to 1X's company timeline, EVE was deployed in customer factories in 2022.",
+      "source_location": "ui44 EVE about section",
+      "verification_notes": "Secondhand company timeline claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_010",
+      "date": null,
+      "title": "RoboLogAI contact sales status",
+      "claim": "RoboLogAI tracks EVE as commercial/deployment with contact sales and lists logistics, security, healthcare, retail, teleoperation, and embodied AI training as use cases.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-eve_source_007"
+      ],
+      "confidence": 0.55,
+      "notes": "Directory; no primary price.",
+      "arena_relevance": "Enterprise-oriented access, not open purchase.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "EVE is a wheeled humanoid robot from 1X Technologies, tracked for logistics, security, healthcare support, retail service, teleoperation, and embodied AI training.",
+      "source_location": "RoboLogAI EVE overview",
+      "verification_notes": "Price signal contact sales; no public price.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_011",
+      "date": "2024-06-05",
+      "title": "Inverse report on EVE multi-robot voice-command demo",
+      "claim": "1X revealed an Eve robot crew tidying an office with voice commands, chaining tasks like cleaning a coffee spill, picking up a hoodie, and delivering drinks; 1X said not completely autonomous.",
+      "category": [
+        "manipulation_dexterity",
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "1x-eve_source_008"
+      ],
+      "confidence": 0.65,
+      "notes": "Media report of company demo; not a direct timestamped video review.",
+      "arena_relevance": "Shows demonstrated multi-step household-ish manipulation and voice interaction, with human in loop caveat.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "1X revealed the latest update to its Eve robot showing a small crew understanding a request to tidy up an office, linking together tasks like cleaning up a coffee spill, picking up a hoodie off the floor, and delivering drinks.",
+      "source_location": "Inverse article body",
+      "verification_notes": "Inverse reports demo; says someone behind scenes tells robots when to switch tasks.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_interaction"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-eve_evidence_014",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No public price, named customer deployments, independent autonomy verification, success rates, intervention logs, safety certification, or current availability confirmation were found for EVE.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, deployment, and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "1x-eve_demo_001",
+      "title": "Voice Commands & Chaining Tasks (reported by Inverse)",
+      "date": "2024-06-05",
+      "observed_capabilities": [
+        "tidying an office",
+        "cleaning a coffee spill",
+        "picking up a hoodie off the floor",
+        "delivering drinks",
+        "multiple robots working together"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "1X said the Eve robots aren’t completely autonomous yet, with someone behind the scenes telling the robots when to switch tasks.",
+      "environment": "office/company demo",
+      "source_ids": [
+        "1x-eve_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Media report of company video; no direct video review.",
+        "Not completely autonomous."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Inverse reports someone behind the scenes tells robots when to switch tasks and remote control is possible; not fully autonomous.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "multi-robot office tidying actions reported by Inverse",
+          "verification_notes": "Not manually timestamp-reviewed."
+        }
+      ]
+    },
+    {
+      "id": "1x-eve_demo_002",
+      "title": "Humanoid EVE for Real World Manipulation | by 1X",
+      "date": "2023-10-29",
+      "observed_capabilities": [
+        "video title indicates real-world manipulation demonstration"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "1x-eve_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; only title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "No transcript; only title available.",
+          "verification_notes": "No timestamp verification possible."
+        }
+      ]
+    },
+    {
+      "id": "1x-eve_demo_003",
+      "title": "How Logistics Moves Forward | Humanoid EVE by 1X",
+      "date": "2023-10-29",
+      "observed_capabilities": [
+        "video title indicates logistics demonstration"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "1x-eve_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; only title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "No transcript; only title available.",
+          "verification_notes": "No timestamp verification possible."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Current availability",
+      "description": "1X's older EVE page says available now and contact sales, but 1X's public focus has shifted to NEO. Current deployment availability for new clients is unclear.",
+      "impact_on_arena_scoring": "Reduces confidence in current commercial deployment and accessibility."
+    },
+    {
+      "topic": "Named customer evidence",
+      "description": "Directories report EVE deployments since 2022 in guarding, monitoring, and factories, but no named customer, location, unit count, or output metrics were found.",
+      "impact_on_arena_scoring": "Deployment commercial proof remains weak; cannot be rated above tier 1."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "1X claims autonomous default and shared autonomy; Inverse reports the 2024 demo was not completely autonomous with someone behind the scenes switching tasks. No intervention logs or independent audit found.",
+      "impact_on_arena_scoring": "Autonomy should be credited with caution; teleoperation status is partially disclosed."
+    },
+    {
+      "topic": "Manipulation demo detail",
+      "description": "Official manipulation and logistics videos are only available as titles in this source set; no transcripts or timestamped observations were reviewed.",
+      "impact_on_arena_scoring": "Limits manipulation evidence to media description and titles."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "Runtime, height, weight, and release year conflict across sources. Official values are used where available, but directory variance remains.",
+      "impact_on_arena_scoring": "Lower confidence in exact specifications."
+    },
+    {
+      "topic": "Safety certification",
+      "description": "1X claims soft mechanics and trained-team safety, but no third-party safety certification for EVE was found.",
+      "impact_on_arena_scoring": "Human environment fit cannot be strongly credited."
+    }
+  ],
+  "source_ids": [
+    "1x-eve_source_001",
+    "1x-eve_source_002",
+    "1x-eve_source_003",
+    "1x-eve_source_004",
+    "1x-eve_source_005",
+    "1x-eve_source_006",
+    "1x-eve_source_007",
+    "1x-eve_source_008",
+    "1x-eve_source_009",
+    "1x-eve_source_010"
+  ],
+  "sources": [
+    {
+      "id": "1x-eve_source_001",
+      "title": "EVE by 1X Technologies | The Smarter Working Android",
+      "publisher": "1X Technologies",
+      "url": "https://1x-tech.webflow.io/androids/eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims, older Webflow site."
+    },
+    {
+      "id": "1x-eve_source_002",
+      "title": "EVE - ROBOTS: Your Guide to the World of Robotics",
+      "publisher": "ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/robots/eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party technical directory; detailed but not independently verified."
+    },
+    {
+      "id": "1x-eve_source_003",
+      "title": "Humanoid Robot Directory & Full Specs - RoboHuman.org",
+      "publisher": "RoboHuman.org",
+      "url": "https://robohuman.org/product/eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory with deployment claims; no named customers."
+    },
+    {
+      "id": "1x-eve_source_004",
+      "title": "1X EVE by 1X Technologies — Specs, Price, Reviews | HumanoidHub",
+      "publisher": "HumanoidHub",
+      "url": "https://www.humanoidhub.ai/robots/1x-eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party directory with source check dates; not independent."
+    },
+    {
+      "id": "1x-eve_source_005",
+      "title": "1X EVE by 1X Technologies — Hellonoid",
+      "publisher": "hellonoid.com",
+      "url": "https://hellonoid.com/robots/1x-eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory summary; commercial deployment claim not verified."
+    },
+    {
+      "id": "1x-eve_source_006",
+      "title": "EVE by 1X Technologies — ui44",
+      "publisher": "ui44",
+      "url": "https://ui44.com/robots/1x-eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory; synthesizes 1X company timeline and pricing status."
+    },
+    {
+      "id": "1x-eve_source_007",
+      "title": "1X EVE: Wheeled Humanoid Robot Specs & Uses",
+      "publisher": "robologai",
+      "url": "https://robologai.com/robots/1x-eve",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory with commercial/development signals; contact sales only."
+    },
+    {
+      "id": "1x-eve_source_008",
+      "title": "These Wheeled Humanoid Robots Use AI to Team Up and Clean Your Messy House",
+      "publisher": "Inverse",
+      "url": "https://www.inverse.com/tech/eve-humanoid-robot-ai-1x",
+      "date_published": "2024-06-05",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media report of a company demo; notes autonomy limitations."
+    },
+    {
+      "id": "1x-eve_source_009",
+      "title": "Humanoid EVE for Real World Manipulation | by 1X",
+      "publisher": "YouTube 1X",
+      "url": "https://www.youtube.com/watch?v=20GHG-R9eFI",
+      "date_published": "2023-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; no transcript reviewed, only title."
+    },
+    {
+      "id": "1x-eve_source_010",
+      "title": "How Logistics Moves Forward | Humanoid EVE by 1X",
+      "publisher": "YouTube 1X",
+      "url": "https://www.youtube.com/watch?v=AvHVemoa5TY",
+      "date_published": "2023-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; no transcript reviewed, only title."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "EVE is a wheeled humanoid with official specs and some commercial deployment signals, but evidence is mostly directory-level and no named customer or independent testing is public. Its shared-autonomy design and older platform status limit high-confidence capability scores.",
+    "strongest_positive_evidence": [
+      "Official 1X page says EVE available now and can operate up to 6 hours on 1-hour charge.",
+      "Multiple directories report commercial deployments since 2022 in factories and guarding/monitoring roles.",
+      "Inverse reports a multi-robot voice-command demo of tidying an office with tasks like picking up a hoodie and delivering drinks."
+    ],
+    "weakest_or_missing_evidence": [
+      "No named customer or deployment metrics.",
+      "No public price; contact sales only.",
+      "No independent autonomy verification; 1X says not completely autonomous in reported demo.",
+      "Official manipulation/logistics videos lack transcripts in this source set."
+    ],
+    "conflicting_claims": [
+      "Runtime: 6h official vs 4h IEEE guide.",
+      "Height: 188 cm official vs 183/186 cm directories.",
+      "Weight: 87 kg official vs 83 kg directories.",
+      "Release year: 2020 IEEE guide vs 2018 ui44."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "service_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit NEO or NEO Beta/Gamma capabilities to EVE.",
+      "Do not treat unnamed deployments as named commercial proof.",
+      "Do not describe EVE as fully autonomous based on the 1X page alone.",
+      "Do not state current availability without confirmation from 1X."
+    ],
+    "compiled_automatically": "This pack was compiled automatically from public sources on 2026-10-29 and needs human review."
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [],
+    "currentness_notes": "1X has shifted public focus to NEO (NEO Beta/Gamma appear in these sources). EVE is the earlier wheeled humanoid and current availability for new deployments is unclear."
+  },
+  "excluded_claims": [
+    {
+      "claim": "NEO or NEO Beta/Gamma capabilities",
+      "reason": "These belong to 1X's newer NEO platform, not EVE.",
+      "source_ids": []
+    },
+    {
+      "claim": "Public price or retail availability",
+      "reason": "No price or retail channel was found in the reviewed sources.",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_006",
+        "1x-eve_source_007"
+      ]
+    },
+    {
+      "claim": "Independently verified full autonomy",
+      "reason": "Autonomy claims are company statements; Inverse reports the demo was not completely autonomous.",
+      "source_ids": [
+        "1x-eve_source_001",
+        "1x-eve_source_008"
+      ]
+    },
+    {
+      "claim": "Named customer deployment",
+      "reason": "Only unnamed directory claims of deployments were found.",
+      "source_ids": [
+        "1x-eve_source_003",
+        "1x-eve_source_005",
+        "1x-eve_source_006"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 7,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "1X EVE is a wheeled humanoid from 1X Technologies (Norway/US) with a self-balancing wheeled base, 188 cm, 87 kg, 15 kg payload, 4 m/s top speed, and 6-hour official runtime. It is designed for security, logistics, and embodied AI data collection, with 25 DoF, 1-DoF grippers, HDR cameras, and shared autonomy. The strongest evidence is an Inverse-reported 2024 multi-robot voice-command office-tidying demo and directory claims of unnamed customer deployments since 2022; the weakest areas are no named customer metrics, no price, conflicting specs, and no independent autonomy verification. EVE is older than 1X's NEO and current availability is unclear.",
+    "strongest_evidence": [
+      "Official 1X page says EVE available now and 6-hour runtime with contact sales.",
+      "Inverse reports multi-robot voice-command demo of office tidying.",
+      "Directory reports deployment since 2022 in guarding/monitoring and factories."
+    ],
+    "weakest_evidence": [
+      "No named customers or metrics.",
+      "No public price.",
+      "No direct video transcript or independent verification."
+    ],
+    "known_do_not_credit": [
+      "NEO or NEO Beta/Gamma capabilities.",
+      "Fully autonomous operation without caveats.",
+      "Public consumer purchase availability.",
+      "Independent verification of deployment claims."
+    ],
+    "recommended_confidence": "low"
+  }
+}

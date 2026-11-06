@@ -1,0 +1,66 @@
+{
+  "id": "engineered-arts-ameca",
+  "name": "Ameca",
+  "aliases": [
+    "Engineered Arts Ameca"
+  ],
+  "companyId": "engineered-arts",
+  "companyName": "Engineered Arts",
+  "country": "United Kingdom",
+  "announced": "2021-12-01",
+  "status": "commercial",
+  "category": "entertainment",
+  "summary": "Ameca is a social humanoid from Engineered Arts, built for face-to-face interaction at events, museums and research labs. It is known for detailed facial expressions and does not walk. The company sells and rents it by quotation.",
+  "specs": {
+    "height_cm": {
+      "value": 187,
+      "original": "1870 mm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 62,
+      "original": "62 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": {
+      "value": 61,
+      "original": "61 actuated movements",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "2 x 8 MP eye cameras, 2 directional ear microphones, 4-channel chest microphone, LiDAR and proximity sensors.",
+  "compute": "Cloud-based Tritium software suite.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://engineeredarts.com/robot/ameca/",
+  "highlights": [
+    "First shown by video on 1 December 2021 and in public at CES 2022.",
+    "Installed at Edinburgh's National Robotarium in 2024.",
+    "Rental is offered alongside purchase."
+  ],
+  "caveats": [
+    "Not a mobile robot; it is used as a stationary social humanoid.",
+    "No public price; sold by quote."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ameca",
+      "publisher": "Engineered Arts",
+      "url": "https://engineeredarts.com/robot/ameca/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Ameca (robot)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ameca_(robot)",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

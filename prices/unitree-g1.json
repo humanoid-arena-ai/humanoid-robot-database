@@ -1,0 +1,200 @@
+{
+  "robotId": "unitree-g1",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "buy_now",
+  "purchasePathNote": "The base G1 can be ordered directly from the Unitree official shop at a listed price, currently marked as backordered. EDU (developer) versions are sold through Unitree sales or US resellers such as RoboStore, RobotShop and Top3DShop.",
+  "configurations": [
+    {
+      "name": "G1 Standard (base)",
+      "price": 13500,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Official shop says this version does not support secondary development. Backordered at check time. Shipping quoted as $300 to $1,200; customs duties and taxes are paid by the buyer.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-g1",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 EDU (all variants, official)",
+      "price": null,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Unitree does not list an EDU price in its shop; buyers who need customization or secondary development are told to contact sales_global@unitree.cc.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-g1",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 Robotic Humanoid (base, reseller)",
+      "price": 17990,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "RoboStore listing shows 'Sale price $17,990.00 Regular price $21,600.00'. Reseller price, includes reseller margin and US support.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 (U1) EDU Standard",
+      "price": 43900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU developer version with secondary development support. Reseller list price; hand type and compute differ by variant.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 (U2) EDU Plus",
+      "price": 53900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU developer version with secondary development support. Reseller list price; hand type and compute differ by variant.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 (U3) EDU Ultimate A",
+      "price": 65900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU developer version with secondary development support. Reseller list price; hand type and compute differ by variant.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 (U4) EDU Ultimate B",
+      "price": 67900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU developer version with secondary development support. Reseller list price; hand type and compute differ by variant.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 (U5) EDU Ultimate C",
+      "price": 67900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU developer version with secondary development support. Reseller list price; hand type and compute differ by variant.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "G1 (U6) EDU Ultimate D",
+      "price": 73900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU developer version with secondary development support. Reseller list price; hand type and compute differ by variant.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "Unitree official shop",
+      "type": "official",
+      "url": "https://shop.unitree.com/products/unitree-g1",
+      "region": "Global",
+      "offers": "G1 Standard - $13,500.00 USD (backordered). EDU edition: contact sales for pricing.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RoboStore",
+      "type": "reseller",
+      "url": "https://robostore.com/collections/g1-humanoids",
+      "region": "US",
+      "offers": "Unitree G1 Robotic Humanoid - Sale price $17,990.00 Regular price $21,600.00; G1 (U1) EDU Standard - $43,900.00; G1 (U2) EDU Plus - $53,900.00; G1 (U3) EDU Ultimate A - $65,900.00; G1 (U4) EDU Ultimate B - $67,900.00; G1 (U6) EDU Ultimate D - $73,900.00; G1 Comp Athletic - $46,900.00.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Top3DShop",
+      "type": "reseller",
+      "url": "https://top3dshop.com/product/unitree-robotics-g1-humanoid-robot",
+      "region": "US",
+      "offers": "G1 Basic - $21,500; EDU Standard (U1) - $42,435; EDU Plus (U2) - $52,367; EDU Ultimate A (U3) - $64,292; EDU Ultimate B (U4) - $66,277; EDU Ultimate D (U5-1) - $73,900. Listed as In Stock, lead time 3-6 weeks; page offers buy or lease.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotShop",
+      "type": "reseller",
+      "url": "https://www.robotshop.com/products/unitree-g1-edu-standard-u1-humanoid-robot-us",
+      "region": "US",
+      "offers": "G1 EDU Standard (U1) - $43,900; G1 EDU Ultimate B (U4) - $67,900; G1 EDU Ultimate C (U5) - $67,900.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "ZMP Robots",
+      "url": "https://www.zmprobots.com/unitree-g1-humanoid-robot/",
+      "region": "US, Canada, UK, EU",
+      "notes": "Self-service rental from $299/day with a 3-day minimum (up to 30 days), delivery, collection and damage cover included. Full-service event with an operator from $1,875/day for 1 to 3 days. Live price depends on dates and country."
+    },
+    {
+      "name": "Top3DShop lease",
+      "url": "https://top3dshop.com/product/unitree-robotics-g1-humanoid-robot",
+      "region": "US",
+      "notes": "Product page advertises 'Buy or Lease' but publishes no lease terms; contact the reseller."
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2024-05-15",
+      "price": 16000,
+      "currency": "USD",
+      "event": "Launch price announced at ICRA 2024 ('$16k excluding tax and shipping')",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/unitree-robotics-introduces-g1-humanoid-agent-ai-avatar-302146198.html"
+    },
+    {
+      "date": "2026-10-14",
+      "price": 13500,
+      "currency": "USD",
+      "event": "Official shop price for G1 Standard (base) at check time",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-g1"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy the Unitree G1?",
+      "a": "Yes. The base G1 is listed on the Unitree official shop at $13,500, though it was marked as backordered when checked. EDU versions are sold through Unitree sales and US resellers.",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-g1"
+    },
+    {
+      "q": "How much does the Unitree G1 cost?",
+      "a": "The official shop lists the G1 Standard at $13,500 before shipping ($300 to $1,200) and import duties. US reseller prices for the base model are higher, for example $17,990 at RoboStore.",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-g1"
+    },
+    {
+      "q": "What is the difference between the G1 base and G1 EDU?",
+      "a": "Unitree says the standard G1 does not support secondary development. The EDU versions add developer access and options such as dexterous hands and onboard compute, and cost about $43,900 to $73,900 at US resellers.",
+      "sourceUrl": "https://robostore.com/collections/g1-humanoids"
+    },
+    {
+      "q": "Was the G1 cheaper or more expensive at launch?",
+      "a": "Unitree announced the G1 in May 2024 at $16,000 excluding tax and shipping. The official shop now lists the base model at $13,500.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/unitree-robotics-introduces-g1-humanoid-agent-ai-avatar-302146198.html"
+    },
+    {
+      "q": "Can you rent a Unitree G1?",
+      "a": "Yes. ZMP Robots rents the G1 from $299 per day with a 3-day minimum, or from $1,875 per day for an event with an operator.",
+      "sourceUrl": "https://www.zmprobots.com/unitree-g1-humanoid-robot/"
+    }
+  ],
+  "notes": "Official base price excludes shipping, duties and taxes, which the buyer pays. Base G1 cannot be programmed (no secondary development); research and development buyers need an EDU variant. Reseller prices differ between stores and change often.",
+  "researchNotes": "Search listings show G1 EDU Standard (U1) - $43,900.00; G1 EDU Ultimate B (U4) - $67,900.00; G1 EDU Ultimate C (U5) - $67,900.00. Product pages blocked automated access, so prices were taken from search results only. RobotShop prices come from search results because the pages returned HTTP 403."
+}

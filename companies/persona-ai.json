@@ -1,0 +1,30 @@
+{
+  "id": "persona-ai",
+  "name": "Persona AI",
+  "country": "United States",
+  "headquarters": "Houston, Texas, United States",
+  "founded": 2024,
+  "website": "https://persona.ai",
+  "summary": "Persona AI builds rugged humanoids for welding and fabrication in shipyards and heavy industry. It was co-founded by Nicolaus Radford, Jerry Pratt and Jide Akinyode.",
+  "funding": "$27 million pre-seed round announced in May 2025.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Persona AI",
+      "url": "https://persona.ai/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Persona AI Raises $27M Oversubscribed Pre-Seed",
+      "url": "https://www.prnewswire.com/news-releases/persona-ai-raises-27m-oversubscribed-pre-seed-to-deliver-the-future-of-humanoid-robotics-302455330.html",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "How Persona AI Makes Humanoids Pay Off In Welding",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "hanson-robotics",
+  "name": "Hanson Robotics",
+  "country": "Hong Kong",
+  "headquarters": "Hong Kong Science Park, Hong Kong",
+  "founded": 2007,
+  "website": null,
+  "summary": "Hanson Robotics builds expressive humanoid robots with its Frubber skin material, best known for Sophia. David Hanson founded it in Dallas in 2007 and moved it to Hong Kong in 2013.",
+  "funding": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Hanson Robotics",
+      "url": "https://en.wikipedia.org/wiki/Hanson_Robotics",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

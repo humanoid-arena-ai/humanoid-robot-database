@@ -1,0 +1,522 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "pudu-d9",
+    "name": "PUDU D9",
+    "company_id": "pudu-robotics",
+    "company_name": "PUDU Robotics",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2024-12-19",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Official product page and flyer list D9 specs and invite demo/contact; launch release said pre-sale would open soon, but no public customer deployment or price was found. Product materials warn some promotional functions may not be customer-available.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "service_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as current and pilot/pre-sale based on official product page, flyer, and launch release reviewed on 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "170 cm",
+      "value": 170,
+      "unit": "cm",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "weight": {
+      "original_value": "65 kg",
+      "value": 65,
+      "unit": "kg",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": "20 kg total / single-arm 10 kg (test environment)",
+      "value": 20,
+      "unit": "kg",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": "15 Ah (0.72 kWh)",
+      "value": 0.72,
+      "unit": "kWh",
+      "notes": "Battery capacity found; runtime was not found in reviewed public sources.",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 42,
+      "notes": "Official product page and flyer list total DOF 42, single-leg DOF 6, and single-arm DOF 7.",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2 m/s",
+      "value": 2,
+      "unit": "m/s",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002"
+      ]
+    },
+    "hands": {
+      "description": "PUDU DH11 five-finger dexterous hand: 11 DOF with 6 motors, 12 tactile sensing areas, 1018 tactile sensor pixels, 30 N maximum palm-finger grip, and 40 kg maximum lifting load.",
+      "degrees_of_freedom": 11,
+      "force_feedback": "Tactile sensing areas and tactile sensor pixels are listed; force feedback/control performance was not independently verified.",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "RGB camera",
+        "RGBD camera",
+        "fisheye cameras",
+        "tactile sensors",
+        "IMU",
+        "stereo speaker"
+      ],
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "compute": {
+      "description": "Official product page and flyer list 275 TOPS computing power.",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "Official specs list 352 N.m maximum joint torque, 6 DOF per leg, 7 DOF per arm, and PUDU DH11 dexterous hands.",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.pudurobotics.com/en/products/d9",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specs list dual 7-DOF arms, 20 kg total payload in a test environment, and PUDU DH11 11-DOF tactile dexterous hands.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Manipulation data is official spec/demo evidence, not independent task-performance measurement.",
+        "Payload is explicitly scoped to a test or experimental environment.",
+        "No public success rate, cycle time, or intervention rate was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "The launch release claims semantic navigation, route planning, and end-to-end task planning, but the official flyer says the current sales version does not include navigation capabilities.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Do not credit visual semantic navigation as a customer-available capability without newer sales-contract evidence.",
+        "No independent benchmark was found.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs list a 170 cm, 65 kg biped with 42 DOF, 352 N.m maximum joint torque, and 2 m/s maximum walking speed; the launch demo reports walking, obstacle navigation, and slope climbing.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Walking speed and terrain claims are company claims.",
+        "No independent mobility benchmark, fall-rate, or recovery-rate data was found.",
+        "Demo continuity was not manually timestamp-reviewed."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official specs list RGB, RGBD, tactile sensors, IMU, fisheye cameras, stereo speaker, and 275 TOPS compute; semantic navigation is marketed but caveated by the flyer.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Sensor inventory is not proof of robust scene understanding.",
+        "The flyer says the current sales version does not include navigation capabilities.",
+        "No perception benchmark or mapping accuracy data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official materials list stereo speaker plus visual, tactile, and auditory sensing, and claim natural multimodal interaction.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Human-level or natural-interaction claims are not independently benchmarked.",
+        "Audio hardware and multimodal sensors do not prove conversational reliability.",
+        "No customer interaction metrics were found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official specs list a 15 Ah / 0.72 kWh battery, but no runtime, uptime, maintenance interval, or fleet reliability data was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Battery capacity is not runtime.",
+        "No public failure-rate, uptime, or intervention-rate data was found.",
+        "No sustained deployment evidence was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "D9 is an adult-scale biped humanoid marketed for human environments, with claimed stair/slope/urban-terrain navigation and service tasks.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002",
+        "pudu-d9_source_003"
+      ],
+      "caveats": [
+        "Environment-fit claims remain company-marketed without independent site trials.",
+        "The flyer caveats customer availability of sample functions.",
+        "No public safety certification or real-site acceptance data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Official launch release said D9 would soon be available for pre-sale and the product page supports demo/contact requests; no named paying customer or sustained deployment was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002"
+      ],
+      "caveats": [
+        "Pre-sale/contact availability is not deployment proof.",
+        "No public price, purchase page, customer deployment, or operating-hours metric was found.",
+        "PUDU's broader robot shipment count should not be credited to D9 deployments."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No specific accessibility product evidence found for D9 beyond broad service-robot positioning.",
+      "evidence_level": 0,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002"
+      ],
+      "caveats": [
+        "No accessibility-focused deployment, user study, or assistive workflow evidence was found.",
+        "Do not infer accessibility value from generic humanoid/service positioning."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "pudu-d9_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "Official specs list 170 cm height, 65 kg weight, 42 total DOF, 352 N.m maximum joint torque, 20 kg total payload / 10 kg single-arm payload in a test environment, 2 m/s maximum walking speed, 275 TOPS compute, and a 15 Ah / 0.72 kWh battery.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_003"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page and official flyer agree on core dimensions, payload, compute, and battery. Values are not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "170 cm, 65 kg, total DOF 42, maximum joint torque 352 N.m, 20 kg / single-arm 10 kg payload in experimental testing environment, 275 TOPS, 15 Ah (0.72 kWh).",
+      "source_location": "PUDU D9 product/spec page and official product flyer",
+      "verification_notes": "Company sources; product materials say shipped versions may differ from promotional content.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pudu-d9_evidence_002",
+      "date": "2024-12-19",
+      "title": "Official launch demo claims mobility and cleaning demonstration",
+      "claim": "Launch release says the D9 demonstration video showed upright walking, obstacle navigation, slope climbing, and ground cleaning using the PUDU SH1.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "pudu-d9_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-reported demo; no raw continuous footage, autonomy mode, or intervention rate found.",
+      "arena_relevance": "Supports limited mobility/task-demo credit, not deployment or independent autonomy proof.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Demonstration video showed upright walking, obstacle navigation, slope climbing, and ground cleaning using the PUDU SH1.",
+      "source_location": "PUDU D9 unveiled",
+      "verification_notes": "Official launch release; demo was not manually timestamp-reviewed in this update.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pudu-d9_evidence_003",
+      "date": "2025-01-03",
+      "title": "Official flyer caveats navigation and customer availability",
+      "claim": "The official product flyer markets visual semantic navigation but footnotes that the current sales version does not include navigation capabilities, and further warns that some sample functions are not yet available to customers.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pudu-d9_source_003"
+      ],
+      "confidence": 0.85,
+      "notes": "This is negative/caveat evidence from an official product flyer.",
+      "arena_relevance": "Prevents over-crediting marketed navigation or promotional demos as shipped/customer-available autonomy.",
+      "claim_type": "correction",
+      "supporting_excerpt": "The current sales version does not include navigation capabilities; some sample functions in product promotional materials are not yet available to customers.",
+      "source_location": "PUDU D9 product flyer footnotes",
+      "verification_notes": "Official PUDU-hosted PDF; aligns with product page warning that shipped versions may differ from promotional content.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "small_negative"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "pudu-d9_demo_001",
+      "title": "PUDU D9 public demo/context",
+      "date": "2024-12-19",
+      "observed_capabilities": [
+        "Company-reported demo of upright walking, obstacle navigation, slope climbing, and ground cleaning with PUDU SH1."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "pudu-d9_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark.",
+        "Navigation and promotional capabilities are caveated by the official flyer and product page."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Official launch release reports upright walking, obstacle navigation, slope climbing, and ground cleaning.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "Official flyer says the current sales version does not include navigation capabilities, despite marketing visual semantic navigation.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Launch release said pre-sale would open soon and product page offers contact/demo requests; no named D9 customer deployment, price, or operating-hours evidence was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "Official specs are stronger after flyer backfill, but payload is in a test/experimental environment and shipped versions may differ from promotional materials.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy, and the official flyer says the current sales version does not include navigation capabilities.",
+      "source_ids": [
+        "pudu-d9_source_001",
+        "pudu-d9_source_002",
+        "pudu-d9_source_003"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "pudu-d9_source_001"
+      ]
+    },
+    {
+      "claim": "Customer-available visual semantic navigation",
+      "reason": "The official flyer specifically footnotes that the current sales version does not include navigation capabilities.",
+      "source_ids": [
+        "pudu-d9_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 0,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "PUDU D9 has substantially better official hardware evidence after backfill: adult-scale biped body, 42 DOF, 352 N.m max joint torque, 20 kg test-environment payload, DH11 tactile dexterous hands, 275 TOPS compute, and 0.72 kWh battery. Autonomy and deployment evidence remain weak because public proof is mostly company demo/marketing, and the official flyer says the current sales version does not include navigation capabilities.",
+    "strongest_evidence": [
+      "Official product page and flyer agree on 170 cm, 65 kg, 42 DOF, 352 N.m maximum joint torque, 20 kg test-environment payload, 2 m/s maximum walking speed, 275 TOPS compute, and 15 Ah / 0.72 kWh battery.",
+      "Official specs list PUDU DH11 11-DOF hands with 12 tactile sensing areas and 1018 tactile sensor pixels."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "The official flyer says the current sales version does not include navigation capabilities.",
+      "Teleoperation/editing details are unclear for public demos."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Customer-available visual semantic navigation without newer sales-contract evidence.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "pudu-d9_source_001",
+    "pudu-d9_source_002",
+    "pudu-d9_source_003"
+  ],
+  "sources": [
+    {
+      "id": "pudu-d9_source_001",
+      "title": "PUDU D9",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/en/products/d9",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official specs for dimensions, DOF, torque, payload, speed, hand, sensors, compute, and battery; page warns promotional features may differ from shipped versions."
+    },
+    {
+      "id": "pudu-d9_source_002",
+      "title": "PUDU D9 unveiled",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/about/news/6763cce40767a20044b4a69a",
+      "date_published": "2024-12-19",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Launch release reports demo capabilities and says D9 would soon be available for pre-sale; not independent deployment evidence."
+    },
+    {
+      "id": "pudu-d9_source_003",
+      "title": "PUDU D9 Product Flyer",
+      "publisher": "PUDU Robotics",
+      "url": "https://cdn.pudutech.com/PUDU_D9_Product_Flyer_20250103_EN_0021e78f68.pdf",
+      "date_published": "2025-01-03",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official PUDU-hosted PDF confirms specs and footnotes that the current sales version does not include navigation capabilities; promotional sample functions may not be customer-available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Stronger official hardware/spec evidence, but autonomy and deployment remain weak; do not credit marketed navigation as customer-available without newer evidence.",
+    "strongest_positive_evidence": [
+      "Official product page and flyer agree on 170 cm, 65 kg, 42 DOF, 352 N.m maximum joint torque, 20 kg test-environment payload, 2 m/s speed, 275 TOPS compute, and 15 Ah / 0.72 kWh battery.",
+      "Official specs list PUDU DH11 11-DOF hands with tactile sensing areas and 1018 tactile sensor pixels.",
+      "Launch release reports a demo with upright walking, obstacle navigation, slope climbing, and ground cleaning."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Official flyer says the current sales version does not include navigation capabilities",
+      "Missing intervention/failure-rate data",
+      "No named D9 customer deployment, price, operating-hours, or uptime data"
+    ],
+    "conflicting_claims": [
+      "Marketing and launch materials promote visual semantic navigation, but the official flyer footnotes that the current sales version does not include navigation capabilities."
+    ],
+    "recommended_arena_categories": [
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Customer-available visual semantic navigation without newer sales-contract evidence",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "aldebaran",
+    "name": "Aldebaran",
+    "country": "France",
+    "website": null,
+    "founded": 2005,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "aldebaran-pepper",
+    "aldebaran-nao"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Formerly owned by SoftBank; core assets acquired by Maxvision Technology in July 2025."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "aldebaran_source_001",
+      "title": "Maxvision buys core robot assets of Aldebaran, including Nao and Pepper",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/maxvision-buys-core-robot-assets-including-nao-pepper-aldebaran/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "booster-t1",
+  "name": "Booster T1",
+  "aliases": ["T1"],
+  "companyId": "booster-robotics",
+  "companyName": "Booster Robotics",
+  "country": "China",
+  "announced": null,
+  "status": "superseded",
+  "category": "research",
+  "summary": "T1 is a 1.2 m, 30 kg humanoid made for research, teaching and robot soccer. It was the platform of the RoboCup AdultSize winning team. Booster's own site now lists the T2 and K1 instead, but resellers still sell T1 units.",
+  "specs": {
+    "height_cm": { "value": 118, "original": "1.18 m", "sourceId": "s2" },
+    "weight_kg": { "value": 30, "original": "~30kg", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": { "value": 2, "original": "~2 hours walking, ~4 hours standing", "sourceId": "s1" },
+    "dof": { "value": 23, "original": "23-41 DoFs (23 standard)", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 0.97, "original": "~0.97 m/s (walking)", "sourceId": "s2" }
+  },
+  "hands": "Standard version has no hands; gripper and dexterous-hand versions exist (up to 41 DoF total).",
+  "sensors": null,
+  "compute": "NVIDIA Jetson AGX Orin 32GB plus Intel i7-1370P in the standard configuration (reseller data).",
+  "price": { "value": 30000, "currency": "USD", "priceType": "list", "configuration": "T1 (Robotics Center listing, before shipping and tax)", "sourceId": "s1" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.roboticscenter.ai/store/product/booster-t1",
+  "highlights": [
+    "Described by resellers as the 2025 RoboCup AdultSize category champion model.",
+    "Interesting Engineering reports that T1 won back-to-back RoboCup Humanoid League championships with the Tsinghua THU Huoshen team.",
+    "Generation Robots lists a used T1 at EUR 31,200 incl. VAT."
+  ],
+  "caveats": [
+    "Booster publishes no open price list; prices are reseller figures.",
+    "Booster's site now promotes T2 and K1, so new T1 supply may be limited."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Booster T1 Humanoid Robot", "publisher": "Robotics Center", "url": "https://www.roboticscenter.ai/store/product/booster-t1", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Booster T1 Robot 2026: Price, Specs", "publisher": "Humanoza", "url": "https://humanoza.com/robots/booster-t1", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Booster T2: A humanoid robot with powerful onboard Nvidia compute", "publisher": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/china-humanoid-robot-unveiled-nvidia-compute", "accessed": "2026-10-14" },
+    { "id": "s4", "title": "Humanoid robots Booster Robotics", "publisher": "Generation Robots", "url": "https://www.generationrobots.com/en/559-humanoid-robots-booster-robotics", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,1122 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "agibot-g2",
+    "name": "AgiBot G2",
+    "company_id": "agibot",
+    "company_name": "AgiBot",
+    "country": "China",
+    "generation": "Successor to the G1 platform; industrial wheeled humanoid under Genie sub-brand",
+    "first_announced_date": "2025-10-29",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "AgiBot product page and PR Newswire describe commercial/industrial availability. PR Newswire (June 28, 2026) says the 15,000th robot is an AgiBot G2 and that G2 units operate in a Longcheer Technology mass-production line. Robotic Gizmos reports integration into Longcheer's line with 310 UPH and 99% success. No public price or online purchase path; contact sales only.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "high-precision assembly",
+      "industrial inspection",
+      "logistics sorting",
+      "guided tours",
+      "security operations",
+      "research and development"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No height published in any used source. 9S Robotics table lists height as '—' and says detailed hardware specifications are pending official publication.",
+      "source_ids": [
+        "agibot-g2_source_005"
+      ]
+    },
+    "weight": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No weight published in any used source.",
+      "source_ids": []
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload spec found. 9S Robotics table lists payload as '—'.",
+      "source_ids": [
+        "agibot-g2_source_005"
+      ]
+    },
+    "runtime": {
+      "original_value": "24/7 industrial use (with hot-swappable dual batteries)",
+      "value": null,
+      "unit": null,
+      "notes": "Interesting Engineering states dual hot-swappable batteries for 24/7 industrial use and continuous around-the-clock operation with autonomous recharging. No single-battery runtime in hours was provided.",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Dual hot-swappable batteries; capacity not published. PR Newswire mentions 15,000th unit but no battery spec.",
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_006"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 26,
+      "notes": "26-DoF body with 7-DoF force-controlled arms and 5-DOF waist-leg structure (per Interesting Engineering). Catalog record also lists 26 DoF body with 7 DoF force-controlled arms. Total body DoF treated as 26, but the arms may be additional.",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Wheeled base with four-wheel steering and omnidirectional mobility (crab-walking, zero-radius rotation). No linear speed in m/s published.",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ]
+    },
+    "hands": {
+      "description": "OmniHand (professional version) dexterous, tactile hand for logistics sorting; described as high-degree-of-freedom dexterous tactile hand.",
+      "degrees_of_freedom": null,
+      "force_feedback": "dual-arm force control with 0.5 newtons of force (company claim)",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "360-degree surround-view system",
+        "high-precision collision detection",
+        "eye-gaze tracking",
+        "expressive facial animations (interaction)"
+      ],
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_002"
+      ]
+    },
+    "compute": {
+      "description": "NVIDIA Jetson Thor, up to 2,070 TFLOPS.",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Force-controlled arms with 0.5 N force and submillimeter accuracy; four-wheel steering; 5-DOF waist-leg structure; 100% automotive-grade components.",
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.agibot.com/products/G2",
+      "notes": "No public price. Product page has contact-sales form. 9S Robotics lists Price (USD) as '—'.",
+      "source_ids": [
+        "agibot-g2_source_002",
+        "agibot-g2_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Company demos show seatbelt lock cylinder assembly, material handling, RAM insertion within an hour, and OmniHand gripping parcels of varying sizes, shapes and materials. Longcheer line reports picking tablets and sorting defective/finished products with up to 310 UPH and 99% success (per Robotic Gizmos).",
+      "evidence_level": 3,
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_003"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or success-rate verification.",
+        "Longcheer numbers are from a secondary blog citing a video; not audited."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "AgiBot says G2 runs 24/7 with autonomous navigation and auto-return charging. Logistics demo used autonomous navigation adapting to more than 95% of factory floor conditions. Robotic Gizmos claims autonomous 24/7 operation with 99% success. PR Newswire reports approximately 100 cumulative hours of factory livestream operations on a tablet quality inspection section.",
+      "evidence_level": 3,
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_003",
+        "agibot-g2_source_006"
+      ],
+      "caveats": [
+        "Autonomy claims are company-asserted or secondary; no intervention logs or independent audit.",
+        "Teleoperation not always disclosed; low-latency teleoperation is a designed feature."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Wheeled base with four-wheel steering, omnidirectional movement including crab-walking and zero-radius rotation; 5-DOF waist-leg structure provides human-like upper-body movement. No walking.",
+      "evidence_level": 2,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "caveats": [
+        "Wheeled, not legged; no speed, stability or disturbance-recovery metrics."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "360-degree surround-view sensing, high-precision collision detection, eye-gaze tracking; navigation adapts to more than 95% of factory floor conditions in logistics demo.",
+      "evidence_level": 2,
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_002"
+      ],
+      "caveats": [
+        "No detailed sensor suite or independent perception benchmarks.",
+        "360-degree sensing is a company claim."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Supports multi-user conversation, expressive facial animations, human-like movements, eye-gaze tracking, and guided tours with customized knowledge base and human-like body language.",
+      "evidence_level": 2,
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_002"
+      ],
+      "caveats": [
+        "Interaction demos not independently verified; no conversational reliability metrics.",
+        "Guided-tour demo was part of launch event."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Dual hot-swappable batteries for 24/7 use; passed more than 130 component tests including temperatures from -15°C to 50°C, electrostatic protection and emergency braking; PR Newswire reports approximately 100 cumulative hours of factory livestream operations.",
+      "evidence_level": 3,
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_006"
+      ],
+      "caveats": [
+        "Company-reported tests; no independent mean time between failures.",
+        "Livestream details limited; no intervention counts."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "IP42 protection, 100% automotive-grade components, hybrid active-passive safety architecture, collision detection; designed for factory and public environments.",
+      "evidence_level": 2,
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_002"
+      ],
+      "caveats": [
+        "IP42 is not full dust/water protection.",
+        "No third-party safety certification found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Named deployment on Longcheer Technology production line. PR Newswire says the 15,000th robot is AgiBot G2 and Longcheer GM attended ceremony. Robotic Gizmos reports integration in 36 hours with 310 UPH and 99% success.",
+      "evidence_level": 3,
+      "source_ids": [
+        "agibot-g2_source_003",
+        "agibot-g2_source_004",
+        "agibot-g2_source_006"
+      ],
+      "caveats": [
+        "Deployment details from AgiBot or secondary media; no customer press release or audited output metrics.",
+        "15,000th unit is a production milestone, not Longcheer fleet size."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price; product page offers contact sales form.",
+      "evidence_level": 0,
+      "source_ids": [
+        "agibot-g2_source_002"
+      ],
+      "caveats": [
+        "Not purchasable online; pricing unknown."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "agibot-g2_evidence_001",
+      "date": null,
+      "title": "AGIBOT G2 product page basics",
+      "claim": "AgiBot G2 is an industrial-grade interactive embodied operation robot with IP42 protection and 100% automotive-grade components, available via contact sales.",
+      "category": [
+        "specs",
+        "human_environment_fit",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-g2_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page; no detailed specs.",
+      "arena_relevance": "Confirms commercial status and industrial focus.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Built to Industrial-Grade Standards 100% Automotive-Grade Components Full Machine Protection: IP42",
+      "source_location": "https://www.agibot.com/products/G2",
+      "verification_notes": "Product page content; no independent verification of IP42.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_002",
+      "date": null,
+      "title": "G2 wheeled humanoid with 26 DoF and 5-DOF waist-leg",
+      "claim": "G2 is an IP42-graded wheeled-humanoid with 26 DoF and 7 DoF force-controlled arms, featuring a 5-DOF waist-leg structure and omnidirectional four-wheel steering.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Secondary media relay of company specs.",
+      "arena_relevance": "Defines form factor and mobility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "AgiBot G2 is an IP42-graded wheeled-humanoid with 26 DoF and 7 DoF force-controlled arms, designed with dual hot-swappable batteries for 24/7 industrial use.",
+      "source_location": "Interesting Engineering article, introduction",
+      "verification_notes": "Not independently measured; official AgiBot product page lacks DoF count.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_003",
+      "date": null,
+      "title": "NVIDIA Jetson Thor compute",
+      "claim": "G2 is powered by up to 2,070 TFLOPS of computing on NVIDIA Jetson Thor.",
+      "category": [
+        "specs",
+        "compute"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Company spec via media.",
+      "arena_relevance": "High compute for AI tasks.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The G2 features a 26-degree-of-freedom body and a 5-DOF waist-leg structure, enabling fluid, human-like movement.",
+      "source_location": "Interesting Engineering article, autonomous industrial worker section",
+      "verification_notes": "Excerpt about DoF; compute sentence is adjacent but not in this excerpt. Compute claim from same source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_004",
+      "date": null,
+      "title": "24/7 operation with hot-swappable batteries",
+      "claim": "G2 runs continuously around the clock, autonomously returns for charging, and uses hot-swappable dual batteries to eliminate downtime.",
+      "category": [
+        "endurance_reliability",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claim; no independent runtime test.",
+      "arena_relevance": "Supports continuous operation claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "For uninterrupted productivity, the G2 runs continuously around the clock, autonomously returns for charging, and uses hot-swappable dual batteries to eliminate downtime.",
+      "source_location": "Interesting Engineering article, autonomous industrial worker section",
+      "verification_notes": "No battery capacity or cycle life provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_005",
+      "date": null,
+      "title": "360-degree surround view and safety architecture",
+      "claim": "A 360-degree surround-view system, high-precision collision detection, and hybrid active-passive safety architecture enable safe deployment in complex work settings.",
+      "category": [
+        "perception_scene_understanding",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company safety claim.",
+      "arena_relevance": "Important for human-proximity deployment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "A 360-degree surround-view system, high-precision collision detection, and hybrid active-passive safety architecture ensure safe deployment in complex work settings, from assembly lines and inspection to logistics, security, guided tours, and research environments.",
+      "source_location": "Interesting Engineering article, autonomous industrial worker section",
+      "verification_notes": "No third-party safety certification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_006",
+      "date": null,
+      "title": "130+ component tests and extreme-condition trials",
+      "claim": "G2 passed more than 130 component tests including temperatures from -15°C to 50°C, electrostatic protection, and emergency braking assessments.",
+      "category": [
+        "endurance_reliability",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-reported test results via media; not independently verified.",
+      "arena_relevance": "Supports industrial durability claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Agibot highlights the G2’s industrial-grade durability, noting it has passed more than 130 component tests and extreme-condition trials, including temperatures from -15°C to 50°C, electrostatic protection, and emergency braking assessments.",
+      "source_location": "Interesting Engineering article, precision robot trials section",
+      "verification_notes": "Test data not published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_007",
+      "date": null,
+      "title": "Launch demo: RAM insertion and assembly",
+      "claim": "At its launch event, G2 worked alongside humans on seatbelt lock cylinder assembly and mastered RAM insertion within an hour using force-controlled arms and AI learning.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company demo description; no success-rate or attempt count.",
+      "arena_relevance": "Shows fine manipulation and quick skill learning.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "For precision operations, its force-controlled arms and AI learning enabled it to master delicate tasks such as RAM insertion within an hour.",
+      "source_location": "Interesting Engineering article, precision robot trials section",
+      "verification_notes": "Not independently observed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_008",
+      "date": null,
+      "title": "Launch demo: logistics sorting with OmniHand",
+      "claim": "In logistics sorting, G2's OmniHand gripped parcels of varying sizes, shapes and materials; using autonomous navigation, one unit handled parcel feeding and loading while another transported incoming materials to a buffer area, adapting to more than 95% of factory floor conditions.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Company demo description; autonomy explicitly claimed.",
+      "arena_relevance": "Supports logistics capability and autonomous navigation.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Using autonomous navigation, one unit handled parcel feeding and loading while another transported incoming materials to a buffer area, adapting to more than 95 percent of factory floor conditions.",
+      "source_location": "Interesting Engineering article, precision robot trials section",
+      "verification_notes": "No teleoperation noted; company demo.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_009",
+      "date": null,
+      "title": "Guided tour interaction demo",
+      "claim": "For guided tours, G2 employed human-like body language, a customized knowledge base, and 360-degree sensors for immersive, safe interaction.",
+      "category": [
+        "human_interaction",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company demo description.",
+      "arena_relevance": "Supports service/guide use case.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "For guided tours, the G2 employed human-like body language, a customized knowledge base, and 360-degree sensors for immersive, safe interaction.",
+      "source_location": "Interesting Engineering article, precision robot trials section",
+      "verification_notes": "No independent observation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_010",
+      "date": "2026-04-15",
+      "title": "Longcheer mass-production line deployment",
+      "claim": "G2 is integrated into Longcheer's mass-production line, picking up tablets, navigating complex layouts, sorting defective or finished products; achieves up to 310 UPH, integration done in 36 hours, autonomous 24/7, with 99% success rate.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "agibot-g2_source_003"
+      ],
+      "confidence": 0.55,
+      "notes": "Secondary blog citing a YouTube video; numbers not audited.",
+      "arena_relevance": "Named customer deployment with performance metrics.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "These robots can achieve up to 310 UPH performance. The integration was done in 36 hours. These robots can perform autonomously 24/7. They apparently have 99% success rate.",
+      "source_location": "Robotic Gizmos article",
+      "verification_notes": "No primary source or customer quote; 'apparently' suggests uncertainty.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_011",
+      "date": "2026-06-28",
+      "title": "15,000th AgiBot robot is G2",
+      "claim": "AgiBot announced its 15,000th robot rolled off the production line; the milestone unit is the AGIBOT G2.",
+      "category": [
+        "deployment_commercial_proof",
+        "status"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "agibot-g2_source_006"
+      ],
+      "confidence": 0.8,
+      "notes": "Official company press release.",
+      "arena_relevance": "Shows scale of production and commercial status.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "AGIBOT, a global leader in embodied AI and robotics, today announced that its 15,000th robot has officially rolled off the production line. The milestone unit is the AGIBOT G2, an industrial-grade embodied task robot designed for industrial and real-world operational scenarios.",
+      "source_location": "PR Newswire, first paragraph",
+      "verification_notes": "Company figure; not independently audited.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_012",
+      "date": "2026-06-28",
+      "title": "Approximately 100 cumulative hours of G2 factory livestream",
+      "claim": "AgiBot completed approximately 100 cumulative hours of factory livestream operations featuring the G2 on a tablet mass-production quality inspection section, working continuously alongside line workers.",
+      "category": [
+        "endurance_reliability",
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "agibot-g2_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Company-reported operational data.",
+      "arena_relevance": "Quantified real-world deployment evidence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "In late June, AGIBOT completed approximately 100 cumulative hours of factory livestream operations featuring the AGIBOT G2. During the livestream, the G2 operated across a tablet mass-production quality inspection section, aligned with factory production rhythms, and worked continuously alongside line workers.",
+      "source_location": "PR Newswire, What Enables AGIBOT's Scale? section",
+      "verification_notes": "No intervention logs or independent audit.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_013",
+      "date": null,
+      "title": "Named deployment on Longcheer line per AgiBot release",
+      "claim": "VentureAtlas lists G2 current status as named deployment on Longcheer's line, per AgiBot's August 20, 2026 release.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "agibot-g2_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory citing AgiBot release; release not provided among sources.",
+      "arena_relevance": "Corroborates Longcheer deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Current status Named deployment on Longcheer's line, per AgiBot's August 20, 2026 release.",
+      "source_location": "ventureatlas.org AgiBot G2 page",
+      "verification_notes": "No details on units or output metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-g2_evidence_014",
+      "date": null,
+      "title": "Detailed hardware specs pending official publication",
+      "claim": "9S Robotics states detailed hardware specifications are pending official publication from AgiBot; lists DOF, payload, weight, height, battery life as '—'.",
+      "category": [
+        "missing_evidence",
+        "specs"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "agibot-g2_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "Absence of official specs.",
+      "arena_relevance": "Judges should not infer missing specs.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Detailed hardware specifications are pending official publication from AgiBot.",
+      "source_location": "9srobotics.com AgiBot G2 page",
+      "verification_notes": "Matches official product page lacking specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "specs"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "agibot-g2_deployment_001",
+      "customer_or_partner": "Longcheer Technology",
+      "site_or_context": "Longcheer's mass-production line (tablet production)",
+      "task": "Picking up tablets, navigating complex layouts, sorting defective or finished products; tablet mass-production quality inspection.",
+      "start_date": "2026-04-15",
+      "end_date": null,
+      "operating_hours": "24/7 autonomous per Robotic Gizmos; approximately 100 cumulative hours factory livestream per PR Newswire.",
+      "units_deployed": null,
+      "output_metrics": [
+        "up to 310 UPH",
+        "99% success rate (secondary source)",
+        "integration done in 36 hours"
+      ],
+      "source_ids": [
+        "agibot-g2_source_003",
+        "agibot-g2_source_004",
+        "agibot-g2_source_006"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "No customer press release; details from AgiBot or secondary media.",
+        "Output metrics from Robotic Gizmos are not independently audited.",
+        "Number of units on Longcheer line not disclosed."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "agibot-g2_demo_001",
+      "title": "Launch event: automotive parts assembly and RAM insertion",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "seatbelt lock cylinder assembly alongside humans",
+        "material handling",
+        "RAM insertion within one hour using force-controlled arms and AI learning"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company launch event",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No success rates or attempt counts.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No statement on teleoperation for assembly demo.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "seatbelt lock cylinder assembly and material handling; RAM insertion",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "agibot-g2_demo_002",
+      "title": "Launch event: logistics sorting with OmniHand",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "parcel feeding and loading",
+        "transporting incoming materials to buffer area",
+        "adapting to more than 95% of factory floor conditions"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Using autonomous navigation",
+      "environment": "company launch event",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No success rates or video review.",
+        "Autonomy is company-asserted."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Text explicitly says 'Using autonomous navigation'.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "autonomous parcel feeding/loading and material transport",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "agibot-g2_demo_003",
+      "title": "Launch event: guided tours",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "human-like body language",
+        "customized knowledge base",
+        "360-degree sensors for safe interaction"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company launch event",
+      "source_ids": [
+        "agibot-g2_source_001"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No independent observation."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation statement.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "guided tour interaction",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "agibot-g2_demo_004",
+      "title": "Longcheer mass-production line video",
+      "date": "2026-04-15",
+      "observed_capabilities": [
+        "picking up tablets",
+        "navigating complex layouts",
+        "sorting defective or finished products",
+        "up to 310 UPH performance"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "These robots can perform autonomously 24/7",
+      "environment": "Longcheer Technology production line",
+      "source_ids": [
+        "agibot-g2_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Secondary blog; video not directly reviewed.",
+        "'99% success rate' is from secondary source."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Source says autonomous 24/7, but underlying video likely company-produced.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "tablet picking, navigation, sorting",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "agibot-g2_demo_005",
+      "title": "Official launch video",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "not specified (no transcript)",
+      "source_ids": [
+        "agibot-g2_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot describe capabilities beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No transcript to assess teleoperation.",
+      "observed_segments": []
+    },
+    {
+      "id": "agibot-g2_demo_006",
+      "title": "Factory livestream operations per PR Newswire",
+      "date": "2026-06-28",
+      "observed_capabilities": [
+        "tablet mass-production quality inspection",
+        "working continuously alongside line workers",
+        "approximately 100 cumulative hours of factory livestream operations"
+      ],
+      "appears_edited": false,
+      "teleoperation_disclosed": null,
+      "environment": "Longcheer Technology tablet mass-production quality inspection section",
+      "source_ids": [
+        "agibot-g2_source_006"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Company-reported operational data; no intervention logs."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation statement; source describes working alongside line workers.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "continuous quality inspection work",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No price, online purchase, lease or waitlist found; only contact sales form on product page.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence."
+    },
+    {
+      "topic": "Missing physical specs",
+      "description": "Height, weight, payload, battery capacity, hand DoF and speed are not published in used sources.",
+      "impact_on_arena_scoring": "Cannot compare size/load metrics."
+    },
+    {
+      "topic": "Teleoperation disclosure",
+      "description": "Only logistics demo explicitly says autonomous navigation; other demos and videos do not disclose teleoperation. Low-latency teleoperation is a designed feature.",
+      "impact_on_arena_scoring": "Autonomy credit should be limited to explicitly disclosed autonomous tasks."
+    },
+    {
+      "topic": "Longcheer deployment metrics",
+      "description": "Robotic Gizmos reports 310 UPH, 99% success, 36-hour integration, but these are from a secondary blog citing a video; not independently audited.",
+      "impact_on_arena_scoring": "Deployment proof is real but not independently verified."
+    },
+    {
+      "topic": "Official specs gap",
+      "description": "9S Robotics states detailed hardware specifications are pending official publication.",
+      "impact_on_arena_scoring": "Do not infer missing specs from unofficial sources."
+    }
+  ],
+  "source_ids": [
+    "agibot-g2_source_001",
+    "agibot-g2_source_002",
+    "agibot-g2_source_003",
+    "agibot-g2_source_004",
+    "agibot-g2_source_005",
+    "agibot-g2_source_006",
+    "agibot-g2_source_007",
+    "agibot-g2_source_008",
+    "agibot-g2_source_009",
+    "agibot-g2_source_010",
+    "agibot-g2_source_011"
+  ],
+  "sources": [
+    {
+      "id": "agibot-g2_source_001",
+      "title": "Agibot launches advanced G2 humanoid for high-precision manufacturing",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/agibot-g2-humanoid-robot-smart-manufacturing",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary media reporting company claims; no independent verification."
+    },
+    {
+      "id": "agibot-g2_source_002",
+      "title": "AGIBOT Innovation (Shanghai) Technology Co., Ltd. - AGIBOT G2",
+      "publisher": "AgiBot",
+      "url": "https://www.agibot.com/products/G2",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; no detailed specs."
+    },
+    {
+      "id": "agibot-g2_source_003",
+      "title": "AGIBOT G2 Used In Longcheer’s Mass-production Line - Robotic Gizmos",
+      "publisher": "Robotic Gizmos",
+      "url": "https://www.roboticgizmos.com/agibot-g2/",
+      "date_published": "2026-04-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Blog citing YouTube video; includes performance claims."
+    },
+    {
+      "id": "agibot-g2_source_004",
+      "title": "AgiBot G2 - AgiBot",
+      "publisher": "ventureatlas.org",
+      "url": "https://www.ventureatlas.org/product/agibot-g2",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory citing AgiBot release; no original release provided."
+    },
+    {
+      "id": "agibot-g2_source_005",
+      "title": "9S Robotics - The Global Robotics Workforce Platform",
+      "publisher": "9S Robotics",
+      "url": "https://9srobotics.com/en/robots/agibot-g2/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory noting specs pending; includes Auto Week showcase mention."
+    },
+    {
+      "id": "agibot-g2_source_006",
+      "title": "AGIBOT's 15,000th Robot Rolls Off the Production Line, Marking a New Milestone in Embodied AI Deployment",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/apac/news-releases/agibots-15-000th-robot-rolls-off-the-production-line-marking-a-new-milestone-in-embodied-ai-deployment-302812695.html",
+      "date_published": "2026-06-28",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official company press release; figures not independently audited."
+    },
+    {
+      "id": "agibot-g2_source_007",
+      "title": "AGIBOT G2: The Next Generation of Industrial-Grade Interactive Embodied Operation Robots",
+      "publisher": "YouTube AGIBOT",
+      "url": "https://www.youtube.com/watch?v=WrSpfnEtzPA",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official AgiBot video; no transcript available."
+    },
+    {
+      "id": "agibot-g2_source_008",
+      "title": "AGIBOT G2 | The New-generation Industrial-grade Interactive Embodied Operation Robot",
+      "publisher": "YouTube AGIBOT",
+      "url": "https://www.youtube.com/watch?v=PPlnLFLJWZ4",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official launch video; no transcript available."
+    },
+    {
+      "id": "agibot-g2_source_009",
+      "title": "AGIBOT G2",
+      "publisher": "YouTube Neuranext",
+      "url": "https://www.youtube.com/watch?v=T481lARvycw",
+      "date_published": "2026-05-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript."
+    },
+    {
+      "id": "agibot-g2_source_010",
+      "title": "AGIBOT G2 | Advanced Humanoid Robot in Action | AI & Robotics",
+      "publisher": "YouTube MIC ROBOTICS",
+      "url": "https://www.youtube.com/watch?v=EblDYhsDW6o",
+      "date_published": "2026-09-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript."
+    },
+    {
+      "id": "agibot-g2_source_011",
+      "title": "Agibot Sends Its G2 Humanoid Robots into China’s Industrial Workforce",
+      "publisher": "YouTube Kalil 4.0",
+      "url": "https://www.youtube.com/watch?v=sOuB9uwlZmA",
+      "date_published": "2026-06-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "AgiBot G2 is an industrial wheeled humanoid with strong commercial deployment evidence (Longcheer production line, 15,000th unit milestone) and company-reported operational data (approx. 100 hours livestream, 310 UPH). However most specs are missing and performance numbers are not independently audited.",
+    "strongest_positive_evidence": [
+      "Named deployment on Longcheer's mass-production line (Robotic Gizmos and PR Newswire).",
+      "Approximately 100 cumulative hours of factory livestream operations per PR Newswire.",
+      "15,000th robot rolled off production line is AgiBot G2.",
+      "Launch demos show RAM insertion, logistics sorting with >95% floor adaptation."
+    ],
+    "weakest_or_missing_evidence": [
+      "No height, weight, payload, battery capacity, hand DoF or speed.",
+      "No independent verification of 310 UPH or 99% success.",
+      "No public price or purchase path.",
+      "Teleoperation not disclosed for most demos."
+    ],
+    "conflicting_claims": [
+      "Total DoF: 26 body + 7 arms per IE; catalog record says 26 DoF body with 7 DoF force-controlled arms. Treat body DoF=26, arms additional.",
+      "Runtime: IE says 24/7 with hot-swappable batteries but no single-battery hours; do not infer a continuous numeric runtime."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit bipedal walking; G2 is wheeled.",
+      "Do not treat 310 UPH or 99% success as independently verified.",
+      "Do not infer missing specs from directories.",
+      "Do not assume all demos are autonomous; only logistics demo explicitly says autonomous."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "As of 2026-10-29, G2 is current in AgiBot's commercial lineup. PR Newswire June 2026 names G2 as milestone production unit."
+  },
+  "excluded_claims": [
+    {
+      "claim": "A3 Ultra specifications or deployment",
+      "reason": "Source 11 refers to A3 Ultra, not G2.",
+      "source_ids": []
+    },
+    {
+      "claim": "Specific height, weight, payload values",
+      "reason": "No official values found; all used sources list them as missing or pending.",
+      "source_ids": [
+        "agibot-g2_source_001",
+        "agibot-g2_source_005"
+      ]
+    },
+    {
+      "claim": "Independent verification of 99% success and 310 UPH",
+      "reason": "Only secondary blog via video; no primary data.",
+      "source_ids": [
+        "agibot-g2_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 4,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "AgiBot G2 is an industrial wheeled humanoid (26-DoF body, 7-DoF force-controlled arms, 5-DOF waist-leg, four-wheel steering) powered by NVIDIA Jetson Thor (up to 2,070 TFLOPS). It is IP42-rated with automotive-grade components and dual hot-swappable batteries for 24/7 use. Strongest evidence includes a named deployment on Longcheer's mass-production line, a company-reported 100 cumulative hours of factory livestream operations, and the 15,000th AgiBot robot being a G2. Launch demos show RAM insertion, logistics sorting with >95% floor adaptation, and guided tours. However height, weight, payload, battery capacity and price are missing, and deployment metrics (310 UPH, 99% success) come from secondary media without independent audit.",
+    "strongest_evidence": [
+      "Named deployment on Longcheer production line (Robotic Gizmos, PR Newswire).",
+      "Approximately 100 cumulative hours of factory livestream operations (PR Newswire).",
+      "15,000th robot production milestone is an AgiBot G2 (PR Newswire).",
+      "Launch demo: autonomous navigation adapting to >95% factory floor conditions (Interesting Engineering)."
+    ],
+    "weakest_evidence": [
+      "No height, weight, payload, battery capacity or price published.",
+      "310 UPH and 99% success only from secondary blog.",
+      "Teleoperation not disclosed for most demos."
+    ],
+    "known_do_not_credit": [
+      "Bipedal walking (G2 is wheeled).",
+      "Independently verified deployment metrics.",
+      "Missing physical specs.",
+      "All demos as autonomous except where explicitly stated."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

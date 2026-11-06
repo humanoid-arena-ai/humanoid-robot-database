@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "tesla",
+    "name": "Tesla",
+    "country": "United States",
+    "website": "https://www.tesla.com/AI",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "tesla-optimus-gen-1",
+    "tesla-optimus-gen-2-v2-5"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "tesla_company_source_001",
+      "title": "Tesla website",
+      "publisher": "Tesla",
+      "url": "https://www.engineering.com/tesla-ai-day-2022-tesla-is-not-a-car-company/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

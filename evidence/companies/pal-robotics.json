@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "pal-robotics",
+    "name": "PAL Robotics",
+    "country": "Spain",
+    "website": "https://pal-robotics.com",
+    "founded": 2004,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "pal-talos"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "pal-robotics_source_001",
+      "title": "TALOS",
+      "publisher": "pal-robotics.com",
+      "url": "https://pal-robotics.com/robot/talos/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "pal-robotics_source_002",
+      "title": "PAL Robotics",
+      "publisher": "linkedin.com",
+      "url": "https://www.linkedin.com/company/pal-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

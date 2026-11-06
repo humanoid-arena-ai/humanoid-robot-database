@@ -1,0 +1,33 @@
+{
+  "robotId": "figure-02",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "Figure 02 was never offered for public sale and Figure announced its retirement in November 2025 after the release of Figure 03. Figure works through direct commercial agreements with companies such as BMW.",
+  "configurations": [],
+  "sellers": [],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy a Figure 02?",
+      "a": "No. Figure never published a price or order page for Figure 02, and in November 2025 it said it was officially starting the retirement of Figure 02 after releasing Figure 03.",
+      "sourceUrl": "https://www.figure.ai/news/production-at-bmw"
+    },
+    {
+      "q": "How much does Figure 02 cost?",
+      "a": "Figure has not published a price for Figure 02.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/figure-unveils-figure-02-its-second-generation-humanoid-setting-new-standards-in-ai-and-robotics-302214889.html"
+    },
+    {
+      "q": "Where was Figure 02 used?",
+      "a": "Figure 02 was deployed at BMW Manufacturing in Spartanburg under a commercial agreement; Figure says it contributed to the production of more than 30,000 BMW X3 vehicles there.",
+      "sourceUrl": "https://www.figure.ai/news/production-at-bmw"
+    },
+    {
+      "q": "Will Figure lease robots to homes?",
+      "a": "In May 2026 Figure described a plan to lease future home robots for between $400 and $600 per month. This refers to newer models, not Figure 02, and is not an offer you can order today.",
+      "sourceUrl": "https://www.humanoidsdaily.com/news/inside-the-campus-figure-s-plan-for-24-7-autonomy-and-leasable-home-robots"
+    }
+  ],
+  "notes": "No price, reseller or rental listing exists for Figure 02. The $400 to $600 per month home lease figure is a company-level target for future Figure robots and should not be read as a Figure 02 price. Third-party estimates (for example about $50,000 per unit) were not traced to a Figure statement and are excluded."
+}

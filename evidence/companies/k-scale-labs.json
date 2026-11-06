@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "k-scale-labs",
+    "name": "K-Scale Labs",
+    "country": "United States",
+    "website": null,
+    "founded": 2024,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "k-scale-k-bot"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Y Combinator Winter 2024 batch; small pre-seed round. Ran out of funding in November 2025."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "k-scale-labs_source_001",
+      "title": "K-Scale Labs: Open-source humanoid robots",
+      "publisher": "ycombinator.com",
+      "url": "https://www.ycombinator.com/companies/k-scale-labs",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "k-scale-labs_source_002",
+      "title": "K-Scale Labs Cancels K-Bot Orders, Open-Sources All IP After Funding Fails",
+      "publisher": "humanoidsdaily.com",
+      "url": "https://www.humanoidsdaily.com/news/k-scale-labs-cancels-k-bot-orders-open-sources-all-ip-after-funding-fails",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

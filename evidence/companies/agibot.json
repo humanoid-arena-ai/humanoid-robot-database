@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "agibot",
+    "name": "AgiBot",
+    "country": "China",
+    "website": "https://www.agibot.com/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "agibot-a2",
+    "agibot-x2",
+    "agibot-g2"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "agibot_company_source_001",
+      "title": "AgiBot website",
+      "publisher": "AgiBot",
+      "url": "https://www.agibot.com/products/A2",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

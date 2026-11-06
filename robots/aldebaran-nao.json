@@ -1,0 +1,84 @@
+{
+  "id": "aldebaran-nao",
+  "name": "NAO",
+  "aliases": [
+    "NAO V6",
+    "NAO6"
+  ],
+  "companyId": "aldebaran",
+  "companyName": "Aldebaran",
+  "country": "France",
+  "announced": null,
+  "status": "purchasable",
+  "category": "research",
+  "summary": "NAO is a 58 cm programmable humanoid from Aldebaran, widely used in schools, universities and RoboCup. The current V6 has 25 DoF, two 5 MP cameras and runs 60-90 minutes per charge. About 20,000 units have been sold, and resellers still list it.",
+  "specs": {
+    "height_cm": {
+      "value": 58,
+      "original": "58 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 5.48,
+      "original": "5.48 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": {
+      "value": 1,
+      "original": "~60-90 min",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 25,
+      "original": "25",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "Two 5 MP cameras, four microphones, sonar, tactile sensors, IMU.",
+  "compute": "Intel Atom E3845 1.91 GHz, 4 GB RAM, 32 GB eMMC.",
+  "price": {
+    "value": 16990,
+    "currency": "USD",
+    "priceType": "list",
+    "configuration": "NAO V6 standard edition (RobotLAB)",
+    "sourceId": "s1"
+  },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.robotlab.com/store/nao/",
+  "highlights": [
+    "Generation Robots lists NAO V6 at EUR 10,020 incl. VAT (EUR 8,350 excl. VAT).",
+    "About 20,000 NAO units sold in 70 countries.",
+    "Maxvision (Shenzhen) bought Aldebaran's core assets, including NAO, in July 2025."
+  ],
+  "caveats": [
+    "Short battery life of about 60-90 minutes.",
+    "Ownership changed after Aldebaran's 2025 bankruptcy; long-term support depends on Maxvision."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NAO V6 Humanoid Robot",
+      "publisher": "RobotLAB",
+      "url": "https://www.robotlab.com/store/nao/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Programmable Humanoid Robot NAO V6",
+      "publisher": "Generation Robots",
+      "url": "https://www.generationrobots.com/en/403100-programmable-humanoid-robot-nao-v6.html",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "Maxvision buys core robot assets of Aldebaran, including Nao and Pepper",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/maxvision-buys-core-robot-assets-including-nao-pepper-aldebaran/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

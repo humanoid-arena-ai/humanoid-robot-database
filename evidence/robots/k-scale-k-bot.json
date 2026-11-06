@@ -1,0 +1,827 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "k-scale-k-bot",
+    "name": "K-Scale K-Bot",
+    "company_id": "k-scale-labs",
+    "company_name": "K-Scale Labs",
+    "country": "United States",
+    "generation": null,
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "discontinued",
+    "status_notes": "Pre-orders canceled and refunded in November 2025; company laid off most staff and open-sourced hardware (CERN-OHL-S-2.0) and software (MIT). Operations appear to be ceasing as of Humanoids Daily report.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "household chores (mopping floors, preparing bread in toasters)",
+      "open-source personal robot for developers",
+      "research and development platform for humanoid robotics"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.4m tall (approximately 4.7 inches)",
+      "value": 140,
+      "unit": "cm",
+      "notes": "Source says 1.4m tall (approximately 4.7 inches); 1.4 m is about 55 inches, so the 4.7 inches figure appears to be a typo. We use 1.4 m as the value.",
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "77 lbs 34kg",
+      "value": 34,
+      "unit": "kg",
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "22 lbs(10 kg)",
+      "value": 10,
+      "unit": "kg",
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "4 hours",
+      "value": 4,
+      "unit": "hours",
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity not specified; source only lists battery life of 4 hours.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed found in sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "No total DoF figure found in sources.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "Swappable end effectors; hands are easily swappable using a camera lens style mount (company engineer comment on Hacker News).",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "k-scale-k-bot_source_001",
+        "k-scale-k-bot_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "RGB camera",
+        "stereo vision",
+        "ultra-wide FOV camera",
+        "far-field microphones",
+        "stereo speakers"
+      ],
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Modular sensor and compute suite that is upgradable; no specific processor or model named.",
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Third-party video title indicates Quasi Direct Drive (QDD) Robstride actuators, but no transcript was reviewed.",
+      "source_ids": [
+        "k-scale-k-bot_source_006"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": 10999,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://shop.kscale.dev/",
+      "notes": "Starting price reported as $10,999 by Interesting Engineering before pre-orders were canceled and refunded in November 2025. The shop URL was shared by the founder on Hacker News; availability is now closed.",
+      "source_ids": [
+        "k-scale-k-bot_source_001",
+        "k-scale-k-bot_source_002",
+        "k-scale-k-bot_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "K-Bot is described with adaptable end effectors for different tasks; a company engineer on Hacker News says hands are easily swappable using a camera lens style mount. No dexterity demo or success rates were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001",
+        "k-scale-k-bot_source_003"
+      ],
+      "caveats": [
+        "No dexterity demonstration or manipulation task evidence.",
+        "Swappable hands are a hardware design claim, not a proven manipulation capability."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Initial release was expected to have basic locomotion, balance control, voice commands, and app-based control using pre-defined command sets; full autonomy was projected for June 2028 with less than 1 human intervention per day. A low-latency teleoperation demo was reported, which is explicitly teleoperated, not autonomous.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001",
+        "k-scale-k-bot_source_002"
+      ],
+      "caveats": [
+        "Autonomy projections are future company claims, not demonstrated capabilities.",
+        "The only reported demo was teleoperated, so no autonomous task execution was observed."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "The robot was expected to have basic locomotion and balance control at initial release. No walking speed, fall rate, or whole-body control demo was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "caveats": [
+        "Only a future capability claim; no observed locomotion or balance video with transcript/review.",
+        "No mobility metrics found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "The robot is equipped with RGB camera, stereo vision, ultra-wide FOV camera, far-field microphones, and stereo speakers. No perception benchmark or scene understanding demo was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "caveats": [
+        "Sensors are listed but no perception task or accuracy data was provided.",
+        "No autonomous scene understanding demonstration."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Initial release expected voice commands and app-based control using pre-defined command sets. The robot includes far-field microphones and stereo speakers.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "caveats": [
+        "Voice commands were a planned feature, not demonstrated in reviewed sources.",
+        "No interaction reliability or user study evidence."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Battery life is listed as 4 hours. No operating hours, failure rates, or reliability metrics were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "caveats": [
+        "Battery life is a spec, not observed runtime.",
+        "No reliability testing or field data was disclosed."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "The robot is 1.4 m tall and 34 kg with a 10 kg payload, intended for household chores like mopping and preparing bread in toasters. No safety certification or home deployment evidence was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "caveats": [
+        "No safety testing or human-proximity certification disclosed.",
+        "Discontinued before widespread home use."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Humanoids Daily reported that K-Scale had recently begun shipping its first K-Bot Founder's Edition units and that pre-orders were later canceled. No customer names, unit counts, or output metrics were provided.",
+      "evidence_level": 2,
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "caveats": [
+        "Only media report, not customer confirmation.",
+        "Small number of units shipped, no named customer or operational data.",
+        "Pre-orders were canceled, so no ongoing commercial deployment."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "The K-Bot was positioned as an open-source personal robot with a starting price of $10,999. The RL library and sim2real pipeline were released to developers. After shutdown, hardware was released under CERN-OHL-S-2.0 and software under MIT.",
+      "evidence_level": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001",
+        "k-scale-k-bot_source_002",
+        "k-scale-k-bot_source_003"
+      ],
+      "caveats": [
+        "Robot is no longer for sale; pre-orders refunded.",
+        "Open-source release is a company action, but no active support or community adoption verified.",
+        "Price reported by media, not official spec page."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "k-scale-k-bot_evidence_001",
+      "date": null,
+      "title": "K-Bot height and weight specs",
+      "claim": "K-Bot is designed to be 1.4 m tall and weighs 77 lbs (34 kg).",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Media article reporting company specs; not independently measured.",
+      "arena_relevance": "Defines size and weight for human environment fit.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Coming to other specifications, the robot is designed to be 1.4m tall (approximately 4.7 inches) and weighs 77 lbs 34kg).",
+      "source_location": "Interesting Engineering article, The specifications section",
+      "verification_notes": "The 4.7 inches figure is inconsistent with 1.4 m; treated as a typo.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_002",
+      "date": null,
+      "title": "K-Bot payload spec",
+      "claim": "K-Bot can handle a maximum payload of 22 lbs (10 kg).",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Media article reporting company specs.",
+      "arena_relevance": "Relevant for manipulation and carrying tasks.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It can handle a maximum payload of 22 lbs(10 kg).",
+      "source_location": "Interesting Engineering article, The specifications section",
+      "verification_notes": "No independent payload test found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_003",
+      "date": null,
+      "title": "K-Bot sensors",
+      "claim": "K-Bot is equipped with RGB, Stereo Vision, and Ultra-wide FOV, coupled with farfield microphones and stereo speakers.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Media article reporting company specs.",
+      "arena_relevance": "Forms the sensor suite for perception and interaction.",
+      "claim_type": "spec",
+      "supporting_excerpt": "In terms of camera, the K-Bot is equipped with RGB, Stereo Vision, and Ultra-wide FOV, coupled with farfield microphones and stereo speakers.",
+      "source_location": "Interesting Engineering article, The specifications section",
+      "verification_notes": "No sensor performance data or benchmarks.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_004",
+      "date": null,
+      "title": "K-Bot battery life",
+      "claim": "K-Bot has a battery life of 4 hours.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Spec only; no runtime test.",
+      "arena_relevance": "Indicates limited operational time.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It’ll also have a battery life of 4 hours.",
+      "source_location": "Interesting Engineering article, The specifications section",
+      "verification_notes": "No charging time or capacity given.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_005",
+      "date": null,
+      "title": "K-Bot starting price",
+      "claim": "K-Bot starting price was $10,999.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Media article; no official price page found.",
+      "arena_relevance": "Price point for accessibility, though later pre-orders canceled.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Starting from $10,999, the K-Bot could potentially replace household chores forever.",
+      "source_location": "Interesting Engineering article, The specifications section",
+      "verification_notes": "Price possibly outdated; later video titles mention $8,999 but not reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_006",
+      "date": null,
+      "title": "K-Bot modular compute and end effectors",
+      "claim": "K-Bot has modular sensor and compute suite that is upgradable, and different adaptable end effectors.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Media article reporting design.",
+      "arena_relevance": "Modularity supports developer customization.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The K-Bot will be equipped with a modular sensor and compute suite that will be upgradable. It will also have different adaptable end effectors to perform different tasks with ease.",
+      "source_location": "Interesting Engineering article, The specifications section",
+      "verification_notes": "No specific compute model or end effector details given.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_007",
+      "date": "2025-11-04",
+      "title": "K-Scale cancels K-Bot pre-orders",
+      "claim": "K-Scale Labs is canceling all pre-orders for its K-Bot and refunding customer deposits.",
+      "category": [
+        "status",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report based on CEO letter; no official company press release available.",
+      "arena_relevance": "Confirms robot is no longer available.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "K-Scale Labs, the Palo Alto startup that aimed to build a low-cost, open-source humanoid robot, is canceling all pre-orders for its K-Bot and refunding customer deposits.",
+      "source_location": "Humanoids Daily article, opening paragraph",
+      "verification_notes": "Reputable niche media; letter quoted but not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_008",
+      "date": "2025-11-04",
+      "title": "K-Scale open-sources K-Bot IP",
+      "claim": "K-Scale is releasing all of its proprietary IP, including hardware and software for K-Bot, under CERN-OHL-S-2.0 and MIT licenses.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Direct quote from CEO letter in media report.",
+      "arena_relevance": "Open-source release increases accessibility for developers, though not as a turnkey product.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "We are releasing all of K-Scale's proprietary IP, including the hardware and software for the K-Bot and Zeroth Bot projects, under non-commercial licenses (hardware under CERN-OHL-S-2.0, software under MIT).",
+      "source_location": "Humanoids Daily article, quote from Benjamin Bolte letter",
+      "verification_notes": "Company statement via media; no official license files reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_009",
+      "date": "2025-11-04",
+      "title": "K-Bot Founder's Edition shipping",
+      "claim": "K-Scale had recently begun shipping its first K-Bot Founder's Edition units.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Media report; no unit count or customer names.",
+      "arena_relevance": "Shows some units went to early customers before cancellation.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The company had recently begun shipping its first K-Bot Founder's Edition units",
+      "source_location": "Humanoids Daily article, development paragraph",
+      "verification_notes": "Only 'first units' reported; scale unclear.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_010",
+      "date": "2025-11-04",
+      "title": "Low-latency teleoperation demo reported",
+      "claim": "K-Scale Labs demonstrated impressive low-latency teleoperation of its robot.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Teleoperation, not autonomy; no direct video reviewed.",
+      "arena_relevance": "Shows a remote-control capability, but should not be credited as autonomy.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "and just last month demonstrated impressive low-latency teleoperation of its robot.",
+      "source_location": "Humanoids Daily article, development paragraph",
+      "verification_notes": "No transcript or direct observation; teleoperation is explicitly stated, so no autonomy credit.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_011",
+      "date": "2025-05-18",
+      "title": "K-Scale releases RL library and sim2real pipeline",
+      "claim": "K-Scale released a reinforcement learning library and sim2real pipeline for training humanoid policies.",
+      "category": [
+        "accessibility_value",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Official founder post on Hacker News; software availability is verifiable via GitHub, but we only use the source text.",
+      "arena_relevance": "Supports developer accessibility and research use.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Today, we’re releasing our reinforcement learning library and sim2real pipeline for people who want to train policies for humanoid robots.",
+      "source_location": "Hacker News Show HN post by codekansas (Benjamin Bolte)",
+      "verification_notes": "Company statement; no third-party validation of pipeline quality.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "k-scale-k-bot_evidence_012",
+      "date": "2025-05-18",
+      "title": "Swappable hands using camera lens mount",
+      "claim": "K-Bot hands are easily swappable using a camera lens style mount.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "k-scale-k-bot_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Comment from a user identifying as K-Scale engineer on Hacker News; not an official release.",
+      "arena_relevance": "Indicates modular manipulation hardware.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The hands are easily swappable using a camera lens style mount.",
+      "source_location": "Hacker News comment by alihkw, 'Kscale Engineer here'",
+      "verification_notes": "Forum claim; no official documentation found in reviewed sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "k-scale-k-bot_deployment_001",
+      "customer_or_partner": "K-Bot Founder's Edition early customers (unnamed)",
+      "site_or_context": "Palo Alto, California (shipped to customers)",
+      "task": "Early access/evaluation of the K-Bot platform",
+      "start_date": "2025-10",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No customer names or unit count provided.",
+        "Pre-orders later canceled; no ongoing deployment.",
+        "Media report, not customer confirmation."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "k-scale-k-bot_demo_001",
+      "title": "Low-latency teleoperation garage video",
+      "date": null,
+      "observed_capabilities": [
+        "low-latency teleoperation"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Teleoperation demo; no autonomy claimed.",
+      "environment": "garage",
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No direct video or transcript reviewed.",
+        "Teleoperation is not autonomous operation."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "Source describes low-latency teleoperation; no claim of autonomy.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "low-latency teleoperation demo",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "Pre-orders canceled and refunded; no active purchase path. The shop URL may be inactive.",
+      "impact_on_arena_scoring": "Accessibility/value remains limited despite open-source IP release."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Only a teleoperation demo was reported; autonomy claims are projections (June 2028) and not demonstrated in reviewed sources.",
+      "impact_on_arena_scoring": "No autonomy credit; teleoperation status explicitly noted."
+    },
+    {
+      "topic": "Spec gaps",
+      "description": "No total DoF, hand DoF, battery capacity, walking speed, compute model, or actuator details beyond a video title.",
+      "impact_on_arena_scoring": "Do not infer missing specs from directories or videos not reviewed."
+    },
+    {
+      "topic": "Reliability and commercial metrics",
+      "description": "Only battery life (4 hours) is given; no operating hours, failure rates, or customer output metrics. Founder's Edition shipping was reported but without unit counts or customer names.",
+      "impact_on_arena_scoring": "Endurance/reliability and commercial proof remain at low evidence levels."
+    },
+    {
+      "topic": "Price conflict",
+      "description": "Interesting Engineering reports $10,999; a YouTube title mentions $8,999 (source 11), not reviewed. We use $10,999 as the primary reported price, but pre-orders were canceled.",
+      "impact_on_arena_scoring": "Price should not be heavily weighted because product never reached general availability."
+    },
+    {
+      "topic": "Video sources",
+      "description": "Sources 6-11 are videos with titles only; no transcripts were available. We did not describe content beyond titles.",
+      "impact_on_arena_scoring": "Cannot credit any observable capabilities from those videos."
+    }
+  ],
+  "source_ids": [
+    "k-scale-k-bot_source_001",
+    "k-scale-k-bot_source_002",
+    "k-scale-k-bot_source_003",
+    "k-scale-k-bot_source_004",
+    "k-scale-k-bot_source_006"
+  ],
+  "sources": [
+    {
+      "id": "k-scale-k-bot_source_001",
+      "title": "World’s first garage-built humanoid robot open to creators worldwide",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/innovation/worlds-first-garage-built-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Media article reporting company specs; not independently measured. Includes a typo in height conversion."
+    },
+    {
+      "id": "k-scale-k-bot_source_002",
+      "title": "K-Scale Labs Cancels K-Bot Orders, Open-Sources All IP After Funding Fails",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/news/k-scale-labs-cancels-k-bot-orders-open-sources-all-ip-after-funding-fails",
+      "date_published": "2025-11-04",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Niche robotics newsletter; quotes CEO letter, no independent audit."
+    },
+    {
+      "id": "k-scale-k-bot_source_003",
+      "title": "Show HN: Train and deploy your own open-source humanoid in Python | Hacker News",
+      "publisher": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=44022106",
+      "date_published": "2025-05-18",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "medium",
+      "reliability_notes": "Official founder post; comments include claims from a self-identified engineer, not verified."
+    },
+    {
+      "id": "k-scale-k-bot_source_004",
+      "title": "K-Scale Robotics: Humanoid Development Claude Code Skill",
+      "publisher": "MCP Market",
+      "url": "https://mcpmarket.com/tools/skills/k-scale-robotics-ecosystem-1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party directory description of a MCP skill; not an official source."
+    },
+    {
+      "id": "k-scale-k-bot_source_006",
+      "title": "K-Scale Labs K-Bot Actuators for Humanoid Robot (Quasi Direct Drive QDD Robstride)",
+      "publisher": "YouTube Kevin Wood | Robotics & AI",
+      "url": "https://www.youtube.com/watch?v=qIEj6IRXJt4",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript or content reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "K-Bot was an open-source humanoid prototype from K-Scale Labs (Palo Alto) that gained attention for a low reported starting price ($10,999) and open-source development stack. The company shipped a small number of Founder's Edition units and demonstrated low-latency teleoperation, but canceled all pre-orders and open-sourced its IP in November 2025 after failing to raise funding. No autonomous operation, DoF, walking speed, or independent benchmarks were found.",
+    "strongest_positive_evidence": [
+      "Open-source RL library and sim2real pipeline released to developers (source 003).",
+      "Modular compute and swappable end effectors (source 001).",
+      "Hardware released under CERN-OHL-S-2.0 and software under MIT after shutdown (source 002).",
+      "Low price point for a humanoid, even if ultimately not available (source 001)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark, autonomy demo, or reliability data.",
+      "No total DoF, hand DoF, battery capacity, walking speed, or compute model.",
+      "Only a media report of Founder's Edition shipping; no customer names or unit counts.",
+      "Teleoperation demo is the only reported demo; no autonomous task execution."
+    ],
+    "conflicting_claims": [
+      "Height: 1.4 m tall (about 55 inches) vs 'approximately 4.7 inches' in source, likely a typo.",
+      "Price: $10,999 (Interesting Engineering) vs $8,999 in YouTube title (source 11, not reviewed).",
+      "Shutdown status: Humanoids Daily says operations appear to be ceasing, but a social media reply claims it hasn't shut down (source 2 mentions conflicting reports)."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit any autonomous task execution; only teleoperation was reported.",
+      "Do not treat the 2028 full autonomy projection as current capability.",
+      "Do not infer specs from video titles without transcript.",
+      "Do not describe K-Bot as commercially available or deployed at scale."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [],
+    "currentness_notes": "Discontinued after pre-order cancellation and IP open-sourcing in November 2025; no successor announced in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "K-Bot is available for purchase at $8,999",
+      "reason": "Title only from a YouTube source (source 11) not reviewed; conflicts with $10,999 from source 1 and pre-orders were canceled.",
+      "source_ids": []
+    },
+    {
+      "claim": "K-Bot will attain full autonomy with less than 1 human intervention per day by June 2028",
+      "reason": "Future company projection, not demonstrated; should not be credited as current capability.",
+      "source_ids": [
+        "k-scale-k-bot_source_001"
+      ]
+    },
+    {
+      "claim": "K-Scale Labs has completely shut down",
+      "reason": "Conflicting reports; Humanoids Daily says operations appear to be ceasing but social media replies suggested otherwise. We use 'discontinued' status based on pre-order cancellation and IP release.",
+      "source_ids": [
+        "k-scale-k-bot_source_002"
+      ]
+    },
+    {
+      "claim": "Any capabilities shown in video sources 6-11 beyond their titles",
+      "reason": "No transcripts or content available; only titles were provided.",
+      "source_ids": []
+    },
+    {
+      "claim": "Z-Bot details or comparison",
+      "reason": "Z-Bot is a separate product; not relevant to K-Bot evidence pack.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "K-Scale K-Bot was an open-source humanoid robot from K-Scale Labs (Palo Alto) with reported specs of 1.4 m height, 34 kg weight, 10 kg payload, 4-hour battery life, modular compute, swappable end effectors, and a starting price of $10,999. It targeted developers with an open-source RL library and sim2real pipeline. The company shipped a small number of Founder's Edition units and demonstrated low-latency teleoperation, but canceled all pre-orders and refunded deposits in November 2025 after failing to raise funding, then open-sourced hardware (CERN-OHL-S-2.0) and software (MIT). No autonomous operation, DoF, walking speed, or independent benchmarks were found.",
+    "strongest_evidence": [
+      "Open-source RL library and sim2real pipeline released (source 003).",
+      "Modular compute and swappable end effectors (source 001).",
+      "IP released under CERN-OHL-S-2.0 and MIT after shutdown (source 002).",
+      "Low reported starting price of $10,999 (source 001)."
+    ],
+    "weakest_evidence": [
+      "No independent benchmark, intervention log, or failure rate.",
+      "No DoF, battery capacity, walking speed, or compute model.",
+      "Only a media report of Founder's Edition shipping; no customer names or unit counts.",
+      "Teleoperation is the only reported demo; no autonomous task execution."
+    ],
+    "known_do_not_credit": [
+      "Autonomous task execution; only teleoperation was reported.",
+      "Full autonomy by June 2028 as current capability.",
+      "Open-source IP as proof of commercial availability.",
+      "Any video content beyond titles in sources 6-11."
+    ],
+    "recommended_confidence": "low"
+  }
+}

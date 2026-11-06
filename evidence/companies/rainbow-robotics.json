@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "rainbow-robotics",
+    "name": "Rainbow Robotics",
+    "country": "South Korea",
+    "website": "https://rainbow-robotics.com",
+    "founded": 2011,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "rainbow-rb-y1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Samsung Electronics raised its stake from 14.7% to 35% to become the largest shareholder."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "rainbow-robotics_source_001",
+      "title": "Rainbow Robotics",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Rainbow_Robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "rainbow-robotics_source_002",
+      "title": "Samsung increases stake in Rainbow Robotics, establishes Future Robotics Office",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/samsung-increases-stake-in-rainbow-robotics-establishes-future-robotics-office/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

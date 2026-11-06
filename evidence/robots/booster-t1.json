@@ -1,0 +1,1137 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "booster-t1",
+    "name": "Booster T1",
+    "company_id": "booster-robotics",
+    "company_name": "Booster Robotics",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Booster's current site features T2 and K1; T1 remains available through authorized distributors and resellers, including used units. No direct Booster sale or new production confirmed.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "robotics research and education",
+      "RoboCup humanoid soccer competition",
+      "reinforcement learning locomotion research",
+      "embodied AI development",
+      "teaching and demonstrations"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.18 m (118 cm); some sources say ~1.2 m",
+      "value": 118,
+      "unit": "cm",
+      "notes": "Source 6 archived Booster spec lists 118 × 47 × 23 cm; source 2 says 1.18 m; sources 1, 5, 7 say ~1.2 m. Use 118 cm.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "~30 kg",
+      "value": 30,
+      "unit": "kg",
+      "source_ids": [
+        "booster-t1_source_001",
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "~0.5 kg per arm",
+      "value": 0.5,
+      "unit": "kg",
+      "notes": "Rated payload is per arm, roughly a full water bottle. No total payload published.",
+      "source_ids": [
+        "booster-t1_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "~2 hours walking, ~4 hours standing",
+      "value": 2,
+      "unit": "hours",
+      "notes": "Standing runtime is about 4 hours; walking runtime is best-case.",
+      "source_ids": [
+        "booster-t1_source_001",
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ]
+    },
+    "battery": {
+      "original_value": "10.5 Ah swappable battery (reseller); 9.5 Ah swappable per Humanoza",
+      "value": 10.5,
+      "unit": "Ah",
+      "notes": "Source 4 lists 10.5 Ah replacement battery for T1; source 6 table says 10.5 Ah; source 2 says 9.5 Ah swappable with 10.5 Ah charging setup. Conflict noted.",
+      "source_ids": [
+        "booster-t1_source_004",
+        "booster-t1_source_006",
+        "booster-t1_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "roughly 0.97 m/s walking (source 2); no official walking speed published per source 5",
+      "value": 0.97,
+      "unit": "m/s",
+      "notes": "Humanoza calls it a published maximum for stable omnidirectional walking, not a sustained cruise. Humanoid Press says no official walking speed published. Use with caution.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_005"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 23,
+      "notes": "Standard 23 DoF (6 per leg, 4 per arm, 1 waist, 2 head); 31 with grippers (7-DoF arms), 41 with dexterous hands.",
+      "source_ids": [
+        "booster-t1_source_001",
+        "booster-t1_source_002",
+        "booster-t1_source_006",
+        "booster-t1_source_007"
+      ]
+    },
+    "hands": {
+      "description": "Base configuration has simple end effectors/stubs and no manipulation. Optional grippers (31 DoF total) or dexterous hands (41 DoF total) available.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_004",
+        "booster-t1_source_006"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "depth/RGB-D camera (Intel depth camera per source 2)",
+        "9-axis IMU",
+        "six-microphone array and speaker",
+        "joint encoders",
+        "3D LiDAR (source 2 only; not in official spec table)"
+      ],
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006",
+        "booster-t1_source_007"
+      ]
+    },
+    "compute": {
+      "description": "NVIDIA Jetson AGX Orin 32 GB (~200 TOPS) standard; Standard/Customized versions add Intel Core i7-1370P. Basic version may only have Jetson.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006",
+        "booster-t1_source_007"
+      ]
+    },
+    "actuators": {
+      "description": "Full force-controlled actuators with dual encoders; mixed torque/velocity/position control; knee joint peak torque 130 N·m.",
+      "source_ids": [
+        "booster-t1_source_006",
+        "booster-t1_source_007"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.roboticscenter.ai/store/product/booster-t1",
+      "notes": "Available through authorized distributors and resellers; Booster does not publish MSRP. US reseller prices: Basic ~$29,800, Standard ~$33,949, with grippers ~$50,925. EU used unit listed at €31,200. No official price.",
+      "source_ids": [
+        "booster-t1_source_001",
+        "booster-t1_source_002",
+        "booster-t1_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "T1 is locomotion-first; base arms are 4-DoF with no hands. Optional grippers (31 DoF) or dexterous hands (41 DoF) enable basic grasping/fine manipulation, payload ~0.5 kg per arm. No detailed manipulation demo or success rate found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_004",
+        "booster-t1_source_006"
+      ],
+      "caveats": [
+        "No manipulation video transcript or independent benchmark",
+        "No grip force or hand DoF specification",
+        "Payload is very low; not for physical work"
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Supports onboard learned policies, teleoperation, and autonomous RoboCup play via official robocup_demo. RoboCup matches are unscripted but autonomy details not documented in reviewed sources. Source 2 says realistic deployment has a person near kill switch; not unattended.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_003",
+        "booster-t1_source_006"
+      ],
+      "caveats": [
+        "Autonomy not independently verified",
+        "Teleoperation_status for videos not disclosed",
+        "No intervention logs"
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Omnidirectional walking at ~0.97 m/s, push/fall recovery, rising from prone, dynamic motions; 2025 RoboCup AdultSize champion and 2026 Large division title; official video titles indicate CES unstoppable and soccer solution, but content not reviewed.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_003",
+        "booster-t1_source_006",
+        "booster-t1_source_011",
+        "booster-t1_source_012"
+      ],
+      "caveats": [
+        "Video content not reviewed; titles only",
+        "No official walking speed or fall-recovery metric published per Humanoid Press",
+        "Speed figure is best-case"
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Depth camera, 9-axis IMU, mic array/speaker, optional LiDAR? Compute 200 TOPS enables onboard vision models. No specific perception benchmark or demo described.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006",
+        "booster-t1_source_007"
+      ],
+      "caveats": [
+        "Sensor list inconsistent and not fully official",
+        "No camera resolution/LiDAR type published",
+        "Perception capability inferred from hardware only"
+      ]
+    },
+    "human_interaction": {
+      "summary": "Microphone array and speaker support ASR/TTS, mobile app control; designed for HRI experiments. No demo evidence found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_007"
+      ],
+      "caveats": [
+        "No speech recognition accuracy or user study"
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Quoted ~2 h walking, ~4 h standing on swappable battery; RoboCup competition format exposes fall recovery and thermal endurance, but no official endurance test or failure data. Source 6 notes need padded floor, emergency stop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_005",
+        "booster-t1_source_006"
+      ],
+      "caveats": [
+        "Runtime best-case",
+        "No independent reliability data",
+        "No IP rating/operating temp"
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "1.18 m, 30 kg, two-person carry; designed for flat indoor lab/classroom/competition surfaces; not outdoors/uneven terrain; source 6 warns padded floor and safety gantry.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ],
+      "caveats": [
+        "No safety certification",
+        "Falls on hard floor damage robot and may injure people"
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Sold through authorized distributors; Booster says >50 teams/institutions adopted; named university users include Purdue, Carnegie Mellon, UC Berkeley (from archived Booster page); RoboCup wins with Tsinghua team.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_003",
+        "booster-t1_source_006"
+      ],
+      "caveats": [
+        "No customer press releases or deployment metrics",
+        "Names from reseller guide citing archived page",
+        "No unit sales volume officially confirmed"
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Purchasable via resellers with configurations from ~$29,800 Basic to ~$50,925 with grippers in US; EU used unit €31,200. Booster publishes no MSRP, and pricing varies by region/config.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-t1_source_001",
+        "booster-t1_source_002",
+        "booster-t1_source_004"
+      ],
+      "caveats": [
+        "No official price list",
+        "US import may be restricted by FCC after July 2026, authorization unclear",
+        "Prices are reseller quotes and change"
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "booster-t1_evidence_001",
+      "date": null,
+      "title": "Booster T1 research/education positioning",
+      "claim": "Booster T1 is a full-body bipedal humanoid sold as a developer platform to universities, research institutes and competition teams; it is a research and education platform, not a competitor to Figure or Optimus.",
+      "category": [
+        "status",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Humanoza editorial review, verified against maker docs.",
+      "arena_relevance": "Clarifies category and intended use.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The T1 is a full-body bipedal humanoid built by Booster Robotics, a Beijing company founded in 2023, and sold as a developer platform to universities, research institutes and competition teams.",
+      "source_location": "Humanoza article, What is the Booster T1 Robot? section",
+      "verification_notes": "Media summary; consistent with reseller product pages.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_002",
+      "date": null,
+      "title": "Height, weight, payload, speed",
+      "claim": "T1 stands 1.18 m, weighs ~30 kg, walks at ~0.97 m/s, payload ~0.5 kg per arm.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Humanoza values; source 6 confirms 118cm, 30kg, speed not published.",
+      "arena_relevance": "Defines size, speed and manipulation limits.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It stands 1.18 m, weighs about 30 kg, walks omnidirectionally at roughly 0.97 m/s - call it 3.5 km/h, a slow human stroll - and carries a payload of about 0.5 kg per arm.",
+      "source_location": "Humanoza article, What is the Booster T1 paragraph",
+      "verification_notes": "Speed not official per Humanoid Press; payload is per arm low.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_003",
+      "date": null,
+      "title": "Degrees of freedom configurations",
+      "claim": "Base 23 DoF, 31 with grippers, 41 with dexterous hands.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ],
+      "confidence": 0.8,
+      "notes": "Consistent across sources.",
+      "arena_relevance": "Shows modularity but base lacks hands.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The base machine has 23 degrees of freedom. Fit the optional grippers and that becomes 31; fit the dexterous hands and it becomes 41.",
+      "source_location": "Humanoza article, What is the Booster T1 section",
+      "verification_notes": "Matches source 6 table.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_004",
+      "date": null,
+      "title": "Onboard compute specification",
+      "claim": "Standard configuration has NVIDIA Jetson AGX Orin 32 GB (~200 TOPS) plus Intel Core i7-1370P.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Source 6 says Basic may only have AGX Orin; Standard/Customized add Intel.",
+      "arena_relevance": "Enables onboard AI.",
+      "claim_type": "spec",
+      "supporting_excerpt": "On the Standard configuration the compute is genuinely serious for the size class - an NVIDIA Jetson AGX Orin with 32 GB, quoted at around 200 TOPS, alongside an Intel Core i7-1370P.",
+      "source_location": "Humanoza article, What is the Booster T1 section",
+      "verification_notes": "Compute not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_005",
+      "date": null,
+      "title": "Sensor suite claim",
+      "claim": "Depth/RGB-D camera, 3D LiDAR, 9-axis IMU, joint encoders, six-microphone array and speaker.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "LiDAR not in official table source 6; use cautiously.",
+      "arena_relevance": "Basis for perception and HRI.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Sensing covers an Intel depth/RGB-D camera, a 3D LiDAR, a nine-axis IMU, joint encoders throughout, and a six-microphone array with speaker for voice work.",
+      "source_location": "Humanoza article, What is the Booster T1 section",
+      "verification_notes": "Source 5 says full sensor list not published; source 6 only lists depth camera, 9-axis IMU, 6-mic array speaker.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_006",
+      "date": null,
+      "title": "Battery and runtime",
+      "claim": "Battery 9.5 Ah swappable, quoted endurance about two hours walking and four hours standing.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Source 4/6 list 10.5 Ah battery; conflict noted.",
+      "arena_relevance": "Sets endurance expectations.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Battery: 9.5 Ah, swappable, with a 10.5 Ah charging setup. Quoted endurance is about two hours walking and about four hours standing.",
+      "source_location": "Humanoza article, specs section",
+      "verification_notes": "Runtime best-case per source 2; walking heavily dependent on gait.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_007",
+      "date": null,
+      "title": "US reseller pricing and availability",
+      "claim": "As of 30 Aug 2026, US distributor pricing: Basic ~$29,800, Standard ~$33,949, Standard with grippers ~$50,925.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Reseller quotes, no official MSRP.",
+      "arena_relevance": "Price point for comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "As of 30 August 2026, authorised distributor pricing in the US looks like this: about $29,800 for the T1 Basic, about $33,949 for the T1 Standard, and about $50,925 for a Standard with grippers.",
+      "source_location": "Humanoza article, How much does a Booster T1 cost? section",
+      "verification_notes": "Prices from reseller quote sheets; move and exclude shipping/customs.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_008",
+      "date": null,
+      "title": "RoboCup championships",
+      "claim": "T1 took AdultSize title at RoboCup 2025 with Tsinghua Hephaestus, and Large division at RoboCup 2026; THU Huoshen Team retained title with back-to-back championships.",
+      "category": [
+        "mobility_whole_body_control",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Independent competition outcome reported by media.",
+      "arena_relevance": "Strong real-world dynamic mobility proof.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "At RoboCup 2025 it took the AdultSize title under Tsinghua University's Hephaestus team, and at RoboCup 2026 in South Korea it did it again in the Large division - while Booster's smaller K1 took the Middle division under Germany's B-Human and a K1 Air took the Small.",
+      "source_location": "Humanoza article, Overview section; Interesting Engineering article",
+      "verification_notes": "RoboCup is independent, but details of autonomy and hardware modifications not provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_009",
+      "date": null,
+      "title": "Open software/SDK/ROS2",
+      "claim": "T1 supports ROS 2, open SDK, high/low APIs, simulation tools Isaac Sim, MuJoCo, Webots; open-source training code on GitHub.",
+      "category": [
+        "autonomy_task_execution",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_006",
+        "booster-t1_source_007"
+      ],
+      "confidence": 0.7,
+      "notes": "Reseller and Muzix descriptions.",
+      "arena_relevance": "Developer accessibility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The T1’s software environment is fully open and developer-friendly, supporting ROS 2, an open SDK, high- and low-level APIs and compatibility with major simulation tools like Isaac Sim and MuJoCo.",
+      "source_location": "Muzix product page, Software section",
+      "verification_notes": "Source 6 confirms SDK, ROS2 interface, booster_gym public.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_010",
+      "date": null,
+      "title": "Named university adopters",
+      "claim": "Booster lists university users: Purdue table-tennis project, CMU FALCON RL framework, UC Berkeley FastTD3 algorithm.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "booster-t1_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "From archived Booster page via Robotics Center guide.",
+      "arena_relevance": "Academic adoption evidence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Booster lists university users of the T1 on its archived page, including a table-tennis project at Purdue, the FALCON RL framework at Carnegie Mellon and the FastTD3 algorithm at UC Berkeley.",
+      "source_location": "Robotics Center guide, Which Booster should you buy? section",
+      "verification_notes": "Company/reseller claim; no metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_011",
+      "date": null,
+      "title": "Missing sensor specs",
+      "claim": "Booster Robotics confirms advanced sensing but does not publish a full sensor list.",
+      "category": [
+        "perception_scene_understanding",
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "booster-t1_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Humanoid Press database gap.",
+      "arena_relevance": "Caps perception evidence.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Booster Robotics confirms advanced sensing but does not publish a full sensor list.",
+      "source_location": "Humanoid Press database, Perception & Sensors section",
+      "verification_notes": "Confirmed by source 2/6 inconsistencies.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "perception_scene_understanding"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_012",
+      "date": null,
+      "title": "Walking speed not officially published",
+      "claim": "No official walking speed, step height, incline capability, or fall-recovery metrics have been published.",
+      "category": [
+        "mobility_whole_body_control",
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "booster-t1_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Humanoid Press notes official gap; source 2 provides 0.97 m/s but not official.",
+      "arena_relevance": "Caps mobility spec confidence.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "No official walking speed, step height, incline capability, or fall-recovery metrics have been published.",
+      "source_location": "Humanoid Press database, Mobility section",
+      "verification_notes": "Source 2 media gives 0.97 m/s, but not from Booster official.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_013",
+      "date": null,
+      "title": "US import authorization unclear",
+      "claim": "US buyers: no pre-July 2026 FCC authorization for T1 appears in public records; ask distributor for FCC ID.",
+      "category": [
+        "accessibility_value",
+        "security_caution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Media caveat; absence not proof.",
+      "arena_relevance": "May affect US purchasability.",
+      "claim_type": "security_caution",
+      "supporting_excerpt": "US buyers: no pre-July 2026 authorization for the T1 is on public record — ask your distributor for the FCC ID.",
+      "source_location": "Humanoza article, Buying the Booster T1 — Status unclear section",
+      "verification_notes": "Source 6 also mentions FCC Covered List; new models may not receive authorization.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_014",
+      "date": null,
+      "title": "Limits: payload and supervision",
+      "claim": "The T1 is a research and education platform, comparing it to Figure 03, Apollo or Tesla Optimus is a category error; rated payload about 0.5 kg per arm; not for physical work.",
+      "category": [
+        "manipulation_dexterity",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t1_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Media summary of limitations.",
+      "arena_relevance": "Prevents overclaiming industrial use.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The T1 is a research and education platform, and comparing it to Figure 03, Apollo or Tesla Optimus is a category error.",
+      "source_location": "Humanoza article, What it actually does section",
+      "verification_notes": "Consistent with payload spec and reseller positioning.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "booster-t1_evidence_015",
+      "date": null,
+      "title": "Unpublished engineering specs",
+      "claim": "Booster has not published walking speed, payload, grip force, camera resolution, IP rating, etc.",
+      "category": [
+        "missing_evidence",
+        "specs"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "booster-t1_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Humanoid Press list of not published specs.",
+      "arena_relevance": "Gap list for judges.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Booster Robotics has NOT published the following engineering‑grade specifications: Mobility - Walking speed (m/s), Step height, Max incline, Turning radius, Fall‑recovery capability; Manipulation - Payload (kg), Grip force (N) ...",
+      "source_location": "Humanoid Press database, Company Source section",
+      "verification_notes": "Some items may be partially published by resellers.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "booster-t1_demo_001",
+      "title": "Humanoid Robot T1 by Booster Robotics! 🤖 | Unboxing & Review",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-t1_source_008"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript available.",
+        "Content not reviewed; no capabilities credited beyond title."
+      ],
+      "editing_notes": "No transcript; manual video review required before using as evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed in title or metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-t1_demo_002",
+      "title": "Unboxing & Getting Started with Booster T1 | Humanoid Robot - Booster Robotics - Generation Robots",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-t1_source_009"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript available.",
+        "Content not reviewed; no capabilities credited beyond title."
+      ],
+      "editing_notes": "No transcript; manual video review required before using as evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed in title or metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-t1_demo_003",
+      "title": "Booster T1 Humanoid Robot 🤖 Open-Source Robot for Research, ROS 2 & AI Development",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-t1_source_010"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript available.",
+        "Content not reviewed; no capabilities credited beyond title."
+      ],
+      "editing_notes": "No transcript; manual video review required before using as evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed in title or metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-t1_demo_004",
+      "title": "Booster T1 at CES is Unstoppable",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CES event",
+      "source_ids": [
+        "booster-t1_source_011"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript available.",
+        "Content not reviewed; no capabilities credited beyond title."
+      ],
+      "editing_notes": "No transcript; manual video review required before using as evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed in title or metadata.",
+      "observed_segments": []
+    },
+    {
+      "id": "booster-t1_demo_005",
+      "title": "Booster T1 - A Ready-to-Use Humanoid Robot Soccer Solution",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "booster-t1_source_012"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript available.",
+        "Content not reviewed; no capabilities credited beyond title."
+      ],
+      "editing_notes": "No transcript; manual video review required before using as evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed in title or metadata.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability and US import",
+      "description": "T1 is purchasable through resellers and authorized distributors, but Booster publishes no MSRP. US import authorization after July 2026 FCC changes is unclear; buyers are advised to verify FCC ID.",
+      "impact_on_arena_scoring": "Accessibility/value should reflect reseller-only availability and possible US import restrictions."
+    },
+    {
+      "topic": "Manipulation and payload",
+      "description": "Base T1 has no hands and 4-DoF arms; payload is only ~0.5 kg per arm. Gripper and dexterous hand versions exist but are expensive.",
+      "impact_on_arena_scoring": "Manipulation scores should be low for base configuration; treatment as a manipulation robot is a category error."
+    },
+    {
+      "topic": "Autonomy and teleoperation",
+      "description": "Source 2 describes teleop + onboard AI and says realistic deployment has a person near kill switch. Video titles provide no autonomy disclosure.",
+      "impact_on_arena_scoring": "Do not credit autonomous task execution beyond the RoboCup competition context, and avoid strong autonomy claims."
+    },
+    {
+      "topic": "Missing official specifications",
+      "description": "No official walking speed, step height, incline, fall-recovery metrics, payload, grip force, camera resolution, LiDAR type, IP rating, or full sensor list are published by Booster.",
+      "impact_on_arena_scoring": "Many spec-based dimensions remain evidence_level 1 or 0; avoid filling gaps from third-party directories."
+    },
+    {
+      "topic": "Competition evidence confidence",
+      "description": "RoboCup wins are independent but do not provide per-robot reliability metrics, intervention counts, or autonomy logs. Winning team may modify hardware/software.",
+      "impact_on_arena_scoring": "Credit dynamic mobility and fall recovery but not general autonomous deployment."
+    },
+    {
+      "topic": "Video evidence not reviewed",
+      "description": "All provided video sources have only titles; no transcripts or content descriptions were available. Therefore no capabilities from videos can be credited.",
+      "impact_on_arena_scoring": "Mobility and autonomy evidence from demos should be considered unverified until manual review."
+    }
+  ],
+  "source_ids": [
+    "booster-t1_source_001",
+    "booster-t1_source_002",
+    "booster-t1_source_003",
+    "booster-t1_source_004",
+    "booster-t1_source_005",
+    "booster-t1_source_006",
+    "booster-t1_source_007",
+    "booster-t1_source_008",
+    "booster-t1_source_009",
+    "booster-t1_source_010",
+    "booster-t1_source_011",
+    "booster-t1_source_012"
+  ],
+  "sources": [
+    {
+      "id": "booster-t1_source_001",
+      "title": "Booster T1",
+      "publisher": "Robotics Center",
+      "url": "https://www.roboticscenter.ai/store/product/booster-t1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller product page; in-stock listing with quote."
+    },
+    {
+      "id": "booster-t1_source_002",
+      "title": "Booster T1 Robot 2026: Price, Specs & RoboCup Champion",
+      "publisher": "Humanoza",
+      "url": "https://humanoza.com/robots/booster-t1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Editorial review, verified against maker documentation, but not official."
+    },
+    {
+      "id": "booster-t1_source_003",
+      "title": "Booster T2: A humanoid robot with powerful onboard Nvidia compute",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/china-humanoid-robot-unveiled-nvidia-compute",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Media article; only mentions T1 RoboCup win in passing."
+    },
+    {
+      "id": "booster-t1_source_004",
+      "title": "Humanoid robots Booster Robotics | Generation Robots",
+      "publisher": "Génération Robots",
+      "url": "https://www.generationrobots.com/en/559-humanoid-robots-booster-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller category page; lists used T1 and batteries."
+    },
+    {
+      "id": "booster-t1_source_005",
+      "title": "Booster T1 | Open-Source Humanoid Robot for Developers",
+      "publisher": "Humanoid Press",
+      "url": "https://humanoid.press/database/database-booster-t1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Database/editorial; includes known gaps."
+    },
+    {
+      "id": "booster-t1_source_006",
+      "title": "Booster T1 and T2: Price, Specs and Setup Guide (2026)",
+      "publisher": "Robotics Center",
+      "url": "https://www.roboticscenter.ai/guides/humanoids/booster-t1-guide",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller guide with archived Booster specs."
+    },
+    {
+      "id": "booster-t1_source_007",
+      "title": "BOOSTER T1 - High-Performance Versatile Humanoid Robot - BASIC",
+      "publisher": "Muzix",
+      "url": "https://www.muzix.eu/ee/Booster-Robotics/Robotic/BST-T1-BASIC/BOOSTER-T1-High-Performance-Versatile-Humanoid-Robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller product page; detailed specs and configuration options."
+    },
+    {
+      "id": "booster-t1_source_008",
+      "title": "Humanoid Robot T1 by Booster Robotics! 🤖 | Unboxing & Review",
+      "publisher": "KhanFlicks",
+      "url": "https://www.youtube.com/watch?v=44re6n9P840",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript."
+    },
+    {
+      "id": "booster-t1_source_009",
+      "title": "Unboxing & Getting Started with Booster T1 | Humanoid Robot - Booster Robotics - Generation Robots",
+      "publisher": "Generation Robots",
+      "url": "https://www.youtube.com/watch?v=bHboKsEwMtA",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Reseller video; no transcript."
+    },
+    {
+      "id": "booster-t1_source_010",
+      "title": "Booster T1 Humanoid Robot 🤖 Open-Source Robot for Research, ROS 2 & AI Development",
+      "publisher": "Generation Robots",
+      "url": "https://www.youtube.com/watch?v=8z4eCsIqsMI",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Reseller video; no transcript."
+    },
+    {
+      "id": "booster-t1_source_011",
+      "title": "Booster T1 at CES is Unstoppable",
+      "publisher": "Booster Robotics",
+      "url": "https://www.youtube.com/watch?v=2JkBcs7tNsI",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Official Booster channel; no transcript."
+    },
+    {
+      "id": "booster-t1_source_012",
+      "title": "Booster T1 - A Ready-to-Use Humanoid Robot Soccer Solution",
+      "publisher": "Booster Robotics",
+      "url": "https://www.youtube.com/watch?v=RcrW7q0tGfc",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Official Booster channel; no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Booster T1 is a compact (1.18 m, 30 kg) bipedal research humanoid with open SDK, ROS 2, strong onboard compute (Jetson AGX Orin + i7), and a genuine RoboCup competition record (2025 AdultSize champion, 2026 Large division). However, it is not an industrial or home robot: base has no hands, payload is ~0.5 kg per arm, many specifications are unpublished by Booster, and it has been superseded on Booster's own site by T2/K1.",
+    "strongest_positive_evidence": [
+      "2025 RoboCup AdultSize champion under Tsinghua Hephaestus.",
+      "2026 RoboCup Large division title / back-to-back championships reported by Interesting Engineering.",
+      "Available through multiple resellers with detailed US/EU pricing; open-source SDK and ROS2 support.",
+      "Named academic adopters: Purdue table-tennis, CMU FALCON RL, UC Berkeley FastTD3."
+    ],
+    "weakest_or_missing_evidence": [
+      "No official walking speed, step height, incline, fall-recovery metrics.",
+      "No full sensor list, camera resolution, LiDAR type, IP rating.",
+      "No payload or grip force officially published.",
+      "Video evidence only titles; no transcript or content review.",
+      "No autonomy logs or unattended operation evidence."
+    ],
+    "conflicting_claims": [
+      "Height: 1.18 m (Humanoza) vs ~1.2 m (multiple resellers/Humanoid Press).",
+      "Battery capacity: 9.5 Ah (Humanoza) vs 10.5 Ah (Generation Robots battery listing, Robotics Center table).",
+      "Walking speed: ~0.97 m/s (Humanoza) vs 'not published' (Humanoid Press/Robotics Center table).",
+      "Price: US Basic $29,800 vs EU used €31,200 vs Muzix ex-VAT €33,099; all reseller figures, no MSRP."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit industrial or warehouse manipulation; payload is ~0.5 kg per arm and base has no hands.",
+      "Do not treat 0.97 m/s as an official Booster spec.",
+      "Do not credit autonomy from video titles; no transcripts were available.",
+      "Do not treat RoboCup wins as evidence of commercial deployment or general autonomous task execution outside competition.",
+      "Do not claim T1 is current on Booster's site; it has been superseded by T2/K1 although still sold by resellers.",
+      "Do not use the provided K1 video (source 13) for T1 evidence."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "booster-t2",
+      "booster-k1"
+    ],
+    "currentness_notes": "Booster's current site features T2 and K1; T1 is not featured on the main page but remains available via resellers and authorized distributors. Archived official T1 page used by resellers for specs."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Booster T1 has a single official MSRP.",
+      "reason": "Booster publishes no open price list; prices are reseller quotes and vary by configuration and region.",
+      "source_ids": [
+        "booster-t1_source_002"
+      ]
+    },
+    {
+      "claim": "T1 is a full manipulation-capable robot by default.",
+      "reason": "Base configuration has no hands (4-DoF arms) and payload ~0.5 kg per arm; grippers/dexterous hands are expensive optional upgrades.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ]
+    },
+    {
+      "claim": "Walking speed of 0.97 m/s is official Booster specification.",
+      "reason": "Humanoid Press and Robotics Center table indicate no official walking speed published; 0.97 m/s comes from Humanoza media.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_005",
+        "booster-t1_source_006"
+      ]
+    },
+    {
+      "claim": "T1 is FCC authorized for new US imports after July 2026.",
+      "reason": "Humanoza reports no pre-July 2026 authorization found in public records; absence not proof, but buyers advised to verify.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_006"
+      ]
+    },
+    {
+      "claim": "RoboCup wins imply commercial deployment or autonomous general task execution.",
+      "reason": "RoboCup is a competition context; no named customer metrics, intervention logs, or autonomy proof beyond that context.",
+      "source_ids": [
+        "booster-t1_source_002",
+        "booster-t1_source_003"
+      ]
+    },
+    {
+      "claim": "Source 13 K1 video evidence is relevant to T1.",
+      "reason": "Source 13 is about Booster K1, not T1; excluded to avoid cross-model contamination.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 5,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Booster T1 is a 1.18 m, 30 kg bipedal research humanoid from Booster Robotics with 23 DoF standard (31 grippers, 41 dexterous hands), NVIDIA Jetson AGX Orin compute, ROS 2 SDK, and ~2 h walking runtime. Strongest evidence is RoboCup success: 2025 AdultSize champion and 2026 Large division title. It is purchasable through resellers (~$29,800-$50,925) but Booster publishes no MSRP; payload is only ~0.5 kg per arm, base has no hands, and many specs (walking speed, full sensor list) are not officially published. It is a research/education platform, now superseded by T2/K1 on Booster's site.",
+    "strongest_evidence": [
+      "2025 RoboCup AdultSize champion and 2026 Large division title (evidence_008).",
+      "US reseller pricing and availability with open software/SDK (evidence_007, evidence_009).",
+      "Named university adopters from archived Booster page (evidence_010)."
+    ],
+    "weakest_evidence": [
+      "No official walking speed or fall-recovery metrics published (evidence_012).",
+      "No full sensor list or manipulation payload/grip force (evidence_011, evidence_015).",
+      "All video sources are titles only; no content reviewed (demos)."
+    ],
+    "known_do_not_credit": [
+      "Industrial/warehouse manipulation or heavy payload",
+      "Official walking speed of 0.97 m/s",
+      "Autonomous unattended operation",
+      "Single MSRP or direct Booster sale",
+      "Source 13 (Booster K1 video) for T1 evidence"
+    ],
+    "recommended_confidence": "medium"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "pollen-reachy-2",
+  "name": "Reachy 2",
+  "aliases": [
+    "Reachy"
+  ],
+  "companyId": "pollen-robotics",
+  "companyName": "Pollen Robotics (Hugging Face)",
+  "country": "France",
+  "announced": null,
+  "status": "purchasable",
+  "category": "research",
+  "summary": "Reachy 2 is an open-source humanoid upper body on an omnidirectional wheeled base, made by Pollen Robotics, now part of Hugging Face. It has two 7-DoF bio-inspired arms and runs on ROS 2 with a Python SDK. Press reported a price of $70,000 and use at labs such as Cornell and Carnegie Mellon.",
+  "specs": {
+    "height_cm": {
+      "value": 166,
+      "original": "136-166 cm (adjustable)",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 50,
+      "original": "Up to 50 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 3,
+      "original": "~3 kg per arm",
+      "sourceId": "s1"
+    },
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Parallel grippers on 7-DoF arms.",
+  "sensors": "Stereo and RGB-D cameras, LiDAR on the mobile base.",
+  "compute": "ROS 2 Humble, Python SDK; compatible with Hugging Face LeRobot.",
+  "price": {
+    "value": 70000,
+    "currency": "USD",
+    "priceType": "reported",
+    "configuration": "Reachy 2",
+    "sourceId": "s2"
+  },
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://pollen-robotics.com/reachy-2/",
+  "highlights": [
+    "Hugging Face acquired Pollen Robotics in April 2025.",
+    "Uses Pollen's Orbita parallel actuators in the neck and wrists.",
+    "Open-source hardware and software."
+  ],
+  "caveats": [
+    "Upper-body humanoid on wheels, not a walking robot.",
+    "Price comes from press coverage, not a public price list."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Reachy 2",
+      "publisher": "Pollen Robotics",
+      "url": "https://pollen-robotics.com/reachy-2/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Now On Sale For $70,000: The World's First Factory Ready Open-Source Humanoid Robot",
+      "publisher": "Decrypt",
+      "url": "https://decrypt.co/315184/the-worlds-first-factory-ready-open-source-humanoid-robot",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

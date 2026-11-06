@@ -1,0 +1,794 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "engineai-se01",
+    "name": "EngineAI SE01",
+    "company_id": "engineai",
+    "company_name": "EngineAI",
+    "country": "China",
+    "generation": "first full-size humanoid by EngineAI",
+    "first_announced_date": "2024-10-24",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Announced in October 2024. SE01 is still listed on the official EngineAI website but no customer deployment or sales have been confirmed. The company later released PM01 and T800, which are now emphasized.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "technology showcase for human-like walking",
+      "general-purpose humanoid research",
+      "potential industrial and assistive applications (per unofficial descriptions)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "170CM",
+      "value": 170,
+      "unit": "cm",
+      "notes": "Official EngineAI homepage lists 170CM. DigiAlps blog reports 1.6 m, but official value is used; conflict noted in researcher_notes.",
+      "source_ids": [
+        "engineai-se01_source_001",
+        "engineai-se01_source_003",
+        "engineai-se01_source_007"
+      ]
+    },
+    "weight": {
+      "original_value": "55 kg",
+      "value": 55,
+      "unit": "kg",
+      "notes": "Wikipedia reports 55 kg; DigiAlps also says 55 kg.",
+      "source_ids": [
+        "engineai-se01_source_003",
+        "engineai-se01_source_007"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload specification found in any reviewed source."
+    },
+    "runtime": {
+      "original_value": "around 2 hours",
+      "value": 2,
+      "unit": "hours",
+      "notes": "Only from unofficial reseller africasatellite.com; not confirmed by official sources.",
+      "source_ids": [
+        "engineai-se01_source_006"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Quick-swap / quick-release battery design mentioned by africasatellite.com; capacity not disclosed.",
+      "source_ids": [
+        "engineai-se01_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2M/s",
+      "value": 2,
+      "unit": "m/s",
+      "notes": "Official website lists '2M/s Normal Walking Speed'; Wikipedia also reports 2 m/s.",
+      "source_ids": [
+        "engineai-se01_source_001",
+        "engineai-se01_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 32,
+      "notes": "Total DOF from official site and Wikipedia.",
+      "source_ids": [
+        "engineai-se01_source_001",
+        "engineai-se01_source_003"
+      ]
+    },
+    "hands": {
+      "description": "Described as five-finger dexterous hands for realistic grasping and manipulation (africasatellite.com).",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "engineai-se01_source_006"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Three stereo camera sets (Maginative)",
+        "LiDAR, depth cameras, and infrared cameras under 'Engine Sense' concept (africasatellite.com)"
+      ],
+      "source_ids": [
+        "engineai-se01_source_002",
+        "engineai-se01_source_006"
+      ]
+    },
+    "compute": {
+      "description": "Dual processors from NVIDIA and Intel (Maginative).",
+      "source_ids": [
+        "engineai-se01_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Self-developed harmonic joint modules; maximum joint torque up to 330 N·m (Maginative); aerospace-grade aluminum body.",
+      "source_ids": [
+        "engineai-se01_source_002",
+        "engineai-se01_source_004"
+      ]
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No official price or purchase path found. Unofficial reseller africasatellite.com lists SE01 at $54,000, but this is not verified and not an official channel.",
+      "source_ids": [
+        "engineai-se01_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "SE01 is described as having five-finger dexterous hands for realistic grasping and manipulation, but no demonstration of manipulation tasks or success rates was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-se01_source_006"
+      ],
+      "caveats": [
+        "Only a spec claim of dexterous hands; no video or independent evidence of grasping.",
+        "Wikipedia mentions SE01 can grasp, but no details or video."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No evidence of autonomous task execution. Walking demos do not disclose whether they are autonomous or teleoperated.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "All demos are walking-related; no task execution shown.",
+        "Teleoperation status not disclosed for any video."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "SE01 is claimed to achieve a natural, human-like walking gait at up to 2 m/s using an end-to-end neural network, reinforcement learning, and imitation learning with self-developed harmonic joint modules. Official and third-party video titles suggest walking demonstrations, including a long-distance campus test. However, no independent biomechanical analysis or teleoperation disclosure is available.",
+      "evidence_level": 2,
+      "source_ids": [
+        "engineai-se01_source_001",
+        "engineai-se01_source_002",
+        "engineai-se01_source_003",
+        "engineai-se01_source_004",
+        "engineai-se01_source_005",
+        "engineai-se01_source_008",
+        "engineai-se01_source_009",
+        "engineai-se01_source_010",
+        "engineai-se01_source_011",
+        "engineai-se01_source_012"
+      ],
+      "caveats": [
+        "Claims and video titles only; no independent verification of gait quality.",
+        "Teleoperation status not disclosed; autonomy cannot be credited.",
+        "Height conflict between sources (1.6 m vs 1.7 m)."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "SE01 is reported to have multiple sensors: three stereo camera sets (Maginative) and LiDAR, depth, and infrared cameras under the 'Engine Sense' concept (africasatellite.com). No perception capabilities have been demonstrated.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-se01_source_002",
+        "engineai-se01_source_006"
+      ],
+      "caveats": [
+        "Spec claims only; no demonstration of obstacle avoidance, scene understanding, or navigation."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No evidence of human interaction capabilities (speech, gesture, HRI) found.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No mention of interaction features in reviewed sources."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Unofficial reseller lists battery endurance around 2 hours with quick-swap design. A third-party video title suggests a long-distance campus walking test, but no distance or duration data is provided.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-se01_source_006"
+      ],
+      "caveats": [
+        "Battery endurance is from an unofficial source and not confirmed.",
+        "No reliability test data, uptime logs, or long-duration walking metrics."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "SE01 is human-sized (170 cm, 55 kg) with human-like proportions, designed to fit environments built for humans.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-se01_source_001",
+        "engineai-se01_source_003"
+      ],
+      "caveats": [
+        "No safety certification or real-environment deployment evidence."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No named customer deployment, sales to end users, or production delivery evidence found. Maginative reported a company target of 1,000 units by 2025, but that is an unverified claim.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No customer press release or verified deployment.",
+        "Production targets are not evidence of actual delivery."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Unofficial reseller africasatellite.com lists SE01 for $54,000, but no official price or purchase path exists.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineai-se01_source_006"
+      ],
+      "caveats": [
+        "Reseller price is not official and may be unreliable.",
+        "No official contact-sales or waitlist information found in reviewed sources."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "engineai-se01_evidence_001",
+      "date": null,
+      "title": "Official EngineAI claim: world's first human-like walking gait",
+      "claim": "EngineAI presents SE01 as the world's first general-purpose humanoid robot to achieve a human-like walking gait.",
+      "category": [
+        "mobility_whole_body_control",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-se01_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official website; company claim, not independently verified.",
+      "arena_relevance": "Key differentiator for mobility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The world's first general-purpose humanoid robot to achieve a human-like walking gait.",
+      "source_location": "EngineAI homepage SE01 section",
+      "verification_notes": "No independent gait analysis found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-se01_evidence_002",
+      "date": "2024-10-24",
+      "title": "Maginative launch coverage: SE01 key specs and hardware",
+      "claim": "Maginative reports SE01 features 32 degrees of freedom, 330 N·m joint torque, dual NVIDIA and Intel processors, three stereo camera sets, aerospace-grade aluminum body, and an end-to-end neural network for walking; company targets 1,000 units production by 2025.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "perception_scene_understanding",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-se01_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Reputable tech media; values are company-provided and not independently verified.",
+      "arena_relevance": "Provides key technical specifications from media coverage.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "SE01 features 32 degrees of freedom and 330 N·m joint torque",
+      "source_location": "Maginative article key points section",
+      "verification_notes": "Excerpt is one sentence; other details mentioned in same article.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-se01_evidence_003",
+      "date": null,
+      "title": "Wikipedia summary of SE01 physical specs and capabilities",
+      "claim": "Wikipedia states SE01 stands 170 cm tall, weighs 55 kg, has 32 degrees of freedom, can walk at 2 m/s, and uses an end-to-end neural network for gait; it can perform actions such as squatting, grasping, running, and jumping.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-se01_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Tertiary source summarizing official specs; use with caution.",
+      "arena_relevance": "Basic physical parameters for comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot stands 170cm tall, weighs 55kg, has 32 degrees of freedom, and can walk at a speed of 2 meters per second.",
+      "source_location": "Wikipedia EngineAI page, History section",
+      "verification_notes": "Values align with official site except for height conflict noted elsewhere.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-se01_evidence_004",
+      "date": null,
+      "title": "pr.ai forum repost of official SE01 demo description",
+      "claim": "The official video description (reposted on pr.ai) states SE01 features self-developed harmonic joint modules, combines reinforcement learning with imitation learning, and achieves natural gait through end-to-end neural network models.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-se01_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Forum repost; text originates from EngineAI official video description.",
+      "arena_relevance": "Technical explanation of the gait approach.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "It features a set of self-developed harmonic joint module and combines reinforcement learning with imitation learning, achieving unprecedented excellence in natural gait through end-to-end neural network models.",
+      "source_location": "pr.ai thread, quoted official video description",
+      "verification_notes": "No original source link on page but consistent with official claims.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-se01_evidence_005",
+      "date": "2026-05-29",
+      "title": "PR Newswire T800 launch mentions SE01 as early human-like walking robot",
+      "claim": "EngineAI's press release for its Shenzhen manufacturing base describes SE01 as having demonstrated one of the world's earliest human-like walking capabilities.",
+      "category": [
+        "mobility_whole_body_control",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-se01_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Official company statement in a press release about current lineup.",
+      "arena_relevance": "Confirms company's positioning of SE01's walking capability.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Its product portfolio spans multiple application scenarios, including the SA01, designed to make advanced robotics more accessible; the SE01, which demonstrated one of the world's earliest human-like walking capabilities; the PM01, which achieved the world's first humanoid robot front flip; and the T800, designed for high-dynamic and heavy-duty operational environments.",
+      "source_location": "PR Newswire about EngineAI section",
+      "verification_notes": "No deployment details for SE01 in this release; only mention of capability.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineai-se01_evidence_007",
+      "date": "2024-10-26",
+      "title": "DigiAlps blog article conflicting height",
+      "claim": "DigiAlps reports SE01 at 1.6 meters tall and 55 kg, conflicting with official 170 cm height.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineai-se01_source_007"
+      ],
+      "confidence": 0.4,
+      "notes": "Blog source; official value (170 cm) used in specs.",
+      "arena_relevance": "Minor height discrepancy; does not affect overall capability.",
+      "claim_type": "correction",
+      "supporting_excerpt": "At 1.6 meters tall and weighing 55 kilogram",
+      "source_location": "DigiAlps article, Physical Attributes section",
+      "verification_notes": "Excerpt is a fragment; consistent with blog's casual style.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "engineai-se01_demo_001",
+      "title": "Introducing the World's Coolest Humanoid Robot — EngineAI SE01！",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "introduction of SE01 humanoid robot"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-se01_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not verifiable."
+      ],
+      "editing_notes": "Not manually reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No mention of autonomy or teleoperation in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-se01_demo_002",
+      "title": "Meet ENGINEAI Flagship SE01 Humanoid AI Hardware.",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "introduction of SE01 flagship hardware"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-se01_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not verifiable."
+      ],
+      "editing_notes": "Not manually reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No mention of autonomy or teleoperation in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-se01_demo_003",
+      "title": "EngineAI SE01: Human-Like Walking Robot Tackles Long-Distance Campus Test 🤖🚶‍♂️",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "long-distance walking test on campus"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "campus (implied by title)",
+      "source_ids": [
+        "engineai-se01_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not verifiable.",
+        "No distance or duration data."
+      ],
+      "editing_notes": "Not manually reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No mention of autonomy or teleoperation in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-se01_demo_004",
+      "title": "EngineAI Unveils SE01 Humanoid Robot with Natural Gait",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "natural gait demonstration"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-se01_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not verifiable."
+      ],
+      "editing_notes": "Not manually reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No mention of autonomy or teleoperation in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "engineai-se01_demo_005",
+      "title": "ENGINEAI SE01: Shenzhen's Humanoid Robotics Breakthrough",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "general coverage of SE01 as a breakthrough"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "engineai-se01_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; content beyond title not verifiable."
+      ],
+      "editing_notes": "Not manually reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No mention of autonomy or teleoperation in title.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability and official pricing",
+      "description": "No official price, purchase path, or waitlist found. Unofficial reseller lists $54,000 but is not verified.",
+      "impact_on_arena_scoring": "Accessibility/value cannot be scored beyond unofficial claim."
+    },
+    {
+      "topic": "Customer deployment",
+      "description": "No named customer deployment, production delivery, or commercial pilot found. Company target of 1,000 units by 2025 is unverified.",
+      "impact_on_arena_scoring": "Commercial proof remains at zero."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Teleoperation status of walking demos is not disclosed; no autonomous task execution shown.",
+      "impact_on_arena_scoring": "Cannot credit autonomy."
+    },
+    {
+      "topic": "Manipulation evidence",
+      "description": "Only spec claim of five-finger dexterous hands; no manipulation demonstration or success rates.",
+      "impact_on_arena_scoring": "Manipulation capability is effectively unproven."
+    },
+    {
+      "topic": "Spec gaps",
+      "description": "Payload, official runtime, battery capacity, and hand DOF not disclosed in sources.",
+      "impact_on_arena_scoring": "Do not infer these values."
+    },
+    {
+      "topic": "Height conflict",
+      "description": "Official site says 170 cm; DigiAlps blog says 1.6 m. Official value used, but discrepancy noted.",
+      "impact_on_arena_scoring": "Minor; does not change category."
+    }
+  ],
+  "source_ids": [
+    "engineai-se01_source_001",
+    "engineai-se01_source_002",
+    "engineai-se01_source_003",
+    "engineai-se01_source_004",
+    "engineai-se01_source_005",
+    "engineai-se01_source_006",
+    "engineai-se01_source_007",
+    "engineai-se01_source_008",
+    "engineai-se01_source_009",
+    "engineai-se01_source_010",
+    "engineai-se01_source_011",
+    "engineai-se01_source_012"
+  ],
+  "sources": [
+    {
+      "id": "engineai-se01_source_001",
+      "title": "ENGINEAI",
+      "publisher": "EngineAI",
+      "url": "https://en.engineai.com.cn/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official homepage; company claims."
+    },
+    {
+      "id": "engineai-se01_source_002",
+      "title": "EngineAI Unveils SE01, an Impressive Robot the Walks Like a Human",
+      "publisher": "Maginative",
+      "url": "https://www.maginative.com/article/engineai-unveils-se01-an-impressive-robot-the-walks-like-a-human/",
+      "date_published": "2024-10-24",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable tech media with company-provided details."
+    },
+    {
+      "id": "engineai-se01_source_003",
+      "title": "EngineAI - Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/EngineAI",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Tertiary source; may contain inconsistencies; use with caution."
+    },
+    {
+      "id": "engineai-se01_source_004",
+      "title": "SE01, humanoid robot, Shenzhen ENGINEAI Robotics Technology Co., Ltd., Shenzhen, Guangdong, China",
+      "publisher": "Portal of Robotics and Artificial Intelligence",
+      "url": "https://pr.ai/threads/se01-humanoid-robot-shenzhen-engineai-robotics-technology-co-ltd-shenzhen-guangdong-china.25692/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Forum repost of official video description; not original source."
+    },
+    {
+      "id": "engineai-se01_source_005",
+      "title": "EngineAI Launches Shenzhen Intelligent Manufacturing Base as First Batch of T800 Humanoid Robots Roll Off the Production Line to Begin Mass Delivery",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/in/news-releases/engineai-launches-shenzhen-intelligent-manufacturing-base-as-first-batch-of-t800-humanoid-robots-roll-off-the-production-line-to-begin-mass-delivery-302785446.html",
+      "date_published": "2026-05-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "high",
+      "reliability_notes": "Official company press release, but primary subject is T800."
+    },
+    {
+      "id": "engineai-se01_source_006",
+      "title": "EngineAI SE01 Humanoid Robot",
+      "publisher": "africasatellite.com",
+      "url": "https://www.africasatellite.com/sw/Engineai-SE01-Zhong-Qing-General-Humanoid-Robot.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Unofficial reseller page; specs and price not verified."
+    },
+    {
+      "id": "engineai-se01_source_007",
+      "title": "Finally, A Humanoid Robot With A Natural Walking Gait",
+      "publisher": "DigiAlps LTD",
+      "url": "https://digialps.com/finally-a-humanoid-robot-with-a-natural-walking-gait/",
+      "date_published": "2024-10-26",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Blog article; contains conflicting height."
+    },
+    {
+      "id": "engineai-se01_source_008",
+      "title": "Introducing the World's Coolest Humanoid Robot — EngineAI SE01！",
+      "publisher": "YouTube Engineai Robot",
+      "url": "https://www.youtube.com/watch?v=I7Oh-ma4o1A",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official channel; video title only, no transcript reviewed."
+    },
+    {
+      "id": "engineai-se01_source_009",
+      "title": "Meet ENGINEAI Flagship SE01 Humanoid AI Hardware.",
+      "publisher": "YouTube Engineai Robot",
+      "url": "https://www.youtube.com/watch?v=zmqWU2dQKZ8",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official channel; video title only."
+    },
+    {
+      "id": "engineai-se01_source_010",
+      "title": "EngineAI SE01: Human-Like Walking Robot Tackles Long-Distance Campus Test 🤖🚶‍♂️",
+      "publisher": "YouTube TechTasticTV",
+      "url": "https://www.youtube.com/watch?v=hkZWemkCWJY",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; title only."
+    },
+    {
+      "id": "engineai-se01_source_011",
+      "title": "EngineAI Unveils SE01 Humanoid Robot with Natural Gait",
+      "publisher": "YouTube The World Around Us",
+      "url": "https://www.youtube.com/watch?v=Y7j9LDPU3qo",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; title only."
+    },
+    {
+      "id": "engineai-se01_source_012",
+      "title": "ENGINEAI SE01: Shenzhen's Humanoid Robotics Breakthrough",
+      "publisher": "YouTube The AI Citizen",
+      "url": "https://www.youtube.com/watch?v=aYO8o_hucX0",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; title only."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "SE01 is EngineAI's first full-size biped humanoid, notable for company claims of natural human-like gait achieved via end-to-end neural networks. Evidence is limited to walking demos/titles and spec claims; no autonomous task execution, manipulation, customer deployment, or official pricing.",
+    "strongest_positive_evidence": [
+      "Official site claim of world's first humanoid with human-like walking gait.",
+      "Multiple videos (official and third-party) with titles suggesting SE01 walking, including a long-distance campus test.",
+      "Specs from media: 170 cm, 55 kg, 32 DoF, 2 m/s, 330 Nm joint torque, dual processors, stereo cameras."
+    ],
+    "weakest_or_missing_evidence": [
+      "No manipulation or task execution demo.",
+      "No customer deployment or sales figures.",
+      "No official price or runtime.",
+      "No independent verification of gait quality."
+    ],
+    "conflicting_claims": [
+      "Height: official 170 cm vs DigiAlps 1.6 m.",
+      "Battery endurance ~2 h from unofficial reseller; no official confirmation.",
+      "Some sources mention LiDAR/IR sensors while others mention stereo cameras; unclear if both."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit SE01 with manipulation skills based only on 'dexterous hands' spec.",
+      "Do not treat reseller price as official.",
+      "Do not infer autonomy from walking demos."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "SE01 is still listed on EngineAI's official site as of 2026-10-29, but the company now emphasizes PM01 and T800. No discontinuation notice found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "SE01 is 1.6 m tall (DigiAlps)",
+      "reason": "Conflicts with official 170 cm; official value used.",
+      "source_ids": [
+        "engineai-se01_source_007"
+      ]
+    },
+    {
+      "claim": "$54,000 is the official price of SE01",
+      "reason": "Only from unofficial reseller; no official price found.",
+      "source_ids": [
+        "engineai-se01_source_006"
+      ]
+    },
+    {
+      "claim": "EngineAI will produce 1,000 units by 2025 (target)",
+      "reason": "Unverified company target; not evidence of actual production or delivery.",
+      "source_ids": [
+        "engineai-se01_source_002"
+      ]
+    },
+    {
+      "claim": "SE01 has verified autonomous walking",
+      "reason": "Teleoperation status not disclosed in any demo; autonomy cannot be credited.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 8,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 5,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "EngineAI SE01 is a full-size biped humanoid (170 cm, 55 kg, 32 DoF) introduced in October 2024 as the company's first humanoid with a natural, human-like walking gait. The gait is achieved through end-to-end neural networks, reinforcement learning, and imitation learning using self-developed harmonic joint modules. Specs include 330 Nm joint torque, dual NVIDIA/Intel processors, and stereo cameras (plus LiDAR/depth/IR per unofficial source). Evidence consists of official and third-party videos with titles indicating walking demos, including a long-distance campus test, but no transcripts or independent analysis. There is no evidence of autonomous task execution, manipulation beyond a spec claim of dexterous hands, customer deployment, or official pricing.",
+    "strongest_evidence": [
+      "Official website claim of world's first humanoid with human-like walking gait (evidence_001).",
+      "Official and third-party video titles suggesting SE01 walking demos (evidence_008-012).",
+      "Media-reported specs: 170 cm, 55 kg, 32 DoF, 2 m/s, 330 Nm (evidence_002, evidence_003)."
+    ],
+    "weakest_evidence": [
+      "No manipulation, autonomy, or deployment evidence.",
+      "Battery endurance only from unofficial reseller (evidence_006).",
+      "Height conflict 170 cm vs 1.6 m (evidence_007)."
+    ],
+    "known_do_not_credit": [
+      "Autonomous walking (teleoperation not disclosed).",
+      "Official $54k price (only unofficial reseller).",
+      "Manipulation capabilities based solely on hand spec."
+    ],
+    "recommended_confidence": "low"
+  }
+}

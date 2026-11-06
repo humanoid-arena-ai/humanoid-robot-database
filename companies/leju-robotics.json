@@ -1,0 +1,15 @@
+{
+  "id": "leju-robotics",
+  "name": "Leju Robotics",
+  "country": "China",
+  "headquarters": "Shenzhen, China",
+  "founded": 2016,
+  "website": null,
+  "summary": "Leju Robotics is a Shenzhen humanoid maker founded in 2016 that started with small educational bipeds and now sells the full-size Kuavo series. It has applied for a ChiNext listing on the Shenzhen Stock Exchange.",
+  "funding": "Raised about 1.5 billion yuan (about $200 million) in October 2025 (The Robot Report); earlier backers include Tencent and Shenzhen Capital Group (Wikipedia).",
+  "sources": [
+    { "id": "s1", "title": "Leju Robot", "url": "https://en.wikipedia.org/wiki/Leju_Robot", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Leju raises $200M for humanoid production as Unitree unveils H2", "url": "https://www.therobotreport.com/leju-raises-200m-humanoid-production-unitree-unveils-h2-robot/", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Embodied AI IPO Boom: Building Real Businesses or Riding the Hype?", "url": "https://autonews.gasgoo.com/articles/news/embodied-ai-ipo-boom-building-real-businesses-or-riding-the-hype-2065702333747675136", "accessed": "2026-10-14" }
+  ]
+}

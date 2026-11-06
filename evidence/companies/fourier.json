@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "fourier",
+    "name": "Fourier",
+    "country": "China",
+    "website": "https://www.fftai.com/",
+    "founded": 2015,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "fourier-gr-2",
+    "fourier-gr-3"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Backed by IDG Capital and Saudi Aramco, per Wikipedia."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "fourier_source_001",
+      "title": "Fourier (company)",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Fourier_(company)",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "fourier_source_002",
+      "title": "Fourier launches GR-2 humanoid, software platform",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/fourier-launches-gr-2-humanoid-software-platform/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

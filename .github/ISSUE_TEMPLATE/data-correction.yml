@@ -1,0 +1,17 @@
+name: Data correction
+description: Something about a robot, price or company is wrong or outdated
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: robot
+    attributes: { label: Robot or company, placeholder: "e.g. Unitree G1" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What is wrong, description: "Current value and the correct one" }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source URL, description: "Official page, press release or reputable report" }
+    validations: { required: true }

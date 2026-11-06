@@ -1,0 +1,14 @@
+{
+  "id": "galbot",
+  "name": "Galbot",
+  "country": "China",
+  "headquarters": "Beijing, China",
+  "founded": 2023,
+  "website": "https://www.galbot.com/",
+  "summary": "Galbot (Galaxy General Robotics) was founded in Beijing in May 2023 by Peking University professor Wang He. It builds wheeled humanoid mobile manipulators and embodied AI models.",
+  "funding": "Over $300 million round in December 2025 at about $3 billion valuation, about $800 million raised in total by then (The Robot Report); a further RMB 2.5 billion round in March 2026 (Caixin).",
+  "sources": [
+    { "id": "s1", "title": "Galbot brings in $300M to scale mobile manipulator deployments", "url": "https://www.therobotreport.com/galbot-brings-in-300m-to-scale-mobile-manipulator-deployments/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Galbot Raises $362 Million in Fresh Funding, Eyes Hong Kong IPO", "url": "https://www.caixinglobal.com/2026-03-03/galbot-raises-362-million-in-fresh-funding-eyes-hong-kong-ipo-102418742.html", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "pal-talos",
+    "name": "PAL Robotics TALOS",
+    "company_id": "pal-robotics",
+    "company_name": "PAL Robotics",
+    "country": "Spain",
+    "generation": null,
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "TALOS is a full-size torque-controlled biped from PAL Robotics, introduced around 2017 and sold to research labs. Official page says request a quote; ROBOTS guide lists status Ongoing and approximate cost €900,000. No public price or direct order page was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "research and industrial settings",
+      "whole-body control research",
+      "torque-controlled locomotion research",
+      "industrial tasks such as drilling or screwing (claimed)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "175 cm",
+      "value": 175,
+      "unit": "cm",
+      "notes": "Official product page and ROBOTS guide both list 175 cm.",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "95 kg",
+      "value": 95,
+      "unit": "kg",
+      "notes": "Official product page and ROBOTS guide both list 95 kg.",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "6 Kg (arm stretched)",
+      "value": 6,
+      "unit": "kg",
+      "notes": "Per arm fully extended; product page says 6 Kg with each arm fully extended, ROBOTS guide says can lift 6 kilograms on each hand.",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "1,5h (walking) / 3h (stand-by)",
+      "value": 1.5,
+      "unit": "hours",
+      "notes": "Walking runtime about 1.5 hours; standby 3 hours per product page and ROBOTS guide.",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": "1080-Wh lithium-ion battery",
+      "value": 1080,
+      "unit": "Wh",
+      "notes": "Capacity not listed on product page; from ROBOTS guide.",
+      "source_ids": [
+        "pal-talos_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 32,
+      "notes": "Breakdown from ROBOTS guide: Leg 6 DoF x2; Arm 7 DoF x2; Gripper 1 DoF x2; Waist 2 DoF; Neck 2 DoF. Product page does not list total DoF.",
+      "source_ids": [
+        "pal-talos_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "3 km/h",
+      "value": 3,
+      "unit": "km/h",
+      "notes": "Listed as Speed on ROBOTS guide; product page does not state walking speed.",
+      "source_ids": [
+        "pal-talos_source_002"
+      ]
+    },
+    "hands": {
+      "description": "Customizable grippers, 1 DoF each; product page says head and gripper fully customizable.",
+      "degrees_of_freedom": 1,
+      "force_feedback": "grippers do not have torque sensors (torque sensors in all joints except head, wrists and grippers)",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Torque sensor feedback in all joints (except head, wrists and grippers per product page)",
+        "Force/torque sensors on wrists and ankles",
+        "Inertial measurement unit (IMU)",
+        "RGB-D camera",
+        "Expansion modules for new sensors"
+      ],
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Two Intel Core i7 CPUs, Ubuntu LTS with Real Time OS, ROS, OROCOS, Gazebo simulation and URDF model, real-time ros_control loop at +1 kHz, MoveIt!",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "32 high-torque brushless DC motors; torque sensors in all joints except head, wrists and grippers; EtherCAT communication network with 2 kHz control loops up to 5 kHz.",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://pal-robotics.com/contact/",
+      "notes": "Official page says Request a quote. ROBOTS guide lists approximate cost €900,000, but no official price or online store.",
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Product page claims 6 kg payload per arm fully extended and customisable grippers; ROBOTS guide says TALOS can lift 6 kg per hand and complete tasks such as drilling or screwing. No video transcript or independent demonstration was reviewed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "Official and directory claims only; no success rate, video evidence, or independent test available in reviewed sources."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No evidence of autonomous task execution was found. Official product page mentions teleoperation as premium software, and ROBOTS guide lists both Fully Autonomous and Teleoperated features, but no autonomous demo or disclosure was provided. Video sources are titles only.",
+      "evidence_level": 0,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "No video transcript or autonomy statement; teleoperation_status is not_disclosed for all demos."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official page describes TALOS as a walking biped with torque control in all joints, EtherCAT control loops at 2–5 kHz, and provides whole-body control software. ROBOTS guide claims dynamic walking, including uneven ground and stairs, and 3 km/h speed. No video evidence reviewed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "Company/directory claims; no fall rate, disturbance recovery, or independent locomotion benchmark."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Specs list RGB-D camera, IMU, force/torque sensors at wrists and ankles, and expansion modules for new sensors. No scene understanding demo or benchmark was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "Sensor specifications only; no demonstrated perception capability."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Product page lists HRI skills as premium software and customisable head/gripper; ROBOTS guide lists human-robot interaction skills. No interaction demo or evaluation found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "Claimed skill only; no conversational or interaction reliability metrics."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Battery autonomy is 1.5 hours walking and 3 hours standby (1080 Wh lithium-ion per ROBOTS guide). No reliability data, failure rates, or maintenance logs were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "Runtime is spec only; no long-duration operation or independent reliability evidence."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "TALOS is 175 cm tall and weighs 95 kg, with torque sensors in all joints for compliant interaction. Product page says it is Used globally in top labs driving robotics, AI, and human-centered tech. No safety certification found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002"
+      ],
+      "caveats": [
+        "Size and weight may be large for home use; no safety certification or injury data."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "ROBOTS guide lists status Ongoing and year 2017, with cost approximately €900,000. Video titles show arrivals at University of Waterloo and University of Edinburgh (SLMC), indicating research deployments. No commercial production metrics are available.",
+      "evidence_level": 2,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002",
+        "pal-talos_source_011",
+        "pal-talos_source_013"
+      ],
+      "caveats": [
+        "Deployment evidence is limited to video titles only; no units, hours, or task metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price; official page requests a quote. ROBOTS guide lists approximate cost €900,000. Open-source URDF is available under Apache 2.0.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pal-talos_source_001",
+        "pal-talos_source_002",
+        "pal-talos_source_006",
+        "pal-talos_source_008"
+      ],
+      "caveats": [
+        "Approximate cost not official; no direct online purchase or subscription found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "pal-talos_evidence_001",
+      "date": null,
+      "title": "TALOS product-page key specifications",
+      "claim": "TALOS is a 175 cm, 95 kg walking biped capable of lifting 6 kg per arm fully extended, with battery autonomy 1.5 h walking / 3 h standby and customizable head and gripper.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec table and overview; values not independently measured.",
+      "arena_relevance": "Defines size, payload and runtime for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "A walking biped robot capable of lifting objects up to 6 kg with one arm fully extended.",
+      "source_location": "TALOS product page, overview and technical specifications table",
+      "verification_notes": "Company spec page. Payload per arm fully extended; runtime is walking/standby spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_002",
+      "date": null,
+      "title": "TALOS torque control claim",
+      "claim": "TALOS has torque sensor feedback in all joints, enabling powerful sensing and multi-contact motions.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official claim; footnote says except head, wrists and grippers.",
+      "arena_relevance": "Torque control is central to whole-body control research claim.",
+      "claim_type": "spec",
+      "supporting_excerpt": "TALOS is fully torque-controllable thanks to the torque sensor feedback in all joints, which enables powerful sensing and multi-contact motions.",
+      "source_location": "TALOS product page, torque control feature section",
+      "verification_notes": "Company claim; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_003",
+      "date": null,
+      "title": "TALOS EtherCAT control frequency",
+      "claim": "TALOS uses EtherCAT communication to run control loops at 2 kHz, and up to 5 kHz.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official spec claim.",
+      "arena_relevance": "High-frequency control supports dynamic whole-body motion.",
+      "claim_type": "spec",
+      "supporting_excerpt": "TALOS’ EtherCAT communication network allows to run control loops at 2 kHz, and up to 5 kHz, which enables TALOS to have highly reactive and dynamic motions.",
+      "source_location": "TALOS product page, EtherCAT Network feature section",
+      "verification_notes": "Company claim; no external bench test found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_004",
+      "date": null,
+      "title": "TALOS ROS and premium software including teleoperation",
+      "claim": "TALOS is ROS-based with open-source simulation model and premium software including whole-body control, navigation, HRI skills and teleoperation.",
+      "category": [
+        "specs",
+        "accessibility_value",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Product page lists teleoperation as a premium software option.",
+      "arena_relevance": "Shows open software ecosystem; teleoperation availability is not autonomy.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Speed your research with extra software: from Whole-Body Control to navigation, HRI skills or teleoperation.",
+      "source_location": "TALOS product page, premium software section",
+      "verification_notes": "Official page; no specific teleoperation mode details.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_005",
+      "date": null,
+      "title": "TALOS degrees of freedom and compute",
+      "claim": "TALOS has 32 DoF (Leg: 6 DoF x2; Arm: 7 DoF x2; Gripper: 1 DoF x2; Waist: 2 DoF; Neck: 2 DoF) and two Intel Core i7 CPUs.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Directory listing; not from official PAL spec table.",
+      "arena_relevance": "Detailed DoF breakdown not available on official page.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Degrees of Freedom (DoF): 32 (Leg: 6 DoF x 2; Arm 7 DoF x 2; Gripper: 1 DoF x 2; Waist: 2 DoF; Neck: 2 DoF)",
+      "source_location": "ROBOTS guide TALOS specs section",
+      "verification_notes": "IEEE ROBOTS guide is reputable but secondary.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_006",
+      "date": null,
+      "title": "TALOS battery and power specs",
+      "claim": "TALOS has a 1080-Wh lithium-ion battery with 1.5 hours walking and 3 hours standby operation.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Battery capacity not on product page; directory spec.",
+      "arena_relevance": "Provides battery capacity missing from official page.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Power: 1080-Wh lithium-ion battery, 1.5 hours of operation walking, 3 hours of operation on standby",
+      "source_location": "ROBOTS guide TALOS Power spec",
+      "verification_notes": "Secondary source; company runtime specs may vary in practice.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_008",
+      "date": null,
+      "title": "TALOS open-source URDF license",
+      "claim": "TALOS URDF is available under Apache License 2.0 and PAL Robotics is interested in maintaining a MuJoCo model.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "GitHub issue submitted by PAL Robotics team member.",
+      "arena_relevance": "Supports open-source accessibility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "TALOS will be with `Apache License 2.0`",
+      "source_location": "GitHub issue #21, license terms section",
+      "verification_notes": "Company statement in issue; not a legal license file.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_009",
+      "date": null,
+      "title": "Cyberwave TALOS URDF derived from public repository",
+      "claim": "Cyberwave hosts a TALOS URDF derived from a publicly available GitHub repository.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pal-talos_source_008"
+      ],
+      "confidence": 0.6,
+      "notes": "Shows availability of a digital twin, but no capability data.",
+      "arena_relevance": "Confirms public model availability for simulation.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "This URDF is derived from the publicly available Github repository",
+      "source_location": "Cyberwave TALOS page",
+      "verification_notes": "Third-party platform; not verified against official PAL Robotics release.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pal-talos_evidence_010",
+      "date": null,
+      "title": "Missing evidence for autonomy and capability verification",
+      "claim": "No evidence of autonomous task execution, teleoperation status in demos, or independent verification of capabilities was found; video sources provided only titles.",
+      "category": [
+        "missing_evidence",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy and task execution.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "pal-talos_deployment_001",
+      "customer_or_partner": "University of Waterloo",
+      "site_or_context": "Arrival video on campus",
+      "task": "Research platform",
+      "start_date": "2018",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 1,
+      "output_metrics": [],
+      "source_ids": [
+        "pal-talos_source_013"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, no deployment details.",
+        "Exact number of units not stated; singular title suggests one."
+      ]
+    },
+    {
+      "id": "pal-talos_deployment_002",
+      "customer_or_partner": "University of Edinburgh (SLMC)",
+      "site_or_context": "Arrival video in Edinburgh",
+      "task": "Research platform",
+      "start_date": "2020",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 1,
+      "output_metrics": [],
+      "source_ids": [
+        "pal-talos_source_011"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, no deployment details.",
+        "Exact number of units not stated; singular title suggests one."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "pal-talos_demo_001",
+      "title": "PAL Robotics | TALOS - High Performance Biped Robot",
+      "date": "2018-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "pal-talos_source_009"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so capabilities and teleoperation status are unknown."
+      ],
+      "editing_notes": "Not manually reviewed due to lack of transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pal-talos_demo_002",
+      "title": "PAL Robotics | TALOS in action",
+      "date": "2024-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "pal-talos_source_010"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so capabilities and teleoperation status are unknown."
+      ],
+      "editing_notes": "Not manually reviewed due to lack of transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pal-talos_demo_003",
+      "title": "TALOS Humanoid Robot Arrives in Edinburgh",
+      "date": "2020-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "pal-talos_source_011"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so capabilities and teleoperation status are unknown."
+      ],
+      "editing_notes": "Not manually reviewed due to lack of transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pal-talos_demo_004",
+      "title": "TALOS: High Performance humanoid robot",
+      "date": "2017-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "pal-talos_source_012"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so capabilities and teleoperation status are unknown."
+      ],
+      "editing_notes": "Not manually reviewed due to lack of transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pal-talos_demo_005",
+      "title": "TALOS Robot Arrives on Campus",
+      "date": "2018-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "pal-talos_source_013"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so capabilities and teleoperation status are unknown."
+      ],
+      "editing_notes": "Not manually reviewed due to lack of transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pal-talos_demo_006",
+      "title": "TALOS: A new humanoid research platform targeted for industrial applications",
+      "date": "2018-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "pal-talos_source_014"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so capabilities and teleoperation status are unknown."
+      ],
+      "editing_notes": "Not manually reviewed due to lack of transcript.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not state execution mode.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No official price or online store found; only approximate cost €900,000 from ROBOTS guide and request-a-quote on official page.",
+      "impact_on_arena_scoring": "Accessibility/value remains at minimal evidence."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "No autonomous task execution demonstration or autonomy disclosure found; official page lists teleoperation as premium software.",
+      "impact_on_arena_scoring": "Do not credit autonomous capabilities."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "All video sources are titles only without transcript; capabilities cannot be observed.",
+      "impact_on_arena_scoring": "Demo evidence is effectively nonexistent except as existence of a video."
+    },
+    {
+      "topic": "Deployment metrics",
+      "description": "Named arrivals at Waterloo and Edinburgh come from video titles only; no units, hours, or task metrics are available.",
+      "impact_on_arena_scoring": "Commercial proof remains weak and early."
+    },
+    {
+      "topic": "Safety and reliability",
+      "description": "No safety certification, fall rate, or reliability data found.",
+      "impact_on_arena_scoring": "Human-environment fit and endurance should not be credited beyond specs."
+    },
+    {
+      "topic": "Spec gaps",
+      "description": "Total DoF, battery capacity, and walking speed are only in secondary directory; official page lacks them.",
+      "impact_on_arena_scoring": "Treat these as unverified secondary values."
+    }
+  ],
+  "source_ids": [
+    "pal-talos_source_001",
+    "pal-talos_source_002",
+    "pal-talos_source_006",
+    "pal-talos_source_008",
+    "pal-talos_source_009",
+    "pal-talos_source_010",
+    "pal-talos_source_011",
+    "pal-talos_source_012",
+    "pal-talos_source_013",
+    "pal-talos_source_014"
+  ],
+  "sources": [
+    {
+      "id": "pal-talos_source_001",
+      "title": "TALOS | High-Performance Humanoid Robot",
+      "publisher": "PAL Robotics",
+      "url": "https://pal-robotics.com/robot/talos/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page with company specs; not independently verified."
+    },
+    {
+      "id": "pal-talos_source_002",
+      "title": "TALOS - ROBOTS: Your Guide to the World of Robotics",
+      "publisher": "ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/robots/talos",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reputable IEEE ROBOTS guide, but secondary source."
+    },
+    {
+      "id": "pal-talos_source_006",
+      "title": "Add TALOS Humanoid Robot from PAL Robotics · Issue #21 · google-deepmind/mujoco_menagerie",
+      "publisher": "GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/issues/21",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "medium",
+      "reliability_notes": "GitHub issue; contains PAL Robotics team member statements."
+    },
+    {
+      "id": "pal-talos_source_008",
+      "title": "PAL Robotics TALOS by PAL Robotics | Cyberwave",
+      "publisher": "Cyberwave",
+      "url": "https://cyberwave.com/pal_robotics/talos",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "low",
+      "reliability_notes": "Third-party digital twin platform; derived model."
+    },
+    {
+      "id": "pal-talos_source_009",
+      "title": "PAL Robotics | TALOS - High Performance Biped Robot",
+      "publisher": "YouTube PALRobotics",
+      "url": "https://www.youtube.com/watch?v=xUeApfMAKAE",
+      "date_published": "2018-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "pal-talos_source_010",
+      "title": "PAL Robotics | TALOS in action",
+      "publisher": "YouTube PALRobotics",
+      "url": "https://www.youtube.com/watch?v=qVzHe8FG984",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "pal-talos_source_011",
+      "title": "TALOS Humanoid Robot Arrives in Edinburgh",
+      "publisher": "YouTube SLMC-EdinburghUni",
+      "url": "https://www.youtube.com/watch?v=TT03FKWnyc8",
+      "date_published": "2020-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "pal-talos_source_012",
+      "title": "TALOS: High Performance humanoid robot",
+      "publisher": "YouTube PALRobotics",
+      "url": "https://www.youtube.com/watch?v=SxdNvP2jKcc",
+      "date_published": "2017-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "pal-talos_source_013",
+      "title": "TALOS Robot Arrives on Campus",
+      "publisher": "YouTube Waterloo Engineering",
+      "url": "https://www.youtube.com/watch?v=7VQFw7Yd2eE",
+      "date_published": "2018-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "pal-talos_source_014",
+      "title": "TALOS: A new humanoid research platform targeted for industrial applications",
+      "publisher": "YouTube Olivier Stasse",
+      "url": "https://www.youtube.com/watch?v=0XH8yWQrP9k",
+      "date_published": "2018-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "PAL Robotics TALOS is a long-standing torque-controlled research humanoid with strong open-source ROS support and claimed whole-body control, but the reviewed public evidence is mostly official specs and directory listings; no autonomous demo or independent verification was available.",
+    "strongest_positive_evidence": [
+      "Official product page confirms 175 cm, 95 kg, 6 kg per-arm payload, 1.5 h walking runtime, torque sensors in all joints, EtherCAT 2–5 kHz.",
+      "ROBOTS guide lists 32 DoF, 1080 Wh battery, two Intel i7 CPUs, and approximate cost €900,000.",
+      "Public open-source URDF under Apache 2.0 and available via GitHub/Cyberwave.",
+      "Named research deployments indicated by video titles from University of Waterloo and University of Edinburgh."
+    ],
+    "weakest_or_missing_evidence": [
+      "No autonomous task execution evidence or autonomy disclosure.",
+      "No video transcript or observable capability; all video evidence is title-only.",
+      "No public official price or direct purchase page.",
+      "No reliability or deployment metrics."
+    ],
+    "conflicting_claims": [
+      "Product page says torque sensors in all joints with footnote except head, wrists and grippers; ROBOTS guide says torque sensor feedback in every joint.",
+      "Product page lists no battery capacity; ROBOTS guide lists 1080 Wh.",
+      "Product page lists no walking speed; ROBOTS guide lists 3 km/h."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit TALOS with autonomous operation; teleoperation status is not disclosed.",
+      "Do not treat ROBOTS guide's €900,000 as official price.",
+      "Do not describe video capabilities beyond titles.",
+      "Do not credit deployment metrics; only arrival videos with no task data."
+    ],
+    "compiled_automatically": "This evidence pack was compiled automatically from public sources on 2026-10-29 and needs human review."
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "TALOS remains listed as Ongoing in ROBOTS guide and is still on PAL Robotics' website as of 2026-10-29."
+  },
+  "excluded_claims": [
+    {
+      "claim": "TALOS is fully autonomous",
+      "reason": "No autonomous demonstration or autonomy disclosure in reviewed sources. ROBOTS guide lists both Fully Autonomous and Teleoperated features but no evidence.",
+      "source_ids": [
+        "pal-talos_source_002"
+      ]
+    },
+    {
+      "claim": "TALOS has exactly €900,000 price",
+      "reason": "ROBOTS guide gives approximate cost; official page only requests a quote.",
+      "source_ids": [
+        "pal-talos_source_002"
+      ]
+    },
+    {
+      "claim": "TALOS can walk on uneven terrain and stairs",
+      "reason": "Claimed by ROBOTS guide but not independently verified or shown in reviewed video transcripts; no video content observed.",
+      "source_ids": [
+        "pal-talos_source_002"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "PAL Robotics TALOS is a full-size biped humanoid (175 cm, 95 kg) introduced around 2017 and sold to research labs. Official evidence confirms 6 kg per-arm payload, 1.5 h walking runtime, torque sensors in most joints, and EtherCAT control loops up to 5 kHz; ROBOTS guide adds 32 DoF, 1080 Wh battery and approximate €900,000 cost. The robot is ROS-based with an open-source URDF under Apache 2.0. However, reviewed public evidence contains no autonomous task demonstration or capability video content beyond titles, and no commercial deployment metrics.",
+    "strongest_evidence": [
+      "Official spec page: 175 cm, 95 kg, 6 kg per-arm payload, 1.5 h walking runtime, torque sensors in all joints except head/wrists/grippers.",
+      "ROBOTS guide: 32 DoF, 1080 Wh battery, two Intel i7 CPUs.",
+      "Open-source URDF under Apache 2.0 with public GitHub/Cyberwave models.",
+      "Named research arrivals: University of Waterloo and University of Edinburgh (video titles only)."
+    ],
+    "weakest_evidence": [
+      "No autonomous task execution demo or independent verification.",
+      "No video transcript; capabilities not observable.",
+      "No official price; approximate cost only.",
+      "No deployment metrics or reliability data."
+    ],
+    "known_do_not_credit": [
+      "Autonomous operation or task execution.",
+      "Exact €900,000 price as official.",
+      "Walking on uneven terrain/stairs as verified.",
+      "Any deployment task metrics."
+    ],
+    "recommended_confidence": "low"
+  }
+}

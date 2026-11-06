@@ -1,0 +1,41 @@
+{
+  "id": "booster-k1",
+  "name": "Booster K1",
+  "aliases": ["K1"],
+  "companyId": "booster-robotics",
+  "companyName": "Booster Robotics",
+  "country": "China",
+  "announced": "2025-10-21",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "K1 is a compact 95 cm, 19.5 kg humanoid sold as an entry-level development platform for education, research and exhibitions. It comes in Geek, Education and Professional editions that differ in compute and battery.",
+  "specs": {
+    "height_cm": { "value": 95, "original": "Approximately 95 cm", "sourceId": "s1" },
+    "weight_kg": { "value": 19.5, "original": "Approximately 19.5 kg", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": { "value": 1.17, "original": "70 minutes walking (Education/Professional, 5 Ah); 20 minutes (Geek, 2 Ah)", "sourceId": "s1" },
+    "dof": { "value": 22, "original": "22 (6 per leg, 4 per arm, 2 head)", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 2, "original": "Walking speed: Up to 2 m/s", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": "Binocular stereo depth camera, 9-axis IMU, microphone array and speaker.",
+  "compute": "48 TOPS (Geek), 117 TOPS (Education), 200 TOPS (Professional).",
+  "price": { "value": 4999, "currency": "USD", "priceType": "from", "configuration": "Starting price at launch", "sourceId": "s2" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.generationrobots.com/en/404324-booster-k1-humanoid-robot.html",
+  "highlights": [
+    "K1 won the KidSize category at RoboCup Soccer 2025, per Generation Robots.",
+    "Generation Robots lists K1 from EUR 7,500 excl. VAT (EUR 9,000 incl. VAT).",
+    "SDK support for Python and C++."
+  ],
+  "caveats": [
+    "The USD 4,999 figure is a launch starting price reported by press; regional prices differ.",
+    "The Geek edition has only about 20 minutes of walking runtime."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Booster K1 product page", "publisher": "Booster Robotics", "url": "https://www.booster.tech/booster-k1/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Booster Robotics Launches K1: A RoboCup-Winning Humanoid for $5,000", "publisher": "Humanoids Daily", "url": "https://www.humanoidsdaily.com/news/booster-robotics-launches-k1-robocup-champion-platform", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Booster K1 humanoid robot", "publisher": "Generation Robots", "url": "https://www.generationrobots.com/en/404324-booster-k1-humanoid-robot.html", "accessed": "2026-10-14" }
+  ]
+}

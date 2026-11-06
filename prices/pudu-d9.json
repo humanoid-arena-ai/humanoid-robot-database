@@ -1,0 +1,61 @@
+{
+  "robotId": "pudu-d9",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "contact_sales",
+  "purchasePathNote": "PUDU announced that D9 pre-sale would open soon in December 2024 but has not published a price. Buyers request a demo or contact sales (global_sales@pudutech.com); North American partners take pre-sale inquiries.",
+  "configurations": [],
+  "sellers": [
+    {
+      "name": "PUDU Robotics (official)",
+      "type": "official",
+      "url": "https://www.pudurobotics.com/en/products/d9",
+      "region": "Global",
+      "offers": "No public price; 'Contact Us' and 'Request a demo'.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Automation Hub",
+      "type": "reseller",
+      "url": "https://www.automationhub.com/products/pudu-d9-the-first-full-sized-bipedal-humanoid-robot",
+      "region": "North America",
+      "offers": "'Pre-Sale Now Available'; no price shown (listing shows $0.00); lease and capital purchase on request.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotLAB",
+      "type": "reseller",
+      "url": "https://www.robotlab.com/store/pudu-d9-humanoid-robot/",
+      "region": "US",
+      "offers": "Price on request; quoted per deployment for purchase, lease or RaaS.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "Automation Hub",
+      "url": "https://www.automationhub.com/products/pudu-d9-the-first-full-sized-bipedal-humanoid-robot",
+      "region": "North America",
+      "notes": "Mentions flexible lease options; no public lease price."
+    }
+  ],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy the PUDU D9?",
+      "a": "Not with a public price. PUDU said in December 2024 that D9 would open for pre-sale soon, and it now asks buyers to contact sales or request a demo.",
+      "sourceUrl": "https://www.pudurobotics.com/about/news/6763cce40767a20044b4a69a"
+    },
+    {
+      "q": "How much does the PUDU D9 cost?",
+      "a": "PUDU has not published a price. Resellers quote it on request.",
+      "sourceUrl": "https://www.pudurobotics.com/en/products/d9"
+    },
+    {
+      "q": "Do all advertised D9 features ship?",
+      "a": "PUDU warns that some example features in its promotional material are not yet available to customers and that functions depend on the sales contract.",
+      "sourceUrl": "https://www.pudurobotics.com/en/products/d9"
+    }
+  ],
+  "notes": "No verified price. Third-party sites list $60,000, $100,000 or $150,000-$250,000 without sources; not included.",
+  "researchNotes": "from search listing The RobotLAB D9 page redirected to a general PUDU page when fetched, so its offer text comes from the search listing."
+}

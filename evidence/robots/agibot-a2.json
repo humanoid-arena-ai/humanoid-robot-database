@@ -1,0 +1,474 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "agibot-a2",
+    "name": "AgiBot A2",
+    "company_id": "agibot",
+    "company_name": "AgiBot",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2026-02-02",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "service_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as commercial_deployment based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "169 cm",
+      "value": 169,
+      "unit": "cm",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "69 kg",
+      "value": 69,
+      "unit": "kg",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "2 h; supports battery swapping",
+      "value": 2,
+      "unit": "hours",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": "700 Wh",
+      "value": 700,
+      "unit": "Wh",
+      "notes": "Official A2 page lists a 700 Wh battery and 2 h runtime with battery swapping.",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 40,
+      "notes": "Official A2 page lists 40+ active DoF.",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "4.3 km/h (1.2 m/s)",
+      "value": 1.2,
+      "unit": "m/s",
+      "source_ids": [
+        "agibot-a2_source_003"
+      ],
+      "notes": "Reported by RoboSelect360, added 2026-10-29 by automated spec fill; listed speed."
+    },
+    "hands": {
+      "description": "Official A2 page lists dexterous hands as part of the robot configuration; no hand-only DoF count was found beyond the 40+ active DoF system claim.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "interactive screen",
+        "LiDAR",
+        "microphone",
+        "RGBD cameras",
+        "fisheye camera",
+        "speaker",
+        "force/torque sensors"
+      ],
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Official A2 page describes large-language-model interaction, RAG, and edge deployment; no public chipset or TOPS spec was found.",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.agibot.com/products/A2",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 4,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 4,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "evidence_level": 0,
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "agibot-a2_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "169 cm, 69 kg, 700 Wh, 2h runtime, 40+ active DoF.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-a2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "169 cm, 69 kg, 700 Wh, 2h runtime, 40+ active DoF.",
+      "source_location": "AGIBOT A2 product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-a2_evidence_002",
+      "date": null,
+      "title": "Deployment, demo, or independent context",
+      "claim": "Guinness says A2 walked 106.286 km without human guidance/remote control.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "agibot-a2_source_002"
+      ],
+      "confidence": 0.82,
+      "notes": "Use with caveats from source audit.",
+      "arena_relevance": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Guinness says A2 walked 106.286 km without human guidance/remote control.",
+      "source_location": "Humanoid robot walks over 100 km across China",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "agibot-a2_deployment_001",
+      "customer_or_partner": null,
+      "site_or_context": null,
+      "task": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+      "start_date": "2026-02-02",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "agibot-a2_source_002"
+      ],
+      "evidence_tier": 4,
+      "caveats": [
+        "Metrics are limited to what is explicitly stated in sources."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "agibot-a2_demo_001",
+      "title": "AgiBot A2 public demo/context",
+      "date": "2026-02-02",
+      "observed_capabilities": [
+        "Strong independent endurance/mobility evidence; service autonomy still less verified."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "agibot-a2_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "agibot-a2_source_001",
+        "agibot-a2_source_002"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "agibot-a2_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 0,
+    "independent_sources_count": 1,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+    "strongest_evidence": [
+      "169 cm, 69 kg, 700 Wh, 2h runtime, 40+ active DoF.",
+      "Guinness says A2 walked 106.286 km without human guidance/remote control."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "Teleoperation/editing details often unclear."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_high"
+  },
+  "source_ids": [
+    "agibot-a2_source_001",
+    "agibot-a2_source_002",
+    "agibot-a2_source_003"
+  ],
+  "sources": [
+    {
+      "id": "agibot-a2_source_001",
+      "title": "AGIBOT A2",
+      "publisher": "AgiBot",
+      "url": "https://www.agibot.com/products/A2",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "169 cm, 69 kg, 700 Wh, 2h runtime, 40+ active DoF."
+    },
+    {
+      "id": "agibot-a2_source_002",
+      "title": "Humanoid robot walks over 100 km across China",
+      "publisher": "Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/news/2026/2/humanoid-robot-stuns-passersby-as-it-walks-over-100-km-across-china-in-big-tech-milestone",
+      "date_published": "2026-02-02",
+      "date_accessed": "2026-05-16",
+      "source_type": "benchmark",
+      "reliability": "medium",
+      "reliability_notes": "Guinness says A2 walked 106.286 km without human guidance/remote control."
+    },
+    {
+      "id": "agibot-a2_source_003",
+      "title": "AgiBot A2 Price: Lite and Ultra, Specs - RoboSelect360",
+      "publisher": "RoboSelect360",
+      "url": "https://roboselect360.com/en/robots/agibot-a2.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Strong independent endurance/mobility evidence; service autonomy still less verified.",
+    "strongest_positive_evidence": [
+      "169 cm, 69 kg, 700 Wh, 2h runtime, 40+ active DoF.",
+      "Guinness says A2 walked 106.286 km without human guidance/remote control."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Missing intervention/failure-rate data"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

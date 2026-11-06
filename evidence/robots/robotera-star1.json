@@ -1,0 +1,759 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "robotera-star1",
+    "name": "RobotEra STAR1",
+    "company_id": "robotera",
+    "company_name": "RobotEra",
+    "country": "China",
+    "generation": "earlier full-size humanoid",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Directory page lists RobotEra Star1 as the previous model to RobotEra L7. In July 2025 founder interview, STAR1 was still listed among three commercial products, but no current availability or successor announcement found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "general-purpose humanoid research",
+      "commercial product (research, logistics, manufacturing, performance per directory claims)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "5.6-feet-tall",
+      "value": 171,
+      "unit": "cm",
+      "notes": "TechEBlog reports 5.6 feet; SkyTeamLabs directory states 171 cm for headline figures matching STAR1. Conversion 5.6 ft = 170.7 cm, rounded to 171.",
+      "source_ids": [
+        "robotera-star1_source_001",
+        "robotera-star1_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "143-pounds",
+      "value": 65,
+      "unit": "kg",
+      "notes": "TechEBlog reports 143 pounds; SkyTeamLabs directory states 65 kg for headline figures matching STAR1.",
+      "source_ids": [
+        "robotera-star1_source_001",
+        "robotera-star1_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "160kg",
+      "value": 160,
+      "unit": "kg",
+      "notes": "Reported by en.eeworld.com.cn, added 2026-10-29 by automated spec fill; maximum carry load.",
+      "source_ids": [
+        "robotera-star1_source_009"
+      ]
+    },
+    "runtime": {
+      "original_value": "34 minutes",
+      "value": 0.5666666667,
+      "unit": "h",
+      "notes": "Reported by TechEBlog, added 2026-10-29 by automated spec fill; at 8 mph; duration reported for Gobi Desert run, not necessarily full battery runtime.",
+      "source_ids": [
+        "robotera-star1_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity/voltage not published for STAR1 in reviewed sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 55,
+      "notes": "SkyTeamLabs directory states headline figure 55 DOF matches the 2024 STAR1. It also says 31 whole-body DOF without hands and two XHAND1 hands with 12 active DOF each (55 total). This is a third-party directory, not an official spec.",
+      "source_ids": [
+        "robotera-star1_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "8mph",
+      "value": 3.58,
+      "unit": "m/s",
+      "notes": "TechEBlog reports STAR1 ran at a brisk 8 mph for 34 minutes. This is sprint/running speed, not necessarily standard walking speed.",
+      "source_ids": [
+        "robotera-star1_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Directory describes RobotEra's XHAND1 as a fully direct-driven five-finger hand with 12 active DOF each. Source says L7 headline figures match STAR1, but does not explicitly confirm STAR1 hand model. Treat as likely but not confirmed.",
+      "degrees_of_freedom": 24,
+      "force_feedback": null,
+      "source_ids": [
+        "robotera-star1_source_006"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Cameras and depth sensors (generic directory description, not a specific STAR1 sensor list)"
+      ],
+      "source_ids": [
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ]
+    },
+    "compute": {
+      "description": "TechEBlog reports AI computing at up to 275 TOPS. No other compute details for STAR1.",
+      "source_ids": [
+        "robotera-star1_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "TechEBlog reports 400-Nm (295-lb.ft) motors with precision planetary reducers, high-precision encoders, and high-speed communication modules. SkyTeamLabs also lists 400 Nm peak at knee for headline figures matching STAR1.",
+      "source_ids": [
+        "robotera-star1_source_001",
+        "robotera-star1_source_006"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Founder interview lists STAR1 as a commercial product. Third-party directory pages show STAR1 as out of stock with no public price. No purchase URL or price found in primary sources.",
+      "source_ids": [
+        "robotera-star1_source_002",
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Video title claims STAR1 is the first humanoid to skillfully use chopsticks. Directory suggests STAR1 headline figures include 55 DOF and two XHAND1 hands with 12 active DOF each (via L7 match).",
+      "evidence_level": 2,
+      "source_ids": [
+        "robotera-star1_source_006",
+        "robotera-star1_source_007"
+      ],
+      "caveats": [
+        "Chopstick claim is only a video title; no transcript or observed details.",
+        "Teleoperation not disclosed for chopstick demo.",
+        "Hand DOF details come from an L7 directory page and are not explicitly confirmed for STAR1."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No evidence of autonomous task execution for STAR1 in reviewed sources. Founder interview discusses VLA models and teleoperation data collection generally, but no STAR1 autonomous task demo or benchmark found.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No autonomy disclosure for Gobi run, marathon support, or chopstick video.",
+        "No task success rates, intervention logs, or independent verification."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "TechEBlog reports STAR1 ran at 8 mph for 34 minutes in the Gobi Desert. Video titles confirm participation in 2024 Xi'an Marathon. Directory L7 speed 14.4 km/h is not credited to STAR1 because it was not explicitly matched.",
+      "evidence_level": 2,
+      "source_ids": [
+        "robotera-star1_source_001",
+        "robotera-star1_source_005",
+        "robotera-star1_source_008"
+      ],
+      "caveats": [
+        "Demo was company-produced; terrain and conditions chosen by RobotEra.",
+        "Teleoperation not disclosed.",
+        "No fall-rate, disturbance recovery, or independent mobility metrics."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Directory product pages claim advanced AI with object recognition and scene understanding, but no observed STAR1 perception performance or specific sensor data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ],
+      "caveats": [
+        "Generic marketing copy on directory pages.",
+        "No specific STAR1 sensor list or perception benchmark."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No evidence of direct human interaction capabilities beyond participation in a marathon event (video title) and generic healthcare application claims on directory pages.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Marathon demo shows proximity to humans, not interactive capability.",
+        "No conversational or instruction-following evidence."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "A single media-reported run of 34 minutes at 8 mph is the only endurance data. No rated runtime, failure rate, or long-term reliability evidence.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-star1_source_001"
+      ],
+      "caveats": [
+        "Media report of a company demo; not independently verified.",
+        "No total runtime, duty cycle, or hardware reliability metrics."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized at 171 cm, 65 kg; ran outdoors in the Gobi Desert wearing sneakers (media report). No safety certification or human-proximity safety evidence.",
+      "evidence_level": 1,
+      "source_ids": [
+        "robotera-star1_source_001",
+        "robotera-star1_source_006"
+      ],
+      "caveats": [
+        "Outdoor demo only; no indoor human environment tests.",
+        "No safety certifications or injury risk data."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Founder says STAR1 is one of three commercial products and over 200 units delivered company-wide as of June 2025, with clients including Haier Smart Home, Lenovo, and BZS Technology Development. No specific STAR1 customer deployment or order numbers.",
+      "evidence_level": 2,
+      "source_ids": [
+        "robotera-star1_source_002"
+      ],
+      "caveats": [
+        "Delivery count is across all RobotEra products, not STAR1 alone.",
+        "Client list may include other products.",
+        "No end-user case study or production metrics for STAR1."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price or checkout. Third-party listings show STAR1 out of stock. TechEBlog speculates a home version would cost $100,000+, but that is not a real price.",
+      "evidence_level": 0,
+      "source_ids": [
+        "robotera-star1_source_001",
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ],
+      "caveats": [
+        "Not purchasable from listings.",
+        "Contact-sales path may exist but not documented in reviewed sources.",
+        "No official price released."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "robotera-star1_evidence_001",
+      "date": "2024-10-15",
+      "title": "TechEBlog reports STAR1 Gobi Desert run and specs",
+      "claim": "TechEBlog reports STAR1 stands 5.6 feet tall, weighs 143 pounds, has 400-Nm motors and AI computing up to 275 TOPS, and ran at 8 mph for 34 minutes in the Gobi Desert.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-star1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Media report likely based on RobotEra's video; not independently measured.",
+      "arena_relevance": "Establishes size, speed, and endurance demo for comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Thanks to 400-Nm (295-lb.ft) motors with “precision planetary reducers, high-precision encoders, high-speed communication modules, and AI computing at up to 275 tops, it was able to run at a brisk 8mph for 34 minutes.",
+      "source_location": "TechEBlog article body",
+      "verification_notes": "Media summary; original RobotEra video not reviewed. Specs are likely company-supplied.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-star1_evidence_002",
+      "date": "2025-07-18",
+      "title": "Robot Era founder interview on commercial products and deliveries",
+      "claim": "Robot Era founder says the company offers three commercial products including STAR1, and as of June 2025 has delivered over 200 units, with clients including Haier Smart Home, Lenovo, and BZS Technology Development.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-star1_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Founder statements in credible media; delivery count is company-wide, not STAR1-specific.",
+      "arena_relevance": "Shows STAR1 is a commercial product, but no named customer deployment for STAR1 itself.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Robot Era already offers three commercial products: the XHand 1, the Q5, and the STAR1.",
+      "source_location": "KrASIA article, early section",
+      "verification_notes": "Interview transcript; no independent verification of delivery count or client list.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-star1_evidence_003",
+      "date": null,
+      "title": "SkyTeamLabs directory confirms STAR1 headline specs and previous-model status",
+      "claim": "SkyTeamLabs directory lists L7's previous model as RobotEra Star1 and states that headline figures 171 cm, 65 kg, 55 DOF, 400 Nm, 25 rad/s match the 2024 STAR1.",
+      "category": [
+        "specs",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-star1_source_006"
+      ],
+      "confidence": 0.55,
+      "notes": "Third-party directory; figures may come from RobotEra brochures or aggregation.",
+      "arena_relevance": "Provides numerical specs for STAR1 beyond the media report, and supports superseded status.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Headline figures (171 cm, 65 kg, 55 DOF, 400 Nm, 25 rad/s) match the 2024 STAR1; RobotEra does not say whether L7 is STAR1's production version or a new generation.",
+      "source_location": "SkyTeamLabs RobotEra L7 page, Key facts section",
+      "verification_notes": "Directory source; not official. DOF includes hands (31 whole-body + 24 hand DOF according to page).",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-star1_evidence_004",
+      "date": null,
+      "title": "Third-party listings show STAR1 out of stock",
+      "claim": "Asia Satellite and EuropaSatellite product pages list RobotEra STAR1 as out of stock / not on stock with no public price.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory listings may not be official sales channels; absence of price is notable.",
+      "arena_relevance": "Indicates no public availability for STAR1 as of review date.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Out of stock",
+      "source_location": "Asia Satellite product page header",
+      "verification_notes": "German listing says 'Nicht auf Lager'. No price field on STAR1 pages; related products have prices.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "robotera-star1_evidence_005",
+      "date": null,
+      "title": "STAR1 at 2024 Xi'an Marathon (video title/description)",
+      "claim": "RobotEra video title and Humanoid Robotics Technology page say STAR1 debuted to support the 2024 Xi'an Marathon and joined runners.",
+      "category": [
+        "mobility_whole_body_control",
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "robotera-star1_source_005",
+        "robotera-star1_source_008"
+      ],
+      "confidence": 0.5,
+      "notes": "Only title/description available; no transcript. Teleoperation not disclosed.",
+      "arena_relevance": "Supports outdoor mobility in a public event, but not task execution.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "STAR1, the general-purpose humanoid robot from Robot Era, joins runners in this ancient yet modern city for an exciting start!",
+      "source_location": "Humanoid Robotics Technology video page",
+      "verification_notes": "Video not watched; claims based on title and page text. No duration or autonomy details.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "robotera-star1_evidence_007",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No public payload, battery capacity, runtime rating, sensor list, or price for STAR1 were found in the reviewed sources.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on value and endurance.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "robotera-star1_demo_001",
+      "title": "Gobi Desert running demo",
+      "date": "2024-10-15",
+      "observed_capabilities": [
+        "running at 8 mph for 34 minutes",
+        "outdoor terrain locomotion"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Gobi Desert, as reported by TechEBlog",
+      "source_ids": [
+        "robotera-star1_source_001"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Media-reported, not directly viewed. Teleoperation not disclosed. Company-chosen terrain."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Media report does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "running across desert terrain",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "robotera-star1_demo_002",
+      "title": "2024 Xi'an Marathon support",
+      "date": null,
+      "observed_capabilities": [
+        "participating in marathon event",
+        "outdoor mobility among runners"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Xi'an, China marathon",
+      "source_ids": [
+        "robotera-star1_source_005",
+        "robotera-star1_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title/description available; no transcript or duration. Teleoperation not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in title or page text.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "robot at marathon event",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "robotera-star1_demo_003",
+      "title": "Chopsticks manipulation",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "using chopsticks"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "robotera-star1_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video title only; no transcript. Teleoperation not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "chopstick use claimed in title",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No source discloses whether Gobi run, marathon support, or chopstick demo are teleoperated or autonomous.",
+      "impact_on_arena_scoring": "Autonomy task execution remains at zero evidence; mobility and manipulation demos cannot be credited for autonomy."
+    },
+    {
+      "topic": "Sensors and perception",
+      "description": "No STAR1-specific sensor suite or perception benchmark found. Directory pages only make generic claims.",
+      "impact_on_arena_scoring": "Perception_scene_understanding capped at low evidence level."
+    },
+    {
+      "topic": "Payload and battery",
+      "description": "No payload rating or battery capacity for STAR1 found. L7 specs should not be transferred.",
+      "impact_on_arena_scoring": "Endurance and manipulation carry uncertainty."
+    },
+    {
+      "topic": "Availability",
+      "description": "Third-party listings show out of stock and no public price. Founder says STAR1 is commercial but no sales channel verified.",
+      "impact_on_arena_scoring": "Accessibility/value minimal."
+    },
+    {
+      "topic": "Deployment specifics",
+      "description": "Company-wide delivery and client numbers are not specific to STAR1; no named STAR1 customer deployment found.",
+      "impact_on_arena_scoring": "Commercial proof for STAR1 remains unproven."
+    },
+    {
+      "topic": "Demo verification",
+      "description": "All demos are represented by media summaries or video titles only; no transcripts or independent reviews.",
+      "impact_on_arena_scoring": "Confidence in mobility/manipulation claims is limited."
+    }
+  ],
+  "source_ids": [
+    "robotera-star1_source_001",
+    "robotera-star1_source_002",
+    "robotera-star1_source_003",
+    "robotera-star1_source_004",
+    "robotera-star1_source_005",
+    "robotera-star1_source_006",
+    "robotera-star1_source_007",
+    "robotera-star1_source_008",
+    "robotera-star1_source_009"
+  ],
+  "sources": [
+    {
+      "id": "robotera-star1_source_001",
+      "title": "Robot Era's STAR1 Humanoid Robot Puts on Sneakers, Goes Running in Gobi Desert",
+      "publisher": "TechEBlog",
+      "url": "https://www.techeblog.com/robot-era-star1-humanoid-robot-gobi-desert/",
+      "date_published": "2024-10-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Media outlet; likely based on RobotEra video/press. No independent measurement."
+    },
+    {
+      "id": "robotera-star1_source_002",
+      "title": "More than a hardware play: Robot Era's founder sets the record straight on the company's true ambitions",
+      "publisher": "KrASIA",
+      "url": "https://kr-asia.com/more-than-a-hardware-play-robot-eras-founder-sets-the-record-straight-on-the-companys-true-ambitions",
+      "date_published": "2025-07-18",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Interview with founder; company claims relayed. Not independent data."
+    },
+    {
+      "id": "robotera-star1_source_003",
+      "title": "RobotEra Star1 Humanoid Robot",
+      "publisher": "Asia Satellite Co",
+      "url": "https://www.asiasatellite.co/th/Robot-Era-Star1.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party product listing; marketing copy, no official specs."
+    },
+    {
+      "id": "robotera-star1_source_004",
+      "title": "RobotEra Star1 Humanoid Robot",
+      "publisher": "EuropaSatellite.com",
+      "url": "https://www.europasatellite.com/de-eu/Robot-Era-Star1.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party product listing in German; duplicate of AsiaSatellite content."
+    },
+    {
+      "id": "robotera-star1_source_005",
+      "title": "Humanoid Robotics Videos | Humanoid Robotics Technology",
+      "publisher": "Humanoid Robotics Technology",
+      "url": "https://humanoidroboticstechnology.com/videos/robot-era-star1-debuts-to-support-2024-xian-marathon/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Video aggregation page with embedded YouTube video and description. Claims not independently verified."
+    },
+    {
+      "id": "robotera-star1_source_006",
+      "title": "RobotEra L7 price and specs — BotRegistry",
+      "publisher": "skyteamlabs.com",
+      "url": "https://skyteamlabs.com/robots/robotera-l7/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Directory focused on L7; only headline figure comparison references STAR1."
+    },
+    {
+      "id": "robotera-star1_source_007",
+      "title": "ROBOTERA STAR1 has become the first #humanoidrobot to skillfully use chopsticks!",
+      "publisher": "YouTube ROBOTERA",
+      "url": "https://www.youtube.com/watch?v=ergiT1fglCk",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official RobotEra YouTube title only; no transcript. Company claim based on title."
+    },
+    {
+      "id": "robotera-star1_source_008",
+      "title": "Robot Era STAR1 debuts to support 2024 Xi'an Marathon",
+      "publisher": "YouTube ROBOTERA",
+      "url": "https://www.youtube.com/watch?v=yNWYG9WYaBI",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official RobotEra YouTube title only; no transcript. Claims based on title."
+    },
+    {
+      "id": "robotera-star1_source_009",
+      "title": "Star Motion Technology launches its first product-grade humanoid robot, STAR 1-EEWORLD",
+      "publisher": "en.eeworld.com.cn",
+      "url": "https://en.eeworld.com.cn/news/robot/eic686656.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "RobotEra STAR1 is an earlier full-size humanoid with credible media-reported outdoor running speed (8 mph for 34 min in Gobi Desert) and a company-claimed chopstick manipulation title, but evidence is mostly indirect (media/directory/video titles). It is superseded by L7 and has no public price or customer deployment specifics.",
+    "strongest_positive_evidence": [
+      "TechEBlog report of 8 mph for 34 minutes in Gobi Desert.",
+      "Official video title showing STAR1 joined Xi'an Marathon.",
+      "Founder confirmed STAR1 is a commercial product."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent verification or video transcript for demos.",
+      "No specific customer deployment or delivery count for STAR1.",
+      "No public price, battery, payload, or autonomy evidence."
+    ],
+    "conflicting_claims": [
+      "Speed: TechEBlog says 8 mph (3.58 m/s); SkyTeamLabs L7 page lists speed 14.4 km/h (4 m/s) but does not explicitly match it to STAR1, so not credited.",
+      "Status: RobotEra listed STAR1 as commercial product in July 2025 but directory pages now show out of stock and L7 as successor."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit L7's 55 DOF, sensors, payload, or battery capacity to STAR1 unless explicitly matched.",
+      "Do not describe STAR1 as currently purchasable.",
+      "Do not treat the Gobi run or marathon as autonomous; teleoperation not disclosed.",
+      "Do not infer manipulation dexterity from the chopsticks title alone."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "robotera-l7"
+    ],
+    "currentness_notes": "SkyTeamLabs directory lists L7 as a newer model with STAR1 as previous model. STAR1 remains on RobotEra's commercial product list in July 2025 interview but current status is superseded."
+  },
+  "excluded_claims": [
+    {
+      "claim": "STAR1 can jump and backflip",
+      "reason": "AsiaSatellite/EuropaSatellite marketing copy mentions running, jumping, and backflips but no video or observed evidence.",
+      "source_ids": [
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ]
+    },
+    {
+      "claim": "Home version price of $100,000+",
+      "reason": "TechEBlog speculation, not an official price.",
+      "source_ids": [
+        "robotera-star1_source_001"
+      ]
+    },
+    {
+      "claim": "200 delivered units are STAR1 units",
+      "reason": "KrASIA delivery count is company-wide across all RobotEra products.",
+      "source_ids": [
+        "robotera-star1_source_002"
+      ]
+    },
+    {
+      "claim": "L7 specs (20 kg payload, battery 60V 15Ah, sensors, compute) are STAR1 specs",
+      "reason": "SkyTeamLabs only explicitly matches headline figures to STAR1, not payload or battery.",
+      "source_ids": [
+        "robotera-star1_source_006"
+      ]
+    },
+    {
+      "claim": "Xi'an Marathon debut means autonomous locomotion",
+      "reason": "No autonomy disclosure in video title or page text.",
+      "source_ids": [
+        "robotera-star1_source_005",
+        "robotera-star1_source_008"
+      ]
+    },
+    {
+      "claim": "STAR1 has object recognition/scene understanding",
+      "reason": "Directory marketing copy, no observed evidence.",
+      "source_ids": [
+        "robotera-star1_source_003",
+        "robotera-star1_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "RobotEra STAR1 is a 1.71 m, 65 kg bipedal humanoid from RobotEra, with 55 DOF and 400 Nm joint torque. The strongest evidence is a media report of a Gobi Desert run at 8 mph for 34 minutes and a video title claiming chopstick use. Founder confirms STAR1 is a commercial product, but no specific customer deployment or price. It is superseded by the L7.",
+    "strongest_evidence": [
+      "TechEBlog report of 8 mph for 34 minutes in Gobi Desert (robotera-star1_evidence_001).",
+      "Founder confirms STAR1 as commercial product (robotera-star1_evidence_002).",
+      "Directory confirms 171 cm, 65 kg, 55 DOF, 400 Nm (robotera-star1_evidence_003)."
+    ],
+    "weakest_evidence": [
+      "No independent verification or video transcript for demos.",
+      "No battery, payload, or autonomy disclosures.",
+      "Out of stock with no price (robotera-star1_evidence_004)."
+    ],
+    "known_do_not_credit": [
+      "L7's 20 kg payload, battery, or sensors.",
+      "Backflip or jump capabilities from directory marketing.",
+      "Autonomous operation for Gobi run or marathon.",
+      "200 delivered units as STAR1-specific."
+    ],
+    "recommended_confidence": "low"
+  }
+}

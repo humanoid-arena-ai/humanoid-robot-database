@@ -1,0 +1,1066 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "xiaomi-cyberone",
+    "name": "Xiaomi CyberOne",
+    "company_id": "xiaomi",
+    "company_name": "Xiaomi",
+    "country": "China",
+    "generation": "first-generation full-size Xiaomi humanoid (2022 demonstrator)",
+    "first_announced_date": "2022-08-11",
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Unveiled on 2022-08-11 as a technology demonstrator and never offered for sale. No runtime, autonomy or customer deployment evidence was found. A 2026 YouTube title references a 'CyberOne V2' at WRC 2026, but no primary successor documentation was available in the reviewed sources, so the original is treated as superseded.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "technology demonstration",
+      "bipedal locomotion research",
+      "human-robot interaction research",
+      "future manufacturing and companion-robot exploration (stated aspiration, not deployment)"
+    ],
+    "last_updated": "2026-10-30"
+  },
+  "specs": {
+    "height": {
+      "original_value": "177 cm",
+      "value": 177,
+      "unit": "cm",
+      "notes": "Technobaboy, robotsusa and Inceptive Mind report 177 cm. Manufacturing Today says 5.9 feet, a minor conflict. No Xiaomi official spec page was in the reviewed sources.",
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "weight": {
+      "original_value": "52 kg",
+      "value": 52,
+      "unit": "kg",
+      "notes": "Manufacturing Today reports 115 pounds, about 52 kg.",
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "payload": {
+      "original_value": "6 pounds total; 3 pounds per hand; 1.5 kg per hand",
+      "value": 2.72,
+      "unit": "kg",
+      "notes": "Manufacturing Today reports 6 lb total and 3 lb per hand; robotsusa and Inceptive Mind report 1.5 kg per hand. The catalog uses 6 lb as total payload. Values conflict; 2.72 kg is the converted 6 lb total.",
+      "source_ids": [
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime or battery duration was disclosed in reviewed sources.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity and chemistry were not disclosed in reviewed sources.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "around 3.6 km/h",
+      "value": 1,
+      "unit": "m/s",
+      "notes": "robotsusa reports about 3.6 km/h, equivalent to 1.0 m/s. No independent gait measurement.",
+      "source_ids": [
+        "xiaomi-cyberone_source_004"
+      ]
+    },
+    "degrees_of_freedom": {
+      "original_value": "21",
+      "value": 21,
+      "unit": "count",
+      "notes": "Technobaboy, robotsusa and Inceptive Mind report 21 DoF across 13 joints; hand DoF was not disclosed.",
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "hands": {
+      "description": "Each hand is reported to hold up to 1.5 kg; upper-limb actuators deliver up to 30 Nm. No finger or hand degrees of freedom, tactile sensing or dexterity specification was disclosed.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Mi-Sense depth vision module (reported by robotsusa)",
+        "pair of microphones reported to identify 85 environmental sound types and 45 human emotion classifications",
+        "curved OLED face display"
+      ],
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "compute": {
+      "description": "Not disclosed. Lei Jun is quoted saying AI and mechanical capabilities are self-developed by Xiaomi Robotics Lab, but no onboard compute, chip or model details were provided.",
+      "source_ids": [
+        "xiaomi-cyberone_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "13 joints and 21 DoF reported; 0.5 ms per-DoF response; upper-limb motor about 500 g with up to 30 Nm; peak hip torque up to 300 Nm.",
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Xiaomi did not announce commercial sales. Lei Jun reportedly estimated 600,000-700,000 yuan when it goes on sale, and a third-party reseller lists $99,999, but neither is an official sale price. No sale date was found.",
+      "source_ids": [
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Reported single-hand payload of 1.5 kg and programming by demonstration; the launch stage appearance included handing a flower to Lei Jun. No finger-level dexterity, grasp taxonomy or manipulation benchmark was published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ],
+      "caveats": [
+        "Payload and stage gesture only; no independent manipulation testing.",
+        "Hand degrees of freedom and tactile sensing were not disclosed."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No autonomous task execution was documented in the reviewed sources. Inceptive Mind described CyberOne as mostly a prototype that did not seem able to perform many practical tasks. A 2026 YouTube title says 'Completely Alone' for a CyberOne V2 florist demo, but no transcript or description was available, so autonomy is not credited.",
+      "evidence_level": 0,
+      "source_ids": [
+        "xiaomi-cyberone_source_005",
+        "xiaomi-cyberone_source_009"
+      ],
+      "caveats": [
+        "No autonomous task video with disclosed execution mode.",
+        "YouTube title alone cannot establish autonomy."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Reported 21 DoF across 13 joints, 0.5 ms per-DoF response, 300 Nm peak hip torque and about 3.6 km/h walking; media reported it walked onstage and handed over a flower. No independent gait, balance-recovery or fall-rate data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ],
+      "caveats": [
+        "Launch-stage demonstration only; no measured gait metrics.",
+        "Runtime and terrain capability were not disclosed."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Reported Mi-Sense depth vision, 3D reconstruction, and recognition of 85 environmental sound types and 45 human emotion classifications. These are company/media claims without a published benchmark.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ],
+      "caveats": [
+        "No accuracy, latency or independent perception benchmark.",
+        "Emotion recognition claims are unverified."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Curved OLED face display, microphones for sound/emotion classification, and a launch-stage interaction in which CyberOne greeted Lei Jun and handed him a flower. No measured conversational or emotion-recognition reliability.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ],
+      "caveats": [
+        "Stage script and teleoperation status were not disclosed.",
+        "No user study or interaction benchmark."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery capacity, duty cycle, MTBF or endurance test was disclosed in the reviewed sources.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Cannot assess reliability from a launch demonstrator."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-scale at 177 cm and 52 kg with a face display, but no safety certification, runtime or home/factory operating data was found. Never sold.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ],
+      "caveats": [
+        "No safety or human-proximity testing published.",
+        "Not commercially deployed."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No customer deployment, pilot or commercial sale was found. Xiaomi did not announce commercial sales; a 2024 blog's factory-floor claims are unsourced, and a 2026 YouTube title about an EV factory has no transcript.",
+      "evidence_level": 0,
+      "source_ids": [
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005",
+        "xiaomi-cyberone_source_006",
+        "xiaomi-cyberone_source_010"
+      ],
+      "caveats": [
+        "Factory and elder-care claims are speculative or title-only.",
+        "No units, hours or output metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Never offered for sale; no official price, lease, waitlist or purchase channel. Reported expected cost of 600,000-700,000 yuan and a third-party $99,999 listing do not establish accessibility.",
+      "evidence_level": 0,
+      "source_ids": [
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ],
+      "caveats": [
+        "Not purchasable as a product.",
+        "Expected cost is far above consumer accessibility."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "xiaomi-cyberone_evidence_001",
+      "date": "2022-08-14",
+      "title": "IEEE Spectrum CyberOne article title (body unavailable)",
+      "claim": "IEEE Spectrum published an article titled 'Xiaomi Builds a Humanoid Robot for Some Reason'; the supplied page text contained only the title, navigation and comments, so no specifications were taken from it.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Article body was not present in the supplied source text.",
+      "arena_relevance": "Establishes independent media coverage but not technical facts.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Xiaomi Builds a Humanoid Robot for Some Reason",
+      "source_location": "article title",
+      "verification_notes": "Do not use for specs; the article body was unavailable.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_002",
+      "date": "2022-08-16",
+      "title": "CyberOne launch dimensions",
+      "claim": "CyberOne is reported at 177 cm tall, 52 kg, with a 168 cm arm span.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Secondary report of the Xiaomi launch.",
+      "arena_relevance": "Basic human-scale dimensions.",
+      "claim_type": "spec",
+      "supporting_excerpt": "CyberOne is a humanoid robot measuring 177cm in height and 52kg by weight, with an arm span of 168cm.",
+      "source_location": "Technobaboy article body, opening description",
+      "verification_notes": "No Xiaomi official spec page in the pack; consistent with robotsusa and Inceptive Mind.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_003",
+      "date": "2022-08-16",
+      "title": "CyberOne 21 DoF and 0.5 ms response",
+      "claim": "CyberOne is reported to support 21 degrees of freedom with 0.5 ms response per degree of freedom.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Secondary report of launch figures.",
+      "arena_relevance": "Core actuation and control specification.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It supports up to 21 degrees of freedom in motion and achieves a real-time response speed of 0.5ms for each degree of freedom, which allows it to fully simulate human movements.",
+      "source_location": "Technobaboy article body, mechanical description",
+      "verification_notes": "Not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_004",
+      "date": "2022-08-16",
+      "title": "CyberOne peak torque and posture balancing",
+      "claim": "CyberOne is reported to use bipedal-motion posture balancing with peak torque up to 300 Nm.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Secondary report of launch figures.",
+      "arena_relevance": "Relevant to whole-body torque authority.",
+      "claim_type": "spec",
+      "supporting_excerpt": "To stay upright, CyberOne is fitted with advanced arms and legs that supports bipedal-motion posture balancing with a peak torque of up to 300Nm.",
+      "source_location": "Technobaboy article body, balance description",
+      "verification_notes": "No independent torque measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_005",
+      "date": "2022-08-16",
+      "title": "CyberOne emotion and vision claims",
+      "claim": "CyberOne is reported to detect human emotion, use advanced vision and create three-dimensional virtual reconstructions of the real world.",
+      "category": [
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Launch claim relayed by media; no accuracy data.",
+      "arena_relevance": "Basis for interaction and scene-understanding claims.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It also has the ability to detect human emotion, and features advanced vision capabilities and functionality that allows it to create three-dimensional virtual reconstructions of the real world, alongside a host of other advanced technologies.",
+      "source_location": "Technobaboy article body, perception description",
+      "verification_notes": "No benchmark or independent test.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_006",
+      "date": "2022-08-12",
+      "title": "CyberOne appears onstage with Lei Jun",
+      "claim": "At the Beijing launch, CyberOne joined Lei Jun onstage, greeted him and handed him a long-stem flower.",
+      "category": [
+        "human_interaction",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Live stage appearance reported by media; video not reviewed.",
+      "arena_relevance": "Only public interaction demo found for this robot.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The humanoid robot was unveiled at a launch event in Beijing, where the bipedal humanoid robot joined Lei Jun onstage, greeting the CEO and handing him a long-stem flower.",
+      "source_location": "Inceptive Mind article body, launch description",
+      "verification_notes": "Stage actions may be scripted; execution mode not disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_007",
+      "date": "2022-08-12",
+      "title": "CyberOne described as mostly a prototype",
+      "claim": "Inceptive Mind characterized CyberOne as mostly a prototype that did not seem able to perform many practical tasks.",
+      "category": [
+        "autonomy_task_execution",
+        "deployment_commercial_proof",
+        "missing_evidence"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Contemporary media assessment.",
+      "arena_relevance": "Caps practical-task and deployment claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "At the moment, CyberOne should probably be seen mostly as a prototype that so far does not seem to be able to perform many practical tasks.",
+      "source_location": "Inceptive Mind article body, assessment paragraph",
+      "verification_notes": "Consistent with the absence of deployment evidence.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_008",
+      "date": "2022-08-12",
+      "title": "CyberOne single-hand payload and demonstration",
+      "claim": "CyberOne is reported to hold up to 1.5 kg in one hand and to support programming by demonstration.",
+      "category": [
+        "manipulation_dexterity",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Payload is not equivalent to dexterous manipulation.",
+      "arena_relevance": "Limited manipulation evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "In addition, CyberOne can hold up to 1.5kg in weight with a single hand and programming by demonstration.",
+      "source_location": "Inceptive Mind article body, upper-limb paragraph",
+      "verification_notes": "No hand DoF or grasp-quality data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_009",
+      "date": "2022-08-12",
+      "title": "CyberOne expected cost and no sale date",
+      "claim": "Lei Jun reportedly estimated 600,000-700,000 yuan when CyberOne goes on sale; no sale date was given.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Expected future price, not an official sale price.",
+      "arena_relevance": "Shows no consumer accessibility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Lei Jun stated that CyberOne would cost somewhere in the range of 600,000 to 700,000 yuan (about $89,100 to $104,000) when it goes on sale.",
+      "source_location": "Inceptive Mind article body, pricing paragraph",
+      "verification_notes": "No Xiaomi sales page or date.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_010",
+      "date": null,
+      "title": "Secondary specification listing for CyberOne",
+      "claim": "A reseller/directory listing reports 177 cm, 52 kg, 168 cm arm span, 21 DoF across 13 joints and 0.5 ms joint response.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Third-party listing, not Xiaomi official documentation.",
+      "arena_relevance": "Corroborates launch specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It stands 177 cm tall, weighs 52 kg, and has a 168 cm arm span, with 21 degrees of freedom across 13 joints and a 0.5 ms joint response time.",
+      "source_location": "robotsusa.com product page, overview and technical section",
+      "verification_notes": "Reseller page; use only as secondary corroboration.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_011",
+      "date": null,
+      "title": "Secondary listing: walking speed and perception",
+      "claim": "A reseller/directory listing reports Mi-Sense depth vision, 45 emotion classifications, 85 environmental sound types, a curved OLED face and walking speed around 3.6 km/h.",
+      "category": [
+        "perception_scene_understanding",
+        "mobility_whole_body_control",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Third-party listing repeating launch claims.",
+      "arena_relevance": "Supports speed and perception claims weakly.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The platform combines a Mi-Sense depth vision module, recognition of 45 human emotion classifications from voice and 85 environmental sound types, a curved OLED face display, and bipedal posture balancing with a walking speed of around 3.6 km/h.",
+      "source_location": "robotsusa.com product page, overview and perception sections",
+      "verification_notes": "No independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_012",
+      "date": null,
+      "title": "Secondary listing: per-hand payload",
+      "claim": "A reseller/directory listing reports each hand can hold up to 1.5 kg.",
+      "category": [
+        "manipulation_dexterity",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Conflicts with Manufacturing Today's 3 lb per hand.",
+      "arena_relevance": "Limited payload evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Each hand can additionally hold up to 1.5 kg, letting the robot carry small objects while it moves.",
+      "source_location": "robotsusa.com product page, walking and balancing section",
+      "verification_notes": "No test data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_013",
+      "date": null,
+      "title": "No commercial sales announced",
+      "claim": "Xiaomi presented CyberOne as a research and ecosystem exploration platform and did not announce commercial sales; cost figures were manufacturing estimates rather than a list price.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary listing explicitly says no commercial sales.",
+      "arena_relevance": "Establishes not-for-sale status.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Xiaomi presented CyberOne as a research and ecosystem exploration platform, and the company did not announce commercial sales; cost figures mentioned around the unveiling referred to manufacturing estimates rather than a list price.",
+      "source_location": "robotsusa.com product page, pricing and availability section",
+      "verification_notes": "Consistent with Inceptive Mind's no-sale-date report.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_014",
+      "date": "2024-06-11",
+      "title": "Conflicting payload and joint count",
+      "claim": "Manufacturing Today reports a 6 lb total lift, 3 lb per hand and 13 joints, conflicting with the 1.5 kg per hand reports.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xiaomi-cyberone_source_003"
+      ],
+      "confidence": 0.35,
+      "notes": "Low-confidence secondary article with unsourced figures.",
+      "arena_relevance": "Shows payload and joint-count uncertainty.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot can lift up to 6 pounds, with a maximum of 3 pounds in each hand, thanks to its system of 13 joints that provide flexibility and strength.",
+      "source_location": "Manufacturing Today article body, features section",
+      "verification_notes": "Payload conflicts with 1.5 kg per hand claims; treat as low confidence.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_015",
+      "date": "2024-07-26",
+      "title": "Unsourced factory-efficiency claim",
+      "claim": "A 2024 blog claims a future 15-20% efficiency increase and factory integration for CyberOne without citing primary evidence.",
+      "category": [
+        "deployment_commercial_proof",
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "xiaomi-cyberone_source_006"
+      ],
+      "confidence": 0.2,
+      "notes": "Speculative blog; no customer, site, hours or output data.",
+      "arena_relevance": "Should not be credited as deployment evidence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Internal estimates suggest a future potential 15-20% increase in efficiency for specific tasks.",
+      "source_location": "The bLife Movement article, manufacturing section",
+      "verification_notes": "No primary source or named deployment.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "xiaomi-cyberone_evidence_020",
+      "date": null,
+      "title": "Missing runtime, battery, compute and hand DoF",
+      "claim": "No runtime, battery capacity, onboard compute, hand degrees of freedom or independent test result was disclosed in the reviewed sources.",
+      "category": [
+        "missing_evidence",
+        "specs"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should not infer missing specs from directories.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure is not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "xiaomi-cyberone_demo_001",
+      "title": "Beijing launch stage appearance",
+      "date": "2022-08-11",
+      "observed_capabilities": [
+        "joined Lei Jun onstage",
+        "greeted the CEO",
+        "handed him a long-stem flower"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Xiaomi launch event stage, Beijing",
+      "source_ids": [
+        "xiaomi-cyberone_source_002",
+        "xiaomi-cyberone_source_005"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No video reviewed; description comes from press coverage.",
+        "Autonomy/teleoperation not disclosed; a scripted stage demo is likely but not stated."
+      ],
+      "editing_notes": "No video source was available in the pack; assess only as a reported live stage appearance.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The reviewed sources do not state whether the stage actions were autonomous, scripted or teleoperated.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Media reported CyberOne joining Lei Jun onstage, greeting him and handing him a flower.",
+          "verification_notes": "Not video-verified; manual review of launch footage required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Official documentation",
+      "description": "No Xiaomi official product page, manual or technical paper was present in the reviewed sources; most specifications come from secondary reports and a reseller listing.",
+      "impact_on_arena_scoring": "Specs should be treated as reported, not manufacturer-verified."
+    },
+    {
+      "topic": "Runtime and power",
+      "description": "No runtime, battery capacity, charging method or duty cycle was disclosed.",
+      "impact_on_arena_scoring": "Endurance and reliability cannot be scored above minimal evidence."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "No autonomous task execution with disclosed execution mode was found; the 2026 florist YouTube title has no transcript.",
+      "impact_on_arena_scoring": "Do not credit autonomy."
+    },
+    {
+      "topic": "Deployment",
+      "description": "No customer, site, hours, units or output metrics found. The 2024 factory blog and 2026 EV-factory YouTube title provide no verifiable deployment evidence.",
+      "impact_on_arena_scoring": "Commercial proof remains at zero."
+    },
+    {
+      "topic": "Payload conflict",
+      "description": "Manufacturing Today reports 6 lb total and 3 lb per hand; robotsusa and Inceptive Mind report 1.5 kg per hand. The catalog uses 6 lb as total payload.",
+      "impact_on_arena_scoring": "Use payload cautiously; do not treat as dexterity evidence."
+    },
+    {
+      "topic": "Later video titles",
+      "description": "YouTube sources 7-11 were available only as titles and channel/date metadata, with no transcripts or visual review.",
+      "impact_on_arena_scoring": "Cannot support hand-upgrade, sweating-cooling, V2 florist or factory claims."
+    },
+    {
+      "topic": "Price",
+      "description": "No official price. A third-party reseller lists $99,999, and Lei Jun reportedly estimated 600,000-700,000 yuan, but Xiaomi did not announce sales.",
+      "impact_on_arena_scoring": "Accessibility remains not-for-sale."
+    },
+    {
+      "topic": "Safety and interaction",
+      "description": "Emotion/sound recognition claims are unverified, and no safety certification or human-proximity testing was found.",
+      "impact_on_arena_scoring": "Keep human-interaction and safety confidence low."
+    }
+  ],
+  "source_ids": [
+    "xiaomi-cyberone_source_001",
+    "xiaomi-cyberone_source_002",
+    "xiaomi-cyberone_source_003",
+    "xiaomi-cyberone_source_004",
+    "xiaomi-cyberone_source_005",
+    "xiaomi-cyberone_source_006",
+    "xiaomi-cyberone_source_007",
+    "xiaomi-cyberone_source_008",
+    "xiaomi-cyberone_source_009",
+    "xiaomi-cyberone_source_010",
+    "xiaomi-cyberone_source_011"
+  ],
+  "sources": [
+    {
+      "id": "xiaomi-cyberone_source_001",
+      "title": "Xiaomi Builds a Humanoid Robot for Some Reason",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/humanoid-robot-xiaomi-cyberone",
+      "date_published": "2022-08-14",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "high",
+      "reliability_notes": "Reputable outlet, but the supplied page text contained only the title, navigation and comments; no article body was available."
+    },
+    {
+      "id": "xiaomi-cyberone_source_002",
+      "title": "Xiaomi unveiled a humanoid robot called CyberOne - Technobaboy",
+      "publisher": "Technobaboy",
+      "url": "https://www.technobaboy.com/2022/08/16/xiaomi-cyberone-robot/",
+      "date_published": "2022-08-16",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary launch report; repeats Xiaomi claims without independent testing."
+    },
+    {
+      "id": "xiaomi-cyberone_source_003",
+      "title": "Xiaomi Unleashes Humanoid Robots on Factory Floors",
+      "publisher": "Manufacturing Today",
+      "url": "https://manufacturing-today.com/news/xiaomi-unleashes-humanoid-robots-on-factory-floors/",
+      "date_published": "2024-06-11",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Trade-style article with unsourced figures and speculative factory-integration language."
+    },
+    {
+      "id": "xiaomi-cyberone_source_004",
+      "title": "Xiaomi Cyberone Humanoid Robot",
+      "publisher": "robotsusa.com",
+      "url": "https://www.robotsusa.com/Xiaomi-Cyberone.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller/directory page; useful as a secondary spec summary but not Xiaomi official. Its $99,999 listing is not an official price."
+    },
+    {
+      "id": "xiaomi-cyberone_source_005",
+      "title": "Xiaomi unveils its first full-size humanoid robot, CyberOne",
+      "publisher": "Inceptive Mind",
+      "url": "https://www.inceptivemind.com/xiaomi-unveils-first-full-size-humanoid-robot-cyberone/25828/",
+      "date_published": "2022-08-12",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary launch report; provides a skeptical prototype assessment and reported price expectation."
+    },
+    {
+      "id": "xiaomi-cyberone_source_006",
+      "title": "How Xiaomi's CyberOne Might be Transforming Factory Floors",
+      "publisher": "The bLife Movement™",
+      "url": "https://www.theblifemovement.com/how-xiaomis-cyberone-might-be-transforming-factory-floors/",
+      "date_published": "2024-07-26",
+      "date_accessed": "2026-10-30",
+      "source_type": "unknown",
+      "reliability": "low",
+      "reliability_notes": "Speculative blog article with unsourced factory, efficiency and elder-care claims."
+    },
+    {
+      "id": "xiaomi-cyberone_source_007",
+      "title": "Xiaomi’s CyberOne Hand Just Got a Huge Upgrade — Full-Palm Touch + “Sweating” Cooling",
+      "publisher": "OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=WQYk0TtDg-g",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title-only YouTube source; no transcript or visual review available."
+    },
+    {
+      "id": "xiaomi-cyberone_source_008",
+      "title": "Xiaomi’s New CyberOne Humanoid Robot Sweats Like a Real Person",
+      "publisher": "Kalil 4.0",
+      "url": "https://www.youtube.com/watch?v=xLb7MulkYiY",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title-only YouTube source; no transcript or visual review available."
+    },
+    {
+      "id": "xiaomi-cyberone_source_009",
+      "title": "Xiaomi CyberOne V2 Just Became a Florist… Completely Alone (WRC 2026)",
+      "publisher": "OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=3IdLLXNovFs",
+      "date_published": "2026-08-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title-only YouTube source; no transcript or visual review available."
+    },
+    {
+      "id": "xiaomi-cyberone_source_010",
+      "title": "Inside Xiaomi’s EV Factory : Xiaomi’s Robot Breakthrough Revealed.",
+      "publisher": "OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=GFpWjNJnsQc",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title-only YouTube source; no transcript or visual review available."
+    },
+    {
+      "id": "xiaomi-cyberone_source_011",
+      "title": "Xiaomi CyberOne Sweating Hand: Dancing Luca, Unitree G1 Plays with Kids & ZGC 2026",
+      "publisher": "Zoom Vantage",
+      "url": "https://www.youtube.com/watch?v=ZknRcH7KlM4",
+      "date_published": "2026-03-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title-only YouTube source; no transcript or visual review available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Compiled automatically from public sources on 2026-10-30 and needs human review. CyberOne is a 2022 technology demonstrator with secondary reporting of human-scale specs and a stage interaction, but no official documentation, runtime, autonomy, customer deployment or sale path. The 2026 successor/video titles cannot be credited without transcripts or primary sources.",
+    "strongest_positive_evidence": [
+      "Multiple secondary sources report 177 cm height, 52 kg weight, 21 DoF across 13 joints and 0.5 ms response.",
+      "Reported peak hip torque up to 300 Nm, about 3.6 km/h walking and 1.5 kg per hand.",
+      "Media-reported launch-stage interaction in which CyberOne greeted Lei Jun and handed him a flower.",
+      "Reported Mi-Sense depth vision and 45 emotion / 85 sound recognition claims."
+    ],
+    "weakest_or_missing_evidence": [
+      "No Xiaomi official product page, manual or technical paper in the reviewed sources.",
+      "No runtime, battery capacity, onboard compute or hand DoF.",
+      "No autonomous task execution, customer deployment or independent benchmark.",
+      "2026 hand-upgrade, sweating, V2 florist and EV-factory evidence is title-only YouTube material."
+    ],
+    "conflicting_claims": [
+      "Height: 177 cm (Technobaboy, robotsusa, Inceptive Mind) vs 5.9 feet (Manufacturing Today).",
+      "Payload: 6 lb total / 3 lb per hand (Manufacturing Today) vs 1.5 kg per hand (robotsusa, Inceptive Mind).",
+      "Price: 600,000-700,000 yuan expected (Inceptive Mind) vs $89,000-$104,000 (Manufacturing Today) vs $99,999 reseller listing (robotsusa).",
+      "Joint wording: 21 DoF across 13 joints in several sources; Manufacturing Today mentions 13 joints without clarifying DoF."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit factory deployment or the 15-20% efficiency claim from a 2024 blog.",
+      "Do not credit the YouTube 'Completely Alone' florist title as autonomous execution.",
+      "Do not credit hand-upgrade or sweating-cooling claims from title-only YouTube sources.",
+      "Do not treat the $99,999 reseller listing as an official Xiaomi price.",
+      "Do not describe CyberOne as purchasable or commercially deployed."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [],
+    "currentness_notes": "The 2022 CyberOne is not current. A 2026 YouTube title references 'CyberOne V2' at WRC 2026, but no primary successor documentation was available in this pack."
+  },
+  "excluded_claims": [
+    {
+      "claim": "CyberOne is being integrated into Xiaomi manufacturing and may deliver 15-20% efficiency gains.",
+      "reason": "The 2024 blog gives no primary source, customer, site, hours or output data; Manufacturing Today's factory language is aspirational.",
+      "source_ids": [
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_006"
+      ]
+    },
+    {
+      "claim": "CyberOne costs $99,999.",
+      "reason": "This is a third-party reseller/directory listing, not an official Xiaomi price; the same page says Xiaomi did not announce commercial sales.",
+      "source_ids": [
+        "xiaomi-cyberone_source_004"
+      ]
+    },
+    {
+      "claim": "CyberOne V2 became a florist 'Completely Alone' at WRC 2026.",
+      "reason": "Only a YouTube title was available; no transcript, description or primary source to verify autonomy or task execution.",
+      "source_ids": [
+        "xiaomi-cyberone_source_009"
+      ]
+    },
+    {
+      "claim": "CyberOne has a hand upgrade with full-palm touch and sweating cooling.",
+      "reason": "Only YouTube titles were available; no transcript or visual review, so the claims cannot be verified.",
+      "source_ids": [
+        "xiaomi-cyberone_source_007",
+        "xiaomi-cyberone_source_008",
+        "xiaomi-cyberone_source_011"
+      ]
+    },
+    {
+      "claim": "CyberOne is deployed in Xiaomi's EV factory.",
+      "reason": "Only a YouTube title references an EV-factory breakthrough; no transcript, site, units or output metrics.",
+      "source_ids": [
+        "xiaomi-cyberone_source_010"
+      ]
+    },
+    {
+      "claim": "CyberOne was used in elder-care trials.",
+      "reason": "The 2024 blog mentions early trials without naming a facility, date, unit count or result.",
+      "source_ids": [
+        "xiaomi-cyberone_source_006"
+      ]
+    },
+    {
+      "claim": "CyberOne has 6 lb total payload as an unambiguous specification.",
+      "reason": "Payload reports conflict with 1.5 kg per hand; the catalog uses 6 lb total, but the pack keeps the conflict visible.",
+      "source_ids": [
+        "xiaomi-cyberone_source_003",
+        "xiaomi-cyberone_source_004",
+        "xiaomi-cyberone_source_005"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 11,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 5,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Xiaomi CyberOne is a 2022 full-size biped demonstrator reported at 177 cm, 52 kg, 21 DoF across 13 joints, about 3.6 km/h and up to 300 Nm hip torque, with a curved OLED face, Mi-Sense depth vision and claimed recognition of 45 emotion classifications and 85 environmental sounds. Media reported it appearing onstage with Lei Jun and handing him a flower. Xiaomi did not announce commercial sales; no runtime, battery, onboard compute, hand DoF, autonomous task execution, customer deployment or independent test was found. Later factory, hand-upgrade and V2 florist claims are either unsourced or available only as YouTube titles without transcripts.",
+    "strongest_evidence": [
+      "Multiple secondary sources report 177 cm, 52 kg, 21 DoF across 13 joints and 0.5 ms response.",
+      "Reported 1.5 kg per hand and up to 300 Nm peak hip torque.",
+      "Media-reported launch-stage interaction with Lei Jun."
+    ],
+    "weakest_evidence": [
+      "No Xiaomi official product page or manual in the reviewed sources.",
+      "No runtime, battery, onboard compute or hand DoF.",
+      "No autonomous task, customer deployment or independent benchmark.",
+      "2026 video evidence is title-only."
+    ],
+    "known_do_not_credit": [
+      "Factory deployment or 15-20% efficiency gains from a 2024 blog.",
+      "Autonomous florist demonstration from a YouTube title.",
+      "Hand upgrade or sweating-cooling claims from YouTube titles.",
+      "$99,999 reseller listing as an official price.",
+      "Any current commercial availability."
+    ],
+    "recommended_confidence": "low"
+  }
+}

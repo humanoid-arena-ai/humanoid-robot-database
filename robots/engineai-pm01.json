@@ -1,0 +1,40 @@
+{
+  "id": "engineai-pm01",
+  "name": "EngineAI PM01",
+  "aliases": ["PM01"],
+  "companyId": "engineai",
+  "companyName": "EngineAI",
+  "country": "China",
+  "announced": "2024-12-27",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "PM01 is a 1.38 m, 40 kg open-platform humanoid with 24 DoF, sold for commercial, research and education use. It has a 320-degree waist rotation and is known for performing a front flip. EngineAI launched it at 88,000 yuan.",
+  "specs": {
+    "height_cm": { "value": 138, "original": "1.38 m (4.5 ft)", "sourceId": "s1" },
+    "weight_kg": { "value": 40, "original": "40 kg (88 lb)", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 24, "original": "24 degrees of freedom", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 2, "original": "2 m/sec (4.4 mph)", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": "x86 architecture with NVIDIA Jetson Orin modules.",
+  "price": { "value": 88000, "currency": "CNY", "priceType": "list", "configuration": "Launch price, commercial and educational versions (promotional pricing through 2025-03-31)", "sourceId": "s1" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": null,
+  "highlights": [
+    "Waist rotates 320 degrees.",
+    "EngineAI says PM01 performed the first humanoid front flip.",
+    "Peak torque density of 130 N·m/kg, per EngineAI."
+  ],
+  "caveats": [
+    "The 88,000 yuan price was a launch promotion; reseller prices outside China are higher and vary.",
+    "Runtime and payload are not published officially."
+  ],
+  "sources": [
+    { "id": "s1", "title": "EngineAI releases PM01 humanoid robot for commercial, educational use", "publisher": "The Robot Report", "url": "https://www.therobotreport.com/engineai-releases-pm01-humanoid-robot-for-commercial-educational-use/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "EngineAI official site", "publisher": "EngineAI", "url": "https://en.engineai.com.cn/", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "clone-robotics",
+    "name": "Clone Robotics",
+    "country": "Poland / United States",
+    "website": "https://www.clonerobotics.com",
+    "founded": 2021,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "clone-alpha"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "About $17 million raised to date, with a $50 million round reported in progress in April 2026."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "clone-robotics_source_001",
+      "title": "The Synthetic Human Roadmap: Clone Robotics Eyes Silicon Valley and $20,000 Price Points",
+      "publisher": "humanoidsdaily.com",
+      "url": "https://www.humanoidsdaily.com/news/the-synthetic-human-roadmap-clone-robotics-eyes-silicon-valley-and-20-000-price-points",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "clone-robotics_source_002",
+      "title": "Clone Robotics",
+      "publisher": "clonerobotics.com",
+      "url": "https://www.clonerobotics.com/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

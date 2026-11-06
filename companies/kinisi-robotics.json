@@ -1,0 +1,18 @@
+{
+  "id": "kinisi-robotics",
+  "name": "Kinisi Robotics",
+  "country": "United Kingdom",
+  "headquarters": "Bristol, United Kingdom",
+  "founded": null,
+  "website": "https://www.bearrobotics.ai/kinisi",
+  "summary": "Kinisi Robotics developed the KR1 wheeled humanoid and manipulation AI. Bear Robotics agreed to acquire it in June 2026, with founder Brennand Pierce becoming Bear's Chief Robotics Officer.",
+  "funding": "Acquisition by Bear Robotics announced on 22 June 2026.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Bear Robotics to Acquire Kinisi Robotics",
+      "url": "https://www.bearrobotics.ai/blog/bear-robotics-to-acquire-kinisi-robotics",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

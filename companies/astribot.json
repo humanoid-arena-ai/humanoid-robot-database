@@ -1,0 +1,14 @@
+{
+  "id": "astribot",
+  "name": "Astribot (Stardust Intelligence)",
+  "country": "China",
+  "headquarters": "Shenzhen, China",
+  "founded": 2022,
+  "website": "https://www.astribot.com/",
+  "summary": "Stardust Intelligence, which sells robots under the Astribot brand, was founded in 2022 by Lai Jie, formerly of Tencent Robotics Lab and Baidu. It makes wheeled AI robot platforms such as the S1.",
+  "funding": "Series B of over 1 billion yuan at a valuation above 10 billion yuan (36Kr, June 2026); a further 1 billion yuan round at 15 billion yuan valuation in October 2026 (BigGo Finance).",
+  "sources": [
+    { "id": "s1", "title": "Shenzhen's Stardust Intelligence Secures Over 1B Yuan in Series B Financing", "url": "https://eu.36kr.com/en/p/3836068296209537", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "China's Astribot Raises Fourth Round in Six Months, Valuation Jumps to 15 Billion Yuan", "url": "https://finance.biggo.com/news/94976559-8f69-4359-ab0d-7f8cf6cb665f", "accessed": "2026-10-14" }
+  ]
+}

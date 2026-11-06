@@ -1,0 +1,13 @@
+{
+  "id": "robotera",
+  "name": "RobotEra",
+  "country": "China",
+  "headquarters": "Beijing, China",
+  "founded": 2023,
+  "website": "https://www.robotera.com/",
+  "summary": "RobotEra (Robot Era) was founded in August 2023 by Tsinghua University assistant professor Chen Jianyu. It builds humanoids (STAR1, L7), the Q5 wheeled platform, the XHand dexterous hand and its own embodied AI model.",
+  "funding": "Series A of nearly RMB 500 million (about $70 million) in July 2025, co-led by CDH VGC and Haier Capital (KrASIA).",
+  "sources": [
+    { "id": "s1", "title": "More than a hardware play: Robot Era's founder sets the record straight", "url": "https://kr-asia.com/more-than-a-hardware-play-robot-eras-founder-sets-the-record-straight-on-the-companys-true-ambitions", "accessed": "2026-10-14" }
+  ]
+}

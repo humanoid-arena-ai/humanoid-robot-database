@@ -1,0 +1,1229 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "noetix-n2",
+    "name": "Noetix N2",
+    "company_id": "noetix-robotics",
+    "company_name": "Noetix Robotics",
+    "country": "China",
+    "generation": "N2 generation short humanoid research platform",
+    "first_announced_date": "2025-03-17",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Multiple sources report pre-orders open in 2025, with pre-orders passing 500 then 1,000 units and reportedly more than 2,500 orders. MERA Robotics lists N2 as in development and not openly sold, so treat as pre-order/research platform rather than widely shipping.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "education",
+      "scientific research",
+      "live streaming",
+      "security patrols",
+      "training companionship"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "118 cm",
+      "value": 118,
+      "unit": "cm",
+      "notes": "Reported by The Robotic Life, added 2026-10-29 by automated spec fill; Other outlets report 1.2 m (P2) or 1.3 m (P1, P3); 118 cm is the figure given by the spec databases (P5, P6, P7, P8)..",
+      "source_ids": [
+        "noetix-n2_source_010"
+      ]
+    },
+    "weight": {
+      "original_value": "30 kilograms",
+      "value": 30,
+      "unit": "kg",
+      "notes": "Reported by en.tmtpost.com, added 2026-10-29 by automated spec fill; P3 gives 20 kg (44 lbs), likely an earlier/incorrect figure; 30 kg is corroborated by P5, P7 and P8 (66 lbs)..",
+      "source_ids": [
+        "noetix-n2_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "5 kg",
+      "value": 5,
+      "unit": "kg",
+      "notes": "Reported by Humanoid.guide, added 2026-10-29 by automated spec fill; Given as walking payload; P7 lists \u201cPayload: 5 kg\u201d..",
+      "source_ids": [
+        "noetix-n2_source_009"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime found for N2 in reviewed sources.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No battery capacity found for N2 in reviewed sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 18,
+      "notes": "Reported by Mike Kalil and Robotic Gizmos; 18 degrees of freedom.",
+      "source_ids": [
+        "noetix-n2_source_003",
+        "noetix-n2_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "3.5 meters per second",
+      "value": 3.5,
+      "unit": "m/s",
+      "notes": "Reported by en.tmtpost.com, added 2026-10-29 by automated spec fill; Top running speed. P3 says 3.2 m/s; P1 says 11 km/h; P6 lists 12.6 km/h (\u22483.5 m/s)..",
+      "source_ids": [
+        "noetix-n2_source_002"
+      ]
+    },
+    "hands": {
+      "description": null,
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": []
+    },
+    "sensors": {
+      "items": [
+        "two depth cameras for 3D perception",
+        "4 microphones",
+        "speaker"
+      ],
+      "source_ids": [
+        "noetix-n2_source_003",
+        "noetix-n2_source_006"
+      ]
+    },
+    "compute": {
+      "description": "NVIDIA Jetson Orin; supports up to 8GB of video memory via edge computing.",
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_003",
+        "noetix-n2_source_006"
+      ]
+    },
+    "actuators": {
+      "description": "Peak torque up to 120 Nm reported for dynamic movements.",
+      "source_ids": [
+        "noetix-n2_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "pre_order",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Conflicting prices: 39,000 yuan (Yahoo, Mike Kalil), 59,900 yuan (TMTPost for N2, though it also mentions 39,900 yuan for mass production), 39,900 yuan (TMTPost mass production, MERA). Official Noetix YouTube video title says starting at $7,999. No official purchase URL found in reviewed sources.",
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_002",
+        "noetix-n2_source_003",
+        "noetix-n2_source_005",
+        "noetix-n2_source_008"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "No credible evidence of dexterous manipulation or hands was found for N2 in the reviewed sources. The robot is not described with grippers or manipulation demos.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No hand or manipulation disclosure found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "N2 uses deep reinforcement learning for anthropomorphic walking and pre-trained models for simple tasks, but no autonomous task demo was found. Teleoperation status is not disclosed for any video.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_006"
+      ],
+      "caveats": [
+        "Company claims only; no independent verification.",
+        "No explicit autonomy statement in reviewed videos."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Strong evidence of dynamic mobility: continuous backflips, running at up to 3.5 m/s (sources vary), jumping, dancing, rough terrain, and endurance walking after abuse. Finished second in Beijing humanoid half marathon.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_002",
+        "noetix-n2_source_003",
+        "noetix-n2_source_005",
+        "noetix-n2_source_006"
+      ],
+      "caveats": [
+        "Demo videos not independently verified.",
+        "Conflicting top speed and height/weight figures.",
+        "No fall rate or success rate published."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Two depth cameras provide 3D perception; edge computing up to 8GB video memory; supports visual/speech interaction with an LLM.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-n2_source_003",
+        "noetix-n2_source_006"
+      ],
+      "caveats": [
+        "No scene understanding benchmark or real-world perception demo in reviewed sources."
+      ]
+    },
+    "human_interaction": {
+      "summary": "N2 supports visual/speech interaction with an LLM, has four microphones and a speaker. It is marketed for education, research, live streaming, security patrols and training companionship.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-n2_source_002",
+        "noetix-n2_source_006"
+      ],
+      "caveats": [
+        "No demonstrated conversational capability or reliability metrics found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Evidence includes finishing second in Beijing humanoid half marathon, a video caption saying it endures serious abuse and keeps walking, and reported order volume implying some production. No runtime or battery spec published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-n2_source_004",
+        "noetix-n2_source_005",
+        "noetix-n2_source_006"
+      ],
+      "caveats": [
+        "Half marathon result from a directory, not a primary event report.",
+        "Abuse video not reviewed; teleoperation status unknown.",
+        "No runtime or battery specification found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Small child-sized biped (1.2-1.3 m, 20-30 kg) intended for research/education; no safety certification or human-proximity testing disclosed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_002",
+        "noetix-n2_source_003"
+      ],
+      "caveats": [
+        "Conflicting height/weight figures.",
+        "No safety disclosures found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Multiple media report pre-orders surpassing 500 then 1,000 units, and Robotics & Automation News reports more than 2,500 orders. No named customers or deployment sites.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-n2_source_002",
+        "noetix-n2_source_004",
+        "noetix-n2_source_005"
+      ],
+      "caveats": [
+        "Order numbers are company claims via media, not independently audited.",
+        "No named deployments or output metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Low price point reported between 39,000 and 59,900 yuan depending on source; official channel video title says starting at $7,999; open for pre-orders.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_002",
+        "noetix-n2_source_003",
+        "noetix-n2_source_005",
+        "noetix-n2_source_008"
+      ],
+      "caveats": [
+        "Conflicting price figures.",
+        "No official purchase URL in reviewed sources.",
+        "Pre-order status, not confirmed shipping."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "noetix-n2_evidence_001",
+      "date": "2025-03-17",
+      "title": "Height, bipedal and speed claim from Yahoo Finance",
+      "claim": "Noetix N2 is a 1.3-metre-tall bipedal robot capable of travelling up to 11 km/h across rough terrain.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Media report relaying company claims; speed not independently verified.",
+      "arena_relevance": "Defines basic size and mobility envelope.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The 1.3-metre-tall bot is bipedal and capable of travelling at speeds of up to 11 kilometres per hour across rough terrain.",
+      "source_location": "Yahoo Finance article, paragraph 4",
+      "verification_notes": "Conflict with other height/speed reports noted in specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_002",
+      "date": "2025-03-17",
+      "title": "Estimated price from Yahoo Finance",
+      "claim": "Noetix N2 has an estimated price tag of 39,000 yuan (\u00a34,100).",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Price is estimated and conflicts with other sources.",
+      "arena_relevance": "Low price point is a key differentiator.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Beijing-based Noetix Robotics built the N2 humanoid bot to serve as a budget-friendly robot assistant, with an estimated price tag of 39,000 yuan (\u00a34,100).",
+      "source_location": "Yahoo Finance article, paragraph 3",
+      "verification_notes": "Conflicting prices from TMTPost and Mike Kalil.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_003",
+      "date": "2025-03-17",
+      "title": "Compute and AI capabilities from Yahoo Finance",
+      "claim": "Noetix N2 is equipped with an NVIDIA Jetson Orin chip for perception and interaction, plus generative AI for ChatGPT-style communication and pre-trained models for simple human tasks.",
+      "category": [
+        "perception_scene_understanding",
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Company claim relayed by media.",
+      "arena_relevance": "Supports human interaction and simple task claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Noetix Robotics said the robot comes equipped with an advanced Nvidia Jetson Orin chip that give it \"powerful perception and interaction capabilities\".",
+      "source_location": "Yahoo Finance article, paragraph 5",
+      "verification_notes": "No independent benchmark or demonstration.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_004",
+      "date": "2025-03-17",
+      "title": "N2 specs from TMTPost",
+      "claim": "N2 stands 1.2 meters tall, weighs 30 kilograms, and can backflip, run, jump on single/double legs, and dance.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Interview with founder; specs conflict with other sources.",
+      "arena_relevance": "Core mobility claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The robot, named N2, stands 1.2 meters tall, weighs 30 kilograms, and boasts an impressive range of motion, including backflips, large strides, running, single- and double-leg jumps, and even dancing.",
+      "source_location": "TMTPost article, specs paragraph",
+      "verification_notes": "Height and weight conflict with Mike Kalil/MERA.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_005",
+      "date": "2025-03-17",
+      "title": "Max running speed from TMTPost",
+      "claim": "N2 has a maximum running speed of 3.5 meters per second.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim via interview.",
+      "arena_relevance": "Speed metric for mobility comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "With a maximum running speed of 3.5 meters per second, the N2 is a standout in the humanoid robotics space.",
+      "source_location": "TMTPost article, specs paragraph",
+      "verification_notes": "Conflicts with 11 km/h and 3.2 m/s from other sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_006",
+      "date": "2025-03-17",
+      "title": "Price conflict and preorder status from TMTPost",
+      "claim": "N2 is priced higher at 59,900 yuan, while E1 starts at 39,900 yuan; both are open for pre-orders.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "This conflicts with other sources reporting 39,000/39,900 yuan for N2.",
+      "arena_relevance": "Important price discrepancy.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The price of E1 starts at 39,900 yuan, while the N2, with fewer joint degrees of freedom and a shorter height, is priced higher at 59,900 yuan\u2014a seemingly counterintuitive strategy aimed at making robotics more accessible.",
+      "source_location": "TMTPost article, pricing paragraph",
+      "verification_notes": "TMTPost elsewhere mentions 39,900 yuan for mass production, adding confusion.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_007",
+      "date": "2025-03-17",
+      "title": "Pre-orders surpass 500 units",
+      "claim": "Pre-orders for N2 and E1 surpassed 500 units, according to founder Jiang Zheyuan.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-n2_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Company figure given in media interview; not audited.",
+      "arena_relevance": "Shows early commercial traction.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Jiang shared that pre-orders for the N2 and E1 have beat expectations, surpassing 500 units.",
+      "source_location": "TMTPost article, interview section",
+      "verification_notes": "Later sources report 1,000 and 2,500 orders; no independent verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_008",
+      "date": "2025-03-17",
+      "title": "Intended applications from TMTPost",
+      "claim": "N2 is designed for education, scientific research, live streaming, security patrols, and training companionship.",
+      "category": [
+        "intended_use_cases",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Official positioning via founder interview.",
+      "arena_relevance": "Clarifies target market.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The N2 is designed for a wide range of applications, including education, scientific research, live streaming, security patrols, and training companionship.",
+      "source_location": "TMTPost article, applications paragraph",
+      "verification_notes": "No evidence of these use cases in operation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_009",
+      "date": "2025-03-14",
+      "title": "Weight and DoF from Mike Kalil",
+      "claim": "N2 weighs 20 kg and has 18 degrees of freedom.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Blog citing Noetix website; conflicts with TMTPost weight.",
+      "arena_relevance": "Spec baseline.",
+      "claim_type": "spec",
+      "supporting_excerpt": "On its website, NOETIX Robotics calls the N2 light and athletic. It weighs 20 kg (44 lbs) and has 18 degrees of freedom (DoF).",
+      "source_location": "Mike Kalil article, specs paragraph",
+      "verification_notes": "No official manufacturer page reviewed; weight conflict.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_010",
+      "date": "2025-03-14",
+      "title": "Availability and price from Mike Kalil",
+      "claim": "N2 is heading toward mass production and will be available starting at 39,000 yuan ($6,200).",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Blog citing company; price conflicts with TMTPost 59,900 yuan.",
+      "arena_relevance": "Accessibility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The company says the robot is heading toward mass production and will be available starting at 39,000 yuan ($6,200).",
+      "source_location": "Mike Kalil article, pricing paragraph",
+      "verification_notes": "No official pre-order URL found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_011",
+      "date": "2025-03-14",
+      "title": "Peak torque from Mike Kalil",
+      "claim": "N2 delivers up to 120 Nm of peak torque for dynamic movements.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Blog citing company.",
+      "arena_relevance": "Actuator strength supporting backflips.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It delivers up to 120 Nm of peak torque to perform dynamic movements while maintaining balance.",
+      "source_location": "Mike Kalil article, torque paragraph",
+      "verification_notes": "Not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_012",
+      "date": "2025-03-14",
+      "title": "Top running speed from Mike Kalil",
+      "claim": "N2 achieves a top running speed of 3.2 m/s (7.2 mph).",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicts with 3.5 m/s and 11 km/h.",
+      "arena_relevance": "Speed metric.",
+      "claim_type": "spec",
+      "supporting_excerpt": "According to NOETIX, the N2 humanoid robot achieves a top running speed of 3.2 m/s (7.2 mph).",
+      "source_location": "Mike Kalil article, speed paragraph",
+      "verification_notes": "No independent clocking found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_013",
+      "date": "2025-03-14",
+      "title": "Perception hardware from Mike Kalil",
+      "claim": "N2 perceives its surroundings in 3D with two depth cameras.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Blog citing company; likely accurate hardware list.",
+      "arena_relevance": "Perception hardware.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot perceives is surroundings in 3D with two depth cameras.",
+      "source_location": "Mike Kalil article, perception paragraph",
+      "verification_notes": "Typo in original ('is' instead of 'its'); no perception benchmark.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_014",
+      "date": "2025-03-14",
+      "title": "Edge compute from Mike Kalil",
+      "claim": "N2 supports up to 8GB of video memory via edge computing.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Detail not repeated by other sources.",
+      "arena_relevance": "Onboard compute.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It supports up to 8GB of video memory via edge computing.",
+      "source_location": "Mike Kalil article, edge computing paragraph",
+      "verification_notes": "No independent confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_015",
+      "date": "2025-10-22",
+      "title": "Orders and half marathon from Robotics & Automation News",
+      "claim": "N2 reportedly achieved more than 2,500 orders and participated in a humanoid robot half-marathon earlier this year.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-n2_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Trade publication reporting; 'reportedly' indicates unverified.",
+      "arena_relevance": "Volume and event participation.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Noetix Robotics first gained attention in 2024 with its N2 humanoid robot, which reportedly achieved more than 2,500 orders and even participated in a humanoid robot half-marathon earlier this year.",
+      "source_location": "Robotics and Automation News article, paragraph 7",
+      "verification_notes": "Order number not confirmed by company directly in reviewed sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_016",
+      "date": null,
+      "title": "Half marathon second place from MERA Robotics",
+      "claim": "N2 finished second in Beijing's first humanoid half marathon, behind Tiangong Ultra.",
+      "category": [
+        "endurance_reliability",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-n2_source_005"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory entry referencing event; not primary event source.",
+      "arena_relevance": "Public endurance test.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "It became known for continuous backflips and for finishing second in Beijing's first humanoid half marathon.",
+      "source_location": "MERA Robotics catalogue, overview paragraph",
+      "verification_notes": "No race time or distance details provided; second place claim not independently verified in reviewed sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_017",
+      "date": "2025-05-01",
+      "title": "Pre-orders pass 1,000 units from MERA Robotics",
+      "claim": "Pre-orders for N2 passed 1,000 units and the robot was moving into mass production as of May 2025.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-n2_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Directory entry summarizing founder statement.",
+      "arena_relevance": "Commercial traction.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "In May 2025 founder Jiang Zheyuan said pre-orders for N2 had passed 1,000 units and the robot was moving into mass production.",
+      "source_location": "MERA Robotics catalogue, history and launch section",
+      "verification_notes": "No audited order data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_018",
+      "date": null,
+      "title": "Price from MERA Robotics",
+      "claim": "Launch price in China was 39,900 yuan (about 5,600 dollars); international resellers charge more.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory entry; conflicts with TMTPost 59,900.",
+      "arena_relevance": "Price point.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The launch price in China was 39,900 yuan (about 5,600 dollars). International resellers charge more depending on configuration.",
+      "source_location": "MERA Robotics catalogue, price and availability section",
+      "verification_notes": "No official purchase link.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_019",
+      "date": "2025-07-07",
+      "title": "Compute and DoF from Robotic Gizmos",
+      "claim": "Noetix N2 is powered by NVIDIA Jetson Orin and has 18 degrees of freedom.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Matches Mike Kalil on DoF.",
+      "arena_relevance": "Core specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Meet the Noetix N2: a lightweight, flexible humanoid robot powered by NVIDIA Jetson Orin that has a total of 18 degrees of freedom.",
+      "source_location": "Robotic Gizmos article, opening paragraph",
+      "verification_notes": "No manufacturer page reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_020",
+      "date": "2025-07-07",
+      "title": "Sensors from Robotic Gizmos",
+      "claim": "N2 has 2 depth cameras, 4 microphones and a speaker.",
+      "category": [
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Hardware list from article.",
+      "arena_relevance": "Perception and interaction hardware.",
+      "claim_type": "spec",
+      "supporting_excerpt": "This robot has 2 Depth cameras, 4 microphones and a speaker.",
+      "source_location": "Robotic Gizmos article, specs paragraph",
+      "verification_notes": "No independent verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_021",
+      "date": "2025-07-06",
+      "title": "Extreme walking abuse test from Robotic Gizmos",
+      "claim": "Noetix N2 endures serious abuse but keeps walking, as shown in an embedded video.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-n2_source_006"
+      ],
+      "confidence": 0.55,
+      "notes": "Video embedded from X, not directly reviewed; teleoperation not disclosed.",
+      "arena_relevance": "Robustness demonstration.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Noetix N2 endures some serious abuse but keeps walking.",
+      "source_location": "Robotic Gizmos article, embedded X video caption",
+      "verification_notes": "Teleoperation status not disclosed; no failure details.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_022",
+      "date": "2025-07-07",
+      "title": "Deep reinforcement learning walking from Robotic Gizmos",
+      "claim": "N2 is capable of anthropomorphic walking with deep reinforcement learning.",
+      "category": [
+        "autonomy_task_execution",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-n2_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim; DRL used for locomotion.",
+      "arena_relevance": "Autonomy-related method claim.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "This robot is capable of achieving anthropomorphic walking with deep reinforcement learning.",
+      "source_location": "Robotic Gizmos article, opening paragraph",
+      "verification_notes": "No policy details or evaluation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-n2_evidence_024",
+      "date": null,
+      "title": "Missing disclosures for Noetix N2",
+      "claim": "No payload, runtime, battery capacity, hand/dexterity details, official purchase URL, named customers, or independent benchmarks were found for N2.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on manipulation, endurance and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure is not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity",
+          "endurance_reliability",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "noetix-n2_demo_001",
+      "title": "Continuous backflip demonstration",
+      "date": "2025-03-17",
+      "observed_capabilities": [
+        "continuous backflips",
+        "running",
+        "large strides"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "indoor and outdoor environments per TMTPost",
+      "source_ids": [
+        "noetix-n2_source_001",
+        "noetix-n2_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Company video; no success rate or attempt count published.",
+        "Teleoperation not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "robot performs continuous backflips",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "noetix-n2_demo_002",
+      "title": "Extreme walking abuse test",
+      "date": "2025-07-06",
+      "observed_capabilities": [
+        "keeps walking after kicks, pushes or similar abuse"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "noetix-n2_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Embedded X video not directly reviewed.",
+        "Teleoperation not disclosed.",
+        "No duration or failure details."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy claim present in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "robot walks while being kicked or pushed and does not fall",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Spec conflicts",
+      "description": "Height reported as 1.2 m or 1.3 m; weight as 20 kg or 30 kg; max speed as 3.2 m/s, 3.5 m/s, or 11 km/h. No authoritative manufacturer spec page was reviewed.",
+      "impact_on_arena_scoring": "Judges should avoid treating any single spec as definitive."
+    },
+    {
+      "topic": "Price conflicts",
+      "description": "Prices reported as 39,000 yuan, 39,900 yuan, 59,900 yuan, and $7,999. No official purchase URL or configuration details found.",
+      "impact_on_arena_scoring": "Accessibility value is unclear; pre-order status not confirmed."
+    },
+    {
+      "topic": "Teleoperation and autonomy",
+      "description": "No video linked in reviewed sources explicitly states autonomous operation; teleoperation status is not disclosed.",
+      "impact_on_arena_scoring": "Do not credit autonomy beyond DRL walking claim."
+    },
+    {
+      "topic": "Manipulation",
+      "description": "No hands, grippers or dexterous manipulation were described or demonstrated for N2 in reviewed sources.",
+      "impact_on_arena_scoring": "Manipulation dexterity should remain at zero evidence."
+    },
+    {
+      "topic": "Endurance and runtime",
+      "description": "No battery capacity, runtime, or charge time found. Half marathon participation and abuse video suggest robustness but lack quantitative metrics.",
+      "impact_on_arena_scoring": "Endurance evidence is qualitative only."
+    },
+    {
+      "topic": "Named customers and deployment",
+      "description": "Only aggregate pre-order numbers are reported; no named customer or deployment site was found.",
+      "impact_on_arena_scoring": "Commercial proof is weak beyond expressed demand."
+    }
+  ],
+  "source_ids": [
+    "noetix-n2_source_001",
+    "noetix-n2_source_002",
+    "noetix-n2_source_003",
+    "noetix-n2_source_004",
+    "noetix-n2_source_005",
+    "noetix-n2_source_006",
+    "noetix-n2_source_008",
+    "noetix-n2_source_009",
+    "noetix-n2_source_010"
+  ],
+  "sources": [
+    {
+      "id": "noetix-n2_source_001",
+      "title": "Chinese startup unveils child-sized robot that backflips continuously",
+      "publisher": "Yahoo Finance UK",
+      "url": "https://uk.finance.yahoo.com/news/chinese-startup-unveils-child-sized-175201129.html",
+      "date_published": "2025-03-17",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Yahoo Finance republishing article by Anthony Cuthbertson; likely from The Independent."
+    },
+    {
+      "id": "noetix-n2_source_002",
+      "title": "Startup NOETIX Robotics Launches Affordable Humanoid Robot Capable of Backflips",
+      "publisher": "TMTPost",
+      "url": "https://en.tmtpost.com/post/7497178",
+      "date_published": "2025-03-17",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Exclusive interview with founder; includes company claims."
+    },
+    {
+      "id": "noetix-n2_source_003",
+      "title": "NOETIX Robotics Unveils Humanoid That Can Do Continuous Backflips",
+      "publisher": "Mike Kalil",
+      "url": "https://mikekalil.com/blog/noetix-robotics-n2/",
+      "date_published": "2025-03-14",
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "medium",
+      "reliability_notes": "Blog citing Noetix website; not an official manufacturer source."
+    },
+    {
+      "id": "noetix-n2_source_004",
+      "title": "Beijing startup Noetix Robotics launches \u2018consumer-grade humanoid robot\u2019 at $1,400",
+      "publisher": "Robotics and Automation News",
+      "url": "https://roboticsandautomationnews.com/2025/10/22/beijing-startup-noetix-robotics-launches-consumer-grade-humanoid-robot-at-1400/95731/",
+      "date_published": "2025-10-22",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade news outlet; article mostly about Bumi but contains N2 order/event reference."
+    },
+    {
+      "id": "noetix-n2_source_005",
+      "title": "Noetix Robotics N2: specs, price, availability",
+      "publisher": "MERA Robotics",
+      "url": "https://merarobotics.com/blog/humanoids/noetix-n2",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Humanoid catalogue entry updated 2026-10-10; not primary source."
+    },
+    {
+      "id": "noetix-n2_source_006",
+      "title": "Noetix N2 Humanoid Robot Extreme Test",
+      "publisher": "Robotic Gizmos",
+      "url": "https://www.roboticgizmos.com/noetix-n2/",
+      "date_published": "2025-07-07",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Blog with embedded X video; includes hardware list and demo caption."
+    },
+    {
+      "id": "noetix-n2_source_008",
+      "title": "Starting at $7999 NOETIX ROBOTICS Unveils Backflipping Humanoid Robot N2",
+      "publisher": "Noetix Robotics",
+      "url": "https://www.youtube.com/watch?v=xPSY3HaT1eY",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official channel video; only title reviewed, no transcript or description."
+    },
+    {
+      "id": "noetix-n2_source_010",
+      "title": "Noetix N2 Humanoid Robot | The Robotic Life",
+      "publisher": "The Robotic Life",
+      "url": "https://theroboticlife.com/robot/n2-by-noetix/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "noetix-n2_source_009",
+      "title": "Noetix Robotics N2 Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/n2/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Noetix N2 is a small, inexpensive Chinese bipedal research/education humanoid with strong dynamic mobility demos (continuous backflips, running, jumping, abuse recovery) and a reported low price, but it has no manipulation evidence, no autonomous task execution proof, no named customers, and many conflicting specs.",
+    "strongest_positive_evidence": [
+      "Continuous backflip video and dynamic motion claims from multiple sources.",
+      "Finished second in Beijing humanoid half marathon.",
+      "Video caption says robot endures serious abuse and keeps walking.",
+      "Reported pre-orders passing 500, 1,000 and 2,500 units."
+    ],
+    "weakest_or_missing_evidence": [
+      "No manipulation/dexterity evidence.",
+      "No autonomous task demo or teleoperation disclosure.",
+      "No payload, runtime, battery, or hand specs.",
+      "No named customer deployments.",
+      "Conflicting height, weight, speed and price figures."
+    ],
+    "conflicting_claims": [
+      "Height: 1.2 m vs 1.3 m.",
+      "Weight: 20 kg vs 30 kg.",
+      "Max speed: 3.2 m/s vs 3.5 m/s vs 11 km/h.",
+      "Price: 39,000 yuan, 39,900 yuan, 59,900 yuan, $7,999."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit N2 with dexterous manipulation or hand use.",
+      "Do not claim autonomous operation; teleoperation is not disclosed.",
+      "Do not treat order numbers as verified commercial deployment.",
+      "Do not use a single spec figure as authoritative due to conflicts."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "N2 is still listed as Noetix's research/education platform as of 2026. Noetix has also launched Bumi, a cheaper consumer humanoid, and E1, a full-sized humanoid, but N2 remains the known backflipping model."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Bumi robot specs or $1,400 price",
+      "reason": "Belongs to Noetix Bumi, not N2.",
+      "source_ids": [
+        "noetix-n2_source_004"
+      ]
+    },
+    {
+      "claim": "E1 robot pricing or specs",
+      "reason": "Belongs to Noetix E1, not N2.",
+      "source_ids": [
+        "noetix-n2_source_002"
+      ]
+    },
+    {
+      "claim": "Hobbs facial robot capabilities",
+      "reason": "Belongs to a different Noetix product, not N2.",
+      "source_ids": [
+        "noetix-n2_source_003"
+      ]
+    },
+    {
+      "claim": "N2 website images showing family gatherings and wheelchair pushing",
+      "reason": "Source states images show a different version of the robot, not necessarily N2.",
+      "source_ids": [
+        "noetix-n2_source_001"
+      ]
+    },
+    {
+      "claim": "MERA listing status 'In development' and 'not selling openly'",
+      "reason": "Directory statement conflicts with pre-order reports; kept in evidence only as a caveat.",
+      "source_ids": [
+        "noetix-n2_source_005"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Noetix N2 is a small Chinese bipedal humanoid (1.2-1.3 m, 20-30 kg, 18 DoF) from Noetix Robotics, known for continuous backflips, running, and low price. Strongest evidence is dynamic mobility demos including backflips and an abuse recovery video, plus reported pre-orders of over 2,500 units and a second-place finish in a humanoid half marathon. However, there is no evidence of manipulation, no autonomous task execution disclosure, no named customers, and specs/price are highly conflicting.",
+    "strongest_evidence": [
+      "Continuous backflip demonstration reported by multiple sources.",
+      "Video caption 'Noetix N2 endures some serious abuse but keeps walking.'",
+      "Second place in Beijing humanoid half marathon.",
+      "Reported 2,500+ orders."
+    ],
+    "weakest_evidence": [
+      "No manipulation or hand evidence.",
+      "No autonomous task demo or teleoperation disclosure.",
+      "No payload, runtime, battery specs.",
+      "Conflicting height, weight, speed and price."
+    ],
+    "known_do_not_credit": [
+      "Dexterous manipulation or hand use.",
+      "Autonomous operation without disclosure.",
+      "Bumi or E1 specs as N2.",
+      "Any single spec or price as authoritative."
+    ],
+    "recommended_confidence": "low"
+  }
+}

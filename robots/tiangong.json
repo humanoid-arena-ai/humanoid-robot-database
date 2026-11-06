@@ -1,0 +1,71 @@
+{
+  "id": "tiangong",
+  "name": "Tiangong",
+  "aliases": [
+    "Tien Kung",
+    "Tiangong 1.0"
+  ],
+  "companyId": "x-humanoid",
+  "companyName": "Beijing Humanoid Robot Innovation Center (X-Humanoid)",
+  "country": "China",
+  "announced": null,
+  "status": "superseded",
+  "category": "research",
+  "summary": "Tiangong is the first humanoid from the Beijing Humanoid Robot Innovation Center, shown in 2024 as a 1.63 m, 43 kg all-electric robot able to jog at 6 km/h. It is meant as an open base platform for embodied AI research and was followed by faster versions such as Tiangong Ultra.",
+  "specs": {
+    "height_cm": {
+      "value": 163,
+      "original": "1.63 m (5.4 ft)",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 43,
+      "original": "43 kg (~95 lb)",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": {
+      "value": 20,
+      "original": "20",
+      "sourceId": "s2"
+    },
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1.67,
+      "original": "6 km/h",
+      "sourceId": "s1"
+    }
+  },
+  "hands": null,
+  "sensors": "3D vision sensors, six-axis force sensors and IMUs.",
+  "compute": "550 trillion operations per second.",
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Billed as the first full-size humanoid able to run on electric drive only.",
+    "Handles slopes and stairs without relying on vision ('blind' walking).",
+    "48 V / 15 Ah battery."
+  ],
+  "caveats": [
+    "The 'world's first' claim is the developer's own.",
+    "Specs differ between later Tiangong versions."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "China's home-grown general-purpose humanoid jogs out at 6 km/h",
+      "publisher": "New Atlas",
+      "url": "https://newatlas.com/robotics/china-tiangong-general-purpose-humanoid/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Beijing Humanoid Robot Innovation Center Tiangong Technical Dossier | SteelReel AI",
+      "publisher": "steelreel.ai",
+      "url": "https://steelreel.ai/Robots/Bipedal-humanoids/beijing-humanoid-robot-innovation-center/tiangong",
+      "accessed": "2026-10-29"
+    }
+  ]
+}

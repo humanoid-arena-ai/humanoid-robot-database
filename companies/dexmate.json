@@ -1,0 +1,24 @@
+{
+  "id": "dexmate",
+  "name": "Dexmate",
+  "country": "United States",
+  "headquarters": "Santa Clara, California, United States",
+  "founded": null,
+  "website": "https://www.dexmate.com",
+  "summary": "Dexmate builds Vega, a foldable wheeled humanoid for research and general manipulation work. It sells the robot directly to developers and labs.",
+  "funding": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Dexmate Opens Preorders for Vega Mobile Humanoid Robot",
+      "url": "https://mikekalil.com/blog/dexmate-vega/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Vega",
+      "url": "https://www.dexmate.com/vega",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

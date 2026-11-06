@@ -1,0 +1,1033 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "foundation-phantom-mk1",
+    "name": "Foundation Phantom MK-1",
+    "company_id": "foundation-future-industries",
+    "company_name": "Foundation Future Industries",
+    "country": "United States",
+    "generation": "first-generation Foundation humanoid (Phantom MK-1)",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Media report two Phantom MK-1 units were sent to Ukraine in February 2026 for logistics and reconnaissance testing, and that over 40 units have shipped. Foundation holds $24M in Pentagon research contracts across the US Army, Navy, and Air Force, but these are research agreements, not production orders. No public retail sale was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "military logistics and reconnaissance testing",
+      "breaching operations research",
+      "industrial factory and dockyard testing",
+      "research and development"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "5'9\"",
+      "value": 175,
+      "unit": "cm",
+      "notes": "TNW and The Robotic Life both list 5 feet 9 inches (about 175 cm).",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "weight": {
+      "original_value": "176 pounds",
+      "value": 80,
+      "unit": "kg",
+      "notes": "TNW lists 176 pounds; Humanoid Press lists ~80 kg, consistent.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": "44 pounds",
+      "value": 20,
+      "unit": "kg",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": "4 hours",
+      "value": 4,
+      "unit": "hours",
+      "notes": "The Robotic Life table lists 4 hours battery life. Mezha reports the MK-1 has no battery and lists runtime as not published; these conflict and need manual review.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity was not published. TNW says the MK-2 adds larger battery packs. Mezha says the MK-1 has no battery, while The Robotic Life lists 4 hours battery life; conflict is noted.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 19,
+      "notes": "19 upper-body degrees of freedom reported by TNW and The Robotic Life. Total DOF is not published.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.7 m/s",
+      "value": 1.7,
+      "unit": "m/s",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_003"
+      ]
+    },
+    "hands": {
+      "description": "Five-fingered hands are listed by TNW. Mezha reports the arms and wrists remain immobile in the MK-1, conflicting with TNW's five-fingered hands claim; manual review required.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "eight cameras, no LiDAR",
+        "camera-first perception stack",
+        "helmet cameras providing 360-degree view"
+      ],
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "compute": {
+      "description": "LLM-driven autonomy stack blends independent operation with supervised teleoperation; TNW calls it an LLM pipeline. Mezha describes Cortex AI with reasoning and world models. No CPU/GPU/TOPS details for MK-1 were published. TNW says AMD Ryzen AI Embedded X100 is for the MK-2, not MK-1.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "actuators": {
+      "description": "Proprietary cycloidal actuators delivering up to 160 newton-metres of torque. The Robotic Life adds they stay back-drivable with back-driving torque under 1 Nm.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": 150000,
+      "price_currency": "USD",
+      "price_type": "reported",
+      "purchase_or_waitlist_url": null,
+      "notes": "TNW reports unit cost approximately $150,000 with a lease model available at $100,000 per year. The Robotic Life says Foundation leases for about $100,000 per robot per year rather than selling outright. No public store or list price was found.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Reported five-fingered hands, 19 upper-body degrees of freedom, 20 kg payload, and cycloidal actuators up to 160 Nm. Foundation told Reuters the MK1 helped build more than 24,000 cars in 2025. Mezha reports the MK-1 arms and wrists remain immobile, conflicting with the five-fingered hands description.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ],
+      "caveats": [
+        "No independent dexterity demo or success rate found.",
+        "Video titles exist but no transcripts were reviewed, so no manipulation evidence can be credited from demos.",
+        "Conflict between five-fingered hands and immobile arms/wrists in two sources."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "TNW describes an LLM-driven autonomy stack blending independent operation with supervised teleoperation. Mezha describes Cortex AI with reasoning and world models. The company says human operators retain final authority over lethal decisions but aims to reduce teleoperation needs over time.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002"
+      ],
+      "caveats": [
+        "Autonomy is company-asserted through media; no intervention logs or independent audit.",
+        "No transcript reviewed for any YouTube video, so no autonomous demo can be credited."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Walking speed listed at 1.7 m/s. Humanoid Press directory lists capabilities including obstacle avoidance, stand-up-from-fall, running 100 m, walking stairs, and jumping and landing, but Mezha reports the MK-1 cannot rise after a fall. No independent mobility metric or demo transcript was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_003"
+      ],
+      "caveats": [
+        "Conflicting fall-recovery claims between directory and Mezha.",
+        "TNW notes bipedal humanoid that falls over on rough terrain is expensive, questioning practical mobility."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Camera-first perception with eight cameras, no LiDAR. Mezha says helmet cameras provide 360-degree view and Cortex's world model analyzes the environment. No camera resolution, FOV, or perception benchmark published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_003"
+      ],
+      "caveats": [
+        "No third-party perception benchmark or demo transcript."
+      ]
+    },
+    "human_interaction": {
+      "summary": "The LLM pipeline translates natural language commands into motion, per TNW and The Robotic Life. Foundation's stated policy is human-in-the-loop for lethal decisions. No conversational or instruction-following reliability metric was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ],
+      "caveats": [
+        "No demonstrated interaction reliability or user study."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "The Robotic Life lists 4 hours battery life. Mezha reports MK-1 has no battery and is not dust- or water-resistant. TNW says MK-2 adds larger battery packs and waterproofing. No independent reliability tests or failure-rate data were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ],
+      "caveats": [
+        "Runtime/battery conflict between sources.",
+        "No official runtime spec or independent endurance test found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized (175 cm, about 80 kg) biped. Mezha reports it is not dust- and water-resistant and cannot rise after a fall, indicating limited ruggedness for field use. No full-robot safety certification was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_003"
+      ],
+      "caveats": [
+        "No IP rating or environmental rating published.",
+        "Intended for defense and industrial, not home."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Two MK-1 units were shipped to Ukraine in February 2026 for logistics and reconnaissance testing, described as first deployment of humanoid robots to any theatre of combat. Foundation holds $24M Pentagon research contracts and is an approved military vendor via SBIR Phase 3. The Robotic Life reports over 40 units shipped and factory/dockyard testing from Atlanta to Singapore, with Foundation telling Reuters the MK1 helped build over 24,000 cars in 2025. No government-issued confirmation or customer production metrics were found in reviewed sources.",
+      "evidence_level": 2,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ],
+      "caveats": [
+        "Ukraine deployment is testing, not combat; tasks are support only.",
+        "No independent verification of shipped units, hours, or output from a named customer.",
+        "DHS spokesperson said no agreements, pilots, or active prime contracts with Foundation."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Reported unit price approximately $150,000 and lease about $100,000 per year. No public store, waitlist, or list price was found; purchase path is contact sales.",
+      "evidence_level": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ],
+      "caveats": [
+        "Price is a reported company figure, not a public list price.",
+        "Not purchasable by the general public."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "foundation-phantom-mk1_evidence_001",
+      "date": "2026-04-26",
+      "title": "Foundation wins $24M Pentagon contracts and Phantom MK-1 specs",
+      "claim": "Phantom MK-1 is a 5-foot-9, 176-pound humanoid with 19 upper-body degrees of freedom, five-fingered hands, a camera-first vision system, and an LLM-driven autonomy stack blending independent operation with supervised teleoperation; two units were sent to Ukraine in February for logistics and reconnaissance testing.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Reputable tech media reporting company-provided specs and deployment. Not independently verified.",
+      "arena_relevance": "Defines size, payload, perception and early military deployment for comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The company’s Phantom MK-1 is a 5-foot-9, 176-pound humanoid with 19 upper-body degrees of freedom, five-fingered hands, a camera-first vision system, and an LLM-driven autonomy stack that blends independent operation with supervised teleoperation. Two units were sent to Ukraine in February for frontline testing in logistics and reconnaissance, described as the first deployment of humanoid robots to any theatre of combat.",
+      "source_location": "TNW article body, The machine section",
+      "verification_notes": "TNW is a reputable tech publication. The spec values are company claims relayed by media; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_002",
+      "date": "2026-04-26",
+      "title": "Phantom MK-1 actuators and pricing",
+      "claim": "The unit cost is approximately $150,000, with a lease model available at $100,000 per year.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company pricing via media. TNW also reports cycloidal actuators up to 160 Nm torque.",
+      "arena_relevance": "Accessibility and value comparison; lease model is the only public purchasing route reported.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The unit cost is approximately $150,000, with a lease model available at $100,000 per year.",
+      "source_location": "TNW article, The machine section",
+      "verification_notes": "No public list price or official product page found. The Robotic Life later reports lease only.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_003",
+      "date": "2026-04-26",
+      "title": "Production targets and credibility concerns",
+      "claim": "Foundation targets 40 units in 2025, 10,000 in 2026, and 50,000 by end of 2027, with a steady-state target of 30,000 per year.",
+      "category": [
+        "deployment_commercial_proof",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Company targets reported by media. TNW also notes GM denied earlier exaggerated claims and funding base of about $21M.",
+      "arena_relevance": "Production targets are aggressive and largely unproven; should not be counted as current capability.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Foundation’s production targets are 40 units in 2025, 10,000 in 2026, and 50,000 by the end of 2027, with a steady-state target of 30,000 per year.",
+      "source_location": "TNW article, The machine section",
+      "verification_notes": "Company projections, not independently audited. TNW says the scale-up would require 250x on about $21M total funding.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_004",
+      "date": "2026-04-26",
+      "title": "Autonomy policy and regulatory tension",
+      "claim": "Foundation says human operators retain final authority over lethal decisions, but its LLM autonomy stack and ambition to reduce teleoperation are in tension with that commitment.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Media analysis of company-published policy and technical trajectory.",
+      "arena_relevance": "Affects how autonomy claims should be credited; autonomy is not independently demonstrated.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "But the company’s LLM-driven autonomy stack and its stated ambition to “reduce teleoperation needs over time” are in tension with that commitment.",
+      "source_location": "TNW article, The debate section",
+      "verification_notes": "TNW is reputable, but this is an editorial interpretation, not an independent test.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_005",
+      "date": "2026-06-11",
+      "title": "Phantom MK-1 prototype limitations",
+      "claim": "The first prototype Phantom MK-1 has serious limitations: no battery, not dust- and water-resistant, cannot rise after a fall, and arms and wrists remain immobile.",
+      "category": [
+        "endurance_reliability",
+        "human_environment_fit",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Mezha article citing BBC. Conflicts with The Robotic Life's 4-hour battery claim and TNW's five-fingered hands.",
+      "arena_relevance": "Caps endurance, environmental fit, and manipulation credit for MK-1.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The first prototype, Phantom MK-1, has serious limitations: there is no battery, the robot is not dust- and water-resistant, and it cannot rise after a fall. The arms and wrists remain immobile, reducing operational tempo in real-world conditions.",
+      "source_location": "Mezha article, Phantom and the Evolution of Its Prototypes section",
+      "verification_notes": "Citing BBC, but not directly verified. Significant conflict with other sources; manual review required.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "human_environment_fit",
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "medium_negative"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_006",
+      "date": "2026-06-11",
+      "title": "MK-2 plans and 40,000-unit production pledge",
+      "claim": "According to the company's plans, by the end of 2027 they project production of no fewer than 40,000 units per year at approximately $20,000 per unit.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Future projection for later generation, not current MK-1. Different from TNW's 50,000 units by end of 2027 target.",
+      "arena_relevance": "Not current evidence for Phantom MK-1; should not be credited to MK-1.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "According to the company’s plans, by the end of 2027 they project production of no fewer than 40,000 units per year at approximately $20,000 per unit.",
+      "source_location": "Mezha article, Phantom and the Evolution of Its Prototypes section",
+      "verification_notes": "Company projection via media; conflicts with TNW's 50,000 by end of 2027 number.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_007",
+      "date": "2026-06-11",
+      "title": "Cortex AI system",
+      "claim": "Phantom is guided by the Cortex AI system; the reasoning model determines the goal and plan, while the broader world model analyzes the environment using helmet cameras providing 360-degree view.",
+      "category": [
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Company description via media. No independent validation.",
+      "arena_relevance": "Supports perception and autonomy claims, but without test evidence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Phantom is guided by the Cortex artificial intelligence system. The reasoning model determines the goal and plan of action, while the broader world model analyzes the environment and helps the robot move safely and perform tasks using helmet cameras that provide a 360-degree view.",
+      "source_location": "Mezha article, Phantom and the Evolution of Its Prototypes section",
+      "verification_notes": "Company architecture description, not independently tested.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_008",
+      "date": null,
+      "title": "Humanoid Press directory profile",
+      "claim": "Humanoid Press describes Phantom MK1 as a next-generation humanoid robot developed by Foundation Robotics, designed for dynamic locomotion, dexterous manipulation, and AI-driven autonomy.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "foundation-phantom-mk1_source_003"
+      ],
+      "confidence": 0.4,
+      "notes": "Directory likely republishes marketing language. Conflicts with Mezha limitations.",
+      "arena_relevance": "Low-weight evidence for broad capabilities; use only as a directory record.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Phantom MK1 is a next‑generation humanoid robot developed by Foundation Robotics, designed for dynamic locomotion, dexterous manipulation, and AI‑driven autonomy.",
+      "source_location": "Humanoid Press database entry, Description/Summary",
+      "verification_notes": "Directory source; no primary verification. Lists capabilities such as stand-up-from-fall that Mezha directly contradicts.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_009",
+      "date": "2026-10-01",
+      "title": "Robot of the Week: Phantom MK1 first humanoid sent to war",
+      "claim": "Two Phantom MK1 units were shipped to Ukraine in February 2026, making it the first humanoid robot ever deployed to an active combat theater.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Blog article citing multiple outlets. No official Ukrainian or US government release reviewed.",
+      "arena_relevance": "Important deployment milestone, but evidence is media-relayed, not customer-issued.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "In February 2026, two Phantom MK1 units were shipped to Ukraine, making it the first humanoid robot ever deployed to an active combat theater.",
+      "source_location": "The Robotic Life article, What Happened When the Phantom MK1 Went to Ukraine section",
+      "verification_notes": "The Robotic Life is a tech blog; says the shipment was confirmed by Ukrainian state media, US government, and Foundation, but no primary source was reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_010",
+      "date": "2026-10-01",
+      "title": "Phantom MK1 spec table",
+      "claim": "The Phantom MK1 stands 5 feet 9 inches tall, weighs 176 pounds, carries up to 44 pounds, and sees the world through cameras instead of LiDAR.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Blog table consistent with TNW.",
+      "arena_relevance": "Confirms size, weight, payload, and sensor architecture.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Phantom MK1 stands 5 feet 9 inches tall, weighs 176 pounds, carries up to 44 pounds, and sees the world through cameras instead of LiDAR.",
+      "source_location": "The Robotic Life article, Phantom MK1 Specs section",
+      "verification_notes": "Source is tech blog; specs match TNW. Not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_011",
+      "date": "2026-10-01",
+      "title": "Battery life and lease price",
+      "claim": "Foundation leases the Phantom MK1 for about $100,000 per robot per year and targets 10,000 units by the end of 2026 and 50,000 units by the end of 2027.",
+      "category": [
+        "endurance_reliability",
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "The Robotic Life article also lists 4 hours battery life in its spec table, but runtime is not independently confirmed.",
+      "arena_relevance": "Lease model and targets; not current proven deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Foundation leases the Phantom MK1 for about $100,000 per robot per year and targets 10,000 units by the end of 2026 and 50,000 units by the end of 2027.",
+      "source_location": "The Robotic Life article, How Foundation Plans to Scale section",
+      "verification_notes": "Company statements via blog; targets conflict with Mezha's 40,000/year by end of 2027.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "foundation-phantom-mk1_evidence_012",
+      "date": "2026-10-01",
+      "title": "Factory testing and automotive output",
+      "claim": "The Phantom is being tested in factories and dockyards from Atlanta to Singapore, and Foundation told Reuters the MK1 helped build more than 24,000 cars in 2025.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "foundation-phantom-mk1_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Company claim reported by The Robotic Life citing Reuters. No named customer or output data provided.",
+      "arena_relevance": "Industrial deployment evidence is weak; no independent verification.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The factory side is real too. The Phantom is being tested in factories and dockyards from Atlanta to Singapore, and Foundation told Reuters the MK1 helped build more than 24,000 cars in 2025.",
+      "source_location": "The Robotic Life article, Who Builds the Phantom MK1 section",
+      "verification_notes": "No original Reuters link reviewed; no named customer or production metric. Treat as company claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "foundation-phantom-mk1_deployment_001",
+      "customer_or_partner": "Ukraine (military testing)",
+      "site_or_context": "Frontline logistics and reconnaissance near the front line",
+      "task": "Logistics runs and reconnaissance sweeps",
+      "start_date": "2026-02",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 2,
+      "output_metrics": [],
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_004"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No official government or customer release reviewed; media-reported.",
+        "Testing only, not combat; support tasks only.",
+        "No duration, hours, or output metrics published."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "foundation-phantom-mk1_demo_001",
+      "title": "I Teleoperated a Humanoid Robot Made for War",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title says teleoperated.",
+      "environment": "unknown",
+      "source_ids": [
+        "foundation-phantom-mk1_source_005"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "No transcript or video content reviewed; only title is evidence."
+      ],
+      "editing_notes": "Not reviewed; no transcript available.",
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "The title states the CNET reporter teleoperated the robot, but no transcript was reviewed to confirm scope or context.",
+      "observed_segments": []
+    },
+    {
+      "id": "foundation-phantom-mk1_demo_002",
+      "title": "THIS Robot Scared the Army — Inside the Phantom MK1",
+      "date": "2026-03-01",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "foundation-phantom-mk1_source_006"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "No transcript or video content reviewed."
+      ],
+      "editing_notes": "Not reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation information in title; no transcript reviewed.",
+      "observed_segments": []
+    },
+    {
+      "id": "foundation-phantom-mk1_demo_003",
+      "title": "Phantom MK1: The First Humanoid Robot Sent to War",
+      "date": "2026-09-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "foundation-phantom-mk1_source_007"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "No transcript or video content reviewed."
+      ],
+      "editing_notes": "Not reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation disclosure in title; no transcript reviewed.",
+      "observed_segments": []
+    },
+    {
+      "id": "foundation-phantom-mk1_demo_004",
+      "title": "The First Robot Soldier is Here: Phantom MK-1 Deployed to Ukraine",
+      "date": "2026-03-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "foundation-phantom-mk1_source_008"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "No transcript or video content reviewed."
+      ],
+      "editing_notes": "Not reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation disclosure in title; no transcript reviewed.",
+      "observed_segments": []
+    },
+    {
+      "id": "foundation-phantom-mk1_demo_005",
+      "title": "San Francisco startup pitches Trump admin on arming robots for U.S. military",
+      "date": "2026-03-01",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "foundation-phantom-mk1_source_009"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "No transcript or video content reviewed."
+      ],
+      "editing_notes": "Not reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation disclosure in title; no transcript reviewed.",
+      "observed_segments": []
+    },
+    {
+      "id": "foundation-phantom-mk1_demo_006",
+      "title": "NewsNation Exclusive: The Humanoid Robot Race, a look at Phantom MK-1",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "foundation-phantom-mk1_source_010"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "No transcript or video content reviewed."
+      ],
+      "editing_notes": "Not reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation disclosure in title; no transcript reviewed.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No official product page, public list price, or purchase path was found. Reported price of $150,000 unit or $100,000/year lease is from media.",
+      "impact_on_arena_scoring": "Accessibility/value remains weak and not for general sale."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "Runtime/battery conflict: The Robotic Life lists 4 hours battery life; Mezha says no battery and no runtime published. Arms/wrists immobile vs five-fingered hands also conflicts.",
+      "impact_on_arena_scoring": "Manual review required before scoring endurance or manipulation."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "No intervention logs, no independent autonomy test, and no video transcript reviewed. Autonomy is company-asserted via media.",
+      "impact_on_arena_scoring": "Do not credit autonomous task execution beyond company claim tier."
+    },
+    {
+      "topic": "Deployment metrics",
+      "description": "Ukraine deployment is testing only; no hours, success rate, or output from named customer. Pentagon contracts are research agreements, not production orders.",
+      "impact_on_arena_scoring": "Deployment proof remains early-stage."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "Six YouTube video titles are in sources, but no transcripts were provided, so no observed capabilities can be credited from demos.",
+      "impact_on_arena_scoring": "Lowers confidence in mobility, manipulation, and autonomy."
+    },
+    {
+      "topic": "Safety and environmental fit",
+      "description": "Mezha reports no dust/water resistance and cannot rise after fall. No full-robot safety certification or IP rating found.",
+      "impact_on_arena_scoring": "Human-proximity defense/industrial scenarios should be scored cautiously."
+    }
+  ],
+  "source_ids": [
+    "foundation-phantom-mk1_source_001",
+    "foundation-phantom-mk1_source_002",
+    "foundation-phantom-mk1_source_003",
+    "foundation-phantom-mk1_source_004",
+    "foundation-phantom-mk1_source_005",
+    "foundation-phantom-mk1_source_006",
+    "foundation-phantom-mk1_source_007",
+    "foundation-phantom-mk1_source_008",
+    "foundation-phantom-mk1_source_009",
+    "foundation-phantom-mk1_source_010"
+  ],
+  "sources": [
+    {
+      "id": "foundation-phantom-mk1_source_001",
+      "title": "Foundation Future Industries wins $24M Pentagon contracts for humanoid robot soldiers, backed by Eric Trump and tested in Ukraine",
+      "publisher": "The Next Web",
+      "url": "https://thenextweb.com/news/foundation-humanoid-robot-soldiers-pentagon",
+      "date_published": "2026-04-26",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable tech news; reports company claims and political context, not independent testing."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_002",
+      "title": "Foundation Robotics advances Phantom development and pledges mass production by 2027",
+      "publisher": "Mezha",
+      "url": "https://mezha.net/eng/news/6c438c6d_foundation_robotics_advances/",
+      "date_published": "2026-06-11",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Ukrainian tech media citing BBC; includes translation and possible inaccuracies."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_003",
+      "title": "Phantom MK1 — Industrial-Scale Humanoid for Real-World Deployment",
+      "publisher": "Humanoid Press",
+      "url": "https://humanoid.press/database/www-humanoid-press-database-phantom-mk1-humanoid-robot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Directory likely republishes marketing; no primary verification."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_004",
+      "title": "Phantom MK1: The First Humanoid Robot Sent to War",
+      "publisher": "The Robotic Life",
+      "url": "https://theroboticlife.com/foundation-phantom-mk1-robot-of-the-week/",
+      "date_published": "2026-10-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Tech blog with extensive sourcing, but not a primary source. Some claims not independently verified."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_005",
+      "title": "I Teleoperated a Humanoid Robot Made for War",
+      "publisher": "CNET",
+      "url": "https://www.youtube.com/watch?v=sJmg3abOASM",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript reviewed."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_006",
+      "title": "THIS Robot Scared the Army — Inside the Phantom MK1",
+      "publisher": "OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=ibvw7NXsxkU",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript reviewed."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_007",
+      "title": "Phantom MK1: The First Humanoid Robot Sent to War",
+      "publisher": "The Robotic Life",
+      "url": "https://www.youtube.com/watch?v=0Mnlj9eeVEE",
+      "date_published": "2026-09-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript reviewed."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_008",
+      "title": "The First Robot Soldier is Here: Phantom MK-1 Deployed to Ukraine",
+      "publisher": "OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=L0d6mvpDIYY",
+      "date_published": "2026-03-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript reviewed."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_009",
+      "title": "San Francisco startup pitches Trump admin on arming robots for U.S. military",
+      "publisher": "NBC Bay Area",
+      "url": "https://www.youtube.com/watch?v=GU9t1v_SpZw",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript reviewed."
+    },
+    {
+      "id": "foundation-phantom-mk1_source_010",
+      "title": "NewsNation Exclusive: The Humanoid Robot Race, a look at Phantom MK-1",
+      "publisher": "CW39 Houston",
+      "url": "https://www.youtube.com/watch?v=jCFNIrLJkCQ",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Foundation Phantom MK-1 is an early biped humanoid with reported defense and industrial pilot activity, including two units sent to Ukraine for logistics/reconnaissance testing. Most evidence is media-mediated company claims; no independent demo or benchmark was reviewed. Significant spec conflicts and no video transcripts limit confidence.",
+    "strongest_positive_evidence": [
+      "Two units shipped to Ukraine in February 2026 for logistics and reconnaissance testing (media-reported).",
+      "$24 million in US Army, Navy, and Air Force research contracts reported by TNW.",
+      "Reported 19 upper-body DOF, 1.7 m/s walking, 20 kg payload, and camera-first perception.",
+      "Reported factory/dockyard testing and Foundation claim via Reuters of helping build over 24,000 cars in 2025."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark, intervention log, or video transcript reviewed.",
+      "No official customer deployment metrics or production order.",
+      "No total DOF, battery capacity, or compute details published.",
+      "Conflicting reports on battery/runtime, fall recovery, and arm/hand function."
+    ],
+    "conflicting_claims": [
+      "Runtime: The Robotic Life lists 4 hours battery life; Mezha says no battery and no runtime published.",
+      "Fall recovery: Humanoid Press lists stand-up-from-fall; Mezha says MK-1 cannot rise after a fall.",
+      "Arms/hands: TNW says five-fingered hands; Mezha says arms and wrists remain immobile.",
+      "Production targets: TNW says 10,000 in 2026 and 50,000 by end 2027; Mezha says 40,000 per year at $20,000 each by end 2027."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not claim Phantom MK-1 has been used in combat or fired weapons; Ukraine tasks were support only.",
+      "Do not credit production targets as current capability.",
+      "Do not treat the $24M Pentagon contracts as a production order.",
+      "Do not credit autonomy as independently verified.",
+      "Do not describe the robot as purchasable by the public.",
+      "Do not credit visual demo capabilities from video titles with no transcripts."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Phantom MK-1 is Foundation's current first-generation humanoid as of 2026-10-29. The Phantom MK-2 is expected, with TNW reporting it may arrive as early as April 2026, but no official MK-2 release was reviewed."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Phantom MK-1 has been used in combat or has fired weapons",
+      "reason": "Sources say the units performed logistics and reconnaissance support tasks only; no humanoid robot has fired a weapon in conflict.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001"
+      ]
+    },
+    {
+      "claim": "Phantom MK-1 can reliably rise after a fall",
+      "reason": "Humanoid Press directory lists stand-up-from-fall, but Mezha reports it cannot rise after a fall; conflict unresolved.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_003"
+      ]
+    },
+    {
+      "claim": "Phantom MK-1 has 4-hour battery life as confirmed fact",
+      "reason": "The Robotic Life lists 4 hours, but Mezha says no battery and runtime not published; conflict.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_002",
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    {
+      "claim": "Foundation will produce 40,000 or 50,000 units per year by 2027 as reality",
+      "reason": "These are company projections, not delivered units; conflicting numbers exist.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_001",
+        "foundation-phantom-mk1_source_002"
+      ]
+    },
+    {
+      "claim": "Phantom MK-1 helped build more than 24,000 cars in 2025 as independently verified",
+      "reason": "Company claim via The Robotic Life citing Reuters; no named customer or independent verification.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_004"
+      ]
+    },
+    {
+      "claim": "DHS has agreements, pilots, or active prime contracts with Foundation",
+      "reason": "A DHS spokesperson said no such agreements exist; The Robotic Life reported active discussions only.",
+      "source_ids": [
+        "foundation-phantom-mk1_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Foundation Phantom MK-1 is a US-built biped humanoid (5'9\", 176 lb, 44 lb payload, 1.7 m/s, camera-first no LiDAR) reported to have 19 upper-body DOF and a reported lease price around $100,000/year. Its strongest evidence is a media-reported deployment of two units to Ukraine in February 2026 for logistics and reconnaissance testing, plus $24M in Pentagon research contracts. Industrial claims include factory/dockyard testing and a Foundation claim via Reuters of helping build over 24,000 cars in 2025. However, all evidence is media-mediated company claims; no official government/customer release, no independent benchmark, and no video transcript were reviewed. Major spec conflicts exist on battery/runtime, fall recovery, and arm/hand function, and the robot is not publicly purchasable.",
+    "strongest_evidence": [
+      "Two Phantom MK-1 units sent to Ukraine in February 2026 for logistics and reconnaissance testing (media-reported).",
+      "$24M Pentagon research contracts across US Army, Navy, Air Force reported by TNW.",
+      "Reported walking speed 1.7 m/s, 20 kg payload, 19 upper-body DOF.",
+      "Reported factory/dockyard testing and Foundation claim of helping build over 24,000 cars in 2025 (via The Robotic Life)."
+    ],
+    "weakest_evidence": [
+      "No independent benchmark, intervention log, or video transcript.",
+      "No official customer deployment metrics or production order.",
+      "No total DOF, battery capacity, or compute details.",
+      "Conflicting runtime and fall-recovery reports."
+    ],
+    "known_do_not_credit": [
+      "Combat use or weapons firing; Ukraine tasks were support only.",
+      "Production targets as current capability.",
+      "Autonomy as independently verified.",
+      "Visual demo capabilities from video titles with no transcripts.",
+      "Phantom MK-1 as publicly purchasable."
+    ],
+    "recommended_confidence": "low"
+  }
+}

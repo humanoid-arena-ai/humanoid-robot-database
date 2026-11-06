@@ -1,0 +1,24 @@
+{
+  "id": "pollen-robotics",
+  "name": "Pollen Robotics",
+  "country": "France",
+  "headquarters": "Bordeaux, France",
+  "founded": 2016,
+  "website": "https://pollen-robotics.com",
+  "summary": "Pollen Robotics makes open-source robots, including the Reachy 2 humanoid and the Reachy Mini desktop robot. Hugging Face acquired the company in April 2025.",
+  "funding": "Acquired by Hugging Face in April 2025 for an undisclosed amount.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Hugging Face buys a humanoid robotics startup",
+      "url": "https://techcrunch.com/2025/04/14/hugging-face-buys-a-humanoid-robotics-startup",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Hugging Face to sell open-source robots thanks to Pollen Robotics acquisition",
+      "url": "https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

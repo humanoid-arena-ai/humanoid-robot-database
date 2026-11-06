@@ -1,0 +1,61 @@
+{
+  "robotId": "apptronik-apollo",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "contact_sales",
+  "purchasePathNote": "Apollo is not sold publicly. Apptronik works with enterprise partners such as Mercedes-Benz and asks companies to use its contact form.",
+  "configurations": [
+    {
+      "name": "Apollo (2023 cost goal)",
+      "price": 100000,
+      "currency": "USD",
+      "priceType": "target",
+      "region": "Global",
+      "notes": "IEEE Spectrum (2023-01-27) reported the goal of a platform that costs 'well under US $100,000'. A ceiling stated as a goal, not a price.",
+      "sourceLabel": "IEEE Spectrum",
+      "sourceUrl": "https://spectrum.ieee.org/humanoid-robot-apptronik-apollo",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Apollo (long-term target)",
+      "price": 50000,
+      "currency": "USD",
+      "priceType": "target",
+      "region": "Global",
+      "notes": "CEO Jeff Cardenas discusses making a safe, reliable humanoid 'for less than $50,000' (podcast, 2025-02-20). Long-term goal, not a price.",
+      "sourceLabel": "What's Your Problem? podcast",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/building-a-mass-market-robot/id1602541473?i=1000691601498",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "Apptronik (official)",
+      "type": "official",
+      "url": "https://apptronik.com/contact",
+      "region": "US",
+      "offers": "No public price; 'Get Started' contact form for companies.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy Apptronik Apollo?",
+      "a": "Not as a public product. Apptronik has no price or order page and directs companies to a contact form.",
+      "sourceUrl": "https://apptronik.com/apollo/apollo-2"
+    },
+    {
+      "q": "How much will Apollo cost?",
+      "a": "Apptronik has not published a price. In 2023 the company's goal was a platform costing well under US$100,000, and CEO Jeff Cardenas has talked about getting a humanoid below $50,000.",
+      "sourceUrl": "https://spectrum.ieee.org/humanoid-robot-apptronik-apollo"
+    },
+    {
+      "q": "Who uses Apollo today?",
+      "a": "Apptronik announced a commercial agreement with Mercedes-Benz to pilot Apollo in its factories.",
+      "sourceUrl": "https://apptronik.com/news-collection/apptronik-and-mercedes-benz-enter-commercial-agreement"
+    }
+  ],
+  "notes": "Both prices are company goals, not quotes. Some sites cite a CEO interview with IEEE Spectrum in August 2023 for the $50,000 figure; that article was not found, so the podcast is used instead.",
+  "researchNotes": "The apptronik.com/apollo page used in the evidence pack now returns 404; the current product page is apptronik.com/apollo/apollo-2."
+}

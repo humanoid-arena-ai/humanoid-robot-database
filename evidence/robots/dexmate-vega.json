@@ -1,0 +1,1168 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "dexmate-vega",
+    "name": "Dexmate Vega",
+    "company_id": "dexmate",
+    "company_name": "Dexmate",
+    "country": "United States",
+    "generation": null,
+    "first_announced_date": "2025-03-04",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Vega 1 Pro is in production now, sold as a robot platform for developers and researchers. Press reported preorders with a $999 nonrefundable deposit and about three months lead time. No public release date beyond the 2025 preorder was found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "research platform",
+      "frontier AI labs",
+      "product teams building physical AI solutions",
+      "industrial applications",
+      "data collection for imitation learning",
+      "simulation and benchmarking"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "Reach floor to 7 ft 2 in (2.2 m); max height (arms raised) 8 ft 2.6 in (2.50 m)",
+      "value": 220,
+      "unit": "cm",
+      "notes": "Dexmate publishes reach and max height with arms raised, not a standing robot height. Folded height is 26 in (0.66 m). No standing height to top of head was disclosed. The numeric value uses the 2.2 m reach figure.",
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "298 lbs (135 kg)",
+      "value": 135,
+      "unit": "kg",
+      "notes": "Official product page value. No conflicting weight found in the other sources.",
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "10+ lbs (5 kg) per arm",
+      "value": 5,
+      "unit": "kg",
+      "notes": "Official product page says 10+ lbs (5 kg) per arm. Mike Kalil's report says 7 kg (15 lbs) per arm; the official page is used and the conflict is kept in limitations.",
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "20 hrs of operation",
+      "value": 20,
+      "unit": "hours",
+      "notes": "Official product page. Mike Kalil reports the robot's high-capacity battery offers more than 10 hours per charge and up to 30 hours without payload.",
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity was not published in reviewed sources. Dexmate states 20 hours of operation; media reported 10+ hours with payload and up to 30 hours without payload.",
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 24,
+      "notes": "Official page lists Arms 14 (7 each), Torso 3, Head 3, Base 4 (2 steering, 2 drive), total 24. Mike Kalil reported 36 DoF with 3 in head and 13 in arms; the official total is used and the conflict is kept.",
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed was published. Vega is wheeled with an omni-directional base, but no speed metric was found.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "No standard hand is listed. End effectors are ordered separately and include DexGripper S or DexGripper D, user-provided tools, and common third-party end effectors. Research summaries mention Dexmate Vega with Sharpa Wave hands, but this is not a standard configuration.",
+      "degrees_of_freedom": null,
+      "force_feedback": "Optional force/torque (F/T) add-on for admittance control; arms are position-controlled.",
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Stereo RGB camera on a 3-DoF head",
+        "Front LiDAR",
+        "Rear LiDAR",
+        "Four RGB cameras on the base"
+      ],
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Official page lists NVIDIA Jetson AGX Thor. Mike Kalil reported NVIDIA AGX Orin; the official page is used and the conflict is kept.",
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Position-controlled arms with optional force/torque add-on; omni-directional base with 2 steering and 2 drive actuators. Actuator type or brand was not disclosed.",
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 89999,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.dexmate.com/product/vega-1-pro",
+      "notes": "The official product page says 'Order now' but does not show a price. Mike Kalil reported $89,999 with a $999 nonrefundable deposit and about three months lead time. End effectors are ordered separately.",
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Dexmate discloses two 7-DoF arms with 5 kg payload each, wide end-effector compatibility, and optional force/torque. The official page also summarizes external research claiming dexterous results on Vega, such as DexTacWAM raising success on six contact-rich tasks to 70.6 vs 38.0. No observable demo video content is available from the cited video titles.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "caveats": [
+        "No independent benchmark or success-rate verification is provided.",
+        "Demo videos are only titles; no manipulation behavior can be credited from them.",
+        "Research summaries are company-published and not the original papers."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Vega 1 Pro ships as hardware with Python, C++, and Rust APIs and an SDK. Dexmate explicitly says it does not come with AI and the task behavior is yours to build or teach. No autonomous task execution evidence was found.",
+      "evidence_level": 0,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "caveats": [
+        "The robot is a platform, not an autonomous product.",
+        "Teleoperation and data-collection tools are disclosed, but autonomous capabilities are not included."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official page describes an omni-directional base that slides any direction, a 3-DoF torso, 3-DoF head, and 4-DoF base. No speed, fall-recovery, or observed whole-body control demonstration was available.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "caveats": [
+        "No speed metric or mobility test data was published.",
+        "Video titles only; no observable mobility behavior."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Vega includes a stereo RGB head camera, front and rear LiDAR, and four base RGB cameras. No perception algorithm or scene understanding model is included out of the box.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "caveats": [
+        "Sensor hardware is specified, but no perception performance or software stack is provided."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No human interaction capabilities beyond teleoperation interfaces (VR or exoskeleton) were found. Vega is not marketed as an interactive assistant.",
+      "evidence_level": 0,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "caveats": [
+        "No speech, gesture, or natural interaction claims were found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Dexmate claims 20 hours of operation per charge. Media reported 10+ hours with payload and up to 30 hours without payload. No reliability data, mean time before failure, or long-duration deployment logs were published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ],
+      "caveats": [
+        "Runtime is a company spec; no independent test or reliability metric.",
+        "Conflicting runtime figures exist between official page and media."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Dexmate says the wheeled base cannot fall, the robot can fold to fit through a standard doorway, and it reaches up to 2.2 m. Weight is 135 kg. No full-robot safety certification was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "caveats": [
+        "Heavy (135 kg) wheeled platform; no safety certification or indoor/outdoor safety testing disclosed.",
+        "Wheeled design is stable but not a biped and may not handle stairs."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "The robot is purchasable and in production according to Dexmate. The official page names several labs and companies that have published research built on Vega, including UC Berkeley, Stanford, Carnegie Mellon, NVIDIA, Google DeepMind, and Toyota Research Institute. No customer press release or deployment metrics were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ],
+      "caveats": [
+        "Lab research mentions are company-reported; no independent customer deployments or operational metrics.",
+        "No named end-customer deployment with hours or output."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Mike Kalil reports $89,999 with a $999 nonrefundable deposit and about three months lead time. The official product page does not show a price but says 'Order now'.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dexmate-vega_source_001",
+        "dexmate-vega_source_002"
+      ],
+      "caveats": [
+        "Price is from a media blog, not the official page.",
+        "End effectors are not included."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "dexmate-vega_evidence_001",
+      "date": null,
+      "title": "Vega 1 Pro runtime",
+      "claim": "Dexmate reports 20 hours of operation per charge.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec claim; not independently measured.",
+      "arena_relevance": "Defines runtime for endurance comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Vega runs for 20 hours.",
+      "source_location": "Dexmate Vega 1 Pro product page, capabilities section",
+      "verification_notes": "Company spec page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_002",
+      "date": null,
+      "title": "Vega 1 Pro arm payload",
+      "claim": "Dexmate lists two 7-DoF arms, each carrying 10+ lbs (5 kg) in any pose.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec claim.",
+      "arena_relevance": "Bimanual payload per arm for manipulation comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Two 7-DoF arms, each carrying 10+ lbs (5 kg) in any pose, so Vega 1 Pro handles two-handed tasks a single-arm rig can't.",
+      "source_location": "Dexmate Vega 1 Pro product page, Bimanual Dexterity section",
+      "verification_notes": "Company spec page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_003",
+      "date": null,
+      "title": "Vega 1 Pro weight",
+      "claim": "Dexmate lists Vega 1 Pro at 298 lbs (135 kg).",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official spec page.",
+      "arena_relevance": "Weight for human-environment fit and mobility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Weight\n298 lbs (135 kg)",
+      "source_location": "Dexmate Vega 1 Pro product page, Specifications section",
+      "verification_notes": "Company spec page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "neutral"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_004",
+      "date": null,
+      "title": "Vega 1 Pro variable reach",
+      "claim": "A 3-DoF torso lifts the arms up to 7 ft 2 in (2.2 m) high; the robot can fold down to fit through a standard doorway.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official capability claim.",
+      "arena_relevance": "Reach and form factor for household/industrial tasks.",
+      "claim_type": "spec",
+      "supporting_excerpt": "A 3-DoF torso lifts the arms up to 7 ft 2 in (2.2 m) high for extended reach.",
+      "source_location": "Dexmate Vega 1 Pro product page, Variable Wide-Reach section",
+      "verification_notes": "Company page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_005",
+      "date": null,
+      "title": "Vega 1 Pro folded dimensions",
+      "claim": "Folded dimensions are 26 × 23 × 26 in (0.66 × 0.56 × 0.66 m).",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official spec page.",
+      "arena_relevance": "Transport and storage form factor.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Dimensions\n- Folded (L × W × H)26 × 23 × 26 in (0.66 × 0.56 × 0.66 m)",
+      "source_location": "Dexmate Vega 1 Pro product page, Specifications section",
+      "verification_notes": "Company spec page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_006",
+      "date": null,
+      "title": "Vega 1 Pro degrees of freedom",
+      "claim": "Official page lists 24 total DoF: 14 arms (7 each), 3 torso, 3 head, 4 base (2 steering, 2 drive).",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec; media reported 36 DoF in source 2, conflict handled separately.",
+      "arena_relevance": "Whole-body degrees of freedom for manipulation and mobility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Degrees of Freedom\n- Arms14 (7 each)\n- Torso3\n- Head3\n- Base4 (2 steering, 2 drive)",
+      "source_location": "Dexmate Vega 1 Pro product page, Specifications section",
+      "verification_notes": "Company spec page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_007",
+      "date": null,
+      "title": "Vega 1 Pro sensing suite",
+      "claim": "Vega includes a stereo RGB camera on a 3-DoF head, front and rear LiDAR, and four RGB cameras on the base.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official sensor hardware spec.",
+      "arena_relevance": "Sensing hardware for perception tasks.",
+      "claim_type": "spec",
+      "supporting_excerpt": "A stereo RGB camera on a 3-DoF head, front and rear LiDAR, and four RGB cameras on the base.",
+      "source_location": "Dexmate Vega 1 Pro product page, Sensing Suite section",
+      "verification_notes": "Company page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_008",
+      "date": null,
+      "title": "Vega 1 Pro compute",
+      "claim": "Dexmate lists NVIDIA Jetson AGX Thor onboard compute.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec; media reported AGX Orin, conflict handled separately.",
+      "arena_relevance": "Onboard compute for AI workloads.",
+      "claim_type": "spec",
+      "supporting_excerpt": "NVIDIA Jetson AGX Thor",
+      "source_location": "Dexmate Vega 1 Pro product page, Specifications section",
+      "verification_notes": "Company spec page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "neutral"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_009",
+      "date": null,
+      "title": "Vega 1 Pro production and sales status",
+      "claim": "Vega 1 Pro is in production now, sold as a robot platform for developers and researchers.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official commercial statement.",
+      "arena_relevance": "Shows the platform is purchasable.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Vega 1 Pro is in production now, sold as a robot platform for developers and researchers.",
+      "source_location": "Dexmate Vega 1 Pro product page, Ready to Build section",
+      "verification_notes": "Company claim; no price on page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_010",
+      "date": null,
+      "title": "Vega 1 Pro does not include AI",
+      "claim": "Vega ships as hardware with Python, C++, and Rust APIs and the SDK; task behavior is built or taught by the customer.",
+      "category": [
+        "autonomy_task_execution",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official FAQ clarifies the platform does not come with AI.",
+      "arena_relevance": "Caps autonomy expectations.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "No. It ships as hardware with Python, C++, and Rust APIs and the SDK. The task behavior is yours to build or teach, and Vega comes with the tools to collect demonstration data that is ready for physical AI model training.",
+      "source_location": "Dexmate Vega 1 Pro product page, FAQ",
+      "verification_notes": "Official statement.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_011",
+      "date": null,
+      "title": "Research labs using Vega",
+      "claim": "Dexmate names UC Berkeley, Stanford, Carnegie Mellon, NVIDIA, Google DeepMind, Toyota Research Institute and others as having published work built on Vega.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company-reported list of research labs; no independent customer confirmation.",
+      "arena_relevance": "Shows research adoption but not commercial deployment metrics.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Teams at UC Berkeley, Stanford, USC, Carnegie Mellon, UIUC, Northwestern, Purdue, Tsinghua, Michigan, NVIDIA, Google DeepMind, Toyota Research Institute, Samsung SDS Research America, Microsoft Research, and Amazon FAR have published work built on Vega.",
+      "source_location": "Dexmate Vega 1 Pro product page, FAQ",
+      "verification_notes": "Company statement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_012",
+      "date": null,
+      "title": "DexTacWAM dexterity result on Vega",
+      "claim": "A video world model learns to predict touch on Dexmate's Vega, raising success on six contact-rich dexterous tasks to 70.6 against 38.0 for the strongest baseline.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "dexmate-vega_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Summary on official page of external research; not the original paper.",
+      "arena_relevance": "Supports dexterity capability claims with a quantitative result.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "A video world model learns to predict touch on Dexmate's Vega, raising success on six contact-rich dexterous tasks to 70.6 against 38.0 for the strongest baseline.",
+      "source_location": "Dexmate Vega 1 Pro product page, Research on Vega 1 Pro section",
+      "verification_notes": "Company summary; original paper not reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_013",
+      "date": "2025-03-07",
+      "title": "Vega price and preorder",
+      "claim": "The robot is priced at $89,999 with a $999 nonrefundable deposit and about three months lead time.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Media blog report; official page does not show price.",
+      "arena_relevance": "Accessibility and value proposition.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot is priced at $89,999. It can be purchased via its website but a $999 nonrefundable deposit is required. The current lead time is about three months from the order confirmation date.",
+      "source_location": "Mike Kalil article",
+      "verification_notes": "Single-author blog; price not on official page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_014",
+      "date": "2025-03-07",
+      "title": "Vega developed in under six months",
+      "claim": "Dexmate says its team developed the wheeled humanoid robot in under six months.",
+      "category": [
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Company claim as reported by media.",
+      "arena_relevance": "Development timeline context.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Dexmate says its team developed the wheeled humanoid robot in under six months.",
+      "source_location": "Mike Kalil article",
+      "verification_notes": "Company claim relayed.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_015",
+      "date": "2025-03-07",
+      "title": "Conflicting payload report",
+      "claim": "Mike Kalil reports each arm can handle a payload of 7 kg (15 lbs).",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicts with official page's 5 kg (10+ lbs) per arm.",
+      "arena_relevance": "Spec conflict caution.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Each arm can handle a payload of 7 kg (15 lbs).",
+      "source_location": "Mike Kalil article",
+      "verification_notes": "Media report conflicts with official page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_016",
+      "date": "2025-03-07",
+      "title": "Conflicting battery runtime report",
+      "claim": "Mike Kalil reports the robot's high-capacity battery offers more than 10 hours of operation per charge and up to 30 hours without payload.",
+      "category": [
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicts with official 20-hour runtime claim.",
+      "arena_relevance": "Runtime spec conflict caution.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "According to Dexmate, the robot’s high-capacity battery offers more than 10 hours of operation per charge. The battery runs for up to 30 hours without a payload.",
+      "source_location": "Mike Kalil article",
+      "verification_notes": "Media report differs from official page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_017",
+      "date": "2025-03-07",
+      "title": "Conflicting degrees of freedom report",
+      "claim": "Mike Kalil reports Vega has 36 degrees of freedom, including 3 DoF in head and 13 in arms.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Conflicts with official page total of 24 DoF.",
+      "arena_relevance": "DoF spec conflict caution.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Vega has a reported 36 degrees of freedom (DoF), including 3 DoF in its head and 13 in its arms.",
+      "source_location": "Mike Kalil article",
+      "verification_notes": "Media report differs from official page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_018",
+      "date": "2025-03-07",
+      "title": "Conflicting compute report",
+      "claim": "Mike Kalil reports Vega is powered by Nvidia AGX Orin edge computing.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Conflicts with official page's NVIDIA Jetson AGX Thor.",
+      "arena_relevance": "Compute spec conflict caution.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "It’s powered by Nvidia AGX Orin edge computing.",
+      "source_location": "Mike Kalil article",
+      "verification_notes": "Media report differs from official page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_019",
+      "date": "2025-03-06",
+      "title": "Vega announcement date",
+      "claim": "A directory lists a 'Meet Vega, a general-purpose robot' video dated Mar 6, 2025.",
+      "category": [
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dexmate-vega_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory listing; first_announced_date set to 2025-03-04 based on another embedded video date Mar 4, 2025.",
+      "arena_relevance": "Earliest public date.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Meet Vega, a general-purpose robot\nMar 6, 2025",
+      "source_location": "PR.ai thread",
+      "verification_notes": "Directory/forum listing.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_020",
+      "date": "2025-10-29",
+      "title": "YouTube demo video title only: DEXMATE VEGA ROBOT",
+      "claim": "A YouTube video titled 'DEXMATE VEGA ROBOT' exists but no transcript is available.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "dexmate-vega_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Video content cannot be described.",
+      "arena_relevance": "Do not credit observed capabilities from this title.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "DEXMATE VEGA ROBOT",
+      "source_location": "YouTube JobToRob video title",
+      "verification_notes": "No transcript provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_021",
+      "date": "2025-10-29",
+      "title": "YouTube demo video title only: Meet Vega, a general-purpose robot",
+      "claim": "A Dexmate YouTube video titled 'Meet Vega, a general-purpose robot' exists but no transcript is available.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "dexmate-vega_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Official channel video but content not observable from title.",
+      "arena_relevance": "Do not credit capabilities from title.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Meet Vega, a general-purpose robot",
+      "source_location": "YouTube Dexmate video title",
+      "verification_notes": "No transcript provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_022",
+      "date": "2025-10-29",
+      "title": "YouTube demo video title only: Meet Vega, General Purpose Mobile Robot Created by Dexmate",
+      "claim": "A YouTube video titled 'Meet Vega, General Purpose Mobile Robot Created by Dexmate' exists but no transcript is available.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "dexmate-vega_source_006"
+      ],
+      "confidence": 0.5,
+      "notes": "Third-party video title only.",
+      "arena_relevance": "No observable content.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Meet Vega, General Purpose Mobile Robot Created by Dexmate",
+      "source_location": "YouTube Bots & Drones video title",
+      "verification_notes": "No transcript provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_023",
+      "date": "2025-10-29",
+      "title": "YouTube demo video title only: Vega Humanoid Robot, Multi Purpose Robot",
+      "claim": "A YouTube video titled 'Vega Humanoid Robot, Multi Purpose Robot' exists but no transcript is available.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "dexmate-vega_source_007"
+      ],
+      "confidence": 0.5,
+      "notes": "Third-party video title only.",
+      "arena_relevance": "No observable content.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Vega Humanoid Robot, Multi Purpose Robot",
+      "source_location": "YouTube Humanoid Robots Guide video title",
+      "verification_notes": "No transcript provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_024",
+      "date": "2026-07-29",
+      "title": "YouTube demo video title only: 【アメリカ】Dexmate【Vega】",
+      "claim": "A YouTube video titled '【アメリカ】Dexmate【Vega】' exists but no transcript is available.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "dexmate-vega_source_008"
+      ],
+      "confidence": 0.5,
+      "notes": "Third-party video title only.",
+      "arena_relevance": "No observable content.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "【アメリカ】Dexmate【Vega】",
+      "source_location": "YouTube 世界のロボット企業ch video title",
+      "verification_notes": "No transcript provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "dexmate-vega_evidence_025",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No walking speed, battery capacity, hand DoF, autonomous task execution demonstrations, independent benchmarks, or named customer deployment metrics were found.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, mobility speed, and commercial proof.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "mobility_whole_body_control",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "Vega 1 Pro does not include AI; it ships as a hardware platform with APIs and teleoperation tools. No autonomous task execution evidence was found.",
+      "impact_on_arena_scoring": "Autonomy/task execution should be scored at or near zero unless a customer-built system is later documented."
+    },
+    {
+      "topic": "Demo video content",
+      "description": "Multiple YouTube videos with Vega titles exist, but no transcripts were provided. No observed capabilities can be credited from them.",
+      "impact_on_arena_scoring": "Manipulation, mobility, and perception evidence remains limited to official descriptions and research summaries."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "Mike Kalil reports 7 kg per arm, 10+ hour runtime, 36 DoF, and NVIDIA AGX Orin, while the official page lists 5 kg per arm, 20 hours, 24 DoF, and Jetson AGX Thor.",
+      "impact_on_arena_scoring": "Use official page values as canonical, but note lower confidence due to conflicting public information."
+    },
+    {
+      "topic": "No speed or battery capacity",
+      "description": "No walking/mobility speed or battery capacity was published.",
+      "impact_on_arena_scoring": "Mobility speed and battery comparisons cannot be made."
+    },
+    {
+      "topic": "No customer deployment metrics",
+      "description": "Dexmate names research labs that published work on Vega, but there are no named customer deployments with hours, output, or units.",
+      "impact_on_arena_scoring": "Commercial proof remains early; treat research adoption separately from industrial deployment."
+    },
+    {
+      "topic": "Safety certification",
+      "description": "No full-robot safety certification was found. The unit weighs 135 kg and reaches 2.2 m.",
+      "impact_on_arena_scoring": "Caution in human-proximity scenarios."
+    }
+  ],
+  "source_ids": [
+    "dexmate-vega_source_001",
+    "dexmate-vega_source_002",
+    "dexmate-vega_source_003",
+    "dexmate-vega_source_004",
+    "dexmate-vega_source_005",
+    "dexmate-vega_source_006",
+    "dexmate-vega_source_007",
+    "dexmate-vega_source_008"
+  ],
+  "sources": [
+    {
+      "id": "dexmate-vega_source_001",
+      "title": "Vega 1 Pro Wheeled Humanoid Robot | Dexmate",
+      "publisher": "Dexmate",
+      "url": "https://www.dexmate.com/product/vega-1-pro",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims and specs, not independently verified."
+    },
+    {
+      "id": "dexmate-vega_source_002",
+      "title": "Dexmate Opens Preorders for Vega Mobile Humanoid Robot",
+      "publisher": "Mike Kalil",
+      "url": "https://mikekalil.com/blog/dexmate-vega/",
+      "date_published": "2025-03-07",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Single-author blog reporting company claims and price; contains spec conflicts with official page."
+    },
+    {
+      "id": "dexmate-vega_source_003",
+      "title": "Vega, general-purpose mobile robot, Dexmate Inc., Santa Clara, California, USA",
+      "publisher": "Portal of Robotics and Artificial Intelligence",
+      "url": "https://pr.ai/threads/vega-general-purpose-mobile-robot-dexmate-inc-santa-clara-california-usa.26648/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Forum directory listing; embeds official and third-party videos with dates."
+    },
+    {
+      "id": "dexmate-vega_source_004",
+      "title": "DEXMATE VEGA ROBOT",
+      "publisher": "YouTube JobToRob",
+      "url": "https://www.youtube.com/watch?v=wJ_2I4lz2qY",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video title only; no transcript available."
+    },
+    {
+      "id": "dexmate-vega_source_005",
+      "title": "Meet Vega, a general-purpose robot",
+      "publisher": "YouTube Dexmate",
+      "url": "https://www.youtube.com/watch?v=NaTbycD_fdc",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Dexmate channel; title only, no transcript available."
+    },
+    {
+      "id": "dexmate-vega_source_006",
+      "title": "Meet Vega, General Purpose Mobile Robot Created by Dexmate",
+      "publisher": "YouTube Bots & Drones: Robots, Drones, Autonomous Systems",
+      "url": "https://www.youtube.com/watch?v=7yTuBFz_iRw",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video title only; no transcript available."
+    },
+    {
+      "id": "dexmate-vega_source_007",
+      "title": "Vega Humanoid Robot, Multi Purpose Robot",
+      "publisher": "YouTube Humanoid Robots Guide To The Galaxy",
+      "url": "https://www.youtube.com/watch?v=B4Xvqd4M4Ew",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video title only; no transcript available."
+    },
+    {
+      "id": "dexmate-vega_source_008",
+      "title": "【アメリカ】Dexmate【Vega】",
+      "publisher": "YouTube 世界のロボット企業ch",
+      "url": "https://www.youtube.com/watch?v=uZTiBJQx8SU",
+      "date_published": "2026-07-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video title only; no transcript available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Dexmate Vega is a purchasable wheeled humanoid research/developer platform with strong official hardware disclosures (24 DoF, 5 kg per arm, 20 h runtime, sensor suite) but no included autonomy and no observable demo content beyond video titles. Commercial proof is limited to company-reported research-lab adoption and a media-reported $89,999 price.",
+    "strongest_positive_evidence": [
+      "Official product page detailed specs: 2 x 7-DoF arms, 3-DoF torso, 3-DoF head, 4-DoF base, 135 kg, 20-hour runtime, stereoscopic RGB + LiDAR + 4 cameras.",
+      "Explicit production and research platform availability.",
+      "Company-published research summaries cite quantitative dexterity results on Vega (e.g., DexTacWAM 70.6 vs 38.0)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No autonomous task execution; no AI included.",
+      "No YouTube transcript or observed behavior from video titles.",
+      "No walking/mobility speed, battery capacity, hand DoF, or independent benchmark.",
+      "No named customer deployments with operational metrics."
+    ],
+    "conflicting_claims": [
+      "Payload: official page 5 kg per arm vs Mike Kalil 7 kg per arm.",
+      "Runtime: official page 20 hours vs Mike Kalil 10+ hours (up to 30 hours without payload).",
+      "DoF: official page 24 total vs Mike Kalil 36 total.",
+      "Compute: official page NVIDIA Jetson AGX Thor vs Mike Kalil NVIDIA AGX Orin."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not call Vega a biped or autononomous humanoid.",
+      "Do not credit the YouTube video titles as observed capability demos.",
+      "Do not treat Mike Kalil's conflicting specs as canonical over the official Dexmate page.",
+      "Do not claim independent customer deployments or industrial pilot metrics.",
+      "Do not claim Vega includes AI out of the box."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Dexmate Vega 1 Pro is the current purchasable Vega platform as of 2026-10-29. No successor or discontinuation was found in the reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "China Sets New Guinness World Record as 110 Humanoid Robots Dance in Perfect Synchronization",
+      "reason": "Unrelated YouTube video about a Chinese humanoid dance record; does not mention Dexmate Vega.",
+      "source_ids": []
+    },
+    {
+      "claim": "RoboSkin.ai robot platform directory entries",
+      "reason": "The directory source did not include Vega; it only covered Apptronik Apollo 2, Unitree G1, Fourier GR-1, and robot arms.",
+      "source_ids": []
+    },
+    {
+      "claim": "Any observed manipulation, autonomy, or mobility behavior from YouTube titles",
+      "reason": "Titles alone are not observable behavior; no transcripts were provided.",
+      "source_ids": [
+        "dexmate-vega_source_004",
+        "dexmate-vega_source_005",
+        "dexmate-vega_source_006",
+        "dexmate-vega_source_007",
+        "dexmate-vega_source_008"
+      ]
+    },
+    {
+      "claim": "NVIDIA AGX Orin compute",
+      "reason": "Reported by Mike Kalil but conflicts with official page's Jetson AGX Thor.",
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ]
+    },
+    {
+      "claim": "36 degrees of freedom",
+      "reason": "Reported by Mike Kalil but conflicts with official page's 24 total DoF.",
+      "source_ids": [
+        "dexmate-vega_source_002"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 5,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Dexmate Vega 1 Pro is a wheeled humanoid research/developer platform from Dexmate in Santa Clara. It has two 7-DoF arms rated at 5 kg each, a 3-DoF torso reaching to 2.2 m, a 3-DoF head, a 4-DoF omni-directional base (24 total DoF), a stereo RGB head camera, front/rear LiDAR, four base RGB cameras, and NVIDIA Jetson AGX Thor. Dexmate claims 20 hours of runtime and lists the robot as in production and sold to researchers/developers. A media report prices it at $89,999 with a $999 deposit and cites a lead time of about three months. Vega does not include AI; task behavior is built or taught by the customer using Python/C++/Rust APIs and teleoperation tools. No autonomous task execution or observable demo content was found beyond YouTube video titles. Several research labs are named as having used Vega, but no commercial deployment metrics exist.",
+    "strongest_evidence": [
+      "Official product page detailed hardware specs (payload, DoF, sensors, compute, runtime).",
+      "Official statement that Vega 1 Pro is in production and sold as a developer platform.",
+      "Media-reported price and preorder availability."
+    ],
+    "weakest_evidence": [
+      "No included autonomy; no autonomous task execution.",
+      "No observable demo video content beyond titles.",
+      "No walking speed, battery capacity, or hand DoF.",
+      "No named customer deployment with metrics."
+    ],
+    "known_do_not_credit": [
+      "Do not credit YouTube titles as demonstrated capabilities.",
+      "Do not credit Mike Kalil's conflicting specs (7 kg, 36 DoF, AGX Orin, 10+ hour runtime) over the official page.",
+      "Do not call Vega a biped or autonomous.",
+      "Do not claim industrial/commercial deployments beyond research platform sales."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

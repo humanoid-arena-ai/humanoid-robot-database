@@ -1,0 +1,13 @@
+{
+  "id": "limx-dynamics",
+  "name": "LimX Dynamics",
+  "country": "China",
+  "headquarters": "Shenzhen, China",
+  "founded": 2022,
+  "website": null,
+  "summary": "LimX Dynamics is a Shenzhen robotics company founded in January 2022 that builds legged robots and the full-size Oli humanoid. Investors include Nio Capital and SAIC's Shangqi Capital.",
+  "funding": "Series A in July 2024; $200 million Series B announced February 2026 (CnEVPost).",
+  "sources": [
+    { "id": "s1", "title": "Chinese humanoid robot maker LimX secures $200 million in Series B funding", "url": "https://cnevpost.com/2026/02/02/chinese-humanoid-robot-maker-limx-secures-200-million-in-series-b-funding/", "accessed": "2026-10-14" }
+  ]
+}

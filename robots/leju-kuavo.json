@@ -1,0 +1,42 @@
+{
+  "id": "leju-kuavo",
+  "name": "Leju Kuavo",
+  "aliases": ["KUAVO", "Kuavo-MY", "Kuavo 4Pro", "Kuavo-5"],
+  "companyId": "leju-robotics",
+  "companyName": "Leju Robotics",
+  "country": "China",
+  "announced": null,
+  "status": "commercial",
+  "category": "general",
+  "summary": "Kuavo is Leju Robotics' family of full-size bipedal humanoids, sold mainly to research, education and industrial pilot customers in China. Leju's IPO filing reports 577 Kuavo units sold in 2025. Specs differ between generations and published figures conflict.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": { "value": 45, "original": "~45 kg (2024 CTTL-tested KUAVO)", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 26, "original": "26 degrees of freedom (2024 CTTL-tested KUAVO)", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 1.28, "original": "Maximum pace speed: 4.6 km/h", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": { "value": 50000, "currency": "USD", "priceType": "list", "configuration": "Leju KUAVO (Robotics Center listing, before shipping)", "sourceId": "s2" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.roboticscenter.ai/store/product/leju-robotics-leju-kuavo",
+  "highlights": [
+    "Kuavo series sales were 178 million yuan in 2025 from 577 units, about 308,000 yuan average, per Leju's IPO filing as reported by Gasgoo.",
+    "Passed the CTTL general humanoid ontology test in March 2024, including continuous jumps over 20 cm.",
+    "The newer KUAVO-MY open platform is 1.4 m tall with over 40 DoF, per The Robot Report."
+  ],
+  "caveats": [
+    "Leju does not publish an official spec sheet in English; figures vary widely between Kuavo generations.",
+    "The USD price is a US reseller listing on backorder."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Leju passed the general ontology test and evaluation of humanoid robots", "publisher": "CAICT / CTTL", "url": "https://gma.caict.ac.cn/en/plat/cttl-t/lejurobot-kuavo-humanoid-pass-the-general-evaluation-performed-by-cttl", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Leju KUAVO Humanoid Robot", "publisher": "Robotics Center", "url": "https://www.roboticscenter.ai/store/product/leju-robotics-leju-kuavo", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Embodied AI IPO Boom: Building Real Businesses or Riding the Hype?", "publisher": "Gasgoo", "url": "https://autonews.gasgoo.com/articles/news/embodied-ai-ipo-boom-building-real-businesses-or-riding-the-hype-2065702333747675136", "accessed": "2026-10-14" },
+    { "id": "s4", "title": "Leju raises $200M for humanoid production as Unitree unveils H2", "publisher": "The Robot Report", "url": "https://www.therobotreport.com/leju-raises-200m-humanoid-production-unitree-unveils-h2-robot/", "accessed": "2026-10-14" }
+  ]
+}

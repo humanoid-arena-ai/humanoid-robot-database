@@ -1,0 +1,13 @@
+{
+  "id": "spirit-ai",
+  "name": "Spirit AI",
+  "country": "China",
+  "headquarters": "Hangzhou, China",
+  "founded": 2024,
+  "website": null,
+  "summary": "Spirit AI (Qianxun Intelligence) is an embodied AI company founded in February 2024 that builds the Moz humanoid and its own vision-language-action models. It runs pilots with CATL and JD.com.",
+  "funding": "Nearly 2 billion yuan across two back-to-back rounds announced February 2026; investors include Yunfeng Capital, HongShan, CATL, JD.com, Huawei and Xiaomi (Gasgoo).",
+  "sources": [
+    { "id": "s1", "title": "Spirit AI secures nearly 2 billion yuan in back-to-back funding rounds", "url": "https://autonews.gasgoo.com/articles/icv/spirit-ai-secures-nearly-2-billion-yuan-in-back-to-back-funding-rounds-as-embodied-intelligence-race-heats-up-2026146686038994944", "accessed": "2026-10-14" }
+  ]
+}

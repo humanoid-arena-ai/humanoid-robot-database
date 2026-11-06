@@ -1,0 +1,14 @@
+{
+  "id": "magiclab",
+  "name": "MagicLab",
+  "country": "China",
+  "headquarters": "Wuxi, Jiangsu, China",
+  "founded": 2023,
+  "website": "https://www.magiclabglobal.com/",
+  "summary": "MagicLab (Magiclab Robotics Technology) is a Chinese humanoid maker founded in December 2023 that builds the MagicBot Gen1 and the compact MagicBot Z1. It focuses on industrial and service uses.",
+  "funding": "Angel round of 150 million RMB by December 2024 and a Series B of hundreds of millions of RMB by May 2025, per Robozaps.",
+  "sources": [
+    { "id": "s1", "title": "MagicBot Gen1 - General-Purpose Humanoid AI Robot", "url": "https://www.magiclabglobal.com/products/magicbot-gen1/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "MagicBot Price 2026: MagicLab Specs & Factory Deployment", "url": "https://blog.robozaps.com/b/magiclab-magicbot-review", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "boston-dynamics-atlas-electric",
+    "name": "Boston Dynamics Electric Atlas",
+    "company_id": "boston-dynamics",
+    "company_name": "Boston Dynamics",
+    "country": "United States",
+    "generation": null,
+    "first_announced_date": "2024-04-17",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Production-ready product version announced at CES 2026; Boston Dynamics says 2026 deployments are committed for Hyundai RMAC and Google DeepMind, while AP reports Hyundai factory deployment by 2028. Public CES stage demo was remotely piloted.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "industrial material handling",
+      "automotive part sequencing",
+      "machine tending",
+      "order fulfillment"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Current production-version Atlas product as of 2026-05-16; scored as pilot because public evidence supports field testing/scheduled fleets, not open commercial availability or scaled customer metrics."
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.9 m / 6 ft 3 in",
+      "value": 1.9,
+      "unit": "m",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "90 kg / 198 lb",
+      "value": 90,
+      "unit": "kg",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "50 kg / 110 lb",
+      "value": 50,
+      "unit": "kg",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": "4 hr",
+      "value": 4,
+      "unit": "hr",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": "Rechargeable and swappable 1.4 kWh lithium-ion battery",
+      "value": 1.4,
+      "unit": "kWh",
+      "notes": "Official spec sheet also says the pack is rechargeable/swappable and supports 4 hr runtime under stated operating limits.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 56,
+      "notes": "Official spec sheet/product page claim 56 total DoF, including 18 DoF per arm and 6 DoF per leg.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2.5 m/s",
+      "value": 2.5,
+      "unit": "m/s",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_008"
+      ],
+      "notes": "Reported by robohub.app, added 2026-10-29 by automated spec fill; Third-party aggregator listing (no official Boston Dynamics source states a speed); unit is walking/top speed unspecified."
+    },
+    "hands": {
+      "description": "Multi-purpose industrial gripper with tactile sensing and 14 kg grip strength.",
+      "degrees_of_freedom": 2,
+      "force_feedback": "Tactile feedback claimed in official spec sheet.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "360-degree field-of-view camera",
+        "tactile sensors in gripper",
+        "2D/3D vision model inputs described by Boston Dynamics for behavior generation",
+        "human detection for fenceless safety claims"
+      ],
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_005"
+      ]
+    },
+    "compute": {
+      "description": "Integrated compute not publicly specified; official materials emphasize manipulation, motion-control, and perception software rather than chip-level compute.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_005"
+      ]
+    },
+    "actuators": {
+      "description": "Boston Dynamics describes Atlas as fully electric; official public sources reviewed did not provide actuator model or torque specs.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_003",
+        "boston-dynamics-atlas-electric_source_004"
+      ]
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://bostondynamics.com/atlas/",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specs claim a 50 kg payload, 2-DoF tactile grippers with 14 kg grip strength, and industrial applications such as part sequencing, machine tending, and order fulfillment.",
+      "evidence_level": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004"
+      ],
+      "caveats": [
+        "No cycle-time, success-rate, or failure-rate benchmark was found.",
+        "Gripper strength and payload are company specs, not independent lab measurements.",
+        "Public demo evidence should not be generalized beyond observed/claimed industrial tasks."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Boston Dynamics says Atlas supports autonomous operation with optional teleoperation, intent selection, and policy learning; AP says the CES stage demo was remotely piloted.",
+      "evidence_level": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_006"
+      ],
+      "caveats": [
+        "The most visible public CES demonstration was reportedly remotely piloted.",
+        "No independent autonomy benchmark, intervention rate, or raw task log was found.",
+        "Treat autonomy claims as industrial-pilot evidence, not proof of broad general-purpose autonomy."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Electric Atlas is a 1.9 m, 90 kg biped with 56 DoF, official industrial reach claims, and public demonstrations of standing, walking, and whole-body movement.",
+      "evidence_level": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_003",
+        "boston-dynamics-atlas-electric_source_006"
+      ],
+      "caveats": [
+        "No walking speed, obstacle-course, fall-rate, or long-duration mobility benchmark was found.",
+        "Some public videos are edited company demos.",
+        "CES stage mobility should be treated as remote-piloted demo evidence."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official materials claim a 360-degree camera, tactile sensing, human detection for fenceless operation, and behavior generation from 2D/3D vision-model inputs.",
+      "evidence_level": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_005"
+      ],
+      "caveats": [
+        "No perception benchmark, confusion matrix, or safety-validation report was found.",
+        "Sensor and software descriptions are company claims.",
+        "Human detection claims are not equivalent to certified collaborative-robot safety evidence."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Evidence is mostly industrial safety/operator workflow claims: teach/intent-selection modes, remote operation, human detection, and fenceless-operation positioning.",
+      "evidence_level": 1,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004"
+      ],
+      "caveats": [
+        "No natural-language, social-interaction, or human-subject evaluation was found.",
+        "Operator modes are not proof of unsupervised human collaboration.",
+        "No third-party safety certification evidence was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official specs claim 4 hr runtime, swappable 1.4 kWh battery, IP67 ingress rating, -20 C to 55 C operation, and serviceability features.",
+      "evidence_level": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_007"
+      ],
+      "caveats": [
+        "Runtime and environmental ratings are official claims, not independently audited in reviewed sources.",
+        "No MTBF, uptime, fleet operating-hours, or maintenance-cost data was found.",
+        "A 4 hr battery spec does not prove full-shift continuous production reliability."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Boston Dynamics frames Atlas as a human-form robot for human-centered industrial spaces, with claimed reach, payload, and station compatibility for automotive and logistics tasks.",
+      "evidence_level": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_007"
+      ],
+      "caveats": [
+        "No independent workstation-fit study was found.",
+        "Human-environment fit is inferred from industrial task framing and dimensions.",
+        "No public evidence shows broad household or unstructured public-space use."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Boston Dynamics says the first customer deployment is complete and that 2026 deployments with Hyundai RMAC and Google DeepMind are committed; AP reports Hyundai plans factory deployment by 2028.",
+      "evidence_level": 3,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_006",
+        "boston-dynamics-atlas-electric_source_007"
+      ],
+      "caveats": [
+        "Customer deployment details and volumes are not independently published.",
+        "Hyundai and Google DeepMind evidence is mostly company/partner roadmap evidence, not fleet performance data.",
+        "No price, open purchasing route, or paid-customer case study was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price, open purchase path, accessibility use case, or affordability evidence was found; product is positioned for enterprise industrial deployments.",
+      "evidence_level": 0,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_004"
+      ],
+      "caveats": [
+        "No price was found.",
+        "No public waitlist or consumer availability was found.",
+        "Industrial enterprise positioning limits accessibility scoring."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_001",
+      "date": "2026-01-06",
+      "title": "Official Atlas product specs",
+      "claim": "Boston Dynamics lists Electric Atlas as a 1.9 m, 90 kg, 56-DoF industrial humanoid with 50 kg payload, 4 hr runtime, 1.4 kWh swappable battery, IP67 rating, 360-degree camera, and tactile gripper.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002"
+      ],
+      "confidence": 0.82,
+      "notes": "Official specification evidence; not independently measured.",
+      "arena_relevance": "Backfills concrete physical, battery, sensor, and manipulation specs for arena scoring.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Height: 1.9 m; Weight: 90 kg; Payload: 50 kg; Runtime: 4 hr; Degrees of freedom: 56; Battery: 1.4 kWh; Ingress protection: IP67.",
+      "source_location": "Atlas product page and Atlas Spec Sheet, Specifications tables",
+      "verification_notes": "Official Boston Dynamics sources agree on core specs; treat as company-provided specs, not audited measurements.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "moderate_positive"
+      }
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_002",
+      "date": "2026-01-06",
+      "title": "Operating modes and industrial task positioning",
+      "claim": "The Atlas spec sheet describes autonomous operation alongside teach, teleoperation, intent selection, and policy learning, and lists use cases including automotive part sequencing, machine tending, palletizing, and order fulfillment.",
+      "category": [
+        "autonomy_task_execution",
+        "manipulation_dexterity",
+        "human_interaction",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_002"
+      ],
+      "confidence": 0.72,
+      "notes": "Useful for task scope and operating-mode evidence, but does not quantify autonomous success rates.",
+      "arena_relevance": "Supports industrial-task scoring while preserving the distinction between autonomous, operator-assisted, and teleoperated modes.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Operation Modes: Autonomous, Teach, Teleoperation, Intent Selection, Policy Learning. Applications: Part Sequencing; Machine Tending; Material Handling; Order Fulfillment.",
+      "source_location": "Atlas Spec Sheet, Operation Modes and Applications",
+      "verification_notes": "Company claim only; no independent benchmark or task-log evidence found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "manipulation_dexterity",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_003",
+      "date": "2024-04-17",
+      "title": "Electric Atlas public introduction",
+      "claim": "Boston Dynamics introduced a fully electric Atlas and said it was designed for real-world applications, following retirement of the hydraulic Atlas platform.",
+      "category": [
+        "mobility_whole_body_control",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_003"
+      ],
+      "confidence": 0.78,
+      "notes": "Announcement evidence establishes lineage and first public date, not deployed capability.",
+      "arena_relevance": "Corrects announcement timing and distinguishes Electric Atlas from the prior hydraulic research platform.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The next generation of the Atlas program builds on decades of research and furthers our commitment to delivering the most capable, useful mobile robots.",
+      "source_location": "Boston Dynamics blog, electric Atlas announcement",
+      "verification_notes": "Official announcement; no independent performance data in the announcement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_004",
+      "date": "2026-01-06",
+      "title": "Product-version Atlas and committed 2026 deployments",
+      "claim": "Boston Dynamics says the production-ready Atlas entered immediate manufacturing and that all 2026 deployments are already committed, including to Hyundai RMAC and Google DeepMind.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_004"
+      ],
+      "confidence": 0.76,
+      "notes": "Strong company deployment signal, but not independent fleet-performance proof.",
+      "arena_relevance": "Supports higher deployment confidence than a pure prototype, while remaining below independently documented commercial operation.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The product version of Atlas is here, with production beginning immediately. All deployments in 2026 have already been committed, including initial recipients Hyundai RMAC and Google DeepMind.",
+      "source_location": "Boston Dynamics product launch release",
+      "verification_notes": "Official Boston Dynamics launch claim; volumes, contract terms, and live operating metrics were not public.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "moderate_positive"
+      }
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_005",
+      "date": "2026-01-06",
+      "title": "First customer deployment and Hyundai field-testing context",
+      "claim": "Boston Dynamics says Atlas completed its first customer deployment in the prior year and is taking its first steps into a customer facility at Hyundai's Georgia Metaplant.",
+      "category": [
+        "deployment_commercial_proof",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_007"
+      ],
+      "confidence": 0.7,
+      "notes": "Customer facility language is important, but details remain sparse and primarily company-sourced.",
+      "arena_relevance": "Adds deployment context beyond demo videos, but without sufficient metrics for commercial-production scoring.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "After having completed our first customer deployment last year, we're excited to be taking our first steps into a customer facility with Atlas.",
+      "source_location": "Boston Dynamics Enterprise Robotics CES 2026 article; Atlas product page deployment section",
+      "verification_notes": "Official source; no customer-authored case study, fleet count, uptime, or task-completion statistics found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_006",
+      "date": "2026-01-06",
+      "title": "CES demo was remotely piloted",
+      "claim": "AP reported that Boston Dynamics' live CES presentation showed Atlas walking out, jumping, and lifting a box, but that the robot was being remotely piloted.",
+      "category": [
+        "mobility_whole_body_control",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_006"
+      ],
+      "confidence": 0.74,
+      "notes": "Credible media context materially limits autonomy credit for the public stage demo.",
+      "arena_relevance": "Prevents over-crediting a public demo as autonomous task execution.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "During a live presentation, a remote-piloted Atlas walked out and did a little jump before lifting up a box.",
+      "source_location": "Associated Press CES 2026 robotics report",
+      "verification_notes": "Credible media report; not a raw technical audit, but directly addresses teleoperation status of the demo.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "mixed"
+      }
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_evidence_007",
+      "date": "2025-03-19",
+      "title": "Perception and learning stack direction",
+      "claim": "Boston Dynamics describes work toward Atlas behavior generation from vision models, including 2D and 3D foundation-model inputs and real-time robot adaptation.",
+      "category": [
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_005"
+      ],
+      "confidence": 0.62,
+      "notes": "Architecture and roadmap evidence, not a finished benchmark.",
+      "arena_relevance": "Adds credible perception/autonomy context without overclaiming deployed capability.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "We're using both 2D and 3D vision foundation models as inputs to generate our behavior, and robot learning to adjust these motions in real time.",
+      "source_location": "Boston Dynamics Atlas evolution blog, software section",
+      "verification_notes": "Official technical narrative; no reproducible benchmark or dataset released in reviewed source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "boston-dynamics-atlas-electric_deployment_001",
+      "customer": "Hyundai RMAC / Hyundai Motor Group Metaplant America",
+      "date": "2026-01-06",
+      "status": "committed_or_field_testing",
+      "description": "Boston Dynamics says 2026 deployments are committed, including Hyundai RMAC, and product-page language says Atlas is taking its first steps into a customer facility at Hyundai's Georgia Metaplant.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_007"
+      ],
+      "notes": "No public fleet size, duty cycle, uptime, task-success rate, or customer-authored case study found."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_deployment_002",
+      "customer": "Google DeepMind",
+      "date": "2026-01-06",
+      "status": "committed",
+      "description": "Boston Dynamics says Google DeepMind is an initial 2026 recipient of product-version Atlas deployments.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_004"
+      ],
+      "notes": "Deployment appears research/partner-oriented from public evidence; no operating metrics found."
+    }
+  ],
+  "demos": [
+    {
+      "id": "boston-dynamics-atlas-electric_demo_001",
+      "title": "CES 2026 public Atlas demo",
+      "date": "2026-01-06",
+      "observed_capabilities": [
+        "Walking onto a stage",
+        "Small jump",
+        "Lifting a box"
+      ],
+      "appears_edited": null,
+      "editing_notes": "AP described a live presentation, but this update did not manually review full raw footage.",
+      "teleoperation_disclosed": true,
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "AP described the CES Atlas demo as remote-piloted, so it should not be credited as autonomous task execution.",
+      "environment": "CES 2026 live public stage demonstration",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_006"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Remote-piloted demo evidence is useful for physical mobility/manipulation context, not autonomy scoring.",
+        "No raw task log, repeat count, failure count, or intervention count was published."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "AP reported that Atlas walked out, jumped, and lifted a box during a remote-piloted live presentation.",
+          "verification_notes": "Media-reported observation; timestamp not verified in this update."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "Official sources claim autonomous modes and learning-based behavior generation, but no independent autonomy benchmark, intervention rate, or raw production task log was found. AP says the CES stage demo was remotely piloted.",
+      "impact_on_arena_scoring": "Give limited autonomy credit for official industrial-pilot claims; do not score public CES motion as autonomous."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Boston Dynamics reports a first customer deployment and committed 2026 recipients, but no customer-authored case study, fleet count, uptime, or paid-commercial terms were found.",
+      "impact_on_arena_scoring": "Score above prototype-only robots, but below robots with independently documented sustained commercial operation."
+    },
+    {
+      "topic": "Reliability",
+      "description": "Runtime, IP67, and environmental operating range are official specs; no MTBF, maintenance interval, fall rate, or production uptime evidence was found.",
+      "impact_on_arena_scoring": "Use endurance specs as moderate evidence, not proof of full-shift industrial reliability."
+    },
+    {
+      "topic": "Availability",
+      "description": "No public price, open purchase path, or general commercial availability was found.",
+      "impact_on_arena_scoring": "Do not award accessibility or market-availability credit beyond enterprise pilot/deployment status."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_002",
+        "boston-dynamics-atlas-electric_source_004",
+        "boston-dynamics-atlas-electric_source_006"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001"
+      ]
+    },
+    {
+      "claim": "CES 2026 demo proves autonomous operation",
+      "reason": "AP reported the live CES demo was remotely piloted.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_006"
+      ]
+    },
+    {
+      "claim": "Generally purchasable humanoid robot",
+      "reason": "Reviewed sources show enterprise positioning and committed recipients, not open purchase availability or price.",
+      "source_ids": [
+        "boston-dynamics-atlas-electric_source_001",
+        "boston-dynamics-atlas-electric_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium_high",
+    "primary_sources_count": 6,
+    "secondary_sources_count": 1,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Electric Atlas now has strong company-source evidence for industrial specs, production-version launch, committed 2026 deployments, and Hyundai customer-facility field testing, but public autonomy evidence remains weak because no independent benchmarks or operating metrics were found and AP reported the CES 2026 stage demo was remotely piloted.",
+    "strongest_evidence": [
+      "Official specs: 1.9 m, 90 kg, 56 DoF, 50 kg payload, 4 hr runtime, 1.4 kWh swappable battery, IP67 rating, tactile gripper, and 360-degree camera.",
+      "Boston Dynamics says product-version Atlas production began immediately and all 2026 deployments are committed, including Hyundai RMAC and Google DeepMind.",
+      "Boston Dynamics says Atlas completed a first customer deployment and is entering a Hyundai Metaplant customer facility."
+    ],
+    "weakest_evidence": [
+      "No independent arena benchmark, uptime, task-success rate, failure rate, or intervention rate.",
+      "CES 2026 stage demo was reported as remotely piloted, limiting autonomy credit.",
+      "No public price, open purchase path, or customer-authored deployment metrics."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Remote-piloted CES demo as autonomous performance.",
+      "Deployment metrics not explicitly sourced.",
+      "General consumer or open commercial availability."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "boston-dynamics-atlas-electric_source_001",
+    "boston-dynamics-atlas-electric_source_002",
+    "boston-dynamics-atlas-electric_source_003",
+    "boston-dynamics-atlas-electric_source_004",
+    "boston-dynamics-atlas-electric_source_005",
+    "boston-dynamics-atlas-electric_source_006",
+    "boston-dynamics-atlas-electric_source_007",
+    "boston-dynamics-atlas-electric_source_008"
+  ],
+  "sources": [
+    {
+      "id": "boston-dynamics-atlas-electric_source_001",
+      "title": "Atlas Humanoid Robot",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/atlas/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "high_for_product_specs_medium_for_performance",
+      "reliability_notes": "Official product page with detailed specs, enterprise workflow claims, and Hyundai field-testing language; not independent performance validation."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_002",
+      "title": "Atlas Spec Sheet",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/wp-content/uploads/2026/01/atlas-spec-sheet.pdf",
+      "date_published": "2026-01-06",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "high_for_product_specs_medium_for_performance",
+      "reliability_notes": "Official spec sheet with dimensions, payload, runtime, battery, gripper, sensor, safety, serviceability, application, and operating-mode claims."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_003",
+      "title": "An Electric New Era for Atlas",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/blog/electric-new-era-for-atlas/",
+      "date_published": "2024-04-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official introduction of all-electric Atlas and commercial direction; announcement-level evidence only."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_004",
+      "title": "Boston Dynamics Unveils New Atlas Robot to Revolutionize Industry",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/",
+      "date_published": "2026-01-05",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official product-version launch and committed deployment claims; lacks independent operating metrics."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_005",
+      "title": "Atlas' Evolution From Research Robot to Industrial Humanoid",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official technical and roadmap narrative for perception, learning, and industrial progression; not a benchmark."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_006",
+      "title": "Hyundai and Boston Dynamics unveil humanoid robot Atlas at CES",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/8de7b2470c23f5f22441ad1ad7555136",
+      "date_published": "2026-01-05",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium_high",
+      "reliability_notes": "Credible media report of CES demo and teleoperation status; not a technical benchmark."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_007",
+      "title": "Enterprise Robotics, Redefined",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/blog/enterprise-robotics-redefined/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official enterprise/productization article with Hyundai first-customer and fleet-shipping claims; lacks customer-authored metrics."
+    },
+    {
+      "id": "boston-dynamics-atlas-electric_source_008",
+      "title": "Boston Dynamics Atlas price: not published — get a quote",
+      "publisher": "robohub.app",
+      "url": "https://robohub.app/robots/boston-dynamics-atlas",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Strong official spec and deployment-roadmap evidence; still weak for independent autonomy, reliability, and commercial performance metrics.",
+    "strongest_positive_evidence": [
+      "Official Atlas specs now include 1.9 m height, 90 kg weight, 56 DoF, 50 kg instant payload, 30 kg sustained payload, 4 hr battery life, 1.4 kWh swappable battery, IP67 rating, tactile sensing, and 360-degree camera view.",
+      "Boston Dynamics says the product version is being manufactured and all 2026 deployments are committed, including Hyundai RMAC and Google DeepMind.",
+      "Boston Dynamics says Hyundai is the first customer, with a completed deployment last year and a fleet scheduled for RMAC in 2026."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent autonomy benchmark or arena-style evaluation.",
+      "No intervention, failure-rate, uptime, MTBF, fleet-hours, or task-success metrics.",
+      "No public price, broad availability, or customer-authored production case study.",
+      "AP reports the CES 2026 stage demo was remote-piloted, so it should not be credited as autonomous evidence."
+    ],
+    "conflicting_claims": [
+      "Boston Dynamics describes autonomous operation and minimal supervision, while AP reports the high-profile CES live demo was remotely piloted; treat the demo as teleoperated and the autonomy claims as company roadmap/product claims until benchmarked."
+    ],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions",
+      "CES 2026 public demo as autonomous proof",
+      "Generally purchasable robot or known price"
+    ]
+  }
+}

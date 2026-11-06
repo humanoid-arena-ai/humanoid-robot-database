@@ -1,0 +1,907 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "pollen-reachy-2",
+    "name": "Reachy 2",
+    "company_id": "pollen-robotics",
+    "company_name": "Pollen Robotics (Hugging Face)",
+    "country": "France",
+    "generation": "Reachy 2 (second-generation Reachy upper-body humanoid)",
+    "first_announced_date": "2024-10-29",
+    "release_date": "2025-04-16",
+    "status": "purchasable",
+    "status_notes": "Reported commercially available as of April 2025, with press coverage stating a $70,000 price and use at Cornell, Carnegie Mellon and major AI labs. Product page invites labs to bring Reachy 2 to their lab. No consumer sale or public price list was found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "robotics research and education",
+      "human-robot interaction",
+      "assistive robotics",
+      "VR teleoperation",
+      "AI-driven behavior development",
+      "object manipulation"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "136-166 cm Adjustable height",
+      "value": 166,
+      "unit": "cm",
+      "notes": "Adjustable height range is 136-166 cm; maximum value used for numeric comparison.",
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "Up to 50 kg",
+      "value": 50,
+      "unit": "kg",
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "~3 kg per arm",
+      "value": 3,
+      "unit": "kg",
+      "notes": "Payload is per arm, not total.",
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime or operating time was specified in the reviewed sources.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No battery capacity or power source was specified for Reachy 2. Reachy Mini battery information is for a separate product.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Reachy 2 is a wheeled upper-body humanoid; no omnidirectional base speed was specified.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "Each arm has 7 degrees of freedom; total DoF across the full robot was not published.",
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ]
+    },
+    "hands": {
+      "description": "Hands are mentioned for VR teleoperation (move its arms, hands and head), but no detailed hand or gripper specifications were found.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "stereo + RGB-D vision/depth",
+        "LiDAR on omnidirectional base",
+        "microphones",
+        "speaker"
+      ],
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ]
+    },
+    "compute": {
+      "description": "CPU-powered system; runs on ROS 2 Humble with a Python SDK; compatible with modern AI frameworks and Hugging Face LeRobotHF.",
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Orbita 2D/3D parallel actuators are listed in the official product spec strip.",
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 70000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://pollen-robotics.com/reachy-2/",
+      "notes": "Price of $70,000 is from Decrypt press coverage, not an official price list. The product page says 'Bring Reachy 2 to your lab' and positions the robot for labs, not consumers.",
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specs list 7-DoF bio-inspired arms with ~3 kg payload per arm and Orbita actuators. Decrypt reports basic tasks such as picking up objects or clearing cups. An embedded Pollen demo describes sorting healthy and unhealthy foods using real-time object detection, and an official beta video title mentions practicing skills. No numeric grasp success data was found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002",
+        "pollen-reachy-2_source_003",
+        "pollen-reachy-2_source_004"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or published success rates.",
+        "Video sources were reviewed by title only; no transcript evidence."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Reachy 2 is described as teleoperated or Python controlled; no autonomous task execution was claimed in the reviewed sources. A Tomorrow's World Today video title explicitly calls the robot human-piloted, and The Decoder notes many public robot videos are remotely operated.",
+      "evidence_level": 0,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002",
+        "pollen-reachy-2_source_003",
+        "pollen-reachy-2_source_006"
+      ],
+      "caveats": [
+        "Product page says 'Teleoperated or controlled with Python', so teleoperation is a supported and disclosed mode.",
+        "No evidence of autonomous operation or intervention-free demos was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official product page lists an omnidirectional mobile base with three omniwheels, a suite of sensors and a LiDAR. No walking, balancing, speed, or navigation reliability metrics were published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ],
+      "caveats": [
+        "Wheeled upper-body humanoid, not a walking biped.",
+        "No speed, slalom, or navigation reliability metrics published."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official spec strip lists Stereo + RGB-D vision/depth and LiDAR on the base. The robot includes microphones and speaker according to Decrypt. The Pollen food-sorting demo claimed real-time object detection using pollen_vision.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ],
+      "caveats": [
+        "No third-party perception benchmark was found.",
+        "The object-detection demo is a company claim; no video transcript was reviewed."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Reachy 2 is marketed for human-robot interaction and VR teleoperation. The official page describes moving its head, arms and hands while seeing through the robot's cameras, and Hugging Face calls it a versatile, expressive platform for human-robot interaction. No Reachy 2 interaction-quality study was found in the reviewed sources.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ],
+      "caveats": [
+        "No user study or interaction reliability metric for Reachy 2 was found.",
+        "The HRI study recruitment found in the source list is for Reachy Mini, not Reachy 2."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery, or reliability data was found for Reachy 2. The Decoder notes that humanoid systems in the market often suffer failures.",
+      "evidence_level": 0,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_003"
+      ],
+      "caveats": [
+        "No endurance tests, failure rates, or uptime logs were found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Adjustable height 136-166 cm and up to 50 kg weight; wheeled base is suited for flat indoor lab floors. The robot is explicitly 'not a consumer robot' and is aimed at labs. No safety certification evidence was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ],
+      "caveats": [
+        "No safety certification of the full robot was found.",
+        "No home or public deployment evidence was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Hugging Face CEO says Reachy 2 began selling the week of the article and is already in use at Cornell, Carnegie Mellon and major AI labs. The Decoder says it is used by several AI companies in research settings. No customer press release or deployment metrics were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "pollen-reachy-2_source_002",
+        "pollen-reachy-2_source_003"
+      ],
+      "caveats": [
+        "Named institutions come from a CEO tweet, not from university announcements.",
+        "No unit counts, operating hours, or task output metrics were found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Reported price is $70,000. Product page invites labs and emphasizes open-source hardware and software. Decrypt calls it commercially available but not a consumer robot. No public purchase flow beyond the product page was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_002"
+      ],
+      "caveats": [
+        "Price is press-reported, not an official price list.",
+        "Not intended for consumers; value for general users is limited."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "pollen-reachy-2_evidence_001",
+      "date": null,
+      "title": "Official Reachy 2 specification strip",
+      "claim": "Reachy 2 has 7-DoF bio-inspired arms, ~3 kg payload per arm, 136-166 cm adjustable height, up to 50 kg full robot weight, Orbita 2D/3D parallel actuators, ROS 2 Humble + Python SDK, stereo + RGB-D vision/depth, and LiDAR on an omnidirectional base.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "perception_scene_understanding",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page spec strip; values are company-provided and not independently measured.",
+      "arena_relevance": "Defines size, payload, arm DoF and sensor baseline for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "7 DoF Bio-inspired arms ~3 kg Payload per arm 136-166 cm Adjustable height Up to 50 kg Full robot weight Orbita 2D/3D Parallel actuators ROS 2 Humble + Python SDK Stereo + RGB-D Vision & depth LiDAR Omnidirectional base",
+      "source_location": "pollen-robotics.com/reachy-2/ product page specification strip",
+      "verification_notes": "Company spec page; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_002",
+      "date": null,
+      "title": "Reachy 2 VR teleoperation and interaction",
+      "claim": "Reachy 2 can be controlled remotely using VR and a teleoperation application, moving its arms, hands and head while seeing through Reachy's cameras.",
+      "category": [
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official product page feature description.",
+      "arena_relevance": "Shows the intended teleoperated and human-in-the-loop interaction mode.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Take control of Reachy 2 remotely using VR and our teleoperation application. Move its arms, hands and head, and see through Reachy's cameras to interact with the environment around the robot.",
+      "source_location": "pollen-robotics.com/reachy-2/ VR teleoperation section",
+      "verification_notes": "Company product description; no independent demonstration reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_003",
+      "date": "2025-04-16",
+      "title": "Reported $70,000 price and commercial launch",
+      "claim": "Hugging Face is stepping into humanoid robotics with Reachy 2, a $70,000 AI-powered robot designed and built by Pollen Robotics.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Press report of a company/CEO price statement; no official price list found.",
+      "arena_relevance": "Provides a reported purchase price and availability signal.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Hugging Face is stepping into the world of humanoid robotics with Reachy 2, a $70,000 AI-powered robot designed and built by its latest acquisition, Pollen Robotics.",
+      "source_location": "Decrypt article on Reachy 2 launch",
+      "verification_notes": "Price is reported, not pulled from an official price list.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_004",
+      "date": "2025-04-16",
+      "title": "CEO statement on named lab deployments",
+      "claim": "Hugging Face co-founder Clément Delangue says Reachy 2 is expensive but already in use at Cornell, Carnegie Mellon and major AI labs for robotics research and education.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Company/CEO claim via media; no university or customer confirmation found.",
+      "arena_relevance": "Suggests early research adoption but below independent deployment proof.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "“It's expensive but already in use at Cornell, Carnegie Mellon & major AI labs for robotics research and education.”",
+      "source_location": "Decrypt article quoting Clément Delangue tweet",
+      "verification_notes": "No Cornell, CMU or lab announcement was reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_005",
+      "date": "2025-04-16",
+      "title": "Reachy 2 sensor suite",
+      "claim": "Reachy 2 has a humanoid upper body and includes stereo vision, microphones, a speaker, and lidar.",
+      "category": [
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Media description of official sensor suite.",
+      "arena_relevance": "Defines audio-visual and depth sensing for interaction and perception.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot has a “humanoid upper body” and includes stereo vision, microphones, a speaker, and lidar.",
+      "source_location": "Decrypt article hardware description",
+      "verification_notes": "Consistent with official product page, but no independent sensor test.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_006",
+      "date": "2025-04-16",
+      "title": "Seven-DoF arm description",
+      "claim": "Each of Reachy 2's arms has seven degrees of freedom, allowing movement in seven independent directions and mimicking the flexibility of a human arm.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Media summary consistent with official product page.",
+      "arena_relevance": "Confirms per-arm DoF for manipulation comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Each of the robot’s arms has seven degrees of freedom, allowing it to move in seven independent directions, mimicking the flexibility of a human arm.",
+      "source_location": "Decrypt article arm specification section",
+      "verification_notes": "Company-derived spec via media; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_007",
+      "date": "2025-04-16",
+      "title": "Reachy 2 is not a consumer robot",
+      "claim": "Hugging Face CEO says Reachy 2 is not a consumer robot; it is an AI lab robot.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Company statement clarifying target buyer.",
+      "arena_relevance": "Limits consumer accessibility and household deployment credit.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "“It's not a consumer robot,” he said. “It's an AI lab robot so quite different.”",
+      "source_location": "Decrypt article, CEO clarification section",
+      "verification_notes": "Consistent with product page lab focus.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_008",
+      "date": "2025-04-15",
+      "title": "Researcher use and basic task capability",
+      "claim": "Reachy 2 is already being used by several AI companies in research settings and can perform basic tasks such as picking up objects or clearing cups.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "pollen-reachy-2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Media summary from The Decoder; no named customers or task metrics.",
+      "arena_relevance": "Provides moderate evidence of real research use and simple manipulation.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Reachy 2 is already being used by several AI companies in research settings. The robot is capable of performing basic tasks, such as picking up objects or clearing cups.",
+      "source_location": "The Decoder article after acquisition announcement",
+      "verification_notes": "No company names, unit counts, or success rates were provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_009",
+      "date": "2025-04-15",
+      "title": "Open-source hardware documentation plan",
+      "claim": "Hugging Face plans to release detailed schematics, parts lists, and 3D models to enable developers to repair components or make their own modifications.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_003"
+      ],
+      "confidence": 0.65,
+      "notes": "Company plan reported by media; no release date confirmed.",
+      "arena_relevance": "Supports open-source reparability and modification value.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Hugging Face plans to release detailed schematics, parts lists, and 3D models to enable developers to repair components or make their own modifications.",
+      "source_location": "The Decoder article, open-source hardware section",
+      "verification_notes": "Plan not yet independently verified as completed by this review.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_010",
+      "date": "2025-04-15",
+      "title": "Caution on staged or remotely operated robot videos",
+      "claim": "The Decoder notes public humanoid robot videos often depict highly capable machines, but many are staged under ideal conditions or remotely operated.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Media caution relevant to evaluating demos, not specific to Reachy 2.",
+      "arena_relevance": "Reduces autonomy credit for non-verified demos.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Public videos of humanoid robots often depict highly capable machines, but many of these are staged under ideal conditions or remotely operated.",
+      "source_location": "The Decoder article industry discussion",
+      "verification_notes": "General industry statement; does not prove Reachy 2 demos were staged.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_011",
+      "date": "2025-03-05",
+      "title": "Pollen healthy/unhealthy food sorting demo claim",
+      "claim": "Pollen challenged Reachy 2 to sort healthy and unhealthy foods using real-time object detection and the pollen_vision framework, with no AI training.",
+      "category": [
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Company demo claim embedded as a tweet in Decrypt; no video transcript reviewed.",
+      "arena_relevance": "Suggests vision-guided manipulation, but not independently verified.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "We challenged Reachy 2 to sort healthy & unhealthy foods—no AI training, just real-time object detection!",
+      "source_location": "Embedded Pollen Robotics X post in Decrypt article",
+      "verification_notes": "No video transcript or success rate available in reviewed source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "pollen-reachy-2_evidence_015",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No total DoF, hand specifications, runtime, battery, walking speed, autonomy, reliability, safety certification, or independently verified customer deployment metrics were found for Reachy 2.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, endurance and commercial proof.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "endurance_reliability",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "pollen-reachy-2_deployment_001",
+      "customer_or_partner": "Cornell, Carnegie Mellon & major AI labs (reported by Hugging Face CEO Clément Delangue)",
+      "site_or_context": "AI/robotics research labs",
+      "task": "Robotics research and education",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Named institutions come from a CEO tweet, not from university announcements.",
+        "No unit counts, operating hours, or task output metrics were found."
+      ]
+    },
+    {
+      "id": "pollen-reachy-2_deployment_002",
+      "customer_or_partner": "Several unnamed AI companies",
+      "site_or_context": "research settings",
+      "task": "Basic manipulation tasks such as picking up objects or clearing cups",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "pollen-reachy-2_source_003"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No named customers, no unit counts, no operating hours or output metrics."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "pollen-reachy-2_demo_001",
+      "title": "Reachy 2 (Beta) - Practicing his skills",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "Reachy 2 practicing skills (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "pollen-reachy-2_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; do not infer specific capabilities beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title-only source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pollen-reachy-2_demo_002",
+      "title": "Reachy 2: The Open Source Robot Helper",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "Open source robot helper (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "pollen-reachy-2_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; do not infer specific capabilities beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title-only source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "pollen-reachy-2_demo_003",
+      "title": "Meet Reachy 2: The Human-Piloted Robot by Pollen Robotics",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "Human-piloted robot (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title explicitly calls the robot human-piloted.",
+      "environment": "unknown",
+      "source_ids": [
+        "pollen-reachy-2_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; only title-level disclosure of human piloting."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title-only source.",
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "The title uses the term 'human-piloted', indicating teleoperation.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability and price",
+      "description": "The $70,000 price comes from Decrypt press coverage, not an official price list. The product page invites labs to contact, but no direct public purchase flow was found.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence."
+    },
+    {
+      "topic": "Customer deployment proof",
+      "description": "Named labs such as Cornell and Carnegie Mellon are based on a Hugging Face CEO tweet, not university announcements. No unit counts, hours, or task output metrics were found.",
+      "impact_on_arena_scoring": "Commercial proof is early and not independently verified."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "Reachy 2 is explicitly teleoperated or Python controlled according to the official product page. A video title calls it human-piloted. No autonomous task execution was claimed or demonstrated.",
+      "impact_on_arena_scoring": "Do not credit autonomous operation; teleoperation is the disclosed mode."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "YouTube sources were reviewed by title only because no transcripts were provided. Capabilities shown in those videos cannot be independently described.",
+      "impact_on_arena_scoring": "Video demonstrations should be treated as unverified title-level evidence only."
+    },
+    {
+      "topic": "Spec gaps",
+      "description": "Runtime, battery, total DoF, hand details, walking speed, and reliability metrics were not published in the reviewed sources.",
+      "impact_on_arena_scoring": "Do not infer unknown specs from directories or from the separate Reachy Mini product."
+    },
+    {
+      "topic": "Reachy Mini confusion",
+      "description": "Reachy Mini is a separate $299 desktop robot from Pollen Robotics. Sources about Reachy Mini should not be credited to Reachy 2.",
+      "impact_on_arena_scoring": "Avoid mixing product families when scoring Reachy 2."
+    }
+  ],
+  "source_ids": [
+    "pollen-reachy-2_source_001",
+    "pollen-reachy-2_source_002",
+    "pollen-reachy-2_source_003",
+    "pollen-reachy-2_source_004",
+    "pollen-reachy-2_source_005",
+    "pollen-reachy-2_source_006"
+  ],
+  "sources": [
+    {
+      "id": "pollen-reachy-2_source_001",
+      "title": "Reachy 2 - The open-source humanoid for embodied AI | Pollen Robotics",
+      "publisher": "Pollen Robotics",
+      "url": "https://pollen-robotics.com/reachy-2/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company-provided specs and features."
+    },
+    {
+      "id": "pollen-reachy-2_source_002",
+      "title": "Now On Sale For $70,000: The World’s First Factory Ready Open-Source Humanoid Robot - Decrypt",
+      "publisher": "Decrypt",
+      "url": "https://decrypt.co/315184/the-worlds-first-factory-ready-open-source-humanoid-robot",
+      "date_published": "2025-04-16",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Press article reporting official launch and quotes from Hugging Face/Pollen Robotics."
+    },
+    {
+      "id": "pollen-reachy-2_source_003",
+      "title": "Hugging Face bets on open source to solve robotics' transparency problem",
+      "publisher": "The Decoder",
+      "url": "https://the-decoder.com/hugging-face-bets-on-open-source-to-solve-robotics-transparency-problem/",
+      "date_published": "2025-04-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Industry media with direct quotes from Hugging Face/Pollen Robotics."
+    },
+    {
+      "id": "pollen-reachy-2_source_004",
+      "title": "Reachy 2 (Beta) - Practicing his skills",
+      "publisher": "YouTube Pollen Robotics",
+      "url": "https://www.youtube.com/watch?v=T3RdwDkZA9c",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Pollen Robotics video; title only, no transcript reviewed."
+    },
+    {
+      "id": "pollen-reachy-2_source_005",
+      "title": "Reachy 2: The Open Source Robot Helper",
+      "publisher": "YouTube Planet Classroom Network",
+      "url": "https://www.youtube.com/watch?v=z1PVHzbnUC4",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Third-party video; title only, no transcript reviewed."
+    },
+    {
+      "id": "pollen-reachy-2_source_006",
+      "title": "Meet Reachy 2: The Human-Piloted Robot by Pollen Robotics",
+      "publisher": "YouTube Tomorrow's World Today",
+      "url": "https://www.youtube.com/watch?v=SgTWHS-IwoE",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Third-party video; title only, no transcript reviewed."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Reachy 2 is an open-source, wheeled upper-body humanoid from Pollen Robotics, now part of Hugging Face, with official 7-DoF arms, ~3 kg payload per arm, adjustable 136-166 cm height and up to 50 kg weight. It is marketed and sold to research labs at a reported $70,000. Strongest evidence is the official product spec page and open-source positioning; weakest evidence is autonomy, endurance, and independent customer proof.",
+    "strongest_positive_evidence": [
+      "Official product page specs: 7-DoF arms, 3 kg per arm payload, stereo RGB-D, LiDAR, ROS 2 + Python SDK.",
+      "Reported $70,000 commercial availability from Decrypt.",
+      "Open-source hardware documentation plan from Hugging Face.",
+      "CEO-named lab use at Cornell, Carnegie Mellon and major AI labs.",
+      "Basic manipulation reports such as picking up objects and clearing cups."
+    ],
+    "weakest_or_missing_evidence": [
+      "No autonomous task execution claim or demo; product page says teleoperated or Python controlled.",
+      "No runtime, battery, walking speed, total DoF or hand specs.",
+      "No independent reliability, failure rate, or safety certification.",
+      "No university or customer press releases confirming deployments.",
+      "YouTube demos are title-only; no transcripts were reviewed."
+    ],
+    "conflicting_claims": [
+      "Price is $70,000 per Decrypt, but no official price list was found.",
+      "Total DoF is unspecified; only per-arm 7 DoF is stated.",
+      "Reachy Mini is a separate $299 product and should not be credited to Reachy 2.",
+      "Height value is a range; using 166 cm for numeric comparison may slightly overstate typical height."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "research_platform",
+      "upper_body_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Reachy Mini specs, study recruitment, or videos to Reachy 2.",
+      "Do not describe Reachy 2 as autonomous; it is explicitly teleoperated or Python controlled.",
+      "Do not claim Cornell/CMU deployment as independently verified.",
+      "Do not claim walking, running speed, or bipedal mobility."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Reachy 2 is purchasable and current as of 2026-10-29. Reachy Mini is a separate desktop robot, not a successor to Reachy 2."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Reachy Mini price ($299), weight (3.3 pounds), height (11 inches), battery, and HRI study recruitment",
+      "reason": "Reachy Mini is a separate product, not Reachy 2.",
+      "source_ids": []
+    },
+    {
+      "claim": "Original Reachy introduced in 2020 is Reachy 2 performance or customer proof",
+      "reason": "Original Reachy history does not apply to Reachy 2 capabilities.",
+      "source_ids": [
+        "pollen-reachy-2_source_002"
+      ]
+    },
+    {
+      "claim": "Reachy 2 autonomous task execution",
+      "reason": "Product page says teleoperated or Python controlled; video title calls it human-piloted; no autonomous claim found.",
+      "source_ids": [
+        "pollen-reachy-2_source_001",
+        "pollen-reachy-2_source_006"
+      ]
+    },
+    {
+      "claim": "Reachy 2 walking speed or bipedal mobility",
+      "reason": "Reachy 2 is a wheeled upper-body humanoid with no walking speed published.",
+      "source_ids": [
+        "pollen-reachy-2_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 3,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Reachy 2 by Pollen Robotics (now part of Hugging Face) is a purchasable open-source upper-body humanoid on an omnidirectional wheeled base. Official specs list 7-DoF arms with ~3 kg payload each, 136-166 cm adjustable height, up to 50 kg, stereo RGB-D, LiDAR, and ROS 2 + Python SDK. Press reports a $70,000 price and use at Cornell, Carnegie Mellon and major AI labs. It is explicitly a lab robot, not consumer, and is teleoperated or Python-controlled; no autonomous or reliability evidence was found. YouTube demos are title-only and cannot be used for capability inference.",
+    "strongest_evidence": [
+      "Official product page spec strip including 7-DoF arms, 3 kg payload per arm, and sensor suite.",
+      "Reported $70,000 commercial availability from Decrypt.",
+      "Open-source hardware documentation plan from Hugging Face.",
+      "CEO-named lab use at Cornell, Carnegie Mellon and major AI labs."
+    ],
+    "weakest_evidence": [
+      "No autonomy; product page says teleoperated or Python controlled.",
+      "No runtime, battery, walking speed, total DoF or hand specs.",
+      "No independent reliability or customer metrics.",
+      "YouTube demos reviewed by title only, no transcript."
+    ],
+    "known_do_not_credit": [
+      "Reachy Mini specs, price, or HRI study.",
+      "Autonomous operation for Reachy 2.",
+      "Independently verified customer deployment.",
+      "Walking speed or bipedal mobility."
+    ],
+    "recommended_confidence": "low"
+  }
+}

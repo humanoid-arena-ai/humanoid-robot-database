@@ -1,0 +1,66 @@
+{
+  "id": "honda-asimo",
+  "name": "Honda ASIMO",
+  "aliases": [
+    "ASIMO"
+  ],
+  "companyId": "honda",
+  "companyName": "Honda",
+  "country": "Japan",
+  "announced": null,
+  "status": "superseded",
+  "category": "research",
+  "summary": "ASIMO was Honda's research humanoid, first introduced in 2000 and one of the best-known bipeds for two decades. The final 2011 version was 130 cm tall, 54 kg, had 57 DoF and could run at 9 km/h. Honda stopped development in 2018 and retired ASIMO in March 2022.",
+  "specs": {
+    "height_cm": {
+      "value": 130,
+      "original": "130 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 54,
+      "original": "54 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": {
+      "value": 1,
+      "original": "1 hour (running/walking)",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 57,
+      "original": "57",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 2.5,
+      "original": "9 km/h running",
+      "sourceId": "s1"
+    }
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Could climb and descend stairs.",
+    "Walking speed 2.7 km/h, running speed 9 km/h (2011 version).",
+    "Development halted in July 2018; retired March 2022."
+  ],
+  "caveats": [
+    "Retired; never sold."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ASIMO",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ASIMO",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

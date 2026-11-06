@@ -1,0 +1,771 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "noetix-bumi",
+    "name": "Noetix Bumi",
+    "company_id": "noetix-robotics",
+    "company_name": "Noetix Robotics",
+    "country": "China",
+    "generation": "first consumer humanoid from Noetix Robotics",
+    "first_announced_date": "2025-10-22",
+    "release_date": "2025-10-22",
+    "status": "purchasable",
+    "status_notes": "Pre-sales opened on JD.com on 2025-10-22 at ¥9,998. Robozaps reported in March 2026 that the first 500 units sold within 48 hours and that the robot was sold out in China with deliveries delayed until April 2026. Humanoids Daily reported standard consumer deliveries scheduled for March 2026. No international sales channels are available.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "education",
+      "family entertainment",
+      "STEM education",
+      "voice companion",
+      "developer/hobbyist platform",
+      "elderly care and advanced education via HCR-X variant (not yet deployed)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "approximately 94 cm",
+      "value": 94,
+      "unit": "cm",
+      "notes": "Robotics and Automation News and Robozaps both list approximately 94 cm.",
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "roughly 12 kg",
+      "value": 12,
+      "unit": "kg",
+      "notes": "Robotics and Automation News and Robozaps list about 12 kg.",
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload capacity was published in reviewed sources. Robozaps explicitly states Bumi lacks payload capacity and dexterity for household tasks.",
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "1 to 2 hours of run time",
+      "value": 1,
+      "unit": "hours",
+      "notes": "Range 1-2 hours depending on activity. Source 1 says battery capacity over 3.5 Ah yields 1 to 2 hours; Robozaps lists 1-2 hours activity dependent.",
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": "48 V battery with over 3.5 Ah capacity",
+      "value": 3.5,
+      "unit": "Ah",
+      "notes": "48 V lithium battery with capacity over 3.5 Ah per source 1. Robozaps lists 48V, 3.5Ah+ lithium.",
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed was published in reviewed sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 21,
+      "notes": "21 DOF from Robozaps specification table. Source 1 does not state DOF.",
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ]
+    },
+    "hands": {
+      "description": null,
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": []
+    },
+    "sensors": {
+      "items": [
+        "Cameras",
+        "microphone array",
+        "front-mounted camera for facial recognition and basic object detection"
+      ],
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Rockchip domestic processor per Robozaps specification table.",
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ]
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "purchasable_china_only_sold_out",
+      "price": 9998,
+      "price_currency": "CNY",
+      "purchase_or_waitlist_url": null,
+      "notes": "Pre-sale price ¥9,998 on JD.com. Robozaps reports China-only availability and sold out status as of March 2026, with deliveries delayed until April 2026. No official international sales channel or waitlist was found.",
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "No public evidence of dexterous manipulation was found. Robozaps states Bumi lacks the payload capacity, dexterity, and sensor suite needed for household chores like cooking, cleaning, or carrying objects. No fine manipulation demo or spec was published.",
+      "evidence_level": 0,
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "caveats": [
+        "Robozaps explicitly says Bumi cannot do household chores; no demonstrated manipulation beyond arm movement in dance/TV appearance."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Base Bumi supports drag-and-drop graphical programming and voice interaction, but there is no evidence of autonomous task execution for household or industrial tasks. HCR-X integration aims to allow the robot to understand complex instructions and perform autonomous tasks in specific scenarios, but this is a partnership announcement with unclear timeline and no demonstrated deployment.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_004"
+      ],
+      "caveats": [
+        "Autonomy is not claimed for the base product beyond programmed interactions; HCR-X is a partner claim not independently verified."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Media and company claims state Bumi can walk, run, and dance on flat surfaces with bipedal locomotion and dynamic balance correction. A Spring Festival Gala TV performance included Bumi robots walking, gesturing, and interacting. No independent mobility metrics, fall rates, or terrain tests were published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002",
+        "noetix-bumi_source_003"
+      ],
+      "caveats": [
+        "All locomotion claims are company/media reported; no video transcript manually reviewed; no speed or robustness data."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Robozaps says the front-mounted camera enables facial recognition and basic object detection, and a microphone array supports voice commands. No scene understanding benchmarks or third-party evaluation were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "caveats": [
+        "Facial recognition and object detection are company-level spec claims; no accuracy or robustness data."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Bumi supports voice interaction, touch interaction, app control, and drag-and-drop graphical programming for children. It appeared on Chinese Spring Festival Gala alongside human actors, demonstrating gesture and interaction in an entertainment context.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002",
+        "noetix-bumi_source_003"
+      ],
+      "caveats": [
+        "Interaction reliability, natural language understanding quality, and teleoperation status for the Gala performance were not disclosed."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Runtime is specified as 1-2 hours depending on activity. No mean time between failures, charge cycles, or long-duration reliability data were published. Delivery delays and batch production are not reliability evidence.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ],
+      "caveats": [
+        "Runtime is a company spec, not independently measured."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Child-sized at 94 cm and 12 kg, designed for homes and classrooms and to avoid intimidating children. No safety certification or injury data found. Robozaps notes it is child-safe size but no full-robot safety testing is public.",
+      "evidence_level": 1,
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "caveats": [
+        "No independent safety test or certification found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Initial 500 units sold in 48 hours on JD.com; HCR partnership announced a 1,000-unit bulk order; CFO claims thousands of orders across online and offline channels. However, no customer deployment metrics, shipments, or operational hours are published. Deliveries were delayed.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-bumi_source_002",
+        "noetix-bumi_source_004"
+      ],
+      "caveats": [
+        "Sales figures and order counts are company/reported, not independently audited.",
+        "HCR order is not confirmed delivered or deployed."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Breakthrough price point ¥9,998 (~$1,400), cheapest humanoid per Robozaps, sold on JD.com China. No international sales channel or future timeline is published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002",
+        "noetix-bumi_source_003"
+      ],
+      "caveats": [
+        "China-only availability and sold out status limit current accessibility; no international purchasability."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "noetix-bumi_evidence_001",
+      "date": "2025-10-22",
+      "title": "Noetix Robotics announces Bumi pre-sale at ¥9,998",
+      "claim": "Noetix says Bumi is the first high-performance humanoid in China below ¥10,000, with pre-sale at ¥9,998 (~$1,400).",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-bumi_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Reputable media reporting the company announcement; price and positioning are clearly stated.",
+      "arena_relevance": "Establishes price and market breakthrough claim.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Beijing-based robot-maker [Noetix Robotics](https://en.noetixrobotics.com/) has announced the upcoming pre-sale of its latest humanoid robot, named “Bumi”, at a breakthrough price of ¥9,998 (approximately $1,400), making it the first high-performance humanoid robot in China to dip below the ¥10,000 mark.",
+      "source_location": "Robotics and Automation News article opening paragraph",
+      "verification_notes": "Claim from company via media; price is likely accurate but not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_002",
+      "date": "2025-10-22",
+      "title": "Bumi physical specs and locomotion claims",
+      "claim": "Bumi is approximately 94 cm tall, 12 kg, has a 48 V over 3.5 Ah battery yielding 1-2 hours runtime, and can walk, run, and dance.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-bumi_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company specs as reported by media.",
+      "arena_relevance": "Defines size, weight, runtime and mobility claims for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Standing at approximately 94 cm tall and weighing roughly 12 kg, Bumi features a 48 V battery with over 3.5 Ah capacity (yielding 1 to 2 hours of run time) and is capable of walking, running and dancing motions.",
+      "source_location": "Robotics and Automation News article body",
+      "verification_notes": "Company-provided specs; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_003",
+      "date": "2025-10-22",
+      "title": "Bumi interaction and programming features",
+      "claim": "The company says Bumi supports drag-and-drop graphical programming for children and voice interaction for companion and educational scenarios.",
+      "category": [
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-bumi_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company feature claim via media.",
+      "arena_relevance": "Supports education and voice interaction use cases.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The company says the robot supports drag-and-drop graphical programming for children, and voice interaction for companion and educational scenarios.",
+      "source_location": "Robotics and Automation News article body",
+      "verification_notes": "No demonstration of programming or voice interaction quality.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_004",
+      "date": "2026-03-10",
+      "title": "Bumi Spring Festival Gala appearance",
+      "claim": "In February 2026, Bumi appeared at China's Spring Festival Gala alongside human actors in front of 677 million viewers.",
+      "category": [
+        "human_interaction",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Media report of observable TV appearance; no video transcript reviewed.",
+      "arena_relevance": "Strong public demonstration of walking, gesturing and interacting in entertainment setting.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "In February 2026, the Bumi made international headlines when it appeared at China's Spring Festival Gala alongside human actors, performing in front of 677 million viewers.",
+      "source_location": "Robozaps Noetix Bumi review, Spring Festival Gala section",
+      "verification_notes": "Teleoperation status and autonomy not disclosed; no independent video timestamp review.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_006",
+      "date": "2026-03-10",
+      "title": "Bumi intended use is education and family entertainment, not household labor",
+      "claim": "Noetix explicitly positions Bumi for education and family entertainment, not household labor.",
+      "category": [
+        "human_environment_fit",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Clear limitation statement by company via Robozaps.",
+      "arena_relevance": "Prevents overclaiming household chore capabilities.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Noetix has been clear about Bumi's intended use: education and family entertainment, not household labor.",
+      "source_location": "Robozaps Noetix Bumi review, Performance & Capabilities section",
+      "verification_notes": "No contradictory evidence found.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_008",
+      "date": "2026-03-10",
+      "title": "Bumi front camera perception",
+      "claim": "The front-mounted camera enables facial recognition and basic object detection.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Single spec claim, no performance data.",
+      "arena_relevance": "Minor perception capability evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The front-mounted camera enables facial recognition and basic object detection.",
+      "source_location": "Robozaps Noetix Bumi review, Interaction paragraph",
+      "verification_notes": "No accuracy or benchmark data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_009",
+      "date": "2025-12-15",
+      "title": "HCR 1,000-unit order and HCR-X integration",
+      "claim": "Noetix and HCR partnership includes a bulk order of 1,000 Bumi units and adoption of HCR-X Robot Intelligent Brain for specialized markets including elderly care and advanced education.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-bumi_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Media report of company announcement; order not independently confirmed or delivered.",
+      "arena_relevance": "Significant B2B order validating platform but no deployment evidence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Noetix announced a strategic partnership this weekend with HCR (Huichen), a Shanghai-listed data analytics company. The deal includes a bulk order of 1,000 units of the Noetix Bumi humanoid robot, significantly expanding the startup's order book beyond the initial wave of hobbyist adopters.",
+      "source_location": "Humanoids Daily article opening",
+      "verification_notes": "No shipment, delivery or operational metrics provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_010",
+      "date": "2025-12-15",
+      "title": "Noetix says thousands of orders accumulated",
+      "claim": "CFO Han Shenren says the company has accumulated thousands of orders across online and offline channels.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-bumi_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Company statement via media; no breakdown by robot model or channel.",
+      "arena_relevance": "Indicates demand but not verified.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "According to Noetix CFO Han Shenren, the company has now accumulated \"thousands\" of orders across online and offline channels.",
+      "source_location": "Humanoids Daily article body",
+      "verification_notes": "No audited order book or independent confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_011",
+      "date": "2025-12-15",
+      "title": "Deliveries scheduled March 2026, HCR-X timeline unclear",
+      "claim": "Standard Bumi consumer deliveries are scheduled for March 2026; HCR-X integration likely requires significant R&D lead time.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "noetix-bumi_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Timeline from company via media; Robozaps later reported delayed until April 2026.",
+      "arena_relevance": "Shows delivery timeline and uncertainty.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "While consumer deliveries of the standard Bumi are scheduled for March 2026, the integration of the HCR-X system will likely require significant R&D lead time to ensure the \"brain\" can effectively command the \"body\" in real-world environments.",
+      "source_location": "Humanoids Daily article closing paragraph",
+      "verification_notes": "Conflicting delivery dates with Robozaps April 2026.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "noetix-bumi_evidence_012",
+      "date": "2025-10-24",
+      "title": "RoboHorizon commentary on Bumi market position",
+      "claim": "Bumi is pitched as an AI learning platform for young engineers, not a challenger to industrial humanoids, and its price democratizes access to humanoid hardware.",
+      "category": [
+        "accessibility_value",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "noetix-bumi_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Media commentary, not new facts.",
+      "arena_relevance": "Supports education/accessibility framing.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "With its graphical drag-and-drop programming and voice interaction capabilities, Bumi is being pitched as an AI learning platform for burgeoning young engineers, rather than a direct challenger to the six-figure industrial titans from Boston Dynamics or Tesla.",
+      "source_location": "RoboHorizon article body",
+      "verification_notes": "Opinion/analysis, no new specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "noetix-bumi_deployment_001",
+      "customer_or_partner": "HCR (Huichen), Shanghai-listed data analytics company",
+      "site_or_context": "Strategic partnership announced December 2025; not yet deployed",
+      "task": "Bulk order of 1,000 Bumi units; integration of HCR-X Robot Intelligent Brain for elderly care and advanced education",
+      "start_date": "2025-12-15",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 0,
+      "output_metrics": [],
+      "source_ids": [
+        "noetix-bumi_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No shipments or delivery to HCR confirmed.",
+        "No units in operation or output metrics.",
+        "HCR-X integration timeline unclear and likely requires significant R&D lead time."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "noetix-bumi_demo_001",
+      "title": "Bumi at China's Spring Festival Gala",
+      "date": "2026-02-16",
+      "observed_capabilities": [
+        "walking",
+        "gesturing",
+        "interacting in an unscripted entertainment environment"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "China Central Television Spring Festival Gala studio",
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Teleoperation status not disclosed.",
+        "No video transcript manually reviewed; this is based on Robozaps text description.",
+        "Viewership number conflict: Robozaps says 677 million in one section and 700 million in another."
+      ],
+      "editing_notes": "Not manually video-reviewed; treat as a curated public TV appearance unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Source does not state whether robots were autonomous, teleoperated, or pre-programmed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Four Noetix humanoid robots appeared alongside human actors in a comedy skit, demonstrating their ability to walk, gesture, and interact in an unscripted entertainment environment.",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "International availability",
+      "description": "No official sales channels outside China were found. Robozaps states China-only availability and sold out status.",
+      "impact_on_arena_scoring": "Accessibility/value evidence is limited to China."
+    },
+    {
+      "topic": "Autonomy and teleoperation",
+      "description": "No source discloses whether Bumi demos, including the Spring Festival Gala appearance, were autonomous, teleoperated, or pre-programmed. HCR-X autonomous task execution is only a future partnership claim.",
+      "impact_on_arena_scoring": "Autonomy_task_execution should remain low."
+    },
+    {
+      "topic": "Manipulation and payload",
+      "description": "No payload, hand DOF, grip force, or fine manipulation evidence. Robozaps explicitly says Bumi is not for household labor.",
+      "impact_on_arena_scoring": "Do not credit manipulation_dexterity."
+    },
+    {
+      "topic": "Delivery timeline",
+      "description": "Robozaps reports deliveries delayed until April 2026, while Humanoids Daily reported standard deliveries scheduled for March 2026.",
+      "impact_on_arena_scoring": "Lowers confidence in commercial deployment readiness."
+    },
+    {
+      "topic": "Independent verification",
+      "description": "All specs, sales, order counts, and performance claims are company/media reported. No independent benchmark, video transcript review, or customer deployment data.",
+      "impact_on_arena_scoring": "Evidence levels capped below independent verification tiers."
+    },
+    {
+      "topic": "Sensor and compute details",
+      "description": "Detailed sensor specs, compute performance, actuator specifications, and walking speed were not published.",
+      "impact_on_arena_scoring": "Perception and mobility scores cannot be substantiated beyond basic claims."
+    }
+  ],
+  "source_ids": [
+    "noetix-bumi_source_001",
+    "noetix-bumi_source_002",
+    "noetix-bumi_source_003",
+    "noetix-bumi_source_004"
+  ],
+  "sources": [
+    {
+      "id": "noetix-bumi_source_001",
+      "title": "Beijing startup Noetix Robotics launches ‘consumer-grade humanoid robot’ at $1,400",
+      "publisher": "Robotics and Automation News",
+      "url": "https://roboticsandautomationnews.com/2025/10/22/beijing-startup-noetix-robotics-launches-consumer-grade-humanoid-robot-at-1400/95731/",
+      "date_published": "2025-10-22",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade media reporting company announcement; specs are company-provided."
+    },
+    {
+      "id": "noetix-bumi_source_002",
+      "title": "Noetix Bumi Price 2026: $1,400 World's Cheapest Humanoid",
+      "publisher": "Robozaps",
+      "url": "https://blog.robozaps.com/b/noetix-bumi-review",
+      "date_published": "2026-03-10",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Commercial review blog with detailed spec sheet and analysis; not official."
+    },
+    {
+      "id": "noetix-bumi_source_003",
+      "title": "Noetix Bumi: A £1100 Humanoid Robot Pal? | RoboHorizon Robot Magazine - AI you can touch",
+      "publisher": "RoboHorizon Robot Magazine",
+      "url": "https://robohorizon.uk/en-gb/news/2025/10/noetix-bumi-humanoid-robot/",
+      "date_published": "2025-10-24",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Independent commentary and analysis; no new specs."
+    },
+    {
+      "id": "noetix-bumi_source_004",
+      "title": "Noetix Secures 1,000-Unit Order for ‘Bumi’ Humanoid in Strategic AI Deal",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/news/noetix-secures-1-000-unit-order-for-bumi-humanoid-in-strategic-ai-deal",
+      "date_published": "2025-12-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade media reporting company announcement; no independent verification."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Noetix Bumi is a low-cost (¥9,998), child-sized bipedal humanoid with early commercial traction in China and a notable TV appearance, but evidence is largely company/media claims without independent testing. It is explicitly not a household task robot.",
+    "strongest_positive_evidence": [
+      "Breakthrough price of ¥9,998 (~$1,400) making it the first sub-¥10,000 humanoid in China.",
+      "First 500 units sold within 48 hours on JD.com.",
+      "HCR partnership announced a 1,000-unit B2B order.",
+      "Spring Festival Gala appearance with 677 million viewers, demonstrating walking and interaction."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent video transcript or manual review of any demos.",
+      "No payload, hand DOF, walking speed, or reliability data.",
+      "No evidence of autonomous task execution for the base robot.",
+      "No international availability or current purchase path."
+    ],
+    "conflicting_claims": [
+      "Delivery date: Robozaps says delayed until April 2026, Humanoids Daily says standard deliveries scheduled for March 2026.",
+      "Spring Festival Gala viewership: Robozaps says 677 million in one section and 700 million in another.",
+      "The announced pre-sale in October 2025 vs sold out status in March 2026 with deliveries delayed."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit N2 humanoid marathon performance or N2 pre-orders to Bumi.",
+      "Do not claim Bumi can perform household chores or dexterous manipulation.",
+      "Do not claim Bumi is available outside China or currently purchasable.",
+      "Do not claim autonomous operation for any Bumi demo without disclosure.",
+      "Do not claim HCR-X units are deployed; the partnership is announced and timeline is unclear."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Bumi is Noetix's current low-cost consumer humanoid as of 2026-10-29. No discontinuation or successor was found in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Noetix N2 finished second in the world's first humanoid half-marathon and accumulated over 2,500 pre-orders.",
+      "reason": "This belongs to the N2 robot, not Bumi.",
+      "source_ids": [
+        "noetix-bumi_source_001",
+        "noetix-bumi_source_002"
+      ]
+    },
+    {
+      "claim": "Bumi can perform household chores such as cooking, cleaning, or carrying objects.",
+      "reason": "Robozaps explicitly says Bumi lacks the payload capacity, dexterity, and sensor suite for such tasks.",
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ]
+    },
+    {
+      "claim": "Bumi is available outside China.",
+      "reason": "Robozaps states China-only availability with no official international sales channels.",
+      "source_ids": [
+        "noetix-bumi_source_002"
+      ]
+    },
+    {
+      "claim": "HCR-X enhanced Bumi can currently perform autonomous tasks in elderly care or advanced education.",
+      "reason": "Humanoids Daily reports the HCR-X integration will likely require significant R&D lead time; no deployment or demonstration found.",
+      "source_ids": [
+        "noetix-bumi_source_004"
+      ]
+    },
+    {
+      "claim": "YouTube video titles demonstrate specific Bumi capabilities.",
+      "reason": "No transcripts were provided; only titles and channel/date are available, so no observable capabilities can be credited.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Noetix Bumi is a low-cost Chinese consumer humanoid robot announced in October 2025 at ¥9,998 (~$1,400). It is 94 cm tall, 12 kg, with 21 DOF, a 48V battery, and claimed 1-2 hours runtime. It walks, runs, and dances, and includes voice interaction, touch, and drag-and-drop graphical programming. Sales began on JD.com with 500 units sold within 48 hours, and HCR announced a 1,000-unit B2B order. Bumi appeared at China's Spring Festival Gala. However, it is explicitly not for household chores, has no published payload or manipulation evidence, is China-only and sold out, and all performance/autonomy claims are company or media reported without independent verification.",
+    "strongest_evidence": [
+      "Breakthrough price ¥9,998, described as first sub-¥10,000 high-performance humanoid in China.",
+      "First 500 units sold within 48 hours on JD.com.",
+      "HCR partnership with a 1,000-unit bulk order for Bumi.",
+      "Spring Festival Gala appearance with large viewership demonstrating walking and interaction."
+    ],
+    "weakest_evidence": [
+      "No independent video transcript, benchmark, or customer deployment metrics.",
+      "No payload, hand DOF, walking speed, or reliability data.",
+      "No evidence of autonomous task execution for the base robot.",
+      "No international availability or current purchase path."
+    ],
+    "known_do_not_credit": [
+      "Noetix N2 marathon performance or N2 pre-orders.",
+      "Household chores or dexterous manipulation by Bumi.",
+      "Availability outside China.",
+      "Autonomous operation in any Bumi demo without disclosure.",
+      "HCR-X units as deployed or capable of current autonomous elderly care tasks."
+    ],
+    "recommended_confidence": "low"
+  }
+}

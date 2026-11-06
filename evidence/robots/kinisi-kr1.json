@@ -1,0 +1,1026 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "kinisi-kr1",
+    "name": "Kinisi KR1",
+    "company_id": "kinisi-robotics",
+    "company_name": "Kinisi Robotics",
+    "country": "United Kingdom",
+    "generation": "first-generation wheeled humanoid",
+    "first_announced_date": "2024-08-19",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Multiple directories and media describe KR1 as a prototype. Bear Robotics announced a definitive agreement to acquire Kinisi Robotics in June 2026 and presents the robot as an upcoming product. No named customer deployments or public commercial launch date were found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "warehouse pick-and-place",
+      "sorting and kitting",
+      "assembly",
+      "logistics",
+      "retail stocking",
+      "light manufacturing",
+      "maintenance"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "162 cm",
+      "value": 162,
+      "unit": "cm",
+      "notes": "Value comes from the Humanoid.guide directory, not an official Kinisi spec sheet. Interesting Engineering does not publish a height.",
+      "source_ids": [
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "100 kg",
+      "value": 100,
+      "unit": "kg",
+      "notes": "Directory value. Not confirmed by an official source.",
+      "source_ids": [
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "22 pounds (10 kilograms)",
+      "value": 10,
+      "unit": "kg",
+      "notes": "Interesting Engineering reports 10 kg; Humanoid.guide also reports 10 kg.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "six to eight hours",
+      "value": 8,
+      "unit": "hours",
+      "notes": "Interesting Engineering says six to eight hours; Humanoid.guide lists 8 hours per charge.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": "hot-swappable 48 V lithium-ion battery",
+      "value": null,
+      "unit": null,
+      "notes": "Interesting Engineering reports a hot-swappable 48 V lithium-ion battery with rapid charging. Humanoid.guide adds hot-swappable batteries and auto-docking.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 21,
+      "notes": "Humanoid.guide lists 21 overall DoF, including 2 DoF in its hands. No total DoF was found in an official Kinisi source.",
+      "source_ids": [
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2.4 m/s",
+      "value": 2.4,
+      "unit": "m/s",
+      "notes": "Interesting Engineering reports up to 2.4 m/s. Humanoid.guide lists max speed 14.4 km/h, and Bots n' Beans says the Bear Kinisi page lists up to 14.4 km/h. Treat 2.4 m/s as reported but conflict unresolved.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002",
+        "kinisi-kr1_source_007"
+      ]
+    },
+    "hands": {
+      "description": "Dual-handed manipulation platform; modular gripper system that can be swapped for different end-effectors including vacuum tools. Humanoid.guide lists 2 DoF for the hands.",
+      "degrees_of_freedom": 2,
+      "force_feedback": null,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "stereo depth cameras",
+        "180° LiDAR array",
+        "SLAM",
+        "±2 mm depth accuracy at two meters",
+        "real-time 3D perception from fused cameras and sensors"
+      ],
+      "source_ids": [
+        "kinisi-kr1_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Onboard NVIDIA Jetson module running real-time transformer models for perception and planning. Humanoid.guide lists Nvidia Jetson CPU/GPU under Linux with sub-100ms latency glass to action.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Compact wave-gear actuators and modular gripper system; Humanoid.guide lists BLDC motors and strain wave gears.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.bearrobotics.ai/kinisi",
+      "notes": "No official price found. Humanoid.guide lists $75,000, but Bots n' Beans says no public price and other specs are not published. Bear Robotics Kinisi page is contact sales.",
+      "source_ids": [
+        "kinisi-kr1_source_003",
+        "kinisi-kr1_source_007"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Media and directories describe a dual-handed platform with a 10 kg payload, modular grippers, vacuum tools, and precision manipulation for fragile and heavy objects. A company-described towel-folding video claims the robot identifies key features and executes each fold autonomously.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002",
+        "kinisi-kr1_source_006",
+        "kinisi-kr1_source_010"
+      ],
+      "caveats": [
+        "No success rates, attempt counts, or independent dexterity benchmarks found.",
+        "The deformable-materials video source is only a title; no transcript was available."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "KR1 is described as fully autonomous with local processing and imitation learning; company demos claim autonomous towel folding and an autonomous humanoid robot. Bear's press release describes Vision-Language-Action and Robot Foundation Models.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_003",
+        "kinisi-kr1_source_006",
+        "kinisi-kr1_source_011"
+      ],
+      "caveats": [
+        "Autonomy is company-asserted; no intervention logs, success rates, or independent audit found.",
+        "Several key videos have no transcript, so actual autonomous behavior cannot be verified from the title or forum quote alone."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Wheeled base for flat warehouse floors; reported top speed 2.4 m/s or 14.4 km/h depending on source. Active suspension is claimed for balance across uneven surfaces.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002",
+        "kinisi-kr1_source_007"
+      ],
+      "caveats": [
+        "Speed figures conflict: 2.4 m/s from Interesting Engineering, 14.4 km/h from Humanoid.guide and Bots n' Beans.",
+        "No independently measured mobility or stability data found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Stereo depth cameras, 180° LiDAR, SLAM, and ±2 mm depth accuracy at two meters are reported; NVIDIA Jetson runs real-time transformer models for perception and planning.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ],
+      "caveats": [
+        "Sensor and compute claims are from media and directory sources, not confirmed by independent testing.",
+        "Camera resolution is not specified."
+      ]
+    },
+    "human_interaction": {
+      "summary": "KR1 is described as designed to work safely alongside people; human-in-the-loop demonstration-based learning is claimed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ],
+      "caveats": [
+        "No demonstrated conversational or instruction-following reliability found.",
+        "Safety with humans is asserted, not certified."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Source reports 6-8 hours per charge, hot-swappable 48 V battery, rapid charging, dual redundant controllers, emergency stops, and continuous diagnostics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ],
+      "caveats": [
+        "No independent endurance test or operational uptime data found.",
+        "Runtime is media/directory-reported, not an official spec sheet."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Wheeled base designed for flat warehouse floors, active suspension for uneven surfaces, IP65 ingress protection, aluminum structure, weight 100 kg, height 162 cm.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002"
+      ],
+      "caveats": [
+        "Height, weight, and IP65 are from a third-party directory.",
+        "No full-robot safety certification found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Investing.com reports Kinisi operates a robotics-as-a-service model and is running paid pilot programs with companies in manufacturing, logistics, and retail. No named customers or output metrics were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kinisi-kr1_source_004"
+      ],
+      "caveats": [
+        "Paid pilots are unnamed and not independently verified.",
+        "Bear Robotics acquisition is signed but not closed."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No official price or purchase path found. Humanoid.guide lists $75,000, but Bots n' Beans says no public price; both are directories.",
+      "evidence_level": 0,
+      "source_ids": [
+        "kinisi-kr1_source_002",
+        "kinisi-kr1_source_007"
+      ],
+      "caveats": [
+        "Do not treat the $75,000 directory price as confirmed.",
+        "Availability is contact sales via Bear Robotics Kinisi page."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "kinisi-kr1_evidence_001",
+      "date": null,
+      "title": "KR1 payload and dual-handed manipulation",
+      "claim": "KR1 has a dual-handed manipulation platform for fragile and heavy loads with a 22-pound (10 kg) payload.",
+      "category": [
+        "manipulation_dexterity",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Reported by Interesting Engineering; not an official product page.",
+      "arena_relevance": "Defines payload and dexterity profile.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot features a dual-handed manipulation platform capable of handling both fragile items and heavier loads with fine-motor accuracy and supports a 22-pound (10 kilograms) payload.",
+      "source_location": "Interesting Engineering article, Human-level handling section",
+      "verification_notes": "Secondary media report; no independent manipulation test.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_002",
+      "date": null,
+      "title": "KR1 speed and perception sensors",
+      "claim": "KR1 moves at speeds up to 2.4 m/s and uses stereo depth cameras, 180° LiDAR, SLAM, and ±2 mm depth accuracy at two meters.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Media-reported specs; speed conflicts with other sources.",
+      "arena_relevance": "Supports mobility and perception scoring.",
+      "claim_type": "spec",
+      "supporting_excerpt": "KR1 moves at speeds up to 2.4 m/s, with adaptive control for confined areas. A combination of stereo depth cameras, a 180° LiDAR array, and SLAM provides spatial awareness, supported by ±2 mm depth accuracy at two meters.",
+      "source_location": "Interesting Engineering article, Mobility and perception section",
+      "verification_notes": "Secondary report; speed conflict with 14.4 km/h figures.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_003",
+      "date": null,
+      "title": "KR1 compute and actuators",
+      "claim": "KR1 uses compact wave-gear actuators, a modular gripper system, and an onboard NVIDIA Jetson module running real-time transformer models.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Media-reported hardware details.",
+      "arena_relevance": "Hardware basis for manipulation and perception.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Precision manipulation is enabled by compact wave-gear actuators and a modular gripper system that can be swapped for different end-effectors, including vacuum tools. Processing is handled by an onboard NVIDIA Jetson module running real-time transformer models for perception and planning.",
+      "source_location": "Interesting Engineering article, precision manipulation and processing sections",
+      "verification_notes": "No independent hardware teardown or benchmark.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_004",
+      "date": null,
+      "title": "KR1 battery, runtime, and safety features",
+      "claim": "KR1 has a hot-swappable 48 V lithium-ion battery, six to eight hours of operation, rapid charging, dual redundant controllers, layered emergency stops, automatic posture locking, and continuous diagnostics.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Media-reported battery and safety features.",
+      "arena_relevance": "Supports endurance and human-proximity safety claims.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Power is supplied by a hot-swappable 48 V lithium-ion battery, delivering six to eight hours of operation, with rapid charging capabilities. Safety features include dual redundant controllers, layered emergency stops, automatic posture locking, and continuous diagnostics.",
+      "source_location": "Interesting Engineering article, battery and safety sections",
+      "verification_notes": "No independent endurance testing or safety certification found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_005",
+      "date": null,
+      "title": "KR1 autonomy and imitation learning claims",
+      "claim": "Kinisi says KR1 is designed as a fully autonomous mobile manipulator that operates without constant cloud connectivity and learns tasks from operator demonstrations.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Company claim relayed by media.",
+      "arena_relevance": "Supports autonomy framing but not independently verifiable.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "KR1 is designed as a fully autonomous mobile manipulator, capable of operating independently without constant cloud connectivity. The robot also uses imitation learning, removing the need for programming. Operators simply demonstrate a task, and KR1 learns to repeat it independently.",
+      "source_location": "Interesting Engineering article, Autonomy meets industry section",
+      "verification_notes": "No intervention logs, success rates, or independent audit.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_006",
+      "date": null,
+      "title": "KR1 physical specifications from Humanoid.guide",
+      "claim": "KR1 is 162 cm tall, weighs 100 kg, and is a prototype with a purchase price around $75,000 according to a directory.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_002"
+      ],
+      "confidence": 0.45,
+      "notes": "Third-party directory with 'Verified: Not verified' flag; price conflicts with Bots n' Beans.",
+      "arena_relevance": "Provides provisional size and price context.",
+      "claim_type": "spec",
+      "supporting_excerpt": "At 162 cm tall and weighing 100 kg, this prototype prioritizes affordability and scalability, with a purchase price around $75,000, making it accessible for logistics operations facing labor shortages.",
+      "source_location": "Humanoid.guide Kinisi KR1 description",
+      "verification_notes": "Directory data, not official; price not confirmed.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_007",
+      "date": null,
+      "title": "KR1 speed and price gap from Bots n' Beans",
+      "claim": "Bots n' Beans says the Bear Kinisi page lists up to 14.4 km/h and a full shift per battery, but other specs, availability, and price are not published.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_007"
+      ],
+      "confidence": 0.55,
+      "notes": "Directory source; conflicts with Interesting Engineering speed figure and Humanoid.guide price.",
+      "arena_relevance": "Cautions against over-crediting unverified specs or price.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Kinisi lists speeds up to 14.4 km/h and a full shift per battery. Other specs, availability, and price are not published.",
+      "source_location": "Bots n' Beans Kinisi KR1 page",
+      "verification_notes": "Secondary directory; no official confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_009",
+      "date": "2026-06-22",
+      "title": "KR1 intended use cases from Bear Robotics",
+      "claim": "Bear Robotics describes the KR1 as a wheeled humanoid designed to pick, place, sort, and move objects across industrial, logistics, and hospitality environments.",
+      "category": [
+        "manipulation_dexterity",
+        "deployment_commercial_proof",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Official company description.",
+      "arena_relevance": "Defines intended industrial and hospitality scope.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The KR1 humanoid robot — a wheeled humanoid designed to pick, place, sort, and move objects across industrial, logistics, and hospitality environments.",
+      "source_location": "Bear Robotics blog, What Kinisi brings to Bear's Physical AI platform section",
+      "verification_notes": "Company claim; no deployment metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_010",
+      "date": "2026-06-22",
+      "title": "Kinisi VLA and Robot Foundation Model claims",
+      "claim": "KR1 uses a Vision-Language-Action model and a Robot Foundation Model that provide general manipulation skills transferring across tasks and environments.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Company technical claim; no benchmark or independent evaluation.",
+      "arena_relevance": "Supports autonomy and learning capability assertions.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The Vision-Language-Action (VLA) model lets the robot connect what it sees and is asked to do with the physical actions it takes, while the Robot Foundation Model (RFM) gives it general manipulation skills that transfer across tasks and environments.",
+      "source_location": "Bear Robotics blog, Inside Kinisi's Physical AI section",
+      "verification_notes": "Company claim; no independent benchmarks provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_011",
+      "date": "2026-06-22",
+      "title": "Paid pilot programs with manufacturing, logistics, and retail",
+      "claim": "Kinisi operates a robotics-as-a-service model and is currently running paid pilot programs with companies in manufacturing, logistics, and retail.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_004"
+      ],
+      "confidence": 0.55,
+      "notes": "Investing.com/Reuters report; no named customers or metrics.",
+      "arena_relevance": "Weak commercial proof; early-stage pilots only.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Kinisi has been using Bear’s navigation technology since its founding. The company operates a robotics-as-a-service model and is currently running paid pilot programs with companies in manufacturing, logistics, and retail.",
+      "source_location": "Investing.com Nigeria article",
+      "verification_notes": "AI-assisted article reviewed by editor; unnamed pilots.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_012",
+      "date": null,
+      "title": "Kinisi Robotics UK-based startup and KR1 use cases",
+      "claim": "Kinisi Robotics is a UK-based startup developing wheeled-base humanoid robots, with KR1 handling warehouse fulfillment, retail stocking, light manufacturing, and maintenance.",
+      "category": [
+        "status",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kinisi-kr1_source_005"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory source; country conflicts with Humanoid.guide's US listing.",
+      "arena_relevance": "Supports prototype status and intended tasks.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Kinisi Robotics is a UK-based startup developing wheeled-base humanoid robots for warehouse and industrial automation. Its flagship product, the Kinisi KR1, combines agentic AI with a mobile manipulator platform to handle repetitive, physically demanding tasks such as warehouse fulfillment, retail stocking, light manufacturing, and maintenance.",
+      "source_location": "HumanoidMegaHub Kinisi Robotics page",
+      "verification_notes": "Directory; country disputed with other sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_013",
+      "date": "2024-08-19",
+      "title": "Early KR1 AI-powered robot demo",
+      "claim": "A Kinisi Robotics video from August 2024 shows KR1 seeing and interacting with work using AI (LLM).",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "kinisi-kr1_source_006"
+      ],
+      "confidence": 0.55,
+      "notes": "Forum post quotes the video description; no transcript or video review.",
+      "arena_relevance": "Early evidence of LLM-based interaction.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "In this video we show how our new robot KR1, can see and interact with the work using AI (LLM) and control a robot.",
+      "source_location": "PR.ai Kinisi (KR1) thread, Kinisi Robotics - AI powered robot video quote",
+      "verification_notes": "No transcript; cannot confirm actual demonstrated behavior beyond description.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kinisi-kr1_evidence_014",
+      "date": "2025-12-15",
+      "title": "KR1 autonomous towel folding demo",
+      "claim": "Kinisi describes a video in which KR1 sees a towel, identifies key features, and executes each fold autonomously.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "kinisi-kr1_source_006"
+      ],
+      "confidence": 0.55,
+      "notes": "Company video description posted in a forum; no success rate or transcript.",
+      "arena_relevance": "Shows effort toward deformable-object manipulation and autonomy.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "We walk through how the system sees the towel, identifies key features, and executes each fold autonomously.",
+      "source_location": "PR.ai Kinisi thread, towel folding video description",
+      "verification_notes": "Company-asserted autonomy; no independent verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "kinisi-kr1_demo_001",
+      "title": "Kinisi Robotics - AI powered robot",
+      "date": "2024-08-19",
+      "observed_capabilities": [
+        "see and interact with the work using AI (LLM) and control a robot"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company setting",
+      "source_ids": [
+        "kinisi-kr1_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; only title and brief forum quote."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The reviewed forum quote does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "kinisi-kr1_demo_002",
+      "title": "Kinisi - Versatile Robots for Real World Deployments",
+      "date": "2025-11-25",
+      "observed_capabilities": [
+        "real-time 3D perception",
+        "confident navigation",
+        "precise handling"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company setting",
+      "source_ids": [
+        "kinisi-kr1_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No duration, autonomy statement, or success rate found in the forum description."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The reviewed description does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "kinisi-kr1_demo_003",
+      "title": "How do you teach a robot to fold a towel",
+      "date": "2025-12-15",
+      "observed_capabilities": [
+        "sees towel",
+        "identifies key features",
+        "executes each fold autonomously"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Kinisi describes the robot as executing each fold autonomously.",
+      "environment": "company setting",
+      "source_ids": [
+        "kinisi-kr1_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No success rate or trial count.",
+        "No independent verification."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Company description says executes each fold autonomously; not externally verified.",
+      "observed_segments": []
+    },
+    {
+      "id": "kinisi-kr1_demo_004",
+      "title": "Kinisi KR 1 Demonstrates Learning Based Handling of Deformable Materials",
+      "date": "2026-03-29",
+      "observed_capabilities": [
+        "title indicates learning-based handling of deformable materials"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "kinisi-kr1_source_010"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript, so cannot describe demonstrated behavior beyond the title."
+      ],
+      "editing_notes": "No transcript available; manual video review required before using as audit-grade evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state teleoperation or autonomy.",
+      "observed_segments": []
+    },
+    {
+      "id": "kinisi-kr1_demo_005",
+      "title": "The Future of Warehousing Starts Now: Meet Kinisi’s Autonomous Humanoid Robot",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "title indicates autonomous humanoid robot"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title says autonomous humanoid robot.",
+      "environment": "unknown",
+      "source_ids": [
+        "kinisi-kr1_source_011"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Video title only; no transcript."
+      ],
+      "editing_notes": "No transcript available; manual video review required before using as audit-grade evidence.",
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Title explicitly says autonomous, but no transcript to verify execution mode.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability and price",
+      "description": "No official price or purchase path found. Humanoid.guide lists $75,000 while Bots n' Beans says no public price.",
+      "impact_on_arena_scoring": "Accessibility/value remains at minimal evidence."
+    },
+    {
+      "topic": "Deployment metrics",
+      "description": "Only unnamed paid pilot programs are reported; no customer names, unit counts, hours, or output metrics found.",
+      "impact_on_arena_scoring": "Commercial proof is early and not independently verifiable."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claims come from media, company descriptions, and video titles. No intervention logs, success rates, or independent audit found.",
+      "impact_on_arena_scoring": "Credit observable work only partially; keep autonomy confidence low."
+    },
+    {
+      "topic": "Spec discrepancies",
+      "description": "Speed conflicts between 2.4 m/s and 14.4 km/h; height, weight, and runtime come from a directory, not an official spec sheet.",
+      "impact_on_arena_scoring": "Do not infer precise numeric specs without confidence."
+    },
+    {
+      "topic": "Country conflict",
+      "description": "Bear Robotics and HumanoidMegaHub identify Kinisi as Bristol/UK, while Humanoid.guide lists US. The pack uses UK based on the acquiring company's description.",
+      "impact_on_arena_scoring": "Minor; does not affect robot capability."
+    },
+    {
+      "topic": "Video transcripts",
+      "description": "Several YouTube sources have no transcript, so their content cannot be described beyond titles or forum quotes.",
+      "impact_on_arena_scoring": "Video claims remain weak evidence."
+    }
+  ],
+  "source_ids": [
+    "kinisi-kr1_source_001",
+    "kinisi-kr1_source_002",
+    "kinisi-kr1_source_003",
+    "kinisi-kr1_source_004",
+    "kinisi-kr1_source_005",
+    "kinisi-kr1_source_006",
+    "kinisi-kr1_source_007",
+    "kinisi-kr1_source_010",
+    "kinisi-kr1_source_011"
+  ],
+  "sources": [
+    {
+      "id": "kinisi-kr1_source_001",
+      "title": "KR1 humanoid robot handles fragile, heavy loads safely in factories",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/innovation/humanoid-robot-kr1-kinisi",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary article based on Kinisi company information; no independent testing."
+    },
+    {
+      "id": "kinisi-kr1_source_002",
+      "title": "Kinisi Robotics Kinisi KR1 Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/kinisi-kr1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party database; many values are not verified; page includes 'Verified: Not verified'."
+    },
+    {
+      "id": "kinisi-kr1_source_003",
+      "title": "Bear Robotics to Acquire Kinisi Robotics — Bear Robotics",
+      "publisher": "Bear Robotics",
+      "url": "https://www.bearrobotics.ai/blog/bear-robotics-to-acquire-kinisi-robotics",
+      "date_published": "2026-06-22",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official company announcement; transaction remains subject to closing conditions."
+    },
+    {
+      "id": "kinisi-kr1_source_004",
+      "title": "Bear Robotics to acquire Kinisi Robotics for AI expansion",
+      "publisher": "Investing.com Nigeria",
+      "url": "https://ng.investing.com/news/stock-market-news/bear-robotics-to-acquire-kinisi-robotics-for-ai-expansion-93CH-2566888",
+      "date_published": "2026-06-22",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "AI-assisted article reviewed by editor; based on Reuters/press release."
+    },
+    {
+      "id": "kinisi-kr1_source_005",
+      "title": "Kinisi Robotics | HumanoidMegaHub",
+      "publisher": "HumanoidMegaHub",
+      "url": "https://www.humanoidmegahub.com/companies/532-kinisi-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Directory profile with unverified hype scores and prototype status."
+    },
+    {
+      "id": "kinisi-kr1_source_006",
+      "title": "Kinisi (KR1), warehouse robot, Kinisi Industries Inc., San Francisco, California, USA",
+      "publisher": "Portal of Robotics and Artificial Intelligence",
+      "url": "https://pr.ai/threads/kinisi-kr1-warehouse-robot-kinisi-industries-inc-san-francisco-california-usa.25477/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Forum aggregator of videos and articles; not official."
+    },
+    {
+      "id": "kinisi-kr1_source_007",
+      "title": "Kinisi KR1",
+      "publisher": "Bots n' Beans",
+      "url": "https://botsnbeans.com/product/kinisi-kr1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Directory says no public price; quotes Bear Robotics Kinisi page."
+    },
+    {
+      "id": "kinisi-kr1_source_010",
+      "title": "Kinisi KR 1 Demonstrates Learning Based Handling of Deformable Materials",
+      "publisher": "YouTube Thomas",
+      "url": "https://www.youtube.com/watch?v=YYrTyc3wh9g",
+      "date_published": "2026-03-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video title only; no transcript."
+    },
+    {
+      "id": "kinisi-kr1_source_011",
+      "title": "The Future of Warehousing Starts Now: Meet Kinisi’s Autonomous Humanoid Robot",
+      "publisher": "YouTube Kinisi Robotics",
+      "url": "https://www.youtube.com/watch?v=PinUCliN3dg",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Kinisi Robotics video title only; no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Kinisi KR1 is a wheeled two-arm humanoid with strong manipulation intent claims and early demo evidence, but no named deployments, no official spec sheet, and autonomy claims remain unverified. The Bear Robotics acquisition gives it commercial backing, but the robot is still a prototype.",
+    "strongest_positive_evidence": [
+      "Official Bear Robotics press release confirms acquisition and KR1 intended for pick/place/sort across industrial, logistics, and hospitality.",
+      "Reported dual-handed manipulation with 10 kg payload and fine-motor accuracy.",
+      "Company-described towel-folding video claims autonomous execution.",
+      "Unnamed paid pilot programs reported with manufacturing, logistics, and retail customers."
+    ],
+    "weakest_or_missing_evidence": [
+      "No named customer deployments, output metrics, hours, or intervention logs.",
+      "No official price or purchase path; directory price conflicts.",
+      "Speed is disputed between 2.4 m/s and 14.4 km/h.",
+      "Height, weight, and runtime come from a third-party directory.",
+      "Key YouTube videos have no transcripts."
+    ],
+    "conflicting_claims": [
+      "Speed: 2.4 m/s (Interesting Engineering) vs 14.4 km/h max (Humanoid.guide, Bots n' Beans).",
+      "Price: $75,000 (Humanoid.guide) vs no public price (Bots n' Beans).",
+      "Country: US (Humanoid.guide) vs UK/Bristol (Bear Robotics, HumanoidMegaHub).",
+      "First announcement: Aug 2024 video exists, while Interesting Engineering says unveiled July 2025."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "industrial_humanoid",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Bear Robotics' 16,000-plus service robot fleet to KR1.",
+      "Do not treat paid pilot programs as named production deployments.",
+      "Do not treat $75,000 as an official price.",
+      "Do not infer verified autonomous behavior from video titles or forum quotes alone.",
+      "Do not use unrelated Kinisi 01 or other vendor video titles as KR1 evidence."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "As of 2026-10-29, KR1 is a prototype. Bear Robotics announced a signed agreement to acquire Kinisi in June 2026 and presents KR1 as upcoming. No release or commercial launch date was found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Bear Robotics has shipped more than 16,000 service robots",
+      "reason": "This is Bear Robotics' existing service robot fleet, not KR1 deployments.",
+      "source_ids": [
+        "kinisi-kr1_source_003",
+        "kinisi-kr1_source_004"
+      ]
+    },
+    {
+      "claim": "Kinisi 01 capabilities or video title '2026 Kinisi 01 Humanoid: This Robot Will Replaces Workers Without Blinking'",
+      "reason": "The source refers to Kinisi 01, not KR1.",
+      "source_ids": []
+    },
+    {
+      "claim": "KR1 is publicly available for $75,000",
+      "reason": "Only a directory lists that price; Bots n' Beans says price is not published.",
+      "source_ids": [
+        "kinisi-kr1_source_002",
+        "kinisi-kr1_source_007"
+      ]
+    },
+    {
+      "claim": "KR1 has been independently verified as autonomous",
+      "reason": "All autonomy statements are company claims or video titles; no independent verification found.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_006",
+        "kinisi-kr1_source_011"
+      ]
+    },
+    {
+      "claim": "KR1 is a legged or bipedal humanoid",
+      "reason": "Sources consistently describe it as wheeled.",
+      "source_ids": [
+        "kinisi-kr1_source_001",
+        "kinisi-kr1_source_002",
+        "kinisi-kr1_source_003"
+      ]
+    },
+    {
+      "claim": "KR1 has named production customers with output metrics",
+      "reason": "Only unnamed paid pilot programs are reported.",
+      "source_ids": [
+        "kinisi-kr1_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 7,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Kinisi KR1 is a wheeled two-arm humanoid from Kinisi Robotics, described as a prototype for warehouse and industrial pick-and-place, sorting, and kitting. It is reported to carry a 10 kg payload, measure 162 cm tall and 100 kg in a third-party directory, and travel at either 2.4 m/s or 14.4 km/h depending on source. The system is claimed to be autonomous using VLA and Robot Foundation Models, with imitation learning and demonstration-based task programming. Evidence includes a company-described towel-folding demo and unnamed paid pilot programs, but no named customer deployments or independent benchmarks. Bear Robotics signed an agreement to acquire Kinisi in June 2026. There is no confirmed official price or purchase path.",
+    "strongest_evidence": [
+      "Official Bear Robotics acquisition press release confirms KR1 as part of its physical AI platform.",
+      "Reported dual-handed manipulation with 10 kg payload and fine-motor accuracy.",
+      "Company-described autonomous towel-folding video.",
+      "Unnamed paid pilot programs in manufacturing, logistics, and retail."
+    ],
+    "weakest_evidence": [
+      "No named customer deployments or output metrics.",
+      "No official price or official full spec sheet.",
+      "Autonomy claims are not independently verified.",
+      "Speed and price figures conflict across directories."
+    ],
+    "known_do_not_credit": [
+      "Bear Robotics' existing 16,000-plus service robot fleet.",
+      "Directory price of $75,000 as confirmed.",
+      "Verified autonomous behavior from video titles alone.",
+      "Named production customer deployments."
+    ],
+    "recommended_confidence": "low"
+  }
+}

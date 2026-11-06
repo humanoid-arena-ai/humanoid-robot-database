@@ -1,0 +1,149 @@
+{
+  "robotId": "dobot-atom",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "buy_now",
+  "purchasePathNote": "Dobot itself sells on quote (sales@dobot-robots.com). Some resellers show checkout prices: Dobot.nu in the Netherlands lists Atom Max and Atom D, and RobotShop lists several Atom research configurations.",
+  "configurations": [
+    {
+      "name": "Atom (launch price)",
+      "price": 27500,
+      "currency": "USD",
+      "priceType": "reported",
+      "region": "China",
+      "notes": "Price reported when pre-orders opened in March 2025, for the original full-size Atom. Not a current list price.",
+      "sourceLabel": "heise online",
+      "sourceUrl": "https://www.heise.de/en/news/Dobot-Robotics-shows-humanoid-robot-Atom-for-27-500-US-dollars-10320328.html",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Atom Max",
+      "price": 85999,
+      "currency": "EUR",
+      "priceType": "list",
+      "region": "EU",
+      "notes": "41-DoF full-size version with dexterous 6-DoF hands. VAT treatment not shown on the listing.",
+      "sourceLabel": "Dobot.nu",
+      "sourceUrl": "https://www.dobot.nu/en/product-cat/humanoids-en/",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Atom D - Data Collection",
+      "price": 29999,
+      "currency": "EUR",
+      "priceType": "list",
+      "region": "EU",
+      "notes": "Compact data-collection version, about 650 mm tall and 20 kg, with dual 7-DoF arms. Not the full-size walking Atom. Price excl. VAT; backorder, about 2 weeks delivery.",
+      "sourceLabel": "Dobot.nu",
+      "sourceUrl": "https://www.dobot.nu/en/product/dobot-atom-trainer-kopie/",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Atom D EDU Data Collection",
+      "price": 73322,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "Data-collection EDU configuration.",
+      "sourceLabel": "RobotShop",
+      "sourceUrl": "https://www.robotshop.com/products/dobot-atom-d-edu-data-collection-humanoid-robot-ds",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Atom Max Research",
+      "price": 100765,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "Research configuration.",
+      "sourceLabel": "RobotShop",
+      "sourceUrl": "https://www.robotshop.com/products/dobot-atom-max-research-humanoid-robot-ds",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Atom Max Advanced AI Research (41 DoF)",
+      "price": 136825,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "Advanced research configuration.",
+      "sourceLabel": "RobotShop",
+      "sourceUrl": "https://www.robotshop.com/products/dobot-atom-max-advanced-humanoid-ai-research-robot-41-dof",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "Dobot Robotics (official)",
+      "type": "official",
+      "url": "https://www.dobot-robots.com/products/humanoid-robots/atom.html",
+      "region": "Global",
+      "offers": "No public price. Atom Max and Atom D listed; quotes via sales@dobot-robots.com.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Dobot.nu",
+      "type": "reseller",
+      "url": "https://www.dobot.nu/en/product-cat/humanoids-en/",
+      "region": "EU (Netherlands)",
+      "offers": "DOBOT Atom - Max - EUR 85.999,00; DOBOT Atom D - Data Collection - EUR 29.999,00 (excl. VAT on product page).",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotShop",
+      "type": "reseller",
+      "url": "https://www.robotshop.com/collections/dobot",
+      "region": "US",
+      "offers": "DOBOT Atom D EDU Data Collection - $73,322; DOBOT Atom Max Research - $100,765; DOBOT Atom Max Advanced Humanoid AI Research Robot (41 DoF) - $136,825.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Autodiscovery",
+      "type": "reseller",
+      "url": "https://autodiscovery.eu/en/products/dobot-atom",
+      "region": "EU",
+      "offers": "Atom Data Collection, Atom Trainer and Atom Max. Price shown only after customer login; '1 unit in stock', 8-week delivery.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [],
+  "priceHistory": [
+    {
+      "date": "2025-03-18",
+      "price": 27500,
+      "currency": "USD",
+      "event": "Pre-orders open; price reported as US$27,500",
+      "sourceUrl": "https://www.heise.de/en/news/Dobot-Robotics-shows-humanoid-robot-Atom-for-27-500-US-dollars-10320328.html"
+    },
+    {
+      "date": "2026-10-14",
+      "price": 85999,
+      "currency": "EUR",
+      "event": "Dutch reseller lists the full-size Atom Max at EUR 85,999",
+      "sourceUrl": "https://www.dobot.nu/en/product-cat/humanoids-en/"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy the Dobot Atom?",
+      "a": "Yes. Dobot sells it on quote, and resellers such as Dobot.nu and RobotShop list Atom configurations with prices.",
+      "sourceUrl": "https://www.dobot-robots.com/products/humanoid-robots/atom.html"
+    },
+    {
+      "q": "How much does the Dobot Atom cost?",
+      "a": "The launch price was reported as US$27,500 in March 2025. Current reseller prices are higher: EUR 85,999 for the Atom Max at Dobot.nu and $100,765-$136,825 for Atom Max research setups at RobotShop.",
+      "sourceUrl": "https://www.dobot.nu/en/product-cat/humanoids-en/"
+    },
+    {
+      "q": "Is the Dobot Atom shipping?",
+      "a": "Dobot says the Atom entered mass production and delivered its first batch at a launch event in Nagoya, Japan, on June 27, 2025.",
+      "sourceUrl": "https://www.dobot-robots.com/insights/news/dobot-debuted-global-delivery-of-humanoid-robot.html"
+    },
+    {
+      "q": "What is the Atom D?",
+      "a": "A compact data-collection version, about 650 mm tall and 20 kg, with two 7-DoF arms. It is much cheaper than the full-size Atom Max.",
+      "sourceUrl": "https://www.dobot.nu/en/product/dobot-atom-trainer-kopie/"
+    }
+  ],
+  "notes": "The $27,500 figure is a launch/pre-order report, not a current list price. The cheapest listing (Atom D) is a compact data-collection robot, not the full-size biped.",
+  "researchNotes": "Price from search listing. Price from search listing. Price from search listing. from search listings; page blocks automated access Some third-party sites say dobot.us lists the Atom at $79,000; the dobot.us product page returned 404, so this is not included. RobotShop prices come from search listings."
+}

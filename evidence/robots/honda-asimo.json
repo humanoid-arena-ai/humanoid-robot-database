@@ -1,0 +1,912 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "honda-asimo",
+    "name": "Honda ASIMO",
+    "company_id": "honda",
+    "company_name": "Honda",
+    "country": "Japan",
+    "generation": "Final 2011 version",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "ASIMO was unveiled in October 2000. Honda ceased development and production in July 2018, and the robot made its last active appearance in March 2022. It was retired as a research and demonstration platform.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "technology demonstrator",
+      "human-robot interaction research",
+      "public demonstrations and museum appearances",
+      "balance and locomotion research"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "130 cm (4 ft 3 in)",
+      "value": 130,
+      "unit": "cm",
+      "notes": "Wikipedia lead lists 130 cm. Wikipedia's 2011 specifications table and Anton Robots also list 130 cm.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    },
+    "weight": {
+      "original_value": "54 kg (119 lb)",
+      "value": 54,
+      "unit": "kg",
+      "notes": "Wikipedia lead says 54 kg. Wikipedia's 2011 specifications table, Anton Robots and Hybrid Electronics say the 2011 final version weighed 48 kg. The 54 kg figure may refer to the 2000 or 2005 model. Conflict noted.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    },
+    "payload": {
+      "original_value": "~1 kg",
+      "value": 1,
+      "unit": "kg",
+      "notes": "Hybrid Electronics table lists '~1 kg' for the 2011 ASIMO. Anton Robots states payload is not publicly specified. Not an official Honda figure.",
+      "source_ids": [
+        "honda-asimo_source_005",
+        "honda-asimo_source_003"
+      ]
+    },
+    "runtime": {
+      "original_value": "1 hour (running/walking)",
+      "value": 1,
+      "unit": "hours",
+      "notes": "Wikipedia specs table gives 1 hour continuous operating time for the 2011 model. Anton Robots lists 40 minutes walking with auto recharge. Conflict noted.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "51.8 V lithium-ion battery; 3 hours to fully charge",
+      "value": 51.8,
+      "unit": "V",
+      "notes": "Wikipedia states ASIMO is powered by a rechargeable 51.8V lithium-ion battery. The voltage is not capacity; Ah capacity is not disclosed in the sources.",
+      "source_ids": [
+        "honda-asimo_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2.7 km/h",
+      "value": 0.75,
+      "unit": "m/s",
+      "notes": "Wikipedia 2011 specification table lists walking speed of 2.7 km/h. Running speed is up to 9 km/h (2.5 m/s) for the 2011 version.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_005"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 57,
+      "notes": "Wikipedia and Hybrid Electronics list 57 total DoF for the 2011 ASIMO. Earlier models had 26 or 34 DoF.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_005"
+      ]
+    },
+    "hands": {
+      "description": "ASIMO has articulated hands that can offer handshakes, respond to gestures, and serve drinks. The 2004 model had 2 DoF per hand; total hand DoF for the 2011 version is not explicitly broken out in the reviewed sources.",
+      "degrees_of_freedom": 13,
+      "force_feedback": "Finger-force sensors are mentioned by Anton Robots; source does not specify force range.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Two camera 'eyes' for visual information, object distance and direction, postures, gestures, faces, sounds",
+        "Laser sensor on lower torso for ground surface detection",
+        "Infrared sensor with automatic shutter adjustment for floor markings",
+        "Front and rear ultrasonic sensors for obstacle detection",
+        "Sensors for face recognition and voice recognition"
+      ],
+      "source_ids": [
+        "honda-asimo_source_001"
+      ]
+    },
+    "compute": {
+      "description": "A three-dimensional computer processor created by Honda consisting of three stacked dies: a processor, a signal converter, and memory. The computer that controls ASIMO's movement is housed in the waist area and can be controlled using a PC, wireless controller, or voice commands.",
+      "source_ids": [
+        "honda-asimo_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Honda humanoids use electric brushless DC (BLDC) actuators paired with harmonic-drive reducers throughout — no hydraulics. Specific actuator count or torque values not disclosed in reviewed sources.",
+      "source_ids": [
+        "honda-asimo_source_005"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "ASIMO was never sold commercially. Honda leased units to museums and events and used it as a research and brand platform. It is retired and not currently available for purchase or order.",
+      "source_ids": [
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "ASIMO could serve drinks, offer handshakes, and respond to pointing or waving gestures. It has articulated hands and finger-force sensors, but no independent dexterity benchmark or success rates are published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ],
+      "caveats": [
+        "All manipulation evidence comes from company demos and secondary descriptions; no independent task success rates.",
+        "Anton Robots mentions dexterous hands but no DoF breakdown for 2011 hand."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "ASIMO performed autonomous navigation using pre-loaded maps and floor markings, and could respond to voice commands and gestures. Hybrid Electronics describes walking autonomy and automatic recharging. However, no long-horizon autonomous task execution in unstructured environments was demonstrated.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ],
+      "caveats": [
+        "Autonomy is most credible for indoor controlled spaces with pre-mapped paths and floor markings.",
+        "No intervention logs, failure rates, or independent audit available."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "ASIMO demonstrated walking, running up to 9 km/h, stair climbing, hopping, walking backwards, changing direction mid-stride, and recovering from unexpected pushes. These are among the strongest historical bipedal mobility demos.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_005",
+        "honda-asimo_source_008"
+      ],
+      "caveats": [
+        "Mobility claims are based on company demos and media summaries; no independent biomechanical or fall-rate testing.",
+        "Video titles such as 'Push Recovery Demonstration' are available but no transcript was reviewed for verification."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "ASIMO recognized moving objects, postures, gestures, surrounding environment, sounds, and faces using visual information from two camera eyes plus laser, infrared, and ultrasonic sensors. It could follow people and identify floor markings for autonomous navigation.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_001"
+      ],
+      "caveats": [
+        "Perception was optimized for controlled indoor environments; no outdoor or unstructured scene understanding reported."
+      ]
+    },
+    "human_interaction": {
+      "summary": "ASIMO could recognize approximately 10 faces and address them by name, respond to voice commands, answer questions in different languages, and recognize gestures such as a handshake or pointing. It faced a person when approached or spoken to.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_001"
+      ],
+      "caveats": [
+        "All interaction capabilities are company-described; no independent usability or natural language evaluation found.",
+        "Voice recognition may be limited to pre-programmed commands."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Wikipedia lists continuous operating time of 1 hour for running/walking on a 51.8V lithium-ion battery, with 3 hours to fully charge. Anton Robots lists 40 minutes walking with auto recharge. No long-duration reliability data, MTBF, or maintenance logs are available.",
+      "evidence_level": 1,
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003"
+      ],
+      "caveats": [
+        "Runtime is a spec/claim, not independently measured in continuous operation.",
+        "Conflicting runtime figures (40 min vs 1 hr) across sources."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "ASIMO's 130 cm height was chosen by Honda to operate door knobs and light switches, suited to human-scale environments. It was used indoors in controlled spaces such as museums and events.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ],
+      "caveats": [
+        "No safety certification or injury risk assessment found.",
+        "Not deployed in homes or workplaces."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "ASIMO was never sold commercially. Honda leased units to science museums (e.g., Miraikan, Tokyo), corporate lobbies, and events including World Expo. It never worked a production shift or generated commercial output.",
+      "evidence_level": 2,
+      "source_ids": [
+        "honda-asimo_source_005",
+        "honda-asimo_source_004"
+      ],
+      "caveats": [
+        "Museum leases are named deployments but non-commercial and without output metrics.",
+        "IEEE Spectrum article title indicates a museum job but body text was not available."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "ASIMO is retired and not available for purchase. No public price exists. Anton Robots explicitly states you cannot currently buy Honda ASIMO.",
+      "evidence_level": 0,
+      "source_ids": [
+        "honda-asimo_source_003"
+      ],
+      "caveats": [
+        "Any online claim of a retail price or standard order route should be treated cautiously."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "honda-asimo_evidence_004",
+      "date": null,
+      "title": "2011 specification summary from Anton Robots",
+      "claim": "The 2011 specification listed a 130 cm, 48 kg robot with 57 degrees of freedom, walking autonomy, automatic recharging, a 40-minute walking operating time, and a maximum speed of 9 km/h.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "honda-asimo_source_003"
+      ],
+      "confidence": 0.65,
+      "notes": "Directory summary; conflicts with Wikipedia on weight (48 vs 54 kg) and runtime (40 min vs 1 hr).",
+      "arena_relevance": "Alternative spec set; weight conflict needs resolution.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The 2011 specification listed a 130 cm, 48 kg robot with 57 degrees of freedom, walking autonomy, automatic recharging, a 40-minute walking operating time, and a maximum speed of 9 km/h.",
+      "source_location": "Anton Robots Honda ASIMO overview",
+      "verification_notes": "Anton Robots is a commercial directory, not the manufacturer.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "honda-asimo_evidence_006",
+      "date": "2013-07-08",
+      "title": "ASIMO got new job at museum",
+      "claim": "IEEE Spectrum reported that Honda's ASIMO got a new job at a museum.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "honda-asimo_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Only the headline was available; no body text to verify details.",
+      "arena_relevance": "Weak evidence of a museum deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Honda's ASIMO Gets New Job at Museum",
+      "source_location": "IEEE Spectrum article title",
+      "verification_notes": "Title only; no date/hour details extracted.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "honda-asimo_evidence_007",
+      "date": null,
+      "title": "2011 final ASIMO capabilities",
+      "claim": "The 2011 final version stood 130 cm, weighed 48 kg, ran at 9 km/h, featured 57 degrees of freedom, and could recognize faces and voices, pour drinks, and hop on one leg.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "manipulation_dexterity",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "honda-asimo_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Trade/company profile; not an official Honda spec sheet.",
+      "arena_relevance": "Summarizes final version capabilities.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The 2011 final version stood 130 cm, weighed 48 kg, ran at 9 km/h, featured 57 degrees of freedom, and could recognize faces and voices, pour drinks, and hop on one leg.",
+      "source_location": "Hybrid Electronics Honda Robotics profile, ASIMO section",
+      "verification_notes": "Secondary source with technical detail; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "honda-asimo_evidence_008",
+      "date": null,
+      "title": "ASIMO never sold, leased to museums and events",
+      "claim": "ASIMO was never sold — Honda leased units to museums and events and used it as a research and brand platform.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "honda-asimo_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary profile; consistent with Anton Robots and retirement.",
+      "arena_relevance": "Clarifies ASIMO was not a commercial product.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "ASIMO was never sold — Honda leased units to museums and events and used it as a research and brand platform.",
+      "source_location": "Hybrid Electronics Honda Robotics profile, ASIMO section",
+      "verification_notes": "No specific lease counts or metrics provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "honda-asimo_evidence_009",
+      "date": null,
+      "title": "2011 ASIMO mobility demonstrations",
+      "claim": "The 2011 ASIMO could hop, run, walk backwards, change direction mid-stride, and recover from unexpected pushes.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "honda-asimo_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Media summary of public demos; push recovery referenced by video title too.",
+      "arena_relevance": "Historical benchmark for humanoid dynamic balance.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The 2011 ASIMO could hop, run, walk backwards, change direction mid-stride, and recover from unexpected pushes — a demonstration envelope that remained the industry reference for years.",
+      "source_location": "Hybrid Electronics Honda Robotics profile, balance control section",
+      "verification_notes": "No independent biomechanical data; but demos were public.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "honda-asimo_evidence_010",
+      "date": null,
+      "title": "Honda humanoid actuators",
+      "claim": "Honda humanoids use electric brushless DC (BLDC) actuators paired with harmonic-drive reducers throughout — no hydraulics.",
+      "category": [
+        "actuators",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "honda-asimo_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary technical description.",
+      "arena_relevance": "Informs actuator architecture for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Honda humanoids use electric brushless DC (BLDC) actuators paired with harmonic-drive reducers throughout — no hydraulics.",
+      "source_location": "Hybrid Electronics Honda Robotics profile, actuators section",
+      "verification_notes": "Specific torque or power per actuator not disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "honda-asimo_deployment_001",
+      "customer_or_partner": "Miraikan (National Museum of Emerging Science and Innovation), Tokyo; various museums, corporate lobbies, and events including World Expo",
+      "site_or_context": "Public demonstrations and museum displays",
+      "task": "Technology demonstrations, human-robot interaction showcases",
+      "start_date": "2000",
+      "end_date": "2022",
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "honda-asimo_source_005",
+        "honda-asimo_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "ASIMO was leased, not sold; leases were non-commercial.",
+        "No lease counts, operating hours, or demonstration metrics published.",
+        "IEEE Spectrum source only provides a title, not details."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "honda-asimo_demo_001",
+      "title": "Honda ASIMO Humanoid Robot",
+      "date": "2012-10-29",
+      "observed_capabilities": [
+        "Video title only: Honda ASIMO Humanoid Robot"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "honda-asimo_source_006"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; content cannot be described beyond the title."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "YouTube title: Honda ASIMO Humanoid Robot",
+          "verification_notes": "Title only."
+        }
+      ]
+    },
+    {
+      "id": "honda-asimo_demo_002",
+      "title": "Honda unveils all-new ASIMO humanoid robot",
+      "date": "2014-10-29",
+      "observed_capabilities": [
+        "Video title only: Honda unveils all-new ASIMO humanoid robot"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "honda-asimo_source_007"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "YouTube title: Honda unveils all-new ASIMO humanoid robot",
+          "verification_notes": "Title only."
+        }
+      ]
+    },
+    {
+      "id": "honda-asimo_demo_003",
+      "title": "Honda ASIMO - Push Recovery Demonstration",
+      "date": "2026-03-01",
+      "observed_capabilities": [
+        "Video title only: Push Recovery Demonstration"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "honda-asimo_source_008"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; push recovery content not independently verified."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "YouTube title: Honda ASIMO - Push Recovery Demonstration",
+          "verification_notes": "Title only."
+        }
+      ]
+    },
+    {
+      "id": "honda-asimo_demo_004",
+      "title": "Newest Honda ASIMO Robot Moves Like A Human | Mashable",
+      "date": "2014-10-29",
+      "observed_capabilities": [
+        "Video title only: Newest Honda ASIMO Robot Moves Like A Human"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "honda-asimo_source_009"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "YouTube title: Newest Honda ASIMO Robot Moves Like A Human | Mashable",
+          "verification_notes": "Title only."
+        }
+      ]
+    },
+    {
+      "id": "honda-asimo_demo_005",
+      "title": "Honda ASIMO 2016 NEW complete SHOW HD",
+      "date": "2016-10-29",
+      "observed_capabilities": [
+        "Video title only: Honda ASIMO 2016 NEW complete SHOW HD"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "honda-asimo_source_010"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; likely a public show recording but content unknown."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "YouTube title: Honda ASIMO 2016 NEW complete SHOW HD",
+          "verification_notes": "Title only."
+        }
+      ]
+    },
+    {
+      "id": "honda-asimo_demo_006",
+      "title": "Honda ASIMO Robot 🤖 | Smart Humanoid Technology Explained",
+      "date": "2026-05-29",
+      "observed_capabilities": [
+        "Video title only: Smart Humanoid Technology Explained"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "honda-asimo_source_011"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; may be a retrospective explainer, not a live demo."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "YouTube title: Honda ASIMO Robot 🤖 | Smart Humanoid Technology Explained",
+          "verification_notes": "Title only."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "ASIMO is retired and not for sale. There is no public price, purchase path, lease offer, or current order route.",
+      "impact_on_arena_scoring": "Accessibility/value remains at minimal evidence."
+    },
+    {
+      "topic": "Weight and runtime conflicts",
+      "description": "Sources conflict on ASIMO's weight (54 kg vs 48 kg) and runtime (1 hour vs 40 minutes). No official Honda spec sheet is available in the reviewed sources to resolve the conflict.",
+      "impact_on_arena_scoring": "Spec confidence is reduced; do not use one figure as definitive without manufacturer confirmation."
+    },
+    {
+      "topic": "Payload",
+      "description": "Hybrid Electronics lists ~1 kg payload, while Anton Robots says payload not publicly specified. No official payload figure identified.",
+      "impact_on_arena_scoring": "Do not credit a specific payload without an official source."
+    },
+    {
+      "topic": "Autonomy and teleoperation",
+      "description": "ASIMO demonstrated autonomous navigation in controlled indoor environments with pre-loaded maps and floor markings. However, no independent audit, intervention logs, or long-duration autonomous task execution data are available. For YouTube videos, no transcript was available to assess autonomy or teleoperation.",
+      "impact_on_arena_scoring": "Credit mobility and perception, but keep autonomy confidence moderate and do not infer full autonomy from titles."
+    },
+    {
+      "topic": "Commercial deployment metrics",
+      "description": "ASIMO was leased to museums and events but never sold and never performed commercial work. No output, hours, or economic impact data exist.",
+      "impact_on_arena_scoring": "Deployment/commercial proof is weak; ASIMO should not be counted as a commercial deployment."
+    },
+    {
+      "topic": "Independent verification",
+      "description": "All cited capabilities and specs come from Wikipedia, directories, a media headline, and a secondary technical profile. No independent benchmark, peer-reviewed paper, or official Honda press release was included.",
+      "impact_on_arena_scoring": "Confidence should be limited to medium at best; manual human review required."
+    }
+  ],
+  "source_ids": [
+    "honda-asimo_source_001",
+    "honda-asimo_source_003",
+    "honda-asimo_source_004",
+    "honda-asimo_source_005",
+    "honda-asimo_source_006",
+    "honda-asimo_source_007",
+    "honda-asimo_source_008",
+    "honda-asimo_source_009",
+    "honda-asimo_source_010",
+    "honda-asimo_source_011"
+  ],
+  "sources": [
+    {
+      "id": "honda-asimo_source_001",
+      "title": "ASIMO - Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ASIMO",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Tertiary source; specs and history widely cited but not original manufacturer data."
+    },
+    {
+      "id": "honda-asimo_source_003",
+      "title": "Honda ASIMO - Price, Specs & Availability | Anton Robots",
+      "publisher": "Anton Robots",
+      "url": "https://antonrobots.com/honda-asimo/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Commercial directory; provides spec summary and availability caveats but not primary."
+    },
+    {
+      "id": "honda-asimo_source_004",
+      "title": "Honda's ASIMO Gets New Job at Museum",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/honda-asimo-humanoid-robot-gets-new-job-at-museum",
+      "date_published": "2013-07-08",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable outlet but only headline available in review; body not extracted."
+    },
+    {
+      "id": "honda-asimo_source_005",
+      "title": "Honda Robotics | ASIMO Profile, E2-DR Specs & Component",
+      "publisher": "Hybrid Electronics",
+      "url": "https://hybridelectronics.com/robotics/honda",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Detailed trade/company profile; not official Honda source."
+    },
+    {
+      "id": "honda-asimo_source_006",
+      "title": "Honda ASIMO Humanoid Robot",
+      "publisher": "YOUCAR",
+      "url": "https://www.youtube.com/watch?v=1V9XUMCPGF8",
+      "date_published": "2012-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only, no transcript."
+    },
+    {
+      "id": "honda-asimo_source_007",
+      "title": "Honda unveils all-new ASIMO humanoid robot",
+      "publisher": "Onlooker UK",
+      "url": "https://www.youtube.com/watch?v=SWjh4E078bc",
+      "date_published": "2014-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only."
+    },
+    {
+      "id": "honda-asimo_source_008",
+      "title": "Honda ASIMO - Push Recovery Demonstration",
+      "publisher": "Robot Repository",
+      "url": "https://www.youtube.com/watch?v=GSFgxp-GYt8",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only, no transcript."
+    },
+    {
+      "id": "honda-asimo_source_009",
+      "title": "Newest Honda ASIMO Robot Moves Like A Human | Mashable",
+      "publisher": "Mashable",
+      "url": "https://www.youtube.com/watch?v=tVtu6oyZzXU",
+      "date_published": "2014-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Media outlet video; title only."
+    },
+    {
+      "id": "honda-asimo_source_010",
+      "title": "Honda ASIMO 2016 NEW complete SHOW HD",
+      "publisher": "Guiovanny Suarez Rivera",
+      "url": "https://www.youtube.com/watch?v=u0YZhJdoT9Y",
+      "date_published": "2016-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only."
+    },
+    {
+      "id": "honda-asimo_source_011",
+      "title": "Honda ASIMO Robot 🤖 | Smart Humanoid Technology Explained",
+      "publisher": "AUTO VISION",
+      "url": "https://www.youtube.com/watch?v=VP0mLY-lRN8",
+      "date_published": "2026-05-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube video; title only; likely explainer, not demo."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "ASIMO is a historic research humanoid with strong bipedal mobility claims (running 9 km/h, hopping, push recovery) and human-interaction demos, but it is retired, never sold, and lacks independent benchmarks or commercial deployment proof. Evidence is mostly secondary and video titles only.",
+    "strongest_positive_evidence": [
+      "Wikipedia documents 2011 ASIMO with walking, running 9 km/h, 57 DoF, and 1-hour runtime.",
+      "Hybrid Electronics describes 2011 ASIMO abilities including hopping, push recovery, and pouring drinks.",
+      "Museum leases (e.g., Miraikan) are documented but non-commercial."
+    ],
+    "weakest_or_missing_evidence": [
+      "No official Honda product page or press release in the reviewed sources.",
+      "No independent benchmark or autonomy audit.",
+      "No commercial customers or output metrics.",
+      "Weight and runtime conflicts across sources.",
+      "YouTube videos have no transcripts; content cannot be credited."
+    ],
+    "conflicting_claims": [
+      "Weight: 54 kg (Wikipedia lead) vs 48 kg (Wikipedia 2011 table, Anton Robots, Hybrid Electronics).",
+      "Runtime: 1 hour (Wikipedia) vs 40 minutes walking (Anton Robots).",
+      "Payload: ~1 kg (Hybrid Electronics) vs not publicly specified (Anton Robots)."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit ASIMO with current commercial availability or any price.",
+      "Do not claim independent verification of push recovery or hopping based solely on video titles.",
+      "Do not treat museum leases as commercial deployments.",
+      "Do not combine specs from different ASIMO versions without noting the version."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [],
+    "currentness_notes": "ASIMO was retired in 2018 with a final appearance in 2022. Hybrid Electronics mentions a Honda next-generation humanoid roadmap from 2026, but no replacement robot ID is available in the reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "ASIMO weight is definitively 54 kg",
+      "reason": "Conflicting sources; Wikipedia lead says 54 kg while 2011 table and secondary sources say 48 kg.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    },
+    {
+      "claim": "ASIMO runtime is definitively 1 hour",
+      "reason": "Anton Robots lists 40 minutes walking with auto recharge; conflict not resolved.",
+      "source_ids": [
+        "honda-asimo_source_001",
+        "honda-asimo_source_003"
+      ]
+    },
+    {
+      "claim": "ASIMO has a public payload specification of 0 kg",
+      "reason": "Anton Robots says payload not publicly specified; Hybrid Electronics lists ~1 kg but not official.",
+      "source_ids": [
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    },
+    {
+      "claim": "ASIMO is currently available for lease or purchase",
+      "reason": "ASIMO is retired and not manufactured; directories state no current order route.",
+      "source_ids": [
+        "honda-asimo_source_003",
+        "honda-asimo_source_005"
+      ]
+    },
+    {
+      "claim": "ASIMO demonstrated full autonomous task execution in unstructured environments",
+      "reason": "Autonomy was for indoor controlled spaces with pre-loaded maps and floor markings; no unstructured long-duration task evidence.",
+      "source_ids": [
+        "honda-asimo_source_001"
+      ]
+    },
+    {
+      "claim": "YouTube video titles can describe specific ASIMO capabilities beyond the title",
+      "reason": "The source text provided only titles; no transcripts were available. Content must not be described beyond titles.",
+      "source_ids": [
+        "honda-asimo_source_006",
+        "honda-asimo_source_007",
+        "honda-asimo_source_008",
+        "honda-asimo_source_009",
+        "honda-asimo_source_010",
+        "honda-asimo_source_011"
+      ]
+    },
+    {
+      "claim": "Honda's 2026 next-generation humanoid roadmap is ASIMO",
+      "reason": "The roadmap is a separate future program, not the retired ASIMO.",
+      "source_ids": [
+        "honda-asimo_source_005"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Honda ASIMO is a retired bipedal research humanoid, first unveiled in 2000 and final active in 2022. The 2011 final version is reported as 130 cm tall, with 57 DoF, walking at 2.7 km/h and running at 9 km/h, powered by a 51.8V lithium-ion battery. Weight is conflicting at 54 kg or 48 kg. ASIMO demonstrated walking, running, hopping, stair climbing, push recovery, face/voice recognition, and serving drinks, but all evidence is from secondary sources or video titles; no official Honda spec sheet, independent benchmark, or commercial deployment is available. It was never sold, only leased to museums and events, and is not currently purchasable.",
+    "strongest_evidence": [
+      "Wikipedia documents 2011 specs: 130 cm, 57 DoF, 1-hour runtime, 9 km/h running.",
+      "Hybrid Electronics confirms 2011 final version and leased-to-museum deployment.",
+      "Multiple YouTube videos titled with ASIMO demos exist, but content is unverified."
+    ],
+    "weakest_evidence": [
+      "No official Honda source used.",
+      "No transcript for any YouTube video; titles only.",
+      "Conflicting weight (54 vs 48 kg) and runtime (1 hr vs 40 min).",
+      "No independent autonomy or mobility benchmark.",
+      "Only one media headline about museum job without body text."
+    ],
+    "known_do_not_credit": [
+      "ASIMO as a commercially available product or current lease offer.",
+      "Specific push recovery, hopping, or serve-drink performance from YouTube titles.",
+      "Any payload figure without official confirmation.",
+      "ASIMO as a commercial deployment success; it was a research/demo platform."
+    ],
+    "recommended_confidence": "low_to_medium"
+  }
+}

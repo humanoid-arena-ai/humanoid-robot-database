@@ -1,0 +1,447 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "sanctuary-phoenix",
+    "name": "Sanctuary Phoenix",
+    "company_id": "sanctuary-ai",
+    "company_name": "Sanctuary AI",
+    "country": "Canada",
+    "generation": null,
+    "first_announced_date": "2023-03-08",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as pilot based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "5 ft 7 in",
+      "value": 5.58,
+      "unit": "ft",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "155 lb",
+      "value": 155,
+      "unit": "lb",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "55 lb maximum payload",
+      "value": 55,
+      "unit": "lb",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "3 mph maximum speed",
+      "value": 3,
+      "unit": "mph",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Industry-leading robotic hands with 20 total degrees of freedom and proprietary haptic technology, per Sanctuary AI.",
+      "degrees_of_freedom": 20,
+      "force_feedback": "proprietary haptic technology claimed",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": null,
+      "source_ids": []
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.sanctuary.ai/blog/sanctuary-ai-unveils-phoenix-a-humanoid-general-purpose-robot-designed-for-work",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 3,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "evidence_level": 0,
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "sanctuary-phoenix_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "Official Phoenix launch specs and positioning.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official Phoenix launch specs and positioning.",
+      "source_location": "Sanctuary AI Unveils Phoenix product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "sanctuary-phoenix_evidence_002",
+      "date": null,
+      "title": "Deployment, demo, or independent context",
+      "claim": "Retail pilot under human guidance/teleoperation.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "sanctuary-phoenix_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Use with caveats from source audit.",
+      "arena_relevance": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Retail pilot under human guidance/teleoperation.",
+      "source_location": "Humanoid robot takes a retail job",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "sanctuary-phoenix_deployment_001",
+      "customer_or_partner": null,
+      "site_or_context": null,
+      "task": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+      "start_date": "2023-03-08",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "sanctuary-phoenix_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Metrics are limited to what is explicitly stated in sources."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "sanctuary-phoenix_demo_001",
+      "title": "Sanctuary Phoenix public demo/context",
+      "date": "2023-03-08",
+      "observed_capabilities": [
+        "Retail pilot evidence exists but autonomy is human-in-the-loop."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "sanctuary-phoenix_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "sanctuary-phoenix_source_001",
+        "sanctuary-phoenix_source_002"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "sanctuary-phoenix_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 1,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+    "strongest_evidence": [
+      "Official Phoenix launch specs and positioning.",
+      "Retail pilot under human guidance/teleoperation."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "Teleoperation/editing details often unclear."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "sanctuary-phoenix_source_001",
+    "sanctuary-phoenix_source_002"
+  ],
+  "sources": [
+    {
+      "id": "sanctuary-phoenix_source_001",
+      "title": "Sanctuary AI Unveils Phoenix",
+      "publisher": "Sanctuary AI",
+      "url": "https://www.sanctuary.ai/blog/sanctuary-ai-unveils-phoenix-a-humanoid-general-purpose-robot-designed-for-work",
+      "date_published": "2023-05-16",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official Phoenix launch specs and positioning."
+    },
+    {
+      "id": "sanctuary-phoenix_source_002",
+      "title": "Humanoid robot takes a retail job",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/software/2023/03/08/humanoid-robot-takes-a-turn-as-a-marks-store-clerk/555192",
+      "date_published": "2023-03-08",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Retail pilot under human guidance/teleoperation."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Retail pilot evidence exists but autonomy is human-in-the-loop.",
+    "strongest_positive_evidence": [
+      "Official Phoenix launch specs and positioning.",
+      "Retail pilot under human guidance/teleoperation."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Missing intervention/failure-rate data"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

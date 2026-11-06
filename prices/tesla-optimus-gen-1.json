@@ -1,0 +1,28 @@
+{
+  "robotId": "tesla-optimus-gen-1",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "Optimus Gen 1 was a 2022 prototype and was never sold. No Optimus version is on sale to the public yet.",
+  "configurations": [],
+  "sellers": [],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy Tesla Optimus Gen 1?",
+      "a": "No. Gen 1 was a prototype shown at Tesla AI Day 2022 and was replaced by later versions.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Optimus_(robot)"
+    },
+    {
+      "q": "How much will Tesla Optimus cost?",
+      "a": "Elon Musk has said Optimus will cost between $20,000 and $30,000 and that Tesla plans to sell it to the public by the end of 2027. This applies to future production versions, not Gen 1.",
+      "sourceUrl": "https://www.entrepreneur.com/business-news/elon-musk-tesla-sell-optimus-humanoid-robots"
+    },
+    {
+      "q": "Is any Tesla Optimus for sale now?",
+      "a": "No. As of September 2026 Tesla had not unveiled Optimus Gen 3 and was still installing its first Optimus production lines in Fremont, with no announced external sales.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Optimus_(robot)"
+    }
+  ],
+  "notes": "Superseded. Current Optimus situation: as of September 2026 Tesla had not unveiled Optimus Gen 3 and was building production lines in Fremont; Musk targets public sales by end of 2027 at $20,000-$30,000 (https://en.wikipedia.org/wiki/Optimus_(robot)). See the commerce file for tesla-optimus-gen-2-v2-5 for current Optimus pricing targets."
+}

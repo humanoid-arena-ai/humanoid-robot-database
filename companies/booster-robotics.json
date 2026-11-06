@@ -1,0 +1,14 @@
+{
+  "id": "booster-robotics",
+  "name": "Booster Robotics",
+  "country": "China",
+  "headquarters": "Beijing, China",
+  "founded": 2023,
+  "website": "https://www.booster.tech/",
+  "summary": "Booster Robotics is a Chinese embodied AI startup led by CEO Cheng Hao. It makes developer humanoids (T1, T2, K1) widely used in robot soccer and research.",
+  "funding": "Series A+ of over 100 million yuan (about $13.9 million) in July 2025, backed by Beijing robot and AI industry funds (Caixin).",
+  "sources": [
+    { "id": "s1", "title": "China's Booster Robotics Lands New Funding as it Hits a Winning Streak", "url": "https://www.caixinglobal.com/2025-07-25/chinas-booster-robotics-lands-new-funding-as-it-hits-a-winning-streak-102344904.html", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Booster Robotics product overview", "url": "https://www.booster.tech/booster-t1/", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "booster-robotics",
+    "name": "Booster Robotics",
+    "country": "China",
+    "website": "https://www.booster.tech/",
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "booster-t1",
+    "booster-k1",
+    "booster-t2"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Series A+ of over 100 million yuan (about $13.9 million) in July 2025, backed by Beijing robot and AI industry funds (Caixin)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "booster-robotics_source_001",
+      "title": "China's Booster Robotics Lands New Funding as it Hits a Winning Streak",
+      "publisher": "caixinglobal.com",
+      "url": "https://www.caixinglobal.com/2025-07-25/chinas-booster-robotics-lands-new-funding-as-it-hits-a-winning-streak-102344904.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "booster-robotics_source_002",
+      "title": "Booster Robotics product overview",
+      "publisher": "booster.tech",
+      "url": "https://www.booster.tech/booster-t1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

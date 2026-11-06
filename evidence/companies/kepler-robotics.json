@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "kepler-robotics",
+    "name": "Kepler Robotics",
+    "country": "China",
+    "website": null,
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "kepler-k2"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Hangzhou Kelin bought 51% for about 722 million yuan in May 2026, valuing Kepler below an earlier 1.06 billion yuan valuation (BigGo Finance)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "kepler-robotics_source_001",
+      "title": "Kepler Robotics showcases K2 Bumblebee humanoid at ICRA 2025",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/kepler-robotics-showcases-k2-bumblebee-icra-2025/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "kepler-robotics_source_002",
+      "title": "Kepler Robot Sells to Hangzhou Kelin at approximately $106 Million Valuation",
+      "publisher": "finance.biggo.com",
+      "url": "https://finance.biggo.com/news/b7nCTZ4BX0tZvRTvipmH",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

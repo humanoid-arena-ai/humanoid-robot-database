@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "spirit-ai",
+    "name": "Spirit AI",
+    "country": "China",
+    "website": null,
+    "founded": 2024,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "spirit-ai-moz1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Nearly 2 billion yuan across two back-to-back rounds announced February 2026; investors include Yunfeng Capital, HongShan, CATL, JD.com, Huawei and Xiaomi (Gasgoo)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "spirit-ai_source_001",
+      "title": "Spirit AI secures nearly 2 billion yuan in back-to-back funding rounds",
+      "publisher": "autonews.gasgoo.com",
+      "url": "https://autonews.gasgoo.com/articles/icv/spirit-ai-secures-nearly-2-billion-yuan-in-back-to-back-funding-rounds-as-embodied-intelligence-race-heats-up-2026146686038994944",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

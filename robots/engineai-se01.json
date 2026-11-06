@@ -1,0 +1,40 @@
+{
+  "id": "engineai-se01",
+  "name": "EngineAI SE01",
+  "aliases": ["SE01", "SE-01"],
+  "companyId": "engineai",
+  "companyName": "EngineAI",
+  "country": "China",
+  "announced": "2024-10-24",
+  "status": "prototype",
+  "category": "general",
+  "summary": "SE01 is EngineAI's first full-size humanoid, 170 cm tall with 32 DoF. The company presented it as the first humanoid with a natural, human-like walking gait, trained with an end-to-end neural network. It is mainly a technology showcase that led to the later PM01 and T800.",
+  "specs": {
+    "height_cm": { "value": 170, "original": "Height: 170cm", "sourceId": "s1" },
+    "weight_kg": { "value": 55, "original": "55 kg", "sourceId": "s3" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 32, "original": "Total DOF: 32", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 2, "original": "Walking Speed: 2m/s", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": "Three sets of stereo cameras.",
+  "compute": "Dual NVIDIA and Intel processors.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Joint torque up to 330 N·m, per launch coverage.",
+    "Gait is trained with an end-to-end neural network to take long, human-like strides."
+  ],
+  "caveats": [
+    "No official price; reseller prices online vary and were not verified.",
+    "Most public footage is company-produced walking demos."
+  ],
+  "sources": [
+    { "id": "s1", "title": "EngineAI official site", "publisher": "EngineAI", "url": "https://en.engineai.com.cn/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "EngineAI Unveils SE01, an Impressive Robot the Walks Like a Human", "publisher": "Maginative", "url": "https://www.maginative.com/article/engineai-unveils-se01-an-impressive-robot-the-walks-like-a-human/", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Engine AI", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Engine_AI", "accessed": "2026-10-14" }
+  ]
+}

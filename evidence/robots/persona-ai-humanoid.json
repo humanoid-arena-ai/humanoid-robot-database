@@ -1,0 +1,841 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "persona-ai-humanoid",
+    "name": "Persona AI Humanoid",
+    "company_id": "persona-ai",
+    "company_name": "Persona AI",
+    "country": "United States",
+    "generation": "Gen 1 (first-generation industrial humanoid)",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Persona AI is developing a Gen 1 industrial humanoid for shipyard welding and heavy industry. No official height, weight, payload, runtime, or speed have been published. Welding demos so far are teleoperated or not disclosed as autonomous. Partnerships with HD Hyundai, ABS, and SSE Steel are agreements/pilots, not confirmed deployments.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "shipyard welding",
+      "fabrication",
+      "inspection",
+      "maintenance",
+      "construction",
+      "energy infrastructure"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No height published in reviewed numbered sources.",
+      "source_ids": []
+    },
+    "weight": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No weight published in reviewed numbered sources.",
+      "source_ids": []
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload published in reviewed numbered sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime or endurance figure published.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No battery capacity or chemistry published.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "No total DoF published in any reviewed source.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed or locomotion specification published.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "Persona AI website states the modular platform is compatible with industrial tools. ABS MOU notes the robotic hand technology is partly based on NASA's robotic hand technology. Podcast show notes state the robotic hand allows flexibility in using existing tools.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "persona-ai-humanoid_source_002",
+        "persona-ai-humanoid_source_004",
+        "persona-ai-humanoid_source_005"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": "No onboard compute specifications published.",
+      "source_ids": []
+    },
+    "actuators": {
+      "description": "No actuator specifications published. Persona AI describes a modular industrial robot platform designed to integrate with standard industrial tools.",
+      "source_ids": [
+        "persona-ai-humanoid_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No public price, purchase path, or waitlist found. Persona AI mentions a robotics-as-a-service (RaaS) business model but provides no pricing or availability.",
+      "source_ids": [
+        "persona-ai-humanoid_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Persona AI product page claims strong and capable of fine dexterity and a modular platform compatible with industrial tools. ABS MOU says technology is partly based on NASA's robotic hand technology. An official video title indicates Gen 1 welding with 'Hand on the Torch'. A directory headline reports a successful teleoperated welding demo.",
+      "evidence_level": 2,
+      "source_ids": [
+        "persona-ai-humanoid_source_002",
+        "persona-ai-humanoid_source_004",
+        "persona-ai-humanoid_source_005",
+        "persona-ai-humanoid_source_006",
+        "persona-ai-humanoid_source_009"
+      ],
+      "caveats": [
+        "No video transcript or timestamp review; teleoperation status for official welding demo is not disclosed.",
+        "No hand DoF, grip strength, or dexterity metrics published.",
+        "Directory headline is secondary, not primary evidence."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No evidence of autonomous task execution. Persona AI website link text indicates teleoperation precedes autonomy. A directory headline reports a teleoperated welding demo. No autonomous operation claims or demos found.",
+      "evidence_level": 0,
+      "source_ids": [
+        "persona-ai-humanoid_source_002",
+        "persona-ai-humanoid_source_006"
+      ],
+      "caveats": [
+        "No autonomous task execution demonstrated or claimed.",
+        "Teleoperation status for official demo not disclosed, but reported teleoperated welding demo indicates current mode."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "A directory headline reports Persona AI 'Takes Gen 1 Humanoid for a Stroll', suggesting walking, but no video evidence or locomotion specs are available. No walking speed or balance data published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_006"
+      ],
+      "caveats": [
+        "Headline is from a directory, not an official or primary source.",
+        "No walking speed, stability, or whole-body control metrics found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "No sensor specifications or perception demonstrations found in reviewed sources. Podcast mentions AI progress in processing and vision, but no robot-specific evidence.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No perception specs or autonomous vision-guided tasks published."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Persona AI website describes humanoids as collaborative teammates that work alongside supervisors and crews, and says they are designed to assist rather than replace skilled labor. No interactive demos or HRI metrics found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_002"
+      ],
+      "caveats": [
+        "No demonstrated conversational, collaborative, or safety-rated interaction evidence."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery, duty cycle, or reliability data published. Persona AI website claims 'machine level endurance' but provides no figures or test results.",
+      "evidence_level": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_002"
+      ],
+      "caveats": [
+        "No endurance or reliability metrics found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Persona AI says robots are designed for real work environments such as shipyards, construction sites, and energy infrastructure. ABS MOU notes humanoids can move and operate in spaces designed for humans. No height, weight, or safety certification for human fit published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_002",
+        "persona-ai-humanoid_source_005"
+      ],
+      "caveats": [
+        "No physical dimensions or safety certifications found.",
+        "Humanoid form factor implied but not explicitly specified in primary sources."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Multiple early-stage partnerships announced: HD Hyundai agreement with initial delivery expected within 18 months; ABS MOU; Louisiana/SSE Steel pilot with customer quote. No actual deployment or operational metrics found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "persona-ai-humanoid_source_003",
+        "persona-ai-humanoid_source_005",
+        "persona-ai-humanoid_source_007",
+        "persona-ai-humanoid_source_008"
+      ],
+      "caveats": [
+        "No robots delivered to customers; all are agreements, MOUs, or pilots.",
+        "HD Hyundai delivery timeline is company projection, not confirmed by Hyundai in primary source.",
+        "POSCO partnership appears only in directory summary."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No price or purchase path. Persona AI mentions RaaS model to eliminate upfront capital investments for clients, but no pricing or RaaS terms are published.",
+      "evidence_level": 0,
+      "source_ids": [
+        "persona-ai-humanoid_source_003"
+      ],
+      "caveats": [
+        "Not for sale; no RaaS terms or availability disclosed."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "persona-ai-humanoid_evidence_001",
+      "date": null,
+      "title": "Persona AI official homepage description",
+      "claim": "Persona AI develops industrial humanoid robots for real work environments such as shipyards, construction sites, and energy infrastructure.",
+      "category": [
+        "specs",
+        "human_environment_fit",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page claim; not independently verified.",
+      "arena_relevance": "Defines intended use cases and industrial focus.",
+      "claim_type": "spec",
+      "supporting_excerpt": "At Persona AI, we develop industrial humanoid robots designed for real work environments such as shipyards, construction sites, and energy infrastructure.",
+      "source_location": "persona.ai homepage, main text",
+      "verification_notes": "Company website; no technical specifications.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_002",
+      "date": null,
+      "title": "Persona AI modular platform claim",
+      "claim": "The modular Persona AI humanoid platform integrates with standard industrial tools and supports welding, grinding, inspection, material handling, and equipment maintenance.",
+      "category": [
+        "manipulation_dexterity",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Official product page claim; no demonstrated tool use in video.",
+      "arena_relevance": "Basis for manipulation and tool-use credibility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The modular design allows the platform to integrate with standard industrial tools and adapt to different workflows, making it suitable for a wide range of use cases where precision, durability, and operational flexibility are critical.",
+      "source_location": "persona.ai homepage, modular platform section",
+      "verification_notes": "Company claim; no independent validation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_003",
+      "date": "2025-05-14",
+      "title": "HD Hyundai agreement",
+      "claim": "Persona AI has signed an agreement with HD Hyundai to deploy humanoid robots into shipyards, with initial delivery expected within 18 months.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Company press release; not confirmed by HD Hyundai in this source.",
+      "arena_relevance": "Shows named partner intent but not deployment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Persona AI has already signed an agreement with HD Hyundai, the global leader in shipbuilding, to deploy humanoid robots into shipyards, with initial delivery expected within 18 months.",
+      "source_location": "PR Newswire press release, funding announcement",
+      "verification_notes": "Tier 1 company claim; delivery timeline is projection.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_004",
+      "date": "2025-05-14",
+      "title": "RaaS business model",
+      "claim": "Persona AI uses a robotics-as-a-service (RaaS) business model to eliminate upfront capital investments for clients.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Company press release; no pricing or terms disclosed.",
+      "arena_relevance": "Indicates B2B commercial model but not price.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The robotics-as-a-service (RaaS) business model eliminates the need for large upfront capital investments from clients.",
+      "source_location": "PR Newswire press release, funding announcement",
+      "verification_notes": "No actual price or service contract details.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_005",
+      "date": "2025-12-04",
+      "title": "Persona AI rejects home market",
+      "claim": "Persona AI is not pursuing the home market in the short term; it sees unresolved challenges there.",
+      "category": [
+        "autonomy_task_execution",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_004"
+      ],
+      "confidence": 0.8,
+      "notes": "Direct quote from CEO Nic Radford in ABS podcast.",
+      "arena_relevance": "Clarifies focus on industrial vs consumer.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The antithesis of our strategy would be the home. We are not big believers that in the short term, the home is a credible market.",
+      "source_location": "Setting Course podcast transcript, Nic Radford statement",
+      "verification_notes": "Podcast interview; company perspective.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "human_environment_fit"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_006",
+      "date": "2025-12-04",
+      "title": "Robotic hand flexibility",
+      "claim": "Persona AI's robotic hand allows flexibility in using existing tools.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Podcast show notes key takeaway; not a technical spec.",
+      "arena_relevance": "Supports tool compatibility claim.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robotic hand allows for flexibility in using existing tools.",
+      "source_location": "Setting Course podcast show notes, Key Takeaways",
+      "verification_notes": "Summary by ABS, not direct quote.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_007",
+      "date": "2025-09-24",
+      "title": "ABS MOU on shipyard humanoids",
+      "claim": "ABS and Persona AI signed an MOU to bring humanoid robots into shipyards; the partnership will adapt Persona AI's robots partly based on NASA's robotic hand technology for shipyard tasks.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_005"
+      ],
+      "confidence": 0.75,
+      "notes": "Reputable media reporting official MOU.",
+      "arena_relevance": "Shows industry partnership and NASA heritage.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The partnership will adapt Persona AI’s humanoid robots, partly based on NASA’s robotic hand technology, for shipyard tasks.",
+      "source_location": "Container News article, partnership description",
+      "verification_notes": "Media summary of official announcement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_008",
+      "date": "2026-01-22",
+      "title": "Louisiana and SSE Steel pilot",
+      "claim": "The State of Louisiana and Persona AI launched a pilot at SSE Steel Fabrication; SSE Steel COO says the collaboration explores emerging technologies on the shop floor.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "persona-ai-humanoid_source_008"
+      ],
+      "confidence": 0.82,
+      "notes": "Named customer quote in official press release; still a pilot, no deployment metrics.",
+      "arena_relevance": "Customer validation of pilot concept.",
+      "claim_type": "customer_claim",
+      "supporting_excerpt": "This collaboration allows us to explore emerging technologies where they matter most, on the shop floor, not in a lab,\" said Justin Airhart, Chief Operations Officer of SSE Steel Fabrication.",
+      "source_location": "Yahoo Finance / GlobeNewswire press release, SSE Steel quote",
+      "verification_notes": "Tier 3 because customer quote confirms pilot; no robot deployment or operational data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_010",
+      "date": "2026-06-03",
+      "title": "Gen 1 stroll headline",
+      "claim": "A directory headline reports Persona AI took Gen 1 humanoid for a stroll in Houston heat.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_006"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory headline linking to article; not primary evidence.",
+      "arena_relevance": "Suggests walking capability but unverified.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Persona AI Takes Gen 1 Humanoid for a Stroll in the Houston Heat—and It’s Wearing Under Armour",
+      "source_location": "pr.ai thread, article headline",
+      "verification_notes": "Secondary source; no video or article content available.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_011",
+      "date": "2026-08-05",
+      "title": "Teleoperated welding demo headline",
+      "claim": "A directory headline reports Persona AI humanoids touched down in Korea following a successful teleoperated welding demo.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_006"
+      ],
+      "confidence": 0.55,
+      "notes": "Directory headline; indicates teleoperated demo, not autonomous.",
+      "arena_relevance": "Confirms teleoperated welding demo occurred.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Persona AI Humanoids Touch Down in Korea Following Successful Teleoperated Welding Demo",
+      "source_location": "pr.ai thread, article headline",
+      "verification_notes": "Secondary source; no video or article content available.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_012",
+      "date": "2026-02-11",
+      "title": "Directory summary of partnerships",
+      "claim": "Persona AI has partnerships with HD Hyundai Heavy Industries and POSCO International Corp to accelerate heavy industry shift in South Korea.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_007"
+      ],
+      "confidence": 0.5,
+      "notes": "News directory summary; not primary source for POSCO.",
+      "arena_relevance": "Indicates additional named partners.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Through partnerships with HD Hyundai Heavy Industries and POSCO International Corp, it accelerates the shift in South Korea's heavy industry.",
+      "source_location": "Distill Intelligence news directory, company announcement summary",
+      "verification_notes": "Directory aggregation; not independently confirmed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "persona-ai-humanoid_evidence_013",
+      "date": "2026-08-17",
+      "title": "IEEE Spectrum coverage",
+      "claim": "IEEE Spectrum published an article about Persona's bet on humanoid welders in shipyards.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "persona-ai-humanoid_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Reputable media title; full article body not included in evidence pack.",
+      "arena_relevance": "Independent media attention to shipyard welding strategy.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Inside Persona’s Bold Bet On Humanoid Welders In Shipyards",
+      "source_location": "IEEE Spectrum article title",
+      "verification_notes": "Title only; article content not reviewed in this pack.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "persona-ai-humanoid_demo_001",
+      "title": "Hand on the Torch: Gen 1 Welds in a Real Industrial Environment",
+      "date": "2026-07-29",
+      "observed_capabilities": [
+        "welding in a real industrial environment"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "real industrial environment (per video title)",
+      "source_ids": [
+        "persona-ai-humanoid_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript or video content reviewed; only title available.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The video title does not state execution mode; no transcript available.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Welding in real industrial environment per video title",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public specifications",
+      "description": "No height, weight, payload, runtime, battery, walking speed, total DoF, hand DoF, or compute specifications have been published in reviewed sources.",
+      "impact_on_arena_scoring": "All basic spec-based comparisons remain unknown."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "No autonomous task execution has been demonstrated or claimed. One reported demo was teleoperated; the official demo video title does not disclose autonomy.",
+      "impact_on_arena_scoring": "Autonomy should not be credited."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "Partnerships with HD Hyundai, ABS, and SSE Steel are agreements, MOUs, or pilots. No actual customer deployment or operational metrics are available.",
+      "impact_on_arena_scoring": "Commercial proof is very early; do not classify as deployed."
+    },
+    {
+      "topic": "Accessibility",
+      "description": "No price, purchase path, or RaaS terms published. The robot is not available for public purchase.",
+      "impact_on_arena_scoring": "Accessibility/value evidence should remain minimal."
+    },
+    {
+      "topic": "Evidence quality",
+      "description": "Several claims come from company website, press releases, podcast statements, or directory headlines rather than independent technical validation.",
+      "impact_on_arena_scoring": "Confidence in most categories should be low."
+    },
+    {
+      "topic": "Safety",
+      "description": "No safety certifications, force limits, or human-proximity safety data published for the robot.",
+      "impact_on_arena_scoring": "Human-environment fit cannot be fully assessed."
+    }
+  ],
+  "source_ids": [
+    "persona-ai-humanoid_source_001",
+    "persona-ai-humanoid_source_002",
+    "persona-ai-humanoid_source_003",
+    "persona-ai-humanoid_source_004",
+    "persona-ai-humanoid_source_005",
+    "persona-ai-humanoid_source_006",
+    "persona-ai-humanoid_source_007",
+    "persona-ai-humanoid_source_008",
+    "persona-ai-humanoid_source_009"
+  ],
+  "sources": [
+    {
+      "id": "persona-ai-humanoid_source_001",
+      "title": "Inside Persona’s Bold Bet On Humanoid Welders In Shipyards",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "date_published": "2026-08-17",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Full article body not included; only title and comments available in evidence pack."
+    },
+    {
+      "id": "persona-ai-humanoid_source_002",
+      "title": "Industrial Humanoid Robots For Heavy Industry | Persona AI",
+      "publisher": "Persona AI",
+      "url": "https://persona.ai/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official company website; claims not independently verified."
+    },
+    {
+      "id": "persona-ai-humanoid_source_003",
+      "title": "Persona AI Raises $27M Oversubscribed Pre-Seed to Deliver the Future of Humanoid Robotics",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/persona-ai-raises-27m-oversubscribed-pre-seed-to-deliver-the-future-of-humanoid-robotics-302455330.html",
+      "date_published": "2025-05-14",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company press release; funding and partnership claims are company statements."
+    },
+    {
+      "id": "persona-ai-humanoid_source_004",
+      "title": "The Humanoid Robotics Reimagining Shipyards with Persona AI - Setting Course, an ABS Podcast",
+      "publisher": "Buzzsprout",
+      "url": "https://www.buzzsprout.com/2225251/episodes/18295136-the-humanoid-robotics-reimagining-shipyards-with-persona-ai",
+      "date_published": "2025-12-04",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Podcast with transcript and show notes; contains company claims in interview."
+    },
+    {
+      "id": "persona-ai-humanoid_source_005",
+      "title": "ABS, Persona AI bring Humanoid Robots to shipyards",
+      "publisher": "Container News",
+      "url": "https://container-news.com/abs-persona-ai-bring-humanoid-robots-to-shipyards/",
+      "date_published": "2025-09-24",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Industry media reporting official MOU."
+    },
+    {
+      "id": "persona-ai-humanoid_source_006",
+      "title": "Humanoids at Work, Persona AI, Inc., Houston, Texas, USA",
+      "publisher": "Portal of Robotics and Artificial Intelligence",
+      "url": "https://pr.ai/threads/humanoids-at-work-persona-ai-inc-houston-texas-usa.26589/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Forum thread with article headlines; not primary evidence."
+    },
+    {
+      "id": "persona-ai-humanoid_source_007",
+      "title": "Latest Persona AI News & Announcements",
+      "publisher": "Distill Intelligence",
+      "url": "https://www.distillintelligence.com/news/persona-ai",
+      "date_published": "2026-02-11",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "News aggregator; summaries may link to primary sources but not independently verified."
+    },
+    {
+      "id": "persona-ai-humanoid_source_008",
+      "title": "State of Louisiana and Persona AI Launch Humanoid Pilot at SSE Steel Fabrication",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/state-louisiana-persona-ai-launch-200800889.html",
+      "date_published": "2026-01-22",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Paid press release issued via GlobeNewswire; contains customer quote."
+    },
+    {
+      "id": "persona-ai-humanoid_source_009",
+      "title": "Hand on the Torch: Gen 1 Welds in a Real Industrial Environment",
+      "publisher": "YouTube Persona AI",
+      "url": "https://www.youtube.com/watch?v=lDNrnmCj2DM",
+      "date_published": "2026-07-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company YouTube channel; no transcript available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Persona AI Humanoid is a first-generation industrial humanoid targeting shipyard welding and heavy industry. It has no published physical specifications, no autonomous execution evidence, and no actual customer deployment. The strongest evidence is an official demo title indicating welding and multiple early-stage partnership agreements.",
+    "strongest_positive_evidence": [
+      "Official video title 'Hand on the Torch: Gen 1 Welds in a Real Industrial Environment' suggests welding capability.",
+      "HD Hyundai agreement with initial delivery expected within 18 months.",
+      "SSE Steel COO quote confirming shop-floor pilot.",
+      "ABS MOU adapting NASA-derived robotic hand technology for shipyards."
+    ],
+    "weakest_or_missing_evidence": [
+      "No height, weight, payload, runtime, battery, or walking speed published.",
+      "No autonomous task execution; teleoperation is the disclosed route.",
+      "No actual customer deployment or operational metrics.",
+      "No price or RaaS terms."
+    ],
+    "conflicting_claims": [
+      "None identified in reviewed sources."
+    ],
+    "recommended_arena_categories": [
+      "industrial_humanoid",
+      "prototype"
+    ],
+    "do_not_overclaim": [
+      "Do not credit any deployed robots at HD Hyundai, ABS, or SSE Steel; only agreements/pilots.",
+      "Do not credit autonomous welding; teleoperation is the current mode.",
+      "Do not infer specifications from directory headlines or generic statements.",
+      "Do not treat RaaS model as an actual price or availability."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Persona AI Humanoid is the current first-generation industrial humanoid platform as of 2026-10-29. No successor model has been announced in the reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Persona AI has deployed robots to HD Hyundai shipyards",
+      "reason": "Only an agreement with expected delivery within 18 months was announced; no evidence of actual deployment.",
+      "source_ids": [
+        "persona-ai-humanoid_source_003"
+      ]
+    },
+    {
+      "claim": "The robot has specific height, weight, payload, or speed values",
+      "reason": "No official specifications were found in any reviewed source.",
+      "source_ids": []
+    },
+    {
+      "claim": "The welding demo was autonomous",
+      "reason": "Teleoperation status is not disclosed in the official video title, and a separate directory headline reports a teleoperated welding demo.",
+      "source_ids": [
+        "persona-ai-humanoid_source_006",
+        "persona-ai-humanoid_source_009"
+      ]
+    },
+    {
+      "claim": "Persona AI has a home-market robot",
+      "reason": "CEO explicitly said home is not a credible near-term market.",
+      "source_ids": [
+        "persona-ai-humanoid_source_004"
+      ]
+    },
+    {
+      "claim": "POSCO partnership is confirmed by primary source",
+      "reason": "Only appears in a news directory summary; no primary press release from Persona AI or POSCO in this evidence pack.",
+      "source_ids": [
+        "persona-ai-humanoid_source_007"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Persona AI Humanoid is a first-generation industrial humanoid prototype from Persona AI (Houston) targeting shipyard welding, fabrication, construction, and energy. It has no published height, weight, payload, runtime, or speed. Evidence includes official claims of modular design and NASA-derived robotic hand technology, an agreement with HD Hyundai for shipyard robots with delivery expected within 18 months, an ABS MOU, and a Louisiana/SSE Steel pilot. The only direct demo evidence is an official video title 'Hand on the Torch: Gen 1 Welds in a Real Industrial Environment'; teleoperation status is not disclosed, and a directory headline reports a teleoperated welding demo. Autonomy is not demonstrated; the company states teleoperation precedes autonomy. No price or RaaS terms are available.",
+    "strongest_evidence": [
+      "Official video title 'Hand on the Torch: Gen 1 Welds in a Real Industrial Environment' (evidence_009).",
+      "HD Hyundai agreement with initial delivery expected within 18 months (evidence_003).",
+      "SSE Steel COO quote confirming pilot on shop floor (evidence_008).",
+      "ABS MOU adapting NASA robotic hand technology for shipyards (evidence_007)."
+    ],
+    "weakest_evidence": [
+      "No height, weight, payload, runtime, battery, or walking speed published.",
+      "No autonomous task execution; welding demo teleoperated or not disclosed.",
+      "No actual customer deployment; all partnerships are pilots/agreements."
+    ],
+    "known_do_not_credit": [
+      "Do not credit deployed robots at HD Hyundai, ABS, or SSE Steel.",
+      "Do not credit autonomous welding.",
+      "Do not infer specifications from directory headlines.",
+      "Do not treat RaaS as a set price."
+    ],
+    "recommended_confidence": "low"
+  }
+}

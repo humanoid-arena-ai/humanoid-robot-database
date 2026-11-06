@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "noetix-robotics",
+    "name": "Noetix Robotics",
+    "country": "China",
+    "website": "https://www.noetixrobotics.com/en",
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "noetix-bumi",
+    "noetix-n2"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "noetix-robotics_source_001",
+      "title": "China's Noetix Robotics launches $1,400 consumer-grade humanoid robot",
+      "publisher": "roboticsandautomationnews.com",
+      "url": "https://roboticsandautomationnews.com/2025/10/22/beijing-startup-noetix-robotics-launches-consumer-grade-humanoid-robot-at-1400/95731/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "noetix-robotics_source_002",
+      "title": "Startup NOETIX Robotics Launches Affordable Humanoid Robot Capable of Backflips",
+      "publisher": "en.tmtpost.com",
+      "url": "https://en.tmtpost.com/post/7497178",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

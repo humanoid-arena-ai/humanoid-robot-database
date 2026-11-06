@@ -1,0 +1,1042 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "neura-4ne1",
+    "name": "NEURA 4NE1",
+    "company_id": "neura-robotics",
+    "company_name": "NEURA Robotics",
+    "country": "Germany",
+    "generation": "4NE1 Gen 4 (current); 4NE1 Gen 3.5 (reservation)",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Preorders/reservations open for 4NE1 Gen 3.5 at EUR 98,000; expected availability end of 2026. No confirmed deliveries or shipping found in reviewed sources. Official page says Gen 4 is already running in NEURA Gyms and being prepared for series production.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "industrial logistics",
+      "manufacturing",
+      "human-robot collaboration",
+      "home assistance",
+      "carrying objects",
+      "voice-command routines",
+      "multi-modal interaction and transportation"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "180 cm",
+      "value": 180,
+      "unit": "cm",
+      "notes": "Official product page lists Height (cm) 180. RobotHub.app also lists 180 cm.",
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_004"
+      ]
+    },
+    "weight": {
+      "original_value": "80 kg",
+      "value": 80,
+      "unit": "kg",
+      "notes": "Weight 80 kg is from RobotHub.app directory. The official product page has a Weight (kg) row but the value is not visible in the captured text, so official weight is not confirmed.",
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ]
+    },
+    "payload": {
+      "original_value": "10-20 kg",
+      "value": 20,
+      "unit": "kg",
+      "notes": "Official product page lists Payload (kg) 10-20. RobotHub.app lists dual-arm payload 20 kg. Maximum payload used as numeric value.",
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": "6–8 hours (Gen 3.5 with hot-swappable batteries)",
+      "value": 6,
+      "unit": "h",
+      "notes": "Reported by Robofy, added 2026-10-29 by automated spec fill; Listed as a 6–8 hour range for 4NE1 Gen 3.5 with hot-swappable batteries; lower bound used..",
+      "source_ids": [
+        "neura-4ne1_source_012"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Reservation FAQ says each 4NE1 will include a high-capacity battery and dedicated charging station, but no capacity or runtime is stated.",
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 42,
+      "notes": "Reported by robothub.app, added 2026-10-29 by automated spec fill; Aggregator lists 42+ DOF; its own narrative also says the DOF row is unpublished, so treat as caveated aggregator data..",
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ],
+      "original_value": "42+ DOF",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "5 km/h",
+      "value": 5,
+      "unit": "km/h",
+      "notes": "RobotHub.app lists Max Speed 5 km/h in its spec table, but the same article says the speed row is empty. The official product page has a speed (km/h) row without a visible value. Low confidence.",
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ]
+    },
+    "hands": {
+      "description": "Integrated high-dexterity hands; exchangeable forearms; advanced hands with more accurate grip; high-torque actuation; limb reflexes for precise motion. No hand DoF published.",
+      "degrees_of_freedom": null,
+      "force_feedback": "Contact and force sensing claimed via sensor skin and NEURON AI (company claim).",
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "360-degree perception",
+        "sensor skin",
+        "3D vision",
+        "contact and force sensing",
+        "hearing / multimodal audio input",
+        "computer vision",
+        "multimodal AI sensors"
+      ],
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Gen 4 runs on NEURA's multimodal Physical AI foundation model NEURON AI; all processing claimed to run locally on the robot. No processor, TOPS or memory size is published.",
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_004"
+      ]
+    },
+    "actuators": {
+      "description": "High-torque actuation claimed by NEURA Robotics. Reflexes built into the limbs allow each limb to react on its own. No actuator types, torque numbers or count published.",
+      "source_ids": [
+        "neura-4ne1_source_002",
+        "neura-4ne1_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "preorder",
+      "price": 98000,
+      "price_currency": "EUR",
+      "purchase_or_waitlist_url": "https://neura-robotics.com/product/4ne1-reservation/",
+      "notes": "Gen 3.5 preorder: EUR 98,000 per unit for 1-19 units, EUR 60,000 per unit for 20+ units, excluding taxes and shipping. Reservation fee EUR 100 per unit, fully refundable. Expected available end of 2026. No Gen 4 price found.",
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official page claims advanced hands with more accurate grip, integrated high-dexterity hands, and exchangeable forearms. A 2024 YouTube video title indicates a sandwich crafted by a humanoid, but no transcript is available to verify the manipulation. No success rates or independent dexterity benchmarks found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_002",
+        "neura-4ne1_source_011"
+      ],
+      "caveats": [
+        "Video title only; no transcript or visual verification by the researcher.",
+        "Company claims are not independently measured.",
+        "Sandwich demo is from 2024 and may be an earlier 4NE-1 prototype."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "NEURA claims Gen 4 runs the NEURON AI foundation model locally and that 4NE1 navigates unstructured industrial environments, understands complex tasks, and responds in real time. Reservation page lists teleoperation as an available interface, indicating teleoperation is a supported mode. No fully autonomous claim or intervention-free operation is demonstrated in reviewed sources.",
+      "evidence_level": 1,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_002"
+      ],
+      "caveats": [
+        "Autonomy is company-asserted and not independently verified.",
+        "Teleoperation interface is sold as a feature, so autonomy is not full.",
+        "No intervention counts or failure rates published."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "RobotHub.app lists biped locomotion and max speed 5 km/h; official page says Gen 4 is smoother in every movement and has reflexes in the limbs. A YouTube title says a headless 4NE1 walks through Zurich, but no transcript is available. No dynamic mobility metrics, fall recovery, or whole-body control demonstrations with details were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_004",
+        "neura-4ne1_source_010"
+      ],
+      "caveats": [
+        "Directory speed value conflicts with its own note that the speed row is empty.",
+        "Walking demo is title only; no gait quality or autonomy mode disclosed.",
+        "No whole-body control metrics or disturbance tests."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official page claims 360-degree perception, sensor skin, 3D vision, contact and force sensing, hearing what it cannot see, and computer vision. RobotHub.app notes no camera model, lidar model or tactile sensor count is published, so hardware details are unknown.",
+      "evidence_level": 1,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_004"
+      ],
+      "caveats": [
+        "Perception claims are company claims with no independent benchmark.",
+        "No sensor hardware specs or counts released."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official page positions 4NE1 for safe human interaction, natural voice commands, and home assistance; reservation page lists multi-modal interaction use cases. No user study, interaction reliability metric, or conversational test found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_002"
+      ],
+      "caveats": [
+        "Voice-command interaction is claimed but not demonstrated in available transcripts.",
+        "No social or conversational evaluation."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery capacity, MTBF, or reliability data were published in reviewed sources. Reservation FAQ states a high-capacity battery and charging station are included, but no hours or failure rates are given.",
+      "evidence_level": 0,
+      "source_ids": [
+        "neura-4ne1_source_002",
+        "neura-4ne1_source_004"
+      ],
+      "caveats": [
+        "No endurance or reliability evidence found.",
+        "RobotHub.app confirms battery runtime row is empty in official specs."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Humanoid height 180 cm, weight 80 kg, textile skin for approachability, and claims of safe human interaction. No safety certification, force-limited joint data, or independent safety testing was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_004"
+      ],
+      "caveats": [
+        "Weight 80 kg is from RobotHub.app, not confirmed in official visible text.",
+        "No safety certification or third-party safety assessment published."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No named customer deployments, shipped units, or operational metrics were found. Preorder is open for Gen 3.5 but not yet shipping. Official page says Gen 4 is already running in NEURA Gyms and being prepared for series production.",
+      "evidence_level": 0,
+      "source_ids": [
+        "neura-4ne1_source_001",
+        "neura-4ne1_source_002"
+      ],
+      "caveats": [
+        "No customer names or deployment numbers.",
+        "Reservation/preorder is not commercial proof.",
+        "No pilot or trial metrics published."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Gen 3.5 is listed at EUR 98,000 per unit (1-19 units) or EUR 60,000 (20+ units) with a refundable EUR 100 reservation fee; expected availability end of 2026. No Gen 4 price found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ],
+      "caveats": [
+        "Gen 4 price not published.",
+        "Not yet shipping; preorder terms apply and may change.",
+        "Price excludes taxes and shipping."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "neura-4ne1_evidence_001",
+      "date": null,
+      "title": "4NE1 Gen 4 slimmer body claim",
+      "claim": "4NE1 Gen 4 has a slimmer body with sleek textile skin and is 20% lighter than the previous generation.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official product page claim.",
+      "arena_relevance": "Hardware design and human-proximity form factor.",
+      "claim_type": "spec",
+      "supporting_excerpt": "A slimmer body with a sleek textile skin, 20% lighter than the generation before.",
+      "source_location": "NEURA Robotics 4NE1 product page, New Design, Lighter Body section",
+      "verification_notes": "Company spec page; relative reduction not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_002",
+      "date": null,
+      "title": "4NE1 Gen 4 NEURON AI compute claim",
+      "claim": "4NE1 Gen 4 runs on NEURA's multimodal Physical AI foundation model NEURON AI, and all processing runs locally on the robot.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Official hardware/software claim.",
+      "arena_relevance": "Onboard AI and local inference claim.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Gen 4 runs on NEURA’s multimodal Physical AI foundation model, NEURON AI.",
+      "source_location": "NEURA Robotics 4NE1 product page, A New Central Brain section",
+      "verification_notes": "Company statement; no independent compute or model evaluation found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_003",
+      "date": null,
+      "title": "4NE1 Gen 4 advanced hands and limb reflexes",
+      "claim": "4NE1 Gen 4 has advanced hands for more accurate grip and reflexes built into the limbs so each limb reacts on its own.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim; no hands-on test or specification details.",
+      "arena_relevance": "Fine manipulation and whole-body control claims.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Advanced hands allow an even more accurate grip.",
+      "source_location": "NEURA Robotics 4NE1 product page, High-Precision Movements section",
+      "verification_notes": "No hand DoF, force limits or independent manipulation test published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_004",
+      "date": null,
+      "title": "4NE1 Gen 4 perception capabilities",
+      "claim": "4NE1 Gen 4 sees in 3D, feels contact and force, hears what it cannot see, and remembers what it has already done.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "High-level multimodal perception claim.",
+      "arena_relevance": "Perception capabilities for autonomous tasks.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "It sees in 3D, feels contact and force, hears what it cannot see, and remembers what it has already done.",
+      "source_location": "NEURA Robotics 4NE1 product page, A New Central Brain section",
+      "verification_notes": "No sensor hardware specs or perception benchmarks published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_005",
+      "date": null,
+      "title": "4NE1 industrial navigation claim",
+      "claim": "4NE1 navigates unstructured industrial environments, understands complex tasks, and responds to changing conditions in real time with safe human interaction.",
+      "category": [
+        "autonomy_task_execution",
+        "deployment_commercial_proof",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Marketing-level autonomy and deployment readiness claim.",
+      "arena_relevance": "Industrial autonomy and safety framing.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "4NE1 navigates unstructured industrial environments, understands complex tasks, and responds to changing conditions in real time.",
+      "source_location": "NEURA Robotics 4NE1 product page, The Next Generation of Industrial Work section",
+      "verification_notes": "No autonomy demo, customer deployment, or safety certification is cited on the page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_006",
+      "date": null,
+      "title": "4NE1 home assistance claim",
+      "claim": "4NE1 is built to assist with everyday home tasks such as carrying objects, helping with routines, and responding naturally to voice commands.",
+      "category": [
+        "human_interaction",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Home use case claim without demonstrated sequences.",
+      "arena_relevance": "Consumer/home application potential.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "4NE1 is built to assist with everyday tasks, making life more convenient, comfortable, and connected.",
+      "source_location": "NEURA Robotics 4NE1 product page, Ready to Lend a Hand at Home section",
+      "verification_notes": "No home task demo, reliability data, or safety certification found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_007",
+      "date": null,
+      "title": "4NE1 model variants",
+      "claim": "4NE1 comes in dedicated models, including versions on wheels for industrial floors and a version with a 7th axis for extended reach.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Official product page variant claim.",
+      "arena_relevance": "Portfolio flexibility beyond biped.",
+      "claim_type": "spec",
+      "supporting_excerpt": "4NE1 comes in dedicated models for different environments, with versions on wheels for industrial floors or with a 7th axis for extended reach.",
+      "source_location": "NEURA Robotics 4NE1 product page, Different Models. Same Core. section",
+      "verification_notes": "No separate spec sheets for wheeled or 7th axis variants in reviewed sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_008",
+      "date": null,
+      "title": "4NE1 Gen 3.5 preorder price",
+      "claim": "4NE1 Gen 3.5 estimated price is EUR 98,000 per unit for 1-19 units and EUR 60,000 per unit for 20+ units, excluding taxes and shipping, with a refundable EUR 100 reservation fee.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ],
+      "confidence": 0.85,
+      "notes": "Official reservation page pricing.",
+      "arena_relevance": "Price and preorder path.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Estimated price/unit (1-19 units) 98,000 € (excluding taxes and shipping)",
+      "source_location": "NEURA Robotics 4NE1 reservation page, At A Glance table",
+      "verification_notes": "Official page; price subject to change and excludes taxes/shipping.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_009",
+      "date": null,
+      "title": "4NE1 Gen 3.5 availability",
+      "claim": "4NE1 Gen 3.5 is expected to be available end of 2026; reservations secure a place in the delivery queue.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Official reservation page availability statement.",
+      "arena_relevance": "Not yet shipping; preorder only.",
+      "claim_type": "spec",
+      "supporting_excerpt": "4NE1 Gen 3.5 is expected to be available end of 2026.",
+      "source_location": "NEURA Robotics 4NE1 reservation page, Reserve your 4NE1 section",
+      "verification_notes": "Expected date, not a confirmed delivery date.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_010",
+      "date": null,
+      "title": "4NE1 included components",
+      "claim": "Each 4NE1 will be delivered with integrated high-dexterity hands, a high-capacity battery, and a dedicated charging station.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Official reservation FAQ.",
+      "arena_relevance": "Baseline hardware inclusion.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Each 4NE1 will be delivered as a fully operational unit, featuring integrated high-dexterity hands, a high-capacity battery, and a dedicated charging station.",
+      "source_location": "NEURA Robotics 4NE1 reservation page, FAQ section",
+      "verification_notes": "Battery capacity is not stated.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_011",
+      "date": null,
+      "title": "4NE1 teleoperation interface",
+      "claim": "4NE1 Gen 3.5 includes digital twin access and teleoperation as additional interfaces.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Official reservation page interface list.",
+      "arena_relevance": "Indicates teleoperation is an available mode, limiting full-autonomy credit.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Digital twin access, teleoperation, ready for Neura Gym training",
+      "source_location": "NEURA Robotics 4NE1 reservation page, Additional interfaces row",
+      "verification_notes": "No autonomy mode details; teleoperation is offered as a feature.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_012",
+      "date": null,
+      "title": "4NE1 prototype household demo timeline",
+      "claim": "A 4NE1 prototype performing household tasks was demonstrated in mid-2024, and the third generation premiered at Automatica 2025.",
+      "category": [
+        "manipulation_dexterity",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Wikipedia summary of company history; not primary.",
+      "arena_relevance": "Historical development context.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "A prototype performing household tasks was demonstrated in mid-2024.",
+      "source_location": "Neura Robotics - Wikipedia, Products section",
+      "verification_notes": "Wikipedia is secondary; prototype details and autonomy mode not provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_013",
+      "date": null,
+      "title": "4NE1 Gen 4 secondary spec summary",
+      "claim": "RobotHub.app lists 4NE1 Gen 4 as biped, 180 cm tall, 80 kg, dual-arm payload 20 kg, release year 2026.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Secondary directory; values may aggregate official and guessed data.",
+      "arena_relevance": "Provides missing weight and payload details, but low confidence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The published specification block gives a straightforward industrial profile: 180 cm tall, 80 kg, and a payload of 10 to 20 kg.",
+      "source_location": "RobotHub.app 4NE1 Gen 4 page, Key Highlights section",
+      "verification_notes": "Directory is secondary; official page visible text confirms height and payload but not weight.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "neura-4ne1_evidence_014",
+      "date": null,
+      "title": "4NE1 missing official specs",
+      "claim": "Speed, degrees of freedom, and battery runtime rows exist as labels without published values on the official product page.",
+      "category": [
+        "specs",
+        "missing_evidence"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Directory article explicitly notes official page gaps.",
+      "arena_relevance": "Do not infer these values from other directories.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Rows for speed, degrees of freedom and battery runtime exist as labels without published values, so they are left empty rather than guessed.",
+      "source_location": "RobotHub.app 4NE1 Gen 4 page, Key Highlights section",
+      "verification_notes": "Confirms no official runtime, DoF, or speed value.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "neura-4ne1_demo_001",
+      "title": "Discover 4NE-1: The era of household humanoids is coming soon.",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "household humanoid teaser (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "neura-4ne1_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video title only; no transcript or visual details available.",
+        "Execution mode and environment are not disclosed."
+      ],
+      "editing_notes": "No transcript; not manually reviewed. Do not describe video content beyond title.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state autonomy or teleoperation.",
+      "observed_segments": []
+    },
+    {
+      "id": "neura-4ne1_demo_002",
+      "title": "TUM RoboGym Opening & 4NE1 Gen 4 Reveal | NEURA Robotics",
+      "date": "2026-10-27",
+      "observed_capabilities": [
+        "Gen 4 reveal event (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "TUM RoboGym Munich",
+      "source_ids": [
+        "neura-4ne1_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video title only; no transcript or visual details available.",
+        "Reveal does not demonstrate specific capabilities."
+      ],
+      "editing_notes": "No transcript; not manually reviewed. Do not describe video content beyond title.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed.",
+      "observed_segments": []
+    },
+    {
+      "id": "neura-4ne1_demo_003",
+      "title": "Headless 4NE1 Walks through Zurich",
+      "date": "2026-08-29",
+      "observed_capabilities": [
+        "bipedal walking (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Zurich outdoor/street (per title)",
+      "source_ids": [
+        "neura-4ne1_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video title only; no transcript or visual details available.",
+        "Walking quality, duration, and assistance cannot be verified."
+      ],
+      "editing_notes": "No transcript; not manually reviewed. Do not describe video content beyond title.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state autonomy or teleoperation.",
+      "observed_segments": []
+    },
+    {
+      "id": "neura-4ne1_demo_004",
+      "title": "4NE1’s Debut: The First Ever Sandwich Crafted by a Humanoid!",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "sandwich crafting/manipulation (title only; no transcript)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "neura-4ne1_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video title only; no transcript or visual details available.",
+        "Sandwich process and autonomy mode cannot be verified."
+      ],
+      "editing_notes": "No transcript; not manually reviewed. Do not describe video content beyond title.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state autonomy or teleoperation.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Runtime and battery capacity",
+      "description": "No runtime, battery capacity, or endurance metric is published. Reservation page says a high-capacity battery is included but no value.",
+      "impact_on_arena_scoring": "Endurance/reliability dimension remains at evidence level 0."
+    },
+    {
+      "topic": "Total DoF and walking speed",
+      "description": "Official page lists speed (km/h) and Weight (kg) rows without visible values. RobotHub.app lists 42+ DOF and 5 km/h but also says those fields are empty on official specs. No official total DoF or speed found.",
+      "impact_on_arena_scoring": "Do not credit DoF or speed as confirmed official specs."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Teleoperation is offered as an interface, and no fully autonomous operation or intervention-free demo is documented. Video titles do not state autonomy.",
+      "impact_on_arena_scoring": "Keep autonomy_task_execution at low evidence and confidence."
+    },
+    {
+      "topic": "Customer deployments",
+      "description": "No named customers, shipped units, or operational metrics found. Preorder is open but not shipping.",
+      "impact_on_arena_scoring": "Deployment_commercial_proof remains at evidence level 0."
+    },
+    {
+      "topic": "Video evidence quality",
+      "description": "All YouTube sources provided are titles only with no transcripts. No visual verification is possible.",
+      "impact_on_arena_scoring": "Demo evidence is capped at title-level observation; do not describe unseen video content."
+    },
+    {
+      "topic": "Safety certification",
+      "description": "No safety certification, force-limiting data, or independent safety testing for 4NE1 is published.",
+      "impact_on_arena_scoring": "Human_environment_fit confidence is limited."
+    }
+  ],
+  "source_ids": [
+    "neura-4ne1_source_001",
+    "neura-4ne1_source_002",
+    "neura-4ne1_source_003",
+    "neura-4ne1_source_004",
+    "neura-4ne1_source_005",
+    "neura-4ne1_source_006",
+    "neura-4ne1_source_007",
+    "neura-4ne1_source_008",
+    "neura-4ne1_source_009",
+    "neura-4ne1_source_010",
+    "neura-4ne1_source_011",
+    "neura-4ne1_source_012"
+  ],
+  "sources": [
+    {
+      "id": "neura-4ne1_source_001",
+      "title": "Humanoid Robot 4NE1 for Work and Life | NEURA Robotics",
+      "publisher": "Neura Robotics",
+      "url": "https://neura-robotics.com/products/4ne1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims, some spec rows empty."
+    },
+    {
+      "id": "neura-4ne1_source_002",
+      "title": "Reserve 4NE1: The Cognitive Humanoid Robot | NEURA Robotics",
+      "publisher": "Neura Robotics",
+      "url": "https://neura-robotics.com/product/4ne1-reservation/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official reservation page; pricing and availability, no independent verification."
+    },
+    {
+      "id": "neura-4ne1_source_003",
+      "title": "Neura Robotics - Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neura_Robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Secondary encyclopedia; historical context, may contain unsourced claims."
+    },
+    {
+      "id": "neura-4ne1_source_004",
+      "title": "NEURA 4NE1 Gen 4 - Specs, Company, Price, Release Date & Comparison",
+      "publisher": "RobotHub.app",
+      "url": "https://www.robothub.app/en/robots/4ne-1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Secondary directory; internally inconsistent on speed/DoF/runtime."
+    },
+    {
+      "id": "neura-4ne1_source_005",
+      "title": "4-NE1, developed by Neura Robotics - Looking Glass XR Services",
+      "publisher": "Looking Glass XR Services",
+      "url": "https://lookingglassxr.com/robots-knowledgebase/robot-manufacturers/neura-robotics/neura-robotics-4-ne1/",
+      "date_published": "2024-12-30",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Marketing knowledgebase; no verifiable specs, excluded except for claim exclusion."
+    },
+    {
+      "id": "neura-4ne1_source_006",
+      "title": "Discover 4NE-1: The era of household humanoids is coming soon.",
+      "publisher": "YouTube NEURA Robotics",
+      "url": "https://www.youtube.com/watch?v=RpphFszxQbM",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only, no transcript provided."
+    },
+    {
+      "id": "neura-4ne1_source_007",
+      "title": "4NE1 Mini | Stress-Testing Cognitive AI in Las Vegas 🕺🤖",
+      "publisher": "YouTube NEURA Robotics",
+      "url": "https://www.youtube.com/watch?v=DJk1v21ugcU",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only; pertains to 4NE1 Mini, not full-scale 4NE1."
+    },
+    {
+      "id": "neura-4ne1_source_008",
+      "title": "TUM RoboGym Opening & 4NE1 Gen 4 Reveal | NEURA Robotics",
+      "publisher": "YouTube NEURA Robotics",
+      "url": "https://www.youtube.com/watch?v=_76mR2pA0mA",
+      "date_published": "2026-10-27",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only, no transcript provided."
+    },
+    {
+      "id": "neura-4ne1_source_009",
+      "title": "CES 2026 | NEURA Robotics: 4NE1 Humanoids, NEURA Quadruped & More",
+      "publisher": "YouTube RobotShopTV",
+      "url": "https://www.youtube.com/watch?v=Iyyum_70X6k",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Third-party video; title only; mixed event coverage, no specific 4NE1 details."
+    },
+    {
+      "id": "neura-4ne1_source_010",
+      "title": "Headless 4NE1 Walks through Zurich",
+      "publisher": "YouTube NEURA Robotics",
+      "url": "https://www.youtube.com/watch?v=tZO97d281hY",
+      "date_published": "2026-08-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only, no transcript provided."
+    },
+    {
+      "id": "neura-4ne1_source_011",
+      "title": "4NE1’s Debut: The First Ever Sandwich Crafted by a Humanoid!",
+      "publisher": "YouTube NEURA Robotics",
+      "url": "https://www.youtube.com/watch?v=bdVrWxjK2vo",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only, no transcript provided."
+    },
+    {
+      "id": "neura-4ne1_source_012",
+      "title": "Neura Robotics 4NE-1 vs Poppy Project Poppy Humanoid — Robofy",
+      "publisher": "Robofy",
+      "url": "https://robofy.world/compare/neura-robotics-4ne-1-vs-poppy-project-poppy-humanoid",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "NEURA 4NE1 is a German full-size humanoid with a preorder path for Gen 3.5 and a revealed Gen 4, but public evidence is thin: no runtime, no official DoF, no customer deployments, and video evidence is only YouTube titles without transcripts. Official page claims multimodal AI, advanced hands, and industrial/home use, but autonomy is unproven and the robot is not yet shipping.",
+    "strongest_positive_evidence": [
+      "Official reservation page price and end-2026 availability for Gen 3.5.",
+      "Official Gen 4 hardware/software claims including NEURON AI, 360° perception, sensor skin, and advanced hands.",
+      "Video title indicating a sandwich-making demo and a walking demo through Zurich, but only title-level evidence."
+    ],
+    "weakest_or_missing_evidence": [
+      "No runtime, battery capacity, or endurance data.",
+      "No official total DoF or walking speed; directory value conflicts with its own note.",
+      "No customer deployments, pilots, or shipped units.",
+      "No video transcripts; observed capabilities cannot be verified beyond titles."
+    ],
+    "conflicting_claims": [
+      "RobotHub.app lists 42+ DOF and 5 km/h, but its own text says the official speed, DoF, and runtime rows are empty.",
+      "Weight 80 kg is from RobotHub.app; official product page has a Weight row but no visible value in captured text.",
+      "Price is for Gen 3.5 only; no Gen 4 price is provided."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "industrial_humanoid",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit 4NE1 Mini claims (source 7) to the full-scale 4NE1.",
+      "Do not treat preorder as shipping or commercial deployment.",
+      "Do not credit total DoF 42+ or max speed 5 km/h as official; directory conflict remains.",
+      "Do not describe video content beyond the provided titles.",
+      "Do not infer autonomy from official marketing language."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "4NE1 Gen 4 is the latest generation revealed as of 2026-10-27. Gen 3.5 is available for preorder. No later generation found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "4NE1 Mini stress test and cognitive AI claims from source 7",
+      "reason": "Pertains to 4NE1 Mini, a separate smaller product, not the full-scale NEURA 4NE1.",
+      "source_ids": [
+        "neura-4ne1_source_007"
+      ]
+    },
+    {
+      "claim": "CES 2026 NEURA Robotics 4NE1 humanoids, quadruped and more from source 9",
+      "reason": "Mixed event coverage with no specific 4NE1 capability details beyond the title.",
+      "source_ids": [
+        "neura-4ne1_source_009"
+      ]
+    },
+    {
+      "claim": "Generic marketing language from Looking Glass XR Services about 4-NE1 being a groundbreaking partner",
+      "reason": "No new verifiable specs or evidence; marketing copy only.",
+      "source_ids": [
+        "neura-4ne1_source_005"
+      ]
+    },
+    {
+      "claim": "Total degrees of freedom 42+ DOF for 4NE1",
+      "reason": "Only found on RobotHub.app directory, which also states the official DoF row is empty; conflict not resolved.",
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ]
+    },
+    {
+      "claim": "Max speed 5 km/h as official spec",
+      "reason": "Only found on RobotHub.app directory, which also states the official speed row is empty; conflict not resolved.",
+      "source_ids": [
+        "neura-4ne1_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "NEURA 4NE1 is a German full-size cognitive humanoid with a Gen 4 version and a Gen 3.5 preorder. The official page lists 180 cm height, 10-20 kg payload, advanced hands, 360° perception, sensor skin, local NEURON AI foundation model, and industrial/home use cases. A reservation page prices Gen 3.5 at EUR 98,000 (1-19) / EUR 60,000 (20+) with end-2026 availability. Evidence is thin: no runtime, total DoF, customer deployments or named pilots, and video evidence consists of YouTube titles only with no transcripts. The robot is not yet shipping.",
+    "strongest_evidence": [
+      "Official preorder pricing and end-2026 availability for 4NE1 Gen 3.5 (neura-4ne1_evidence_008; neura-4ne1_evidence_009).",
+      "Official Gen 4 product page claims: 20% lighter, NEURON AI local processing, advanced hands and 360-degree perception (neura-4ne1_evidence_001; neura-4ne1_evidence_002; neura-4ne1_evidence_004).",
+      "Official reservation page confirms integrated high-dexterity hands, high-capacity battery and dedicated charging station included (neura-4ne1_evidence_010)."
+    ],
+    "weakest_evidence": [
+      "No runtime, battery capacity, total DoF or official walking speed published; directory fields conflict with official empty rows (neura-4ne1_evidence_014).",
+      "No named customer deployments, shipped units or operational metrics found (no evidence item; see limitations_and_unknowns).",
+      "No video transcripts; all video evidence is title-only and not visually verified (neura-4ne1_evidence_012 indicates prototype demo history only; actual video titles are in demos array)."
+    ],
+    "known_do_not_credit": [
+      "Do not credit total DoF 42+ or 5 km/h speed as official; directory conflict remains.",
+      "Do not credit 4NE1 Mini claims as full-scale 4NE1.",
+      "Do not treat preorder as shipping or commercial deployment.",
+      "Do not describe video content beyond the provided titles.",
+      "Do not infer autonomy from official marketing language."
+    ],
+    "recommended_confidence": "low"
+  }
+}

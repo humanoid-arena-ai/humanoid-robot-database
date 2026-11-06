@@ -1,0 +1,28 @@
+{
+  "robotId": "figure-01",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "Figure 01 was Figure's first-generation prototype. It was never sold to the public and was succeeded by Figure 02 (2024) and Figure 03.",
+  "configurations": [],
+  "sellers": [],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy a Figure 01?",
+      "a": "No. Figure 01 was a first-generation development robot with no public price or order page, and it was replaced by Figure 02 in August 2024.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/figure-unveils-figure-02-its-second-generation-humanoid-setting-new-standards-in-ai-and-robotics-302214889.html"
+    },
+    {
+      "q": "How much does Figure 01 cost?",
+      "a": "Figure never published a price for Figure 01.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/figure-unveils-figure-02-its-second-generation-humanoid-setting-new-standards-in-ai-and-robotics-302214889.html"
+    },
+    {
+      "q": "Which Figure robot replaced Figure 01?",
+      "a": "Figure 02, announced on August 6, 2024, followed by Figure 03. Figure began retiring Figure 02 in November 2025.",
+      "sourceUrl": "https://www.figure.ai/news/production-at-bmw"
+    }
+  ],
+  "notes": "Superseded prototype. No price, sellers or rental options exist. Figure's later home-lease target ($400 to $600 per month, May 2026) applies to future robots, not Figure 01."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "kawasaki-heavy-industries",
+  "name": "Kawasaki Heavy Industries",
+  "country": "Japan",
+  "headquarters": "Minato, Tokyo, Japan",
+  "founded": 1896,
+  "website": "https://kawasakirobotics.com",
+  "summary": "Kawasaki Heavy Industries is a large Japanese manufacturer of motorcycles, aircraft, ships, rail cars and industrial robots. Its robotics unit has developed the Kaleido humanoid line since 2015.",
+  "funding": "Publicly listed company.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Kawasaki Heavy Industries",
+      "url": "https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Kawasaki's Kaleido 9 Humanoid Robot",
+      "url": "https://mikekalil.com/blog/kawasaki-kaleido-9-humanoid-robot/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

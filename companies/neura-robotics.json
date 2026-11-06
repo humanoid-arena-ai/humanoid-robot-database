@@ -1,0 +1,24 @@
+{
+  "id": "neura-robotics",
+  "name": "NEURA Robotics",
+  "country": "Germany",
+  "headquarters": "Metzingen, Germany",
+  "founded": 2019,
+  "website": "https://neura-robotics.com",
+  "summary": "NEURA Robotics makes collaborative robot arms, mobile robots and the 4NE1 humanoid. It was founded by David Reger.",
+  "funding": "EUR 120 million Series B in January 2025; Wikipedia reports a Series C of up to $1.4 billion announced in June 2026.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Neura Robotics",
+      "url": "https://en.wikipedia.org/wiki/Neura_Robotics",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "NEURA Robotics Raises EUR 120M in Series B Funding",
+      "url": "https://www.finsmes.com/2025/01/neura-robotics-raises-e120m-in-series-b-funding.html",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

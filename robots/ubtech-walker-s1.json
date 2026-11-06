@@ -1,0 +1,41 @@
+{
+  "id": "ubtech-walker-s1",
+  "name": "UBTECH Walker S1",
+  "aliases": ["Walker S1"],
+  "companyId": "ubtech",
+  "companyName": "UBTECH Robotics",
+  "country": "China",
+  "announced": null,
+  "status": "superseded",
+  "category": "industrial",
+  "summary": "Walker S1 is UBTECH's industrial bipedal humanoid that trained in car factories such as Zeekr's 5G plant. In March 2025 several dozen units ran collaborative sorting, handling, assembly and inspection tasks coordinated by UBTECH's BrainNet software. It has been followed by the Walker S2.",
+  "specs": {
+    "height_cm": { "value": 172, "original": "Height: 172 cm", "sourceId": "s3" },
+    "weight_kg": { "value": 76, "original": "Weight: 76 kg", "sourceId": "s3" },
+    "payload_kg": null,
+    "runtime_h": { "value": 2, "original": "2 hours per charge", "sourceId": "s3" },
+    "dof": { "value": 41, "original": "41 overall", "sourceId": "s3" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Robotic hands for grasping and precision assembly.",
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.ubtrobot.com/en/humanoid/products/walker-s1",
+  "highlights": [
+    "Several dozen Walker S1 units trained together at Zeekr's 5G Smart Factory in March 2025.",
+    "Tasks included vehicle and final assembly, quality inspection, sorting and handling.",
+    "UBTECH lists LLM task planning, semantic VSLAM and learning-based motion control."
+  ],
+  "caveats": [
+    "UBTECH's product page shows specs only as an image; height, weight, DoF and runtime come from an unverified third-party database.",
+    "Factory work so far is described as training, not full production deployment."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Walker S1 product page", "publisher": "UBTECH Robotics", "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s1", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "UBTech: Fleet of humanoid robots work collaboratively at Zeekr", "publisher": "heise online", "url": "https://www.heise.de/en/news/UBTech-Fleet-of-humanoid-robots-work-collaboratively-at-Zeekr-10303551.html", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "UBTECH Robotics Walker S1 Specs & Price", "publisher": "Humanoid.guide", "url": "https://humanoid.guide/product/walker-s1/", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "xpeng",
+    "name": "XPeng",
+    "country": "China",
+    "website": "https://www.xpeng.com/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "xpeng-iron"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "xpeng_company_source_001",
+      "title": "XPeng website",
+      "publisher": "XPeng",
+      "url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

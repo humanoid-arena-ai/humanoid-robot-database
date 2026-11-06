@@ -1,0 +1,91 @@
+{
+  "id": "aldebaran-pepper",
+  "name": "Pepper",
+  "aliases": [
+    "SoftBank Pepper"
+  ],
+  "companyId": "aldebaran",
+  "companyName": "Aldebaran",
+  "country": "France",
+  "announced": null,
+  "status": "purchasable",
+  "category": "service",
+  "summary": "Pepper is a 120 cm wheeled social humanoid with a chest tablet, first released in 2014 for retail, hospitality and education. About 17,000 units were sold, and production stopped around 2020-2021. Resellers still list units, with RobotLAB starting at $32,000.",
+  "specs": {
+    "height_cm": {
+      "value": 120,
+      "original": "120 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 28,
+      "original": "28 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": {
+      "value": 12,
+      "original": "12 hours of operation",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 19,
+      "original": "19",
+      "sourceId": "s1"
+    },
+    "hand_dof": {
+      "value": 1,
+      "original": "Hands: 1 DoF x 2",
+      "sourceId": "s1"
+    },
+    "speed_mps": {
+      "value": 0.83,
+      "original": "3 km/h",
+      "sourceId": "s1"
+    }
+  },
+  "hands": "Simple hands, 1 DoF each.",
+  "sensors": "Two 5 MP cameras, 3D sensor, four microphones, touch sensors, sonars, lasers, bumpers, gyroscopes.",
+  "compute": "Intel Atom E3845, NAOqi OS.",
+  "price": {
+    "value": 32000,
+    "currency": "USD",
+    "priceType": "from",
+    "configuration": "Pepper via RobotLAB (robot, charger, 2 batteries)",
+    "sourceId": "s2"
+  },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.robotlab.com/store/pepper-robot/",
+  "highlights": [
+    "10.1-inch chest tablet.",
+    "Wheeled omnidirectional base.",
+    "Maxvision bought Aldebaran's core assets, including Pepper, in July 2025."
+  ],
+  "caveats": [
+    "Production reportedly stopped in 2020 or 2021; units are sold through resellers.",
+    "Wheeled, no legs; not designed for manipulation."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SoftBank Robotics - Pepper",
+      "publisher": "Wevolver",
+      "url": "https://www.wevolver.com/specs/softbank-robotics-pepper",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Softbank Pepper Robot",
+      "publisher": "RobotLAB",
+      "url": "https://www.robotlab.com/store/pepper-robot/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "Maxvision buys core robot assets of Aldebaran, including Nao and Pepper",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/maxvision-buys-core-robot-assets-including-nao-pepper-aldebaran/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "robotId": "agibot-a2",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "buy_now",
+  "purchasePathNote": "The A2 Lite can be ordered from the AgiBot international online store at a listed price; the A2 Ultra is price on request. Top3DShop in the US lists the A2 with a request-a-quote form.",
+  "configurations": [
+    {
+      "name": "A2 Lite",
+      "price": 44560,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Shipped from AgiBot's store; shipping $500 to $3,000; duties, taxes and import clearance paid by the buyer.",
+      "sourceLabel": "AgiBot official store",
+      "sourceUrl": "https://store.agibot.com/products/a2-lite",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "A2 Ultra",
+      "price": null,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Listed as 'Price on request'.",
+      "sourceLabel": "AgiBot official store",
+      "sourceUrl": "https://store.agibot.com/products/a2-lite",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "AgiBot official store",
+      "type": "official",
+      "url": "https://store.agibot.com/products/a2-lite",
+      "region": "Global",
+      "offers": "AGIBOT A2 Lite - Sale price $44,560.00 USD; AGIBOT A2 Ultra - Price on request.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Top3DShop",
+      "type": "reseller",
+      "url": "https://top3dshop.com/product/agibot-a2-humanoid-robot",
+      "region": "US",
+      "offers": "Agibot A2 - no price shown, 'request the quote'. Listed as In Stock, lead time 5-10 business days; page offers buy or lease.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "Top3DShop lease",
+      "url": "https://top3dshop.com/product/agibot-a2-humanoid-robot",
+      "region": "US",
+      "notes": "Page advertises 'Buy or Lease' but publishes no lease terms; contact the reseller."
+    }
+  ],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy the AgiBot A2?",
+      "a": "Yes. The A2 Lite is listed on AgiBot's international store at $44,560; the A2 Ultra requires a quote.",
+      "sourceUrl": "https://store.agibot.com/products/a2-lite"
+    },
+    {
+      "q": "How much does the AgiBot A2 cost?",
+      "a": "The A2 Lite costs $44,560 on the official store, plus $500 to $3,000 shipping and local import duties. AgiBot does not publish a price for the A2 Ultra.",
+      "sourceUrl": "https://store.agibot.com/products/a2-lite"
+    },
+    {
+      "q": "Can you buy the AgiBot A2 in the US?",
+      "a": "Top3DShop lists the A2 as in stock with a 5 to 10 business day lead time, but you must request a quote for the price.",
+      "sourceUrl": "https://top3dshop.com/product/agibot-a2-humanoid-robot"
+    }
+  ],
+  "notes": "The only public price is for the A2 Lite variant; the full A2 / A2 Ultra and wheeled A2-W have no published price. Chinese yuan prices circulating online were not traced to an official source and are excluded."
+}

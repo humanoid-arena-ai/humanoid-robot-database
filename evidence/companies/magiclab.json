@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "magiclab",
+    "name": "MagicLab",
+    "country": "China",
+    "website": "https://www.magiclabglobal.com/",
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "magiclab-magicbot-gen1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Angel round of 150 million RMB by December 2024 and a Series B of hundreds of millions of RMB by May 2025, per Robozaps."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "magiclab_source_001",
+      "title": "MagicBot Gen1 - General-Purpose Humanoid AI Robot",
+      "publisher": "magiclabglobal.com",
+      "url": "https://www.magiclabglobal.com/products/magicbot-gen1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "magiclab_source_002",
+      "title": "MagicBot Price 2026: MagicLab Specs & Factory Deployment",
+      "publisher": "blog.robozaps.com",
+      "url": "https://blog.robozaps.com/b/magiclab-magicbot-review",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

@@ -1,0 +1,1108 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "aldebaran-nao",
+    "name": "NAO",
+    "company_id": "aldebaran",
+    "company_name": "Aldebaran",
+    "country": "France",
+    "generation": "V6 (NAO6)",
+    "first_announced_date": "2006-07-21",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "NAO V6 is actively sold by RobotLAB and Generation Robots in 2026. The robot's original manufacturer Aldebaran filed for bankruptcy in 2025 and its core assets, including Nao, were acquired by Maxvision Technology Corp. Long-term support depends on Maxvision. No discontinuation of NAO V6 was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "K-12 STEM education",
+      "special education and autism support",
+      "higher-education research",
+      "human-robot interaction studies",
+      "RoboCup soccer",
+      "coding and AI demonstrations"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "574 mm (approx. 58 cm / 22.6 in)",
+      "value": 58,
+      "unit": "cm",
+      "notes": "RobotLAB lists 574 mm (about 58 cm). Generation Robots lists 58 cm. Old NAO book lists 57.3 cm; USC page lists 66 cm but that likely includes a different measurement. Official reseller value used.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_005",
+        "aldebaran-nao_source_007"
+      ]
+    },
+    "weight": {
+      "original_value": "5.48 kg (approx. 12.1 lb)",
+      "value": 5.48,
+      "unit": "kg",
+      "notes": "RobotLAB lists 5.48 kg. Generation Robots lists 5.6 kg. Old book lists <4.3 kg for earlier NAO version.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_005"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload or carrying capacity was found in the reviewed sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "~60 min active use, ~90 min normal use",
+      "value": 1,
+      "unit": "hours",
+      "notes": "60-90 minutes depending on use; conservative lower bound of 1 hour used. Recharge time about 90 minutes per RobotLAB.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": "Lithium-Ion, 21.6 V / 2.9 Ah (62.5 Wh)",
+      "value": 62.5,
+      "unit": "Wh",
+      "notes": "RobotLAB and Generation Robots list the same 62.5 Wh battery for NAO V6.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 25,
+      "notes": "Manufacturer figure is 25 DoF for NAO V6. RobotLAB notes a tech sheet joint breakdown lists 26; USC page says 26 DoF for NAO H25 V4.0. This pack uses 25, the manufacturer/reseller spec.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_007"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed was found in any reviewed source.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "Hands have tactile sensors (capacitive); no separate hand degrees of freedom, force feedback, or grip specifications were found.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "aldebaran-nao_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Two front-facing 5 MP (OV5640) HD cameras",
+        "Four omnidirectional head-mounted microphones",
+        "Two 40 mm loudspeakers",
+        "Sonar: 2 transmitters/receivers, 40 kHz, 0.20-0.80 m range",
+        "Inertial unit: gyrometer + accelerometer",
+        "Force sensors: 4 per foot (0-25 N)",
+        "Tactile sensors: head, hands, feet (capacitive + bumpers)",
+        "RGB LEDs for eyes, chest button, feet"
+      ],
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Intel Atom E3845 1.91 GHz CPU, 4 GB DDR3 RAM, 32 GB eMMC storage, NAOqi OS (Gentoo-based Linux).",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Maxon coreless DC motors; 25 joint actuators.",
+      "source_ids": [
+        "aldebaran-nao_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 16990,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.robotlab.com/store/nao/",
+      "notes": "RobotLAB sells NAO V6 Standard Edition for $16,990 with lease/RaaS options. Generation Robots lists €10,020 VAT inclusive (€8,350 ex VAT). 1-year warranty via RobotLAB, 2-year warranty via Generation Robots.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "NAO V6 has 25 DoF for full-body gestures, walking, and general motion control; hands have capacitive touch sensors but no separate hand DoF or grasping demos were found. Source1 claims NAO performs full-body gestures and dance; Source5 states the 25 joints enable walking and general motion control. No fine manipulation or gripper demonstrations were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_005"
+      ],
+      "caveats": [
+        "No hand degrees of freedom, force feedback, or payload specification found.",
+        "No manipulation demo or success rate in reviewed sources."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Reseller descriptions and the ResearchGate figure caption describe NAO as autonomous and fully programmable. Source6 describes a study where NAO autonomously instructed a human in a modified Box and Blocks test using verbal commands and head-tap progress input. Several video titles from 2009-2024 suggest autonomous behaviors, but no transcripts were reviewed.",
+      "evidence_level": 3,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_006",
+        "aldebaran-nao_source_009",
+        "aldebaran-nao_source_010",
+        "aldebaran-nao_source_011",
+        "aldebaran-nao_source_012",
+        "aldebaran-nao_source_014"
+      ],
+      "caveats": [
+        "Autonomy claims are reseller/manufacturer assertions, not independently benchmarked.",
+        "Source6 is a single constrained research task, not general autonomy.",
+        "Video titles only; actual autonomous behavior was not reviewed."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "NAO is a true bipedal humanoid that walks, balances, recovers from falls, and performs full-body gestures per RobotLAB FAQ. It has 25 joints designed for walking and general motion control. Video titles from Aldebaran and others show NAO demos, but no transcript was available to confirm gait performance. No walking speed or stability metrics found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_005",
+        "aldebaran-nao_source_009",
+        "aldebaran-nao_source_010",
+        "aldebaran-nao_source_011"
+      ],
+      "caveats": [
+        "No walking speed, fall rate, or gait quality measured.",
+        "Video evidence is title-only; not verified by manual review."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "NAO V6 includes two 5 MP cameras, four microphones, sonar, IMU, force sensors, and tactile sensors. RobotLAB claims NAO can recognize faces and objects; Generation Robots lists voice recognition, computer vision, and distance sensing. No third-party perception benchmark was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ],
+      "caveats": [
+        "Perception capabilities are product-page claims, not independently evaluated.",
+        "No object recognition accuracy or latency data found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "NAO is designed for human-robot interaction: 20+ spoken languages, expressive RGB LEDs, touch sensors, and speech/camera-based interaction. RobotLAB describes use in special education and autism support with consistent, low-anxiety engagement. Source6 is a peer-reviewed study where NAO instructed a human participant and recorded progress, demonstrating HRI use.",
+      "evidence_level": 3,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_006"
+      ],
+      "caveats": [
+        "Source6 is one controlled task, not a broad HRI evaluation.",
+        "Special-education benefits are reseller claims, not clinical evidence."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "NAO V6 battery is 62.5 Wh with 60-90 minutes runtime per charge and about 90 minutes recharge. Generation Robots performs pre-shipment functional checks. No long-duration reliability, mean time between failures, or fall recovery rate data was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ],
+      "caveats": [
+        "Short battery life limits continuous operation.",
+        "No independent reliability data or failure rates."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "NAO is 58 cm tall, 5.48-5.6 kg, designed with curved white surfaces and short stature to be non-threatening per The Robot Report. It is used in classrooms, labs, and assistive education. No safety certification for the full robot was found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_003"
+      ],
+      "caveats": [
+        "No full-robot safety certification or injury risk data found.",
+        "Small size limits physical tasks but improves proximity safety."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Aldebaran reportedly sold about 20,000 Nao robots in 70 countries; Generation Robots repeats the same deployment figure. USC Robotics Research Lab is a named academic lab with 12 NAO units. RobotLAB actively sells and leases NAO V6. No commercial industrial deployment with output metrics was found.",
+      "evidence_level": 3,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002",
+        "aldebaran-nao_source_003",
+        "aldebaran-nao_source_007"
+      ],
+      "caveats": [
+        "Sales figures are company/reseller claims, not audited.",
+        "Named deployment is academic research, not commercial production.",
+        "No operating hours or output metrics available."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "NAO V6 is purchasable from RobotLAB for $16,990 and from Generation Robots for €10,020 incl VAT. Lease/RaaS and financing are available. A 2-year warranty is offered by Generation Robots and 1-year by RobotLAB. Short battery life and older Intel Atom compute may limit value for heavy autonomy workloads.",
+      "evidence_level": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_002"
+      ],
+      "caveats": [
+        "No OEM direct sales path confirmed; resellers only.",
+        "Post-bankruptcy support from Maxvision is not yet proven."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "aldebaran-nao_evidence_001",
+      "date": null,
+      "title": "NAO V6 RobotLAB product page specifications",
+      "claim": "RobotLAB lists NAO V6 as 574 mm tall, 5.48 kg, 25 DoF, Intel Atom E3845, 4 GB RAM, 32 GB storage, two 5 MP cameras, Li-ion 62.5 Wh battery, and ~60-90 min runtime.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "perception_scene_understanding",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Reseller product page; official SoftBank/Aldebaran specs not independently measured.",
+      "arena_relevance": "Defines size, compute, sensors, and runtime for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "NAO V6 stands 574 mm tall, weighs about 5.48 kg, and has 25 degrees of freedom.",
+      "source_location": "RobotLAB NAO V6 page, FAQ question 2 answer",
+      "verification_notes": "Company/reseller spec page. DoF conflict noted on same page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_002",
+      "date": null,
+      "title": "NAO V6 walking and balance claim",
+      "claim": "RobotLAB states NAO is a true bipedal humanoid that walks, balances, recovers from falls, and performs full-body gestures using its 25 joints.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Reseller claim; no video or measured gait evidence reviewed here.",
+      "arena_relevance": "Basis for bipedal mobility and whole-body control scoring.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Yes — unlike wheeled social robots such as Pepper and ARI, NAO is a true bipedal humanoid that walks, balances, recovers from falls, and performs full-body gestures using its 25 joints.",
+      "source_location": "RobotLAB NAO V6 page, FAQ question 7 answer",
+      "verification_notes": "Company/reseller claim; no fall recovery metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_003",
+      "date": null,
+      "title": "NAO V6 price and purchase options",
+      "claim": "RobotLAB sells the NAO V6 Standard Edition for $16,990, including robot, charger, battery, Choregraphe Unlimited license, SDK/API, curriculum, warranty, and support.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Reseller price; no OEM direct price found.",
+      "arena_relevance": "Establishes purchasability and value.",
+      "claim_type": "spec",
+      "supporting_excerpt": "RobotLAB sells the NAO V6 Standard Edition for $16,990, which includes the robot, charger and battery, a Choregraphe Unlimited software license, the full SDK and API, SoftBank curriculum, a one-year warranty, and US-based RobotLAB Support Level 1.",
+      "source_location": "RobotLAB NAO V6 page, FAQ question 3 answer",
+      "verification_notes": "Reseller offer; lease/RaaS mentioned separately.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_005",
+      "date": null,
+      "title": "NAO V6 autonomy description",
+      "claim": "Generation Robots describes NAO6 as autonomous and fully programmable, aimed at professionals and academics.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Reseller claim; autonomy not independently verified.",
+      "arena_relevance": "Basis for autonomy scoring.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "He is autonomous and fully programmable.",
+      "source_location": "Generation Robots NAO V6 page, introductory sentence",
+      "verification_notes": "Product marketing language.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_006",
+      "date": null,
+      "title": "NAO V6 battery life",
+      "claim": "Generation Robots states NAO V6 battery life is approximately 60 to 90 minutes depending on usage.",
+      "category": [
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Reseller spec; matches RobotLAB claim.",
+      "arena_relevance": "Defines runtime constraint.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot has a battery life of approximately 60 to 90 minutes depending on usage (interaction, movement, processing).",
+      "source_location": "Generation Robots NAO V6 page, FAQ battery life question",
+      "verification_notes": "No independent runtime test found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_007",
+      "date": "2025-07-19",
+      "title": "Aldebaran sales figures and Maxvision acquisition",
+      "claim": "The Robot Report reports Aldebaran sold about 20,000 Nao robots and 17,000 Pepper humanoids to 70 countries; Maxvision acquired Aldebaran's core assets including Nao and Pepper.",
+      "category": [
+        "deployment_commercial_proof",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Reputable media reporting company statements; sales figures not audited.",
+      "arena_relevance": "Provides broad deployment and corporate context.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The company said it had sold about 20,000 Nao robots and 17,000 Pepper humanoids to 70 countries, but it stopped producing Pepper in 2020 or 2021.",
+      "source_location": "The Robot Report article, paragraph about Aldebaran sales",
+      "verification_notes": "Secondary media summary of Aldebaran claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_008",
+      "date": "2025-07-19",
+      "title": "NAO non-threatening design",
+      "claim": "Aldebaran designed Nao to be non-threatening, shorter than adults, with curved white surfaces.",
+      "category": [
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Media reporting manufacturer design intent.",
+      "arena_relevance": "Supports human-proximity safety/acceptance scoring.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Aldebaran designed its bipedal Nao and wheeled Pepper to be non-threatening.",
+      "source_location": "The Robot Report article, design paragraph",
+      "verification_notes": "Design statement, not safety certification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_009",
+      "date": null,
+      "title": "Older NAO V5/V4 motherboard specifications",
+      "claim": "SoftBank documentation shows NAO V5/V4 used Atom Z530 1.6 GHz CPU, 1 GB RAM, 2 GB Flash, and 8 GB Micro SDHC.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Official documentation for older models; not relevant to V6 compute but included for context.",
+      "arena_relevance": "Context for historical hardware; do not apply to V6.",
+      "claim_type": "correction",
+      "supporting_excerpt": "ATOM Z530 1.6 GHz CPU - 1 GB RAM - 2 GB Flash memory - 8 GB Micro SDHC",
+      "source_location": "Aldebaran 2.1.4.13 documentation, Motherboard page, NAO V5 & V4 section",
+      "verification_notes": "Official older doc; V6 uses Atom E3845 per reseller specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_010",
+      "date": null,
+      "title": "Historical NAO dimensions and battery",
+      "claim": "An old NAO book states NAO is 57.3 cm tall, 27.3 cm wide, weighs less than 4.3 kg, and has a 21.6V 2Ah lithium-ion battery for up to 90 minutes.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Historical early-version specs; do not apply to V6.",
+      "arena_relevance": "Context for evolution; not V6 scoring.",
+      "claim_type": "correction",
+      "supporting_excerpt": "NAO is 57.3cm in height, 27.3cm wide, and weighs less than 4.3kg. The body is made from a special plastic material and has a 21.6V 2Ah lithium-ion batterythat allows up to 90 minutes of use.",
+      "source_location": "Scribd 'Using Nao' book, Chapter 1.1.1 Common features",
+      "verification_notes": "Old book, likely NAO V1-V3 era.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_011",
+      "date": null,
+      "title": "NAO 25 joints for walking and motion control",
+      "claim": "The NAO humanoid consists of 25 joints that enable walking and general motion control.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_005"
+      ],
+      "confidence": 0.7,
+      "notes": "Book statement, consistent with manufacturer spec.",
+      "arena_relevance": "Supports whole-body control claim.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Humanoid NAO consists of 25 joints that make walking and general motion control possible.",
+      "source_location": "Scribd 'Using Nao' book, introduction section",
+      "verification_notes": "No walking speed or stability data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_012",
+      "date": "2018-04-01",
+      "title": "Research use of NAO to instruct and evaluate task switching",
+      "claim": "A ResearchGate publication describes using NAO to give instructions to a human performing a modified Box and Blocks test, with the robot recording progress via head taps.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "aldebaran-nao_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Peer-reviewed research result demonstrating an HRI application with NAO executing its role.",
+      "arena_relevance": "Quantified but narrow evidence for autonomous instruction and human interaction.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "The Nao Humanoid Robot [9], Figure 2, was used to give instructions to user while performing the task.",
+      "source_location": "ResearchGate figure context, 'Context 1' section",
+      "verification_notes": "Study appears to be about human task switching, not robot manipulation; robot acts as instructor.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_013",
+      "date": null,
+      "title": "USC Robotics Research Lab NAO deployment",
+      "claim": "The USC Robotics Research Lab currently has 12 NAO robots, 10 of which are NAO H25 V4.0.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "aldebaran-nao_source_007"
+      ],
+      "confidence": 0.8,
+      "notes": "Named academic research lab with multiple units; not a commercial customer but a real deployment.",
+      "arena_relevance": "Supports named institutional deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The USC Robotics Research Lab currently has 12 NAOs, 10 of which are NAO H25 V 4.0.",
+      "source_location": "USC Robotics Research Lab NAO page, text body",
+      "verification_notes": "University page; not an independent audit; older V4.0 units.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "aldebaran-nao_evidence_014",
+      "date": "2006-07-21",
+      "title": "Early announcement of NAO humanoid",
+      "claim": "Engadget reported Aldebaran Robotics planned to deliver the Nao humanoid household robot by 2007, running Linux, with WiFi and URBI programming.",
+      "category": [
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "aldebaran-nao_source_008"
+      ],
+      "confidence": 0.7,
+      "notes": "Historical media report establishing first public announcement date.",
+      "arena_relevance": "Provides first_announced_date.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "French start-up Aldebaran Robotics has recently gone public with its plans to deliver a humanoid household robot by 2007, although judging from their website, they still seem to be milking the mystery aspect pretty well, complete with tantalizing close-ups of unidentifiable robot parts.",
+      "source_location": "Engadget article, first paragraph",
+      "verification_notes": "Secondary media; pre-production announcement.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "aldebaran-nao_deployment_001",
+      "customer_or_partner": "USC Robotics Research Lab",
+      "site_or_context": "University of Southern California research lab",
+      "task": "Humanoid robotics research and education; fleet of 12 NAO units, 10 of which are NAO H25 V4.0",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 12,
+      "output_metrics": [],
+      "source_ids": [
+        "aldebaran-nao_source_007"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "University page, not an independent audit.",
+        "Most units are older V4.0 model.",
+        "No operating hours, task performance, or output metrics provided."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "aldebaran-nao_demo_001",
+      "title": "Meet NAO, a Fully Programmable Humanoid Robot (NYT)",
+      "date": "2014-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-nao_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed. Do not credit specific capabilities without watching video."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-nao_demo_002",
+      "title": "NAO Next Gen : the new robot of Aldebaran Robotics",
+      "date": "2012-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-nao_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not stated in title.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-nao_demo_003",
+      "title": "Nao Robot",
+      "date": "2009-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-nao_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not stated.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-nao_demo_004",
+      "title": "Nao the Robot Chef",
+      "date": "2017-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-nao_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed. 'Chef' role unverified."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not stated.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-nao_demo_005",
+      "title": "Whole-body Imitation of Human Motions with a Nao Humanoid: Real-time teleoperation",
+      "date": "2011-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title explicitly mentions real-time teleoperation.",
+      "environment": null,
+      "source_ids": [
+        "aldebaran-nao_source_013"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed.",
+        "Teleoperation status disclosed in title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "Title says 'Real-time teleoperation'.",
+      "observed_segments": []
+    },
+    {
+      "id": "aldebaran-nao_demo_006",
+      "title": "Week 1: NAO Robot Review! The Humanoid Robot That Started It All",
+      "date": "2024-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "aldebaran-nao_source_014"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not stated.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Video evidence not reviewed",
+      "description": "Six YouTube video sources were provided with titles and dates only; no transcripts or content review was possible.",
+      "impact_on_arena_scoring": "Do not credit specific capabilities or autonomy from these videos beyond the title."
+    },
+    {
+      "topic": "Missing payload and walking speed",
+      "description": "No payload capacity or walking speed was found in any reviewed source.",
+      "impact_on_arena_scoring": "Mobility and manipulation physical limits cannot be scored precisely."
+    },
+    {
+      "topic": "Degrees of freedom conflict",
+      "description": "Manufacturer/reseller lists 25 DoF for V6; tech sheet and USC page cite 26 DoF. This pack uses 25.",
+      "impact_on_arena_scoring": "Minor uncertainty in movement complexity; do not infer extra hand DoF."
+    },
+    {
+      "topic": "Autonomy not independently benchmarked",
+      "description": "Autonomy claims come from reseller pages and a single research study; no independent benchmark, intervention log, or success rate for general tasks.",
+      "impact_on_arena_scoring": "Keep autonomy confidence moderate to low."
+    },
+    {
+      "topic": "Ownership and support after Maxvision acquisition",
+      "description": "Aldebaran entered receivership in 2025 and Maxvision acquired core assets. Long-term product support and software updates are uncertain.",
+      "impact_on_arena_scoring": "Availability is current, but future support may be at risk."
+    },
+    {
+      "topic": "Short battery life",
+      "description": "60-90 minutes runtime per charge limits long-duration autonomy and endurance tasks.",
+      "impact_on_arena_scoring": "Endurance should be capped."
+    },
+    {
+      "topic": "No commercial industrial deployment",
+      "description": "Named deployment is an academic lab; 20,000 units sold are mostly education/research. No commercial output metrics found.",
+      "impact_on_arena_scoring": "Do not credit commercial deployment proof beyond educational/research market."
+    },
+    {
+      "topic": "No manipulation demonstration",
+      "description": "No video or description of NAO grasping or manipulating objects was found; hands have only tactile sensors and unknown DoF.",
+      "impact_on_arena_scoring": "Manipulation dexterity should be minimal."
+    }
+  ],
+  "source_ids": [
+    "aldebaran-nao_source_001",
+    "aldebaran-nao_source_002",
+    "aldebaran-nao_source_003",
+    "aldebaran-nao_source_004",
+    "aldebaran-nao_source_005",
+    "aldebaran-nao_source_006",
+    "aldebaran-nao_source_007",
+    "aldebaran-nao_source_008",
+    "aldebaran-nao_source_009",
+    "aldebaran-nao_source_010",
+    "aldebaran-nao_source_011",
+    "aldebaran-nao_source_012",
+    "aldebaran-nao_source_013",
+    "aldebaran-nao_source_014"
+  ],
+  "sources": [
+    {
+      "id": "aldebaran-nao_source_001",
+      "title": "NAO V6 Humanoid Robot — Price, Specs & Demo",
+      "publisher": "RobotLAB",
+      "url": "https://www.robotlab.com/store/nao/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller/integrator product page with detailed specs, price, and FAQ; not an independent review."
+    },
+    {
+      "id": "aldebaran-nao_source_002",
+      "title": "Programmable Humanoïd Robot NAO V6",
+      "publisher": "Génération Robots",
+      "url": "https://www.generationrobots.com/en/403100-programmable-humanoid-robot-nao-v6.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "European reseller page with similar specs and price; somewhat different weight (5.6 kg)."
+    },
+    {
+      "id": "aldebaran-nao_source_003",
+      "title": "Maxvision buys core robot assets of Aldebaran, including Nao and Pepper",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/maxvision-buys-core-robot-assets-including-nao-pepper-aldebaran/",
+      "date_published": "2025-07-19",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "high",
+      "reliability_notes": "Trade media reporting on acquisition and sales figures from Aldebaran."
+    },
+    {
+      "id": "aldebaran-nao_source_004",
+      "title": "Motherboard — Aldebaran 2.1.4.13 documentation",
+      "publisher": "SoftBank Robotics Documentation",
+      "url": "https://doc.aldebaran.com/2-1/family/robots/motherboard_robot.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Official documentation but for older NAO V5/V4 models only."
+    },
+    {
+      "id": "aldebaran-nao_source_005",
+      "title": "Using Nao: To Interactive Humanoid Robots",
+      "publisher": "Scribd",
+      "url": "https://www.scribd.com/document/635329445/Untitled",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Educational book about early NAO versions; historical specs, not V6."
+    },
+    {
+      "id": "aldebaran-nao_source_006",
+      "title": "Fig. 2: Aldebaran's NAO robot is an autonomous, programmable humanoid robot",
+      "publisher": "ResearchGate",
+      "url": "https://www.researchgate.net/figure/Aldebarans-NAO-robot-is-an-autonomous-programmable-humanoid-robot_fig2_324823363",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Peer-reviewed research figure caption and context; demonstrates NAO in HRI study."
+    },
+    {
+      "id": "aldebaran-nao_source_007",
+      "title": "Nao",
+      "publisher": "University of Southern California",
+      "url": "https://robotics.usc.edu/~rasc/nao.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "University robotics lab page listing their NAO fleet; named deployment."
+    },
+    {
+      "id": "aldebaran-nao_source_008",
+      "title": "Aldebaran Robotics promises humanoid 'Nao' robot by 2007",
+      "publisher": "Engadget",
+      "url": "https://www.engadget.com/2006-07-21-aldebaran-robotics-promises-humanoid-nao-robot-by-2007.html",
+      "date_published": "2006-07-21",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Tech media reporting early announcement."
+    },
+    {
+      "id": "aldebaran-nao_source_009",
+      "title": "Meet NAO, a Fully Programmable Humanoid Robot | The New York Times",
+      "publisher": "YouTube The New York Times",
+      "url": "https://www.youtube.com/watch?v=Io4HiGrFkUw",
+      "date_published": "2014-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Reputable publisher but video title only in this review; no transcript."
+    },
+    {
+      "id": "aldebaran-nao_source_010",
+      "title": "NAO Next Gen : the new robot of Aldebaran Robotics",
+      "publisher": "YouTube NAO by Maxtronics",
+      "url": "https://www.youtube.com/watch?v=nNbj2G3GmAo",
+      "date_published": "2012-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Official-looking channel; title only."
+    },
+    {
+      "id": "aldebaran-nao_source_011",
+      "title": "Nao Robot",
+      "publisher": "YouTube awesomo2001",
+      "url": "https://www.youtube.com/watch?v=2STTNYNF4lk",
+      "date_published": "2009-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; title only."
+    },
+    {
+      "id": "aldebaran-nao_source_012",
+      "title": "Nao the Robot Chef #Aldebarannao #homerobot #humanoidrobot",
+      "publisher": "YouTube Nao and Cozmo Adventures",
+      "url": "https://www.youtube.com/watch?v=AKKIc2pgdvI",
+      "date_published": "2017-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; title only."
+    },
+    {
+      "id": "aldebaran-nao_source_013",
+      "title": "Whole-body Imitation of  Human Motions with a Nao Humanoid: Real-time teleoperation",
+      "publisher": "YouTube Humanoids Bonn",
+      "url": "https://www.youtube.com/watch?v=dC16A6u8WA8",
+      "date_published": "2011-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "University research video; title clearly states teleoperation."
+    },
+    {
+      "id": "aldebaran-nao_source_014",
+      "title": "Week 1: NAO Robot Review! The Humanoid Robot That Started It All",
+      "publisher": "YouTube Bens Stuff",
+      "url": "https://www.youtube.com/watch?v=AVB36X3AkIs",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party review video; title only."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "NAO V6 is a purchasable, long-established 58 cm bipedal research/education humanoid with 25 DoF, 5 MP cameras, and 60-90 minute battery life. Strongest evidence is actual market availability and broad deployment claims (20,000 units in 70 countries) plus a named USC lab fleet. However, most capability claims come from reseller spec pages and demo video titles only; no independent autonomy, manipulation, or reliability benchmark was found.",
+    "strongest_positive_evidence": [
+      "Purchasable from RobotLAB ($16,990) and Generation Robots (€10,020 incl VAT) with lease options.",
+      "About 20,000 NAO units sold in 70 countries per Aldebaran/media.",
+      "USC Robotics Research Lab has 12 NAO units.",
+      "Peer-reviewed research study used NAO to instruct a human in a task (Source6)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No walking speed or payload specification found.",
+      "No independent autonomy or reliability benchmark.",
+      "Video demos are title-only and not reviewed.",
+      "No grasping/manipulation demonstration.",
+      "Short battery life (60-90 min)."
+    ],
+    "conflicting_claims": [
+      "DoF: 25 (manufacturer/reseller) vs 26 (RobotLAB tech sheet note and USC page).",
+      "Height: 574 mm / 58 cm (RobotLAB, Generation Robots) vs 57.3 cm (old NAO book) vs 66 cm (USC page).",
+      "Weight: 5.48 kg (RobotLAB) vs 5.6 kg (Generation Robots) vs <4.3 kg (old book).",
+      "Battery: 62.5 Wh V6 vs 2 Ah old book; runtime 60-90 min consistent."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit specific capabilities from video titles without watching the videos.",
+      "Do not apply old NAO V4/V5 specs to V6.",
+      "Do not treat the 20,000-unit sales figure as independently audited.",
+      "Do not infer hand dexterity, payload, or walking speed from the available specs.",
+      "Do not call the USC deployment a commercial industrial proof."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "NAO V6 is current and purchasable as of 2026-10-29. The original manufacturer Aldebaran entered receivership in 2025 and assets were acquired by Maxvision; resellers continue to list V6 as in active production. No newer NAO model was identified in the sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "NAO has 26 degrees of freedom",
+      "reason": "Manufacturer/reseller spec for V6 is 25 DoF; USC page and tech sheet note list 26, but this pack uses the primary 25 figure.",
+      "source_ids": [
+        "aldebaran-nao_source_001",
+        "aldebaran-nao_source_007"
+      ]
+    },
+    {
+      "claim": "NAO V6 uses Atom Z530 / 1 GB RAM / 2 GB flash",
+      "reason": "These are SoftBank documentation specs for older NAO V5/V4 models, not V6.",
+      "source_ids": [
+        "aldebaran-nao_source_004"
+      ]
+    },
+    {
+      "claim": "NAO is 66 cm tall",
+      "reason": "USC page lists 26 in (66 cm), conflicting with official/reseller 58 cm; older source likely inaccurate or includes base.",
+      "source_ids": [
+        "aldebaran-nao_source_007"
+      ]
+    },
+    {
+      "claim": "NAO can cook",
+      "reason": "Only a video title suggests 'Robot Chef'; no transcript or visual evidence was reviewed.",
+      "source_ids": [
+        "aldebaran-nao_source_012"
+      ]
+    },
+    {
+      "claim": "NAO performs all video demos autonomously",
+      "reason": "Video titles alone do not specify autonomy, and one title explicitly says teleoperation.",
+      "source_ids": [
+        "aldebaran-nao_source_009",
+        "aldebaran-nao_source_010",
+        "aldebaran-nao_source_011",
+        "aldebaran-nao_source_012",
+        "aldebaran-nao_source_013",
+        "aldebaran-nao_source_014"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 11,
+    "independent_sources_count": 0,
+    "customer_sources_count": 1,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "NAO V6 is a 58 cm, 5.48 kg, 25-DoF bipedal humanoid sold by RobotLAB for $16,990 and Generation Robots for €10,020 incl VAT. It uses an Intel Atom E3845 with 4 GB RAM, two 5 MP cameras, four microphones, sonar, tactile sensors, and a 62.5 Wh battery rated for 60-90 minutes. About 20,000 units have reportedly been sold in 70 countries; USC has 12 units. It is an education/research platform with Choregraphe, Python, and C++. Autonomy is claimed but not independently benchmarked; video demos exist but were title-only in this review. No payload, walking speed, hand DoF, or manipulation demos were found.",
+    "strongest_evidence": [
+      "Purchasable with price and lease options from two resellers.",
+      "About 20,000 units sold in 70 countries.",
+      "Named USC lab with 12 NAO units.",
+      "Peer-reviewed research study using NAO to instruct a human task."
+    ],
+    "weakest_evidence": [
+      "No independent autonomy or reliability benchmark.",
+      "No walking speed, payload, or manipulation demonstration.",
+      "Video evidence is title-only and not reviewed."
+    ],
+    "known_do_not_credit": [
+      "Old NAO V4/V5 specs as V6.",
+      "Specific capabilities from video titles without watching.",
+      "Commercial industrial deployment proof.",
+      "Hand dexterity, payload, or walking speed claims."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "kawasaki-heavy-industries",
+    "name": "Kawasaki Heavy Industries",
+    "country": "Japan",
+    "website": "https://kawasakirobotics.com",
+    "founded": 1896,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "kawasaki-kaleido-9"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Publicly listed company."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "kawasaki-heavy-industries_source_001",
+      "title": "Kawasaki Heavy Industries",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "kawasaki-heavy-industries_source_002",
+      "title": "Kawasaki's Kaleido 9 Humanoid Robot",
+      "publisher": "mikekalil.com",
+      "url": "https://mikekalil.com/blog/kawasaki-kaleido-9-humanoid-robot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

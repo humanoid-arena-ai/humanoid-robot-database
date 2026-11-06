@@ -1,0 +1,40 @@
+{
+  "robotId": "menteebot-v3",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "MenteeBot is pre-commercial. Mobileye, which agreed to acquire Mentee Robotics in January 2026, plans customer proof-of-concept work in 2026, experimental batches in 2027 and commercial deployment from 2028.",
+  "configurations": [
+    {
+      "name": "MenteeBot (expected shelf price)",
+      "price": 20000,
+      "currency": "USD",
+      "priceType": "reported",
+      "region": "Global",
+      "notes": "Reported expected shelf price range of $20,000 to $30,000; the lower bound is stored here. The same report says MenteeBot will be offered as a subscription with maintenance and updates rather than sold standalone, at under $10 per hour. Not attributed to a named executive.",
+      "sourceLabel": "Ynetnews",
+      "sourceUrl": "https://www.ynetnews.com/business/article/skradev3yl",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy MenteeBot?",
+      "a": "No. Mentee Robotics has no order page; its go-to-market plan targets commercial deployment in structured environments from 2028.",
+      "sourceUrl": "https://www.therobotreport.com/mobileye-to-acquire-mentee-robotics-for-900m-bid-dominate-physical-ai/"
+    },
+    {
+      "q": "How much will MenteeBot cost?",
+      "a": "Ynetnews reported an expected shelf price of $20,000 to $30,000, with the robot offered by subscription at under $10 per hour rather than sold outright. Mentee has not published official pricing.",
+      "sourceUrl": "https://www.ynetnews.com/business/article/skradev3yl"
+    },
+    {
+      "q": "When will MenteeBot be available?",
+      "a": "The plan is customer proof-of-concept engagements in 2026, experimental manufacturing batches in 2027, commercial deployment in 2028 and household use around 2030.",
+      "sourceUrl": "https://www.therobotreport.com/mobileye-to-acquire-mentee-robotics-for-900m-bid-dominate-physical-ai/"
+    }
+  ],
+  "notes": "Price is a media report, not an official list or target from the company, and the article does not name its source. Expect a subscription model rather than outright purchase."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "k-scale-k-bot",
+  "name": "K-Scale K-Bot",
+  "aliases": [
+    "K-Bot",
+    "KBot"
+  ],
+  "companyId": "k-scale-labs",
+  "companyName": "K-Scale Labs",
+  "country": "United States",
+  "announced": null,
+  "status": "prototype",
+  "category": "research",
+  "summary": "K-Bot was an open-source humanoid for developers from K-Scale Labs in Palo Alto. It stood about 1.4 m tall and weighed 34 kg. K-Scale canceled pre-orders and laid off most staff in November 2025 after failing to raise funding, and released its designs under open licenses.",
+  "specs": {
+    "height_cm": {
+      "value": 140,
+      "original": "1.4 meters",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 34,
+      "original": "77 lbs (34 kg)",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": {
+      "value": 4,
+      "original": "4 hours",
+      "sourceId": "s1"
+    },
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Swappable end effectors.",
+  "sensors": "RGB camera, stereo vision, ultra-wide camera, far-field microphones, stereo speakers.",
+  "compute": "Modular, upgradable compute (no model named).",
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Interesting Engineering reported a starting price of $10,999 before the shutdown.",
+    "Hardware released under CERN-OHL-S-2.0 and software under MIT after the shutdown."
+  ],
+  "caveats": [
+    "Discontinued: K-Scale canceled all pre-orders and refunded deposits in November 2025.",
+    "Only a small number of Founder's Edition units are reported to have shipped."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "World's first garage-built humanoid robot open to creators worldwide",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/innovation/worlds-first-garage-built-humanoid-robot",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "K-Scale Labs Cancels K-Bot Orders, Open-Sources All IP After Funding Fails",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/news/k-scale-labs-cancels-k-bot-orders-open-sources-all-ip-after-funding-fails",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

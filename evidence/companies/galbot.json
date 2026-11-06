@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "galbot",
+    "name": "Galbot",
+    "country": "China",
+    "website": "https://www.galbot.com/",
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "galbot-g1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Over $300 million round in December 2025 at about $3 billion valuation, about $800 million raised in total by then (The Robot Report); a further RMB 2.5 billion round in March 2026 (Caixin)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "galbot_source_001",
+      "title": "Galbot brings in $300M to scale mobile manipulator deployments",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/galbot-brings-in-300m-to-scale-mobile-manipulator-deployments/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "galbot_source_002",
+      "title": "Galbot Raises $362 Million in Fresh Funding, Eyes Hong Kong IPO",
+      "publisher": "caixinglobal.com",
+      "url": "https://www.caixinglobal.com/2026-03-03/galbot-raises-362-million-in-fresh-funding-eyes-hong-kong-ipo-102418742.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

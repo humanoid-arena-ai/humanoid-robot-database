@@ -1,0 +1,823 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "leju-kuavo",
+    "name": "Leju Kuavo",
+    "company_id": "leju-robotics",
+    "company_name": "Leju Robotics",
+    "country": "China",
+    "generation": "Kuavo family (KUAVO, KUAVO 3.0, KUAVO-MY, Kuavo 4Pro, Kuavo-5)",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Leju's IPO filing reports 577 Kuavo units sold in 2025 with 178 million yuan revenue; reseller lists backorder; no direct consumer sale found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "research and education",
+      "industrial pilot (FAW Hongqi factory)",
+      "express parcel delivery",
+      "household assistance",
+      "public events/torchbearer"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.4 m (KUAVO-MY open platform)",
+      "value": 140,
+      "unit": "cm",
+      "notes": "Height for base KUAVO not published in reviewed sources. The Robot Report reports KUAVO-MY stands 1.4 m tall; other Kuavo variants may differ.",
+      "source_ids": [
+        "leju-kuavo_source_004"
+      ]
+    },
+    "weight": {
+      "original_value": "about 45kg (CTTL-tested KUAVO); 60kg net weight (Robotics Center listing)",
+      "value": 45,
+      "unit": "kg",
+      "notes": "CTTL independent test reports about 45 kg for the tested KUAVO. Robotics Center reseller listing says net weight 60 kg. Conflict kept in researcher_notes; CTTL value used as primary because independent.",
+      "source_ids": [
+        "leju-kuavo_source_001",
+        "leju-kuavo_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "Single-Arm Payload: 5 kg",
+      "value": 5,
+      "unit": "kg",
+      "notes": "Reported by addoobot, added 2026-10-29 by automated spec fill; KUAVO 5 legged variant; per-arm payload only. Page also lists whole-body payload 20 kg..",
+      "source_ids": [
+        "leju-kuavo_source_012"
+      ]
+    },
+    "runtime": {
+      "original_value": "Advertised Endurance: ≥2 hours",
+      "value": 2,
+      "unit": "h",
+      "notes": "Reported by addoobot, added 2026-10-29 by automated spec fill; KUAVO 5 legged variant; wheeled KUAVO 5-W listed as ≥8 hours..",
+      "source_ids": [
+        "leju-kuavo_source_012"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity and chemistry not disclosed in reviewed sources.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "4.6km/h",
+      "value": 1.28,
+      "unit": "m/s",
+      "notes": "CTTL-tested maximum pace speed of base KUAVO. Conversion to 1.28 m/s.",
+      "source_ids": [
+        "leju-kuavo_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 26,
+      "notes": "Base KUAVO has 26 DoF whole body per CTTL test. The Robot Report reports KUAVO-MY has more than 40 DoF. Hand DoF not published.",
+      "source_ids": [
+        "leju-kuavo_source_001",
+        "leju-kuavo_source_004"
+      ]
+    },
+    "hands": {
+      "description": "No hand specifications found. Video title mentions swappable hands for KUAVO 5/5-W, but no details.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "leju-kuavo_source_009"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "description": "No sensor suite details found in reviewed sources.",
+      "source_ids": []
+    },
+    "compute": {
+      "description": "No onboard compute details found in reviewed sources.",
+      "source_ids": []
+    },
+    "actuators": {
+      "description": "No actuator specifications found in reviewed sources.",
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "backorder",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.roboticscenter.ai/store/product/leju-robotics-leju-kuavo",
+      "notes": "Robotics Center listing shows contact for pricing and backorder. No public numeric price found in reviewed source excerpts. Catalog orientation mentioned $50,000 but that price did not appear in the provided SOURCE 2 content.",
+      "source_ids": [
+        "leju-kuavo_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Torchbearer event showed Kuavo gripping a 1.6 kg torch and executing a handover, but it was remote-controlled. Video titles mention parcel delivery, household help, and swappable hands, but no transcript or detailed manipulation metrics. No hand DoF or dexterity benchmarks found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "leju-kuavo_source_005",
+        "leju-kuavo_source_007",
+        "leju-kuavo_source_008",
+        "leju-kuavo_source_009"
+      ],
+      "caveats": [
+        "Torch handover was teleoperated via 5G-A.",
+        "Video titles only; no transcripts or independent verification of manipulation tasks.",
+        "No success rates, force control, or hand specifications published."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "CTTL test reports complex terrain autonomous walking and planning/navigation. Torchbearer was explicitly remote-controlled, not autonomous. No evidence of autonomous manipulation or end-to-end task execution.",
+      "evidence_level": 1,
+      "source_ids": [
+        "leju-kuavo_source_001",
+        "leju-kuavo_source_005"
+      ],
+      "caveats": [
+        "Autonomous walking is a test claim; no independent video or task detail.",
+        "Public torchbearer demo was disclosed teleoperated.",
+        "No autonomous manipulation demos or intervention-free task runs found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "CTTL independent test verified 4.6 km/h pace, continuous jumps over 20 cm, and complex terrain autonomous walking. Public torchbearer event demonstrated 100 m run/walk with torch while remotely controlled. Video titles suggest daily factory work and parcel delivery.",
+      "evidence_level": 3,
+      "source_ids": [
+        "leju-kuavo_source_001",
+        "leju-kuavo_source_005",
+        "leju-kuavo_source_007",
+        "leju-kuavo_source_011"
+      ],
+      "caveats": [
+        "Torchbearer was teleoperated; autonomy of walking not independent.",
+        "No fall rates, disturbance recovery, or long-term mobility metrics published.",
+        "Video titles only; no transcripts."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "CTTL test lists planning/navigation and complex terrain autonomous walking, implying basic perception. No sensor details, vision benchmarks, or scene-understanding demos found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "leju-kuavo_source_001"
+      ],
+      "caveats": [
+        "No sensor suite disclosed.",
+        "No independent perception benchmark or object recognition demo."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No speech, gesture, or human-robot interaction capabilities found in reviewed sources. Torchbearer event involved human surroundings but was remote-controlled.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No evidence of interactive communication or instruction following."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "CTTL evaluation included power consumption and battery life among 13 test dimensions, but results not published. Sales of 577 units suggest some field use but no reliability metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "leju-kuavo_source_001",
+        "leju-kuavo_source_003"
+      ],
+      "caveats": [
+        "No runtime, charge time, or failure rates published.",
+        "Sales figures do not prove reliability; no customer uptime data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Kuavo operated in a public torch relay crowd, indicating basic suitability for human environments. Base robot weighs about 45 kg, KUAVO-MY is 1.4 m tall. No safety certifications or impact-force data found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "leju-kuavo_source_001",
+        "leju-kuavo_source_004",
+        "leju-kuavo_source_005"
+      ],
+      "caveats": [
+        "Torchbearer was teleoperated, reducing autonomous safety concerns.",
+        "No safety testing or certification disclosed.",
+        "Weight conflict between sources (45 kg vs 60 kg)."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Leju's IPO filing reports 577 Kuavo units sold in 2025, generating 178 million yuan (68.86% of revenue). Video title shows daily work at FAW Hongqi factory. KUAVO-MY marketed as open platform for industrial applications.",
+      "evidence_level": 3,
+      "source_ids": [
+        "leju-kuavo_source_003",
+        "leju-kuavo_source_004",
+        "leju-kuavo_source_011"
+      ],
+      "caveats": [
+        "Sales figures from company IPO filing, not independently audited customer deployments.",
+        "FAW Hongqi factory evidence is only a video title with no transcript or duration.",
+        "No customer names beyond FAW Hongqi title; no output metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Reseller lists Kuavo as backorder with contact for pricing; units have been sold to institutions/researchers. No public price found in reviewed source excerpts.",
+      "evidence_level": 2,
+      "source_ids": [
+        "leju-kuavo_source_002",
+        "leju-kuavo_source_003"
+      ],
+      "caveats": [
+        "Price not publicly listed in provided SOURCE 2 content.",
+        "Backorder status may limit immediate availability."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "leju-kuavo_evidence_001",
+      "date": "2024-03-04",
+      "title": "CTTL general ontology test pass for KUAVO",
+      "claim": "CTTL Terminal Labs tested Leju KUAVO and it passed the general ontology test; the robot weighs about 45kg, has 26 DoF, pace speed up to 4.6km/h, continuous jumps over 20cm, and can perform task operations, planning/navigation, complex terrain autonomous walking, and continuous jumping.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "autonomy_task_execution",
+        "perception_scene_understanding",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 5,
+      "source_ids": [
+        "leju-kuavo_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Independent government-affiliated certification lab (CAICT/CTTL). Test results are independent of company claims.",
+      "arena_relevance": "Strong independent verification of mobility, speed, jumping, and basic autonomy capabilities.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Leju KUAVO (Chinese \"Kuafu\") large-size highly dynamic humanoid robot, weighing about 45kg, 26 degrees of freedom of the whole body, its pace speed can reach up to 4.6km/h, fast continuous jump height of more than 20cm, at this stage the robot has been able to achieve task operations, planning and navigation, complex terrain autonomous walking, continuous continuous jumping and other functions.",
+      "source_location": "CAICT/CTTL article body",
+      "verification_notes": "Independent test report; exact test conditions and scoring not published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "high",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "leju-kuavo_evidence_002",
+      "date": null,
+      "title": "Robotics Center listing for Leju KUAVO",
+      "claim": "Robotics Center lists Leju KUAVO as a humanoid robot with net weight 60 kg, availability backorder, and contact for pricing.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "leju-kuavo_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Reseller store listing; spec may differ from CTTL-tested base KUAVO.",
+      "arena_relevance": "Provides a purchase path and conflicting weight spec.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Net weight60 kg",
+      "source_location": "Robotics Center product page, Key Specifications",
+      "verification_notes": "Net weight conflicts with CTTL's 45 kg; conflict noted in researcher_notes.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [
+          "human_environment_fit"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "leju-kuavo_evidence_003",
+      "date": "2026-06-13",
+      "title": "Leju IPO filing sales data",
+      "claim": "Leju's full-size Kuavo series generated 178 million yuan in sales in 2025, accounting for 68.86% of total revenue, and sold 577 units cumulatively in 2025; company revenue was 258 million yuan with 118.68% three-year CAGR.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "leju-kuavo_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Company-reported figures from IPO filing, reported by reputable media Gasgoo.",
+      "arena_relevance": "Demonstrates commercial sales volume and revenue, though units may be to research/industrial customers.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "In 2025, its full-size Kuavo series generated 178 million yuan in sales—a roughly 12-fold jump—accounting for 68.86% of total revenue. Accordingly, Leju sold 577 units of the Kuavo series cumulatively in 2025, ranking among the top globally.",
+      "source_location": "Gasgoo article, Leju Robotics section",
+      "verification_notes": "Numbers originate from IPO filing; no independent audit in media report.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "leju-kuavo_evidence_004",
+      "date": "2025-10-25",
+      "title": "KUAVO-MY open platform specs",
+      "claim": "Leju Robotics' KUAVO-MY is an open platform for general embodied intelligence, 1.4 m tall with more than 40 DoF, suitable for developers and industrial applications; weight not listed.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "leju-kuavo_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Media reporting company claims; KUAVO-MY is a variant, not base KUAVO.",
+      "arena_relevance": "Provides height and DoF for a newer variant.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "KUAVO-MY is an 'open platform' for general embodied intelligence, suitable for both developers and industrial applications, according to Leju. It stands 1.4 m (4 ft., 9.8 in.) tall and has more than 40 DoF, but the company did not list its weight.",
+      "source_location": "The Robot Report article, Leju builds an 'open platform' section",
+      "verification_notes": "Company spec via media; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "leju-kuavo_evidence_005",
+      "date": "2025-11-03",
+      "title": "Kuavo torchbearer at National Games",
+      "claim": "Kuavo served as torchbearer at China's 15th National Games, completing ~100m, gripping a 1.6kg torch, and operators directed every motion via 5G-A remote control.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "leju-kuavo_source_005"
+      ],
+      "confidence": 0.75,
+      "notes": "Reputable media report of a public event; demonstration was teleoperated.",
+      "arena_relevance": "Shows real-world mobility and basic grasping, but not autonomy.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "This allowed operators in a control room to direct Kuavo’s every motion – from starting and running to waving and transferring the torch – as it moved through the crowd.",
+      "source_location": "Robotics & Automation News article, A technological triumph section",
+      "verification_notes": "Article confirms remote real-time control, so teleoperation is disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "leju-kuavo_deployment_001",
+      "customer_or_partner": "FAW Hongqi factory",
+      "site_or_context": "Shenzhen Leju Robotics' KUAVO's daily work at the FAW Hongqi factory (video title only)",
+      "task": "Daily work at factory (unspecified)",
+      "start_date": null,
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "leju-kuavo_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Evidence is only a YouTube video title; no transcript or customer confirmation.",
+        "Task details, operating hours, and unit count not disclosed."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "leju-kuavo_demo_001",
+      "title": "Kuavo torchbearer at China's 15th National Games",
+      "date": "2025-11-02",
+      "observed_capabilities": [
+        "gripping a 1.6 kg torch",
+        "100-meter walk/run in public crowd",
+        "torch handover to human runner",
+        "remote-controlled motion via 5G-A"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Operators in a control room directed every motion via real-time 5G-A connection.",
+      "environment": "Shenzhen torch relay public street",
+      "source_ids": [
+        "leju-kuavo_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Teleoperated, not autonomous.",
+        "No independent video verification; based on reputable media report."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as media description.",
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "Explicitly disclosed as remote real-time control via 5G-A.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Torch carrying and handover over ~100m",
+          "verification_notes": "Timestamp not verified."
+        }
+      ]
+    },
+    {
+      "id": "leju-kuavo_demo_002",
+      "title": "A Day in the Life of the Kuavo Humanoid Robot Delivering Express Parcels",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "delivering express parcels (inferred from title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "leju-kuavo_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript reviewed.",
+        "Teleoperation or autonomy not disclosed."
+      ],
+      "editing_notes": "Not manually reviewed; official Leju Robotics channel.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Parcel delivery scenario (inferred)",
+          "verification_notes": "Timestamp not verified."
+        }
+      ]
+    },
+    {
+      "id": "leju-kuavo_demo_003",
+      "title": "Leju KUAVO 5: The Robot That Can Help Around the House",
+      "date": "2025-11-29",
+      "observed_capabilities": [
+        "household assistance (inferred from title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "leju-kuavo_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript.",
+        "No specific tasks or autonomy evidence."
+      ],
+      "editing_notes": "Not manually reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not disclose execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "House help scenario (inferred)",
+          "verification_notes": "Timestamp not verified."
+        }
+      ]
+    },
+    {
+      "id": "leju-kuavo_demo_004",
+      "title": "Shenzhen Leju Robotics' KUAVO's daily work at the FAW Hongqi factory",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "daily work at FAW Hongqi factory (inferred from title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "FAW Hongqi factory",
+      "source_ids": [
+        "leju-kuavo_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title only; no transcript.",
+        "No task details or autonomy disclosure."
+      ],
+      "editing_notes": "Not manually reviewed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not disclose execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Factory work (inferred)",
+          "verification_notes": "Timestamp not verified."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public price",
+      "description": "Robotics Center listing says 'Contact for pricing' and backorder; no numeric price in provided SOURCE 2 excerpt.",
+      "impact_on_arena_scoring": "Accessibility/value remains partially hidden; cannot confirm $50,000 catalog figure."
+    },
+    {
+      "topic": "Weight conflict",
+      "description": "CTTL independent test reports about 45 kg; Robotics Center reseller listing says 60 kg net weight.",
+      "impact_on_arena_scoring": "Uncertainty in human-environment fit and payload calculations."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Torchbearer demo was explicitly teleoperated. Autonomous walking claim from CTTL test, but no video or intervention log.",
+      "impact_on_arena_scoring": "Autonomy_task_execution should remain low; do not credit unverified autonomous task completion."
+    },
+    {
+      "topic": "Video titles only",
+      "description": "Several YouTube sources provide only titles without transcripts; observed capabilities inferred from titles cannot be verified.",
+      "impact_on_arena_scoring": "Deployment and manipulation claims from titles should carry minimal weight."
+    },
+    {
+      "topic": "Endurance/reliability metrics",
+      "description": "CTTL test included power consumption and battery life dimensions but results not published; no runtime, failure rate, or uptime data.",
+      "impact_on_arena_scoring": "Endurance_reliability evidence level capped at low."
+    },
+    {
+      "topic": "Hand and sensor details",
+      "description": "No hand DoF, sensor suite, compute, or actuator specifications found in reviewed sources.",
+      "impact_on_arena_scoring": "Cannot assess manipulation precision or perception capabilities."
+    }
+  ],
+  "source_ids": [
+    "leju-kuavo_source_001",
+    "leju-kuavo_source_002",
+    "leju-kuavo_source_003",
+    "leju-kuavo_source_004",
+    "leju-kuavo_source_005",
+    "leju-kuavo_source_006",
+    "leju-kuavo_source_007",
+    "leju-kuavo_source_008",
+    "leju-kuavo_source_009",
+    "leju-kuavo_source_010",
+    "leju-kuavo_source_011",
+    "leju-kuavo_source_012"
+  ],
+  "sources": [
+    {
+      "id": "leju-kuavo_source_001",
+      "title": "The first batch of humanoid robots!Leju passed the general ontology test and evaluation of humanoid robots | CTTL Terminal Labs",
+      "publisher": "CAICT / CTTL",
+      "url": "https://gma.caict.ac.cn/en/plat/cttl-t/lejurobot-kuavo-humanoid-pass-the-general-evaluation-performed-by-cttl",
+      "date_published": "2024-03-04",
+      "date_accessed": "2026-10-29",
+      "source_type": "regulatory_or_filing",
+      "reliability": "high",
+      "reliability_notes": "Independent government-affiliated certification lab test report."
+    },
+    {
+      "id": "leju-kuavo_source_002",
+      "title": "Leju KUAVO",
+      "publisher": "Robotics Center",
+      "url": "https://www.roboticscenter.ai/store/product/leju-robotics-leju-kuavo",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller store listing; not manufacturer official page."
+    },
+    {
+      "id": "leju-kuavo_source_003",
+      "title": "Embodied AI IPO Boom: Building Real Businesses or Riding the Hype?",
+      "publisher": "Gasgoo Auto News",
+      "url": "https://autonews.gasgoo.com/articles/news/embodied-ai-ipo-boom-building-real-businesses-or-riding-the-hype-2065702333747675136",
+      "date_published": "2026-06-13",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media reporting company IPO filing figures."
+    },
+    {
+      "id": "leju-kuavo_source_004",
+      "title": "Leju raises $200M for humanoid production as Unitree unveils H2 - The Robot Report",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/leju-raises-200m-humanoid-production-unitree-unveils-h2-robot/",
+      "date_published": "2025-10-25",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade publication reporting company background and specs."
+    },
+    {
+      "id": "leju-kuavo_source_005",
+      "title": "Leju Robot’s humanoid makes history as torchbearer at China’s 15th National Games",
+      "publisher": "Robotics & Automation News",
+      "url": "https://roboticsandautomationnews.com/2025/11/03/leju-robots-humanoid-makes-history-as-torchbearer-at-chinas-15th-national-games/96156/",
+      "date_published": "2025-11-03",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media report of public event; explicitly discloses teleoperation."
+    },
+    {
+      "id": "leju-kuavo_source_006",
+      "title": "🤖LEJU's KUAVO 5: Industrial Muscle, Home Potential Unlocked! #humanoid #homerobot #LEJU",
+      "publisher": "YouTube XRoboHub",
+      "url": "https://www.youtube.com/watch?v=fyZA6-DbJgw",
+      "date_published": "2025-11-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title only, no transcript reviewed."
+    },
+    {
+      "id": "leju-kuavo_source_007",
+      "title": "A Day in the Life of the Kuavo Humanoid Robot Delivering Express Parcels.",
+      "publisher": "YouTube Leju Robotics",
+      "url": "https://www.youtube.com/watch?v=tIuTn9iDvbQ",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company YouTube channel; title only, no transcript reviewed."
+    },
+    {
+      "id": "leju-kuavo_source_008",
+      "title": "Leju KUAVO 5: The Robot That Can Help Around the House",
+      "publisher": "YouTube JobToRob",
+      "url": "https://www.youtube.com/watch?v=cIdtzp9OYg8",
+      "date_published": "2025-11-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title only."
+    },
+    {
+      "id": "leju-kuavo_source_009",
+      "title": "🤖 Leju KUAVO 5/5-W: The Modular Robot with SWAPPABLE Legs/Hands for Factories!#humanoid #robotics",
+      "publisher": "YouTube XRoboHub",
+      "url": "https://www.youtube.com/watch?v=s-qfBqXx7zI",
+      "date_published": "2025-11-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title only."
+    },
+    {
+      "id": "leju-kuavo_source_010",
+      "title": "Meet KUAVO — the Shape-Shifting Humanoid Built for the Real World 🤖",
+      "publisher": "YouTube JobToRob",
+      "url": "https://www.youtube.com/watch?v=erhsX7GgIhY",
+      "date_published": "2025-11-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title only."
+    },
+    {
+      "id": "leju-kuavo_source_011",
+      "title": "Shenzhen Leju Robotics' KUAVO's daily work at the FAW Hongqi factory.",
+      "publisher": "YouTube fsociety security",
+      "url": "https://www.youtube.com/watch?v=S78K0itPvUg",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title only, no transcript."
+    },
+    {
+      "id": "leju-kuavo_source_012",
+      "title": "Leju Robot KUAVO 5 & 5-W Humanoid Robots | Explore & Compare",
+      "publisher": "addoobot",
+      "url": "https://www.addoobot.com/robots-&-AI/humanoids/405/leju-robot-kuavo-5-5-w-humanoid-robots/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Leju Kuavo has independent CTTL certification for mobility (4.6 km/h, 20cm jumps, 26 DoF) and reported sales of 577 units in 2025, but most capability demos are title-only videos or a teleoperated torchbearer event; autonomy and manipulation evidence remain weak.",
+    "strongest_positive_evidence": [
+      "CTTL independent test pass for mobility specs, autonomous walking, and jumping (source_001).",
+      "577 Kuavo units sold in 2025 per IPO filing; 178 million yuan revenue (source_003).",
+      "Public torchbearer event showing 100m walk with torch, albeit teleoperated (source_005).",
+      "Official video title indicating parcel delivery (source_007)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No autonomous manipulation or task execution evidence.",
+      "No runtime, battery, or reliability metrics.",
+      "No hand, sensor, or compute specifications.",
+      "Video sources provide only titles without transcripts."
+    ],
+    "conflicting_claims": [
+      "Weight: 45 kg (CTTL) vs 60 kg (Robotics Center listing).",
+      "Catalog orientation mentioned $50,000 price, but SOURCE 2 excerpt shows only 'Contact for pricing' with no numeric price.",
+      "KUAVO-MY height 1.4 m with >40 DoF (variant) differs from base KUAVO 26 DoF."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "industrial_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit autonomous torchbearer performance; it was explicitly teleoperated.",
+      "Do not credit household or factory tasks from title-only videos as verified.",
+      "Do not claim $50,000 price unless confirmed from a source not provided.",
+      "Do not treat 577 units sold as independent customer deployment proof; it is company-reported sales."
+    ],
+    "compilation_note": "This pack was compiled automatically from public sources on 2026-10-29 and needs human review.",
+    "human_review_required": true
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Kuavo family is Leju's current full-size humanoid line as of 2026-10-29. No newer full-size model announced in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Robotics Center catalog price of $50,000",
+      "reason": "The provided SOURCE 2 excerpt does not include a numeric price; it shows 'Contact for pricing'. Catalog orientation mentioned $50,000 but that likely came from a different page version not present.",
+      "source_ids": [
+        "leju-kuavo_source_002"
+      ]
+    },
+    {
+      "claim": "KUAVO 5/5-W swappable legs/hands as verified capability",
+      "reason": "Only a YouTube title; no transcript or video review to substantiate.",
+      "source_ids": [
+        "leju-kuavo_source_009"
+      ]
+    },
+    {
+      "claim": "Autonomous household or factory work",
+      "reason": "Video titles only; no autonomy disclosure or verified footage.",
+      "source_ids": [
+        "leju-kuavo_source_008",
+        "leju-kuavo_source_011"
+      ]
+    },
+    {
+      "claim": "Base KUAVO height",
+      "reason": "No height for base KUAVO found; only KUAVO-MY height 1.4 m reported.",
+      "source_ids": [
+        "leju-kuavo_source_004"
+      ]
+    },
+    {
+      "claim": "Independent customer deployment metrics",
+      "reason": "Sales figures are company-reported via IPO filing; no independent audit or customer output data.",
+      "source_ids": [
+        "leju-kuavo_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 9,
+    "independent_sources_count": 1,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Leju Kuavo is a family of full-size biped humanoids from Leju Robotics, with base KUAVO independently tested by CTTL at 45 kg, 26 DoF, 4.6 km/h pace, and 20cm jumps; KUAVO-MY variant is 1.4 m with >40 DoF. Leju's IPO filing reports 577 Kuavo units sold in 2025 for 178 million yuan. A public torchbearer event demonstrated 100m torch carrying and handover, but was explicitly teleoperated. Several YouTube titles suggest parcel delivery, household help, modular hands, and FAW factory work, but lack transcripts. No autonomous manipulation, runtime, battery, sensor, or hand specs were found in reviewed sources.",
+    "strongest_evidence": [
+      "CTTL independent test: 4.6 km/h pace, 20cm jumps, 26 DoF, autonomous walking (leju-kuavo_evidence_001).",
+      "577 units sold and 178M yuan revenue from IPO filing (leju-kuavo_evidence_003).",
+      "Teleoperated torchbearer event with 1.6kg torch over 100m (leju-kuavo_evidence_005)."
+    ],
+    "weakest_evidence": [
+      "No autonomous task execution or manipulation verified.",
+      "No price, runtime, battery, hand/sensor specs.",
+      "Video titles only for factory/household/parcel claims."
+    ],
+    "known_do_not_credit": [
+      "Autonomous torchbearer performance (it was teleoperated).",
+      "Title-only video claims as verified capabilities.",
+      "$50,000 price unless confirmed outside provided sources.",
+      "Independent customer deployment metrics."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

@@ -1,0 +1,734 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "1x-neo",
+    "name": "1X NEO",
+    "company_id": "1x-technologies",
+    "company_name": "1X Technologies",
+    "country": "Norway / United States",
+    "generation": null,
+    "first_announced_date": "2025-10-29",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Preorder home robot: $200 refundable deposit, $20,000 Early Access ownership, or $499/month subscription; first U.S. deliveries claimed for 2026.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "service_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as purchasable/preorder-current based on official order and factory updates reviewed on 2026-05-16; no verified customer delivery evidence found."
+  },
+  "specs": {
+    "height": {
+      "original_value": "5'6\"",
+      "value": 5.5,
+      "unit": "ft",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "weight": {
+      "original_value": "66 lbs",
+      "value": 66,
+      "unit": "lb",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": "Arm Payload 18 lbs; Carry 55 lbs; Lift 154 lbs",
+      "value": 18,
+      "unit": "lb per arm",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "runtime": {
+      "original_value": "4h",
+      "value": 4,
+      "unit": "hours",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "842 Wh; quick charge 6min per hour runtime",
+      "value": 842,
+      "unit": "Wh",
+      "notes": "Official product/order specs; not independently tested.",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 75,
+      "notes": "Official DoF subtotal from hands 22x2, arms 7x2, neck 3, spine 2, legs 6x2.",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "Walking speed 1.4 m/s; max run speed 6.2 m/s",
+      "value": 1.4,
+      "unit": "m/s",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "hands": {
+      "description": "Official specs list 22 DoF per hand, hand speed 8.0 m/s, and IP68 submersible hands.",
+      "degrees_of_freedom": 22,
+      "force_feedback": null,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Dual 8.85MP 90Hz stereo fisheye cameras",
+        "4 beamforming microphones",
+        "Linkwise differential IMUs",
+        "Stereo RGB vision used for stair-height inference in 1X mobility controller post"
+      ],
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_007"
+      ]
+    },
+    "compute": {
+      "description": "Official specs list 1X NEO Cortex using Nvidia Jetson Thor and up to 2070 FP4 TFLOPS; Redwood AI described as a 160M-parameter onboard transformer running around 5 Hz.",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_006"
+      ]
+    },
+    "actuators": {
+      "description": "Official materials describe 1X Tendon Drive, low-inertia tendon drives, 95% backdrivability, 2% torque accuracy, 1mm accuracy, and soft lattice body/no external pinch points.",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 20000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.1x.tech/neo",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specs claim 22 DoF per hand and an 18 lb per-arm payload; company AI posts show pick/place and some dexterous task trials, but independent dexterity validation is still absent.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_005"
+      ],
+      "caveats": [
+        "Official dexterity specs and AI results are not independently measured.",
+        "1X's world-model post reports some dexterous tasks remained challenging, including 0% success on drawing and pouring tasks in its displayed chart.",
+        "No public long-horizon household manipulation benchmark was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "1X claims NEO works autonomously by default and arrives with basic autonomy, but the product page also discloses scheduled Expert Mode for unknown chores and remote control from the app/VR; media coverage of WSJ hands-on testing stresses heavy teleoperation dependence.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_002",
+        "1x-neo_source_003",
+        "1x-neo_source_008"
+      ],
+      "caveats": [
+        "Autonomy claims are mostly company claims or curated demos.",
+        "Expert Mode/remote-control workflow means task completion cannot be credited as fully autonomous unless specifically shown.",
+        "No public intervention-rate, fallback-rate, or household task suite benchmark was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs claim 1.4 m/s walking and 6.2 m/s max run speed; 1X's mobility post claims omnidirectional walking, sitting, kneeling, floor recovery, and stair traversal using stereo vision.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_007"
+      ],
+      "caveats": [
+        "Mobility evidence is official/company-run.",
+        "No independent stability, fall-rate, stair, or cluttered-home mobility benchmark was found.",
+        "Public demo continuity and failure cases were not timestamp-audited in this pass."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official specs list stereo fisheye cameras, microphones, visual intelligence, memory, and Redwood/World Model perception claims; public evidence remains company-reported rather than benchmarked.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_005",
+        "1x-neo_source_006"
+      ],
+      "caveats": [
+        "No independent perception benchmark or raw logs were found.",
+        "1X's own world-model post notes remaining weak 3D grounding and real-robot undershoot/overshoot failure modes.",
+        "Camera and microphone specs do not prove robust household scene understanding."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official product materials claim voice interface, built-in LLM, audio intelligence, visual intelligence, memory, ear-ring status indicators, soft body, and no external pinch points.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_008"
+      ],
+      "caveats": [
+        "Human-interaction claims are not independently safety certified in reviewed sources.",
+        "Remote Expert Mode raises privacy and consent concerns that are material for in-home interaction.",
+        "No public user-study or accessibility trial data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official specs claim 4h runtime, 842 Wh battery, self-charging, 22 dB audible noise, 2M nominal tendon-drive load cycles, and factory reliability testing at 20M+ cycles and counting.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_004"
+      ],
+      "caveats": [
+        "Runtime, noise, and load-cycle claims are official and not independently tested.",
+        "No public field uptime, warranty return, maintenance, or MTBF data was found.",
+        "Factory reliability lab claims do not equal home deployment reliability."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "NEO is explicitly positioned for homes, with bipedal mobility, stairs, soft washable suit/shoes, soft body, no external pinch points, 5'6\" height, and 66 lb weight.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_007",
+        "1x-neo_source_009"
+      ],
+      "caveats": [
+        "Home fit is primarily design intent and company demo evidence.",
+        "Reviewed media still emphasizes unknown behavior when the robot gets stuck, falls, or encounters ordinary home edge cases.",
+        "No independent in-home trial report with success/failure rates was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Official order page supports $200 refundable deposits, $20,000 Early Access ownership, $499/month subscription, and U.S. deliveries starting 2026; 1X says 10,000 NEOs booked out next-year production capacity in five days and Hayward full-scale production has commenced.",
+      "evidence_level": 2,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_004",
+        "1x-neo_source_010"
+      ],
+      "caveats": [
+        "Preorders and factory capacity are not the same as completed customer deployments.",
+        "No independently verified customer delivery, installed-base, or retention data was found.",
+        "Production-capacity claims are company claims."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "NEO is marketed as a home helper/companion with voice interface, mobile app, scheduled chores, and remote Expert assistance, which could be valuable for some users if reliability and privacy constraints are solved.",
+      "evidence_level": 1,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003",
+        "1x-neo_source_008"
+      ],
+      "caveats": [
+        "No accessibility-specific trials, caregiver studies, or independent user outcomes were found.",
+        "Remote operation and in-home camera/microphone use may be disqualifying for some users.",
+        "Do not credit broad accessibility value beyond stated design intent."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "1x-neo_evidence_001",
+      "date": "2025-10-28",
+      "title": "Official NEO hardware and availability specs",
+      "claim": "1X's product/order pages list NEO as a 5'6\", 66 lb bipedal home robot with 22 DoF per hand, 18 lb arm payload, 55 lb carry, 154 lb lift, 1.4 m/s walking speed, 842 Wh battery, 4h runtime, Nvidia Jetson Thor compute, dual stereo fisheye cameras, $20,000 Early Access ownership, and $499/month subscription.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ],
+      "confidence": 0.8,
+      "notes": "Official source; specs and pricing are authoritative for claimed product configuration but not independently measured.",
+      "arena_relevance": "Establishes product identity, home form factor, claimed physical capability envelope, and preorder commercial posture.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official pages list height 5'6\", weight 66 lbs, lift 154 lbs, carry 55 lbs, arm payload 18 lbs, hands 22x2 DoF, walking speed 1.4 m/s, battery 842 Wh, runtime 4h, chipset 1X NEO Cortex (Nvidia Jetson Thor), dual 8.85MP 90Hz stereo fisheye cameras, $20,000 ownership, and $499/mo subscription.",
+      "source_location": "NEO product page Hardware section and Order page pricing/spec sections",
+      "verification_notes": "Company-published specifications and order terms; no independent measurements or shipment confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs",
+          "deployment_commercial_proof",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-neo_evidence_002",
+      "date": "2025-10-29",
+      "title": "Hands-on/media reporting emphasized teleoperation dependence",
+      "claim": "WSJ hands-on coverage, summarized by reputable media and linked in the existing audit, reported that NEO's demonstrated work was heavily dependent on Expert Mode / human teleoperation rather than mature autonomy.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "1x-neo_source_002",
+        "1x-neo_source_008"
+      ],
+      "confidence": 0.65,
+      "notes": "Use as a major autonomy caveat. It is hands-on/media context, not a controlled benchmark.",
+      "arena_relevance": "Prevents over-crediting chore demos or preorder claims as autonomous household capability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Media coverage of the WSJ hands-on said the robot required human teleoperation for launch-era task completion and highlighted privacy concerns around remote operators seeing through NEO's cameras.",
+      "source_location": "I Tried the Robot That’s Coming to Live With You. It’s Still Part Human; Tom's Guide coverage of WSJ hands-on test",
+      "verification_notes": "Source-backed but scoped to reported hands-on context; no full raw benchmark data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "human_interaction"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "negative_caveat"
+      }
+    },
+    {
+      "id": "1x-neo_evidence_003",
+      "date": "2025-10-28",
+      "title": "Official Expert Mode and remote-control disclosure",
+      "claim": "1X discloses that NEO works autonomously by default for known/basic tasks, but for complex or unknown chores owners can schedule a 1X Expert to remotely supervise, and the product supports remote piloting through the mobile app and VR device.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_003"
+      ],
+      "confidence": 0.85,
+      "notes": "This is an official limitation disclosure and should be weighted more heavily than broad marketing autonomy language.",
+      "arena_relevance": "Separates task completion evidence from autonomous task execution evidence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Official pages say NEO works autonomously by default, but unknown or complex chores can use scheduled 1X Expert guidance, and users can pilot NEO from the app and a VR device.",
+      "source_location": "NEO product page Expert Mode and Utility sections; Order page Utility section",
+      "verification_notes": "Company disclosure; does not quantify how often Expert Mode is required.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "negative_caveat"
+      }
+    },
+    {
+      "id": "1x-neo_evidence_004",
+      "date": "2026-04-30",
+      "title": "Official factory and preorder-capacity update",
+      "claim": "1X says the NEO preorder campaign booked out the next year's production capacity in five days at 10,000 NEOs, the Hayward factory has commenced full-scale production, and current capacity is up to 10,000 NEOs per year with a plan to scale toward 100,000+ annually by the end of 2027.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "1x-neo_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Stronger than a generic preorder page for production readiness, but still a company claim and not customer deployment proof.",
+      "arena_relevance": "Supports commercial traction/manufacturing readiness while preserving the gap to verified deliveries.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "1X says it booked 10,000 NEOs in five days, started full-scale production at the 58,000 sq ft Hayward factory, employs 200+ there, and has capacity up to 10,000 units per year.",
+      "source_location": "NEO Factory | Building Your NEO",
+      "verification_notes": "Official factory update; no third-party production audit or customer delivery confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "1x-neo_evidence_005",
+      "date": "2026-01-12",
+      "title": "1X world-model robot-policy results and caveats",
+      "claim": "1X reports that its 1XWM world-model policy is integrated into NEO and was evaluated on real-world tasks with 30 trials per task, showing some successful manipulation primitives but also difficult dexterous tasks with 0% success in the displayed chart and admitted depth/contact failure modes.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "1x-neo_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-run technical result with useful caveats; not an independent benchmark.",
+      "arena_relevance": "Adds concrete autonomous manipulation evidence, but only within 1X's reported test setup.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "1X describes a world-model policy trained with web video, egocentric human video, robot data, and an inverse dynamics model; it reports 30 trials per task and notes pouring/drawing failures plus weak 3D grounding cases.",
+      "source_location": "1X World Model | From Video to Action",
+      "verification_notes": "Official technical blog; no raw logs or independent replication found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "mixed_small_positive_with_caveat"
+      }
+    },
+    {
+      "id": "1x-neo_evidence_006",
+      "date": "2025-06-11",
+      "title": "Company mobility controller claims for stairs and floor poses",
+      "claim": "1X claims Redwood's RL mobility controller supports natural walking in any direction, sitting, standing, kneeling, getting up from the floor, and stair traversal using stereo RGB vision.",
+      "category": [
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "1x-neo_source_007"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-run mobility evidence; no independent fall-rate or obstacle benchmark.",
+      "arena_relevance": "Home biped mobility and stairs matter directly for household fit.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "1X says its RL controller gives Redwood walking in any direction, sitting/standing/kneeling, floor recovery, and up/down stair traversal with stereo vision.",
+      "source_location": "Redwood AI: Mobility",
+      "verification_notes": "Official technical blog and demo context; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "1x-neo_demo_001",
+      "title": "1X NEO launch and hands-on demo context",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "Launch materials show household chores such as laundry, dishes, tidying, fetching, and turning off lights.",
+        "Official materials disclose Expert Mode for tasks NEO does not know and remote control through app/VR.",
+        "Media hands-on context reports heavy teleoperation dependence in demonstrated tasks."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Official product/order pages disclose Expert Mode and remote-control capability; media coverage of WSJ hands-on testing says the demonstrated work was heavily teleoperated. Do not treat demo task completion as autonomous unless a segment explicitly says it is autonomous.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_002",
+        "1x-neo_source_003",
+        "1x-neo_source_008",
+        "1x-neo_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark.",
+        "Expert Mode means task completion and autonomy must be scored separately.",
+        "No raw uninterrupted task-suite footage was reviewed."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Company launch/product pages and media coverage show household chore scenarios, while official pages disclose Expert Mode/remote control and media reporting emphasizes teleoperation in hands-on testing.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent household task benchmark, intervention rate, or fallback-to-Expert-Mode rate was found. Official claims say NEO has basic autonomy and grows over time, while official Expert Mode and media hands-on reporting show a material human-in-the-loop caveat.",
+      "impact_on_arena_scoring": "Score autonomy conservatively; credit specific company-reported autonomous results only within their stated setup."
+    },
+    {
+      "topic": "Deployment",
+      "description": "1X claims preorders, 2026 U.S. deliveries, factory production, and booked 10,000-unit next-year capacity, but no independently verified customer deliveries or in-home deployment metrics were found.",
+      "impact_on_arena_scoring": "Credit commercial intent and manufacturing progress, not proven field deployment."
+    },
+    {
+      "topic": "Reliability and safety",
+      "description": "Official specs include soft body, no external pinch points, HIC <250, 4h runtime, tendon load-cycle claims, and factory reliability-lab cycle counts, but no independent safety certification, field uptime, fall-rate, service-rate, or warranty-return data was found.",
+      "impact_on_arena_scoring": "Treat safety/reliability as design claims until third-party or customer field data appears."
+    },
+    {
+      "topic": "Privacy",
+      "description": "Remote Expert Mode, cameras, microphones, app monitoring, and data collection create material in-home privacy questions; reviewed sources did not provide independent verification of privacy controls or operator access constraints.",
+      "impact_on_arena_scoring": "Apply a human-interaction/accessibility caveat; do not treat remote assistance as pure product autonomy."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_002",
+        "1x-neo_source_003",
+        "1x-neo_source_008"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "1x-neo_source_001",
+        "1x-neo_source_005"
+      ]
+    },
+    {
+      "claim": "Verified customer deployment at scale",
+      "reason": "Official sources support preorders, planned 2026 shipments, and production capacity, but reviewed sources did not independently confirm delivered customer homes or sustained operating metrics.",
+      "source_ids": [
+        "1x-neo_source_003",
+        "1x-neo_source_004",
+        "1x-neo_source_010"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "high",
+    "primary_sources_count": 6,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 4,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "1X NEO is a preorder/purchasable home humanoid with unusually detailed official specs and production claims: 5'6\", 66 lb, 75 total listed DoF, 22 DoF per hand, 18 lb per-arm payload, 4h runtime, Jetson Thor compute, stereo fisheye cameras, $20,000 Early Access ownership, $499/month subscription, and claimed 2026 U.S. deliveries. Stronger 2026 evidence adds factory production and company-run AI/mobility results, but the decisive caveat remains autonomy: official Expert Mode/remote-control disclosures and WSJ/media hands-on reporting mean household chore completion should not be credited as broad autonomous capability.",
+    "strongest_evidence": [
+      "Official product/order pages provide concrete hardware specs, pricing, preorder terms, Expert Mode, remote control, and 2026 delivery claims.",
+      "1X's April 2026 factory update claims 10,000 booked NEOs, full-scale Hayward production, 200+ factory staff, and up to 10,000 units/year capacity.",
+      "1X technical posts report Redwood/1XWM autonomous manipulation and mobility work with explicit caveats and some measured task trials."
+    ],
+    "weakest_evidence": [
+      "No independent household task benchmark, intervention-rate data, or customer field telemetry.",
+      "Hands-on/media evidence indicates heavy teleoperation dependence at launch-era demos.",
+      "No independently verified customer deliveries or sustained in-home deployment metrics."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond specific source context.",
+      "Teleoperated or Expert-assisted chore completion as autonomous execution.",
+      "Preorders/factory capacity as completed customer deployments."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "1x-neo_source_001",
+    "1x-neo_source_002",
+    "1x-neo_source_003",
+    "1x-neo_source_004",
+    "1x-neo_source_005",
+    "1x-neo_source_006",
+    "1x-neo_source_007",
+    "1x-neo_source_008",
+    "1x-neo_source_009",
+    "1x-neo_source_010"
+  ],
+  "sources": [
+    {
+      "id": "1x-neo_source_001",
+      "title": "NEO Home Robot",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/neo",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page for NEO specs, positioning, autonomy claims, Expert Mode disclosure, and hardware details; not independent."
+    },
+    {
+      "id": "1x-neo_source_002",
+      "title": "I Tried the Robot That’s Coming to Live With You. It’s Still Part Human",
+      "publisher": "Wall Street Journal via archive",
+      "url": "https://archive.ph/DfbmK",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Hands-on reporting says demos were heavily teleoperation-dependent."
+    },
+    {
+      "id": "1x-neo_source_003",
+      "title": "Order NEO",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/order",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official order page for $200 refundable deposit, $20,000 Early Access ownership, $499/month subscription, U.S. delivery timing, hardware specs, Expert Mode, and remote-control disclosure."
+    },
+    {
+      "id": "1x-neo_source_004",
+      "title": "NEO Factory | Building Your NEO",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/discover/neo-factory",
+      "date_published": "2026-04-30",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official factory update claiming 10,000 booked units, full-scale Hayward production, 200+ factory employees, and capacity targets; not independently audited."
+    },
+    {
+      "id": "1x-neo_source_005",
+      "title": "1X World Model | From Video to Action: A New Way Robots Learn",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/discover/world-model-self-learning",
+      "date_published": "2026-01-12",
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Official technical blog with training recipe, 30-trial task results, success-rate chart, and explicit failure-mode caveats; company-run rather than peer-reviewed."
+    },
+    {
+      "id": "1x-neo_source_006",
+      "title": "Redwood AI",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/discover/redwood-ai",
+      "date_published": "2025-06-10",
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Official technical blog describing Redwood as onboard 160M-parameter VLA for mobile manipulation; company-run."
+    },
+    {
+      "id": "1x-neo_source_007",
+      "title": "Redwood AI: Mobility",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/discover/redwood-mobility",
+      "date_published": "2025-06-11",
+      "date_accessed": "2026-05-16",
+      "source_type": "technical_paper",
+      "reliability": "medium",
+      "reliability_notes": "Official technical blog claiming omnidirectional walking, stairs, sitting, kneeling, and floor recovery using RL/stereo vision; no independent benchmark."
+    },
+    {
+      "id": "1x-neo_source_008",
+      "title": "The 1X Neo Home Robot is breaking the internet - but there's one huge problem",
+      "publisher": "Tom's Guide",
+      "url": "https://www.tomsguide.com/home/smart-home/the-neo-home-robot-thats-breaking-the-internet-promises-to-change-the-world-but-theres-one-huge-problem",
+      "date_published": "2025-10-30",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media synthesis of launch and WSJ hands-on context; useful for teleoperation/privacy caveats, not a benchmark."
+    },
+    {
+      "id": "1x-neo_source_009",
+      "title": "You can pre-order this charming Neo Home Robot today to do all your chores, but there's a big catch",
+      "publisher": "TechRadar",
+      "url": "https://www.techradar.com/home/smart-home/you-can-pre-order-this-charming-neo-home-robot-today-to-do-all-your-chores-but-theres-a-big-catch",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media coverage of launch specs, price, 2026 timing, Expert assistance, and safety/open-question caveats."
+    },
+    {
+      "id": "1x-neo_source_010",
+      "title": "OpenAI-backed startup aims to deliver in-home humanoid robots in 2026",
+      "publisher": "Sifted",
+      "url": "https://sifted.eu/articles/1x-humanoid-robot-launch/",
+      "date_published": "2025-10-28",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable startup/tech media confirming launch, price, 2026 U.S. delivery claims, non-U.S. 2027 timing, and investor/market context."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Best scored as a serious preorder home humanoid with detailed official specs, manufacturing momentum, and company-run AI/mobility evidence, but still weak independent proof and major Expert Mode/teleoperation caveats.",
+    "strongest_positive_evidence": [
+      "Official product/order pages now provide concrete specs: 5'6\", 66 lb, 22 DoF per hand, 18 lb arm payload, 4h runtime, 842 Wh battery, stereo fisheye cameras, Jetson Thor compute, $20,000 ownership, and $499/month subscription.",
+      "Official factory update claims 10,000 booked NEOs, full-scale Hayward production, 200+ employees, and up to 10,000 units/year capacity.",
+      "Official technical posts provide company-run manipulation, world-model, and mobility evidence with some measured task trials and stated failure modes."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent household task benchmark",
+      "Missing intervention/failure-rate and fallback-to-Expert-Mode data",
+      "No independently verified customer deliveries or in-home uptime/safety data",
+      "No accessibility-specific user outcomes"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions",
+      "Teleoperated chores as autonomous execution",
+      "Preorders or factory capacity as completed customer deployments"
+    ]
+  }
+}

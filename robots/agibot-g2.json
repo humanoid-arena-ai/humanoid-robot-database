@@ -1,0 +1,40 @@
+{
+  "id": "agibot-g2",
+  "name": "AgiBot G2",
+  "aliases": ["G2", "Genie G2"],
+  "companyId": "agibot",
+  "companyName": "AgiBot",
+  "country": "China",
+  "announced": null,
+  "status": "commercial",
+  "category": "industrial",
+  "summary": "G2 is AgiBot's industrial wheeled humanoid with a 26-DoF body, two 7-DoF force-controlled arms and NVIDIA Jetson Thor compute. It is built with automotive-grade parts and IP42 protection for assembly, logistics, inspection and guided-tour work.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 26, "original": "26 DoF body with 7 DoF force-controlled arms", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "360-degree surround-view sensing.",
+  "compute": "NVIDIA Jetson Thor, up to 2,070 TFLOPS.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.agibot.com/products/G2",
+  "highlights": [
+    "Four-wheel steering with omnidirectional movement.",
+    "Dual hot-swappable batteries for continuous operation.",
+    "Passed over 130 component tests including -15 C to 50 C trials, per Interesting Engineering."
+  ],
+  "caveats": [
+    "AgiBot does not publish height, weight or payload on its product page.",
+    "Wheeled base, not a legged humanoid."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Agibot launches advanced G2 humanoid for high-precision manufacturing", "publisher": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/agibot-g2-humanoid-robot-smart-manufacturing", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "AGIBOT G2 product page", "publisher": "AgiBot", "url": "https://www.agibot.com/products/G2", "accessed": "2026-10-14" }
+  ]
+}

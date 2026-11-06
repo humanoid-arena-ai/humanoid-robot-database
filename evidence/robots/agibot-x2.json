@@ -1,0 +1,1113 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "agibot-x2",
+    "name": "AgiBot X2",
+    "company_id": "agibot",
+    "company_name": "AgiBot",
+    "country": "China",
+    "generation": "Lingxi X2 compact humanoid series",
+    "first_announced_date": "2025-03-11",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Base X2 is purchasable on AgiBot's official international store for $24,240 (verified by Robozaps in July 2026); China Youth Edition lists at ¥98,000. X2 Ultra, X2 Pro and X2 Edu are quote-only or price-on-request. The base X2 does not support secondary development. No named customer deployment with operating metrics was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "service_humanoid",
+    "intended_use_cases": [
+      "interaction and communication",
+      "education and research",
+      "entertainment performances",
+      "exhibition hall guiding",
+      "light service tasks",
+      "elderly care (initial deployment focus per TMTPost)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1310mm (H)×460mm (W)×210mm (L); Approx.1.31 m",
+      "value": 131,
+      "unit": "cm",
+      "notes": "Officially listed as 1310 mm about 1.31 m. X2 and X2 Ultra share same dimensions.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002",
+        "agibot-x2_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "Approx.35kg (X2); Approx.39kg (X2 Ultra)",
+      "value": 35,
+      "unit": "kg",
+      "notes": "Base X2 weight used as primary value; Ultra is heavier.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "Max (in specific postures): 3kg; Across full range: ≤1kg (excluding end effector)",
+      "value": 3,
+      "unit": "kg",
+      "notes": "Payload excludes end effector and varies by posture.",
+      "source_ids": [
+        "agibot-x2_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "At 0.5 m/s walking Approx. 2 hours",
+      "value": 2,
+      "unit": "hours",
+      "notes": "Runtime estimate from official product page; speed and tasks affect actual endurance.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_004"
+      ]
+    },
+    "battery": {
+      "original_value": "Approx.500Wh",
+      "value": 500,
+      "unit": "Wh",
+      "notes": "Official product page lists approx. 500Wh. Robozaps reports the X2 Ultra SDK documentation lists ~421Wh, conflicting; delivery configuration should be confirmed.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 25,
+      "notes": "Base X2 has 25 total DoF; X2 Ultra has 30 total DoF; X2 Edu is claimed at 29 DoF by Center 3D Print. Third-party sources mention 27, 28, 31, 39 counts, but official product page and Robozaps use 25/30.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002",
+        "agibot-x2_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "Up to 1.8 m/s; typical ≤0.8 m/s; Laboratory Environment: ≤2m/s",
+      "value": 1.8,
+      "unit": "m/s",
+      "notes": "Peak speed 1.8 m/s; typical walking speed is 0.8 m/s or less.",
+      "source_ids": [
+        "agibot-x2_source_001"
+      ]
+    },
+    "hands": {
+      "description": "End-effectors (Omnihand, OmniPicker) are only compatible with X2 Ultra; not included as standard and must be purchased separately. No standard hand DoF or tactile details found for base X2.",
+      "degrees_of_freedom": 10,
+      "force_feedback": null,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_013"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "X2: Interactive RGB camera, head touch sensor, microphone array, interactive screen",
+        "X2 Ultra adds 3D LiDAR, RGB-D camera, front dual RGB, rear RGB, 4G/5G module, same head touch sensor",
+        "X2 Edu optional sensors include cameras, LiDAR, IMU depending on configuration (reseller)"
+      ],
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_006"
+      ]
+    },
+    "compute": {
+      "description": "Base X2: dual RK3588; X2 Ultra: dual RK3588 plus NVIDIA Orin NX (157 TOPS). X2 Edu listed with RK3588 and expandable computational part.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_006"
+      ]
+    },
+    "actuators": {
+      "description": "Peak joint torque 120 N·m. No actuator type or vendor disclosed in reviewed sources.",
+      "source_ids": [
+        "agibot-x2_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 24240,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": null,
+      "notes": "Standard X2 is $24,240 on AgiBot's official international store, verified by Robozaps; shipping adds $500–$3,000, import duties on buyer, no returns after delivery. China Youth Edition ¥98,000 (~$14,500). X2 Ultra quote-only; Generation Robots lists it from €56,400. X2 Pro quote-only; X2 Edu price on request.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002",
+        "agibot-x2_source_004",
+        "agibot-x2_source_005",
+        "agibot-x2_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specifications list X2 arm reach 558 mm, peak joint torque 120 N·m, payload up to 3 kg in specific postures, and 5-DoF arms on base / 7-DoF arms on Ultra. X2 Ultra is compatible with Omnihand and OmniPicker end-effectors, which are sold separately. Public video titles mention mastering human motions and unboxing, but no transcript was reviewed; no independent dexterity benchmark or success rate found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002",
+        "agibot-x2_source_006",
+        "agibot-x2_source_008"
+      ],
+      "caveats": [
+        "Base X2 does not support secondary development.",
+        "End-effectors are extra-cost options and only compatible with Ultra.",
+        "No real-world manipulation success rates or load-bearing validation beyond specs."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Official page claims X2 Ultra supports autonomous navigation, proactive obstacle avoidance, and algorithm-driven decision-making; base X2 does not support these functions. TMTPost reports X2 targets task execution and autonomous operation, but Robozaps and Joybuy caution that many demos are choreographed or remotely controlled, and buyers must distinguish autonomy from remote control.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_003",
+        "agibot-x2_source_002",
+        "agibot-x2_source_004"
+      ],
+      "caveats": [
+        "No independent verification of autonomy.",
+        "Teleoperation status is not disclosed in public video titles.",
+        "Autonomous functions are claimed for Ultra only, not base X2."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs list walking speed up to 1.8 m/s (typical ≤0.8 m/s, laboratory ≤2 m/s), humanoid gait, complex dance routines, and 25–30 DoF including waist. Public video titles mention generalist human motions, but no transcript reviewed; Robozaps notes the bicycle demo was largely center-of-gravity physics rather than active balance.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002",
+        "agibot-x2_source_008"
+      ],
+      "caveats": [
+        "No fall rate, disturbance recovery, or independent mobility benchmark.",
+        "Viral demos may be choreographed or human-assisted."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "X2 Ultra is equipped with 3D LiDAR, RGB-D camera, interactive RGB camera, front dual RGB and rear RGB; base X2 has interactive RGB camera only. Company claims precise 3D spatial perception, environmental semantic perception, and obstacle detection. X2 Edu configuration may include cameras, LiDAR and IMU.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_004",
+        "agibot-x2_source_006"
+      ],
+      "caveats": [
+        "Detection range, response time, and limitations under varied lighting not disclosed.",
+        "No perception benchmark or independent evaluation."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official page highlights multimodal interaction with visual, voice, tactile, and facial expression capabilities; includes head touch sensor, microphone array, speaker, interactive screen. Press release mentions WITA Omni end-to-end multimodal interaction model. TMTPost notes aim for rich emotional expressiveness and adaptive interaction.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_007",
+        "agibot-x2_source_003"
+      ],
+      "caveats": [
+        "No conversational reliability or instruction-following metric found.",
+        "WITA Omni is a company announcement, not specific X2 performance data."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Specs: ~500 Wh battery, about 2 hours at 0.5 m/s walking, charging ≤1.5 hours, swappable battery. No long-duration reliability data, independent endurance test, or failure rate found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002",
+        "agibot-x2_source_004"
+      ],
+      "caveats": [
+        "Runtime is an estimate and depends on speed, load, sensors, and communications.",
+        "No real-world endurance data or uptime logs published."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Compact 1.31 m / 35–39 kg form with operating temperature -10°C to 40°C. Joybuy warns professional users must plan safety perimeter, risk assessment, operator training and compliance. No full-robot safety certification found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_004"
+      ],
+      "caveats": [
+        "No safety certification or compliance documents verified.",
+        "User business must assess risks per local regulations."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "X2 has a real international order route: base X2 listed at $24,240 on AgiBot's official international store, verified by Robozaps; distribution via RobotShop, Center3D and Generation Robots; AgiBot recruiting channel partners. TMTPost reports B2B2C sales strategy and target of several thousand units by end 2026. No specific customer deployments or operating hours published.",
+      "evidence_level": 3,
+      "source_ids": [
+        "agibot-x2_source_002",
+        "agibot-x2_source_005",
+        "agibot-x2_source_006",
+        "agibot-x2_source_004",
+        "agibot-x2_source_003"
+      ],
+      "caveats": [
+        "No named customer deployment with output metrics found.",
+        "Base X2 does not support secondary development, limiting enterprise integration.",
+        "Price verified by media, not by an independent audit."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Standard X2 is buyable at $24,240 plus $500–$3,000 shipping and duties, no returns after delivery; China Youth Edition ¥98,000. X2 Ultra quote-only (€56,400 via Generation Robots), X2 Pro quote-only, X2 Edu price on request. Robozaps verified the official store listing in July 2026.",
+      "evidence_level": 3,
+      "source_ids": [
+        "agibot-x2_source_002",
+        "agibot-x2_source_004",
+        "agibot-x2_source_005",
+        "agibot-x2_source_006"
+      ],
+      "caveats": [
+        "No returns after delivery; buyer pays duties and taxes.",
+        "Base X2 lacks secondary development; research buyers need Ultra/Pro/Edu.",
+        "X2 Ultra $999,999 placeholder on store is not a real price."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "agibot-x2_evidence_001",
+      "date": null,
+      "title": "AGIBOT X2 series degree-of-freedom and agility claim",
+      "claim": "AgiBot's official product page states X2 has 25–30 degrees of freedom, including one for the head and three for the waist, enabling agile motion.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official company spec; not independently measured.",
+      "arena_relevance": "Defines kinematic capability for mobility and expression.",
+      "claim_type": "spec",
+      "supporting_excerpt": "AGIBOT X2 offers 25–30 degrees of freedom, including one for the head and three for the waist, enabling versatile and agile motion that delivers vivid, lifelike expressions.",
+      "source_location": "AGIBOT X2 product page, AgilityLifelike Features section",
+      "verification_notes": "Official page; total DoF conflicts with some media reports, but official values used.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_002",
+      "date": null,
+      "title": "AGIBOT X2 multimodal interaction claim",
+      "claim": "AGIBOT X2 supports multimodal interaction including visual, voice, tactile, and facial expression capabilities.",
+      "category": [
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec page.",
+      "arena_relevance": "Supports human-interaction scenarios.",
+      "claim_type": "spec",
+      "supporting_excerpt": "AGIBOT X2 supports multimodal interaction, including visual, voice, tactile, and facial expression capabilities.",
+      "source_location": "AGIBOT X2 product page, AffinityHuman-like Interaction section",
+      "verification_notes": "Company claim; no independent interaction benchmark.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_003",
+      "date": null,
+      "title": "X2 Ultra autonomous navigation and LiDAR/RGB-D claim",
+      "claim": "X2 Ultra is equipped with LiDAR and RGB-D cameras enabling precise environmental perception and autonomous route planning.",
+      "category": [
+        "perception_scene_understanding",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official claim; autonomous functions are for Ultra only.",
+      "arena_relevance": "Basis for autonomy and perception scoring of Ultra.",
+      "claim_type": "spec",
+      "supporting_excerpt": "AGIBOT X2 Ultra is equipped with LiDAR and RGB-D cameras, enabling precise environmental perception and autonomous route planning",
+      "source_location": "AGIBOT X2 product page, Autonomous Task Processing section",
+      "verification_notes": "Company claim; no independent navigation test.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_004",
+      "date": null,
+      "title": "Base X2 lacks autonomous navigation support",
+      "claim": "AgiBot's product page states that AGIBOT X2 does not support autonomous navigation and proactive obstacle avoidance functions.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Limitation officially acknowledged.",
+      "arena_relevance": "Caps autonomy credit for base X2.",
+      "claim_type": "spec",
+      "supporting_excerpt": "AGIBOT X2 does not support do not support these functions.",
+      "source_location": "AGIBOT X2 product page, Autonomous Navigation block",
+      "verification_notes": "Exact wording is awkward but unambiguous.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_006",
+      "date": null,
+      "title": "X2 compute boards: dual RK3588 and Orin NX on Ultra",
+      "claim": "Base X2 has dual RK3588, while X2 Ultra adds Orin NX (157 TOPS) high-performance board.",
+      "category": [
+        "specs",
+        "compute"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official hardware spec.",
+      "arena_relevance": "Indicates onboard AI compute capability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "High-performance Board | Not equipped | Orin NX (157 TOPS)",
+      "source_location": "AGIBOT X2 series Product Specifications table",
+      "verification_notes": "Company spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_008",
+      "date": null,
+      "title": "X2 end-effectors are Ultra-only and sold separately",
+      "claim": "Omnihand and OmniPicker end-effectors are only compatible with X2 Ultra, not included as standard, and must be purchased separately.",
+      "category": [
+        "manipulation_dexterity",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official note; limits base X2 manipulation.",
+      "arena_relevance": "Base X2 cannot use advanced hands.",
+      "claim_type": "spec",
+      "supporting_excerpt": "End-effectors (Omnihand, OmniPicker) are only compatible with the X2 Ultra. They are not included as standard and must be purchased separately.",
+      "source_location": "AGIBOT X2 product page, product specification footnotes",
+      "verification_notes": "Company statement.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_009",
+      "date": "2025-03-18",
+      "title": "Robozaps verified X2 price on official international store",
+      "claim": "Robozaps verified the base X2 price of $24,240 on AgiBot's official international store, unchanged since at least April; shipping adds $500–$3,000 with duties on buyer.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "agibot-x2_source_002"
+      ],
+      "confidence": 0.85,
+      "notes": "Third-party media verified the live listing.",
+      "arena_relevance": "Strongest evidence of real purchase availability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The AgiBot Lingxi X2 costs **$24,240 on AgiBot's official international store**, a price we verified directly on the live listing in July 2026, unchanged since at least April.",
+      "source_location": "Robozaps article, first paragraph",
+      "verification_notes": "Robozaps is a reputable tech blog; verification not independently audited but direct.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "high",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_010",
+      "date": "2025-03-18",
+      "title": "Robozaps: base X2 lacks secondary development support",
+      "claim": "Development access officially belongs to Ultra/Pro/Edu trims; base X2 at $24,240 does not support secondary development.",
+      "category": [
+        "accessibility_value",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Media clarification of official comparison.",
+      "arena_relevance": "Caps research value of base model.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Development access officially belongs to the Ultra (and the Pro and Edu trims with their open interfaces), so buyers who want to write code against the robot should be quoting those, not the $24,240 base model.",
+      "source_location": "Robozaps review, ownership section",
+      "verification_notes": "Consistent with official product page statement that base X2 'Not supported' for secondary development.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_011",
+      "date": "2025-03-18",
+      "title": "Robozaps: viral demos often human-controlled",
+      "claim": "Viral X2 demos including bicycle and hoverboard are real hardware but often choreographed; bicycle balance was largely center-of-gravity physics and several showcases were human-controlled.",
+      "category": [
+        "autonomy_task_execution",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Caution against treating demos as autonomous.",
+      "arena_relevance": "Limits autonomy and mobility credit from demos.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The honest caveat is about autonomy: in the bicycle demo, as reporting on the program later noted, the robot was mounted on the seat, keeping the bike upright largely through center-of-gravity physics rather than active balance algorithms, and several X2 event showcases have been described as human-controlled rather than autonomous.",
+      "source_location": "Robozaps review, viral demos honestly assessed section",
+      "verification_notes": "Media analysis based on reporting; no transcript of original demos.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_012",
+      "date": "2025-05-22",
+      "title": "TMTPost: AgiBot targets several thousand X2 units by end 2026",
+      "claim": "Wei Qiang says AgiBot hopes to reach scale of several thousand units by end 2026, with large-scale shipments beginning H2 2025; B2B2C sales strategy.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Company executive statement via media.",
+      "arena_relevance": "Indicates commercial ambition but not proof.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "\"By the end of 2026, we hope to reach a scale of several thousand units,\" Wei said, with large-scale shipments expected to begin in the second half of this year.",
+      "source_location": "TMTPost article, paragraph 3",
+      "verification_notes": "Direct quote from Wei Qiang; target not audited.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_013",
+      "date": "2025-05-22",
+      "title": "TMTPost: X2 initial deployment focus on elderly care",
+      "claim": "Wei Qiang says initial deployment of X2 will focus on elderly living communities and premium nursing homes.",
+      "category": [
+        "deployment_commercial_proof",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_003"
+      ],
+      "confidence": 0.65,
+      "notes": "Company statement of intended use; no actual deployment yet.",
+      "arena_relevance": "Signals service scenario but lacks proof.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Initial deployment, Wei said, will focus on elderly living communities and premium nursing homes.",
+      "source_location": "TMTPost article, senior care section",
+      "verification_notes": "No named senior care facility or reported units.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_014",
+      "date": null,
+      "title": "Joybuy: autonomony cannot be assumed from demos",
+      "claim": "Seeing a robot walk, wave or pick up an object is not enough to prove it can operate without human intervention; buyers must verify autonomy features separately.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Retailer buyer guide warning.",
+      "arena_relevance": "Reinforces caution on autonomy claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Seeing a robot walk, wave or pick up an object is not enough to prove that it can operate without human intervention.",
+      "source_location": "Joybuy buying guide, pitfalls section",
+      "verification_notes": "Independent retail content, not official.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_015",
+      "date": "2026-04-13",
+      "title": "RobotShop Community: X2 series purpose",
+      "claim": "X2 series includes two compact humanoid robots for interaction, service, and educational use; X2 optimized for interaction/performance, X2 Ultra for perception/autonomy/development.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Reseller knowledge base.",
+      "arena_relevance": "Confirms market positioning.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The **X2 Ultra** focuses on **perception**, **autonomous** **operation**, and **development**, while the **X2** is optimized for **interaction**, **performance**, and **accessible** **deployment**.",
+      "source_location": "RobotShop Community forum post",
+      "verification_notes": "Secondary reseller commentary.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_016",
+      "date": null,
+      "title": "Center 3D Print: X2 Edu 29 DoF modular education version",
+      "claim": "X2 Edu is designed for universities, research labs, education; height approx 1.3 m, 29 DoF, 7-DoF arms, payload up to 3 kg, modular and open interfaces.",
+      "category": [
+        "specs",
+        "accessibility_value",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Reseller product page; not official AgiBot specs.",
+      "arena_relevance": "Shows education variant but unverified.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot's height is approximately **1.3 m**, and the design has **29 degrees of freedom**. The allowable load is **3 kg**.",
+      "source_location": "Center 3D Print product description",
+      "verification_notes": "No official confirmation of X2 Edu specs from AgiBot reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agibot-x2_evidence_017",
+      "date": "2026-04-17",
+      "title": "AGIBOT press release: Peng demonstrates interactive intelligence with X2",
+      "claim": "AGIBOT press release shows co-founder Peng Zhihui demonstrating interactive intelligence with AGIBOT X2 at 2026 Partner Conference.",
+      "category": [
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agibot-x2_source_007"
+      ],
+      "confidence": 0.75,
+      "notes": "Official press release via PR Newswire.",
+      "arena_relevance": "Company showcases X2 for interaction, but no performance data.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Peng Zhihui, Co-founder, President and CTO of AGIBOT, demonstrates interactive intelligence with AGIBOT X2",
+      "source_location": "Yahoo Finance, AGIBOT press release, image caption",
+      "verification_notes": "Company claim; demo not independently assessed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "agibot-x2_demo_001",
+      "title": "AGIBOT X2 | A Generalist Humanoid Robot masters in human motions",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "agibot-x2_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; do not describe actions beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript in source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "agibot-x2_demo_002",
+      "title": "AgiBot X2 Ultra Humanoid Robot Unboxing & First Look 🤖",
+      "date": "2026-03-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "agibot-x2_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; do not describe actions beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript in source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "agibot-x2_demo_003",
+      "title": "AGIBOT X2 Just Showed 6 Insane New Capabilities",
+      "date": "2026-10-15",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "agibot-x2_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; do not describe actions beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript in source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title does not state execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "agibot-x2_demo_004",
+      "title": "AGIBOT X2 Ultra | 30-DoF Humanoid Robot for Embodied AI & Autonomous Navigation",
+      "date": "2026-07-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "agibot-x2_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; do not describe actions beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript in source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Title mentions autonomous navigation but execution mode of demo unknown.",
+      "observed_segments": []
+    },
+    {
+      "id": "agibot-x2_demo_005",
+      "title": "AGIBOT X2 Ultra Operating Instruction Video",
+      "date": "2026-03-01",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": null,
+      "source_ids": [
+        "agibot-x2_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; do not describe actions beyond title."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript in source.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Instruction video; execution mode unknown.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy verification",
+      "description": "Official claims for X2 Ultra autonomy are company statements. No independent navigation test, intervention log, or autonomous demo transcript was found. Media caution that viral demos are often choreographed or human-controlled.",
+      "impact_on_arena_scoring": "Autonomy dimension stays at low evidence; base X2 explicitly lacks autonomous functions."
+    },
+    {
+      "topic": "Secondary development restriction",
+      "description": "Base X2 does not support secondary development. Only Ultra, Pro and Edu trims offer open interfaces. This limits research and integration value.",
+      "impact_on_arena_scoring": "Accessibility/value is reduced for developers; research buyers must choose quote-only models."
+    },
+    {
+      "topic": "No customer deployment metrics",
+      "description": "No named customer deployment with operating hours, units, or task outputs was found. TMTPost reports target of several thousand units by end 2026, but no actual deployment counted.",
+      "impact_on_arena_scoring": "Commercial proof remains prospective, not proven."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "DoF counts vary (25/30 official, 31 in TMTPost, 27/28/29/39 in other reports). Battery capacity conflicts between official product page (~500 Wh) and Ultra SDK docs (~421 Wh).",
+      "impact_on_arena_scoring": "Do not infer numbers from directories; confirm with official documentation."
+    },
+    {
+      "topic": "Demos not reviewed",
+      "description": "Video sources provide titles only, no transcript. No independent assessment of autonomy, editing, or success rate.",
+      "impact_on_arena_scoring": "Cannot credit mobility or manipulation beyond official specs."
+    }
+  ],
+  "source_ids": [
+    "agibot-x2_source_001",
+    "agibot-x2_source_002",
+    "agibot-x2_source_003",
+    "agibot-x2_source_004",
+    "agibot-x2_source_005",
+    "agibot-x2_source_006",
+    "agibot-x2_source_007",
+    "agibot-x2_source_008",
+    "agibot-x2_source_009",
+    "agibot-x2_source_010",
+    "agibot-x2_source_011",
+    "agibot-x2_source_012",
+    "agibot-x2_source_013"
+  ],
+  "sources": [
+    {
+      "id": "agibot-x2_source_001",
+      "title": "AGIBOT Innovation (Shanghai) Technology Co., Ltd. -AGIBOT Innovation (Shanghai) Technology Co., Ltd. ",
+      "publisher": "AgiBot",
+      "url": "https://www.agibot.com/products/X2",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company specs and claims."
+    },
+    {
+      "id": "agibot-x2_source_002",
+      "title": "AgiBot Lingxi X2 Price 2026: $24,240 Cost, Specs & Buy",
+      "publisher": "Robozaps",
+      "url": "https://blog.robozaps.com/b/agibot-lingxi-x2-review-a-leap-forward-in-humanoid-robotics",
+      "date_published": "2025-03-18",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Independent tech blog; verified live store listing; provides caveats and conflict analysis."
+    },
+    {
+      "id": "agibot-x2_source_003",
+      "title": "China's AgiBot Launches Partnership for Humanoid Robot Lingxi X2, Eyes Mass Production by 2026 | TMTPOST",
+      "publisher": "TMTPost",
+      "url": "https://en.tmtpost.com/post/7574620",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Tech media with executive quotes; date in article May 22, 2025."
+    },
+    {
+      "id": "agibot-x2_source_004",
+      "title": "AGIBOT X2 Ultra Humanoid Robot: What to Check Before Buying",
+      "publisher": "Joybuy",
+      "url": "https://www.joybuy.fr/blog/agibot-x2-ultra-humanoid-robot-buying-guide/PfRzvLsu",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Retailer buying guide; useful for cautions, not primary specs."
+    },
+    {
+      "id": "agibot-x2_source_005",
+      "title": "What is the X2 designed for? - Knowledge Base & FAQ / AgiBot Knowledge Base - RobotShop Community",
+      "publisher": "RobotShop Community",
+      "url": "https://community.robotshop.com/forum/t/what-is-the-x2-designed-for/136473",
+      "date_published": "2026-04-13",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller community forum positioning."
+    },
+    {
+      "id": "agibot-x2_source_006",
+      "title": "Humanoid Robot AgiBot X2 Edu – Innovations for Learning",
+      "publisher": "Center 3D Print",
+      "url": "https://center3dprint.com/en/shop/robots/agibot-x2-edu-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller product page; X2 Edu specs not confirmed by AgiBot in reviewed sources."
+    },
+    {
+      "id": "agibot-x2_source_007",
+      "title": "AGIBOT Unveils New Generation of Embodied AI Robots and Models, Accelerating Real-World Deployment of Physical AI",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/agibot-unveils-generation-embodied-ai-180600191.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official press release distributed via PR Newswire; article date April 17, 2026."
+    },
+    {
+      "id": "agibot-x2_source_008",
+      "title": "AGIBOT X2 | A Generalist Humanoid Robot masters in human motions",
+      "publisher": "YouTube AGIBOT",
+      "url": "https://www.youtube.com/watch?v=kBGNvPq0Iyg",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo video; no transcript reviewed."
+    },
+    {
+      "id": "agibot-x2_source_009",
+      "title": "AgiBot X2 Ultra Humanoid Robot Unboxing & First Look 🤖",
+      "publisher": "YouTube KhanFlicks",
+      "url": "https://www.youtube.com/watch?v=Nf4q5uxCTKQ",
+      "date_published": "2026-03-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Independent unboxing; no transcript reviewed."
+    },
+    {
+      "id": "agibot-x2_source_010",
+      "title": "AGIBOT X2 Just Showed 6 Insane New Capabilities",
+      "publisher": "YouTube NextGen Humanoids",
+      "url": "https://www.youtube.com/watch?v=IqrAEagQyC4",
+      "date_published": "2026-10-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Independent demo video; no transcript reviewed."
+    },
+    {
+      "id": "agibot-x2_source_011",
+      "title": "AGIBOT X2 Ultra | 30-DoF Humanoid Robot for Embodied AI & Autonomous Navigation",
+      "publisher": "YouTube Generation Robots",
+      "url": "https://www.youtube.com/watch?v=x2TcfXf8LKg",
+      "date_published": "2026-07-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Distributor video; no transcript reviewed."
+    },
+    {
+      "id": "agibot-x2_source_012",
+      "title": "AGIBOT X2 Ultra Operating Instruction Video",
+      "publisher": "YouTube AGIBOT",
+      "url": "https://www.youtube.com/watch?v=yGcjdVv91XA",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official instruction video; no transcript reviewed."
+    },
+    {
+      "id": "agibot-x2_source_013",
+      "title": "AGIBOT X2 Ultra Humanoid Robot — Education, Research & Events | RoboMercato",
+      "publisher": "robomercato.com",
+      "url": "https://www.robomercato.com/robots/1398-agibot-x2-ultra",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "AgiBot X2 is a compact, purchasable service humanoid with a verified international price and clear variant structure. Strongest evidence is the official store listing and distribution network; weakest is autonomy and real-world deployment performance. Base X2 lacks secondary development; autonomous functions are claimed only for Ultra and remain unverified.",
+    "strongest_positive_evidence": [
+      "Robozaps verified base X2 at $24,240 on official international store, with shipping and duty details.",
+      "Official product page provides detailed specs (DoF, sensors, compute, speed, payload, battery).",
+      "Distribution through RobotShop, Center3D and Generation Robots confirms commercial availability.",
+      "Compact 1.31 m, 35 kg form with multimodal interaction suite."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent autonomy test, intervention log, or autonomous demo transcript.",
+      "No named customer deployment or operating metrics.",
+      "No independent reliability or endurance data.",
+      "Base X2 does not support secondary development.",
+      "Video titles only; no transcript reviewed."
+    ],
+    "conflicting_claims": [
+      "DoF counts: official 25/30, TMTPost up to 31, Robozaps mentions 27/28/29/31/39, Center3D says X2 Edu 29.",
+      "Battery capacity: official ~500 Wh vs Robozaps note of Ultra SDK documentation ~421 Wh.",
+      "Price: $24,240 base, ¥98,000 China Youth, Ultra quote-only with a $999,999 placeholder on store (not real)."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "service_humanoid",
+      "research_platform (Ultra/Edu)"
+    ],
+    "do_not_overclaim": [
+      "Do not treat viral bicycle/dance demos as autonomous; Robozaps says often human-controlled.",
+      "Do not credit base X2 with autonomous navigation or obstacle avoidance; official page says not supported.",
+      "Do not use TMTPost 31 DoF as spec; official values are 25/30.",
+      "Do not treat $999,999 Ultra placeholder as a real price.",
+      "Do not claim customer deployments or elderly care rollout; only intended focus per TMTPost."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "AgiBot X2 is current compact interaction humanoid as of 2026-10-29. X2 Edu announced July 2026, not superseding base X2. No newer X-series replacement found in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "X2 has 31 degrees of freedom",
+      "reason": "TMTPost says up to 31 DoF, but official product page and Robozaps state 25 base / 30 Ultra. Conflicting counts excluded from primary spec.",
+      "source_ids": [
+        "agibot-x2_source_003",
+        "agibot-x2_source_002"
+      ]
+    },
+    {
+      "claim": "X2 Ultra battery capacity ~421 Wh",
+      "reason": "Robozaps reports SDK documentation says ~421 Wh, but official product page says approx. 500 Wh. Official value used in specs; conflict noted.",
+      "source_ids": [
+        "agibot-x2_source_002"
+      ]
+    },
+    {
+      "claim": "X2 Ultra price $999,999",
+      "reason": "Robozaps identifies $999,999 as a quote-required placeholder, not a real price.",
+      "source_ids": [
+        "agibot-x2_source_002"
+      ]
+    },
+    {
+      "claim": "Viral demos show autonomous operation",
+      "reason": "Robozaps cautions bicycle demo was center-of-gravity physics and event showcases were human-controlled; autonomy not verified.",
+      "source_ids": [
+        "agibot-x2_source_002",
+        "agibot-x2_source_004"
+      ]
+    },
+    {
+      "claim": "Base X2 supports secondary development",
+      "reason": "Official product page lists Secondary Development 'Not supported' for base X2; Robozaps reiterates.",
+      "source_ids": [
+        "agibot-x2_source_001",
+        "agibot-x2_source_002"
+      ]
+    },
+    {
+      "claim": "Elderly care customer deployment exists",
+      "reason": "TMTPost quotes Wei Qiang saying initial deployment will focus on elderly living communities, but no named facility or actual deployment evidence found.",
+      "source_ids": [
+        "agibot-x2_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 8,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 5,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "AgiBot X2 is a compact 1.31 m, 35 kg biped humanoid service robot from AgiBot (China). Official specs list 25 DoF base / 30 DoF Ultra, walking up to 1.8 m/s, 3 kg max payload, ~500 Wh battery, and multimodal interaction. The most important evidence is commercial availability: Robozaps verified the base X2 at $24,240 on AgiBot's official international store, with distribution via RobotShop, Center3D and Generation Robots. However, autonomy is unproven: base X2 officially lacks autonomous navigation, Ultra claims are company-only, and media caution that viral demos are often choreographed or human-controlled. No named customer deployment, operating hours, or independent performance benchmark was found. Secondary development is restricted to Ultra/Pro/Edu variants.",
+    "strongest_evidence": [
+      "Verified purchase price and official store listing (agibot-x2_evidence_009).",
+      "Official product page with detailed specs (agibot-x2_evidence_001, _005).",
+      "Distributor listings confirm commercial availability (agibot-x2_evidence_015).",
+      "Compact form factor with interaction sensors (agibot-x2_evidence_002)."
+    ],
+    "weakest_evidence": [
+      "No independent autonomy, navigation, or manipulation benchmark.",
+      "No customer deployment metrics.",
+      "No transcript for any demo video.",
+      "Base X2 lacks secondary development."
+    ],
+    "known_do_not_credit": [
+      "Viral demos as autonomous.",
+      "Base X2 autonomous navigation.",
+      "$999,999 Ultra placeholder price.",
+      "31 DoF spec.",
+      "Elderly care deployment as fact."
+    ],
+    "recommended_confidence": "low"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "fourier",
+  "name": "Fourier",
+  "country": "China",
+  "headquarters": "Shanghai, China",
+  "founded": 2015,
+  "website": "https://www.fftai.com/",
+  "summary": "Fourier (formerly Fourier Intelligence) started in rehabilitation robotics and exoskeletons and moved into humanoids with GR-1 in 2023. Its humanoid line includes GR-2 and the care-focused GR-3.",
+  "funding": "Backed by IDG Capital and Saudi Aramco, per Wikipedia.",
+  "sources": [
+    { "id": "s1", "title": "Fourier (company)", "url": "https://en.wikipedia.org/wiki/Fourier_(company)", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Fourier launches GR-2 humanoid, software platform", "url": "https://www.therobotreport.com/fourier-launches-gr-2-humanoid-software-platform/", "accessed": "2026-10-14" }
+  ]
+}

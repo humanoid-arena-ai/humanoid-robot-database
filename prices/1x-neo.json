@@ -1,0 +1,93 @@
+{
+  "robotId": "1x-neo",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "preorder",
+  "purchasePathNote": "Buyers reserve NEO on the 1X order page with a $200 fully refundable deposit, then choose $20,000 Early Access ownership or a $499 per month subscription. 1X says US deliveries start in 2026, with international expansion from 2027.",
+  "configurations": [
+    {
+      "name": "NEO Early Access (ownership)",
+      "price": 20000,
+      "currency": "USD",
+      "priceType": "preorder",
+      "region": "US",
+      "notes": "Includes 3-year warranty, premium support and priority delivery. $200 refundable deposit due at order. Charger, lint roller and case included.",
+      "sourceLabel": "1X official order page",
+      "sourceUrl": "https://www.1x.tech/order",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "NEO Standard (subscription, per month)",
+      "price": 499,
+      "currency": "USD",
+      "priceType": "preorder",
+      "region": "US",
+      "notes": "Price is per month. Includes a Starter Productivity Package and standard delivery, which comes after Early Access deliveries.",
+      "sourceLabel": "1X official order page",
+      "sourceUrl": "https://www.1x.tech/order",
+      "checkedAt": "2026-10-14",
+      "period": "month"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "1X official order page",
+      "type": "official",
+      "url": "https://www.1x.tech/order",
+      "region": "US",
+      "offers": "$20,000 Ownership (Early Access, 3-Year Warranty, $200 Deposit Due Today, Fully Refundable); $499/mo Subscription (Standard). 'US Deliveries start 2026'.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "1X NEO Standard subscription",
+      "url": "https://www.1x.tech/order",
+      "region": "US",
+      "notes": "$499 per month subscription sold directly by 1X, with later delivery than Early Access ownership."
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2025-10-28",
+      "price": 20000,
+      "currency": "USD",
+      "event": "Preorders opened: $20,000 Early Access or $499/month subscription, $200 refundable deposit",
+      "sourceUrl": "https://www.1x.tech/discover/neo-home-robot"
+    },
+    {
+      "date": "2026-10-14",
+      "price": 20000,
+      "currency": "USD",
+      "event": "Official order page still lists $20,000 ownership and $499/month subscription",
+      "sourceUrl": "https://www.1x.tech/order"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy the 1X NEO?",
+      "a": "You can preorder it. 1X takes a $200 fully refundable deposit on its order page and says US deliveries start in 2026.",
+      "sourceUrl": "https://www.1x.tech/order"
+    },
+    {
+      "q": "How much does the 1X NEO cost?",
+      "a": "$20,000 for Early Access ownership with a 3-year warranty, or $499 per month as a subscription.",
+      "sourceUrl": "https://www.1x.tech/order"
+    },
+    {
+      "q": "When will NEO ship?",
+      "a": "1X says first shipments go to early adopters in the US in 2026, with international expansion starting in 2027. Subscribers get a later delivery date than Early Access buyers.",
+      "sourceUrl": "https://www.1x.tech/discover/neo-home-robot"
+    },
+    {
+      "q": "Is NEO available outside the US?",
+      "a": "Not yet. 1X lists only US deliveries for 2026 and says international expansion starts in 2027.",
+      "sourceUrl": "https://www.1x.tech/discover/neo-home-robot"
+    },
+    {
+      "q": "How many NEOs have been ordered?",
+      "a": "1X reported that first-year production capacity sold out within five days of preorders opening in October 2025.",
+      "sourceUrl": "https://thenextweb.com/news/1x-neo-humanoid-factory-hayward-10000-home-robots"
+    }
+  ],
+  "notes": "Preorder only; no independently verified customer delivery was found at check time. The $499 subscription is a monthly price, not a total. Taxes and delivery fees are not stated on the order page."
+}

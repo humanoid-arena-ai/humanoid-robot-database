@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "kinisi-robotics",
+    "name": "Kinisi Robotics",
+    "country": "United Kingdom",
+    "website": "https://www.bearrobotics.ai/kinisi",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "kinisi-kr1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Acquisition by Bear Robotics announced on 22 June 2026."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "kinisi-robotics_source_001",
+      "title": "Bear Robotics to Acquire Kinisi Robotics",
+      "publisher": "bearrobotics.ai",
+      "url": "https://www.bearrobotics.ai/blog/bear-robotics-to-acquire-kinisi-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

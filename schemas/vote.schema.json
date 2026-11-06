@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://humanoid-arena.local/schemas/vote.schema.json",
+  "title": "Judge Vote",
+  "type": "object",
+  "required": [
+    "vote_id",
+    "match_id",
+    "robot_a_id",
+    "robot_b_id",
+    "scenario",
+    "blind_mode",
+    "judge_model",
+    "prompt_version",
+    "winner",
+    "confidence",
+    "score_a",
+    "score_b",
+    "evidence_weight",
+    "final_vote_weight",
+    "valid_vote"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "vote_id": {
+      "type": "string"
+    },
+    "match_id": {
+      "type": "string"
+    },
+    "robot_a_id": {
+      "type": "string"
+    },
+    "robot_b_id": {
+      "type": "string"
+    },
+    "scenario": {
+      "type": "string"
+    },
+    "category": {
+      "type": ["string", "null"]
+    },
+    "blind_mode": {
+      "type": "boolean"
+    },
+    "judge_model": {
+      "type": "string"
+    },
+    "prompt_version": {
+      "type": "string"
+    },
+    "winner": {
+      "type": "string",
+      "enum": ["A", "B", "draw", "insufficient"]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "score_a": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "score_b": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "evidence_ids_a": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids_b": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "final_vote_weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "valid_vote": {
+      "type": "boolean"
+    }
+  }
+}

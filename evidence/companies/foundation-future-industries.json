@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "foundation-future-industries",
+    "name": "Foundation Future Industries",
+    "country": "United States",
+    "website": "https://www.foundation.bot",
+    "founded": 2024,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "foundation-phantom-mk1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "About $21 million raised as of April 2026, plus $24 million in US military research contracts."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "foundation-future-industries_source_001",
+      "title": "Foundation Future Industries wins $24M Pentagon contracts for humanoid robot soldiers",
+      "publisher": "thenextweb.com",
+      "url": "https://thenextweb.com/news/foundation-humanoid-robot-soldiers-pentagon",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

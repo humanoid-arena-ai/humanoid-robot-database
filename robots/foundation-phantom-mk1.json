@@ -1,0 +1,70 @@
+{
+  "id": "foundation-phantom-mk1",
+  "name": "Foundation Phantom MK-1",
+  "aliases": [
+    "Phantom",
+    "Phantom MK1"
+  ],
+  "companyId": "foundation-future-industries",
+  "companyName": "Foundation Future Industries",
+  "country": "United States",
+  "announced": null,
+  "status": "pilot",
+  "category": "industrial",
+  "summary": "Phantom MK-1 is a full-size biped from San Francisco startup Foundation, aimed at heavy industry and defense. It is reported at 5 ft 9 in and 176 lb with a 44 lb payload and eight cameras instead of LiDAR. Foundation holds US military research contracts and sent two units to Ukraine for testing in February 2026.",
+  "specs": {
+    "height_cm": {
+      "value": 175,
+      "original": "5'9\"",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 79.8,
+      "original": "176 pounds",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 20,
+      "original": "44 pounds",
+      "sourceId": "s1"
+    },
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1.7,
+      "original": "1.7 meters/second",
+      "sourceId": "s1"
+    }
+  },
+  "hands": "Five-fingered hands.",
+  "sensors": "Eight cameras, no LiDAR.",
+  "compute": null,
+  "price": {
+    "value": 150000,
+    "currency": "USD",
+    "priceType": "reported",
+    "configuration": "Unit purchase (lease about $100,000 per year)",
+    "sourceId": "s1"
+  },
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "$24 million in US Army, Navy and Air Force research contracts reported.",
+    "Two units sent to Ukraine in February 2026 for logistics and reconnaissance testing.",
+    "19 upper-body degrees of freedom reported."
+  ],
+  "caveats": [
+    "Price is a reported company figure, not a public list price.",
+    "Military use cases are early-stage testing."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Foundation Future Industries wins $24M Pentagon contracts for humanoid robot soldiers",
+      "publisher": "The Next Web",
+      "url": "https://thenextweb.com/news/foundation-humanoid-robot-soldiers-pentagon",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

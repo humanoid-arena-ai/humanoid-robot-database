@@ -1,0 +1,80 @@
+{
+  "id": "rainbow-rb-y1",
+  "name": "Rainbow Robotics RB-Y1",
+  "aliases": [
+    "RB-Y1"
+  ],
+  "companyId": "rainbow-robotics",
+  "companyName": "Rainbow Robotics",
+  "country": "South Korea",
+  "announced": "2024-05-08",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "RB-Y1 is a wheeled bimanual mobile manipulator from Rainbow Robotics, with two 7-DoF arms on a 6-DoF torso. It is 1.4 m tall and is sold as a research platform for AI developers. Pre-orders opened in May 2024 at $80,000 for the research version and $120,000 for the commercial version.",
+  "specs": {
+    "height_cm": {
+      "value": 140,
+      "original": "1,400mm (H)",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 131,
+      "original": "131kg (Configuration A)",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 3,
+      "original": "3 kg / 6.6 lb per arm",
+      "sourceId": "s1"
+    },
+    "runtime_h": null,
+    "dof": {
+      "value": 20,
+      "original": "20 DOF (Config A)",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1.5,
+      "original": "1.5m/s",
+      "sourceId": "s1"
+    }
+  },
+  "hands": null,
+  "sensors": "Force/torque sensors on both arms (V1.2), LiDAR, optional 3D vision sensor.",
+  "compute": "Dual-PC: real-time robot PC and user PC with ROS 2 and SDK.",
+  "price": {
+    "value": 80000,
+    "currency": "USD",
+    "priceType": "list",
+    "configuration": "Research platform, VAT excluded (commercial platform $120,000)",
+    "sourceId": "s2"
+  },
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://rainbow-robotics.com/en/products/rb-y1/",
+  "highlights": [
+    "Battery options of 1,250 Wh or 2,500 Wh.",
+    "Arm repeatability of +/-0.05 mm.",
+    "Samsung Electronics became Rainbow Robotics' largest shareholder in 2025."
+  ],
+  "caveats": [
+    "Wheeled base, not a biped.",
+    "Prices are from the 2024 pre-order announcement."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RB-Y1",
+      "publisher": "Rainbow Robotics",
+      "url": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Rainbow Robotics begins pre-orders of Bimanual Mobile Manipulator RB-Y1",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/rainbow-robotics-begins-pre-orders-of-bimanual-mobile-manipulator-rb-y1--the-worlds-first-research-platform-for-ai-experts-for-80-000-usd-302139719.html",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

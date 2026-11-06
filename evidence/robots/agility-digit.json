@@ -1,0 +1,467 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "agility-digit",
+    "name": "Digit",
+    "company_id": "agility-robotics",
+    "company_name": "Agility Robotics",
+    "country": "United States",
+    "generation": null,
+    "first_announced_date": "2024-06-27",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as commercial_deployment based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "175 cm",
+      "value": 175,
+      "unit": "cm",
+      "source_ids": [
+        "agility-digit_source_003"
+      ],
+      "notes": "Reported by robothub.app, added 2026-10-29 by automated spec fill; Third-party listing for Digit (2023), not Digit 5.."
+    },
+    "weight": {
+      "original_value": "65 kg",
+      "value": 65,
+      "unit": "kg",
+      "source_ids": [
+        "agility-digit_source_003"
+      ],
+      "notes": "Reported by robothub.app, added 2026-10-29 by automated spec fill; Third-party listing for Digit (2023), not Digit 5.."
+    },
+    "payload": {
+      "original_value": "35 lb carrying capacity",
+      "value": 35,
+      "unit": "lb",
+      "source_ids": [
+        "agility-digit_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "4-hour battery life",
+      "value": 4,
+      "unit": "hours",
+      "source_ids": [
+        "agility-digit_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 30,
+      "notes": "Reported by robothub.app, added 2026-10-29 by automated spec fill; Total body degrees of freedom; third-party listing for Digit (2023)..",
+      "source_ids": [
+        "agility-digit_source_003"
+      ],
+      "original_value": "30 DOF",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "1.5 km/h",
+      "value": 0.4166666666666667,
+      "unit": "m/s",
+      "source_ids": [
+        "agility-digit_source_003"
+      ],
+      "notes": "Reported by robothub.app, added 2026-10-29 by automated spec fill; Listed as max speed; converted from km/h to m/s. Third-party listing for Digit (2023).."
+    },
+    "hands": {
+      "description": "Purpose-built end effectors for tote/bin handling; no public dexterous hand DoF spec was found.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": null,
+      "source_ids": []
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.agilityrobotics.com/solutions",
+      "source_ids": [
+        "agility-digit_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 4,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 1,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 4,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "evidence_level": 0,
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "agility-digit_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "35 lb carrying capacity, 4-hour battery, Arc fleet platform.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "agility-digit_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "35 lb carrying capacity, 4-hour battery, Arc fleet platform.",
+      "source_location": "Humanoid Solutions product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "agility-digit_evidence_002",
+      "date": null,
+      "title": "Deployment, demo, or independent context",
+      "claim": "GXO multi-year RaaS deployment after SPANX pilot.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 4,
+      "source_ids": [
+        "agility-digit_source_002"
+      ],
+      "confidence": 0.82,
+      "notes": "Use with caveats from source audit.",
+      "arena_relevance": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "claim_type": "customer_claim",
+      "supporting_excerpt": "GXO multi-year RaaS deployment after SPANX pilot.",
+      "source_location": "GXO Signs Industry-First Multi-Year Agreement with Agility Robotics",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "agility-digit_deployment_001",
+      "customer_or_partner": null,
+      "site_or_context": null,
+      "task": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+      "start_date": "2024-06-27",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "agility-digit_source_002"
+      ],
+      "evidence_tier": 4,
+      "caveats": [
+        "Metrics are limited to what is explicitly stated in sources."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "agility-digit_demo_001",
+      "title": "Digit public demo/context",
+      "date": "2024-06-27",
+      "observed_capabilities": [
+        "Customer-confirmed GXO deployment moving totes in logistics operations."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "agility-digit_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "agility-digit_source_001",
+        "agility-digit_source_002"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "agility-digit_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 0,
+    "independent_sources_count": 0,
+    "customer_sources_count": 1,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+    "strongest_evidence": [
+      "35 lb carrying capacity, 4-hour battery, Arc fleet platform.",
+      "GXO multi-year RaaS deployment after SPANX pilot."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "Teleoperation/editing details often unclear."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_high"
+  },
+  "source_ids": [
+    "agility-digit_source_001",
+    "agility-digit_source_002",
+    "agility-digit_source_003"
+  ],
+  "sources": [
+    {
+      "id": "agility-digit_source_001",
+      "title": "Humanoid Solutions",
+      "publisher": "Agility Robotics",
+      "url": "https://www.agilityrobotics.com/solutions",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "35 lb carrying capacity, 4-hour battery, Arc fleet platform."
+    },
+    {
+      "id": "agility-digit_source_002",
+      "title": "GXO Signs Industry-First Multi-Year Agreement with Agility Robotics",
+      "publisher": "GXO / GlobeNewswire",
+      "url": "https://investors.gxo.com/node/9401/pdf",
+      "date_published": "2024-06-27",
+      "date_accessed": "2026-05-16",
+      "source_type": "customer_press_release",
+      "reliability": "medium",
+      "reliability_notes": "GXO multi-year RaaS deployment after SPANX pilot."
+    },
+    {
+      "id": "agility-digit_source_003",
+      "title": "Digit - Specs, Company, Price, Release Date & Comparison",
+      "publisher": "robothub.app",
+      "url": "https://www.robothub.app/en/robots/digit",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Customer-confirmed GXO deployment moving totes in logistics operations.",
+    "strongest_positive_evidence": [
+      "35 lb carrying capacity, 4-hour battery, Arc fleet platform.",
+      "GXO multi-year RaaS deployment after SPANX pilot."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Missing intervention/failure-rate data"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

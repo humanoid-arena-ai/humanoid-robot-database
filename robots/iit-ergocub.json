@@ -1,0 +1,63 @@
+{
+  "id": "iit-ergocub",
+  "name": "ergoCub",
+  "aliases": [],
+  "companyId": "italian-institute-of-technology",
+  "companyName": "Italian Institute of Technology (IIT)",
+  "country": "Italy",
+  "announced": "2023-09-21",
+  "status": "prototype",
+  "category": "research",
+  "summary": "ergoCub is a research humanoid from the Italian Institute of Technology, built with INAIL to study how robots can reduce physical strain on workers in factories and hospitals. It is 150 cm tall, weighs 55.7 kg and can carry about 10 kg. It builds on IIT's iCub platform.",
+  "specs": {
+    "height_cm": {
+      "value": 150,
+      "original": "1.5m tall",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 55.7,
+      "original": "55.7 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 10,
+      "original": "loads of up to approximately 10 kg",
+      "sourceId": "s1"
+    },
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": "Wi-Fi 6E connectivity.",
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Presented on 21 September 2023 for IIT's 20th anniversary.",
+    "Developed with INAIL, the Italian workers' compensation authority."
+  ],
+  "caveats": [
+    "Research prototype, not for sale.",
+    "DoF and battery details are not published on the project page."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ergoCub humanoid robot",
+      "publisher": "ergoCub project",
+      "url": "https://ergocub.eu/robot",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "A new robot for the first 20 years of IIT",
+      "publisher": "IIT OpenTalk",
+      "url": "https://opentalk.iit.it/en/a-new-robot-for-the-first-20-years-of-iit/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

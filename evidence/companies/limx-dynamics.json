@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "limx-dynamics",
+    "name": "LimX Dynamics",
+    "country": "China",
+    "website": null,
+    "founded": 2022,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "limx-oli"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Series A in July 2024; $200 million Series B announced February 2026 (CnEVPost)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "limx-dynamics_source_001",
+      "title": "Chinese humanoid robot maker LimX secures $200 million in Series B funding",
+      "publisher": "cnevpost.com",
+      "url": "https://cnevpost.com/2026/02/02/chinese-humanoid-robot-maker-limx-secures-200-million-in-series-b-funding/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "robotId": "boston-dynamics-atlas-electric",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "contact_sales",
+  "purchasePathNote": "Boston Dynamics has no public price or order page. Enterprises submit a contact form and the company follows up with qualified prospects; all 2026 Atlas deployments are committed to Hyundai RMAC and Google DeepMind, with more customers planned from early 2027.",
+  "configurations": [],
+  "sellers": [
+    {
+      "name": "Boston Dynamics sales",
+      "type": "official",
+      "url": "https://bostondynamics.com/atlas/",
+      "region": "Global",
+      "offers": "No price shown. Contact form: 'Our team will be in touch with qualified prospects.'",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy the Boston Dynamics Atlas?",
+      "a": "Not as an open purchase. Boston Dynamics says all 2026 Atlas deployments are committed to Hyundai's Robotics Metaplant Application Center and Google DeepMind, and it plans to add more customers in early 2027.",
+      "sourceUrl": "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/"
+    },
+    {
+      "q": "How much does Atlas cost?",
+      "a": "Boston Dynamics has not published a price for the production Atlas. Figures on third-party sites are estimates, not company statements.",
+      "sourceUrl": "https://bostondynamics.com/atlas/"
+    },
+    {
+      "q": "How do I request an Atlas?",
+      "a": "Use the contact form on the Boston Dynamics Atlas page; the company says it will contact qualified prospects.",
+      "sourceUrl": "https://bostondynamics.com/atlas/"
+    },
+    {
+      "q": "When was the production Atlas announced?",
+      "a": "Boston Dynamics unveiled the product version of Atlas at CES on January 5, 2026.",
+      "sourceUrl": "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/"
+    }
+  ],
+  "notes": "No company price. Third-party estimates range widely (roughly $150,000 to $420,000) and none were traced to a Boston Dynamics statement, so they are excluded. Hyundai plans factory use of Atlas from 2028."
+}

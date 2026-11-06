@@ -1,0 +1,40 @@
+{
+  "id": "astribot-s1",
+  "name": "Astribot S1",
+  "aliases": ["S1", "Stardust S1"],
+  "companyId": "astribot",
+  "companyName": "Astribot (Stardust Intelligence)",
+  "country": "China",
+  "announced": null,
+  "status": "commercial",
+  "category": "general",
+  "summary": "S1 is a wheeled humanoid upper body with two 7-DoF arms on a mobile base, built by Shenzhen's Stardust Intelligence. It is designed for fast, precise arm motion and AI learning, and is used in retail and service settings in China.",
+  "specs": {
+    "height_cm": { "value": 170, "original": "Height: 170cm", "sourceId": "s1" },
+    "weight_kg": { "value": 80, "original": "Weight: 80kg", "sourceId": "s1" },
+    "payload_kg": { "value": 5, "original": "Single Arm Payload (horizontal lift): 5kg", "sourceId": "s1" },
+    "runtime_h": { "value": 4, "original": "4-6 hours (supports plug-in charging)", "sourceId": "s1" },
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.astribot.com/product",
+  "highlights": [
+    "End-effector speed of 10 m/s or more and repeatability of +/-0.1 mm, per Astribot.",
+    "Each arm has 7 DoF; arm span is 194 cm.",
+    "Customers include JD.com and ThunderSoft; Robot MART stores operate in six Chinese cities, per BigGo Finance."
+  ],
+  "caveats": [
+    "Wheeled base, not a legged humanoid.",
+    "No official price; reseller estimates vary widely."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Astribot S1 product page", "publisher": "Astribot", "url": "https://www.astribot.com/product", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "China's Astribot Raises Fourth Round in Six Months, Valuation Jumps to 15 Billion Yuan", "publisher": "BigGo Finance", "url": "https://finance.biggo.com/news/94976559-8f69-4359-ab0d-7f8cf6cb665f", "accessed": "2026-10-14" }
+  ]
+}

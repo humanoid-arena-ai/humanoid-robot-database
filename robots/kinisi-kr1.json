@@ -1,0 +1,85 @@
+{
+  "id": "kinisi-kr1",
+  "name": "Kinisi KR1",
+  "aliases": [
+    "KR1"
+  ],
+  "companyId": "kinisi-robotics",
+  "companyName": "Kinisi Robotics (Bear Robotics)",
+  "country": "United Kingdom",
+  "announced": null,
+  "status": "prototype",
+  "category": "industrial",
+  "summary": "KR1 is a wheeled two-arm humanoid from Kinisi Robotics for picking, placing and sorting in warehouses and factories. It is reported to carry 10 kg, reach 2.4 m/s and run 6-8 hours on hot-swappable batteries. Bear Robotics agreed to acquire Kinisi in June 2026 and presents the robot as an upcoming product.",
+  "specs": {
+    "height_cm": {
+      "value": 162,
+      "original": "162 cm",
+      "sourceId": "s2"
+    },
+    "weight_kg": {
+      "value": 100,
+      "original": "100 kg",
+      "sourceId": "s2"
+    },
+    "payload_kg": {
+      "value": 10,
+      "original": "22 pounds (10 kilograms)",
+      "sourceId": "s1"
+    },
+    "runtime_h": {
+      "value": 8,
+      "original": "6-8 hours per charge",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 21,
+      "original": "21 overall",
+      "sourceId": "s2"
+    },
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 2.4,
+      "original": "2.4 m/s",
+      "sourceId": "s1"
+    }
+  },
+  "hands": null,
+  "sensors": "Stereo depth cameras, 180-degree LiDAR.",
+  "compute": "NVIDIA Jetson module.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.bearrobotics.ai/kinisi",
+  "highlights": [
+    "Unveiled in July 2025.",
+    "48 V hot-swappable lithium-ion battery and auto-docking.",
+    "Bear Robotics signed an agreement to acquire Kinisi on 22 June 2026."
+  ],
+  "caveats": [
+    "Height, weight and DoF come from a third-party database, not an official spec sheet.",
+    "Bear lists payload and reach as to be confirmed at launch."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "KR1 humanoid robot handles fragile, heavy loads safely in factories",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/innovation/humanoid-robot-kr1-kinisi",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Kinisi Robotics Kinisi KR1 Specs & Price",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/kinisi-kr1/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "Bear Robotics to Acquire Kinisi Robotics",
+      "publisher": "Bear Robotics",
+      "url": "https://www.bearrobotics.ai/blog/bear-robotics-to-acquire-kinisi-robotics",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "neura-robotics",
+    "name": "NEURA Robotics",
+    "country": "Germany",
+    "website": "https://neura-robotics.com",
+    "founded": 2019,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "neura-4ne1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "EUR 120 million Series B in January 2025; Wikipedia reports a Series C of up to $1.4 billion announced in June 2026."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "neura-robotics_source_001",
+      "title": "Neura Robotics",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Neura_Robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "neura-robotics_source_002",
+      "title": "NEURA Robotics Raises EUR 120M in Series B Funding",
+      "publisher": "finsmes.com",
+      "url": "https://www.finsmes.com/2025/01/neura-robotics-raises-e120m-in-series-b-funding.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

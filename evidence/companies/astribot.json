@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "astribot",
+    "name": "Astribot (Stardust Intelligence)",
+    "country": "China",
+    "website": "https://www.astribot.com/",
+    "founded": 2022,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "astribot-s1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Series B of over 1 billion yuan at a valuation above 10 billion yuan (36Kr, June 2026); a further 1 billion yuan round at 15 billion yuan valuation in October 2026 (BigGo Finance)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "astribot_source_001",
+      "title": "Shenzhen's Stardust Intelligence Secures Over 1B Yuan in Series B Financing",
+      "publisher": "eu.36kr.com",
+      "url": "https://eu.36kr.com/en/p/3836068296209537",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "astribot_source_002",
+      "title": "China's Astribot Raises Fourth Round in Six Months, Valuation Jumps to 15 Billion Yuan",
+      "publisher": "finance.biggo.com",
+      "url": "https://finance.biggo.com/news/94976559-8f69-4359-ab0d-7f8cf6cb665f",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

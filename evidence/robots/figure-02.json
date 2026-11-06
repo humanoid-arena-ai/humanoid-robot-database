@@ -1,0 +1,745 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "figure-02",
+    "name": "Figure 02",
+    "company_id": "figure-ai",
+    "company_name": "Figure AI",
+    "country": "United States",
+    "generation": "second-generation Figure humanoid",
+    "first_announced_date": "2024-08-06",
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Figure describes Figure 02 as retired after Figure 03; BMW later published Figure 02 production metrics for 2025.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "automotive manufacturing",
+      "warehouse logistics",
+      "general-purpose labor research"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "specs": {
+    "height": {
+      "original_value": "170 cm",
+      "value": 170,
+      "unit": "cm",
+      "source_ids": [
+        "figure-02_source_010"
+      ]
+    },
+    "weight": {
+      "original_value": "70 kg",
+      "value": 70,
+      "unit": "kg",
+      "source_ids": [
+        "figure-02_source_010"
+      ]
+    },
+    "payload": {
+      "original_value": "20 kg",
+      "value": 20,
+      "unit": "kg",
+      "source_ids": [
+        "figure-02_source_010"
+      ]
+    },
+    "runtime": {
+      "original_value": "5 hours",
+      "value": 5,
+      "unit": "h",
+      "source_ids": [
+        "figure-02_source_012"
+      ],
+      "notes": "Reported by hellonoid.com, added 2026-10-29 by automated spec fill; Battery life/autonomous runtime listed by a third-party aggregator; not confirmed on Figure's own page.."
+    },
+    "battery": {
+      "original_value": "2.25 kWh",
+      "value": 2.25,
+      "unit": "kWh",
+      "notes": "Launch release says Figure 02 has a custom 2.25 kWh battery pack and more than 50 percent more energy than Figure 01.",
+      "source_ids": [
+        "figure-02_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "Public sources reviewed did not provide total robot degrees of freedom.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "4.8 km/h",
+      "value": 1.333,
+      "unit": "m/s",
+      "source_ids": [
+        "figure-02_source_012"
+      ],
+      "notes": "Reported by hellonoid.com, added 2026-10-29 by automated spec fill; Walking speed.."
+    },
+    "hands": {
+      "description": "Fourth-generation human-scale hands; Figure says each hand has 16 active degrees of freedom and human-equivalent strength.",
+      "degrees_of_freedom": 16,
+      "force_feedback": null,
+      "source_ids": [
+        "figure-02_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "six RGB cameras"
+      ],
+      "source_ids": [
+        "figure-02_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Launch release claims three times more onboard computation and AI inference than Figure 01.",
+      "source_ids": [
+        "figure-02_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Launch release describes a redesigned exoskeleton and integrated wiring.",
+      "source_ids": [
+        "figure-02_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "superseded",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "source_ids": [
+        "figure-02_source_005",
+        "figure-02_source_011"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "BMW-confirmed production work involved removing and positioning sheet-metal components for welding; Figure demos show broader grasping and logistics manipulation.",
+      "evidence_level": 4,
+      "source_ids": [
+        "figure-02_source_004",
+        "figure-02_source_006",
+        "figure-02_source_007",
+        "figure-02_source_008"
+      ],
+      "caveats": [
+        "BMW task is narrow industrial handling.",
+        "Company demos are curated."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "BMW reported 10-hour shifts and large part counts in 2025 production; intervention rate and autonomy boundaries were not disclosed.",
+      "evidence_level": 4,
+      "source_ids": [
+        "figure-02_source_004",
+        "figure-02_source_005"
+      ],
+      "caveats": [
+        "Strong task-output evidence, but not a full autonomy disclosure."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official demos show biped walking and learned walking behavior; BMW evidence implies workcell operation.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-02_source_009",
+        "figure-02_source_004"
+      ],
+      "caveats": [
+        "No independent mobility benchmark, walking speed, or fall-rate metric found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Figure describes six RGB cameras and Helix vision-language-action demos involving object recognition and manipulation.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-02_source_001",
+        "figure-02_source_006"
+      ],
+      "caveats": [
+        "Scene understanding is company-demo evidence, not independent benchmarking."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Launch materials state Figure 02 includes microphones and speakers for speech interaction through AI models trained with OpenAI.",
+      "evidence_level": 1,
+      "source_ids": [
+        "figure-02_source_001"
+      ],
+      "caveats": [
+        "No independent conversational reliability test found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "BMW reported Figure 02 supported 10-hour weekday shifts, more than 90,000 components, about 1.2 million steps, and about 1,250 operating hours.",
+      "evidence_level": 4,
+      "source_ids": [
+        "figure-02_source_004"
+      ],
+      "caveats": [
+        "Public metric is from one customer context and task family."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "The robot is human-sized and operated in a BMW automotive plant workcell designed around human-scale production tasks.",
+      "evidence_level": 4,
+      "source_ids": [
+        "figure-02_source_004",
+        "figure-02_source_010"
+      ],
+      "caveats": [
+        "Evidence is industrial, not home or public-space operation."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "BMW signed a commercial agreement and later reported measurable Figure 02 production support at Spartanburg.",
+      "evidence_level": 4,
+      "source_ids": [
+        "figure-02_source_002",
+        "figure-02_source_004"
+      ],
+      "caveats": [
+        "Only BMW has customer-confirmed public metrics in the reviewed sources."
+      ]
+    },
+    "accessibility_value": {
+      "summary": null,
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No public price or purchase path found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "figure-02_evidence_001",
+      "date": "2024-08-06",
+      "title": "Figure 02 launch specifications",
+      "claim": "Figure launched Figure 02 with six RGB cameras, a 2.25 kWh battery, three times more onboard compute than Figure 01, and 16 active DoF per hand.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-02_source_001"
+      ],
+      "confidence": 0.78,
+      "notes": "Official company launch claim.",
+      "arena_relevance": "Defines generation and core morphology.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Launch release listed cameras, battery capacity, compute increase, and hand DoF.",
+      "source_location": "Figure 02 launch release specification/capability sections",
+      "verification_notes": "Official company launch source; not independent verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-02_evidence_002",
+      "date": "2024-01-18",
+      "title": "BMW commercial agreement",
+      "claim": "Figure announced a commercial agreement with BMW Manufacturing to bring general-purpose robots into automotive production.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-02_source_002"
+      ],
+      "confidence": 0.72,
+      "notes": "Company announcement; later BMW sources are stronger.",
+      "arena_relevance": "Shows the intended customer path.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Figure announced a BMW commercial agreement for automotive production.",
+      "source_location": "Figure/BMW agreement press release",
+      "verification_notes": "Agreement context only; measured deployment comes from later BMW source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-02_evidence_003",
+      "date": null,
+      "title": "BMW Spartanburg production metrics",
+      "claim": "BMW said Figure 02 supported more than 30,000 BMW X3 vehicles, handled more than 90,000 components, made about 1.2 million steps, and accumulated about 1,250 operating hours.",
+      "category": [
+        "autonomy_task_execution",
+        "endurance_reliability",
+        "deployment_commercial_proof",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 4,
+      "source_ids": [
+        "figure-02_source_004"
+      ],
+      "confidence": 0.9,
+      "notes": "Strongest public evidence found because it is customer-confirmed and measured.",
+      "arena_relevance": "Direct evidence for useful task execution and reliability.",
+      "claim_type": "customer_claim",
+      "supporting_excerpt": "BMW reported operating hours, components handled, steps, shifts, and vehicle-production support.",
+      "source_location": "BMW Group deployment article production-metrics section",
+      "verification_notes": "Strongest customer-confirmed evidence in the pack.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "endurance_reliability",
+          "deployment_commercial_proof",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "high",
+        "rating_effect": "large_positive"
+      }
+    },
+    {
+      "id": "figure-02_evidence_004",
+      "date": null,
+      "title": "Figure BMW retrospective",
+      "claim": "Figure reported an 11-month BMW deployment, active assembly-line launch within 10 months, and Figure 02 retirement after Figure 03 release.",
+      "category": [
+        "deployment_commercial_proof",
+        "status"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "figure-02_source_005"
+      ],
+      "confidence": 0.78,
+      "notes": "Company-published deployment data.",
+      "arena_relevance": "Helps establish lifecycle and deployment cadence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Figure described BMW deployment cadence and Figure 02 retirement after Figure 03.",
+      "source_location": "Figure Production at BMW retrospective",
+      "verification_notes": "Company deployment retrospective; use BMW for customer metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-02_evidence_005",
+      "date": null,
+      "title": "Helix manipulation demos",
+      "claim": "Figure's Helix materials show Figure 02 robots manipulating varied household and logistics objects with a vision-language-action model.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-02_source_006",
+        "figure-02_source_007",
+        "figure-02_source_008"
+      ],
+      "confidence": 0.68,
+      "notes": "Clear company demos, but curated.",
+      "arena_relevance": "Relevant to broader manipulation, below customer deployment proof.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Helix demo pages show object handling and logistics-style manipulation.",
+      "source_location": "Figure Helix and Helix Logistics demo pages",
+      "verification_notes": "Observable company demos separated from claims about general autonomy.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-02_evidence_006",
+      "date": null,
+      "title": "RL walking demo",
+      "claim": "Figure published a reinforcement-learning walking update showing learned biped locomotion on Figure 02.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-02_source_009"
+      ],
+      "confidence": 0.64,
+      "notes": "Company demo; no independent metrics.",
+      "arena_relevance": "Supports whole-body control evidence.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Figure walking update shows learned biped walking behavior.",
+      "source_location": "Figure reinforcement-learning walking page",
+      "verification_notes": "Company mobility demo; no independent measurements.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "figure-02_deployment_001",
+      "customer_or_partner": "BMW Group",
+      "site_or_context": "BMW Group Plant Spartanburg automotive production",
+      "task": "Removing and positioning sheet-metal components for welding; production support for BMW X3 assembly.",
+      "start_date": "2025",
+      "end_date": null,
+      "operating_hours": 1250,
+      "units_deployed": null,
+      "output_metrics": [
+        "supported production of more than 30,000 BMW X3 vehicles",
+        "handled more than 90,000 components",
+        "about 1.2 million steps",
+        "10-hour weekday shifts"
+      ],
+      "source_ids": [
+        "figure-02_source_004",
+        "figure-02_source_005"
+      ],
+      "evidence_tier": 4,
+      "caveats": [
+        "Number of robots deployed was not found.",
+        "Intervention rate was not published."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "figure-02_demo_001",
+      "title": "Helix object-manipulation demos",
+      "date": null,
+      "observed_capabilities": [
+        "grasping varied objects",
+        "sorting and logistics-style manipulation",
+        "vision-language-action prompted task execution"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Figure states Helix used about 500 hours of teleoperated behavior data for training; public demo execution mode is not fully characterized.",
+      "environment": "company demo environments",
+      "source_ids": [
+        "figure-02_source_006",
+        "figure-02_source_007",
+        "figure-02_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No third-party replication or success-rate data found."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Figure states Helix used about 500 hours of teleoperated behavior data for training; public demo execution mode is not fully characterized.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "grasping varied objects; sorting and logistics-style manipulation; vision-language-action prompted task execution",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-02_demo_002",
+      "title": "Reinforcement-learning walking update",
+      "date": null,
+      "observed_capabilities": [
+        "learned biped walking"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company controlled demo setting",
+      "source_ids": [
+        "figure-02_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No public benchmark metrics found."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "learned biped walking",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No public Figure 02 price or purchase path was found; Figure describes the model as retired after Figure 03.",
+      "impact_on_arena_scoring": "Limits accessibility/value scoring."
+    },
+    {
+      "topic": "Autonomy level",
+      "description": "BMW and Figure reported output, but intervention rate, remote supervision, and failure rate were not disclosed.",
+      "impact_on_arena_scoring": "Strong for task execution, conservative for autonomy generality."
+    },
+    {
+      "topic": "Independent benchmarks",
+      "description": "No independent mobility, dexterity, or perception benchmark was found.",
+      "impact_on_arena_scoring": "Do not treat company demos as benchmark-grade evidence."
+    }
+  ],
+  "source_ids": [
+    "figure-02_source_001",
+    "figure-02_source_002",
+    "figure-02_source_003",
+    "figure-02_source_004",
+    "figure-02_source_005",
+    "figure-02_source_006",
+    "figure-02_source_007",
+    "figure-02_source_008",
+    "figure-02_source_009",
+    "figure-02_source_010",
+    "figure-02_source_011",
+    "figure-02_source_012"
+  ],
+  "sources": [
+    {
+      "id": "figure-02_source_001",
+      "title": "Figure Unveils Figure 02, its Second-Generation Humanoid, Setting New Standards in AI and Robotics",
+      "publisher": "Figure AI via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/figure-unveils-figure-02-its-second-generation-humanoid-setting-new-standards-in-ai-and-robotics-302214889.html",
+      "date_published": "2024-08-06",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official launch source; company claims are not independent verification."
+    },
+    {
+      "id": "figure-02_source_002",
+      "title": "Figure Announces Commercial Agreement with BMW Manufacturing to Bring General Purpose Robots into Automotive Production",
+      "publisher": "Figure AI via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/figure-announces-commercial-agreement-with-bmw-manufacturing-to-bring-general-purpose-robots-into-automotive-production-302036263.html",
+      "date_published": "2024-01-18",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official company agreement announcement."
+    },
+    {
+      "id": "figure-02_source_003",
+      "title": "Successful Test of Humanoid Robots at BMW Group Plant Spartanburg",
+      "publisher": "BMW Group",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0444268EN_US/successful-test-of-humanoid-robots-at-bmw-group-plant-spartanburg",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "customer_press_release",
+      "reliability": "high",
+      "reliability_notes": "Customer source for trial context and task."
+    },
+    {
+      "id": "figure-02_source_004",
+      "title": "BMW Group to Deploy Humanoid Robots in Production in Germany for the First Time",
+      "publisher": "BMW Group",
+      "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0455870EN_GB/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "customer_press_release",
+      "reliability": "high",
+      "reliability_notes": "Customer source with task, hours, output, and shift information."
+    },
+    {
+      "id": "figure-02_source_005",
+      "title": "Production at BMW",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/production-at-bmw",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company retrospective; use BMW for customer-confirmed metrics."
+    },
+    {
+      "id": "figure-02_source_006",
+      "title": "Helix",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/helix",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo and technical narrative; curated."
+    },
+    {
+      "id": "figure-02_source_007",
+      "title": "Helix Logistics",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/helix-logistics",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Company logistics demo; no independent success-rate data."
+    },
+    {
+      "id": "figure-02_source_008",
+      "title": "Scaling Helix Logistics",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/scaling-helix-logistics",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Company demo/update; curated."
+    },
+    {
+      "id": "figure-02_source_009",
+      "title": "Reinforcement Learning Walking",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/reinforcement-learning-walking",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official mobility demo/update; no independent benchmark metrics."
+    },
+    {
+      "id": "figure-02_source_010",
+      "title": "Humanoid Robots in Automotive Production",
+      "publisher": "BMW Group",
+      "url": "https://www.bmwgroup.com/en/news/general/2024/humanoid-robots.html",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "customer_press_release",
+      "reliability": "high",
+      "reliability_notes": "BMW article with rounded dimensions and payload."
+    },
+    {
+      "id": "figure-02_source_011",
+      "title": "Figure 03 Humanoid Robot Reveal",
+      "publisher": "TIME",
+      "url": "https://time.com/7324233/figure-03-robot-humanoid-reveal/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary context for Figure product transition."
+    },
+    {
+      "id": "figure-02_source_012",
+      "title": "Figure 02 by Figure AI — Hellonoid",
+      "publisher": "hellonoid.com",
+      "url": "https://hellonoid.com/robots/figure-02",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Figure 02 has unusually strong customer-confirmed deployment evidence through BMW, but broad generality still rests mostly on company demos.",
+    "strongest_positive_evidence": [
+      "BMW-confirmed Spartanburg production metrics.",
+      "Customer-confirmed industrial sheet-metal handling.",
+      "Helix demos show broader manipulation."
+    ],
+    "weakest_or_missing_evidence": [
+      "No public price or purchase path.",
+      "No independent benchmark.",
+      "No disclosed intervention or failure rate.",
+      "No total DoF, walking speed, or runtime metric found."
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not describe Figure 02 as currently purchasable.",
+      "Do not treat Helix demos as independent proof of open-ended autonomy.",
+      "Do not generalize BMW's specific task to all human work."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "figure-03"
+    ],
+    "currentness_notes": "Figure 02 has customer-confirmed historical deployment evidence but is treated as superseded by Figure 03."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Current public purchase availability",
+      "reason": "No public Figure 02 price or purchase path was found, and Figure describes the model as retired/superseded.",
+      "source_ids": [
+        "figure-02_source_005",
+        "figure-02_source_011"
+      ]
+    },
+    {
+      "claim": "Independent benchmark-level manipulation or locomotion scores",
+      "reason": "Reviewed sources include customer deployment and company demos, but no independent benchmark.",
+      "source_ids": [
+        "figure-02_source_004",
+        "figure-02_source_006",
+        "figure-02_source_009"
+      ]
+    },
+    {
+      "claim": "Open-ended home generality",
+      "reason": "Strongest evidence is a narrow BMW industrial workflow; home/logistics breadth is company-demo evidence.",
+      "source_ids": [
+        "figure-02_source_004",
+        "figure-02_source_006"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 9,
+    "secondary_sources_count": 1,
+    "independent_sources_count": 0,
+    "customer_sources_count": 3,
+    "video_sources_count": 4,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Figure 02 is a superseded second-generation Figure humanoid with strong customer-confirmed BMW production evidence, including operating hours and output metrics. Its broader manipulation/autonomy claims should be interpreted conservatively because they mostly come from company demos.",
+    "strongest_evidence": [
+      "BMW production metrics.",
+      "Customer-confirmed industrial handling task.",
+      "Official specs for hands, cameras, battery, and compute."
+    ],
+    "weakest_evidence": [
+      "No public price.",
+      "No independent benchmark.",
+      "No intervention or failure-rate disclosure."
+    ],
+    "known_do_not_credit": [
+      "Current purchasability.",
+      "Open-ended home autonomy.",
+      "Independent benchmark performance."
+    ],
+    "recommended_confidence": "medium_high"
+  }
+}

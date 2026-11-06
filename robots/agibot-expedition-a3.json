@@ -1,0 +1,91 @@
+{
+  "id": "agibot-expedition-a3",
+  "name": "Expedition A3",
+  "aliases": [
+    "AGIBOT A3",
+    "A3"
+  ],
+  "companyId": "agibot",
+  "companyName": "AgiBot",
+  "country": "China",
+  "announced": null,
+  "status": "commercial",
+  "category": "entertainment",
+  "summary": "The AgiBot A3 (listed in the ui44 catalog as Expedition A3) is a full-size humanoid positioned for stage performance, interactive entertainment and embodied AI research. AgiBot lists it at 173 cm and 55 kg, with 31 active degrees of freedom and 10 hours of battery life under a mixed standing/walking test condition. Supply is via corporate quotation.",
+  "specs": {
+    "height_cm": {
+      "value": 173,
+      "original": "173 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 55,
+      "original": "55 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": {
+      "value": 10,
+      "original": "10 horas",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 31,
+      "original": "31 active degrees of freedom",
+      "sourceId": "s4"
+    },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.robotlar.org/en/brands/agibot",
+  "highlights": [
+    "Received an IFA Innovation Award in the emerging technologies category (per AGIBOT's September 8 IFA report, as cited by OpenELAB).",
+    "Battery: 1152 Wh dual battery with a reported 10-second battery swap; 12 kW peak power.",
+    "Supports synchronized control of 100+ units over UWB.",
+    "LinkSoul tools allow configuring personality, voice and knowledge base, with enterprise templates such as exhibition guide and front-desk receptionist.",
+    "Knee torque of 320 Nm; construction in magnesium, titanium and TPU."
+  ],
+  "caveats": [
+    "Announcement date not stated in sources.",
+    "Payload, hand DoF, speed, sensors and compute for the A3 are not given in the sources.",
+    "The 10-hour runtime is a mixed-duty figure, not continuous walking or stage performance.",
+    "No public price; supply is by corporate quotation, and the Robotlar.org sourcing path is a reseller channel, not an official AgiBot purchase page.",
+    "The ui44 page only lists Expedition A3 in a selector without specs; mapping it to the A3 rests on the context given.",
+    "The A3 Ultra (174 cm, 60 kg, 51 DoF, 8 h) is a different model and its specs were not used."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AGIBOT A3 y X2: \u00bflistos para el trabajo diario de los robots humanoides?",
+      "publisher": "OpenELAB Technology Ltd.",
+      "url": "https://openelab.io/es/blogs/learn/agibot-a3-x2-humanoid-robots-everyday-work",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s2",
+      "title": "AGIBOT A3 Ultra: specs, use cases, and availability",
+      "publisher": "robohub.app",
+      "url": "https://robohub.app/news/agibot-a3-ultra-specs-use-cases-and-pricing",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s3",
+      "title": "Compare Robots \u2014 ui44",
+      "publisher": "ui44",
+      "url": "https://ui44.com/compare/donut-robotics-cinnamon-mini/agibot-expedition-a3",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s4",
+      "title": "AgiBot Robots Turkey | A3 Ultra, A3, A2, D1 | Robotlar.org",
+      "publisher": "robotlar.org",
+      "url": "https://www.robotlar.org/en/brands/agibot",
+      "accessed": "2026-10-30"
+    }
+  ]
+}

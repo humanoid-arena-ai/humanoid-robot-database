@@ -1,0 +1,39 @@
+{
+  "id": "fourier-gr-2",
+  "name": "Fourier GR-2",
+  "aliases": ["GR-2", "GR2"],
+  "companyId": "fourier",
+  "companyName": "Fourier",
+  "country": "China",
+  "announced": "2024-09-30",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "GR-2 is Fourier's second-generation general humanoid, 175 cm and 63 kg with 53 DoF including 12-DoF hands. It is aimed at research and development teams and supports ROS, NVIDIA Isaac Lab and MuJoCo.",
+  "specs": {
+    "height_cm": { "value": 175, "original": "175 cm (68.9 in.)", "sourceId": "s1" },
+    "weight_kg": { "value": 63, "original": "63 kg (139 lb.)", "sourceId": "s1" },
+    "payload_kg": { "value": 3, "original": "Single-arm payload: 3 kg (6.6 lb.)", "sourceId": "s1" },
+    "runtime_h": { "value": 2, "original": "Up to 2 hours", "sourceId": "s1" },
+    "dof": { "value": 53, "original": "53 degrees of freedom", "sourceId": "s1" },
+    "hand_dof": { "value": 12, "original": "12-DoF dexterous hands", "sourceId": "s2" },
+    "speed_mps": null
+  },
+  "hands": "12-DoF dexterous hands with six array-type tactile sensors.",
+  "sensors": "Six array-type tactile sensors per hand.",
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "FSA 2.0 actuators with peak torque above 380 N·m.",
+    "Detachable battery with twice the capacity of GR-1."
+  ],
+  "caveats": [
+    "No public list price.",
+    "Speed and compute are not stated in the launch coverage."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Fourier launches GR-2 humanoid, software platform", "publisher": "The Robot Report", "url": "https://www.therobotreport.com/fourier-launches-gr-2-humanoid-software-platform/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Fourier's new GR-2 robot displays human-like motion and flexibility", "publisher": "Interesting Engineering", "url": "https://interestingengineering.com/innovation/fouriers-gr-2-upgraded-humanoid-robot", "accessed": "2026-10-14" }
+  ]
+}

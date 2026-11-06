@@ -1,0 +1,40 @@
+{
+  "id": "engineai-t800",
+  "name": "EngineAI T800",
+  "aliases": ["T800", "T-800"],
+  "companyId": "engineai",
+  "companyName": "EngineAI",
+  "country": "China",
+  "announced": "2025-12-02",
+  "status": "purchasable",
+  "category": "industrial",
+  "summary": "T800 is EngineAI's full-size humanoid, 1.73 m and 75 kg, with 29 body DoF and high-torque joints. It is offered in Base, Ecosystem, Pro and Max versions starting at 180,000 yuan and is aimed at industrial and commercial deployment.",
+  "specs": {
+    "height_cm": { "value": 173, "original": "1.73m", "sourceId": "s1" },
+    "weight_kg": { "value": 75, "original": "75kg", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": { "value": 4, "original": "4-5 hours on solid-state battery", "sourceId": "s1" },
+    "dof": { "value": 29, "original": "Total DOF: 29 (excluding dexterous hand)", "sourceId": "s2" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Biomimetic dexterous hands with tactile sensing and force control.",
+  "sensors": "360-degree LiDAR.",
+  "compute": null,
+  "price": { "value": 180000, "currency": "CNY", "priceType": "from", "configuration": "Base version; Ecosystem, Pro and Max versions cost more", "sourceId": "s1" },
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Peak joint torque of 450 N·m and 14 kW peak joint power, per EngineAI.",
+    "Full-joint active cooling system.",
+    "Four tiers: Base, Ecosystem (open-source), Pro and Max."
+  ],
+  "caveats": [
+    "Runtime of 4-5 hours is a company claim.",
+    "Little public data on paying industrial deployments."
+  ],
+  "sources": [
+    { "id": "s1", "title": "The Pinnacle of Humanoid Technology - The EngineAI T800 Is Officially Unveiled", "publisher": "PR Newswire via Yahoo Finance", "url": "https://finance.yahoo.com/news/pinnacle-humanoid-technology-engineai-t800-113100318.html", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "EngineAI official site", "publisher": "EngineAI", "url": "https://en.engineai.com.cn/", "accessed": "2026-10-14" }
+  ]
+}

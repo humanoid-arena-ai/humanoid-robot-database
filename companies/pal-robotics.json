@@ -1,0 +1,24 @@
+{
+  "id": "pal-robotics",
+  "name": "PAL Robotics",
+  "country": "Spain",
+  "headquarters": "Barcelona, Spain",
+  "founded": 2004,
+  "website": "https://pal-robotics.com",
+  "summary": "PAL Robotics builds service and research robots, including the TALOS and Kangaroo bipeds and the TIAGo mobile manipulator. Its first humanoid was REEM-A.",
+  "funding": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TALOS",
+      "url": "https://pal-robotics.com/robot/talos/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "PAL Robotics",
+      "url": "https://www.linkedin.com/company/pal-robotics",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

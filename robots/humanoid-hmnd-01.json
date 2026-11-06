@@ -1,0 +1,90 @@
+{
+  "id": "humanoid-hmnd-01",
+  "name": "HMND 01",
+  "aliases": [
+    "HMND 01 Alpha",
+    "HMND 01 Alpha Wheeled"
+  ],
+  "companyId": "humanoid",
+  "companyName": "Humanoid",
+  "country": "United Kingdom",
+  "announced": "2025-09-18",
+  "status": "pilot",
+  "category": "industrial",
+  "summary": "HMND 01 Alpha is a wheeled humanoid from London startup Humanoid, built for warehouse, logistics and factory picking. It is 220 cm tall with 29 DoF, a 15 kg payload and an average 4-hour runtime. It is in early access with partners such as Schaeffler and Siemens, and a bipedal version is in development.",
+  "specs": {
+    "height_cm": {
+      "value": 220,
+      "original": "220 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 300,
+      "original": "300 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 15,
+      "original": "15 kg",
+      "sourceId": "s1"
+    },
+    "runtime_h": {
+      "value": 4,
+      "original": "4 hours average",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 29,
+      "original": "29 DoF (excluding end-effectors)",
+      "sourceId": "s1"
+    },
+    "hand_dof": {
+      "value": 12,
+      "original": "12-DOF 5-finger hand",
+      "sourceId": "s1"
+    },
+    "speed_mps": {
+      "value": 2.0,
+      "original": "2 m/s",
+      "sourceId": "s1"
+    }
+  },
+  "hands": "12-DoF five-finger hand or 1-DoF parallel gripper.",
+  "sensors": "360-degree RGB cameras and two depth sensors in the head, wrist RGB cameras, 6-axis force/torque sensors, haptic sensors.",
+  "compute": "KinetIQ AI stack on NVIDIA compute.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://thehumanoid.ai/hmnd-01-alpha-wheeled/",
+  "highlights": [
+    "Company says hardware was built in seven months.",
+    "Bin-picking trial at a Schaeffler factory; Bosch named as contract manufacturer.",
+    "Humanoid raised a $152 million Series A in July 2026."
+  ],
+  "caveats": [
+    "Wheeled base; the bipedal version is still in development.",
+    "No public price; offered as early access and robots-as-a-service."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "HMND 01 Alpha Wheeled",
+      "publisher": "Humanoid",
+      "url": "https://thehumanoid.ai/hmnd-01-alpha-wheeled/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "U.K.-based startup Humanoid unveils HMND 01 Alpha mobile manipulator",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/u-k-based-startup-humanoid-unveils-hmnd-01-alpha-mobile-manipulator/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "U.K.-based Humanoid secures $152M in Series A funding",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

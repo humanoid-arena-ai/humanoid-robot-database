@@ -1,0 +1,40 @@
+{
+  "id": "limx-oli",
+  "name": "LimX Oli",
+  "aliases": ["Oli"],
+  "companyId": "limx-dynamics",
+  "companyName": "LimX Dynamics",
+  "country": "China",
+  "announced": "2025-07-31",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "Oli is a 165 cm, about 55 kg full-size humanoid with 31 DoF (excluding end effectors). It is sold in Lite, EDU and Super versions to AI researchers, developers and integrators, with open interfaces down to low-level joint control.",
+  "specs": {
+    "height_cm": { "value": 165, "original": "165 cm", "sourceId": "s1" },
+    "weight_kg": { "value": 55, "original": "around 55 kg", "sourceId": "s2" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 31, "original": "31 (excluding end effectors)", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": { "value": 158000, "currency": "CNY", "priceType": "from", "configuration": "Lite version; EDU and Super cost more", "sourceId": "s1" },
+  "purchasePath": "preorder",
+  "purchaseUrl": null,
+  "highlights": [
+    "Pre-orders opened in July 2025 at RMB 158,000.",
+    "SDK exposes robot state, sensor data, low-level joint control and task scheduling."
+  ],
+  "caveats": [
+    "Speed, runtime and payload are not published in launch coverage.",
+    "Prices of EDU and Super versions are not public."
+  ],
+  "sources": [
+    { "id": "s1", "title": "LimX Dynamics launches humanoid robot LimX Oli starting at $21,800", "publisher": "TechNode", "url": "https://technode.com/2025/07/31/limx-dynamics-launches-humanoid-robot-limx-oli-starting-at-21800/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "LimX Dynamics launches $21,800 humanoid robot Oli for AI and robotics research", "publisher": "Robotics and Automation News", "url": "https://roboticsandautomationnews.com/2025/08/01/limx-dynamics-debuts-full%E2%80%91size-humanoid-robot-starting-at-21800/93453/", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Chinese humanoid robot maker LimX secures $200 million in Series B funding", "publisher": "CnEVPost", "url": "https://cnevpost.com/2026/02/02/chinese-humanoid-robot-maker-limx-secures-200-million-in-series-b-funding/", "accessed": "2026-10-14" }
+  ]
+}

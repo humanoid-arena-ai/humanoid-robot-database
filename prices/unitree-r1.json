@@ -1,0 +1,185 @@
+{
+  "robotId": "unitree-r1",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "buy_now",
+  "purchasePathNote": "Order directly from the Unitree online shop (R1 Air, R1 and R1 EDU have checkout prices) or from regional dealers such as RoboStore, RobotShop and Generation Robots, which charge more but sell from local stock with local support.",
+  "configurations": [
+    {
+      "name": "R1 Air",
+      "price": 4900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Entry version. Base versions do not support secondary development. Tax, shipping (USD 300-1,200 per the shop) and import duties are extra. White version shown as backordered.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "R1",
+      "price": 5900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Standard consumer version, no secondary development. Tax, shipping and import duties extra.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "R1 EDU",
+      "price": 10500,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Only the EDU version supports secondary development (SDK). The unitree.com R1 page still says 'Contact Sales' for EDU; the shop lists a checkout price.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "R1 Basic (US dealer)",
+      "price": 8990,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "US dealer price for the non-programmable R1, sold from US stock.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/products/unitree-r1-basic-humanoid-robot",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "R1 EDU (U1) (US dealer)",
+      "price": 15950,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "EDU version with SDK access, US dealer price.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/products/unitree-r1-edu-humanoid-robot",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "R1 EDU Pro (U2-U6) (US dealer)",
+      "price": 18900,
+      "currency": "USD",
+      "priceType": "from",
+      "region": "US",
+      "notes": "USD 18,900 with dummy hands; USD 28,900 with Revo2 Basic hands, USD 30,900 with Dex3 hands, USD 32,900 with Dex3 Tactile or Revo2 Tactile hands.",
+      "sourceLabel": "RoboStore",
+      "sourceUrl": "https://robostore.com/products/unitree-r1-edu-pro-humanoid-robot",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "R1 (EU dealer)",
+      "price": 15000,
+      "currency": "EUR",
+      "priceType": "from",
+      "region": "EU",
+      "notes": "'From EUR 18,000.00 VAT incl. / EUR 15,000.00 VAT excl.' Versions offered: Basic, Edu Standard, Edu Smart, Edu Pro A-H.",
+      "sourceLabel": "Generation Robots",
+      "sourceUrl": "https://www.generationrobots.com/en/404414-unitree-r1-humanoid-robot.html",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "Unitree official shop",
+      "type": "official",
+      "url": "https://shop.unitree.com/products/unitree-r1",
+      "region": "Global",
+      "offers": "R1 Air - $4,900.00; R1 - $5,900.00; R1 EDU - $10,500.00 (USD, white or red). Shipping $300-$1,200, duties extra.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RoboStore",
+      "type": "authorized_reseller",
+      "url": "https://robostore.com/collections/unitree-r1-humanoid-robots",
+      "region": "US",
+      "offers": "Describes itself as 'The Official US Distributor of Unitree'. R1 Basic - $8,990.00; R1 EDU (U1) - $15,950.00; R1 EDU Pro (U2-U6) - From $18,900.00.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotShop",
+      "type": "reseller",
+      "url": "https://www.robotshop.com/products/unitree-r1-humanoid-robot",
+      "region": "US",
+      "offers": "Unitree R1 Humanoid Robot - $8,990; Unitree R1 EDU (U1) - $15,950.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Generation Robots",
+      "type": "reseller",
+      "url": "https://www.generationrobots.com/en/404414-unitree-r1-humanoid-robot.html",
+      "region": "EU",
+      "offers": "Unitree R1 Humanoid Robot - From EUR 18,000.00 VAT incl. / EUR 15,000.00 VAT excl. (Basic, Edu Standard, Edu Smart, Edu Pro A-H).",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "Weston Robot event rental",
+      "url": "https://www.westonrobot.com/services/event/",
+      "region": "Singapore / global",
+      "notes": "Unitree R1 - $2,800 / day, USD. Transport extra outside Singapore (e.g. $5,500 to Europe or North America). Standard lead time 4 weeks."
+    },
+    {
+      "name": "Futurobots",
+      "url": "https://www.futurobots.com/rent-a-humanoid-robot/",
+      "region": "Varies by country",
+      "notes": "Rents the R1 (EDU U4 configuration). No public price; daily price with delivery is quoted per country and dates. 1-3 month rentals offered."
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2025-07-25",
+      "price": 5900,
+      "currency": "USD",
+      "event": "R1 unveiled with a starting price of 39,999 yuan, reported as about US$5,900",
+      "sourceUrl": "https://www.cnx-software.com/2025/07/30/5900-unitree-r1-is-an-ultra-lightweight-customizable-humanoid-robot/"
+    },
+    {
+      "date": "2026-04-16",
+      "price": 4900,
+      "currency": "USD",
+      "event": "Global sales on AliExpress reported, R1 Air from $4,900 and R1 at $5,900",
+      "sourceUrl": "https://robohorizon.com/en-us/news/2026/04/unitree-r1-humanoid-hits-aliexpress-with-a-shocking-4900-price-tag/"
+    },
+    {
+      "date": "2026-10-14",
+      "price": 4900,
+      "currency": "USD",
+      "event": "Official shop: R1 Air $4,900, R1 $5,900, R1 EDU $10,500",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy the Unitree R1?",
+      "a": "Yes. The Unitree online shop sells the R1 Air, R1 and R1 EDU with checkout prices, and US and EU dealers also stock it.",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1"
+    },
+    {
+      "q": "How much does the Unitree R1 cost?",
+      "a": "On the official Unitree shop the R1 Air is $4,900, the R1 is $5,900 and the R1 EDU is $10,500, before tax, shipping ($300-$1,200) and import duties. US dealers list the R1 Basic at $8,990.",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1"
+    },
+    {
+      "q": "Can you program the Unitree R1?",
+      "a": "Only the EDU version supports secondary development. The R1 Air and R1 are not open for custom programming.",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-r1"
+    },
+    {
+      "q": "Why do US dealers charge more than Unitree?",
+      "a": "Dealers such as RoboStore sell from US stock with local service. The Unitree shop price excludes shipping, customs duties and import taxes, which the buyer pays.",
+      "sourceUrl": "https://robostore.com/collections/unitree-r1-humanoid-robots"
+    },
+    {
+      "q": "Can you rent a Unitree R1?",
+      "a": "Yes, for events. Weston Robot lists the R1 at $2,800 per day plus transport, and Futurobots rents it with prices quoted by country.",
+      "sourceUrl": "https://www.westonrobot.com/services/event/"
+    }
+  ],
+  "notes": "Unitree also sells a different product, the R1-D, from $4,290 on its shop; it is not the R1 and is not included here. The R1 EDU price differs between unitree.com ('Contact Sales') and the shop ($10,500). Dealer EDU Pro prices depend on the hand option. Shop page lists the R1 at about 29 kg and 123 cm, while launch coverage said 25 kg and 121 cm.",
+  "researchNotes": "price text from search listing; page blocked direct access RobotShop prices come from search listings because the page blocks automated access."
+}

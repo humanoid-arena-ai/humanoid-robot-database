@@ -1,0 +1,1106 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "humanoid-hmnd-01",
+    "name": "HMND 01",
+    "company_id": "humanoid",
+    "company_name": "Humanoid",
+    "country": "United Kingdom",
+    "generation": "Alpha wheeled version (first industrial humanoid from Humanoid)",
+    "first_announced_date": "2025-09-18",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "HMND 01 Alpha Wheeled is offered through early access. Humanoid says it is deploying at several early access customers and plans Beta wheeled rollout in Q4 2026. No public price or general retail availability was found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "warehouse picking and sorting",
+      "logistics tote handling and kitting",
+      "automotive manufacturing parts handling",
+      "machine feeding",
+      "loading and unloading inventory",
+      "packaging and fulfilment"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "220 cm",
+      "value": 220,
+      "unit": "cm",
+      "notes": "Official product page lists 220 cm. The Robot Report confirms 220 cm (86.6 in.) and says reach spans from floor to 2 m.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "300 kg",
+      "value": 300,
+      "unit": "kg",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "15 kg",
+      "value": 15,
+      "unit": "kg",
+      "notes": "Bimanual payload. The Robot Report adds that it can lift more when objects are closer to its body.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "4 hr",
+      "value": 4,
+      "unit": "hours",
+      "notes": "Product page lists average 4-hour runtime. Ford POC reported one hour of uninterrupted operation, twice the target.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_004"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity was not published in reviewed sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 29,
+      "notes": "29 active degrees of freedom, excluding end-effectors.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "2 m/s",
+      "value": 2,
+      "unit": "m/s",
+      "notes": "Wheeled base maximum speed, not a walking speed. Product page also lists 7.2 km/h.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Modular end-effectors: 12-DoF five-finger hand or 1-DoF parallel gripper.",
+      "degrees_of_freedom": 12,
+      "force_feedback": "haptic feedback sensors",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "360-degree RGB cameras",
+        "two depth sensors in head",
+        "wrist RGB cameras",
+        "6D force/torque sensors",
+        "haptic feedback sensors",
+        "end effector force/torque sensors"
+      ],
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002"
+      ]
+    },
+    "compute": {
+      "description": "KinetIQ, a proprietary four-layer AI stack built on NVIDIA compute.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "Actuator specifications were not published. Bosch will act as contract manufacturing partner and provide components including actuators, drives, and sensors in future HMND robots.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "early_access",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://thehumanoid.ai/hmnd-01-alpha-wheeled/",
+      "notes": "Offered through early access and a robotics-as-a-service model. No public price found.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "HMND 01 Alpha has 29 active DoF excluding end-effectors and modular 12-DoF five-finger or 1-DoF gripper. Ford POC demonstrated dual-arm handling of large thin sheet-metal body parts and tote handling with 8 kg payload; at CES it picked unsorted metallic bearing rings from cluttered bins. Company reports 97% reliability in autonomous pick-and-place during Ford POC.",
+      "evidence_level": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002",
+        "humanoid-hmnd-01_source_004",
+        "humanoid-hmnd-01_source_006"
+      ],
+      "caveats": [
+        "All quantitative performance is company-reported via media; no independent audit found.",
+        "Dexterity demos are limited to structured industrial tasks."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Ford POC reported fully autonomous pick-and-place with 97% reliability and 83 picks/hour vs 50 target, with only one hour of on-robot data collection. Schaeffler CES demo was described by Schaeffler as 'press one button, everything is automated' and 'entirely autonomous and completely trained.' A PR.ai directory entry describes a Siemens POC with autonomous tote-to-conveyor destacking.",
+      "evidence_level": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_004",
+        "humanoid-hmnd-01_source_006",
+        "humanoid-hmnd-01_source_005"
+      ],
+      "caveats": [
+        "Autonomy claims are company or partner statements; no intervention logs or independent verification.",
+        "CES demo was live but brief and likely controlled."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Wheeled omnidirectional base with max speed 2 m/s (7.2 km/h). Ford POC says the robot successfully navigated to a shelf, localized a part, lifted it and placed it on a kitting table.",
+      "evidence_level": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_004"
+      ],
+      "caveats": [
+        "Wheeled-only platform; no legged locomotion.",
+        "Navigation claims are from a company-reported POC with no independent metrics."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Head has 360-degree RGB cameras and two depth sensors, plus wrist RGB cameras, 6D F/T sensors and haptic feedback. Used for bin picking unsorted metallic bearing rings and part localization in a Ford POC.",
+      "evidence_level": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002",
+        "humanoid-hmnd-01_source_004",
+        "humanoid-hmnd-01_source_006"
+      ],
+      "caveats": [
+        "No independent perception benchmark.",
+        "Sensor list is company specification, not independently measured."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No evidence found of conversational, gesture, or direct human-robot interaction capabilities beyond starting an autonomous workflow with a button press.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No interaction demos or voice/interface descriptions in reviewed sources."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Product page lists average 4-hour runtime. Ford POC reported one hour uninterrupted operation (twice target) and 97% reliability in autonomous pick-and-place. PR.ai directory lists a 7-hour continuous bin picking time-lapse at Schaeffler and a third-party article about an eight-hour factory shift at Siemens Erlangen.",
+      "evidence_level": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_004",
+        "humanoid-hmnd-01_source_005"
+      ],
+      "caveats": [
+        "Endurance figures are company/directory-reported; no independent logs or mean time between failures.",
+        "The 7-hour and 8-hour figures are secondary from a directory and not cross-checked against primary sources in this pack."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Tall 220 cm, 300 kg wheeled humanoid with interchangeable protective garments. Schaeffler executive says a wheel-based system is more stable and easier to integrate from a safety perspective for even factory floors.",
+      "evidence_level": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_006"
+      ],
+      "caveats": [
+        "No safety certification or incident data found.",
+        "Large size and weight may limit safe human-proximity use."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Early access customers include Schaeffler and Siemens; product page case study links cite a Schaeffler deal to deploy thousands of robots and Siemens/SAP-Martur Fompak POCs. Ford Cologne POC completed. Bosch is contract manufacturing partner. Humanoid says it is deploying at several early access customers.",
+      "evidence_level": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_003",
+        "humanoid-hmnd-01_source_004",
+        "humanoid-hmnd-01_source_006"
+      ],
+      "caveats": [
+        "Most deployments are POCs or early access, not full commercial operations.",
+        "The Schaeffler thousands-of-robots deal is referenced only as a case study link without detailed terms or unit counts in the reviewed text."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price; offered through early access and robotics-as-a-service with contact sales. Humanoid raised $152M Series A and had $50M founder-led capital.",
+      "evidence_level": 0,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_002",
+        "humanoid-hmnd-01_source_003"
+      ],
+      "caveats": [
+        "Not purchasable by the public as of the review date.",
+        "Pricing is undisclosed."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "humanoid-hmnd-01_evidence_001",
+      "date": null,
+      "title": "HMND 01 Alpha Wheeled product page claim",
+      "claim": "HMND 01 Alpha Wheeled was built in 7 months and is positioned as an industrial humanoid with early access availability.",
+      "category": [
+        "specs",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "humanoid-hmnd-01_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official product page; company claims.",
+      "arena_relevance": "Provides product existence and development timeline.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Built in just 7 months, HMND 01 Alpha Wheeled is the fastest-developed humanoid, delivering efficient performance across a wide range of industrial use cases.",
+      "source_location": "Humanoid HMND 01 Alpha Wheeled product page, introducing section",
+      "verification_notes": "Company product page; no independent verification of 'fastest-developed' claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_002",
+      "date": "2025-09-18",
+      "title": "HMND 01 Alpha height and speed",
+      "claim": "HMND 01 Alpha is 220 cm tall and can reach speeds up to 7.2 km/h.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_002"
+      ],
+      "confidence": 0.85,
+      "notes": "Reported by The Robot Report based on company launch.",
+      "arena_relevance": "Defines size and mobility baseline.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot stands at 220 cm (86.6 in.) tall and can reach speeds up to 7.2 kph (around 4.4 mph).",
+      "source_location": "The Robot Report, article on HMND 01 Alpha launch, Inside the HMND 01 Alpha section",
+      "verification_notes": "Trade press reporting company specs; speed is wheeled base, not walking.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_003",
+      "date": "2025-09-18",
+      "title": "HMND 01 Alpha payload and reach",
+      "claim": "HMND 01 Alpha carries up to 15 kg bimanual payload, with the ability to lift more when objects are closer to its body.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Company specs relayed by trade press.",
+      "arena_relevance": "Payload rating for industrial tasks.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "When using both arms, it can carry payloads of up to 15 kg (33.1 lb.), with the ability to lift even more when objects are closer to its body.",
+      "source_location": "The Robot Report, article on HMND 01 Alpha launch, Inside the HMND 01 Alpha section",
+      "verification_notes": "No independent load test verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_004",
+      "date": "2025-09-18",
+      "title": "HMND 01 Alpha degrees of freedom and end-effectors",
+      "claim": "HMND 01 Alpha has 29 active degrees of freedom excluding end-effectors, with either a 12-DoF five-fingered hand or 1-DoF parallel gripper.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Company specs relayed by trade press.",
+      "arena_relevance": "Indicates dexterity range.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Its end-effectors can be fitted with either a 12-DoF five-fingered hand or a 1-DoF parallel gripper, allowing the robot to adapt to tasks requiring either dexterity or simple/heavy handling.",
+      "source_location": "The Robot Report, article on HMND 01 Alpha launch, Inside the HMND 01 Alpha section",
+      "verification_notes": "DoF and gripper options are company-specified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_005",
+      "date": "2025-09-18",
+      "title": "HMND 01 Alpha head sensors",
+      "claim": "HMND 01 Alpha head is equipped with 360-degree RGB cameras and two depth sensors.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_002"
+      ],
+      "confidence": 0.8,
+      "notes": "Company sensor spec.",
+      "arena_relevance": "Perception foundation for industrial tasks.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The head is equipped with 360-degree RGB cameras and two depth sensors for comprehensive perception.",
+      "source_location": "The Robot Report, article on HMND 01 Alpha launch, Inside the HMND 01 Alpha section",
+      "verification_notes": "No independent sensor test.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_006",
+      "date": "2025-09-18",
+      "title": "HMND 01 Alpha RaaS model",
+      "claim": "Humanoid offers HMND 01 through a robotics-as-a-service model and is backed by $50 million in founder-led capital.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Trade press reporting business model.",
+      "arena_relevance": "Access method but no price.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Humanoid is backed by $50 million in founder-led capital and and offers its systems through a robotics-as-a-service ( RaaS ) model.",
+      "source_location": "The Robot Report, article on HMND 01 Alpha launch, last paragraph before mobile manipulation section",
+      "verification_notes": "No price or contract terms disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_007",
+      "date": "2026-07-21",
+      "title": "Humanoid $152M Series A",
+      "claim": "Humanoid announced a $152 million Series A at a $1.35 billion post-money valuation, bringing total funding to $270 million.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_003"
+      ],
+      "confidence": 0.85,
+      "notes": "Reported by The Robot Report.",
+      "arena_relevance": "Corporate momentum and commercial backing.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Humanoid, an AI and robotics company building industrial humanoids, today announced a $152 million Series A financing at a $1.35 billion post-money valuation.",
+      "source_location": "The Robot Report, article on Humanoid Series A funding, opening sentence",
+      "verification_notes": "Funding figures are company-announced.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_008",
+      "date": "2026-07-21",
+      "title": "HMND 01 Alpha Wheeled early access",
+      "claim": "Humanoid is offering early access to the HMND 01 Alpha Wheeled version.",
+      "category": [
+        "accessibility_value",
+        "status"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_003"
+      ],
+      "confidence": 0.85,
+      "notes": "Reported by The Robot Report.",
+      "arena_relevance": "Market status is early access, not general sale.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "London-based Humanoid is offering early access to the HMND 01 Alpha Wheeled version, a bimanual mobile manipulator.",
+      "source_location": "The Robot Report, article on Humanoid Series A funding, second paragraph",
+      "verification_notes": "No pricing or volume disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_009",
+      "date": "2026-07-21",
+      "title": "Bosch contract manufacturing partnership",
+      "claim": "Bosch will act as Humanoid's contract manufacturing partner and provide strategic consulting and technical expertise in hardware design, production, and supply chain.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_003"
+      ],
+      "confidence": 0.8,
+      "notes": "Quote from Robert Bosch GmbH CTO Mathias Pillin.",
+      "arena_relevance": "Manufacturing capability signal.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Bosch will act as Humanoid’s contract manufacturing partner, while also providing strategic consulting and technical expertise in hardware design, production, and supply chain.",
+      "source_location": "The Robot Report, article on Humanoid Series A funding, quote from Mathias Pillin",
+      "verification_notes": "Partner statement reported by trade press.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_010",
+      "date": "2026-01-20",
+      "title": "Ford POC autonomous pick-and-place reliability",
+      "claim": "During a Ford Innovation Centre POC, HMND 01 Alpha sustained one hour of uninterrupted operation and achieved 97% reliability in fully autonomous pick-and-place tasks.",
+      "category": [
+        "autonomy_task_execution",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-provided POC results published by Robotics Tomorrow.",
+      "arena_relevance": "Strong quantified autonomous task evidence, but not independently audited.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The robot sustained a full hour of uninterrupted operation, twice the target, and achieved near-perfect 97% reliability in fully autonomous pick-and-place tasks given the particular conditions of the Proof of Concept.",
+      "source_location": "Robotics Tomorrow article on Humanoid Ford POC, first workflow paragraph",
+      "verification_notes": "No independent verification of reliability or autonomy.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_011",
+      "date": "2026-01-20",
+      "title": "Ford POC pick rate improvement",
+      "claim": "HMND 01 Alpha exceeded the pick-per-hour target by 60%, achieving 83 units instead of 50.",
+      "category": [
+        "manipulation_dexterity",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Company-reported productivity metric.",
+      "arena_relevance": "Quantified throughput on a kitting task.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The pick-per-hour target was exceeded by 60%, with 83 units instead of the expected 50.",
+      "source_location": "Robotics Tomorrow article on Humanoid Ford POC, first workflow paragraph",
+      "verification_notes": "Target and actual units are company-reported; conditions of POC not fully specified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_012",
+      "date": "2026-01-20",
+      "title": "Ford POC dual-arm sheet metal handling",
+      "claim": "HMND 01 Alpha demonstrated precise dual-arm handling of a thin sheet-metal body component in a second workflow.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "humanoid-hmnd-01_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Company-reported POC result.",
+      "arena_relevance": "Evidence of delicate dual-arm manipulation.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "In the second workflow, Alpha demonstrated precise dual-arm handling of a thin, sheet-metal body component.",
+      "source_location": "Robotics Tomorrow article on Humanoid Ford POC, second workflow paragraph",
+      "verification_notes": "No video or independent observation in the reviewed source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_013",
+      "date": null,
+      "title": "Seven-hour Schaeffler bin picking time-lapse description",
+      "claim": "A real-time time-lapse video shows HMND 01 Alpha Wheeled performing continuous bin picking of metallic bearing rings for 7 hours during a Schaeffler POC.",
+      "category": [
+        "endurance_reliability",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_005"
+      ],
+      "confidence": 0.5,
+      "notes": "PR.ai directory post quoting a video description; not a primary source.",
+      "arena_relevance": "Suggests multi-hour continuous operation, but weaker than primary evidence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "This real-time 7-hour video x100 shows HMND 01 alpha wheeled robot performing continuous bin picking of metallic bearing rings.",
+      "source_location": "PR.ai forum thread, HMND 01 Alpha Wheeled video description",
+      "verification_notes": "Directory posting; original video not reviewed and no transcript available.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_014",
+      "date": null,
+      "title": "CES 2026 Schaeffler bin picking demo",
+      "claim": "HMND 01 Alpha performed a real-world factory task at CES, autonomously picking metallic bearing rings from cluttered bins.",
+      "category": [
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Live demonstration reported by Interesting Engineering.",
+      "arena_relevance": "Observable bin-picking capability in a production-like setting.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "HMND 01 Alpha is performing a real-world factory task: autonomously picking metallic bearing rings from cluttered bins.",
+      "source_location": "Interesting Engineering article on CES 2026, Autonomous bin picking section",
+      "verification_notes": "Media-reported live demo; no teleoperation audit, but Schaeffler executive claimed full autonomy.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_015",
+      "date": null,
+      "title": "Schaeffler autonomy statement at CES",
+      "claim": "Schaeffler executive Andreas Zeug said the system is entirely autonomous and completely trained, with press one button to automate everything.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Partner executive quote reported by media.",
+      "arena_relevance": "Supports autonomy claim but is not independent verification.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The system is entirely autonomous and completely trained.",
+      "source_location": "Interesting Engineering article on CES 2026, Andreas Zeug interview",
+      "verification_notes": "Customer/partner claim, not independently audited.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_016",
+      "date": null,
+      "title": "Schaeffler on wheeled safety advantage",
+      "claim": "Schaeffler says a wheel-based system is more stable and easier to integrate from a safety perspective for industrial even floors.",
+      "category": [
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "humanoid-hmnd-01_source_006"
+      ],
+      "confidence": 0.75,
+      "notes": "Expert/partner opinion reported by media.",
+      "arena_relevance": "Safety rationale for wheeled humanoid design.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "A wheel-based system is more stable and easier to integrate from a safety perspective.",
+      "source_location": "Interesting Engineering article on CES 2026, Why wheels, not legs section",
+      "verification_notes": "Opinion, not a formal safety certification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_017",
+      "date": null,
+      "title": "BaiduWiki spec corroboration",
+      "claim": "BaiduWiki independently lists HMND 01 Alpha Wheeled as 2.2 m tall, 300 kg, 15 kg payload and 29 DoF.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "humanoid-hmnd-01_source_007"
+      ],
+      "confidence": 0.55,
+      "notes": "Encyclopedia-style directory, not a primary source.",
+      "arena_relevance": "Corroborates core specs from multiple secondary sources.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "This model stands approximately 2.2 meters tall, weighs about 300 kilograms, can carry a payload of 15 kilograms, and has 29 degrees of freedom throughout its body.",
+      "source_location": "BaiduWiki HMND 01 Alpha Wheeled entry, Product Parameters section",
+      "verification_notes": "Directory may contain errors; specs align with primary sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "humanoid-hmnd-01_evidence_018",
+      "date": null,
+      "title": "Missing disclosures for HMND 01",
+      "claim": "No public price, battery capacity, detailed actuator specs, independent autonomy logs, or full commercial deployment metrics were found.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "humanoid-hmnd-01_deployment_001",
+      "customer_or_partner": "Ford",
+      "site_or_context": "Ford Innovation Centre, Cologne, Germany",
+      "task": "Tote handling for kitting and dual-arm manipulation of large metal car body parts",
+      "start_date": "2026",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [
+        "83 picks/hour",
+        "97% reliability",
+        "1 hour uninterrupted operation"
+      ],
+      "source_ids": [
+        "humanoid-hmnd-01_source_004"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "POC results are company-reported via Robotics Tomorrow.",
+        "No units deployed or ongoing production hours published."
+      ]
+    },
+    {
+      "id": "humanoid-hmnd-01_deployment_002",
+      "customer_or_partner": "Schaeffler",
+      "site_or_context": "CES 2026 Schaeffler booth and early access partnership",
+      "task": "Autonomous bin picking of metallic bearing rings",
+      "start_date": "2026",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "humanoid-hmnd-01_source_001",
+        "humanoid-hmnd-01_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Product page links to a Schaeffler deal for thousands of robots, but no detailed terms are in the reviewed text.",
+        "CES demo was a short live demonstration, not a full deployment."
+      ]
+    },
+    {
+      "id": "humanoid-hmnd-01_deployment_003",
+      "customer_or_partner": "Siemens",
+      "site_or_context": "Siemens Electronics Factory, Erlangen, Germany",
+      "task": "Tote-to-conveyor destacking in industrial logistics",
+      "start_date": "2026",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "humanoid-hmnd-01_source_005"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Based on PR.ai directory post quoting a company description, not a primary Siemens communication reviewed here.",
+        "No quantitative results from the Siemens POC were available in the reviewed source."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "humanoid-hmnd-01_demo_001",
+      "title": "Schaeffler CES 2026 bin picking demo",
+      "date": "2026-01-06",
+      "observed_capabilities": [
+        "autonomous bin picking of metallic bearing rings from cluttered bins",
+        "placing rings onto a buffer table"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Schaeffler executive: 'The system is entirely autonomous and completely trained.'",
+      "environment": "Schaeffler Group booth at CES 2026",
+      "source_ids": [
+        "humanoid-hmnd-01_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Media-reported live demo, not independently verified.",
+        "Short demonstration, not continuous production."
+      ],
+      "editing_notes": "No video transcript reviewed; based on written article.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Autonomy claim from partner executive, no external audit.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Bin picking of unsorted bearing rings",
+          "verification_notes": "Timestamp not verified; manual review required."
+        }
+      ]
+    },
+    {
+      "id": "humanoid-hmnd-01_demo_002",
+      "title": "Ford Innovation Centre POC on-site demonstration",
+      "date": "2026-01-20",
+      "observed_capabilities": [
+        "tote handling for kitting with 8 kg payloads",
+        "dual-arm manipulation of large metal car body parts",
+        "autonomous pick-and-place with 97% reliability",
+        "navigation to shelf and part localization"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Company release says fully autonomous pick-and-place tasks.",
+      "environment": "Ford Innovation Centre, Cologne, Germany",
+      "source_ids": [
+        "humanoid-hmnd-01_source_004"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Company-reported POC results via industry media.",
+        "On-site phase lasted a limited period, not continuous production."
+      ],
+      "editing_notes": "No video transcript reviewed; based on written article.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Quantitative autonomy claims are company-reported; no independent intervention logs.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Tote handling and sheet-metal part handling",
+          "verification_notes": "Timestamp not verified; manual review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No public price, purchase path beyond contact sales, or general retail availability was found.",
+      "impact_on_arena_scoring": "Accessibility/value remains at minimal evidence."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Ford POC and CES autonomy claims are company or partner statements without intervention logs or independent audits.",
+      "impact_on_arena_scoring": "Credit observable work; keep autonomy confidence moderate."
+    },
+    {
+      "topic": "Bipedal version",
+      "description": "Humanoid also announced HMND 01 Alpha Bipedal, but this pack focuses on the wheeled Alpha. Biped specs from PR.ai were excluded as a separate product.",
+      "impact_on_arena_scoring": "Do not credit biped capabilities to the wheeled robot."
+    },
+    {
+      "topic": "Battery/actuator details",
+      "description": "Battery capacity and detailed actuator specifications were not published in reviewed sources.",
+      "impact_on_arena_scoring": "Do not infer endurance or actuator performance beyond official runtime and Bosch partnership."
+    },
+    {
+      "topic": "Deployment maturity",
+      "description": "Most evidence comes from POCs and early access demonstrations, not full commercial production deployments.",
+      "impact_on_arena_scoring": "Commercial proof should be considered early-stage."
+    }
+  ],
+  "source_ids": [
+    "humanoid-hmnd-01_source_001",
+    "humanoid-hmnd-01_source_002",
+    "humanoid-hmnd-01_source_003",
+    "humanoid-hmnd-01_source_004",
+    "humanoid-hmnd-01_source_005",
+    "humanoid-hmnd-01_source_006",
+    "humanoid-hmnd-01_source_007"
+  ],
+  "sources": [
+    {
+      "id": "humanoid-hmnd-01_source_001",
+      "title": "HMND 01 ALPHA WHEELED - Humanoid",
+      "publisher": "Humanoid",
+      "url": "https://thehumanoid.ai/hmnd-01-alpha-wheeled/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company spec and claims."
+    },
+    {
+      "id": "humanoid-hmnd-01_source_002",
+      "title": "U.K.-based startup Humanoid unveils HMND 01 Alpha mobile manipulator - The Robot Report",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/u-k-based-startup-humanoid-unveils-hmnd-01-alpha-mobile-manipulator/",
+      "date_published": "2025-09-18",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "high",
+      "reliability_notes": "Established robotics trade publication; summary of company launch."
+    },
+    {
+      "id": "humanoid-hmnd-01_source_003",
+      "title": "U.K.-based Humanoid secures $152M in Series A funding - The Robot Report",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+      "date_published": "2026-07-21",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "high",
+      "reliability_notes": "Established robotics trade publication; partner quotes and funding summary."
+    },
+    {
+      "id": "humanoid-hmnd-01_source_004",
+      "title": "Humanoid Shows How Robots Will Work in Tomorrow’s Factories   | RoboticsTomorrow",
+      "publisher": "Robotics Tomorrow",
+      "url": "https://www.roboticstomorrow.com/news/2026/01/20/humanoid-shows-how-robots-will-work-in-tomorrows-factories-/26027/",
+      "date_published": "2026-01-20",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Industry news portal carrying company-provided POC results."
+    },
+    {
+      "id": "humanoid-hmnd-01_source_005",
+      "title": "HMND 01, humanoid robot, SKL Robotics LTD, London, United Kingdom",
+      "publisher": "Portal of Robotics and Artificial Intelligence",
+      "url": "https://pr.ai/threads/hmnd-01-humanoid-robot-skl-robotics-ltd-london-united-kingdom.26160/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Forum directory indexing articles and videos; not a primary source."
+    },
+    {
+      "id": "humanoid-hmnd-01_source_006",
+      "title": "World’s fastest-developed humanoid robot highlights UK tech at CES",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/hmnd-01-alpha-wheeled-robot-debut",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Popular technology media; includes partner quotes from CES."
+    },
+    {
+      "id": "humanoid-hmnd-01_source_007",
+      "title": "HMND 01 ALPHA WHEELED",
+      "publisher": "BaiduWiki",
+      "url": "https://baike.baidu.com/en/item/HMND%2001%20ALPHA%20WHEELED/5031104",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Encyclopedia-style directory; may contain errors or unsourced dates."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "HMND 01 Alpha Wheeled is a tall, heavy wheeled humanoid with early industrial POC evidence, including a company-reported Ford POC with 97% autonomous pick-and-place reliability and 83 picks/hour, plus Schaeffler and Siemens early deployments. It is not bipedal and has no public price.",
+    "strongest_positive_evidence": [
+      "Ford POC company-reported results: 83 picks/hour, 97% reliability, 1 hour uninterrupted operation.",
+      "Schaeffler CES live bin picking with partner claim of full autonomy.",
+      "Bosch contract manufacturing partnership and $152M Series A funding.",
+      "Multiple early access industrial partners (Schaeffler, Siemens, Ford)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent autonomy benchmark or intervention log.",
+      "No public price or purchase path beyond contact sales.",
+      "No battery capacity or detailed actuator specs.",
+      "No full commercial deployment output metrics beyond POCs."
+    ],
+    "conflicting_claims": [
+      "BaiduWiki lists release date as July 2026, while the official launch occurred in September 2025. The official launch date is used.",
+      "PR.ai directory includes bipedal version specs (179 cm, 3 h runtime, 48 h walking training) that conflict with the wheeled version specs and were excluded."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit bipedal HMND 01 Alpha Bipedal capabilities to the wheeled robot.",
+      "Do not describe HMND 01 as purchasable or in full commercial deployment.",
+      "Do not treat Ford POC 97% reliability as independently verified.",
+      "Do not infer battery capacity or actuator performance from lack of disclosure."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "HMND 01 Alpha Wheeled is the current wheeled version as of 2026-10-29. Humanoid announced plans for a Beta wheeled robot in Q4 2026 and a next-generation humanoid platform."
+  },
+  "excluded_claims": [
+    {
+      "claim": "HMND 01 Alpha Bipedal specs (179 cm, 29 DoF excluding end-effectors, 15 kg bimanual payload, 3 h runtime, walking after 48 hours)",
+      "reason": "These belong to the bipedal variant, not the wheeled Alpha covered in this pack.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_005"
+      ]
+    },
+    {
+      "claim": "Release date July 2026",
+      "reason": "BaiduWiki lists July 2026, but official launch was September 2025. The official launch date is used.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_007"
+      ]
+    },
+    {
+      "claim": "Schaeffler deal to deploy thousands of humanoid robots",
+      "reason": "Referenced only as a case study link on the product page; no detailed terms, units, or timeline were available in the reviewed sources.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_001"
+      ]
+    },
+    {
+      "claim": "Eight-hour Siemens factory shift",
+      "reason": "Mentioned in a PR.ai directory post quoting a third-party article headline; not independently verified in this pack.",
+      "source_ids": [
+        "humanoid-hmnd-01_source_005"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "HMND 01 Alpha Wheeled is Humanoid's tall 220 cm, 300 kg wheeled humanoid with 29 active DoF, 15 kg bimanual payload, 4 h average runtime and 2 m/s wheeled speed. It uses a 12-DoF hand or 1-DoF gripper and 360-degree RGB plus depth sensors. Evidence includes a Ford POC with company-reported 97% autonomous pick-and-place reliability and 83 picks/hour, a Schaeffler CES bin picking demo described as fully autonomous, and early access partnerships with Schaeffler, Siemens and SAP/Martur Fompak. Bosch is the contract manufacturing partner. No public price exists, and most deployments are POCs or early access rather than full commercial operations.",
+    "strongest_evidence": [
+      "Ford POC company-reported 97% reliability and 83 picks/hour (humanoid-hmnd-01_evidence_010 and _011).",
+      "Schaeffler CES live bin picking with partner autonomy statement (humanoid-hmnd-01_evidence_014 and _015).",
+      "Bosch manufacturing partnership and $152M Series A (humanoid-hmnd-01_evidence_009 and _007)."
+    ],
+    "weakest_evidence": [
+      "No independent autonomy verification or intervention logs.",
+      "No public price or purchase path beyond contact sales.",
+      "No full commercial deployment metrics; most evidence is POC-based."
+    ],
+    "known_do_not_credit": [
+      "Bipedal HMND 01 Alpha Bipedal capabilities.",
+      "Independently verified autonomy.",
+      "Full commercial deployment scale.",
+      "Public availability or price."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "x-humanoid",
+  "name": "Beijing Humanoid Robot Innovation Center (X-Humanoid)",
+  "country": "China",
+  "headquarters": "Beijing, China",
+  "founded": 2023,
+  "website": null,
+  "summary": "The Beijing Humanoid Robot Innovation Center was set up in November 2023 as China's first provincial-level humanoid robot innovation center. It is a joint venture of Beijing Yizhuang Investment Holdings, UBTECH, Xiaomi and Beijing Jingcheng Machinery Electric, and develops the Tiangong humanoids.",
+  "funding": null,
+  "sources": [
+    { "id": "s1", "title": "China's home-grown general-purpose humanoid jogs out at 6 km/h", "url": "https://newatlas.com/robotics/china-tiangong-general-purpose-humanoid/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Beijing's Tiangong Upgraded as Humanoid Robot Prepares for Race Day", "url": "https://mikekalil.com/blog/tiangong-humanoid-updates/", "accessed": "2026-10-14" }
+  ]
+}

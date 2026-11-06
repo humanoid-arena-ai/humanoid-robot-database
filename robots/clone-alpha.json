@@ -1,0 +1,68 @@
+{
+  "id": "clone-alpha",
+  "name": "Clone Alpha",
+  "aliases": [
+    "Protoclone",
+    "Protoclone V1",
+    "Clone"
+  ],
+  "companyId": "clone-robotics",
+  "companyName": "Clone Robotics",
+  "country": "Poland / United States",
+  "announced": "2025-02-20",
+  "status": "prototype",
+  "category": "home",
+  "summary": "Clone Alpha is a musculoskeletal android from Clone Robotics that moves with water-powered Myofiber artificial muscles instead of electric motors. The Protoclone V1 prototype was shown hanging in a workshop video in February 2025. Clone takes reservations for 279 Alpha Edition units but has published no price or delivery date.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": {
+      "value": 200,
+      "original": "200+ degrees of freedom (Protoclone)",
+      "sourceId": "s2"
+    },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Clone Hand with Myofiber muscles; Clone claims human-level finger strength.",
+  "sensors": "Protoclone reported with over 200 sensors.",
+  "compute": "GPU edge computing (no model named on the official page).",
+  "price": null,
+  "purchasePath": "waitlist",
+  "purchaseUrl": "http://www.clonerobotics.com/android/",
+  "highlights": [
+    "Myofiber muscle: under 50 ms response, 30%+ contraction, 1 kg+ force per 3 g fiber (company figures).",
+    "Protoclone reported with 1,000+ Myofibers.",
+    "Company reports $17 million raised and a roadmap toward commercial products in 2028."
+  ],
+  "caveats": [
+    "Shown only suspended from a frame; no public walking demo.",
+    "No price, height or weight published.",
+    "Specs come from press coverage of a prototype video."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Clone Android",
+      "publisher": "Clone Robotics",
+      "url": "http://www.clonerobotics.com/android/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Clone Robotics Unveils Protoclone",
+      "publisher": "TechEBlog",
+      "url": "https://www.techeblog.com/clone-robotics-protoclone-bipedal-android/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "The Synthetic Human Roadmap: Clone Robotics Eyes Silicon Valley and $20,000 Price Points",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/news/the-synthetic-human-roadmap-clone-robotics-eyes-silicon-valley-and-20-000-price-points",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

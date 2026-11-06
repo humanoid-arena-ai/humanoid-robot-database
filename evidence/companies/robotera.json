@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "robotera",
+    "name": "RobotEra",
+    "country": "China",
+    "website": "https://www.robotera.com/",
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "robotera-l7",
+    "robotera-star1"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Series A of nearly RMB 500 million (about $70 million) in July 2025, co-led by CDH VGC and Haier Capital (KrASIA)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "robotera_source_001",
+      "title": "More than a hardware play: Robot Era's founder sets the record straight",
+      "publisher": "kr-asia.com",
+      "url": "https://kr-asia.com/more-than-a-hardware-play-robot-eras-founder-sets-the-record-straight-on-the-companys-true-ambitions",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

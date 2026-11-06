@@ -1,0 +1,39 @@
+{
+  "id": "kepler-k2",
+  "name": "Kepler K2 Bumblebee",
+  "aliases": ["K2", "Bumblebee", "Forerunner K2"],
+  "companyId": "kepler-robotics",
+  "companyName": "Kepler Robotics",
+  "country": "China",
+  "announced": "2025-06-05",
+  "status": "purchasable",
+  "category": "industrial",
+  "summary": "K2 Bumblebee is a 175 cm, 75 kg industrial humanoid with 52 DoF and 11-DoF hands. Kepler showed it at ICRA 2025 with a $30,000 base price and claims up to 8 hours of runtime. It targets factory material handling.",
+  "specs": {
+    "height_cm": { "value": 175, "original": "175 cm (68.9 inches)", "sourceId": "s1" },
+    "weight_kg": { "value": 75, "original": "75 kg (165.3 lbs)", "sourceId": "s1" },
+    "payload_kg": { "value": 30, "original": "15 kg per arm; 30 kg with both arms", "sourceId": "s1" },
+    "runtime_h": { "value": 8, "original": "Up to 8 hours on single one-hour charge", "sourceId": "s1" },
+    "dof": { "value": 52, "original": "52 total", "sourceId": "s1" },
+    "hand_dof": { "value": 11, "original": "11 per hand", "sourceId": "s1" },
+    "speed_mps": null
+  },
+  "hands": "11-DoF dexterous hands with 25 force-sensing points per finger and a 6-axis wrist force/torque sensor.",
+  "sensors": "80+ integrated sensors.",
+  "compute": "100 TOPS.",
+  "price": { "value": 30000, "currency": "USD", "priceType": "list", "configuration": "Base model", "sourceId": "s1" },
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Kepler says over 80% of core hardware is made in-house.",
+    "Kepler reported confirmed orders above $6.9 million, per BigGo Finance (May 2026)."
+  ],
+  "caveats": [
+    "In May 2026 Hangzhou Kelin bought a 51% stake in Kepler at a lower valuation; 2025 revenue was about $638K.",
+    "Runtime and payload are company claims."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Kepler Robotics showcases K2 Bumblebee humanoid at ICRA 2025", "publisher": "The Robot Report", "url": "https://www.therobotreport.com/kepler-robotics-showcases-k2-bumblebee-icra-2025/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Kepler Robot Sells to Hangzhou Kelin at approximately $106 Million Valuation", "publisher": "BigGo Finance", "url": "https://finance.biggo.com/news/b7nCTZ4BX0tZvRTvipmH", "accessed": "2026-10-14" }
+  ]
+}

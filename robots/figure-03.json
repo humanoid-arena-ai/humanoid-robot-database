@@ -1,0 +1,84 @@
+{
+  "id": "figure-03",
+  "name": "Figure 03",
+  "aliases": [
+    "Figure 3",
+    "F.03"
+  ],
+  "companyId": "figure-ai",
+  "companyName": "Figure AI",
+  "country": "United States",
+  "announced": "2025-10-09",
+  "status": "pilot",
+  "category": "general",
+  "summary": "Figure 03 is Figure AI's third-generation humanoid, designed around the company's Helix vision-language-action model for both home and commercial work. Figure lists it at 5 ft 8 in, 61 kg, 20 kg payload and 5 hours of runtime. BMW has announced a Figure 03 parts-sequencing deployment, while home use has not been offered to the public.",
+  "specs": {
+    "height_cm": {
+      "value": 173,
+      "original": "5'8\"",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 61,
+      "original": "61KG",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 20,
+      "original": "20KG",
+      "sourceId": "s1"
+    },
+    "runtime_h": {
+      "value": 5,
+      "original": "5HR",
+      "sourceId": "s1"
+    },
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1.2,
+      "original": "1.2M/S",
+      "sourceId": "s1"
+    }
+  },
+  "hands": "Redesigned hands with palm cameras, softer fingertips and first-generation tactile sensors that Figure says detect about 3 g of pressure.",
+  "sensors": "Next-generation camera system (Figure claims 2x frame rate, 1/4 latency and 60% wider field of view per camera vs Figure 02), palm cameras, fingertip tactile sensors.",
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Wireless inductive charging at 2 kW through coils in the feet.",
+    "Figure says Figure 03 has 9% less mass than Figure 02.",
+    "BMW Group announced in June 2026 that Figure 03 will sort parts into sequencing trolleys in logistics.",
+    "Built at Figure's BotQ facility, which the company says can make up to 12,000 robots per year."
+  ],
+  "caveats": [
+    "No public price, pre-order or retail channel.",
+    "Home use has only been described as internal or partner testing.",
+    "Degrees of freedom are not published."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Figure 03",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/figure",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Introducing Figure 03",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/introducing-figure-03",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "BMW Group deploys Figure 03 humanoid after tests with previous version",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

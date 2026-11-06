@@ -1,0 +1,1202 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "unitree-h1",
+    "name": "Unitree H1",
+    "company_id": "unitree-robotics",
+    "company_name": "Unitree Robotics",
+    "country": "China",
+    "generation": "Unitree's first full-size humanoid; later H1-2 variant",
+    "first_announced_date": "2023-08-15",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Teased 2023-08-15 with an expected price below $90,000. Bought through Unitree sales or distributors rather than a public checkout: Unitree's store shows a $90,000 'Contact us for the real price' listing and a European distributor lists the H1/H1-2 from EUR 93,496 excluding VAT, delivery on request. RoboZaps reports the H1-2 has been delisted from Unitree's own store and that the H1 listing is marked unavailable for direct online purchase, while Unitree's newer H2 ($29,900) is the platform it now promotes. No credible announcement of discontinuation was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "academic research on bipedal locomotion and control",
+      "humanoid AI, reinforcement-learning and imitation-learning research",
+      "teleoperation and whole-body control research",
+      "education and robotics teaching",
+      "public performance and marketing events"
+    ],
+    "last_updated": "2026-10-30"
+  },
+  "specs": {
+    "height": {
+      "original_value": "Height about 180CM",
+      "value": 180,
+      "unit": "cm",
+      "notes": "Unitree's spec page gives 'about 180CM'; the dimension row lists (1520+285)mm, i.e. 1805 mm. The Robot Report gave 1805 x 570 x 220 mm at launch. The H1-2 variant is 'about 178CM'.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_002",
+        "unitree-h1_source_008"
+      ]
+    },
+    "weight": {
+      "original_value": "Weight about 47kg",
+      "value": 47,
+      "unit": "kg",
+      "notes": "Stock H1 is about 47 kg; the H1-2 variant is about 70 kg. RoboZaps notes that Stanford's research H1, fitted with added wrists, hands and head cameras, weighed 60 kg, so the stock figure understates configured weight.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_005",
+        "unitree-h1_source_008"
+      ]
+    },
+    "payload": {
+      "original_value": "30",
+      "value": 30,
+      "unit": "kg",
+      "notes": "Unitree publishes no payload figure for the H1 on its product page; 30 kg appears only in the RoboHub directory, which states it does not test robots. The European distributor lists payload as '-' for the H1 and 7-21 kg (rated/peak arm load) for the H1-2. Treat 30 kg as unverified directory data, not a Unitree spec.",
+      "source_ids": [
+        "unitree-h1_source_003",
+        "unitree-h1_source_008",
+        "unitree-h1_source_007"
+      ]
+    },
+    "runtime": {
+      "original_value": "1 hour of operation",
+      "value": 1,
+      "unit": "h",
+      "notes": "Reported by ROBOTS: Your Guide to the World of Robotics, added 2026-10-30 by automated spec fill; RoboHub's lineup table lists 2 h; official page gives battery capacity only..",
+      "source_ids": [
+        "unitree-h1_source_004"
+      ]
+    },
+    "battery": {
+      "original_value": "Battery capacity 15Ah(0.864KWh)，Max Voltage 67.2V",
+      "value": 864,
+      "unit": "Wh",
+      "notes": "15 Ah pack at a maximum of 67.2 V, described by Unitree as quickly replaceable. The H1-2 uses the same pack per the developer documentation.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_007"
+      ]
+    },
+    "degrees_of_freedom": {
+      "original_value": "5 DoF per leg + 4 DoF per arm",
+      "value": 18,
+      "notes": "Unitree's per-limb counts total 18 (hip x3 + knee + ankle per leg; 4 per arm, expandable). Unitree's own H1 URDF defines 19 actuated joints including a torso joint; RoboHub and RobotsGuide list 19. The H1-2 has 27 DoF. The discrepancy is unresolved.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_005",
+        "unitree-h1_source_003",
+        "unitree-h1_source_004"
+      ],
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "Moving speed of 3.3m/s(world record)",
+      "value": 3.3,
+      "unit": "m/s",
+      "notes": "Unitree claims 3.3 m/s as a world record and 'potential mobility > 5 m/s'. Launch coverage listed 1500 mm/sec and the distributor's description says 'up to 5.4 km/h' (1.5 m/s) while repeating 3.3 m/s in its spec table; RobotsGuide lists 6 km/h. No independently timed speed was found; RoboZaps reports a 10.1 m/s peak from a modified ~62 kg H1 in April 2026 with Unitree conceding a measurement error is possible.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_002",
+        "unitree-h1_source_008",
+        "unitree-h1_source_005",
+        "unitree-h1_source_004"
+      ]
+    },
+    "hands": {
+      "description": "The H1 ships without hands: launch images showed only a cushioned nub at the end of each 4-DoF arm, and Unitree lists a dexterous hand as 'Optional'. The H1-2 supports optional Dex5-1 or other ambidextrous hands. Research users added wrists, hands and head cameras themselves.",
+      "degrees_of_freedom": null,
+      "force_feedback": "not disclosed",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_002",
+        "unitree-h1_source_007",
+        "unitree-h1_source_005"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "3D LiDAR + depth camera per Unitree's spec sheet, described as 360-degree depth perception",
+        "H1-2 developer documentation identifies the head LiDAR as a Livox MID-360 and the head depth camera as an Intel RealSense D435",
+        "no wrist or fingertip force/tactile sensing disclosed for the standard configuration"
+      ],
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_007"
+      ]
+    },
+    "compute": {
+      "description": "Standard configuration: Intel Core i5 for platform functions and Intel Core i7 for user development, with optional Intel i7 or Nvidia Jetson Orin NX modules (up to three on the H1-2). H1-2 documentation lists a dedicated i5-1235U motion-control computer plus an i7-1255U/1265U development computer with 8-32 GB LPDDR5 and 500 GB+ storage. RobotsGuide lists an Intel i7 main computer with a custom ARM-based controller on each joint and Ubuntu Linux.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_007",
+        "unitree-h1_source_004"
+      ]
+    },
+    "actuators": {
+      "description": "Unitree M107 joint motor: peak torque about 360 N.m, peak torque density about 189 N.m/kg, hollow shaft, dual encoders, low-inertia high-speed internal-rotor PMSM, industrial crossed roller bearings. Maximum joint torques quoted for the H1 as knee ~360 N.m, hip ~220 N.m, ankle ~59 N.m, arm ~75 N.m.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_007",
+        "unitree-h1_source_008"
+      ]
+    },
+    "availability": {
+      "availability_status": "quote_based",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.unitree.com/h1/",
+      "notes": "No public checkout price. Unitree's store shows a $90,000 'Contact us for the real price' anchor; the European distributor Génération Robots lists the H1/H1-2 from EUR 112,195.20 including VAT (EUR 93,496.00 excluding VAT) with delivery times on request; launch coverage in 2023 said the expected price was below $90,000; RobotsGuide cites US $90,000-110,000. RoboZaps reports the H1-2 has been delisted from Unitree's store and that newer buyers are quoted the $29,900 H2 instead.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_005",
+        "unitree-h1_source_008",
+        "unitree-h1_source_002",
+        "unitree-h1_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Weak. The stock H1 has 4-DoF arms and no hands (a cushioned nub at launch, hands optional). The H1-2 variant adds 7-DoF arms with about 7 kg rated / 21 kg peak arm load and optional Dex5-1 hands. Manipulation results come from labs that rebuilt the robot (Stanford HumanPlus for clothes folding and typing, CMU H2O for teleoperation), reported only through a secondary blog.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_002",
+        "unitree-h1_source_007",
+        "unitree-h1_source_005"
+      ],
+      "caveats": [
+        "No Unitree-published manipulation demo, success rate or task benchmark for the stock H1.",
+        "The HumanPlus/H2O work used modified robots (added wrists, hands, cameras; about 60 kg, 33 DoF) and the papers themselves were not reviewed.",
+        "Arena cannot credit dexterity that requires third-party hardware additions."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Unitree states the H1 can walk and run autonomously in complex terrains, and RoboZaps describes a 100 m sprint video as an H1 'running autonomously on a track'. The SDK documentation covers SLAM, high-level motion services, teleoperation and reinforcement-learning routines. No autonomous manipulation, pick-and-place or productive task has been publicly demonstrated.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_005",
+        "unitree-h1_source_007"
+      ],
+      "caveats": [
+        "Autonomy is claimed for locomotion only, and execution mode in the sprint video is a company statement.",
+        "No intervention counts, task completion rates or independent audit.",
+        "Teleoperation is a documented use of the platform (CMU H2O, Unitree's own teleoperation docs), so demonstrated motion cannot be assumed autonomous."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Strongest dimension. Unitree claims 3.3 m/s (world record) with >5 m/s potential and 360 N.m knee torque; the H1 won 1500 m (6:34.40) and 400 m (1:28.03) golds at the 2025 World Humanoid Robot Games, and RobotsGuide credits it with golds in four high-speed disciplines. RoboZaps reports a 10.1 m/s peak from a modified ~62 kg H1 in April 2026. Sixteen H1s performed a choreographed dance on national television.",
+      "evidence_level": 3,
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_005",
+        "unitree-h1_source_004",
+        "unitree-h1_source_006",
+        "unitree-h1_source_002"
+      ],
+      "caveats": [
+        "The 3.3 m/s 'world record' is company-claimed and video-based, not Guinness-certified; RoboZaps notes the certified bipedal 100 m record still belongs to Cassie.",
+        "The 10.1 m/s figure is a peak from a modified robot with no disclosed total time and Unitree's own measurement-error caveat.",
+        "No fall-rate, disturbance-recovery or independently instrumented locomotion metric found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Head-mounted 3D LiDAR plus depth camera for 360-degree depth perception, with SLAM services and SLAM examples in the SDK. H1-2 documentation identifies a Livox MID-360 and an Intel RealSense D435 and publishes the sensor IP addresses. No perception benchmark or task-level perception accuracy is published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_007",
+        "unitree-h1_source_004"
+      ],
+      "caveats": [
+        "Sensor models are documented for the H1-2, not explicitly for the stock H1.",
+        "No third-party perception evaluation, and the choreography account of robots adjusting to unscripted stage events is second-hand."
+      ]
+    },
+    "human_interaction": {
+      "summary": "The distributor states the H1 has voice and facial recognition for natural interaction; Unitree's developer documentation and app support remote control via app, PC and controller. No conversational or interaction demo, latency data or reliability metric was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h1_source_008",
+        "unitree-h1_source_007"
+      ],
+      "caveats": [
+        "Voice/facial recognition is a reseller description, not a Unitree disclosure or a demonstration.",
+        "No safety-rated human-proximity behaviour published."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Unitree publishes an 864 Wh quickly replaceable battery but no runtime, duty cycle or failure data. Third-party directories conflict (1 hour per RobotsGuide, 2 hours per RoboHub). No field reliability, MTBF or continuous-operation record was found for the H1.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_004",
+        "unitree-h1_source_003"
+      ],
+      "caveats": [
+        "Runtime is unresolved between sources and unmeasured.",
+        "No public intervention, failure-rate or uptime logs; competition outings are minutes-scale."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized biped (about 180 cm, 47 kg, carbon-fibre/aluminium structure) with human-plausible dimensions; the distributor explicitly calls it a prototype for research and development that is not compatible or certified for industrial tasks. Unitree warns users not to modify it dangerously or use it in hazardous ways.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_008",
+        "unitree-h1_source_004"
+      ],
+      "caveats": [
+        "No safety certification, force-limiting disclosure or human-proximity testing found.",
+        "Unitree's product page carries explicit warnings about hazardous use and asks buyers to understand humanoid limitations."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Real but research-and-stage shaped. H1s are used by university labs (Stanford HumanPlus, CMU H2O) and appeared in a televised national performance with 16 units; the robot is purchasable by quote through Unitree and distributors. No named commercial customer, production task, operating hours or output metric was found.",
+      "evidence_level": 3,
+      "source_ids": [
+        "unitree-h1_source_005",
+        "unitree-h1_source_006",
+        "unitree-h1_source_008",
+        "unitree-h1_source_001"
+      ],
+      "caveats": [
+        "Research use is reported via a secondary blog citing papers that were not reviewed directly.",
+        "The Gala appearance is a choreographed performance, not productive deployment.",
+        "No disclosed paid commercial deployment with metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Priced in the enterprise/research band: a $90,000 contact-us anchor on Unitree's store, EUR 93,496 excluding VAT from a European distributor, and US $90,000-110,000 cited by RobotsGuide. It is not a consumer purchase and Unitree's cheaper successors (G1 $13,500, R1 $4,900, H2 $29,900 per RoboHub) undercut it.",
+      "evidence_level": 3,
+      "source_ids": [
+        "unitree-h1_source_005",
+        "unitree-h1_source_008",
+        "unitree-h1_source_004",
+        "unitree-h1_source_003"
+      ],
+      "caveats": [
+        "No published final price; quotes vary with compute, hands and support.",
+        "Delisted H1-2 and H2-first marketing suggest limited remaining buyer value for new purchases."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "unitree-h1_evidence_001",
+      "date": null,
+      "title": "Unitree H1 official specification page",
+      "claim": "Unitree lists the H1 at about 180 cm, about 47 kg, moving speed 3.3 m/s (world record) with potential mobility >5 m/s, 18 DoF by per-limb counts (5 per leg, 4 per arm), 864 Wh replaceable battery, 360 N.m maximum joint torque, 189 N.m/kg peak torque density, 3D LiDAR + depth camera, and optional dexterous hands. The same page lists the H1-2 variant at about 178 cm, about 70 kg and <2 m/s.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page; all numbers are company-published and not independently measured.",
+      "arena_relevance": "Defines size, mass, DoF, speed and battery for cross-robot comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Moving speed of 3.3m/s",
+      "source_location": "Unitree H1 product page, 'Unitree H1' specification bullets under Mobility",
+      "verification_notes": "Company spec page. The 3.3 m/s claim is labelled a world record by Unitree but is not certified; launch coverage listed a slower 1500 mm/sec figure.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_002",
+      "date": null,
+      "title": "Unitree's autonomy and terrain claim for H1",
+      "claim": "Unitree says the H1 can walk and run autonomously in complex terrains and environments, describing it as the first full-size general-purpose humanoid robot that can run in China.",
+      "category": [
+        "autonomy_task_execution",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Marketing claim with no task list, intervention count or success rate.",
+      "arena_relevance": "The only autonomy statement Unitree makes for the H1; it covers locomotion, not manipulation or task completion.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Possessing a stable gait and highly flexible movement capabilities, it is able to walk and run autonomously in complex terrains and environments.",
+      "source_location": "Unitree H1 product page, 'The first full-size general-purpose humanoid robot that can run in China' section",
+      "verification_notes": "Vendor copy; no execution-mode disclosure, no test protocol, no independent verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_003",
+      "date": "2023-08-15",
+      "title": "Launch coverage of the H1 teaser",
+      "claim": "At the 2023-08-15 announcement the H1 measured 1805 x 570 x 220 mm and weighed 47 kg, with 5 DoF legs and 4 DoF arms; launch images showed no hands, only a cushioned nub at the end of each arm, with hands in development. Unitree said the price was expected to be below $90,000, no release date was announced, and the video claimed commercial availability within 3-10 years.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Trade-press reporting of Unitree's own teaser video and X post.",
+      "arena_relevance": "Establishes announcement date, launch configuration and price expectation; also confirms hands were absent at reveal.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "According to Unitree, the price of the H1 is expected to be below $90,000.",
+      "source_location": "The Robot Report article body, price paragraph",
+      "verification_notes": "Reputable trade outlet relaying Unitree's video and post; the embedded video was not reviewed directly.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_004",
+      "date": null,
+      "title": "Unitree H1/H1-2 developer documentation",
+      "claim": "Unitree's official documentation discloses the H1-2 architecture in detail: 27 DoF (7 per arm, 6 per leg, 1 waist), individual joint limits, a Livox MID-360 head LiDAR and Intel RealSense D435 head depth camera, an i5-1235U motion-control computer plus an i7-1255U/1265U development computer, the 864 Wh battery, the M107 motor at 360 N.m with dual encoders, optional Nvidia Orin NX modules, optional Dex5-1 hands, arm rated load about 7 kg and peak about 21 kg, and a moving speed below 2 m/s. The SDK also documents teleoperation, SLAM and reinforcement-learning control routines.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "autonomy_task_execution",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "unitree-h1_source_007"
+      ],
+      "confidence": 0.7,
+      "notes": "Genuine technical disclosure, but it describes the H1-2, not the stock H1; do not transfer these numbers to the H1.",
+      "arena_relevance": "Shows the platform's engineering depth and the control/perception interfaces available to labs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Each arm of the H1-2 possesses 7 degrees of freedom, each leg has 6, and the waist features 1 degree of freedom, culminating in a total of 27 degrees of freedom across the entire machine.",
+      "source_location": "Unitree documentation centre, H1 SDK Development Guide > About_H1-2, Component Name section",
+      "verification_notes": "Official documentation page (marked last updated 2026-03-12). H1-2-specific; the stock H1 page does not publish comparable joint-level detail.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_005",
+      "date": "2025-04-08",
+      "title": "Speed and competition record timeline",
+      "claim": "RoboZaps dates the 3.3 m/s claim to March 2024 as company-claimed and video-based, records 1500 m gold in 6:34.40 (a Unitree-claimed robot world record) and 400 m gold in 1:28.03 at the first World Humanoid Robot Games in Beijing in August 2025, run by a Unitree subsidiary team, and records a 2026-04-14 sprint video with a 10.1 m/s peak from a modified ~62 kg H1 with no total time disclosed and Unitree conceding a measurement error is possible.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "unitree-h1_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Independent desk-research blog; competition results are corroborated by RobotsGuide, sprint details are not.",
+      "arena_relevance": "The clearest dated mobility evidence for the H1, and an explicit statement that nothing is Guinness-certified.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "At the first World Humanoid Robot Games in Beijing, the H1 takes 1500 m gold in 6:34.40 (a Unitree-claimed robot world record) and 400 m gold in 1:28.03, run by a Unitree subsidiary team",
+      "source_location": "RoboZaps H1 review, 'The speed record, dated: from 3.3 m/s to a contested crown' table",
+      "verification_notes": "Secondary summary of the linked heise, The Robot Report and SCMP coverage; those articles were not opened in this review. Race times are public-event results, not lab measurements.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_006",
+      "date": "2025-04-08",
+      "title": "Price and ordering situation",
+      "claim": "The H1 is quote-based and enterprise-only: Unitree's store lists 'Unitree H1（Contact us for the real price）' at $90,000 with a contact-sales flow and marks the listing unavailable for direct online purchase; the H1-2 is delisted from the official store and sold out at a distributor; the company's newer H2 lists at $29,900.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Desk research describing the official store; the store page itself was not opened in this review.",
+      "arena_relevance": "Explains why no consumer purchase path exists and why the $90,000 figure is an anchor, not a checkout price.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The official store lists \"Unitree H1（Contact us for the real price）\" at $90,000, with a contact-sales flow, no spec sheet attached, and the shop's own product data marking the listing unavailable for direct online purchase.",
+      "source_location": "RoboZaps H1 review, 'The price and ordering situation, in full'",
+      "verification_notes": "One outlet's reading of shop.unitree.com as of July 2026; not independently re-fetched here.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_007",
+      "date": "2025-04-08",
+      "title": "Research adoption of the H1 platform",
+      "claim": "The H1 is the platform under Stanford's HumanPlus (full-stack imitation learning including folding clothes and typing, June 2024) and CMU's H2O real-time whole-body teleoperation (March 2024), and is a default model in reinforcement-learning and simulation benchmarks. Stanford's configured robot weighed 60 kg with 33 DoF after adding wrists, hands and head cameras.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "unitree-h1_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Named academic users described by a secondary blog that cites the arXiv papers; the papers were not reviewed directly.",
+      "arena_relevance": "Best evidence of a real installed base, but the work reflects lab-added hardware and lab-written software, not the shipped product.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "the platform under research that shaped the field, from Stanford's HumanPlus to CMU's H2O",
+      "source_location": "RoboZaps H1 review, opening paragraph",
+      "verification_notes": "Secondary reporting; no customer or institution statement was reviewed. Configured weight and DoF differ from the stock robot.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_008",
+      "date": "2025-04-08",
+      "title": "DoF discrepancy: 18 versus 19",
+      "claim": "Unitree's spec page publishes per-limb counts totalling 18 (5 per leg, 4 per arm, no torso row) while Unitree's official H1 URDF defines 19 actuated joints including a torso joint; both are manufacturer-sourced, so the total DoF is unresolved.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_005",
+        "unitree-h1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Documented conflict rather than a settled figure; specs record 18 with the conflict noted.",
+      "arena_relevance": "Affects DoF comparisons between humanoids; a one-joint difference is minor for scoring.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Both are manufacturer-sourced, from different layers: the unitree.com spec page publishes per-limb counts totaling 18 (5 per leg, 4 per arm, no torso row), while Unitree's official H1 URDF engineering file defines 19 actuated joints, including a torso joint",
+      "source_location": "RoboZaps H1 review, 'The misinformation audit' table, 19 DoF vs 18 DoF row",
+      "verification_notes": "The URDF itself was not inspected in this review.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_009",
+      "date": null,
+      "title": "RoboHub directory entry for the H1",
+      "claim": "RoboHub's lineup table lists the Unitree H1 at 30 kg payload, 3.3 m/s, 2 hours runtime, 19 DoF, 47 kg, price state 'Request quote', while stating that values come from manufacturer pages and that RoboHub does not test robots.",
+      "category": [
+        "specs",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_003"
+      ],
+      "confidence": 0.35,
+      "notes": "Aggregator data; the 30 kg payload and 2 h runtime do not appear on Unitree's H1 page and conflict with other directories.",
+      "arena_relevance": "Explains where the widely quoted 30 kg payload and 2 h runtime originate; low trust.",
+      "claim_type": "spec",
+      "supporting_excerpt": "| [Unitree Robotics H1](https://robohub.app/robots/unitree-h1) | 30 | — | 3.3 | 2 | 19 | 47 | Request quote |",
+      "source_location": "RoboHub Unitree brand page, 'Lineup specifications' table, H1 row",
+      "verification_notes": "Directory aggregation with no primary citation for payload or runtime; explicitly untested.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_010",
+      "date": null,
+      "title": "RobotsGuide spec sheet and runtime conflict",
+      "claim": "RobotsGuide lists the H1 at 180 cm, 57 cm length, 22 cm width, 47 kg, 6 km/h standard speed, 19 DoF, 19 brushless DC motors, carbon fibre and aluminium construction, an Intel i7 main computer with a custom ARM controller per joint, Ubuntu Linux, an 864 Wh lithium-ion pack with '1 hour of operation', and a cost of US $90,000-110,000.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_004"
+      ],
+      "confidence": 0.4,
+      "notes": "Encyclopedia entry that conflicts with Unitree and with RoboHub on DoF, speed and runtime.",
+      "arena_relevance": "Supplies the only 1-hour runtime figure, which conflicts with the 2-hour directory figure; neither is measured.",
+      "claim_type": "spec",
+      "supporting_excerpt": "864 Wh lithium-ion battery pack, 1 hour of operation",
+      "source_location": "RobotsGuide Unitree H1 page, Specs > Power",
+      "verification_notes": "Directory content with no stated test method; not a measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_011",
+      "date": null,
+      "title": "World Humanoid Robot Games results (second source)",
+      "claim": "RobotsGuide credits the H1 with gold medals in four high-speed disciplines at China's inaugural World Humanoid Robot Games, corroborating the 1500 m and 400 m wins reported by RoboZaps.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "unitree-h1_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory claim corroborating a competition result reported elsewhere; no event results table was reviewed.",
+      "arena_relevance": "Second, independent-of-Unitree source for the H1's public race record.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "H1 dominated the track events at China's inaugural World Humanoid Robot Games, earning gold medals in four high-speed disciplines.",
+      "source_location": "RobotsGuide Unitree H1 page, 'Did you know?' section",
+      "verification_notes": "Encyclopedia summary; individual event times and conditions not published here.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_012",
+      "date": null,
+      "title": "Reseller listing, price and positioning",
+      "claim": "Génération Robots lists the H1/H1-2 from EUR 112,195.20 including VAT (EUR 93,496.00 excluding VAT) with delivery on request, publishes H1 18 DoF / 47 kg / 3.3 m/s and H1-2 27 DoF / 70 kg / <2 m/s / 7-21 kg arm load with the H1 payload row left blank, and states that the humanoid is a prototype for research and development, not compatible or certified for industrial tasks. It also claims voice and facial recognition.",
+      "category": [
+        "accessibility_value",
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h1_source_008"
+      ],
+      "confidence": 0.6,
+      "notes": "Distributor with an actual listed price; its positioning statement is unusually candid about readiness.",
+      "arena_relevance": "Gives a real transaction price band and a vendor-side statement that the robot is not certified for industrial work.",
+      "claim_type": "spec",
+      "supporting_excerpt": "This humanoid robot is a prototype for research and development, not compatible or certified for current or industrial tasks.",
+      "source_location": "Génération Robots H1/H1-2 product page, description header",
+      "verification_notes": "Reseller marketing plus a readiness disclaimer; prices are list prices 'from', not quotes for a specific configuration.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [
+          "human_environment_fit",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_013",
+      "date": null,
+      "title": "Sixteen H1s at the 2025 Spring Festival Gala",
+      "claim": "Unitree's own site records that 16 H1 robots, directed by Zhang Yimou, performed the dance piece 《秧Bot》 on CCTV's Spring Festival Gala in 2025.",
+      "category": [
+        "deployment_commercial_proof",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "unitree-h1_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Company statement about a nationally televised event; the performance itself is publicly observable.",
+      "arena_relevance": "Largest known simultaneous H1 deployment (16 units) and evidence of multi-robot choreography and stage robustness.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "2025年2月28日，由张艺谋导演，16台Unitree H1表演的《秧Bot》惊艳亮相中央广播电视总台蛇年春节联欢晚会。",
+      "source_location": "Unitree homepage, 'The Significant Events' section",
+      "verification_notes": "Official page; the broadcast was public but this review did not watch it. RoboZaps adds that the robots spun and threw/caught handkerchiefs and used LiDAR to adjust to unscripted events, which is second-hand.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_014",
+      "date": null,
+      "title": "H1 versus H1-2 specification separation",
+      "claim": "Unitree states that the H1-2 is an upgrade of the H1 with more motion capability and degrees of freedom, and publishes different figures for each (H1: 47 kg, 18 DoF, 3.3 m/s; H1-2: 70 kg, 27 DoF, <2 m/s, 7 kg rated / 21 kg peak arm load).",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "unitree-h1_source_007",
+        "unitree-h1_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Guards against the common conflation of H1 and H1-2 numbers in third-party summaries.",
+      "arena_relevance": "Prevents mis-crediting H1-2 manipulation capability to the H1.",
+      "claim_type": "correction",
+      "supporting_excerpt": "H1-2 has been upgraded based on the H1 model, boasting enhanced motion capability and degrees of freedom.",
+      "source_location": "Unitree documentation centre, About_H1-2, Component Name section",
+      "verification_notes": "Official documentation plus the official product page parameter table.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "unitree-h1_evidence_015",
+      "date": null,
+      "title": "Missing disclosures for the H1",
+      "claim": "No Unitree-published payload, runtime, hand DoF, failure rate, intervention count, task success rate, commercial deployment metric, safety certification or independent benchmark was found for the H1; the videos reviewed for this pack had no transcripts and were not used to characterise demonstrated behaviour.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review, not evidence of inability.",
+      "arena_relevance": "Judges should keep confidence low on payload, endurance, autonomy and commercial proof.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure. Source 5's incidents section was truncated in the provided text and could not be reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "autonomy_task_execution",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "unitree-h1_deployment_001",
+      "customer_or_partner": "China Media Group (CCTV) Spring Festival Gala, directed by Zhang Yimou",
+      "site_or_context": "CCTV Spring Festival Gala broadcast, China",
+      "task": "Choreographed Yangge dance performance with 16 H1 robots in the piece 《秧Bot》.",
+      "start_date": "2025-02-28",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 16,
+      "output_metrics": [],
+      "source_ids": [
+        "unitree-h1_source_006",
+        "unitree-h1_source_005"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "A scripted stage performance, not productive work or a commercial task.",
+        "Execution mode (autonomy versus operator commands) is not disclosed by Unitree.",
+        "The 16-unit count comes from Unitree; the handkerchief throw-and-catch and LiDAR adaptation details come from second-hand reporting."
+      ]
+    },
+    {
+      "id": "unitree-h1_deployment_002",
+      "customer_or_partner": "Stanford University (HumanPlus) and Carnegie Mellon University (H2O)",
+      "site_or_context": "Academic robotics research labs",
+      "task": "Imitation-learning research including clothes folding and typing (Stanford HumanPlus), and real-time whole-body teleoperation (CMU H2O).",
+      "start_date": "2024-03",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "unitree-h1_source_005"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Reported through a secondary blog citing arXiv papers; the papers and any institution statement were not reviewed here.",
+        "The research robots were modified (added wrists, hands and head cameras; about 60 kg and 33 DoF).",
+        "No operating hours, success rates or unit counts published in the reviewed source."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "unitree-h1_demo_001",
+      "title": "100 m sprint video (10.1 m/s peak)",
+      "date": "2026-04-14",
+      "observed_capabilities": [
+        "sprinting on an outdoor track"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Described as running autonomously on a track",
+      "environment": "outdoor running track",
+      "source_ids": [
+        "unitree-h1_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Peak speed, not average; no total 100 m time disclosed.",
+        "Modified ~62 kg robot, not the 47 kg stock H1.",
+        "Unitree itself conceded a measurement error is possible; visibly wandering line reported."
+      ],
+      "editing_notes": "Not reviewed directly; described from a secondary source. Treat as a curated company video until manually reviewed.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "'Autonomously' is a company framing relayed by the secondary source; no independent confirmation of execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "high-speed bipedal sprint on a track",
+          "verification_notes": "Timestamp and continuity not verified; manual video review required before audit-grade use."
+        }
+      ]
+    },
+    {
+      "id": "unitree-h1_demo_002",
+      "title": "Spring Festival Gala 'Yang BOT' performance (16 H1s)",
+      "date": "2025-01-28",
+      "observed_capabilities": [
+        "choreographed dance with 16 robots",
+        "spinning, throwing and catching a handkerchief mid-routine (second-hand detail)",
+        "LiDAR-based adjustment to unscripted stage events (second-hand detail)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "televised stage, CCTV Spring Festival Gala",
+      "source_ids": [
+        "unitree-h1_source_006",
+        "unitree-h1_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "A choreographed performance, so it demonstrates reliability and coordination rather than task autonomy.",
+        "No performance metrics, interruptions or operator involvement disclosed."
+      ],
+      "editing_notes": "Broadcast footage; not reviewed by the researcher in this pass.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Neither source states whether the robots ran autonomously or under operator command.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "multi-robot dance choreography on a live broadcast",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "unitree-h1_demo_003",
+      "title": "Official H1 locomotion demo videos ('H1 walks, balances, and gets kicked', 'Run H1, run!')",
+      "date": null,
+      "observed_capabilities": [
+        "walking and balancing",
+        "absorbing external kicks/disturbance",
+        "running"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company demo setting",
+      "source_ids": [
+        "unitree-h1_source_004",
+        "unitree-h1_source_001"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video titles were available; content, speed, editing and execution mode were not reviewed.",
+        "Unitree's product page lists Video V1.0 through V4.0 without descriptions."
+      ],
+      "editing_notes": "No transcript or footage reviewed; capability description is limited to the published titles.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No source states the execution mode for these clips.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "walking, balancing under kicks, running (title-level only)",
+          "verification_notes": "Not verified at all; requires manual video review before any scoring credit."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Payload",
+      "description": "Unitree publishes no payload for the H1; the 30 kg figure exists only in one directory and the distributor lists the H1 payload row as blank, with 7-21 kg given for the H1-2 arm.",
+      "impact_on_arena_scoring": "Do not use payload as a comparative strength for the H1."
+    },
+    {
+      "topic": "Runtime",
+      "description": "No Unitree runtime figure; directories give 1 hour and 2 hours, neither measured. Only the 864 Wh quickly replaceable pack is official.",
+      "impact_on_arena_scoring": "Endurance should stay near the floor of the evidence scale."
+    },
+    {
+      "topic": "Autonomy disclosure",
+      "description": "Autonomy is claimed only for walking/running. No autonomous manipulation or task has been demonstrated, and teleoperation is a documented mainstream use of the platform.",
+      "impact_on_arena_scoring": "Credit locomotion only; do not credit task autonomy."
+    },
+    {
+      "topic": "Manipulation",
+      "description": "Stock H1 ships without hands and with 4-DoF arms; manipulation evidence comes from labs that rebuilt the robot.",
+      "impact_on_arena_scoring": "Manipulation dexterity should be scored on the platform's ceiling, not on HumanPlus/H2O results as shipped."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "No named commercial customer, operating hours, throughput or intervention data found; use is research and stage performance.",
+      "impact_on_arena_scoring": "Deployment proof stays well below tier 4."
+    },
+    {
+      "topic": "Video sources not used",
+      "description": "Five YouTube sources were supplied with titles only and no transcripts, so no behaviour was characterised from them; the incident section of the RoboZaps review was truncated in the supplied text.",
+      "impact_on_arena_scoring": "Demonstrated-behaviour claims rest on secondary descriptions; manual video review is required."
+    },
+    {
+      "topic": "Status and wind-down",
+      "description": "The H1 is still listed but is quote-only, the H1-2 appears delisted, and Unitree's newer H2 is the promoted platform; no formal discontinuation notice exists.",
+      "impact_on_arena_scoring": "Treat as a legacy-but-purchasable research platform."
+    }
+  ],
+  "source_ids": [
+    "unitree-h1_source_001",
+    "unitree-h1_source_002",
+    "unitree-h1_source_003",
+    "unitree-h1_source_004",
+    "unitree-h1_source_005",
+    "unitree-h1_source_006",
+    "unitree-h1_source_007",
+    "unitree-h1_source_008"
+  ],
+  "sources": [
+    {
+      "id": "unitree-h1_source_001",
+      "title": "Universal humanoid robot H1_Bipedal Robot_Humanoid Intelligent Robot Company | Unitree Robotics",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/h1",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product and parameter page; all values are company claims and not independently measured. Covers both H1 and H1-2, which are easily confused."
+    },
+    {
+      "id": "unitree-h1_source_002",
+      "title": "Unitree teases new H1 humanoid robot - The Robot Report",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/unitree-teases-new-h1-humanoid-robot/",
+      "date_published": "2023-08-15",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Established robotics trade outlet reporting Unitree's teaser at announcement time; relays company claims, including a walking-speed figure that differs from later material."
+    },
+    {
+      "id": "unitree-h1_source_003",
+      "title": "RoboHub — Buy, build and simulate any robot with AI",
+      "publisher": "RoboHub",
+      "url": "https://robohub.app/robots/brands/unitree",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Aggregator that explicitly states values come from manufacturer pages and that it does not test robots; its H1 payload and runtime figures are not corroborated by Unitree."
+    },
+    {
+      "id": "unitree-h1_source_004",
+      "title": "Unitree H1 - ROBOTS: Your Guide to the World of Robotics",
+      "publisher": "ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/robots/unitree-h1",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Encyclopedia entry with a structured spec table; conflicts with Unitree and other directories on DoF, speed, runtime and price."
+    },
+    {
+      "id": "unitree-h1_source_005",
+      "title": "Unitree H1 Humanoid Robot: ~$90K Price, Specs & Speed Record",
+      "publisher": "RoboZaps",
+      "url": "https://blog.robozaps.com/b/unitree-h1-review",
+      "date_published": "2025-04-08",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Commercial blog doing self-declared desk research (no hands-on testing), but it links primary sources and explicitly flags unverified claims. The stated publication date precedes events it describes, so the page has clearly been updated through July 2026. The supplied text is truncated in its incidents section."
+    },
+    {
+      "id": "unitree-h1_source_006",
+      "title": "宇树科技—全球四足机器人行业开创者",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company homepage; used only for its own record of the 16-robot Spring Festival Gala performance. The current carousel foregrounds H2, G1, R1 and quadrupeds rather than the H1."
+    },
+    {
+      "id": "unitree-h1_source_007",
+      "title": "宇树科技 文档中心",
+      "publisher": "Unitree Robotics",
+      "url": "https://support.unitree.com/home/en/H1_developer/About_H1-2",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "official_product_page",
+      "reliability": "high",
+      "reliability_notes": "Official developer documentation with joint limits, computer models and sensor part numbers; covers the H1-2 variant rather than the stock H1. Page states a last update of 2026-03-12."
+    },
+    {
+      "id": "unitree-h1_source_008",
+      "title": "H1 humanoid robot | Unitree Robotics",
+      "publisher": "Génération Robots",
+      "url": "https://www.generationrobots.com/en/404154-h1-humanoid-robot.html",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Authorised European reseller with real list prices and a candid readiness disclaimer; repeats Unitree specification tables and adds its own marketing claims such as voice and facial recognition."
+    }
+  ],
+  "sources_skipped": [
+    {
+      "title": "Unitree Humanoid Robots Review: G1 & H1 Redefine Agility, Power, and Human-Like Motion",
+      "publisher": "YouTube Top 3D Shop Inc.",
+      "url": "https://www.youtube.com/watch?v=qYVkRlo1ZBY",
+      "reason": "No transcript supplied; only the title was available, and the title covers both G1 and H1."
+    },
+    {
+      "title": "Unitree H1 Robot - Unitree H1 Humanoid Robot Can Fight, High Jumping And Running Faster, Speed",
+      "publisher": "YouTube GalaxyTech",
+      "url": "https://www.youtube.com/watch?v=FhcGKU5OtSk",
+      "reason": "No transcript supplied; third-party compilation title only, no verifiable content."
+    },
+    {
+      "title": "Introducing Unitree H1: Its First General-purpose Humanoid Robot| Embodied AI Price below $90k",
+      "publisher": "YouTube Unitree Robotics",
+      "url": "https://www.youtube.com/watch?v=GtPs_ygfaEA",
+      "reason": "No transcript supplied; its price and launch claims are already captured through the cited trade-press report."
+    },
+    {
+      "title": "Unitree Introducing: H2-X Kung Fu Legend Guardian",
+      "publisher": "YouTube Unitree Robotics",
+      "url": "https://www.youtube.com/watch?v=Y3zb4o47yqA",
+      "reason": "About the H2-X, a different robot."
+    },
+    {
+      "title": "Why the Best-Selling Robot Can't Do Anything | Unitree G1",
+      "publisher": "YouTube Driftwood Intelligence",
+      "url": "https://www.youtube.com/watch?v=DzBNrjh8XB8",
+      "reason": "About the G1, a different robot."
+    },
+    {
+      "title": "Meet the Unitree R1: A $6K Humanoid Robot for Everyone | What The Future",
+      "publisher": "YouTube CNET",
+      "url": "https://www.youtube.com/watch?v=43bcvea4HAA",
+      "reason": "About the R1, a different robot."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "The H1 is a real, purchasable, human-sized biped whose public evidence is concentrated in locomotion and spectacle: a company-claimed 3.3 m/s record, four golds at the 2025 World Humanoid Robot Games, a contested 10.1 m/s peak from a modified unit, and a 16-robot televised dance. Manipulation, endurance, payload and commercial deployment evidence is thin or absent, most third-party numbers conflict, and the robot ships without hands.",
+    "strongest_positive_evidence": [
+      "Public competition results: 1500 m gold in 6:34.40 and 400 m gold in 1:28.03 at the 2025 World Humanoid Robot Games, plus four golds per RobotsGuide.",
+      "Unitree's 3.3 m/s spec with >5 m/s potential and 360 N.m knee torque, on an 864 Wh swappable pack.",
+      "Sixteen H1s performed on a national broadcast (Unitree's own record).",
+      "Adopted as a research platform by Stanford (HumanPlus) and CMU (H2O), and documented with a full SDK, teleoperation and RL tooling.",
+      "Real purchasability with public price bands (about $90,000 anchor; EUR 93,496 excluding VAT from a distributor)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No Unitree payload, runtime or failure-rate disclosure; directories give 1 h versus 2 h and an uncorroborated 30 kg payload.",
+      "No autonomous manipulation or productive task demonstration; the stock robot has no hands and 4-DoF arms.",
+      "No named commercial customer, operating hours or output metric.",
+      "No independent benchmark, third-party measurement or safety certification.",
+      "No video verified in this review; all supplied YouTube sources lacked transcripts."
+    ],
+    "conflicting_claims": [
+      "DoF: 18 per Unitree's per-limb counts versus 19 in the H1 URDF, RoboHub and RobotsGuide.",
+      "Speed: 3.3 m/s (Unitree spec, distributor table) versus 1500 mm/sec (Robot Report at launch, matching the distributor's 5.4 km/h description) versus 6 km/h (RobotsGuide).",
+      "Runtime: 1 hour (RobotsGuide) versus 2 hours (RoboHub); Unitree publishes none.",
+      "Payload: 30 kg (RoboHub only) versus no published figure and a blank H1 payload row at the distributor.",
+      "Price: 'below $90,000' expected in 2023 versus a $90,000 contact-us store anchor versus EUR 93,496 excluding VAT versus US $90,000-110,000 (RobotsGuide).",
+      "H1 versus H1-2 numbers (27 DoF, 70 kg, <2 m/s, 7-21 kg arm load) are frequently merged in secondary summaries."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit autonomous manipulation; the stock H1 has no hands and no manipulation demo exists.",
+      "Do not treat the 30 kg payload as a Unitree specification.",
+      "Do not describe the 3.3 m/s figure as Guinness-certified, and do not present 10.1 m/s as a sustained or stock-robot speed.",
+      "Do not transfer H1-2 specifications (27 DoF, 70 kg, 7-21 kg arm load, Dex5-1 hands) to the H1.",
+      "Do not credit HumanPlus or H2O manipulation results to the shipped robot; those robots were heavily modified.",
+      "Do not treat the Spring Festival Gala performance as proof of autonomous task execution.",
+      "Do not claim the H1 ran the Beijing half-marathon or the Hangzhou kickboxing bouts; those were G1s.",
+      "Do not assert discontinuation: no Unitree announcement exists."
+    ],
+    "compilation_note": "This pack was compiled automatically from the listed public sources on 2026-10-30 and needs human review before use in scoring. Verbatim excerpts, source dates and the H1/H1-2 split should be checked by a human, and the referenced videos and papers should be reviewed directly."
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "The H1 is still listed on Unitree's site and store as of this review, but it is quote-only, the H1-2 appears delisted, and Unitree's H2 (from $29,900) is the platform it now promotes; the 2026 Spring Festival Gala featured G1s and the H2 rather than the H1. No formal discontinuation was found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "The H1 holds a Guinness World Record for the fastest humanoid",
+      "reason": "No Guinness page names the H1; the certified bipedal 100 m record belongs to Cassie, and 3.3 m/s is a company-claimed, video-based figure.",
+      "source_ids": [
+        "unitree-h1_source_005"
+      ]
+    },
+    {
+      "claim": "The H1 launched at $150,000",
+      "reason": "Aggregator-only figure that contradicts contemporaneous 2023 coverage stating an expected price below $90,000.",
+      "source_ids": [
+        "unitree-h1_source_002",
+        "unitree-h1_source_005"
+      ]
+    },
+    {
+      "claim": "The H1 reached end-of-life in March 2026",
+      "reason": "Appears on a single aggregator with no Unitree announcement or credible reporting; the store still lists the robot.",
+      "source_ids": [
+        "unitree-h1_source_005"
+      ]
+    },
+    {
+      "claim": "The H1 runs at 10 m/s",
+      "reason": "That is a claimed peak from a modified ~62 kg robot in one sprint video, with no total time disclosed and a stated possibility of measurement error.",
+      "source_ids": [
+        "unitree-h1_source_005"
+      ]
+    },
+    {
+      "claim": "The H1 has 30 kg payload and 2 hours runtime",
+      "reason": "Directory-only values not corroborated by Unitree and contradicted by another directory and the distributor; recorded in specs only with an explicit unverified flag and not used as strengths.",
+      "source_ids": [
+        "unitree-h1_source_003",
+        "unitree-h1_source_004",
+        "unitree-h1_source_008"
+      ]
+    },
+    {
+      "claim": "The H1 fights in kickboxing bouts and struggled in the Beijing half-marathon",
+      "reason": "Those events used Unitree G1 robots, not the H1.",
+      "source_ids": [
+        "unitree-h1_source_005"
+      ]
+    },
+    {
+      "claim": "H1-2 specifications (27 DoF, 70 kg, <2 m/s, 7-21 kg arm load, Dex5-1 hands) describe the H1",
+      "reason": "Unitree and its distributor publish different figures for the two variants; the documentation source covers the H1-2.",
+      "source_ids": [
+        "unitree-h1_source_001",
+        "unitree-h1_source_007",
+        "unitree-h1_source_008"
+      ]
+    },
+    {
+      "claim": "Voice and facial recognition with natural human interaction",
+      "reason": "A reseller marketing statement with no Unitree disclosure or demonstration behind it.",
+      "source_ids": [
+        "unitree-h1_source_008"
+      ]
+    },
+    {
+      "claim": "Anything shown in the supplied YouTube videos",
+      "reason": "Titles only, no transcripts; content was not reviewed and cannot be credited.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "The Unitree H1 is a full-size bipedal humanoid (about 180 cm, about 47 kg, 18 DoF by Unitree's per-limb counts, 864 Wh swappable battery) sold mainly to research labs through quote-based sales: Unitree's store shows a $90,000 'contact us' anchor and a European distributor lists it from EUR 93,496 excluding VAT. Its strongest public evidence is locomotion and spectacle, including a company-claimed 3.3 m/s record, 1500 m and 400 m golds at the 2025 World Humanoid Robot Games (6:34.40 and 1:28.03) and a second source crediting four track golds, a choreographed 16-robot national broadcast performance, and a company-claimed 10.1 m/s peak from a modified ~62 kg unit. Manipulation is weak: the stock robot ships without hands and with 4-DoF arms, and the manipulation literature (Stanford HumanPlus, CMU H2O) used heavily modified units. Unitree publishes no payload, runtime, failure-rate or deployment metrics; autonomy is asserted for walking and running only; third-party runtime figures conflict (1 h versus 2 h) and no independent benchmark or safety certification exists.",
+    "strongest_evidence": [
+      "1500 m gold in 6:34.40 and 400 m gold in 1:28.03 at the 2025 World Humanoid Robot Games, corroborated by a second source reporting four track golds (unitree-h1_evidence_005, unitree-h1_evidence_011).",
+      "Unitree's official spec page: about 180 cm, 47 kg, 3.3 m/s with >5 m/s potential, 18 DoF, 864 Wh replaceable battery, 360 N.m joints (unitree-h1_evidence_001).",
+      "Sixteen H1s performing on CCTV's 2025 Spring Festival Gala, recorded by Unitree itself (unitree-h1_evidence_013).",
+      "Detailed official developer documentation covering joint limits, i5/i7 and Orin compute, MID-360 LiDAR, D435 camera, SDK, teleoperation and RL tooling (unitree-h1_evidence_004).",
+      "Real purchasability with public price bands from a distributor and Unitree's store (unitree-h1_evidence_006, unitree-h1_evidence_012)."
+    ],
+    "weakest_evidence": [
+      "No Unitree payload or runtime disclosure; directory figures conflict and are uncorroborated.",
+      "No autonomous manipulation or productive task demonstration; no hands in the stock configuration.",
+      "No named commercial deployment, operating hours or throughput.",
+      "No independent measurement, benchmark or safety certification.",
+      "Demonstrated-behaviour claims rest on secondary descriptions; no video was reviewed directly."
+    ],
+    "known_do_not_credit": [
+      "Autonomous manipulation or dexterity of the stock H1.",
+      "The 30 kg payload and 2 hour runtime as manufacturer specifications.",
+      "A Guinness-certified speed record, or 10.1 m/s as a sustained or stock-robot speed.",
+      "H1-2 specifications (27 DoF, 70 kg, 7-21 kg arm load, Dex5-1 hands) as H1 capabilities.",
+      "HumanPlus and H2O manipulation results as shipped-product ability.",
+      "The Spring Festival Gala dance as evidence of autonomous task execution.",
+      "G1 events (Beijing half-marathon, Hangzhou kickboxing) as H1 results.",
+      "Any claim that the H1 is discontinued, or that it is a commercial industrial deployment."
+    ],
+    "recommended_confidence": "low"
+  }
+}

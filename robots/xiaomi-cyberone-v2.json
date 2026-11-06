@@ -1,0 +1,40 @@
+{
+  "id": "xiaomi-cyberone-v2",
+  "name": "Xiaomi CyberOne V2",
+  "aliases": ["CyberOne 2", "new-generation CyberOne"],
+  "companyId": "xiaomi",
+  "companyName": "Xiaomi",
+  "country": "China",
+  "announced": "2026-04-29",
+  "status": "pilot",
+  "category": "industrial",
+  "summary": "The second-generation CyberOne is a roughly 1.70 m humanoid that Xiaomi trained for about four months on a nut-fastening station at its Beijing EV plant. Xiaomi reports success rising from about 90% to 98%. It is not for sale and Xiaomi has published no spec sheet.",
+  "specs": {
+    "height_cm": { "value": 170, "original": "approximately 1.70 meters tall", "sourceId": "s1" },
+    "weight_kg": null,
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Redesigned bionic hand with human form factor, 150,000-cycle durability and evaporative liquid cooling (March 2026).",
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Reached 90.2% success on autonomous nut installation within the line's 76-second cycle time (March 2026).",
+    "Success rate rose to about 98% after four months, per Xiaomi at IFA 2026.",
+    "Shown at the 2026 World Robot Conference and at IFA Berlin in September 2026."
+  ],
+  "caveats": [
+    "Xiaomi has published no price, spec sheet or release date.",
+    "Factory results are company-reported."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Xiaomi Robotics company profile and news", "publisher": "Humanoids Daily", "url": "https://www.humanoidsdaily.com/companies/xiaomi-robotics", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Xiaomi Makes IFA 2026 Debut, Unveils Humanoid Robot CyberOne", "publisher": "BigGo Finance", "url": "https://finance.biggo.com/news/38dcf6e1-1d78-4821-b30c-b08c8a2187fb", "accessed": "2026-10-14" }
+  ]
+}

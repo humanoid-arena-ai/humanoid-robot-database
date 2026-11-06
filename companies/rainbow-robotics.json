@@ -1,0 +1,24 @@
+{
+  "id": "rainbow-robotics",
+  "name": "Rainbow Robotics",
+  "country": "South Korea",
+  "headquarters": "Daejeon, South Korea",
+  "founded": 2011,
+  "website": "https://rainbow-robotics.com",
+  "summary": "Rainbow Robotics was founded by KAIST researchers who built the HUBO biped, and now makes collaborative robots and the RB-Y1 mobile manipulator. Samsung Electronics became its largest shareholder in 2025.",
+  "funding": "Samsung Electronics raised its stake from 14.7% to 35% to become the largest shareholder.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Rainbow Robotics",
+      "url": "https://en.wikipedia.org/wiki/Rainbow_Robotics",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Samsung increases stake in Rainbow Robotics, establishes Future Robotics Office",
+      "url": "https://www.therobotreport.com/samsung-increases-stake-in-rainbow-robotics-establishes-future-robotics-office/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

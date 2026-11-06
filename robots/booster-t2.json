@@ -1,0 +1,41 @@
+{
+  "id": "booster-t2",
+  "name": "Booster T2",
+  "aliases": ["T2"],
+  "companyId": "booster-robotics",
+  "companyName": "Booster Robotics",
+  "country": "China",
+  "announced": "2026-07-14",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "T2 is Booster's flagship development humanoid, about 1.4 m tall with 31 body DoF. It comes in Education and Professional versions; the Professional version uses NVIDIA Jetson Thor. It is aimed at research teams working on locomotion, manipulation and learning.",
+  "specs": {
+    "height_cm": { "value": 140, "original": "~1.4 m", "sourceId": "s1" },
+    "weight_kg": { "value": 42, "original": "~42 kg (varies with configuration)", "sourceId": "s1" },
+    "payload_kg": { "value": 10, "original": "Dual-arm payload: 10 kg maximum", "sourceId": "s1" },
+    "runtime_h": { "value": 2, "original": "2 hours continuous walking", "sourceId": "s1" },
+    "dof": { "value": 31, "original": "31 (6 per leg, 7 per arm, 3 waist, 2 head)", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 2, "original": "Max walking speed: 2 meters per second", "sourceId": "s3" }
+  },
+  "hands": "Standard, gripper and dexterous-hand versions are offered.",
+  "sensors": "Binocular head camera, binocular waist camera, microphone array; optional wrist cameras and LiDAR.",
+  "compute": "Education: ARM processor, 375 TOPS. Professional: NVIDIA Jetson Thor T5000, 2070 TFLOPS.",
+  "price": { "value": 22500, "currency": "EUR", "priceType": "from", "configuration": "From EUR 22,500 excl. VAT (EUR 27,060 incl. VAT), Generation Robots", "sourceId": "s2" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://www.generationrobots.com/en/404468-booster-t2-humanoid-robot.html",
+  "highlights": [
+    "Peak joint torque is 140 N·m.",
+    "48 V, 10 Ah battery with magnetic charging.",
+    "Generation Robots quotes delivery within 4 to 6 weeks."
+  ],
+  "caveats": [
+    "Booster's product page states 3 m/s walking speed while press and resellers state 2 m/s.",
+    "Few independent reports of T2 field use exist yet."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Booster T2 product page", "publisher": "Booster Robotics", "url": "https://www.booster.tech/booster-t2/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Booster T2 humanoid robot", "publisher": "Generation Robots", "url": "https://www.generationrobots.com/en/404468-booster-t2-humanoid-robot.html", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "Booster T2: A humanoid robot with powerful onboard Nvidia compute", "publisher": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/china-humanoid-robot-unveiled-nvidia-compute", "accessed": "2026-10-14" }
+  ]
+}

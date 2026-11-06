@@ -1,0 +1,468 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "apptronik-apollo",
+    "name": "Apptronik Apollo",
+    "company_id": "apptronik",
+    "company_name": "Apptronik",
+    "country": "United States",
+    "generation": null,
+    "first_announced_date": "2024-03-15",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Customer/partner pilots but no independent throughput or uptime metrics.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as pilot based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "5 ft 8 in",
+      "value": 5.67,
+      "unit": "ft",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "160 lb",
+      "value": 160,
+      "unit": "lb",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "55 lb",
+      "value": 55,
+      "unit": "lb",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "4 hours per battery pack",
+      "value": 4,
+      "unit": "hours",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": "hot-swappable battery packs",
+      "value": null,
+      "unit": null,
+      "notes": "Official product page says each hot-swappable battery pack has four-hour runtime.",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 71,
+      "notes": "Reported by Humanoid.guide, added 2026-10-29 by automated spec fill; Humanoid.press (P5) lists 44 DOF; conflicting..",
+      "source_ids": [
+        "apptronik-apollo_source_003"
+      ],
+      "original_value": "71",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "3.4 km/h",
+      "value": 0.9444444444444444,
+      "unit": "m/s",
+      "source_ids": [
+        "apptronik-apollo_source_003"
+      ],
+      "notes": "Reported by Humanoid.guide, added 2026-10-29 by automated spec fill; Walking speed, converted from 3.4 km/h. Humanoid.press (P5) lists 1.2 m/s max walking speed; conflicting.."
+    },
+    "hands": {
+      "description": "Apollo is designed for high-payload warehouse/manufacturing work; no public dexterous hand DoF spec was found.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": "Official product page describes an intuitive software suite for fleet/task control; no public chipset or TOPS spec was found.",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://apptronik.com/apollo",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 3,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "evidence_level": 0,
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "apptronik-apollo_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "5 ft 8 in, 160 lb, 55 lb payload, 4-hour hot-swappable battery.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "5 ft 8 in, 160 lb, 55 lb payload, 4-hour hot-swappable battery.",
+      "source_location": "Apollo product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "apptronik-apollo_evidence_002",
+      "date": null,
+      "title": "Deployment, demo, or independent context",
+      "claim": "Mercedes-Benz pilot/commercial agreement for manufacturing use cases.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "apptronik-apollo_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Use with caveats from source audit.",
+      "arena_relevance": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Mercedes-Benz pilot/commercial agreement for manufacturing use cases.",
+      "source_location": "Apptronik and Mercedes-Benz Enter Commercial Agreement",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "apptronik-apollo_deployment_001",
+      "customer_or_partner": null,
+      "site_or_context": null,
+      "task": "Customer/partner pilots but no independent throughput or uptime metrics.",
+      "start_date": "2024-03-15",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "apptronik-apollo_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Metrics are limited to what is explicitly stated in sources."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "apptronik-apollo_demo_001",
+      "title": "Apptronik Apollo public demo/context",
+      "date": "2024-03-15",
+      "observed_capabilities": [
+        "Customer/partner pilots but no independent throughput or uptime metrics."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "apptronik-apollo_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Customer/partner pilots but no independent throughput or uptime metrics.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "apptronik-apollo_source_001",
+        "apptronik-apollo_source_002"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "apptronik-apollo_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 0,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Customer/partner pilots but no independent throughput or uptime metrics.",
+    "strongest_evidence": [
+      "5 ft 8 in, 160 lb, 55 lb payload, 4-hour hot-swappable battery.",
+      "Mercedes-Benz pilot/commercial agreement for manufacturing use cases."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "Teleoperation/editing details often unclear."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "apptronik-apollo_source_001",
+    "apptronik-apollo_source_002",
+    "apptronik-apollo_source_003"
+  ],
+  "sources": [
+    {
+      "id": "apptronik-apollo_source_001",
+      "title": "Apollo",
+      "publisher": "Apptronik",
+      "url": "https://apptronik.com/apollo",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "5 ft 8 in, 160 lb, 55 lb payload, 4-hour hot-swappable battery."
+    },
+    {
+      "id": "apptronik-apollo_source_002",
+      "title": "Apptronik and Mercedes-Benz Enter Commercial Agreement",
+      "publisher": "Apptronik",
+      "url": "https://apptronik.com/news-collection/apptronik-and-mercedes-benz-enter-commercial-agreement",
+      "date_published": "2024-03-15",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Mercedes-Benz pilot/commercial agreement for manufacturing use cases."
+    },
+    {
+      "id": "apptronik-apollo_source_003",
+      "title": "Apptronik Apollo Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/apollo/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Customer/partner pilots but no independent throughput or uptime metrics.",
+    "strongest_positive_evidence": [
+      "5 ft 8 in, 160 lb, 55 lb payload, 4-hour hot-swappable battery.",
+      "Mercedes-Benz pilot/commercial agreement for manufacturing use cases."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Missing intervention/failure-rate data"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

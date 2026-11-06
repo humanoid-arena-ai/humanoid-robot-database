@@ -1,0 +1,1069 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "ubtech-walker-s1",
+    "name": "UBTECH Walker S1",
+    "company_id": "ubtech",
+    "company_name": "UBTECH Robotics",
+    "country": "China",
+    "generation": "Walker S1 industrial humanoid",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Catalog record lists Walker S1 as superseded and followed by Walker S2. Sources describe Walker S1 training at Zeekr's 5G Smart Factory, media-reported integration at BYD and Audi, and UBTECH marketing for vehicle assembly lines. No public UBTECH price was found; the product page uses a contact form.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "vehicle manufacturing assembly-line assistance",
+      "material handling and bin/tote carrying",
+      "sorting and quality inspection",
+      "precision assembly",
+      "collaboration with AMRs/AGVs in smart factories"
+    ],
+    "last_updated": "2026-10-30"
+  },
+  "specs": {
+    "height": {
+      "original_value": "172 cm",
+      "value": 172,
+      "unit": "cm",
+      "notes": "Third-party reseller/directory listings; UBTECH product page specifications were not available as text in the reviewed source. A DriveSpark article gives 5.6 feet, approximately 171 cm.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_005",
+        "ubtech-walker-s1_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "76 kg",
+      "value": 76,
+      "unit": "kg",
+      "notes": "Third-party listings; DriveSpark gives 167.6 pounds, approximately 76 kg.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_005",
+        "ubtech-walker-s1_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "6.61 lbs",
+      "value": 2.9982455657,
+      "unit": "kg",
+      "notes": "Reported by Robot Overflow, added 2026-10-30 by automated spec fill; Converted from pounds to kilograms; reported as Walker S1 payload..",
+      "source_ids": [
+        "ubtech-walker-s1_source_008"
+      ]
+    },
+    "runtime": {
+      "original_value": "up to ~2 hours",
+      "value": 2,
+      "unit": "hours",
+      "notes": "Third-party listing value; no UBTECH runtime disclosure found in reviewed text.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_006"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity, chemistry and charging specification were not published in reviewed sources.",
+      "source_ids": []
+    },
+    "walking_speed": {
+      "original_value": "3 km/h walking speed; 5 km/h max speed listed",
+      "value": 3,
+      "unit": "km/h",
+      "notes": "Directory value only; UBTECH page did not provide a text speed spec. Humanoid.guide separately lists max speed 5 km/h.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "original_value": "41",
+      "value": 41,
+      "unit": "count",
+      "notes": "Overall body DoF per third-party listings. Hand DoF not published.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_006"
+      ]
+    },
+    "hands": {
+      "description": "No hand degrees of freedom, finger count or tactile-sensing specification found. Sources describe dexterous manipulation claims and precision-assembly tasks, but not hand hardware.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "360° multimodal perception including integrated head sensor design and stereo/vision components (third-party marketplace description; exact stack varies)",
+        "semantic VSLAM navigation (company claim)"
+      ],
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_006"
+      ]
+    },
+    "compute": {
+      "description": "No CPU/GPU, onboard compute or operating system specification published in reviewed sources; Humanoid.guide lists CPU/GPU as N/A.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "No actuator model, torque, gear or cooling specification published. UBTECH lists joint cooling during long-term high-load operation as one of three key industrial application challenges.",
+      "source_ids": [
+        "ubtech-walker-s1_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "UBTECH product page offers a contact-us/partner form, not a public price or checkout. Third-party listings conflict: Latin Satelital lists US$37,500 and 'In stock'; Humanoid.guide shows 75,000 USD and availability Prototype. Neither is an official UBTECH price.",
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "UBTECH claims dexterous manipulation and learning-based whole-body control; heise reports Zeekr tasks including sorting, handling and precision assembly; Tech in Asia reports lifting heavy boxes and processing delicate materials. No hand DoF, success rates or independent trials published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_002",
+        "ubtech-walker-s1_source_007"
+      ],
+      "caveats": [
+        "Tasks are described by UBTECH or media, not measured.",
+        "No hand hardware or payload specification.",
+        "Zeekr work is described as training, not production output."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "UBTECH claims LLM task planning and BrainNet multi-robot coordination; heise reports several dozen Walker S1s trained together at Zeekr; Tech in Asia says robots work autonomously on coordinated lifting and transport tasks. No intervention logs or teleoperation disclosure were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_002",
+        "ubtech-walker-s1_source_007"
+      ],
+      "caveats": [
+        "Autonomy is company/media-asserted.",
+        "No published intervention or failure counts.",
+        "Training context, not sustained production."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "UBTECH claims learning-based whole-body motion control for stable walking and dexterous manipulation; a third-party directory lists walking, running and stair climbing and 3 km/h walking speed, but these directory claims are unverified. Factory reports show walking and coordinated lifting.",
+      "evidence_level": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_002",
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_007"
+      ],
+      "caveats": [
+        "No official speed, gait or fall-rate data.",
+        "Walking, running and stair claims come from an unverified directory.",
+        "No independent mobility test."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "UBTECH claims semantic VSLAM navigation coupling semantic perception with visual SLAM for spatial understanding and visual positioning under varying lighting; a reseller listing mentions 360° multimodal perception. No sensor stack or benchmark was published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_006"
+      ],
+      "caveats": [
+        "Company and marketplace claims only.",
+        "No camera, LiDAR or compute specifications.",
+        "No third-party perception benchmark."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No official human-interaction capability for Walker S1 was found. A third-party directory makes generic claims about voice commands and face recognition, but UBTECH's reviewed industrial materials do not detail human interaction.",
+      "evidence_level": 0,
+      "source_ids": [
+        "ubtech-walker-s1_source_003"
+      ],
+      "caveats": [
+        "Only a generic directory claim; not credited.",
+        "Industrial use case does not establish safe human interaction."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Third-party listings give up to about 2 hours runtime. UBTECH lists joint cooling under long-term high-load operation as a challenge. No uptime, MTBF or long-duration test data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_006"
+      ],
+      "caveats": [
+        "Runtime is a third-party listing, not an official text spec.",
+        "No reliability or endurance test published.",
+        "Joint cooling is listed as an application challenge by UBTECH."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Walker S1 is a human-scale biped, about 172 cm and 76 kg, intended for human-designed factory spaces and vehicle assembly lines. No safety certification, force-limiting or human-proximity data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_005",
+        "ubtech-walker-s1_source_006"
+      ],
+      "caveats": [
+        "Height and weight come from third-party listings.",
+        "No functional safety or human-robot collaboration certification found.",
+        "76 kg mass and industrial tasks require safety assessment."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Several dozen Walker S1 units were reported training at Zeekr's 5G Smart Factory, with media reports of about 20 units; BYD and Audi integrations are media-reported; one article claims over 500 orders. No customer press release, output metrics or operating hours were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_002",
+        "ubtech-walker-s1_source_004",
+        "ubtech-walker-s1_source_005",
+        "ubtech-walker-s1_source_007"
+      ],
+      "caveats": [
+        "Zeekr work is training/collaborative training, not confirmed production deployment.",
+        "BYD and Audi reports are secondary media, not customer releases.",
+        "The 500-order claim is unverified.",
+        "No unit output, cycle time or intervention rate."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No official UBTECH price or public purchase path was found; the product page uses a contact form. Third-party listings show conflicting prices, US$37,500 and 75,000 USD, and one lists Prototype availability.",
+      "evidence_level": 0,
+      "source_ids": [
+        "ubtech-walker-s1_source_001",
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_006"
+      ],
+      "caveats": [
+        "Not publicly purchasable at a verified price.",
+        "Reseller and directory prices conflict and are not official.",
+        "No lease, waitlist or consumer offering found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "ubtech-walker-s1_evidence_001",
+      "date": null,
+      "title": "UBTECH claims LLM task planning for Walker S1",
+      "claim": "UBTECH says Walker S1 uses an advanced planning model for intention understanding and general task planning.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Official product-page claim; no benchmark or success rate.",
+      "arena_relevance": "Supports high-level task-planning claims for autonomy.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "By utilizing the advanced planning model technology for general tasks, Walker S1 gains the ability in intention understanding and task planning.",
+      "source_location": "UBTECH Walker S1 product page, Large Language Model for General Task Planning section",
+      "verification_notes": "Company marketing claim; not independently evaluated.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_002",
+      "date": null,
+      "title": "UBTECH claims semantic VSLAM navigation",
+      "claim": "UBTECH says Walker S1 uses tightly coupled semantic perception and VSLAM for spatial understanding and industrial generalization.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Official product-page claim; no sensor or benchmark details.",
+      "arena_relevance": "Supports navigation and scene-understanding claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "By designing a tightly coupled method of semantic perception information and traditional VSLAM, a two-stage semantic navigation improves Walker S1's spatial understanding ability and meets the generalization needs in industrial scenarios.",
+      "source_location": "UBTECH Walker S1 product page, Semantic VSLAM Navigation section",
+      "verification_notes": "Company claim; no independent navigation test found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_003",
+      "date": null,
+      "title": "UBTECH claims learning-based whole-body motion control",
+      "claim": "UBTECH says its end-to-end learning-based whole-body control framework gives Walker S1 dexterous manipulation and stable walking.",
+      "category": [
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Official product-page claim; no quantitative demo data.",
+      "arena_relevance": "Supports mobility and whole-body manipulation claims.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The integrated perception and control, end-to-end learning-based whole-body motion control framework enable Walker S1 to achieve dexterous manipulations skills and stable walking abilities, enhancing its generalized execution capabilities for complex non-structured tasks in industrial scenarios.",
+      "source_location": "UBTECH Walker S1 product page, Learning-based Whole-body Motion Control section",
+      "verification_notes": "Company claim; no fall rate, speed or success rate published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_004",
+      "date": null,
+      "title": "UBTECH says Walker S1 entered vehicle assembly lines",
+      "claim": "UBTECH says Walker S1 has been introduced into vehicle manufacturing assembly lines and works with autonomous logistics vehicles and AMRs/AGVs.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_001"
+      ],
+      "confidence": 0.55,
+      "notes": "Official product-page claim; no customer, site or output metrics named.",
+      "arena_relevance": "Supports industrial deployment claims but not verified production use.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Walker S1 has been introduced into vehicle manufacturing assembly lines to assist in car production, working collaboratively with autonomous logistics vehicles and AMRs/AGVs through smart manufacturing management systems.",
+      "source_location": "UBTECH Walker S1 product page, Multi-task Industrial Scenarios section",
+      "verification_notes": "Company claim; no named customer release in this source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_005",
+      "date": null,
+      "title": "Several dozen Walker S1s trained at Zeekr",
+      "claim": "heise online reports that several dozen Walker S1 robots were trained and used in complex production areas at Zeekr, including vehicle and final assembly and quality inspection.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Reputable media report of company-led training; not a customer press release.",
+      "arena_relevance": "Strongest public evidence of multi-unit Walker S1 factory activity.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Several dozen Walker S1s were trained and used in complex production areas such as vehicle and final assembly, as well as quality inspection.",
+      "source_location": "heise online article, Zeekr 5G Smart Factory section",
+      "verification_notes": "Media report; exact unit count, hours and output not disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_006",
+      "date": null,
+      "title": "BrainNet coordinates Walker S1 collaboration",
+      "claim": "heise online reports that UBTECH's BrainNet framework coordinates collaboration among the humanoid robots.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Media summary of UBTECH's technical claim; no independent evaluation.",
+      "arena_relevance": "Supports multi-robot coordination claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The intelligent BrainNet framework is used to coordinate the collaboration of the humanoid robots.",
+      "source_location": "heise online article, BrainNet section",
+      "verification_notes": "Media relay of company claim; no intervention or failure data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_007",
+      "date": null,
+      "title": "Zeekr task types include sorting, handling and precision assembly",
+      "claim": "heise online reports that the Walker S1 robots worked together on sorting, handling and precision assembly tasks.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "ubtech-walker-s1_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "Media description of tasks; no success metrics.",
+      "arena_relevance": "Supports task breadth in a factory training setting.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "These included sorting and handling tasks, as well as precision assembly.",
+      "source_location": "heise online article, Zeekr training section",
+      "verification_notes": "Media summary; not a measured performance report.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_008",
+      "date": "2025-03-04",
+      "title": "Tech in Asia reports Walker S1 deployment at Zeekr",
+      "claim": "Tech in Asia reports that UBTECH deployed Walker S1 robots at Zeekr's EV factory in Ningbo, China.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_007"
+      ],
+      "confidence": 0.5,
+      "notes": "Short media item; exact number not disclosed.",
+      "arena_relevance": "Corroborates the Zeekr setting with a second media report.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "UBTech Robotics has deployed its humanoid Walker S1 robots at Zeekr’s electric vehicle (EV) factory in Ningbo, China.",
+      "source_location": "Tech in Asia article, opening paragraph",
+      "verification_notes": "Secondary media; no customer release or metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_009",
+      "date": "2025-03-04",
+      "title": "Tech in Asia says Zeekr robots work autonomously",
+      "claim": "Tech in Asia reports that Walker S1 robots perform coordinated lifting and transport tasks autonomously, with about 20 units indicated by images.",
+      "category": [
+        "autonomy_task_execution",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_007"
+      ],
+      "confidence": 0.45,
+      "notes": "Media summary; autonomy and unit count not independently verified.",
+      "arena_relevance": "Adds contextual support for coordinated factory work.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "They work autonomously for tasks that require coordinated movements, such as lifting and transporting heavy items.",
+      "source_location": "Tech in Asia article, deployment paragraph",
+      "verification_notes": "No teleoperation disclosure, intervention log or unit confirmation.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_010",
+      "date": "2024-10-22",
+      "title": "BYD integration reported by DriveSpark",
+      "claim": "DriveSpark reports that BYD partnered with UBTECH and integrated Walker S1 into its production line.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_005"
+      ],
+      "confidence": 0.35,
+      "notes": "Single secondary media article; no BYD release found.",
+      "arena_relevance": "Suggests automotive customer activity but weak sourcing.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Chinese EV manufacturer BYD has partnered with UBTech, a robotics company, integrating the Walker S1 humanoid robot into its production line.",
+      "source_location": "DriveSpark article, opening paragraph",
+      "verification_notes": "Not confirmed by BYD or UBTECH in a reviewed primary release; no task metrics.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_011",
+      "date": "2024-10-22",
+      "title": "DriveSpark claims over 500 Walker S1 orders",
+      "claim": "DriveSpark reports that UBTECH secured over 500 orders for Walker S1 from top auto manufacturers.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_005"
+      ],
+      "confidence": 0.3,
+      "notes": "Unverified media claim; not corroborated by UBTECH or named customers.",
+      "arena_relevance": "Would matter commercially if verified, but should not be credited as confirmed.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robotics company has made significant inroads in the automotive industry, securing over 500 orders for their Walker S1 humanoid robot from top auto manufacturers.",
+      "source_location": "DriveSpark article, BYD collaboration paragraph",
+      "verification_notes": "Single low-detail media source; no order documentation or customer names.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_012",
+      "date": "2025-05-28",
+      "title": "Audi plant deployment reported by VnExpress",
+      "claim": "VnExpress reports that UBTECH deployed Walker S1 at Audi's EV plant in China in March, described as the first humanoid integrated into a global Audi production line.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_004"
+      ],
+      "confidence": 0.45,
+      "notes": "Reputable media summary; no Audi release or task metrics found.",
+      "arena_relevance": "Adds a named automotive deployment claim.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "In March, it deployed its Walker S1 humanoid at Audi’s electric vehicle plant in China, marking the first time a humanoid robot has been integrated into a global Audi production line.",
+      "source_location": "VnExpress article, UBTech industrial deployment paragraph",
+      "verification_notes": "Secondary media; specific plant, tasks, duration and unit count not given.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_013",
+      "date": null,
+      "title": "Third-party specification listing for Walker S1",
+      "claim": "Third-party retailer spec tables list Walker S1 at 41 DoF, 172 cm, 76 kg and up to about 2 hours runtime.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_006"
+      ],
+      "confidence": 0.4,
+      "notes": "Reseller page; UBTECH product page specs were not available as text.",
+      "arena_relevance": "Only quantitative spec source found for size, DoF and runtime.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Retailer spec tables commonly list **41 DOF**, **172 cm height**, **76 kg weight**, and **up to ~2 hours runtime** (values can vary by listing and configuration).",
+      "source_location": "Latin Satelital product page, commonly listed core parameters section",
+      "verification_notes": "Third-party listing; values vary by listing and configuration and are not official UBTECH text.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_014",
+      "date": null,
+      "title": "Marketplace description of multimodal perception",
+      "claim": "A reseller page says marketplace listings describe Walker S1 with 360° multimodal perception, including head sensors and stereo/vision components.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_006"
+      ],
+      "confidence": 0.35,
+      "notes": "Marketplace-level description; exact sensor stack varies and is not official.",
+      "arena_relevance": "Weak support for perception hardware.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Marketplace listings often describe **360° multimodal perception**, including integrated head sensor design and stereo/vision components (exact sensor stack can vary by variant and sales package).",
+      "source_location": "Latin Satelital product page, perception and multimodal sensing section",
+      "verification_notes": "Third-party marketplace summary; no sensor models or counts.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_015",
+      "date": null,
+      "title": "Directory claims walking, running and stair climbing",
+      "claim": "Humanoid.guide describes Walker S1 as capable of walking, running and climbing stairs, but the directory is unverified.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s1_source_003"
+      ],
+      "confidence": 0.2,
+      "notes": "Unverified directory; generic marketing language. Not credited as demonstrated capability.",
+      "arena_relevance": "Only mobility claims beyond factory walking are directory-level.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The Walker S1 is capable of walking, running, and even climbing stairs thanks to its advanced movement system.",
+      "source_location": "Humanoid.guide product description",
+      "verification_notes": "Directory page marked 'Verified: Not verified'; no video or test data.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "ubtech-walker-s1_evidence_016",
+      "date": null,
+      "title": "Missing disclosures for Walker S1",
+      "claim": "No official UBTECH text specifications, payload, battery capacity, hand DoF, compute, price, intervention rate, customer output metrics or independent benchmark were found for Walker S1.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, reliability and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "ubtech-walker-s1_deployment_001",
+      "customer_or_partner": "Zeekr",
+      "site_or_context": "Zeekr 5G Smart Factory, Ningbo, China",
+      "task": "Collaborative training in vehicle and final assembly, quality inspection, sorting and handling, and precision assembly, coordinated by UBTECH BrainNet.",
+      "start_date": "2025-03",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "ubtech-walker-s1_source_002",
+        "ubtech-walker-s1_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Described as training or collaborative training, not confirmed production deployment.",
+        "heise says several dozen units; Tech in Asia says exact number not disclosed and images indicate about 20.",
+        "No hours, output or intervention rate published.",
+        "Autonomy claims are media-asserted, not independently verified."
+      ]
+    },
+    {
+      "id": "ubtech-walker-s1_deployment_002",
+      "customer_or_partner": "BYD",
+      "site_or_context": "BYD production line, China",
+      "task": "Reported integration into production line for quality inspections, component assembly and sorting parts.",
+      "start_date": "2024",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "ubtech-walker-s1_source_005"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Single secondary media source; no BYD or UBTECH customer release found.",
+        "No unit count, task hours, success rate or output metrics.",
+        "The same article's 500-order claim is unverified."
+      ]
+    },
+    {
+      "id": "ubtech-walker-s1_deployment_003",
+      "customer_or_partner": "Audi",
+      "site_or_context": "Audi electric vehicle plant, China",
+      "task": "Media-reported deployment at Audi EV plant; specific tasks not disclosed in the reviewed source.",
+      "start_date": "2025-03",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "ubtech-walker-s1_source_004"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Secondary media report only; no Audi release found.",
+        "No tasks, unit count, hours or performance metrics.",
+        "Date inferred from article text 'In March' and article publication date."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "ubtech-walker-s1_demo_001",
+      "title": "Zeekr collaborative Walker S1 fleet video",
+      "date": null,
+      "observed_capabilities": [
+        "multiple Walker S1 robots working collaboratively at Zeekr"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Zeekr 5G Smart Factory, China",
+      "source_ids": [
+        "ubtech-walker-s1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video contents not independently reviewed; heise only states the video shows several Walker S1 robots working together.",
+        "No execution-mode disclosure; teleoperation not ruled out."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; the article-embedded video was not watched in this compilation.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Source does not state whether the robots were teleoperated or autonomous.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "multiple Walker S1 robots working together at Zeekr, as described by heise online",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Official specifications",
+      "description": "UBTECH's product page did not provide text specifications in the reviewed source; height, weight, DoF, runtime and speed come from third-party reseller or directory listings.",
+      "impact_on_arena_scoring": "Treat specs as low-confidence and do not compare them as official."
+    },
+    {
+      "topic": "Payload, battery, hands, sensors and compute",
+      "description": "Payload, battery capacity, hand DoF, finger count, exact sensor stack, compute and actuators were not published in reviewed sources.",
+      "impact_on_arena_scoring": "Do not infer these values from directories; confidence on manipulation and endurance should remain low."
+    },
+    {
+      "topic": "Availability and price",
+      "description": "No official UBTECH price or public purchase path was found. Third-party listings conflict: US$37,500 on Latin Satelital and 75,000 USD on Humanoid.guide.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence."
+    },
+    {
+      "topic": "Deployment metrics",
+      "description": "Zeekr is described as training; BYD and Audi integrations are secondary media reports; no customer release, hours, output, cycle time or intervention rate was found.",
+      "impact_on_arena_scoring": "Commercial proof is suggestive but not production-grade evidence."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claims for Zeekr work are company or media statements with no teleoperation disclosure, intervention logs or independent audit.",
+      "impact_on_arena_scoring": "Credit observable/reported work, but keep autonomy confidence low."
+    },
+    {
+      "topic": "Order volume",
+      "description": "An article claims over 500 Walker S1 orders from auto manufacturers, but no UBTECH or customer confirmation was found.",
+      "impact_on_arena_scoring": "Do not treat order volume as verified."
+    },
+    {
+      "topic": "Status",
+      "description": "Catalog record lists Walker S1 as superseded by Walker S2; S2 materials were not used to attribute capabilities to S1.",
+      "impact_on_arena_scoring": "Score Walker S1 as a prior-generation industrial platform, not current flagship."
+    }
+  ],
+  "source_ids": [
+    "ubtech-walker-s1_source_001",
+    "ubtech-walker-s1_source_002",
+    "ubtech-walker-s1_source_003",
+    "ubtech-walker-s1_source_004",
+    "ubtech-walker-s1_source_005",
+    "ubtech-walker-s1_source_006",
+    "ubtech-walker-s1_source_007",
+    "ubtech-walker-s1_source_008"
+  ],
+  "sources": [
+    {
+      "id": "ubtech-walker-s1_source_001",
+      "title": "UBTECH Walker S1 Humanoid Robot | For Multi-task Industrial Scenarios | UBTECH Robotics",
+      "publisher": "UBTECH Robotics",
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s1",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; capability claims are marketing and specs were not available as text in the reviewed source."
+    },
+    {
+      "id": "ubtech-walker-s1_source_002",
+      "title": "UBTech: Fleet of humanoid robots work collaboratively at Zeekr",
+      "publisher": "heise online",
+      "url": "https://www.heise.de/en/news/UBTech-Fleet-of-humanoid-robots-work-collaboratively-at-Zeekr-10303551.html",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable trade/tech media; relays UBTECH claims and describes Zeekr training without independent metrics."
+    },
+    {
+      "id": "ubtech-walker-s1_source_003",
+      "title": "UBTECH Robotics Walker S1 Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/walker-s1/",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Directory page marked 'Verified: Not verified'; generic marketing description and unverified specs."
+    },
+    {
+      "id": "ubtech-walker-s1_source_004",
+      "title": "China’s UBTech to launch $20,000 ‘home companion’ robot rivaling Tesla Optimus - VnExpress International",
+      "publisher": "VnExpress International",
+      "url": "https://e.vnexpress.net/news/tech/enterprises/china-s-ubtech-to-launch-20-000-home-companion-robot-rivaling-tesla-optimus-4891679.html",
+      "date_published": "2025-05-28",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media summary; the home-companion product claim is not about Walker S1."
+    },
+    {
+      "id": "ubtech-walker-s1_source_005",
+      "title": "BYD Uses Human Robots For Manufacturing: The Walker S1 Humanoid Bot From UBTech",
+      "publisher": "DriveSpark",
+      "url": "https://www.drivespark.com/off-beat/byd-ubtech-walker-s1-humanoid-robot-integration-011-059937.html",
+      "date_published": "2024-10-22",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Off-beat auto media; no customer or company confirmation for BYD integration or 500-order claim."
+    },
+    {
+      "id": "ubtech-walker-s1_source_006",
+      "title": "UBTECH Walker S1 Industrial Humanoid Robot",
+      "publisher": "Latin Satelital",
+      "url": "https://www.latinsatelital.com/UBTECH-Walker-S1-Industrial-Humanoid-Robot.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller listing; provides third-party specs and a price but is not an official UBTECH source."
+    },
+    {
+      "id": "ubtech-walker-s1_source_007",
+      "title": "Chinese robot maker Ubtech deploys humanoid walker robots",
+      "publisher": "Tech in Asia",
+      "url": "https://www.techinasia.com/news/chinese-robot-maker-ubtech-deploys-humanoid-walker-robots",
+      "date_published": "2025-03-04",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Short reputable media item citing SCMP; exact unit count not disclosed."
+    },
+    {
+      "id": "ubtech-walker-s1_source_008",
+      "title": "UBTECH Walker S vs UBTECH Walker S1: Full Industrial Humanoid Comparison",
+      "publisher": "Robot Overflow",
+      "url": "https://robotoverflow.com/en/guides/ubtech-walker-s-vs-ubtech-walker-s1/",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "This pack was compiled automatically from public sources on 2026-10-30 and needs human review. Walker S1 has credible media evidence of multi-unit collaborative training at Zeekr and media-reported BYD and Audi integration, but the public record lacks official UBTECH text specifications, customer output metrics, autonomy disclosure and an official price.",
+    "strongest_positive_evidence": [
+      "heise online reports several dozen Walker S1s trained and used in vehicle/final assembly and quality inspection at Zeekr.",
+      "Tech in Asia independently reports Walker S1 deployment at Zeekr's Ningbo EV factory, with about 20 units indicated by images.",
+      "UBTECH product page claims LLM task planning, semantic VSLAM, learning-based whole-body control and vehicle-line collaboration.",
+      "Media reports place Walker S1 at BYD and Audi, though without customer releases or metrics."
+    ],
+    "weakest_or_missing_evidence": [
+      "No official UBTECH text specifications for height, weight, DoF, runtime, speed, payload, battery, hands, sensors or compute.",
+      "No customer press release, operating hours, output metrics or intervention rate from Zeekr, BYD or Audi.",
+      "No disclosed teleoperation/autonomy status or independent audit.",
+      "No official price or purchase path; reseller prices conflict."
+    ],
+    "conflicting_claims": [
+      "Height: 172 cm in Humanoid.guide and Latin Satelital vs 5.6 feet in DriveSpark (approximately 171 cm).",
+      "Price: Latin Satelital lists US$37,500; Humanoid.guide shows 75,000 USD; UBTECH has no public price.",
+      "Description: Humanoid.guide describes home/office tasks, while UBTECH and other sources frame Walker S1 as industrial.",
+      "Units at Zeekr: heise says several dozen; Tech in Asia says exact number not disclosed and images indicate about 20.",
+      "Runtime: third-party listings give up to about 2 hours; no official UBTECH runtime text found."
+    ],
+    "recommended_arena_categories": [
+      "industrial_humanoid",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit the $20,000 home-companion robot claim to Walker S1.",
+      "Do not treat reseller prices as official UBTECH prices.",
+      "Do not treat Zeekr training as full production deployment.",
+      "Do not treat the over-500-orders claim as verified.",
+      "Do not claim autonomous operation without teleoperation disclosure or intervention logs."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "ubtech-walker-s2"
+    ],
+    "currentness_notes": "Catalog record lists Walker S1 as superseded and followed by Walker S2. Walker S1 remains referenced in media and product pages as an industrial humanoid."
+  },
+  "excluded_claims": [
+    {
+      "claim": "UBTech will launch a $20,000 home-companion robot later this year.",
+      "reason": "The VnExpress article describes a separate UBTech consumer home robot, not Walker S1; the article also mentions Walker S1 only in an industrial Audi context.",
+      "source_ids": [
+        "ubtech-walker-s1_source_004"
+      ]
+    },
+    {
+      "claim": "Walker S1 official price is US$37,500 or 75,000 USD.",
+      "reason": "Those are reseller/directory listings, not UBTECH prices, and they conflict.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003",
+        "ubtech-walker-s1_source_006"
+      ]
+    },
+    {
+      "claim": "UBTECH secured over 500 Walker S1 orders from top auto manufacturers.",
+      "reason": "Single low-detail media article; no UBTECH, customer or order documentation found.",
+      "source_ids": [
+        "ubtech-walker-s1_source_005"
+      ]
+    },
+    {
+      "claim": "Walker S1 can run and climb stairs.",
+      "reason": "Only an unverified directory page makes this claim; not credited as demonstrated.",
+      "source_ids": [
+        "ubtech-walker-s1_source_003"
+      ]
+    },
+    {
+      "claim": "Walker S1 operates autonomously at Zeekr.",
+      "reason": "Autonomy is media-asserted; no teleoperation disclosure, intervention log or independent verification.",
+      "source_ids": [
+        "ubtech-walker-s1_source_002",
+        "ubtech-walker-s1_source_007"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "UBTECH Walker S1 is a Chinese biped industrial humanoid listed by third-party sources at about 172 cm, 76 kg, 41 DoF and up to 2 hours runtime. UBTECH markets LLM task planning, semantic VSLAM and learning-based whole-body control and says it has entered vehicle assembly lines; reputable media report several dozen units training collaboratively at Zeekr's 5G Smart Factory, while BYD and Audi integration and a 500-order claim come from secondary media. No UBTECH price, payload, battery, hand DoF or independent performance metrics were found, and teleoperation/autonomy is not disclosed.",
+    "strongest_evidence": [
+      "heise online report of several dozen Walker S1s trained and used in vehicle/final assembly and quality inspection at Zeekr (ubtech-walker-s1_evidence_005).",
+      "Tech in Asia report of Walker S1 deployment at Zeekr's Ningbo EV factory with about 20 units indicated by images (ubtech-walker-s1_evidence_008).",
+      "UBTECH product-page claims for LLM planning, semantic VSLAM, whole-body control and vehicle-line collaboration (ubtech-walker-s1_evidence_001, 002, 003, 004).",
+      "Media reports of BYD and Audi integration, though not customer-confirmed with metrics (ubtech-walker-s1_evidence_010, 012)."
+    ],
+    "weakest_evidence": [
+      "No official UBTECH text specifications, payload, battery, hand DoF or compute.",
+      "No customer press release or output/hours/intervention metrics from Zeekr, BYD or Audi.",
+      "No disclosed autonomy/teleoperation status or independent verification.",
+      "No official price; reseller prices conflict."
+    ],
+    "known_do_not_credit": [
+      "$20,000 home-companion robot claim as Walker S1.",
+      "Reseller prices as official UBTECH price.",
+      "Over 500 orders as verified.",
+      "Running and stair climbing from an unverified directory.",
+      "Autonomous operation as independently verified."
+    ],
+    "recommended_confidence": "low"
+  }
+}

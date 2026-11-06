@@ -1,0 +1,1443 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "figure-03",
+    "name": "Figure 03",
+    "company_id": "figure-ai",
+    "company_name": "Figure AI",
+    "country": "United States",
+    "generation": "third-generation Figure humanoid",
+    "first_announced_date": "2025-10-09",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Announced 2025-10-09. Figure says more than 350 units were delivered from BotQ by April 2026 for internal R&D, data collection, housework development and commercial use cases. BMW announced a Figure 03 logistics sequencing use case at Plant Spartanburg in June 2026. No public price, pre-order or home sale was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "household tasks (laundry, tidying, dishes)",
+      "automotive logistics sequencing",
+      "warehouse package handling",
+      "general-purpose labor research"
+    ],
+    "last_updated": "2026-10-17"
+  },
+  "specs": {
+    "height": {
+      "original_value": "5'8\"",
+      "value": 173,
+      "unit": "cm",
+      "notes": "Figure product page lists 5'8\" (about 173 cm). TIME's launch article describes the robot as 5-foot-6; the official product page value is used here and the conflict is kept in researcher_notes.",
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_003"
+      ]
+    },
+    "weight": {
+      "original_value": "61KG",
+      "value": 61,
+      "unit": "kg",
+      "notes": "Launch post separately says Figure 03 has 9% less mass than Figure 02.",
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "20KG",
+      "value": 20,
+      "unit": "kg",
+      "source_ids": [
+        "figure-03_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "5HR",
+      "value": 5,
+      "unit": "hours",
+      "notes": "Product-page figure. During the May 2026 package-sorting livestream, media reported robots rotated out to recharge after roughly 3-4 hours of work.",
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_008",
+        "figure-03_source_010"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity was not published in reviewed sources. Figure says the pack is certified to UN38.3 and supports 2 kW wireless inductive charging through the feet.",
+      "source_ids": [
+        "figure-03_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 30,
+      "notes": "Reported by Humanoid.guide, added 2026-10-29 by automated spec fill; Overall body DoF per Humanoid.guide spec table; not stated on Figure AI's own pages..",
+      "source_ids": [
+        "figure-03_source_019"
+      ],
+      "original_value": "30",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "1.2M/S",
+      "value": 1.2,
+      "unit": "m/s",
+      "source_ids": [
+        "figure-03_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Redesigned hands with softer, more adaptive fingertips, an embedded wide-field palm camera in each hand, and first-generation fingertip tactile sensors that Figure says detect forces as small as about 3 grams.",
+      "degrees_of_freedom": 20,
+      "force_feedback": "fingertip tactile sensing (company claim)",
+      "source_ids": [
+        "figure-03_source_002",
+        "figure-03_source_019"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "head camera system with twice the frame rate, one-quarter the latency and 60% wider field of view per camera vs Figure 02 (company claim)",
+        "palm camera in each hand",
+        "fingertip tactile sensors",
+        "onboard stereo cameras used by the updated whole-body controller (reported for the ladder demo)"
+      ],
+      "source_ids": [
+        "figure-03_source_002",
+        "figure-03_source_016"
+      ]
+    },
+    "compute": {
+      "description": "Onboard compute was not specified. Figure says the robot is built for its Helix vision-language-action model and has 10 Gbps mmWave data offload for fleet learning.",
+      "source_ids": [
+        "figure-03_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Figure claims actuators run at 2x faster speeds with improved torque density compared with the prior generation. Electric drive per product page.",
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No public price, pre-order or retail channel was found. TIME reported at launch that the robot was not ready for domestic use.",
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Company demos show Figure 03 with Helix 02 unloading and reloading a dishwasher, extracting pills, dispensing syringe volumes and singulating small objects; the public package-sorting livestream showed sustained pick-and-place of small packages with barcode orientation. Hands add tactile fingertips and palm cameras.",
+      "evidence_level": 3,
+      "source_ids": [
+        "figure-03_source_002",
+        "figure-03_source_004",
+        "figure-03_source_008",
+        "figure-03_source_010",
+        "figure-03_source_011"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or published success rates for the fine-manipulation demos.",
+        "Dropped packages were visible during the livestream."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Figure reports a 200-hour livestreamed package-sorting run with 249,560 packages and claims no teleoperation; Helix 2.5 reports 56% zero-shot success across three household behaviors in 30 unseen homes. Helix 02 demos are described by Figure as fully autonomous.",
+      "evidence_level": 3,
+      "source_ids": [
+        "figure-03_source_004",
+        "figure-03_source_010",
+        "figure-03_source_011",
+        "figure-03_source_017"
+      ],
+      "caveats": [
+        "Autonomy is company-asserted; no intervention counts or independent audit.",
+        "The 56% home success rate implies frequent failure in unseen homes."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Product page lists 1.2 m/s. Demos show walking while manipulating across a kitchen and living room, pulling a cart at BMW, and an autonomous ladder climb; robots walked to wireless charging docks during the livestream.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_004",
+        "figure-03_source_005",
+        "figure-03_source_011",
+        "figure-03_source_014",
+        "figure-03_source_016"
+      ],
+      "caveats": [
+        "No fall-rate, disturbance-recovery or independent mobility metric found.",
+        "Ladder climb was not independently verified."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Figure claims an upgraded camera system plus palm cameras and tactile sensing feeding a single visuomotor network; package sorting required locating barcodes; Helix 2.5 home tests used unseen objects and layouts.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-03_source_002",
+        "figure-03_source_004",
+        "figure-03_source_010",
+        "figure-03_source_017"
+      ],
+      "caveats": [
+        "No third-party perception benchmark.",
+        "An outside expert quoted by VnExpress said accuracy was not yet sufficient for large-scale logistics."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Figure and BMW describe upgraded audio hardware for speech-to-speech communication; the product page says users can talk to, ask or delegate tasks to the robot.",
+      "evidence_level": 1,
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_002",
+        "figure-03_source_013"
+      ],
+      "caveats": [
+        "No demonstrated conversational reliability or instruction-following metric found for Figure 03."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Figure reports 200 continuous hours of package sorting by a rotating group of three robots with zero hardware failures, plus a 10-hour single-robot contest at 2.83 s per package versus an intern at 2.79 s. Production post reports burn-in tests and 80+ functional checks per robot.",
+      "evidence_level": 3,
+      "source_ids": [
+        "figure-03_source_006",
+        "figure-03_source_009",
+        "figure-03_source_010",
+        "figure-03_source_011"
+      ],
+      "caveats": [
+        "Counts are company-reported; media relayed them without independent audit.",
+        "'Zero failures' excluded package-handling errors such as dropped or misoriented packages.",
+        "Per-robot runtime in practice was about 3-4 hours between charges."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized (5'8\", 61 kg) with multi-density foam at pinch points, soft textile covering and wireless foot charging; operated in Figure's internal test homes and in a BMW plant hall.",
+      "evidence_level": 2,
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_002",
+        "figure-03_source_013",
+        "figure-03_source_017"
+      ],
+      "caveats": [
+        "A former safety lead alleged in a disputed lawsuit that Figure robots are strong enough to cause serious injury.",
+        "No third-party safety certification of the full robot was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "BMW announced that Figure 03 starts a logistics sequencing use case at Plant Spartanburg; Figure says one unit is in Hall 52. Figure reports 350+ units delivered from BotQ by April 2026, allocated mostly to internal programs.",
+      "evidence_level": 3,
+      "source_ids": [
+        "figure-03_source_006",
+        "figure-03_source_013",
+        "figure-03_source_014",
+        "figure-03_source_015"
+      ],
+      "caveats": [
+        "No Figure 03 output, hours or intervention metrics from BMW yet.",
+        "BMW's 30,000-vehicle metric belongs to Figure 02, not Figure 03."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price, purchase path, lease offer or waitlist was found in primary sources.",
+      "evidence_level": 0,
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_003"
+      ],
+      "caveats": [
+        "Not purchasable by the public as of the review date."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "figure-03_evidence_001",
+      "date": null,
+      "title": "Figure 03 product-page specifications",
+      "claim": "Figure lists Figure 03 at 5'8\", 61 kg, 20 kg payload, 1.2 m/s, 5 hours runtime, electric drive.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec page; values are not independently measured.",
+      "arena_relevance": "Defines size, payload, speed and runtime for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Spec strip lists 5'8\", 61KG, 20KG payload, 1.2M/S, 5HR, ELECTRIC.",
+      "source_location": "figure.ai/figure product page specification strip",
+      "verification_notes": "Company spec page. Runtime spec is longer than the 3-4 hour charge rotation reported during the livestream.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_002",
+      "date": "2025-10-09",
+      "title": "Figure 03 launch hardware claims",
+      "claim": "Figure says Figure 03 adds a camera system with twice the frame rate, one-quarter the latency and 60% wider field of view per camera, palm cameras, fingertip tactile sensors detecting about 3 g, 2 kW wireless foot charging, a UN38.3-certified battery, 10 Gbps mmWave data offload, soft textile covering with multi-density foam, and 9% less mass than Figure 02.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "manipulation_dexterity",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Official launch claims, relative to Figure 02.",
+      "arena_relevance": "Hardware basis for tactile/vision manipulation and home safety claims.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Launch post lists camera improvements, palm cameras, 3-gram fingertip sensing, 2 kW wireless charging, UN38.3 battery certification, mmWave offload and soft textiles.",
+      "source_location": "Introducing Figure 03 post, hardware, hands, battery and home-safety sections",
+      "verification_notes": "Company launch source; relative improvements are not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_003",
+      "date": "2026-01-27",
+      "title": "Helix 02 dishwasher loco-manipulation demo",
+      "claim": "Figure published video of Figure 03 unloading and reloading a dishwasher across a full-sized kitchen in a four-minute task combining walking, manipulation and balance.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-03_source_004"
+      ],
+      "confidence": 0.68,
+      "notes": "Clear company demo; curated environment.",
+      "arena_relevance": "Strongest long-horizon household manipulation demo for this robot.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Helix 02 post describes a four-minute end-to-end dishwasher unload/reload across a full kitchen.",
+      "source_location": "Introducing Helix 02 post, long-horizon loco-manipulation section",
+      "verification_notes": "Company demo; playback speed, number of attempts and success rate were not disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_004",
+      "date": "2026-01-27",
+      "title": "Helix 02 autonomy and architecture claims",
+      "claim": "Figure states the Helix 02 demo videos are fully autonomous and not teleoperated, with no resets or human intervention in the dishwasher run, and that its System 0 whole-body controller was trained on over 1,000 hours of retargeted human motion data and replaces 109,504 lines of hand-written C++.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Internal/autonomy claims split from the observable demo.",
+      "arena_relevance": "Supports autonomy framing but cannot be checked externally.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Post says the videos are fully autonomous, not teleoperated, and describes System 0/1/2 and training data.",
+      "source_location": "Introducing Helix 02 post, autonomy statements and System 0 section",
+      "verification_notes": "Company statement; no external audit of execution mode.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_005",
+      "date": "2026-01-27",
+      "title": "Helix 02 fine-dexterity demos",
+      "claim": "Figure shows Figure 03 with Helix 02 extracting individual pills, dispensing a precise 5 ml syringe volume, unscrewing a bottle cap and picking small metal pieces from clutter, using tactile sensing and palm cameras.",
+      "category": [
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-03_source_004"
+      ],
+      "confidence": 0.62,
+      "notes": "Short curated clips.",
+      "arena_relevance": "Fine-motor evidence above most humanoid demos, but without success rates.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Helix 02 post shows pill extraction, syringe dispensing, cap unscrewing and singulation from clutter.",
+      "source_location": "Introducing Helix 02 post, dexterity section",
+      "verification_notes": "No trial counts or failure data; not independently replicated.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_006",
+      "date": "2026-03-09",
+      "title": "Helix 02 living room tidy demo",
+      "claim": "Figure published a whole-body living room cleanup demo in which the robot walks through a room while manipulating objects, tools and containers.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-03_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Page does not state duration, autonomy mode or success rate.",
+      "arena_relevance": "Supports home-tidying scenario breadth, weakly.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Post describes end-to-end living room cleanup with tool use and bimanual manipulation.",
+      "source_location": "Helix 02 Living Room Tidy post",
+      "verification_notes": "No teleoperation disclosure, timing or success data on the page.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_007",
+      "date": "2026-04-29",
+      "title": "Figure 03 production ramp",
+      "claim": "Figure reports more than 350 Figure 03 robots delivered from BotQ, production raised from 1 per day to 1 per hour within 120 days, end-of-line first-pass yield above 80%, and 80+ functional tests per robot before sign-off.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "figure-03_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Company-published manufacturing numbers.",
+      "arena_relevance": "Shows the robot exists at fleet scale; units go mostly to internal programs.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Post lists 350+ deliveries, 1 robot per hour, >80% first-pass yield, 500+ battery packs, 9,000+ actuators.",
+      "source_location": "Ramping Figure 03 Production post",
+      "verification_notes": "Company figures; 'delivered' includes internal R&D and data-collection allocation, not external customers.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_008",
+      "date": "2026-05-13",
+      "title": "Public package-sorting livestream (observable)",
+      "claim": "Figure livestreamed Figure 03 robots at its headquarters picking small packages, finding barcodes and placing them barcode-down on a conveyor around the clock, rotating robots to recharge; viewers could see occasional mistakes such as dropped packages.",
+      "category": [
+        "manipulation_dexterity",
+        "endurance_reliability",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-03_source_007",
+        "figure-03_source_008",
+        "figure-03_source_011"
+      ],
+      "confidence": 0.75,
+      "notes": "Unusually transparent: continuous public video rather than an edited clip.",
+      "arena_relevance": "Strong observable evidence for repetitive logistics work over long durations.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Media describe a continuous public stream of robots sorting packages, robot rotation for charging, and visible dropped packages.",
+      "source_location": "Startup Fortune, Ars Technica republish and Interesting Engineering livestream reports",
+      "verification_notes": "Reviewed via media descriptions, not by watching the stream. Controlled company environment; hidden assistance cannot be ruled out by outside observers.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_009",
+      "date": "2026-05-22",
+      "title": "Livestream final tally (company-reported)",
+      "claim": "Figure reported that the livestream ran 200 hours over nine days with three rotating Figure 03 robots sorting 249,560 packages, with zero hardware failures and no humans in the loop.",
+      "category": [
+        "endurance_reliability",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "figure-03_source_010",
+        "figure-03_source_011"
+      ],
+      "confidence": 0.7,
+      "notes": "Company-published numbers relayed by media.",
+      "arena_relevance": "Most quantified Figure 03 reliability evidence.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Sherwood and Interesting Engineering report 200 hours, 249,560 packages and no robot failures, citing Figure/Adcock.",
+      "source_location": "Sherwood News and Interesting Engineering 200-hour reports",
+      "verification_notes": "Counts not independently audited. Interesting Engineering notes 'failures' excluded dropped or misoriented packages.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_010",
+      "date": "2026-05-17",
+      "title": "10-hour human vs robot sorting contest",
+      "claim": "In a 10-hour livestreamed contest, an intern sorted 12,924 packages at 2.79 s each versus about 12,732 packages at 2.83 s each for the Figure 03 robot side.",
+      "category": [
+        "endurance_reliability",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "figure-03_source_008",
+        "figure-03_source_009",
+        "figure-03_source_010"
+      ],
+      "confidence": 0.68,
+      "notes": "Sherwood reports 12,735 robot packages; VnExpress and the Ars republish report 12,732.",
+      "arena_relevance": "Near-human throughput on one simple repetitive task.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Intern 12,924 packages at 2.79 s; robot about 12,732 at 2.83 s over 10 hours, announced by Adcock.",
+      "source_location": "VnExpress contest article; Ars Technica republish; Sherwood News",
+      "verification_notes": "Company-announced result; human was given breaks; accuracy of each side not published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_011",
+      "date": "2026-05-24",
+      "title": "Media cautions on the livestream",
+      "claim": "Coverage notes no published intervention counts, failure rates or uptime logs, no independent verification, and an Ohio State expert said the robots lacked the accuracy needed for large-scale logistics.",
+      "category": [
+        "autonomy_task_execution",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_007",
+        "figure-03_source_009",
+        "figure-03_source_012"
+      ],
+      "confidence": 0.7,
+      "notes": "Caution item to temper livestream credit.",
+      "arena_relevance": "Limits how far livestream numbers should push autonomy and reliability scores.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Startup Fortune and Fox call the run company evidence, not independent evidence; VnExpress quotes Ayanna Howard on accuracy.",
+      "source_location": "Startup Fortune critical-gaps section; Fox News caveats; VnExpress expert quote",
+      "verification_notes": "Secondary commentary; consistent across outlets.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "figure-03_evidence_012",
+      "date": "2026-06-25",
+      "title": "BMW announces Figure 03 sequencing use case",
+      "claim": "BMW Group says Figure 03 will start at Plant Spartanburg on logistics sequencing, picking unsorted components from containers and sorting them into sequencing trolleys for just-in-sequence delivery to assembly.",
+      "category": [
+        "deployment_commercial_proof",
+        "manipulation_dexterity",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "figure-03_source_013",
+        "figure-03_source_015"
+      ],
+      "confidence": 0.82,
+      "notes": "Customer-confirmed task, but no hours, output or unit counts; therefore capped below Tier 4.",
+      "arena_relevance": "Customer validation that Figure 03 is entering a production environment.",
+      "claim_type": "customer_claim",
+      "supporting_excerpt": "BMW release describes the sequencing task and Figure 03 features; Figure 02 results are cited as precedent.",
+      "source_location": "BMW Group press release 2026-06-25, Spartanburg Figure 03 project",
+      "verification_notes": "Customer source. Release headline says Figure AI 'demonstrates' Figure 03 in a new use case and robot development runs in parallel, so treat as early-stage.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_013",
+      "date": "2026-06-30",
+      "title": "F.03 at BMW Hall 52 demo",
+      "claim": "Figure shows one Figure 03 at BMW Spartanburg Hall 52 grasping parts that arrive in variable orientations with both hands while stepping and repositioning to pull a heavy cart on casters, controlled by Helix 02.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-03_source_014"
+      ],
+      "confidence": 0.65,
+      "notes": "No cycle time, success rate or hours published.",
+      "arena_relevance": "Shows the industrial task visually; whole-body loco-manipulation in a real plant.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Figure post describes parts sequencing plus cart pulling with dynamic whole-body control.",
+      "source_location": "F.03 Arrives at BMW post",
+      "verification_notes": "Company post; single unit; no performance data.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_014",
+      "date": "2026-08-03",
+      "title": "Autonomous ladder climb demo",
+      "claim": "Figure posted video of Figure 03 climbing a ladder, saying it was fully autonomous using an updated Helix whole-body controller trained with reinforcement learning in simulation and using onboard stereo cameras.",
+      "category": [
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "figure-03_source_016"
+      ],
+      "confidence": 0.55,
+      "notes": "Single clip posted on X by the CEO, reviewed via media report.",
+      "arena_relevance": "Unusual whole-body mobility skill for a humanoid.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Interesting Engineering describes the ladder ascent and Figure's autonomy and sim-to-real claims.",
+      "source_location": "Interesting Engineering ladder-climb article",
+      "verification_notes": "Article notes the demo was not independently verified and technical details were not disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_015",
+      "date": "2026-09-17",
+      "title": "Helix 2.5 zero-shot home generalization",
+      "claim": "Figure reports that its Index-pretrained Helix 2.5 policy succeeded 56% of the time (vs 9% without pretraining) on living-room tidying, towel folding and bed making in 30 Bay Area homes where no data had been collected.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "figure-03_source_017"
+      ],
+      "confidence": 0.6,
+      "notes": "Company-run evaluation with a published success rate; trial counts per home not given.",
+      "arena_relevance": "Rare quantified home-generalization result, including a substantial failure rate.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Post reports 56% zero-shot success across three whole-body behaviors in 30 unseen homes.",
+      "source_location": "Helix 2.5: Zero-Shot 30-Home Generalization post, results section",
+      "verification_notes": "Company evaluation; not peer-reviewed or replicated; per-task breakdown not published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "figure-03_evidence_016",
+      "date": "2025-10-09",
+      "title": "Launch-time readiness for homes",
+      "claim": "TIME reported at launch that Figure 03 was not ready for domestic use, with initial deployment to select partners; Adcock said all-day autonomy was not there yet and targeted 2026.",
+      "category": [
+        "autonomy_task_execution",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "TIME's in-person observations of failures concerned Figure 02 and are not credited against Figure 03.",
+      "arena_relevance": "Caps home-readiness claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "TIME: not ready for domestic use; Adcock: 'We're not there yet. We think we can get there in 2026.'",
+      "source_location": "TIME Figure 03 reveal article",
+      "verification_notes": "Reputable media with on-site visit.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "figure-03_evidence_017",
+      "date": "2025-11-24",
+      "title": "Whistleblower safety lawsuit",
+      "claim": "Figure's former head of product safety sued, alleging Figure humanoids are powerful enough to fracture a human skull and that a malfunctioning robot gashed a steel refrigerator door; Figure denies the claims.",
+      "category": [
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_018"
+      ],
+      "confidence": 0.5,
+      "notes": "Allegations are disputed and not tied to a specific model in the reviewed report.",
+      "arena_relevance": "Safety caution for home and human-proximity scenarios.",
+      "claim_type": "security_caution",
+      "supporting_excerpt": "Lawsuit alleges skull-fracturing force and gutted safety roadmap; Figure says the plaintiff was fired for poor performance.",
+      "source_location": "The Rundown lawsuit summary",
+      "verification_notes": "Unproven allegations in litigation; do not treat as established fact.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "human_environment_fit"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "figure-03_evidence_018",
+      "date": null,
+      "title": "Height conflict",
+      "claim": "Figure's product page lists 5'8\" while TIME's launch article says 5-foot-6.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "figure-03_source_001",
+        "figure-03_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Official value used in specs.",
+      "arena_relevance": "Minor; does not change human-environment fit.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Product page 5'8\"; TIME 5-foot-6.",
+      "source_location": "Product page spec strip; TIME article body",
+      "verification_notes": "Two-inch discrepancy; product page treated as canonical.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "figure-03_evidence_019",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No total DoF, hand DoF, battery capacity, price, intervention rate, failure rate per task, BMW output metrics or independent benchmark were found for Figure 03.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "figure-03_deployment_001",
+      "customer_or_partner": "BMW Group",
+      "site_or_context": "BMW Group Plant Spartanburg, South Carolina, logistics / Hall 52",
+      "task": "Logistics sequencing: picking unsorted components from containers and sorting them into sequencing trolleys, plus pulling a cart on casters.",
+      "start_date": "2026",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 1,
+      "output_metrics": [],
+      "source_ids": [
+        "figure-03_source_013",
+        "figure-03_source_014",
+        "figure-03_source_015"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Unit count (one) comes from Figure's post; BMW did not state a number.",
+        "No hours, parts handled, cycle time or intervention rate published.",
+        "BMW release frames it as a new use case with development running in parallel."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "figure-03_demo_001",
+      "title": "Helix 02 dishwasher and fine-dexterity demos",
+      "date": "2026-01-27",
+      "observed_capabilities": [
+        "four-minute dishwasher unload and reload across a kitchen",
+        "pill extraction",
+        "5 ml syringe dispensing",
+        "bottle cap unscrewing",
+        "singulating small parts from clutter"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Figure states all videos are fully autonomous, not teleoperated.",
+      "environment": "company kitchen and lab settings",
+      "source_ids": [
+        "figure-03_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No success rates or attempt counts.",
+        "Playback speed not stated."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Company claims full autonomy with no resets or intervention for the dishwasher run; not externally verified.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "dishwasher unload/reload while walking; fine manipulation clips (pills, syringe, cap, clutter)",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-03_demo_002",
+      "title": "Helix 02 living room tidy",
+      "date": "2026-03-09",
+      "observed_capabilities": [
+        "walking through a room while picking up objects",
+        "tool and container use",
+        "bimanual manipulation"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company test living room",
+      "source_ids": [
+        "figure-03_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Page gives no duration, autonomy statement or success rate."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The reviewed page does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "whole-body living room cleanup",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-03_demo_003",
+      "title": "200-hour package-sorting livestream",
+      "date": "2026-05-13",
+      "observed_capabilities": [
+        "locating barcodes on boxes and padded envelopes",
+        "placing packages barcode-down on a conveyor",
+        "continuous multi-day operation with robot rotation",
+        "walking to wireless charging docks"
+      ],
+      "appears_edited": false,
+      "teleoperation_disclosed": "CEO stated no teleoperation and that every action came from Helix 02.",
+      "environment": "warehouse-style cell at Figure headquarters",
+      "source_ids": [
+        "figure-03_source_007",
+        "figure-03_source_008",
+        "figure-03_source_010",
+        "figure-03_source_011",
+        "figure-03_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Company-controlled setup; no intervention log published.",
+        "Dropped and misoriented packages occurred."
+      ],
+      "editing_notes": "Continuous public livestream per media reports; not reviewed directly by the researcher.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Autonomy is a company claim; Ars Technica coverage notes outside observers cannot easily confirm whether hidden help was involved.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "repetitive package pick, barcode orientation and conveyor placement over multiple days",
+          "verification_notes": "Described from media reports; no timestamps verified."
+        }
+      ]
+    },
+    {
+      "id": "figure-03_demo_004",
+      "title": "F.03 at BMW Spartanburg",
+      "date": "2026-06-30",
+      "observed_capabilities": [
+        "two-handed grasping of parts in variable orientations",
+        "stepping and repositioning while manipulating",
+        "pulling a heavy cart on casters"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Figure attributes control to Helix 02 visuomotor policy.",
+      "environment": "BMW Plant Spartanburg Hall 52",
+      "source_ids": [
+        "figure-03_source_014",
+        "figure-03_source_013"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No cycle time or success data."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "Post emphasizes Helix 02 control but does not explicitly rule out remote assistance or interventions.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "parts sequencing and cart pulling in a BMW plant",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-03_demo_005",
+      "title": "Autonomous ladder climb",
+      "date": "2026-08-03",
+      "observed_capabilities": [
+        "climbing a ladder",
+        "stereo-vision-guided whole-body control"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Figure claims fully autonomous.",
+      "environment": "company setting",
+      "source_ids": [
+        "figure-03_source_016"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Single clip; not independently verified."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Autonomy claim reported via media; no external confirmation.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "ladder ascent without visible human assistance",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "figure-03_demo_006",
+      "title": "Helix 2.5 30-home zero-shot evaluation",
+      "date": "2026-09-17",
+      "observed_capabilities": [
+        "living room tidying",
+        "towel folding",
+        "bed making in unseen homes"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Figure describes the evaluation as autonomous zero-shot policy execution.",
+      "environment": "30 Bay Area homes",
+      "source_ids": [
+        "figure-03_source_017"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "56% overall success; no per-task or per-home trial counts.",
+        "Company-run evaluation."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as a curated public demo unless future review verifies continuity.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Data-collection methods (human video vs teleoperation) for task-specification data are not detailed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "household whole-body behaviors in varied homes",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No price, pre-order, lease or retail channel was found in primary sources.",
+      "impact_on_arena_scoring": "Accessibility/value stays at minimal evidence."
+    },
+    {
+      "topic": "Customer deployment metrics",
+      "description": "BMW confirmed the Figure 03 task but has not published hours, output, or unit counts; Figure reports one unit.",
+      "impact_on_arena_scoring": "Commercial proof is real but early; below Figure 02's measured BMW evidence."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claims for Helix 02, the livestream and the ladder demo are company statements with no intervention logs or independent audit.",
+      "impact_on_arena_scoring": "Credit observable work; keep autonomy confidence moderate."
+    },
+    {
+      "topic": "Home generality",
+      "description": "Best quantified home result is 56% zero-shot success in a company evaluation; TIME reported the robot was not ready for domestic use at launch.",
+      "impact_on_arena_scoring": "Home scenarios should show capability but not reliability."
+    },
+    {
+      "topic": "Specs gaps",
+      "description": "Total DoF, hand DoF, battery capacity and onboard compute were not published.",
+      "impact_on_arena_scoring": "Do not infer numbers from directories."
+    },
+    {
+      "topic": "Safety",
+      "description": "A disputed whistleblower lawsuit alleges Figure robots can apply injurious force; no full-robot safety certification found.",
+      "impact_on_arena_scoring": "Slight caution in human-proximity scenarios."
+    }
+  ],
+  "source_ids": [
+    "figure-03_source_001",
+    "figure-03_source_002",
+    "figure-03_source_003",
+    "figure-03_source_004",
+    "figure-03_source_005",
+    "figure-03_source_006",
+    "figure-03_source_007",
+    "figure-03_source_008",
+    "figure-03_source_009",
+    "figure-03_source_010",
+    "figure-03_source_011",
+    "figure-03_source_012",
+    "figure-03_source_013",
+    "figure-03_source_014",
+    "figure-03_source_015",
+    "figure-03_source_016",
+    "figure-03_source_017",
+    "figure-03_source_018",
+    "figure-03_source_019"
+  ],
+  "sources": [
+    {
+      "id": "figure-03_source_001",
+      "title": "Figure 03",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/figure",
+      "date_published": null,
+      "date_accessed": "2026-10-17",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official spec page; company claims."
+    },
+    {
+      "id": "figure-03_source_002",
+      "title": "Introducing Figure 03",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/introducing-figure-03",
+      "date_published": "2025-10-09",
+      "date_accessed": "2026-10-17",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official launch post; hardware claims not independently measured."
+    },
+    {
+      "id": "figure-03_source_003",
+      "title": "Figure 03 Is The Robot in Your Kitchen",
+      "publisher": "TIME",
+      "url": "https://time.com/7324233/figure-03-robot-humanoid-reveal/",
+      "date_published": "2025-10-09",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "high",
+      "reliability_notes": "On-site reporting; in-person observations were of Figure 02."
+    },
+    {
+      "id": "figure-03_source_004",
+      "title": "Introducing Helix 02: Full-Body Autonomy",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/helix-02",
+      "date_published": "2026-01-27",
+      "date_accessed": "2026-10-17",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Company demo videos and technical narrative; curated."
+    },
+    {
+      "id": "figure-03_source_005",
+      "title": "Helix 02 Living Room Tidy",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/helix-02-living-room-tidy",
+      "date_published": "2026-03-09",
+      "date_accessed": "2026-10-17",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Company demo; no execution-mode or success-rate disclosure."
+    },
+    {
+      "id": "figure-03_source_006",
+      "title": "Ramping Figure 03 Production",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/ramping-figure-03-production",
+      "date_published": "2026-04-29",
+      "date_accessed": "2026-10-17",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company manufacturing figures."
+    },
+    {
+      "id": "figure-03_source_007",
+      "title": "Figure's robot livestream raises the bar for humanoid proof",
+      "publisher": "Startup Fortune",
+      "url": "https://startupfortune.com/figures-robot-livestream-raises-the-bar-for-humanoid-proof/",
+      "date_published": "2026-05-16",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Mid-stream report with explicit list of unverified elements."
+    },
+    {
+      "id": "figure-03_source_008",
+      "title": "Figure AI livestream shows humanoid robots sorting packages for days (Ars Technica republish)",
+      "publisher": "AIDIRECTORY (republishing Ars Technica)",
+      "url": "https://aidirectory.com/news/figure-ai-livestream-humanoid-robots-sorting-packages",
+      "date_published": null,
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Republication of Ars Technica reporting; original Ars URL not opened."
+    },
+    {
+      "id": "figure-03_source_009",
+      "title": "Factory worker defeats humanoid robot in 10-hour package-sorting contest",
+      "publisher": "VnExpress International",
+      "url": "https://e.vnexpress.net/news/tech/tech-news/factory-worker-defeats-humanoid-robot-in-10-hour-package-sorting-contest-5075940.html",
+      "date_published": "2026-05-19",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Relays Adcock's numbers; includes outside expert comment."
+    },
+    {
+      "id": "figure-03_source_010",
+      "title": "Figure's robots just sorted packages for 200 hours straight",
+      "publisher": "Sherwood News",
+      "url": "https://sherwood.news/tech/figures-robots-just-sorted-packages-for-200-hours-straight/",
+      "date_published": "2026-05-22",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Relays company final tally."
+    },
+    {
+      "id": "figure-03_source_011",
+      "title": "Figure's humanoid robots complete 200-hour shift with zero failures",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/figure-03-humanoid-robot-200-hour-shift",
+      "date_published": "2026-05-25",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Relays company figures; clarifies failure definition."
+    },
+    {
+      "id": "figure-03_source_012",
+      "title": "Figure AI says its humanoid robots ran 24 hours straight sorting packages",
+      "publisher": "Fox News (CyberGuy Report)",
+      "url": "https://www.foxnews.com/tech/humanoid-robots-work-nonstop-package-test",
+      "date_published": "2026-05-24",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Consumer tech coverage with skeptic caveats."
+    },
+    {
+      "id": "figure-03_source_013",
+      "title": "BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg",
+      "publisher": "BMW Group",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en",
+      "date_published": "2026-06-25",
+      "date_accessed": "2026-10-17",
+      "source_type": "customer_press_release",
+      "reliability": "high",
+      "reliability_notes": "Customer source for task; no Figure 03 metrics."
+    },
+    {
+      "id": "figure-03_source_014",
+      "title": "F.03 Arrives at BMW",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/f-03-at-bmw",
+      "date_published": "2026-06-30",
+      "date_accessed": "2026-10-17",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company post; one unit in Hall 52; no metrics."
+    },
+    {
+      "id": "figure-03_source_015",
+      "title": "BMW Group deploys Figure 03 humanoid after tests with previous version",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
+      "date_published": "2026-06-29",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade-press summary of BMW announcement."
+    },
+    {
+      "id": "figure-03_source_016",
+      "title": "Figure 03 humanoid tackles autonomous ladder climb in the latest demo",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/figures-new-humanoid-scales-ladder-autonomously-marking-ai-mobility-advancement",
+      "date_published": "2026-08-03",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reports CEO-posted demo; notes lack of independent verification."
+    },
+    {
+      "id": "figure-03_source_017",
+      "title": "Helix 2.5: Zero-Shot 30-Home Generalization",
+      "publisher": "Figure AI",
+      "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+      "date_published": "2026-09-17",
+      "date_accessed": "2026-10-17",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company evaluation with a published success rate; not replicated."
+    },
+    {
+      "id": "figure-03_source_018",
+      "title": "Figure sued over 'skull-crushing' force",
+      "publisher": "The Rundown AI",
+      "url": "https://www.therundown.ai/articles/figure-sued-over-skull-crushing-force",
+      "date_published": "2025-11-24",
+      "date_accessed": "2026-10-17",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary summary of lawsuit allegations and Figure's denial."
+    },
+    {
+      "id": "figure-03_source_019",
+      "title": "Figure AI Figure 03 Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/figure-03/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Figure 03 has the strongest public long-duration task evidence of any Figure robot (a 200-hour livestreamed package-sorting run) and a customer-confirmed BMW use case, but most numbers are company-reported and BMW has not yet published Figure 03 output metrics.",
+    "strongest_positive_evidence": [
+      "Continuous public livestream of package sorting with company-reported 200 hours and 249,560 packages.",
+      "10-hour contest at 2.83 s per package vs 2.79 s for a human.",
+      "BMW customer release confirming a Figure 03 logistics sequencing task.",
+      "Helix 02 long-horizon household and fine-dexterity demos; Helix 2.5 56% zero-shot success in 30 homes."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark or intervention log.",
+      "No BMW output or hours for Figure 03.",
+      "No price or purchase path.",
+      "No DoF, battery capacity or compute disclosure."
+    ],
+    "conflicting_claims": [
+      "Height: 5'8\" (Figure product page) vs 5-foot-6 (TIME).",
+      "Robot packages in 10-hour contest: 12,732 (VnExpress, Ars republish) vs 12,735 (Sherwood).",
+      "Runtime: 5 hours on spec page vs 3-4 hour charge rotation reported during livestream.",
+      "Fan-run trackers published interim totals that differ from Figure's final tally; Figure's tally used."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "industrial_humanoid",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Figure 02's BMW metrics (30,000+ X3 vehicles, 1,250 hours) to Figure 03.",
+      "Do not describe Figure 03 as purchasable or home-deployed to consumers.",
+      "Do not treat livestream counts as independently audited.",
+      "Do not read 'zero failures' as zero handling errors."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Figure 03 is Figure's current production humanoid as of 2026-10-17. Sherwood News reported in May 2026 that the Figure 04 design was finalized, but no Figure 04 release was found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Figure 02 BMW production metrics (30,000+ BMW X3 vehicles, 90,000+ components, about 1,250 operating hours)",
+      "reason": "These belong to Figure 02; BMW cites them only as precedent for the Figure 03 project.",
+      "source_ids": [
+        "figure-03_source_013",
+        "figure-03_source_015"
+      ]
+    },
+    {
+      "claim": "Specific total or per-hand DoF numbers for Figure 03",
+      "reason": "Directories and encyclopedia entries give conflicting values; no Figure or BMW source published DoF.",
+      "source_ids": []
+    },
+    {
+      "claim": "Public price or home lease offer",
+      "reason": "Price/lease figures circulating in review blogs were not found in any primary source.",
+      "source_ids": [
+        "figure-03_source_001"
+      ]
+    },
+    {
+      "claim": "Large external fleet counts (hundreds of Figure 03 robots working at customers)",
+      "reason": "Figure reports 350+ units delivered but allocated mainly to internal R&D, data collection and housework development; external fleet size not confirmed.",
+      "source_ids": [
+        "figure-03_source_006"
+      ]
+    },
+    {
+      "claim": "Fan-tracker livestream totals (e.g., 81 hours or 152 hours interim figures)",
+      "reason": "Unofficial interim trackers superseded by Figure's final reported tally.",
+      "source_ids": [
+        "figure-03_source_010",
+        "figure-03_source_011"
+      ]
+    },
+    {
+      "claim": "TIME-observed towel folding and laundry failures as Figure 03 weaknesses",
+      "reason": "TIME's in-person observations in August 2025 were of Figure 02.",
+      "source_ids": [
+        "figure-03_source_003"
+      ]
+    },
+    {
+      "claim": "Independently verified full autonomy",
+      "reason": "All autonomy statements are company claims; media note no independent verification.",
+      "source_ids": [
+        "figure-03_source_007",
+        "figure-03_source_008",
+        "figure-03_source_016"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 8,
+    "secondary_sources_count": 10,
+    "independent_sources_count": 0,
+    "customer_sources_count": 1,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Figure 03 is Figure AI's current third-generation biped humanoid (5'8\", 61 kg, 20 kg payload, 5 h listed runtime, 1.2 m/s) with tactile fingertips, palm cameras and wireless foot charging. Its strongest evidence is a public package-sorting livestream that Figure reports ran 200 hours with 249,560 packages and near-human per-package speed, plus a BMW-confirmed logistics sequencing use case at Spartanburg. Household and dexterity demos (dishwasher, pills, syringe, 56% zero-shot success in 30 homes) are company-published. Autonomy is asserted but not independently audited, BMW has published no Figure 03 output metrics, and the robot is not for sale.",
+    "strongest_evidence": [
+      "Company-reported 200-hour, 249,560-package livestreamed sorting run (figure-03_evidence_009).",
+      "10-hour contest: 2.83 s per package vs 2.79 s for a human (figure-03_evidence_010).",
+      "BMW customer release confirming Figure 03 sequencing task (figure-03_evidence_012).",
+      "Helix 2.5 56% zero-shot success in 30 unseen homes (figure-03_evidence_015)."
+    ],
+    "weakest_evidence": [
+      "No independent benchmark, intervention log or failure rate.",
+      "No BMW hours or output for Figure 03.",
+      "No price, DoF or battery capacity."
+    ],
+    "known_do_not_credit": [
+      "Figure 02 BMW production metrics.",
+      "Consumer purchasability or home deployment.",
+      "Independently verified autonomy.",
+      "Zero handling errors during the livestream."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

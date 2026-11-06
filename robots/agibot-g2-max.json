@@ -1,0 +1,95 @@
+{
+  "id": "agibot-g2-max",
+  "name": "G2 Max",
+  "aliases": [
+    "Elf G2 Max",
+    "AgiBot G2 Max"
+  ],
+  "companyId": "agibot",
+  "companyName": "AgiBot",
+  "country": "China",
+  "announced": "2026-10-26",
+  "status": "pilot",
+  "category": "industrial",
+  "summary": "The G2 Max is a safety-certified heavy-duty industrial robot launched on October 26 (2026) and aimed at depalletizing, material handling and production line feeding. It has 7-DOF force-controlled dual arms with a 20 kg single-arm load and is said to be operating on multiple production lines. It is a variant in AgiBot's wheeled G2 line.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": {
+      "value": 40,
+      "original": "dual-arm rated load capacity of 40kg",
+      "sourceId": "s2"
+    },
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "360° multimodal perception and protection: 2D/3D LiDAR, ultrasonic sensors, chassis safety edges, physical emergency stops; vision guidance and dual-arm force control.",
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Single-arm load 20 kg, dual-arm rated 40 kg, dual-arm peak up to 50 kg; arm repeatability ≤±0.5mm.",
+    "7-DOF force-controlled dual arm with vision guidance.",
+    "Vertical working area 0.1m-2.5m, horizontal working area 1.2m, with a waist-tilt joint for single-sided palletizing and depalletizing.",
+    "Dual-battery hot-swappable design with autonomous recharging for 24/7 operation.",
+    "Can unpalletize 80 boxes and palletize 75 boxes per hour in e-commerce warehousing.",
+    "Compatible with the Genie Studio 2.0 platform.",
+    "Used on the Qiyuan T1 production line to move joint parts."
+  ],
+  "caveats": [
+    "Height, weight, total DOF, hand DOF, speed, runtime, compute and price are not stated in the sources.",
+    "Purchase path is an assumption: no source describes how to buy the G2 Max.",
+    "The G2 Max is described only in a republished EEWorld article, with no official AgiBot page among the sources.",
+    "Status 'pilot' is inferred from the claim that it operates on multiple production lines; commercial availability is not confirmed.",
+    "Other sources cover the standard AgiBot G2 (wheeled, with different specs), not the Max variant.",
+    "The Unitree G2 Ultra in s6 is an unrelated product."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "9S Robotics - The Global Robotics Workforce Platform",
+      "publisher": "9S Robotics",
+      "url": "https://9srobotics.com/en/robots/agibot-g2/",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s2",
+      "title": "Logic officially releases the safety-certified heavy-duty android robot, the Elf G2 Max.-EEWORLD",
+      "publisher": "en.eeworld.com.cn",
+      "url": "https://en.eeworld.com.cn/news/robot/eic738891.html",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s3",
+      "title": "Choosing a Humanoid Robot: Specs, Software and Use Cases",
+      "publisher": "joybuy.fr",
+      "url": "https://www.joybuy.fr/blog/humanoid-robot-buyers-guide-2026/CdlV2hk3",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s4",
+      "title": "AgiBot G2 — wheeled industrial humanoid: specs, price, availability",
+      "publisher": "ROBOTio",
+      "url": "https://robotio.eu/agibot-g2",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s5",
+      "title": "Best Humanoid Robot? 2026 Comparison Guide | Robotlar.org",
+      "publisher": "robotlar.org",
+      "url": "https://www.robotlar.org/en/comparison/en-iyi-insansi-robot",
+      "accessed": "2026-10-30"
+    },
+    {
+      "id": "s6",
+      "title": "Unitree Robotics Unveils G2 Ultra Humanoid Robot with Enhanced Dexterity and AI Capabilities | Momenta Media",
+      "publisher": "Momenta Media",
+      "url": "https://www.momenta.media/article/unitree-robotics-unveils-g2-ultra-humanoid-robot-with-enhanced-dexterity-and-ai",
+      "accessed": "2026-10-30"
+    }
+  ]
+}

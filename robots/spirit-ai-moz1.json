@@ -1,0 +1,40 @@
+{
+  "id": "spirit-ai-moz1",
+  "name": "Spirit AI Moz1",
+  "aliases": ["Moz1", "Moz"],
+  "companyId": "spirit-ai",
+  "companyName": "Spirit AI",
+  "country": "China",
+  "announced": null,
+  "status": "pilot",
+  "category": "general",
+  "summary": "Moz1 is a wheeled humanoid from Hangzhou's Spirit AI with a 26-DoF force-controlled body and two 7-DoF arms on an omnidirectional base. It runs the company's Spirit V1 vision-language-action model and is used in pilot work on CATL battery lines and JD.com retail sites.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 26, "original": "26 DoF (excluding dexterous hand)", "sourceId": "s2" },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Claims a 1:1 payload-to-weight ratio for its arms and whole-body STO safety with collision detection.",
+    "A Spirit AI robot supported zero-defect production of nearly 1,000 battery units at CATL's Zhongzhou base, per Gasgoo.",
+    "Shown at the 2025 World Robot Conference."
+  ],
+  "caveats": [
+    "Wheeled base, not a legged humanoid.",
+    "Height, weight and price are not published by reliable sources."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Spirit AI secures nearly 2 billion yuan in back-to-back funding rounds", "publisher": "Gasgoo", "url": "https://autonews.gasgoo.com/articles/icv/spirit-ai-secures-nearly-2-billion-yuan-in-back-to-back-funding-rounds-as-embodied-intelligence-race-heats-up-2026146686038994944", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Moz1 by Spirit AI", "publisher": "RoboBoom", "url": "https://roboboom.com/robot/spirit-ai/moz1", "accessed": "2026-10-14" }
+  ]
+}

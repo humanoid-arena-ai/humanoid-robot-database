@@ -1,0 +1,826 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "booster-t2",
+    "name": "Booster T2",
+    "company_id": "booster-robotics",
+    "company_name": "Booster Robotics",
+    "country": "China",
+    "generation": "Flagship embodied development platform following T1",
+    "first_announced_date": "2026-07-10",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Booster official product page has Buy now links and resellers list configurations with prices and delivery windows. No named customer deployment or leased fleet was found; the robot is sold as a development platform.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "embodied AI research",
+      "education and university labs",
+      "locomotion and whole-body control development",
+      "bimanual manipulation research",
+      "human-robot interaction development",
+      "competition robotics"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "~1.4 m (140 cm)",
+      "value": 140,
+      "unit": "cm",
+      "notes": "Official product page says ~1.4 m (140 cm); Generation Robots lists approx. 1.40 m.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "~42 kg (varies with configuration)",
+      "value": 42,
+      "unit": "kg",
+      "notes": "Official page states ~42 kg, with note actual weight varies slightly with version and optional configurations. Generation Robots says approx. 42 to 43 kg depending on configuration.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": "10 kg maximum dual-arm payload",
+      "value": 10,
+      "unit": "kg",
+      "notes": "Official page says Maximum Dual-Arm Payload: 10 kg* with footnote that actual payload varies significantly depending on arm posture. Generation Robots confirms up to 10 kg depending on arm posture.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "runtime": {
+      "original_value": "2 hours of continuous walking",
+      "value": 2,
+      "unit": "hours",
+      "notes": "Official page lists 2 hours of continuous walking. Generation Robots lists rated battery life more than 2 hours of continuous walking.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "battery": {
+      "original_value": "48 V, 10 Ah",
+      "value": 10,
+      "unit": "Ah",
+      "notes": "Both official page and Generation Robots list 48 V, 10 Ah. Charging via magnetic port, supports charging while in use.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "3 m/s (official); 2 m/s (reseller/press)",
+      "value": 3,
+      "unit": "m/s",
+      "notes": "Official Booster product page lists Walking Speed: 3 m/s. Generation Robots and Interesting Engineering list up to 2 m/s. The official value is used here and the conflict is kept in limitations_and_unknowns.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 31,
+      "notes": "Official page and resellers state 31 body DoF: 6 per leg, 7 per arm, 3 waist, 2 head. Reseller lists total DoF up to 73 when high-DoF dexterous hands are added.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "hands": {
+      "description": "Optional end effectors include standard, gripper, and dexterous hands. Generation Robots lists specific options: Inspired Robotics EG2-5CD12-T1 gripper, BrainCo Revo 2 6-DoF dexterous hand, Wuji 2 fully backdrivable 20-DoF hand with whole-hand tactile sensing, and BrainCo Revo3 U21T fully backdrivable 21-DoF hand with whole-hand tactile sensing.",
+      "degrees_of_freedom": 6,
+      "force_feedback": "Whole-hand tactile sensing on Wuji 2 and BrainCo Revo3 U21T variants (reseller claim)",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "binocular depth camera in head",
+        "binocular depth camera in waist/torso",
+        "wrist-mounted RGB cameras depending on configuration",
+        "microphone array with far-field pickup and noise reduction",
+        "5 W speaker",
+        "9-axis IMU (Generation Robots)",
+        "optional super-hemispherical 3D LiDAR",
+        "optional RTK positioning module"
+      ],
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Education version: high-performance ARM processor with 375 TOPS AI computing power. Professional version: NVIDIA Jetson Thor T5000 with 2,070 FP4 TFLOPS, 14-core Arm CPU up to 2.6 GHz and 128 GB LPDDR5X shared memory.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Industrial-grade crossed roller bearings, high-speed internal-rotor permanent-magnet synchronous motors, maximum peak torque 140 N·m.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 22500,
+      "price_currency": "EUR",
+      "purchase_or_waitlist_url": "https://www.generationrobots.com/en/404468-booster-t2-humanoid-robot.html",
+      "notes": "Generation Robots lists From €27,060.00 VAT incl. / €22,500.00 VAT excl. with delivery within 4 to 6 weeks. Maverick lists US$32,999 to US$118,999 across configurations. Official product page has Buy now links. Humanoid.guide lists 45,000 USD for inquiries.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_006",
+        "booster-t2_source_007"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Booster T2 offers optional end effectors including standard, gripper, and dexterous hands. Specs state 10 kg maximum dual-arm payload and 140 Nm peak torque. Generation Robots lists specific dexterous hands with up to 21 DoF per hand and whole-hand tactile sensing on some variants. No public dexterity benchmark or success rates were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ],
+      "caveats": [
+        "No demonstrated fine-manipulation task or independent dexterity benchmark.",
+        "Payload capacity varies with arm posture per official note."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No source states whether T2 demos are autonomous or teleoperated. Videos and media descriptions do not provide execution mode, intervention counts, or task success rates.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Teleoperation status not disclosed for all available demos.",
+        "No autonomous task execution evidence in reviewed sources."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official specs list 3 m/s walking speed; reseller and press list up to 2 m/s. A media-described demo video shows walking, fall recovery, athletic flips, and agile balance. Whole-body control is claimed for manipulation while walking, but no independent measurement found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_003",
+        "booster-t2_source_004"
+      ],
+      "caveats": [
+        "Walking speed conflict between official page and resellers.",
+        "Demo description is secondary and video was not directly reviewed.",
+        "No fall-rate or disturbance-recovery metric published."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "T2 includes binocular depth cameras in head and torso, optional wrist RGB cameras, microphone array, optional LiDAR and RTK. Jetson Thor T5000 provides 2,070 FP4 TFLOPS for on-device perception, planning, and control. No perception benchmark or scene understanding success data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ],
+      "caveats": [
+        "Sensor and compute are specs only; no third-party perception test."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Hardware includes microphone array, speaker, body interaction buttons, RGB LED, handheld remote controller, and large-model support. Voice prompts cover low battery and joint overtemperature. No conversational or instruction-following demonstration found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ],
+      "caveats": [
+        "Interaction capabilities are hardware/software specs, not demonstrated in use."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Battery rated 48 V 10 Ah with 2 hours continuous walking. Magnetic charging supports charging while in use. Generation Robots describes a pre-shipment check of battery, start-up, remote control, movement, controls. No long-duration test or uptime/MTBF data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ],
+      "caveats": [
+        "No independent endurance test or reliability metric.",
+        "Runtime is company/reseller spec."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "T2 is 1.4 m tall and about 42 kg, with soft and hard emergency stop and voice warnings. It is designed for research and education rather than home use. No full-robot safety certification found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002"
+      ],
+      "caveats": [
+        "No safety certification or human-proximity testing evidence."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Booster T2 is purchasable through Generation Robots and Maverick, with official Buy now links. It is a commercial product for research and development. No named customer deployment, field metrics, or independent verification of commercial work found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_007"
+      ],
+      "caveats": [
+        "Purchasability is not the same as deployed customer proof.",
+        "No named customer or operating hours reported for T2."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Generation Robots lists from €22,500 excl VAT (€27,060 incl VAT) with delivery in 4-6 weeks. Maverick lists US$32,999 to US$118,999. Official Booster site has Buy now links. Price varies significantly by configuration and region.",
+      "evidence_level": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_006",
+        "booster-t2_source_007"
+      ],
+      "caveats": [
+        "Price conflict across resellers; official site does not list price directly.",
+        "US reseller prices are much higher than European reseller starting price."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "booster-t2_evidence_001",
+      "date": null,
+      "title": "Booster T2 official product specifications",
+      "claim": "Booster Robotics lists T2 at ~1.4 m (140 cm), ~42 kg, 31 DoF (6 per leg, 7 per arm, 3 waist, 2 head), 10 kg max dual-arm payload, 140 Nm peak torque, 3 m/s walking speed, 2 hours continuous walking, 48 V 10 Ah battery, and compute options of ARM 375 TOPS or Jetson Thor T5000 2070 TFLOPS.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official spec page; values are not independently measured.",
+      "arena_relevance": "Defines size, payload, speed, runtime and compute for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Walking Speed: 3 m/s",
+      "source_location": "Booster T2 product page, Specifications, Education and Professional sections",
+      "verification_notes": "Company spec page. Walking speed conflicts with reseller and press value of 2 m/s.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_002",
+      "date": null,
+      "title": "Professional version compute specification",
+      "claim": "The Professional T2 uses NVIDIA Jetson Thor T5000 with 2,070 TFLOPS AI computing power, while Education uses a high-performance ARM processor with 375 TOPS.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official compute specifications.",
+      "arena_relevance": "High onboard compute for perception, planning and control; differentiates Pro and Edu.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Computing Power: Jetson Thor T5000, 2070 TFLOPS AI computing power",
+      "source_location": "Booster T2 product page, Professional specification, Computing & Sensors",
+      "verification_notes": "Company spec page; TFLOPS figure not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_003",
+      "date": null,
+      "title": "Generation Robots detailed specs and configuration options",
+      "claim": "Generation Robots lists T2 at approx. 1.4 m, 42-43 kg, 31 body DoF, up to 2 m/s walking, 140 Nm torque, 10 kg dual-arm payload, Jetson Thor T5000 with 2,070 FP4 TFLOPS, and options for grippers and dexterous hands giving total DoF 33, 43, or 73 depending on configuration.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Reseller product page with detailed technical specifications and version table.",
+      "arena_relevance": "Provides configuration-level detail, including end effector and total DoF options not fully listed on official page.",
+      "claim_type": "spec",
+      "supporting_excerpt": "**NVIDIA Jetson Thor T5000**: 2,070 FP4 TFLOPS of computing power, 14-core Arm processor and 128 GB of shared LPDDR5X memory.",
+      "source_location": "Generation Robots Booster T2 product page, key features and technical specifications",
+      "verification_notes": "Reseller specs are generally consistent with official page but walking speed differs; treat as secondary.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_004",
+      "date": null,
+      "title": "Generation Robots price and delivery",
+      "claim": "Generation Robots sells Booster T2 from €22,500 excl VAT (€27,060 incl VAT) with delivery within 4 to 6 weeks.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "European reseller listing with clear purchase path.",
+      "arena_relevance": "Establishes public price and availability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "From €27,060.00 VAT incl. €22,500.00 VAT excl.",
+      "source_location": "Generation Robots product page, price line and delivery note",
+      "verification_notes": "Reseller price; official manufacturer page lists Buy now but no price.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_005",
+      "date": null,
+      "title": "Media description of Booster T2 demo video",
+      "claim": "Interesting Engineering describes a demonstration video in which Booster T2 walks, recovers after falls, performs athletic flips, and shows agile movement, balance, and AI-driven whole-body coordination.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "booster-t2_source_003"
+      ],
+      "confidence": 0.55,
+      "notes": "Secondary media description of a company video; video itself not reviewed.",
+      "arena_relevance": "Provides some observable mobility evidence, though not first-hand.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "As seen in a demonstration video, the Booster T2 walks, recovers after falls, performs athletic flips, and showcases agile movement, balance, and AI-driven whole-body coordination in dynamic environments.",
+      "source_location": "Interesting Engineering article, paragraph describing demonstration video",
+      "verification_notes": "Reputable media but not independent lab; teleoperation status not disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_006",
+      "date": null,
+      "title": "Walking speed conflict",
+      "claim": "Official Booster page lists 3 m/s walking speed, while Generation Robots and Interesting Engineering list up to 2 m/s.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Official value used in specs; conflict noted for judges.",
+      "arena_relevance": "Speed is a key mobility metric; conflict should reduce confidence.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Dynamic locomotion: speed of up to 2 m/s, maximum joint torque of 140 Nm, and the ability to navigate steps and slopes.",
+      "source_location": "Generation Robots key features, first bullet",
+      "verification_notes": "Reseller and media consistently state 2 m/s; official page states 3 m/s.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_007",
+      "date": null,
+      "title": "Maverick US reseller pricing",
+      "claim": "Maverick lists Booster T2 configurations from US$32,999 to US$118,999 across Pro and Edu versions.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_007"
+      ],
+      "confidence": 0.65,
+      "notes": "US reseller product page with configuration prices.",
+      "arena_relevance": "Shows price variation across regions; significantly higher than EU starting price.",
+      "claim_type": "spec",
+      "supporting_excerpt": "From$ 32,999.00– $ 118,999.00",
+      "source_location": "Maverick product page, top price line",
+      "verification_notes": "Reseller listing; not manufacturer price. Includes seven configurations.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_008",
+      "date": null,
+      "title": "Humanoid.guide listing price and hand DoF conflict",
+      "claim": "Humanoid.guide lists Booster T2 at 45,000 USD and 12 degrees of freedom for hands, while Generation Robots lists lower starting price and dexterous hand configurations up to 21 DoF per hand.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_006",
+        "booster-t2_source_002"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory data conflicts with official/reseller details.",
+      "arena_relevance": "Hand DoF and price should be treated with caution.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Degrees of freedom, hands | 12",
+      "source_location": "Humanoid.guide product page, specification table",
+      "verification_notes": "The 12 hand DoF likely reflects one BrainCo Revo 2 hand, while total body DoF with two 21-DoF hands reaches 73 per Generation Robots.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_010",
+      "date": null,
+      "title": "Official purchase path",
+      "claim": "Booster official product page includes Buy now links, indicating T2 is commercially available.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "booster-t2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official page has multiple Buy now links, but no price listed.",
+      "arena_relevance": "Supports purchasable status.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Buy now",
+      "source_location": "Booster T2 product page, Buy now link",
+      "verification_notes": "Link points to official store, but reseller prices used for purchase estimates.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_011",
+      "date": null,
+      "title": "Missing autonomy and teleoperation disclosures",
+      "claim": "No source states whether T2 demos are autonomous or teleoperated; video titles and descriptions do not provide execution mode.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "All reviewed sources lack execution mode detail.",
+      "arena_relevance": "Judges should avoid crediting autonomy without evidence.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of teleoperation.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "booster-t2_evidence_012",
+      "date": null,
+      "title": "Missing independent customer deployment evidence",
+      "claim": "No named customer deployment, field metrics, or independent verification of Booster T2 performance was found.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Only commercial availability is evidenced; no customer case studies.",
+      "arena_relevance": "Deployment proof is absent; do not credit customer deployments.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "booster-t2_demo_001",
+      "title": "Booster T2 demonstration video described by Interesting Engineering",
+      "date": null,
+      "observed_capabilities": [
+        "walking",
+        "fall recovery",
+        "athletic flips",
+        "agile movement and balance"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "dynamic environments (per media description)",
+      "source_ids": [
+        "booster-t2_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Secondary description only; original video not available in this pack",
+        "Teleoperation status not disclosed",
+        "Editing status not verified"
+      ],
+      "editing_notes": "Not manually reviewed; based on media description. Original video not provided.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode stated in the media report.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Video described as showing robot walking, recovering after falls, performing flips",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Walking speed conflict",
+      "description": "Official page says 3 m/s; resellers and press say 2 m/s.",
+      "impact_on_arena_scoring": "Reduces confidence in mobility/whole-body control speed metrics."
+    },
+    {
+      "topic": "Autonomy/teleoperation",
+      "description": "No source states whether demos are autonomous or teleoperated.",
+      "impact_on_arena_scoring": "Autonomy_task_execution remains at zero evidence."
+    },
+    {
+      "topic": "Hand DoF conflict",
+      "description": "Humanoid.guide lists 12 hand DoF, while Generation Robots lists dexterous hand versions with up to 21 DoF per hand.",
+      "impact_on_arena_scoring": "Do not overstate dexterous hand capability without confirming configuration."
+    },
+    {
+      "topic": "Price variation",
+      "description": "EU reseller starts at €22,500 excl VAT; US reseller starts at US$32,999; Humanoid.guide lists 45,000 USD inquiry.",
+      "impact_on_arena_scoring": "Accessibility/value depends on region and configuration."
+    },
+    {
+      "topic": "No named customer deployments",
+      "description": "No customer case studies, operating hours, or independent field verification found.",
+      "impact_on_arena_scoring": "Commercial deployment proof remains minimal."
+    },
+    {
+      "topic": "Video evidence limited",
+      "description": "Provided YouTube sources have no transcript, so only titles are known.",
+      "impact_on_arena_scoring": "Do not infer specific capabilities beyond titles or secondhand descriptions."
+    }
+  ],
+  "source_ids": [
+    "booster-t2_source_001",
+    "booster-t2_source_002",
+    "booster-t2_source_003",
+    "booster-t2_source_004",
+    "booster-t2_source_006",
+    "booster-t2_source_007"
+  ],
+  "sources": [
+    {
+      "id": "booster-t2_source_001",
+      "title": "Booster T2 | Flagship Embodied Development Platform",
+      "publisher": "Booster Robotics",
+      "url": "https://www.booster.tech/booster-t2/?target=en",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official manufacturer product page; company specs and claims."
+    },
+    {
+      "id": "booster-t2_source_002",
+      "title": "Booster T2 humanoid robot | Generation Robots",
+      "publisher": "Génération Robots",
+      "url": "https://www.generationrobots.com/en/404468-booster-t2-humanoid-robot.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "European reseller product page with detailed specs and price."
+    },
+    {
+      "id": "booster-t2_source_003",
+      "title": "Booster T2: A humanoid robot with powerful onboard Nvidia compute",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/china-humanoid-robot-unveiled-nvidia-compute",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Tech media article summarizing T2 and demo video."
+    },
+    {
+      "id": "booster-t2_source_004",
+      "title": "Booster Robotics for Sale – Buy Booster T2, T1, K1 & K2 Humanoid Robots | Robots International",
+      "publisher": "Robots International",
+      "url": "https://www.robotsinternational.com/Booster-Robotics.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Reseller/directory page with company overview and T2 launch info."
+    },
+    {
+      "id": "booster-t2_source_006",
+      "title": "Booster Robotics T2 Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/booster-t2/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Director listing with specs and inquiry price."
+    },
+    {
+      "id": "booster-t2_source_007",
+      "title": "Booster T2 Humanoid Robot",
+      "publisher": "Maverick",
+      "url": "https://www.maverickdrone.com/products/booster-t2",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "US reseller product page with configuration pricing."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Booster T2 is a purchasable 1.4 m, ~42 kg bipedal humanoid development platform with strong onboard compute (Jetson Thor T5000 up to 2,070 TFLOPS) and configurable end effectors, sold by multiple resellers. Official specs claim 3 m/s walking while resellers state 2 m/s, and no autonomy or customer deployment evidence was found.",
+    "strongest_positive_evidence": [
+      "Official product page lists detailed specs including 31 DoF, 10 kg payload, 140 Nm torque, and Jetson Thor compute.",
+      "Generation Robots lists public price and delivery (from €22,500 excl VAT, 4-6 weeks).",
+      "Interesting Engineering describes a demo video showing walking, fall recovery, and flips.",
+      "Robots International confirms July 10, 2026 launch and high-end compute positioning."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark or intervention log.",
+      "No named customer deployment or field metrics.",
+      "Walking speed conflict (3 vs 2 m/s).",
+      "Teleoperation/autonomy status not disclosed for demos."
+    ],
+    "conflicting_claims": [
+      "Walking speed: 3 m/s official vs 2 m/s reseller/press.",
+      "Price: Generation Robots €22,500 excl VAT vs Maverick US$32,999 vs Humanoid.guide 45,000 USD.",
+      "Hand DoF: Humanoid.guide 12 DoF vs Generation Robots dexterous hand versions up to 21 DoF per hand.",
+      "Total DoF with dexterous hands: 33, 43, 73 depending on configuration."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Booster T1 RoboCup titles to T2.",
+      "Do not treat the media-described demo as independently verified.",
+      "Do not assume autonomy; all teleoperation statuses are unknown.",
+      "Do not use official 3 m/s speed without noting conflict."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Booster T2 is current flagship of Booster Robotics as of 2026-10-29. No successor announced in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Booster T1 RoboCup 2025 and 2026 AdultSize championships",
+      "reason": "These belong to the T1 platform, not T2.",
+      "source_ids": [
+        "booster-t2_source_004"
+      ]
+    },
+    {
+      "claim": "Company-wide shipped over 700 humanoid units to 200+ clients",
+      "reason": "This is company-wide across all Booster models, not specific to T2.",
+      "source_ids": [
+        "booster-t2_source_004"
+      ]
+    },
+    {
+      "claim": "T2 has 12 hand DoF",
+      "reason": "Conflicts with Generation Robots listing dexterous hands with up to 21 DoF per hand; likely refers to one hand model only.",
+      "source_ids": [
+        "booster-t2_source_006"
+      ]
+    },
+    {
+      "claim": "T2 official walking speed of 3 m/s should be treated as reliable without caveat",
+      "reason": "Resellers and media consistently state 2 m/s; conflict remains unresolved.",
+      "source_ids": [
+        "booster-t2_source_001",
+        "booster-t2_source_002",
+        "booster-t2_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Booster T2 is a purchasable 1.4 m, ~42 kg bipedal humanoid development platform from Booster Robotics, with 31 body DoF, 10 kg dual-arm payload, 140 Nm peak torque, 2 hours walking runtime, 48 V 10 Ah battery, and optional Jetson Thor T5000 2,070 TFLOPS compute. Official sources claim 3 m/s walking while resellers and press claim 2 m/s. A media-described demo video shows walking, fall recovery, and flips, but teleoperation status is not disclosed. The robot is sold by Generation Robots from €22,500 excl VAT and by US resellers from US$32,999; no named customer deployment or independent autonomy verification was found.",
+    "strongest_evidence": [
+      "Official product page with detailed specs and Buy now links.",
+      "Generation Robots public price and delivery window.",
+      "Interesting Engineering description of a dynamic demo video.",
+      "Robots International confirm July 10, 2026 launch and high-end compute."
+    ],
+    "weakest_evidence": [
+      "No independent benchmark or customer deployment.",
+      "Teleoperation/autonomy status unknown.",
+      "Walking speed conflict.",
+      "No video transcripts for direct observation."
+    ],
+    "known_do_not_credit": [
+      "Booster T1 RoboCup titles.",
+      "700+ units shipped company-wide as T2 deployment.",
+      "12 hand DoF from Humanoid.guide without caveat.",
+      "Unqualified 3 m/s walking speed."
+    ],
+    "recommended_confidence": "low"
+  }
+}

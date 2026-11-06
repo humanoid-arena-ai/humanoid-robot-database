@@ -1,0 +1,82 @@
+{
+  "id": "kawasaki-kaleido-9",
+  "name": "Kawasaki Kaleido 9",
+  "aliases": [
+    "RHP Kaleido 9",
+    "Kaleido"
+  ],
+  "companyId": "kawasaki-heavy-industries",
+  "companyName": "Kawasaki Heavy Industries",
+  "country": "Japan",
+  "announced": "2025-12-03",
+  "status": "prototype",
+  "category": "industrial",
+  "summary": "Kaleido 9 is the ninth generation of Kawasaki's Robust Humanoid Platform, a research line that began in 2015. It is 190 cm tall and 99 kg, and it was shown at iREX 2025 in Tokyo doing yard work and simulated rescue tasks. It can run autonomously or be teleoperated through a VR headset.",
+  "specs": {
+    "height_cm": {
+      "value": 190,
+      "original": "190 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 99,
+      "original": "99 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 30,
+      "original": "30 kg",
+      "sourceId": "s2"
+    },
+    "runtime_h": {
+      "value": 3,
+      "original": "Up to 3 hours per charge",
+      "sourceId": "s2"
+    },
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1.39,
+      "original": "Up to 5 km/h",
+      "sourceId": "s2"
+    }
+  },
+  "hands": null,
+  "sensors": "LiDAR and stereo cameras.",
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "First shown publicly at iREX 2025 (3-6 December 2025, Tokyo).",
+    "Built for rugged work, including disaster response.",
+    "Kawasaki plans a Kaleido Station unit for mobility and auto-recharging."
+  ],
+  "caveats": [
+    "R&D prototype with no price or sales channel.",
+    "Payload, runtime and speed come from a third-party database."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Kawasaki's Kaleido 9 Humanoid Robot",
+      "publisher": "Mike Kalil",
+      "url": "https://mikekalil.com/blog/kawasaki-kaleido-9-humanoid-robot/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Welcome, Kaleido 9!",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/welcome-kaleido-9/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "International Robot Exhibition (iREX2025)",
+      "publisher": "Kawasaki Robotics",
+      "url": "https://kawasakirobotics.com/in/event/international-robot-exhibition-irex2025/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

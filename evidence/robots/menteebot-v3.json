@@ -1,0 +1,641 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "menteebot-v3",
+    "name": "MenteeBot V3",
+    "company_id": "mentee-robotics",
+    "company_name": "Mentee Robotics",
+    "country": "Israel",
+    "generation": null,
+    "first_announced_date": "2026-01-06",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "Official specs and warehouse demos are stronger than before, but public customer-site proof remains future-dated or undisclosed.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as current after Mobileye's February 3, 2026 acquisition closed; public materials still frame customer POCs and commercialization as forward-looking."
+  },
+  "specs": {
+    "height": {
+      "original_value": "175cm Height",
+      "value": 175,
+      "unit": "cm",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "70kg Weight",
+      "value": 70,
+      "unit": "kg",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "Can carry up to 25kg",
+      "value": 25,
+      "unit": "kg",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "4 hours",
+      "value": 4,
+      "unit": "h",
+      "source_ids": [
+        "menteebot-v3_source_007"
+      ],
+      "notes": "Reported by Humanoid.guide, added 2026-10-29 by automated spec fill; Aggregator figure; other sources state 3+ hours or 180 min.."
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 40,
+      "notes": "Official product page lists 40 DoF.",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.5m/s",
+      "value": 1.5,
+      "unit": "m/s",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Official sources describe practical/strong robotic hands with motor-based tactile sensing and demos spanning grip, delicate touch, and precise placement.",
+      "degrees_of_freedom": null,
+      "force_feedback": "motor-based tactile sensing claimed",
+      "source_ids": [
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "integrated onboard sensors and drivers",
+        "voice interaction interface"
+      ],
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Official product page claims heavy-duty AI workload capability and advanced redundant fail-safe compute; no chipset or measured edge-compute benchmark found.",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Official sources claim self-made/proprietary actuators and precision motor drivers.",
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.menteebot.com/bot/",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official and media-reported demos show box handling and dexterous object-handling claims, but no independent benchmark or intervention-rate data.",
+      "evidence_level": 2,
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_003",
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Warehouse and dexterity demos are company-originated even when reported by media.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Mentee and CTech describe a two-robot warehouse run as autonomous and not teleoperated; Mobileye says first customer POCs are intended to be autonomous without teleoperation.",
+      "evidence_level": 2,
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_003",
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Autonomy claims are not supported by customer logs, raw telemetry, or third-party measurement.",
+        "No public intervention-rate or reset-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official page claims 1.5 m/s speed and demos/reporting describe stable locomotion in a warehouse task; no independent mobility benchmark found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_003",
+        "menteebot-v3_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Speed is company-claimed, not independently measured.",
+        "No public fall, recovery, terrain, or endurance mobility test data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official materials claim Sim2Real learning, NeRF-based real-time 3D mapping/localization, dynamic navigation, and LLM-based task execution.",
+      "evidence_level": 1,
+      "source_ids": [
+        "menteebot-v3_source_003",
+        "menteebot-v3_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Claims describe architecture and demos rather than measured perception accuracy.",
+        "No public object-recognition, localization, or planning benchmark was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official specs list voice interaction and company materials claim instruction following/human mentoring, but no third-party HRI evaluation found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Instruction-following evidence is company-presented.",
+        "No public conversational reliability, safety, or task-handoff benchmark was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Company claims hot-swappable batteries and an 18-minute unedited warehouse run, but Mobileye's SEC filing warns commercialization remains uncertain.",
+      "evidence_level": 1,
+      "source_ids": [
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005",
+        "menteebot-v3_source_006"
+      ],
+      "caveats": [
+        "No fleet uptime, MTBF, task-success rate, or shift-length data was found.",
+        "Hot-swap battery claims do not establish continuous production reliability.",
+        "The 18-minute demo is not equivalent to customer deployment endurance."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Warehouse-oriented size, payload, and box-handling demos support fit for structured logistics tasks, not broad home or unstructured work.",
+      "evidence_level": 2,
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_003",
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Strongest evidence is structured warehouse box handling.",
+        "Household applicability is an official goal, not proven deployment evidence."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Mobileye completed the Mentee acquisition and states customer POCs are expected in 2026, with series production/commercialization targeted for 2028; no named customer deployment found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_006"
+      ],
+      "caveats": [
+        "Customer POCs are expected/forward-looking, not confirmed with public customer metrics.",
+        "SEC risk language says commercialization timing and extent remain uncertain.",
+        "No public price, order book, named pilot customer, or production-unit count was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price, purchase path, developer SDK, or research-platform availability found.",
+      "evidence_level": 0,
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ],
+      "caveats": [
+        "Official page is informational, not a purchase page.",
+        "No pricing, ordering terms, waitlist, or developer access terms were found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "menteebot-v3_evidence_001",
+      "date": "2026-05-16",
+      "title": "Official product/spec source",
+      "claim": "Official MenteeBot V3 product page lists 175 cm height, 70 kg weight, 1.5 m/s speed, 25 kg carrying capacity, 40 DoF, and voice interaction.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; physical specs are not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "175cm Height; 70kg Weight; 1.5m/s; Can carry up to 25kg; DoF 40; Interacts through Voice.",
+      "source_location": "MenteeBot product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "menteebot-v3_evidence_002",
+      "date": "2026-01-06",
+      "title": "Mobileye acquisition roadmap and autonomy claim",
+      "claim": "Mobileye said first on-site customer proof-of-concept deployments were expected in 2026, intended to operate autonomously without teleoperation, with series production and commercialization targeted for 2028.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "menteebot-v3_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Forward-looking parent/partner press release; not proof that customer POCs have occurred.",
+      "arena_relevance": "Supports roadmap and intended autonomy, but customer-site proof remains future-dated.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "First on-site proof-of-concept deployments with customers expected in 2026; intended to operate autonomously without teleoperation; series production and commercialization targeted for 2028.",
+      "source_location": "Mobileye to acquire Mentee Robotics",
+      "verification_notes": "Treat as company roadmap language, not completed deployment evidence.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "menteebot-v3_evidence_003",
+      "date": "2026-05-16",
+      "title": "Official AI-first capability page distinguishes autonomous and teleoperated demos",
+      "claim": "Mentee's AI First page claims not-teleoperated end-to-end tasks, human mentoring, hot-swappable battery uptime, and agile motion, while several dexterity clips are explicitly marked teleoperated.",
+      "category": [
+        "autonomy_task_execution",
+        "human_interaction",
+        "manipulation_dexterity",
+        "endurance_reliability",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "menteebot-v3_source_003"
+      ],
+      "confidence": 0.7,
+      "notes": "Useful because it includes teleoperation labels; still company-authored and not independently benchmarked.",
+      "arena_relevance": "Supports some autonomy claims while preventing over-credit for teleoperated dexterity clips.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Out of the box autonomy - navigation, picking, and placing; Not Teleoperated. Dexterity in Action ... Teleoperated. Hot-swappable battery.",
+      "source_location": "Mentee Robotics AI First page",
+      "verification_notes": "Company page explicitly labels mixed teleoperation status; no raw telemetry or task success metrics provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "human_interaction",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "mixed"
+      }
+    },
+    {
+      "id": "menteebot-v3_evidence_004",
+      "date": "2025-11-26",
+      "title": "Two V3 MenteeBots reported completing autonomous warehouse box-moving demo",
+      "claim": "Mentee and CTech report two V3 robots autonomously picked boxes from piles of varying heights and placed them across racks, with Mentee's blog index describing 32 boxes from eight piles in an unedited 18-minute run.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "mobility_whole_body_control",
+        "human_environment_fit",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005"
+      ],
+      "confidence": 0.72,
+      "notes": "Media reports company-released demo; not a customer deployment or third-party benchmark.",
+      "arena_relevance": "Strongest public task evidence found for MenteeBot V3, scoped to structured warehouse box handling.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Two V3 MenteeBots complete a full warehouse logistics task... move 32 boxes from eight piles to multiple racks... unedited 18-minute run.",
+      "source_location": "Mentee Robotics blog index and CTech report",
+      "verification_notes": "The claim is source-backed, but this update did not manually timestamp-review the full video or verify continuity/frame cuts.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution",
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "moderate_positive"
+      }
+    },
+    {
+      "id": "menteebot-v3_evidence_005",
+      "date": "2026-03-28",
+      "title": "SEC filing confirms acquisition closed and flags commercialization uncertainty",
+      "claim": "Mobileye's Q1 2026 filing says it acquired Mentee Robotics on February 3, 2026, but warns humanoid robotics has long development timelines and commercialization timing/extent remains uncertain.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "menteebot-v3_source_006"
+      ],
+      "confidence": 0.85,
+      "notes": "Regulatory filing is strong for acquisition status and risk disclosure, not robot capability.",
+      "arena_relevance": "Raises confidence that Mentee is backed by Mobileye while keeping deployment/commercial proof conservative.",
+      "claim_type": "correction",
+      "supporting_excerpt": "On February 3, 2026, we acquired Mentee Robotics... timing and extent of commercialization of humanoid robotics solutions remains uncertain.",
+      "source_location": "Mobileye Global Inc. Form 10-Q, Q1 2026",
+      "verification_notes": "SEC filing confirms transaction close and explicitly cautions against assuming commercialization timing.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "endurance_reliability",
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "mixed"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "menteebot-v3_demo_001",
+      "title": "Two V3 MenteeBots warehouse logistics workflow",
+      "date": "2025-11-26",
+      "observed_capabilities": [
+        "Two robots reportedly picked boxes from uneven piles and placed them across multiple racks.",
+        "Official blog index says the run moved 32 boxes from eight piles in an unedited 18-minute video.",
+        "CTech reports the task was performed without teleoperation."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Company blog index describes an unedited 18-minute run, but this update did not manually timestamp-review the full video.",
+      "teleoperation_disclosed": true,
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "CTech reports the robots operated without teleoperation; Mentee's blog index labels the workflow autonomous. Treat as company-originated until raw video and controls are independently reviewed.",
+      "environment": "structured warehouse/logistics demo",
+      "source_ids": [
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark.",
+        "No public success/failure count, reset count, intervention log, or customer confirmation was found."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Reported warehouse workflow moved 32 boxes from eight piles to racks over an 18-minute unedited run.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "Autonomy claims are mostly official or company-demo reports; no independent benchmark, raw telemetry, or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "No named customer deployment, customer POC result, purchase availability, or production-unit count was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "Official height, weight, payload, speed, and DoF are now source-backed; runtime, detailed battery capacity, hand DoF, sensors, and chipset remain undisclosed.",
+      "impact_on_arena_scoring": "Credit only the listed official specs; do not infer endurance or platform accessibility."
+    },
+    {
+      "topic": "Commercialization risk",
+      "description": "Mobileye's SEC filing says humanoid robotics commercialization remains uncertain with respect to scalability, economic viability, and regulatory approval.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "menteebot-v3_source_001",
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_003",
+        "menteebot-v3_source_004",
+        "menteebot-v3_source_005"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "menteebot-v3_source_001"
+      ]
+    },
+    {
+      "claim": "Confirmed customer deployment or commercial availability",
+      "reason": "Mobileye describes customer POCs and commercialization as expected/targeted; no public customer metrics, price, or purchase path was found.",
+      "source_ids": [
+        "menteebot-v3_source_002",
+        "menteebot-v3_source_006"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium_high",
+    "primary_sources_count": 5,
+    "secondary_sources_count": 1,
+    "independent_sources_count": 1,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "MenteeBot V3 has stronger source-backed evidence than the previous weak pack: official specs list a 175 cm, 70 kg, 40-DoF biped with 25 kg carry capacity and 1.5 m/s speed, and Mentee/CTech report a two-robot autonomous warehouse demo moving 32 boxes in an 18-minute unedited run. Still score conservatively: there is no named customer deployment, independent benchmark, intervention-rate data, price, or public purchase path, and Mobileye's SEC filing explicitly cautions that humanoid commercialization remains uncertain.",
+    "strongest_evidence": [
+      "Official MenteeBot page: 175 cm, 70 kg, 1.5 m/s, 25 kg carry, 40 DoF, voice interaction.",
+      "Official/media-reported warehouse demo: two V3 robots, 32 boxes, eight piles, multiple racks, 18-minute unedited run, claimed no teleoperation.",
+      "Mobileye SEC filing confirms the Mentee acquisition closed on February 3, 2026."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "No named customer deployment, customer metrics, or intervention/failure-rate data.",
+      "Several dexterity clips on Mentee's AI First page are explicitly marked teleoperated."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced.",
+      "Commercial availability or 2028 production as already achieved."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "menteebot-v3_source_001",
+    "menteebot-v3_source_002",
+    "menteebot-v3_source_003",
+    "menteebot-v3_source_004",
+    "menteebot-v3_source_005",
+    "menteebot-v3_source_006",
+    "menteebot-v3_source_007"
+  ],
+  "sources": [
+    {
+      "id": "menteebot-v3_source_001",
+      "title": "MenteeBot",
+      "publisher": "Mentee Robotics",
+      "url": "https://www.menteebot.com/bot/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official source for claimed specs: 175 cm, 70 kg, 1.5 m/s, 25 kg carry, 40 DoF, voice interaction."
+    },
+    {
+      "id": "menteebot-v3_source_002",
+      "title": "Mobileye to acquire Mentee Robotics",
+      "publisher": "Mobileye",
+      "url": "https://www.mobileye.com/news/mobileye-to-acquire-mentee-robotics-to-accelerate-physical-ai-leadership/",
+      "date_published": "2026-01-06",
+      "date_accessed": "2026-05-16",
+      "source_type": "partner_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Parent/acquirer announcement; strong for roadmap language, weak for completed deployment proof."
+    },
+    {
+      "id": "menteebot-v3_source_003",
+      "title": "AI First",
+      "publisher": "Mentee Robotics",
+      "url": "https://www.menteebot.com/aifirst/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official capability page with useful teleoperation labels; company-authored and not benchmarked."
+    },
+    {
+      "id": "menteebot-v3_source_004",
+      "title": "Two MenteeBots Working Together in an Autonomous Warehouse Task",
+      "publisher": "Mentee Robotics",
+      "url": "https://www.menteebot.com/blog/menteebot-warehouse-task/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official blog/video context; blog index describes 32 boxes, eight piles, multiple racks, and an unedited 18-minute run."
+    },
+    {
+      "id": "menteebot-v3_source_005",
+      "title": "After raising more than $40M, Mentee demonstrates practical use case for humanoids",
+      "publisher": "CTech by Calcalist",
+      "url": "https://www.calcalistech.com/ctechnews/article/skctzanwzg",
+      "date_published": "2025-11-26",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Credible media report on company-released demo; not a customer or independent benchmark."
+    },
+    {
+      "id": "menteebot-v3_source_006",
+      "title": "Mobileye Global Inc. Form 10-Q for quarter ended March 28, 2026",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1910139/000110465926047712/mbly-20260328x10q.htm",
+      "date_published": "2026-04-24",
+      "date_accessed": "2026-05-16",
+      "source_type": "regulatory_or_filing",
+      "reliability": "high",
+      "reliability_notes": "Confirms acquisition close and includes commercialization-risk language; not a robot capability benchmark."
+    },
+    {
+      "id": "menteebot-v3_source_007",
+      "title": "Mentee Robotics MenteeBot V3 Specs & Price | Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/product/menteebot-v3/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Credit MenteeBot V3 for official specs and a structured warehouse demo claim, but do not score it like a deployed customer robot.",
+    "strongest_positive_evidence": [
+      "Official product page lists 175 cm, 70 kg, 1.5 m/s, 25 kg carry, 40 DoF, and voice interaction.",
+      "Mentee/CTech report a two-robot warehouse workflow moving 32 boxes in an 18-minute unedited run without teleoperation.",
+      "Mobileye acquisition closed on February 3, 2026, according to SEC filing."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark.",
+      "Missing intervention/failure-rate data.",
+      "No named customer deployment, customer metrics, price, or purchase availability."
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions",
+      "Commercial-scale deployment before it is publicly documented"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "agibot-x2",
+  "name": "AgiBot X2",
+  "aliases": ["Lingxi X2", "X2 Ultra", "AgiBot Lingxi X2"],
+  "companyId": "agibot",
+  "companyName": "AgiBot",
+  "country": "China",
+  "announced": "2025-03-11",
+  "status": "purchasable",
+  "category": "service",
+  "summary": "X2 (Lingxi X2) is AgiBot's 1.31 m, 35 kg compact humanoid for interaction, education, research and light service tasks. The base X2 has 25 DoF; the X2 Ultra adds DoF, an Orin NX module, RGB-D and LiDAR for development use.",
+  "specs": {
+    "height_cm": { "value": 131, "original": "Approximately 1.31 m", "sourceId": "s1" },
+    "weight_kg": { "value": 35, "original": "X2 (approx. 35 kg) | X2 Ultra (approx. 39 kg)", "sourceId": "s1" },
+    "payload_kg": { "value": 3, "original": "Max 3 kg in specific postures; <=1 kg across full range", "sourceId": "s1" },
+    "runtime_h": { "value": 2, "original": "~2 hours at 0.5 m/s walking speed", "sourceId": "s1" },
+    "dof": { "value": 25, "original": "X2: 25 total DOF; X2 Ultra: 30 total DOF", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 1.8, "original": "Up to 1.8 m/s (typical <=0.8 m/s)", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": "X2: RGB camera, head touch sensor, microphone array. X2 Ultra adds RGB-D camera, multi-line LiDAR and extra RGB cameras.",
+  "compute": "X2: dual RK3588. X2 Ultra: dual RK3588 plus NVIDIA Orin NX (157 TOPS).",
+  "price": { "value": 24240, "currency": "USD", "priceType": "list", "configuration": "Standard X2 on AgiBot's international store, per Robozaps (shipping and duties extra)", "sourceId": "s2" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": null,
+  "highlights": [
+    "China Youth Edition priced at 98,000 yuan, per Robozaps.",
+    "AgiBot aimed for several thousand X2 units by end of 2026, per TMTPost.",
+    "About 500 Wh battery, charges in 1.5 hours or less."
+  ],
+  "caveats": [
+    "The base X2 does not support secondary development; that needs Pro or Ultra variants (Robozaps).",
+    "USD price was taken from a reseller blog citing the official store, not from the store directly."
+  ],
+  "sources": [
+    { "id": "s1", "title": "AGIBOT X2 product page", "publisher": "AgiBot", "url": "https://www.agibot.com/products/X2", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "AgiBot Lingxi X2 Price 2026: $24,240 Cost, Specs & Buy", "publisher": "Robozaps", "url": "https://blog.robozaps.com/b/agibot-lingxi-x2-review-a-leap-forward-in-humanoid-robotics", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "China's AgiBot Launches Partnership for Humanoid Robot Lingxi X2, Eyes Mass Production by 2026", "publisher": "TMTPost", "url": "https://en.tmtpost.com/post/7574620", "accessed": "2026-10-14" }
+  ]
+}

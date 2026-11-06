@@ -1,0 +1,572 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "xpeng-iron",
+    "name": "XPeng IRON",
+    "company_id": "xpeng",
+    "company_name": "XPeng",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2025-11-05",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Next-Gen IRON is supported by official launch specs, a public stage walking demo, and a commercial roadmap; no independently verified productive deployment or benchmark was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as prototype based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "1780 mm",
+      "value": 178,
+      "unit": "cm",
+      "source_ids": [
+        "xpeng-iron_source_005"
+      ],
+      "notes": "Reported by RoboZaps, added 2026-10-29 by automated spec fill; RoboZaps spec table; listed as manufacturer confirmed, not an XPENG page.."
+    },
+    "weight": {
+      "original_value": "70 kg",
+      "value": 70,
+      "unit": "kg",
+      "source_ids": [
+        "xpeng-iron_source_005"
+      ],
+      "notes": "Reported by RoboZaps, added 2026-10-29 by automated spec fill; RoboZaps spec table; listed as manufacturer confirmed, not an XPENG page.."
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "XPeng claims Next-Gen IRON is the first humanoid robot to use an all-solid-state battery; capacity and runtime were not disclosed.",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 82,
+      "notes": "Officially claimed for Next-Gen IRON across the body; not independently measured.",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "hands": {
+      "description": "Human-scale dexterous hand using a small harmonic joint, per XPeng.",
+      "degrees_of_freedom": 22,
+      "force_feedback": null,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": "Three in-house Turing AI chips with claimed effective on-board compute of 3000 TOPS, running XPeng's physical-world model stack.",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "XPeng describes a humanoid spine, bionic muscles, flexible skin, and small harmonic joints in the hands; actuator torque/spec sheets were not found.",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ]
+    },
+    "availability": {
+      "availability_status": "unknown",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7",
+      "source_ids": [
+        "xpeng-iron_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Officially claimed 22-DoF hand, but no public useful manipulation benchmark or task-completion evidence was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public materials describe hardware dexterity, not successful autonomous manipulation tasks.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "XPeng claims a VLT+VLA+VLM stack for conversation, walking, and interaction, but no independent autonomous task benchmark was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Claims are model-stack and roadmap claims, not measured task-completion evidence.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Public stage demo and official launch materials support biped walking/posture claims in a controlled setting.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_002",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "XPeng claims physical-world model support for interaction, but public evidence does not include independent scene-understanding tests.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official roadmap targets guided tours, shopping guidance, traffic diversion, and SDK-based applications; no public customer interaction metrics were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "All-solid-state battery and safety/privacy claims exist, but no runtime, uptime, fall-rate, or maintenance data was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Humanoid spine, flexible skin, human-scale hand, and commercial-service target scenarios support human-environment intent, not proven general fit.",
+      "evidence_level": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "XPeng targets large-scale mass production by end-2026 and says Baosteel will explore IRON inspection applications; this is roadmap/partner intent, not completed deployment.",
+      "evidence_level": 2,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "caveats": [
+        "Baosteel evidence is framed as future exploration/stationing, not published operating results.",
+        "No shipped-unit count, customer contract, uptime, or task-success data was found.",
+        "Mass production is an aim for end-2026, not evidence of current availability."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No public price, purchase path, or delivery terms were found.",
+      "evidence_level": 0,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "xpeng-iron_evidence_001",
+      "date": "2025-11-05",
+      "title": "Official Next-Gen IRON hardware and compute claims",
+      "claim": "XPeng says Next-Gen IRON has 82 total degrees of freedom, a 22-DoF hand, an all-solid-state battery, and three Turing AI chips with 3000 TOPS effective compute.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "confidence": 0.82,
+      "notes": "Official and state-media reporting align on the core claimed specs; no independent measurement was found.",
+      "arena_relevance": "Establishes concrete claimed hardware capabilities, while not proving useful work.",
+      "claim_type": "spec",
+      "supporting_excerpt": "With 82 degrees of freedom throughout the body... the hand has 22 degrees of freedom... equipped with 3 Turing AI chips, with an effective computing power of 3000 TOPS.",
+      "source_location": "XPENG Shares Achievements in Physical AI Emergence, humanoid robot section",
+      "verification_notes": "Company claim corroborated as reported claim by CGTN; not independently tested.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs",
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xpeng-iron_evidence_002",
+      "date": "2025-11-07",
+      "title": "Public stage demo showed walking and exposed internals, not useful work",
+      "claim": "Live Science reported IRON's AI Day unveiling, including the stage walk and XPeng cutting open the robot to address claims that a person was inside.",
+      "category": [
+        "mobility_whole_body_control",
+        "demos"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "xpeng-iron_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Useful as public demo context only; source does not establish teleoperation status, continuity, or task success.",
+      "arena_relevance": "Supports limited controlled-stage mobility evidence and existence of a physical robot.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The machine is equipped with 82 degrees of freedom, including 22 in each hand.",
+      "source_location": "Live Science article, IRON man section",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xpeng-iron_evidence_003",
+      "date": "2025-11-05",
+      "title": "Commercial roadmap and Baosteel exploration claim",
+      "claim": "XPeng says Next-Gen IRON will first prioritize commercial scenarios such as guided tours, shopping guides, and traffic diversion; Baosteel is named as an ecosystem partner for exploring inspection and other industrial scenarios.",
+      "category": [
+        "deployment_commercial_proof",
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "confidence": 0.72,
+      "notes": "This is future-looking roadmap evidence, not completed deployment evidence.",
+      "arena_relevance": "Clarifies intended commercial path and partner exploration without proving field performance.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Next-Gen IRON will prioritize entering commercial scenarios to provide services such as guided tours, shopping guides, and traffic diversion.",
+      "source_location": "XPENG Shares Achievements in Physical AI Emergence, monetization plan paragraph",
+      "verification_notes": "Official claim also summarized by CGTN; no Baosteel operating metrics found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "xpeng-iron_evidence_004",
+      "date": "2024-11-06",
+      "title": "First-generation IRON context",
+      "claim": "CnEVPost reported XPeng's first-generation IRON as 178 cm, 70 kg, with over 60 joints, and said it was working its way into XPeng factories.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "xpeng-iron_source_004"
+      ],
+      "confidence": 0.68,
+      "notes": "Historical first-generation context only; do not apply the height/weight values to Next-Gen IRON unless a current official source confirms them.",
+      "arena_relevance": "Shows platform continuity and earlier factory-intent reporting, but remains weak proof of production work.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Iron stands 178 cm tall and weighs 70 kg... currently working its way into Xpeng's factories.",
+      "source_location": "CnEVPost 2024 AI Day article, Humanoid robot Iron section",
+      "verification_notes": "Credible EV trade reporting of company event; no factory metrics or third-party audit.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "xpeng-iron_deployment_001",
+      "customer": "Baosteel Stock / Baoshan Iron & Steel Co., Ltd.",
+      "date": "2025-11-05",
+      "status": "announced_partner_exploration",
+      "description": "XPeng says Baosteel will become an ecosystem partner and that IRON will be stationed at Baosteel to explore inspection and other complex industrial scenarios.",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_003"
+      ],
+      "notes": "No public task logs, uptime, fleet size, acceptance criteria, or customer-authored operating results were found."
+    }
+  ],
+  "demos": [
+    {
+      "id": "xpeng-iron_demo_001",
+      "title": "XPeng IRON public demo/context",
+      "date": "2025-11-07",
+      "observed_capabilities": [
+        "Catwalk-like biped walking in a public launch setting",
+        "Externally exposed structure during a suit-rumor response"
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_002",
+        "xpeng-iron_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Public reporting and XPeng launch materials describe a controlled stage walking demo with human-like gait; no useful task was demonstrated in the reviewed sources.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark, task-success rate, intervention rate, or raw autonomous task log was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Baosteel evidence is an announced exploration/partner plan, and first commercial scenarios are roadmap claims rather than completed deployments.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "Next-Gen IRON height, weight, payload, walking speed, runtime, battery capacity, sensors, and actuator performance were not found in reviewed current public sources.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Generation mixing",
+      "description": "2024 first-generation IRON reports include 178 cm and 70 kg, but those values were not confirmed for the 2025 Next-Gen IRON.",
+      "impact_on_arena_scoring": "Do not use first-generation dimensions as current Next-Gen IRON specs without a current source."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "xpeng-iron_source_001",
+        "xpeng-iron_source_002",
+        "xpeng-iron_source_003"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "xpeng-iron_source_001"
+      ]
+    },
+    {
+      "claim": "Current Next-Gen IRON height/weight from 2024 first-generation reports",
+      "reason": "The 2024 178 cm / 70 kg values apply to the earlier IRON event report and were not found in the current Next-Gen IRON launch materials.",
+      "source_ids": [
+        "xpeng-iron_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "XPeng Next-Gen IRON has stronger source-backed hardware evidence than the previous weak pack showed: official materials claim 82 total DoF, 22-DoF hands, an all-solid-state battery, bionic spine/muscle/skin construction, and three Turing AI chips at 3000 TOPS. The useful-work case remains weak: public evidence is a controlled stage walking demo plus a roadmap toward commercial service scenarios and Baosteel exploration, with no independent task benchmark or deployment metrics.",
+    "strongest_evidence": [
+      "Official Next-Gen IRON claims: 82 total DoF, 22-DoF hand, all-solid-state battery, and 3 Turing AI chips with 3000 TOPS effective compute.",
+      "Official roadmap names commercial service scenarios and Baosteel exploration for inspection, but not completed deployment results.",
+      "Live Science and CGTN report the controlled public walking demo and suit-rumor response."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "No public intervention/failure-rate, uptime, task-success, or raw autonomous task logs.",
+      "Teleoperation/editing details remain unclear for public demo footage."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "xpeng-iron_source_001",
+    "xpeng-iron_source_002",
+    "xpeng-iron_source_003",
+    "xpeng-iron_source_004",
+    "xpeng-iron_source_005"
+  ],
+  "sources": [
+    {
+      "id": "xpeng-iron_source_001",
+      "title": "XPENG Shares Achievements in Physical AI Emergence",
+      "publisher": "XPeng",
+      "url": "https://www.xpeng.com/pressroom/news/019a56f54fe99a2a0a8d8a0282e402b7",
+      "date_published": "2025-11-05",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Primary source for Next-Gen IRON launch specs, roadmap, Baosteel exploration, SDK plan, and mass-production target; company claims only."
+    },
+    {
+      "id": "xpeng-iron_source_002",
+      "title": "Watch: Chinese company’s new humanoid robot moves so smoothly",
+      "publisher": "Live Science",
+      "url": "https://www.livescience.com/technology/robotics/watch-chinese-companys-new-humanoid-robot-moves-so-smoothly-they-had-to-cut-it-open-to-prove-a-person-wasnt-hiding-inside",
+      "date_published": "2025-11-07",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable media context for stage demo and suit-rumor response; not useful-task proof."
+    },
+    {
+      "id": "xpeng-iron_source_003",
+      "title": "Chinese EV maker XPENG unveils Next-Gen IRON humanoid at its AI Day 2025",
+      "publisher": "CGTN",
+      "url": "https://news.cgtn.com/news/2025-11-06/Chinese-EV-maker-XPENG-unveils-Next-Gen-IRON-humanoid-1I5gaZuUKTS/share_amp.html",
+      "date_published": "2025-11-06",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Corroborates XPeng's reported launch claims and deployment roadmap; state-media/event report, not independent testing."
+    },
+    {
+      "id": "xpeng-iron_source_004",
+      "title": "Xpeng AI Day: Hybrid system, AI chip, flying cars, humanoid robot, and more",
+      "publisher": "CnEVPost",
+      "url": "https://cdn.cnevpost.com/2024/11/06/xpeng-2024-ai-day/",
+      "date_published": "2024-11-06",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Useful for first-generation IRON context and historical factory-intent reporting; do not apply 2024 dimensions to 2025 Next-Gen IRON."
+    },
+    {
+      "id": "xpeng-iron_source_005",
+      "title": "Xpeng Iron - Specifications & Deployment Status",
+      "publisher": "RoboZaps",
+      "url": "https://robozaps.com/products/xpeng-iron",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Stronger official hardware evidence than before, but still weak for autonomy and deployment: stage walking plus roadmap/partner exploration, not proven useful work.",
+    "strongest_positive_evidence": [
+      "XPeng's official launch claims 82 total DoF, 22-DoF hands, all-solid-state battery, bionic spine/muscle/skin construction, and 3 Turing AI chips with 3000 TOPS.",
+      "Official launch materials name commercial service scenarios and Baosteel exploration.",
+      "Live Science/CGTN provide credible public-demo context, but only for staged walking and existence."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "No intervention, failure-rate, uptime, task-success, or shipped-unit data",
+      "No current public height, weight, payload, runtime, walking speed, or price for Next-Gen IRON"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

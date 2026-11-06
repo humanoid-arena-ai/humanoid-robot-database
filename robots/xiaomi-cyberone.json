@@ -1,0 +1,88 @@
+{
+  "id": "xiaomi-cyberone",
+  "name": "Xiaomi CyberOne",
+  "aliases": [
+    "CyberOne"
+  ],
+  "companyId": "xiaomi",
+  "companyName": "Xiaomi",
+  "country": "China",
+  "announced": "2022-08-11",
+  "status": "superseded",
+  "category": "general",
+  "summary": "CyberOne is Xiaomi's first full-size humanoid, shown in August 2022 at 177 cm and 52 kg with 21 DoF and an OLED face panel. It was a technology demonstrator and was never sold. A second-generation CyberOne appeared in 2026.",
+  "specs": {
+    "height_cm": {
+      "value": 177,
+      "original": "177 centimeters",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 52,
+      "original": "52 kilograms",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 2.72155422,
+      "original": "6 pounds",
+      "sourceId": "s3"
+    },
+    "runtime_h": null,
+    "dof": {
+      "value": 21,
+      "original": "21 degrees of freedom",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1,
+      "original": "around 3.6 km/h",
+      "sourceId": "s4"
+    }
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Curved OLED module on the face shows interactive information.",
+    "Xiaomi framed it as exploratory technology for its wider product ecosystem.",
+    "Unveiled at a Xiaomi launch event in Beijing on 2022-08-11; peak joint torque up to 300 N·m."
+  ],
+  "caveats": [
+    "Never offered for sale.",
+    "IEEE Spectrum noted it was not intended to be very useful as a product."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Xiaomi Builds a Humanoid Robot for Some Reason",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/humanoid-robot-xiaomi-cyberone",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Xiaomi unveiled a humanoid robot called CyberOne",
+      "publisher": "Technobaboy",
+      "url": "https://www.technobaboy.com/2022/08/16/xiaomi-cyberone-robot/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "Xiaomi Unleashes Humanoid Robots on Factory Floors",
+      "publisher": "Manufacturing Today",
+      "url": "https://manufacturing-today.com/news/xiaomi-unleashes-humanoid-robots-on-factory-floors/",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": "s4",
+      "title": "Xiaomi Cyberone Humanoid Robot",
+      "publisher": "robotsusa.com",
+      "url": "https://www.robotsusa.com/Xiaomi-Cyberone.htm",
+      "accessed": "2026-10-29"
+    }
+  ]
+}

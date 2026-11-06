@@ -1,0 +1,81 @@
+{
+  "robotId": "agility-digit",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "lease_or_raas",
+  "purchasePathNote": "Agility sells Digit through its sales team, mainly as Robots-as-a-Service (RaaS) where Agility keeps ownership and charges a monthly fee. Its investor presentation also mentions outright purchase with a deployment fee. No public list price.",
+  "configurations": [
+    {
+      "name": "Digit RaaS (per robot, per month)",
+      "price": 8500,
+      "currency": "USD",
+      "priceType": "reported",
+      "region": "US",
+      "notes": "Illustrative figure in Agility's investor presentation dated October 6, 2026: '$8,500 monthly RaaS pricing per Digit', plus about $25,000 one-time deployment fee. Actual terms depend on each customer agreement.",
+      "sourceLabel": "Agility Robotics investor presentation (SEC filing)",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026107259/ea030784201ex99-1.htm",
+      "checkedAt": "2026-10-14",
+      "period": "month"
+    },
+    {
+      "name": "Digit (outright purchase)",
+      "price": null,
+      "currency": "USD",
+      "priceType": "reported",
+      "region": "US",
+      "notes": "The investor presentation mentions upfront purchase plus a one-time ~$20,000 deployment fee but does not state the robot's purchase price.",
+      "sourceLabel": "Agility Robotics investor presentation (SEC filing)",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026107259/ea030784201ex99-1.htm",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "Agility Robotics sales",
+      "type": "official",
+      "url": "https://www.agilityrobotics.com/solutions",
+      "region": "US",
+      "offers": "No price shown. 'Deploy Digit' contact form: 'Our team can help you find the right configuration for your operation.'",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "Agility Robotics RaaS",
+      "url": "https://www.agilityrobotics.com/solutions",
+      "region": "US",
+      "notes": "Sales-led Robots-as-a-Service contracts. GXO signed a multi-year RaaS agreement for Digit after a pilot. Investor materials use $8,500 per robot per month as an illustrative rate."
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2026-10-06",
+      "price": 8500,
+      "currency": "USD",
+      "event": "Investor presentation uses $8,500 per month RaaS pricing per Digit (illustrative)",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026107259/ea030784201ex99-1.htm"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy Agility Digit?",
+      "a": "Only through Agility's sales team, mostly as a Robots-as-a-Service contract. There is no public order page or list price.",
+      "sourceUrl": "https://www.agilityrobotics.com/solutions"
+    },
+    {
+      "q": "How much does Digit cost?",
+      "a": "Agility has not published a list price. Its October 2026 investor presentation uses $8,500 per robot per month for RaaS, plus about $25,000 one-time deployment fee, as an illustrative figure.",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026107259/ea030784201ex99-1.htm"
+    },
+    {
+      "q": "Is Digit priced at $30 an hour?",
+      "a": "No. CEO Peggy Johnson cited a fully loaded human labor cost of $30 an hour as the benchmark for an under-2-year return on investment. It is not Digit's rental rate.",
+      "sourceUrl": "https://www.therobotreport.com/heres-what-it-could-cost-to-hire-a-digit-humanoid/"
+    },
+    {
+      "q": "Who uses Digit today?",
+      "a": "GXO deploys Digit in logistics under a multi-year RaaS agreement.",
+      "sourceUrl": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement"
+    }
+  ],
+  "notes": "All pricing is from investor materials and is illustrative, not a quote. Expect per-deployment terms, a deployment fee and site integration costs. Digit v5 was launched in September 2026; pricing may differ by generation."
+}

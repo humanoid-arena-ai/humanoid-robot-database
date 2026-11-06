@@ -1,0 +1,46 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "engineai",
+    "name": "EngineAI",
+    "country": "China",
+    "website": "https://en.engineai.com.cn/",
+    "founded": 2023,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "engineai-pm01",
+    "engineai-t800",
+    "engineai-se01"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Seed round in 2024 (about $4.5 million raised by end of 2024, per The Robot Report); Series B of $200 million in April 2026 at about $1.5 billion valuation, per Wikipedia."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "engineai_source_001",
+      "title": "Engine AI",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Engine_AI",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "engineai_source_002",
+      "title": "EngineAI releases PM01 humanoid robot for commercial, educational use",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/engineai-releases-pm01-humanoid-robot-for-commercial-educational-use/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

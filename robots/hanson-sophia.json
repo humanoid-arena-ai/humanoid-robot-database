@@ -1,0 +1,66 @@
+{
+  "id": "hanson-sophia",
+  "name": "Sophia",
+  "aliases": [
+    "Sophia the Robot"
+  ],
+  "companyId": "hanson-robotics",
+  "companyName": "Hanson Robotics",
+  "country": "Hong Kong",
+  "announced": "2016-02-14",
+  "status": "commercial",
+  "category": "entertainment",
+  "summary": "Sophia is a social humanoid from Hanson Robotics, best known for media appearances and talks since 2016. It uses Frubber skin to show facial expressions and can sit on a wheeled mobile base. It is mainly a technology demonstrator, not a work robot.",
+  "specs": {
+    "height_cm": {
+      "value": 167,
+      "original": "167 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 20,
+      "original": "20 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": {
+      "value": 83,
+      "original": "83 total",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": "Arms and hands with 15 DoF each side, touch sensors in the fingers.",
+  "sensors": "Intel RealSense chest camera, two 720p eye cameras, microphone, joint force sensors, finger touch sensors, IMU.",
+  "compute": "3 GHz Intel i7, 32 GB RAM, integrated GPU.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Activated on 14 February 2016; first public appearance at SXSW in March 2016.",
+    "Granted Saudi Arabian citizenship in October 2017.",
+    "Named UNDP Innovation Champion for Asia and the Pacific in November 2017."
+  ],
+  "caveats": [
+    "Primarily a technology demonstrator for media and events, not a work robot.",
+    "No verified public price."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Sophia: A realistic humanoid robot",
+      "publisher": "Wevolver",
+      "url": "https://www.wevolver.com/specs/sophia-a-realistic-humanoid-robot",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Sophia (robot)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sophia_(robot)",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

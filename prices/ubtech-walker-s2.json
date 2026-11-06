@@ -1,0 +1,58 @@
+{
+  "robotId": "ubtech-walker-s2",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "contact_sales",
+  "purchasePathNote": "UBTECH sells Walker S2 through enterprise contracts. The product page has no price and directs buyers to a contact form.",
+  "configurations": [
+    {
+      "name": "Walker S2 (US reseller listing)",
+      "price": 246600,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "",
+      "sourceLabel": "RobotShop",
+      "sourceUrl": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "UBTECH Robotics (official)",
+      "type": "official",
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+      "region": "Global",
+      "offers": "No public price; 'Contact Us' form.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotShop",
+      "type": "reseller",
+      "url": "https://www.robotshop.com/products/ubtech-walker-s2-industrial-humanoid-robot",
+      "region": "US",
+      "offers": "UBTECH Walker S2 Industrial Humanoid Robot - $246,600.00.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy the UBTECH Walker S2?",
+      "a": "Only through UBTECH sales or a reseller quote. UBTECH does not publish a price and asks buyers to use its contact form.",
+      "sourceUrl": "https://www.ubtrobot.com/en/humanoid/products/walker-s2"
+    },
+    {
+      "q": "How much does the Walker S2 cost?",
+      "a": "UBTECH has not published a price. RobotShop lists it at $246,600. UBTECH says Walker-series orders since early 2025 exceed 800 million yuan, including a 250 million yuan order in September 2025, but it did not give unit counts or unit prices.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/ubtech-humanoid-robot-walker-s2-begins-mass-production-and-delivery-with-orders-exceeding-800-million-yuan-302616924.html"
+    },
+    {
+      "q": "Is the Walker S2 in production?",
+      "a": "UBTECH says Walker S2 is in mass production and delivery, with targets of 500 units delivered in 2025, 5,000 units of annual capacity in 2026 and 10,000 in 2027.",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/ubtech-humanoid-robot-walker-s2-begins-mass-production-and-delivery-with-orders-exceeding-800-million-yuan-302616924.html"
+    }
+  ],
+  "notes": "No official price. Third-party sites quote figures from $68,000 to $300,000 without sources; they are not included. Contract values are for orders of many units and cannot be turned into a unit price.",
+  "researchNotes": "RobotShop listing price as shown in search results; page blocks automated access, so stock status and inclusions are not confirmed. from search listing Reseller pages for RobotsUSA, Robots Europa and Robots International could not be opened, so their prices are not included."
+}

@@ -1,0 +1,908 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "tiangong",
+    "name": "Tiangong",
+    "company_id": "x-humanoid",
+    "company_name": "Beijing Humanoid Robot Innovation Center (X-Humanoid)",
+    "country": "China",
+    "generation": "first-generation Tiangong platform (recorded later as Tiangong 1.0 / launch configuration 'Tiangong 1.0 LITE')",
+    "first_announced_date": "2024-04-27",
+    "release_date": null,
+    "status": "superseded",
+    "status_notes": "Public debut recorded as 2024-04-27 in Beijing (tiangong_source_002); New Atlas covered the unveiling on 2024-05-07 (tiangong_source_001). The centre's own model line moved on to Tiangong 1.1 PRO, 1.2 MAX, Walker, Ultra, Omni, 2.0 and 3.0 (tiangong_source_002, tiangong_source_003, tiangong_source_004), so the original platform is superseded as the current product. SteelReel lists commercial status 'RESEARCH; Research-only' and acquisition model 'NOT_FOR_SALE' with no verified procurement channel; no price, pre-order or customer was found for this robot.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "open research platform for embodied-intelligence and motion-control work",
+      "shared hardware base for collecting training data",
+      "open-source hardware/software base for third-party development",
+      "manufacturing, fulfilment and home use cited only as future possibilities"
+    ],
+    "last_updated": "2026-10-30"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.63 m (5.4 ft)",
+      "value": 163,
+      "unit": "cm",
+      "notes": "New Atlas gives 1.63 m; SteelReel records 163 cm from the manufacturer launch article. Both refer to the original 163 cm / 43 kg configuration, not to 1.2 MAX (173 cm) or Walker (173 cm).",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "weight": {
+      "original_value": "43 kg (~95 lb)",
+      "value": 43,
+      "unit": "kg",
+      "notes": "Consistent across both sources for the original configuration.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload figure for the original Tiangong was found in the reviewed sources. Do not borrow the payload statements made for later variants such as 1.2 MAX.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime, operating duration or endurance figure was published in the reviewed sources.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": "48-V/15-Ah",
+      "value": null,
+      "unit": null,
+      "notes": "New Atlas gives a 48-V/15-Ah pack without stating energy capacity, chemistry or swappability. SteelReel's power-management note states that no public battery pack details were found in its source set.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "6 km/h (3.7 mph)",
+      "value": 1.67,
+      "unit": "m/s",
+      "notes": "6 km/h is the launch figure (New Atlas; SteelReel also records the documented claim as 'a steady 6 km/h'). SteelReel's own Tiangong dossier separately lists a 'Maximum demonstrated speed 12.0 km/h' and a 3.3333 m/s running field attributed to the manufacturer site; that value conflicts with the 6 km/h launch reporting and is treated as an unresolved family-level claim.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "original_value": "20",
+      "value": 20,
+      "unit": "count",
+      "notes": "SteelReel records 20 DoF for the launch configuration, citing a Chinese government science and technology history of the Tiangong series. New Atlas describes three degrees of freedom per arm and six joints per leg, which does not obviously sum to 20 without torso/head joints; the breakdown is unresolved.",
+      "source_ids": [
+        "tiangong_source_002"
+      ]
+    },
+    "hands": {
+      "description": "New Atlas reports that the launch robot lacks human-like hands at this stage of development and that the arms have three degrees of freedom each. No hand hardware, finger count, end-effector or in-hand sensing was disclosed.",
+      "degrees_of_freedom": null,
+      "force_feedback": "Six-axis force sensors are listed for force feedback; no hand-specific tactile or force sensing was disclosed.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "3D vision sensors",
+        "advanced inertial measurement units (IMU)",
+        "six-axis force sensors for force feedback",
+        "onboard Wi-Fi"
+      ],
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "compute": {
+      "description": "The developers claim 550 trillion operations per second of onboard compute. No processor model, memory, or benchmark was disclosed. The source sentence reads '550 trillion operations for second'; the typo is reproduced verbatim in the excerpt.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "actuators": {
+      "description": "Fully electric actuation. New Atlas reports three degrees of freedom per arm and six joints per leg; no actuator model, torque rating, gear ratio or control bandwidth was published for the original Tiangong.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Presented as an open-source research platform. SteelReel lists commercial status 'RESEARCH; Research-only', acquisition model 'NOT_FOR_SALE', procurement channel 'NO_VERIFIED_CHANNEL'. The 299,000 yuan price reported for Tiangong Walker belongs to that later model, not to this robot.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002",
+        "tiangong_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "The launch robot is reported to lack human-like hands, with three-DoF arms and six-axis force sensors mentioned only as a sensing feature. No grasping, tool-use or in-hand manipulation demonstration was found in the reviewed sources.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "No manipulation footage, success rate or object set published.",
+        "No hand or end-effector specification; later-variant grasping demos (1.2 MAX, 3.0) belong to different robots."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No task-level autonomy demonstration exists in the reviewed record. The launch material describes a learned running/balance controller ('State Memory-based Predictive Reinforcement Imitation Learning'), and a directory summary states that broader task planning and general-purpose operation were future research goals beyond the locomotion shown at launch.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "Execution mode of the launch footage is not disclosed anywhere in the reviewed sources.",
+        "No intervention counts, task success rates or instruction-following evidence."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Reported stable running at 6 km/h (1.67 m/s) and traversal of slopes and stairs described as 'blind' (not relying on the 3D vision sensors), with gait adjustment during traversal. A directory video record additionally lists grass, gravel and sand terrain, but marks the video's control mode as unknown and its evidence as not reviewed.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "No independent timing, treadmill/lab measurement or fall rate.",
+        "The footage was not viewed directly for this pack; the terrain list is a directory's recorded caption.",
+        "A conflicting 12 km/h maximum-speed field exists on the same dossier."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "3D vision sensors, a high-precision IMU and six-axis force sensors are listed, and the robot is said to handle slopes and stairs without relying on its 3D vision sensors. No perception benchmark, object-recognition result or scene-understanding evaluation was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "Sensor models, counts and field of view are not published.",
+        "The 'blind' traversal is a company claim about locomotion, not evidence of general scene understanding."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No human-interaction capability, speech interface, safety trial near people or user study was found for the original Tiangong. Home and service use appear only as speculative future possibilities in launch coverage.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tiangong_source_001"
+      ],
+      "caveats": [
+        "Absence of disclosure, not evidence of inability.",
+        "Interaction demos exist for later Tiangong variants and must not be credited here."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, endurance test, mean time between failures or long-duration operating record was published. Only a 48-V/15-Ah battery is disclosed, with no energy capacity or duty-cycle data.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "SteelReel explicitly notes that no public battery pack details were found in its source set.",
+        "Reliability and uptime are wholly undocumented for this platform."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-scale dimensions (163 cm, 43 kg) and a claimed ability to take slopes and stairs suit human-built spaces, and the platform was pitched for research labs and, speculatively, homes and factories. No safety certification, proximity testing or accessibility assessment was published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "No third-party safety certification or force-limit disclosure.",
+        "No evidence of operation among people outside a launch demonstration."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Research-only. No customer, pilot, lease or sale of the original Tiangong was found, and the dossier lists no verified procurement channel and a not-for-sale acquisition model.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tiangong_source_002",
+        "tiangong_source_001"
+      ],
+      "caveats": [
+        "Later variants were offered to universities and labs; that is not evidence for this robot.",
+        "Absence of deployment disclosure, not proof that none occurred."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No price, purchase path or waitlist exists for the original Tiangong. It is described as open-source with open communication interfaces and scalable hardware/software, but no accessible developer-kit pricing or availability was published.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "caveats": [
+        "Open-source intent is a company claim without a disclosed repository, licence or price.",
+        "Public value to buyers is therefore unproven."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "tiangong_evidence_001",
+      "date": "2024-05-07",
+      "title": "Launch specifications: 163 cm, 43 kg, 48 V/15 Ah, 3-DoF arms",
+      "claim": "The original Tiangong is reported at 1.63 m and 43 kg, running on a 48-V/15-Ah battery, with three degrees of freedom per arm and six joints per leg, IMUs and onboard Wi-Fi.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Both sources agree on 163 cm and 43 kg; SteelReel attributes the figures to the manufacturer launch article.",
+      "arena_relevance": "Defines the size, mass and power envelope used for comparison with other humanoids.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The Tiangong humanoid stands 1.63 m (5.4 ft) from toe to top, and tips the scales at 43 kg (~95 lb).",
+      "source_location": "New Atlas article, hardware paragraph; corroborated by SteelReel Height and Weight rows",
+      "verification_notes": "Media relay of manufacturer specifications; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tiangong_evidence_002",
+      "date": "2024-05-07",
+      "title": "Claimed stable running at 6 km/h on electric drive",
+      "claim": "The robot is claimed to run stably at 6 km/h and to handle slopes and stairs in 'blind conditions'.",
+      "category": [
+        "mobility_whole_body_control",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim relayed by media at launch. The separate 'world's first' framing is handled in evidence 010.",
+      "arena_relevance": "The single most-cited locomotion figure for this robot.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The Beijing Humanoid Robot Innovation Center has unveiled Tiangong, an electrically-driven general-purpose humanoid that's capable of stable running at 6 km/h, while also able to tackle slopes and stairs in \"blind conditions.\"",
+      "source_location": "New Atlas lede paragraph",
+      "verification_notes": "No measured speed, test protocol, surface or independent timing published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tiangong_evidence_003",
+      "date": "2024-04-27",
+      "title": "Blind slope and stair traversal demonstration record",
+      "claim": "The robot is described as taking on slopes and stairs without relying on its 3D vision sensors and adjusting its gait, with a directory video record additionally listing grass, gravel and sand traversal.",
+      "category": [
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "confidence": 0.55,
+      "notes": "The SteelReel video block for the launch film records capability as 'Stairs slopes terrain · slopes, stairs, grass, gravel and sand traversal' with 'Control: Unknown' and 'Evidence: Not reviewed'.",
+      "arena_relevance": "Strongest observable locomotion evidence for this platform, but unverified.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "It can also take on slopes and stairs without relying on its 3D vision sensors, adjusting its gait as it goes.",
+      "source_location": "New Atlas capability paragraph; SteelReel embedded video record",
+      "verification_notes": "Footage was not viewed for this pack; no fall count, terrain specification or repetition count disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tiangong_evidence_004",
+      "date": "2024-05-07",
+      "title": "No human-like hands at launch",
+      "claim": "The launch robot is reported to lack human-like hands, with only three-DoF arms described.",
+      "category": [
+        "manipulation_dexterity",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Consistent with the complete absence of manipulation footage in the reviewed record.",
+      "arena_relevance": "Caps any manipulation or general-purpose-labour credit for this robot.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Like the H1, the general-purpose humanoid lacks human-like hands at this stage of development, but is reported capable of jogging along at a steady 6 km/h (3.7 mph) – thanks to something called \"State Memory-based Predictive Reinforcement Imitation Learning.\"",
+      "source_location": "New Atlas paragraph comparing Tiangong with Unitree H1",
+      "verification_notes": "Media statement from launch coverage; not contradicted by any other reviewed source.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "tiangong_evidence_005",
+      "date": "2024-05-07",
+      "title": "Sensing suite: 3D vision, IMU, six-axis force sensors",
+      "claim": "3D vision sensors, high-precision IMUs and six-axis force sensors for force feedback are listed for the platform.",
+      "category": [
+        "perception_scene_understanding",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "SteelReel lists the same sensor set, attributing it to the manufacturer launch article.",
+      "arena_relevance": "Establishes sensing hardware without establishing perception performance.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The bot is kitted out with six-axis force sensors, too, for accurate force feedback.",
+      "source_location": "New Atlas hardware paragraph; SteelReel Depth sensing, IMU and Force/torque sensor rows",
+      "verification_notes": "No sensor model, count, resolution or field of view published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tiangong_evidence_006",
+      "date": "2024-05-07",
+      "title": "Claimed 550 trillion operations per second onboard compute",
+      "claim": "The developers claim onboard compute of 550 trillion operations per second.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "SteelReel's 'Published AI throughput' field also reads 550. The source sentence contains a typo ('for second') reproduced verbatim.",
+      "arena_relevance": "Gives an order-of-magnitude compute claim; not benchmarkable.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "As for processing brains, the developers boast that it's capable of 550 trillion operations for second.",
+      "source_location": "New Atlas 'processing brains' paragraph",
+      "verification_notes": "No processor, memory, precision (INT8/FP16) or benchmark disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tiangong_evidence_008",
+      "date": null,
+      "title": "Research-platform intent and not-for-sale status",
+      "claim": "The original Tiangong was presented as a shared, open hardware base for motion-control research and data collection; the dossier lists it as research-only, not for sale, with no verified procurement channel.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_002",
+        "tiangong_source_003",
+        "tiangong_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "The not-for-sale rows in SteelReel cite the manufacturer site; successor pages (1.2 MAX, Walker) were used only to confirm the model line moved on.",
+      "arena_relevance": "Sets commercial and accessibility expectations at zero evidence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The electric biped was presented as a shared hardware base for improving motion control and collecting training data.",
+      "source_location": "SteelReel news and developments summary, original Tiangong record",
+      "verification_notes": "Directory summary of the manufacturer launch; the underlying manufacturer pages were not opened.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof",
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "tiangong_evidence_009",
+      "date": null,
+      "title": "Task planning and general-purpose operation left as future work",
+      "claim": "Broader task planning and general-purpose operation were described as future research goals beyond the locomotion shown at launch.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Useful counterweight to any assumption that the running demo implies task autonomy.",
+      "arena_relevance": "Directly caps autonomy credit for this platform.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Broader task planning and general-purpose operation were future research goals, beyond the locomotion shown at the launch.",
+      "source_location": "SteelReel linked report summary for the 2024-04-27 launch",
+      "verification_notes": "Directory editorial summary; consistent with the absence of task demos in any reviewed source.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "tiangong_evidence_010",
+      "date": "2024-05-07",
+      "title": "'World's first' running claim with contemporaneous media caveat",
+      "claim": "The manufacturer bills Tiangong as the world's first full-sized humanoid capable of running solely on electric drive, while the reporting notes other contenders such as Unitree H1 and Boston Dynamics' electric Atlas.",
+      "category": [
+        "mobility_whole_body_control",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Marketing claim; the same article questions its exclusivity. SteelReel records the same 'world's first' phrase as a recorded claim, not a verified record.",
+      "arena_relevance": "Prevents the priority claim from being scored as fact.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The open-source Tiangong humanoid is billed as the \"world's first full-sized humanoid robot capable of running solely on electric drive\" – though there do seem to be other contenders in the space, including Unitree's H1 and Boston Dynamics' newly reborn Atlas.",
+      "source_location": "New Atlas, paragraph on the open-source Tiangong platform",
+      "verification_notes": "Unverifiable priority claim; no adjudication body cited.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "tiangong_evidence_011",
+      "date": "2024-05-07",
+      "title": "Corporate background of the developer",
+      "claim": "The Beijing Humanoid Robot Innovation Center is a joint venture of Beijing Yizhuang Investment Holdings, UBTech Robotics, Xiaomi and Beijing Jingcheng Machinery Electric.",
+      "category": [
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Background provenance for the company id x-humanoid; not a capability claim.",
+      "arena_relevance": "Explains the later UBTech-linked Walker product and shared supply chain.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The company is a joint venture from Beijing Yizhuang Investment Holdings Limited, UBTech Robotics, Xiaomi, and Beijing Jingcheng Machinery Electric.",
+      "source_location": "New Atlas, paragraph describing the innovation center",
+      "verification_notes": "Reported corporate structure; not independently re-verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "tiangong_evidence_012",
+      "date": null,
+      "title": "Successor variants supersede the original platform",
+      "claim": "The centre introduced later models including Tiangong 1.1 PRO and 1.2 MAX (announced at the World Robot Conference) and Tiangong Walker (a research and education platform), superseding the original 2024 platform.",
+      "category": [
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong_source_002",
+        "tiangong_source_003",
+        "tiangong_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "SteelReel's manufacturer-peers list also includes 3.0, Omni, Ultra, 2.0. Walker launch coverage names UBTech and the innovation center jointly.",
+      "arena_relevance": "Explains why later, faster Tiangong results must not be attached to this robot.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Beijing's embodied-intelligence centre introduced Tiangong 1.2 MAX at the World Robot Conference and displayed the related 1.1 PRO.",
+      "source_location": "SteelReel Tiangong 1.2 MAX record, news and developments summary",
+      "verification_notes": "Directory summaries of launch announcements; dates 2024-08-22 and 2025-03-12 respectively.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "tiangong_evidence_014",
+      "date": null,
+      "title": "Missing disclosures for the original Tiangong",
+      "claim": "No payload, runtime, price, manipulation demo, task-autonomy demo, intervention rate, customer deployment or independent benchmark was found for the original Tiangong.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review; absence of disclosure, not evidence of inability.",
+      "arena_relevance": "Judges should keep confidence low across all non-locomotion dimensions.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed sources for the original Tiangong platform.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Covers the eight sources used in this pack; unopened manufacturer pages may contain more.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "tiangong_demo_001",
+      "title": "Launch running and blind terrain demonstration",
+      "date": "2024-04-27",
+      "observed_capabilities": [
+        "stable running at 6 km/h (1.67 m/s) as reported",
+        "slope and stair traversal described as not relying on 3D vision sensors",
+        "gait adjustment during traversal",
+        "terrain set listed by a directory video record as slopes, stairs, grass, gravel and sand"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "launch demonstration in Beijing; venue not verified in the reviewed sources",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Footage not viewed directly for this pack; capabilities come from a media description and a directory video record.",
+        "The directory marks the video's control mode as unknown and its evidence as not reviewed.",
+        "No fall count, speed measurement, test protocol or independent observer."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo until human review verifies continuity.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No reviewed source states whether the running and terrain footage was autonomous, scripted, or remotely assisted.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "running and traversing slopes and stairs described as 'blind'",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Manipulation",
+      "description": "The launch robot is reported to lack human-like hands and no manipulation demonstration exists in the reviewed record.",
+      "impact_on_arena_scoring": "Manipulation dexterity should stay at minimal evidence regardless of later Tiangong variants."
+    },
+    {
+      "topic": "Endurance and reliability",
+      "description": "No runtime, uptime, failure rate or long-duration test was published; only a 48-V/15-Ah battery is disclosed.",
+      "impact_on_arena_scoring": "Endurance and reliability stay at level 0."
+    },
+    {
+      "topic": "Autonomy and control mode",
+      "description": "No reviewed source states whether the launch locomotion footage was autonomous; task autonomy was described as future work.",
+      "impact_on_arena_scoring": "Do not credit autonomous task execution; credit locomotion only as a demonstrated motion capability."
+    },
+    {
+      "topic": "Model-family confusion",
+      "description": "The Tiangong name covers 1.0, 1.1 PRO, 1.2 MAX, Walker, Ultra, Omni, 2.0 and 3.0, whose specs and records (e.g. 173 cm/60 kg/42 DoF, 100 m in 8.86 s) differ substantially.",
+      "impact_on_arena_scoring": "Only the 163 cm / 43 kg launch configuration is scored here."
+    },
+    {
+      "topic": "Independent verification",
+      "description": "All capability evidence traces to manufacturer claims relayed by media and directories; the launch video was not reviewed directly.",
+      "impact_on_arena_scoring": "Cap confidence and prefer level 1-2 evidence."
+    },
+    {
+      "topic": "Commercial availability",
+      "description": "No price, pre-order, lease or customer for the original Tiangong was found; the dossier lists it as research-only and not for sale.",
+      "impact_on_arena_scoring": "Deployment and accessibility value stay at level 0."
+    },
+    {
+      "topic": "Payload and endurance specifications",
+      "description": "Payload and runtime were not published for this configuration and must not be inferred from 1.2 MAX or Walker.",
+      "impact_on_arena_scoring": "Leave these spec fields null rather than estimating."
+    }
+  ],
+  "source_ids": [
+    "tiangong_source_001",
+    "tiangong_source_002",
+    "tiangong_source_003",
+    "tiangong_source_004",
+    "tiangong_source_005",
+    "tiangong_source_006",
+    "tiangong_source_007",
+    "tiangong_source_008"
+  ],
+  "sources": [
+    {
+      "id": "tiangong_source_001",
+      "title": "China's home-grown general-purpose humanoid jogs out at 6 km/h",
+      "publisher": "New Atlas",
+      "url": "https://newatlas.com/robotics/china-tiangong-general-purpose-humanoid/",
+      "date_published": "2024-05-07",
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Consumer/engineering tech outlet relaying launch specifications and manufacturer claims; no independent measurement, but it flags competing 'first' claims."
+    },
+    {
+      "id": "tiangong_source_002",
+      "title": "Beijing Humanoid Robot Innovation Center Tiangong Technical Dossier | SteelReel AI",
+      "publisher": "steelreel.ai",
+      "url": "https://steelreel.ai/Robots/Bipedal-humanoids/beijing-humanoid-robot-innovation-center/tiangong",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Aggregator dossier that links each field to a cited source (manufacturer launch article, Chinese government pages); the underlying pages were not opened for this pack."
+    },
+    {
+      "id": "tiangong_source_003",
+      "title": "Beijing Humanoid Robot Innovation Center Tiangong 1.2 MAX Technical Dossier | SteelReel AI",
+      "publisher": "steelreel.ai",
+      "url": "https://steelreel.ai/Robots/Bipedal-humanoids/beijing-humanoid-robot-innovation-center/tiangong-1-2-max",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Used only to evidence the existence of successor variants and to exclude 1.2 MAX specifications from this robot."
+    },
+    {
+      "id": "tiangong_source_004",
+      "title": "Beijing Humanoid Robot Innovation Center Tiangong Walker Technical Dossier | SteelReel AI",
+      "publisher": "steelreel.ai",
+      "url": "https://steelreel.ai/Robots/Bipedal-humanoids/beijing-humanoid-robot-innovation-center/tiangong-walker",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Used only to evidence successors and to exclude the Tiangong Walker price and specifications from this robot."
+    },
+    {
+      "id": "tiangong_source_005",
+      "title": "Watch AI learn to run like no human ever would | Tiangong Omni's 400m race #coolchina",
+      "publisher": "YouTube CGTN",
+      "url": "https://www.youtube.com/watch?v=zYhyHqLlktg",
+      "date_published": "2026-08-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title, channel and date only; no transcript. Concerns Tiangong Omni, a different model."
+    },
+    {
+      "id": "tiangong_source_006",
+      "title": "Chinese Robot Tiangong Runs 400m in 38.15 Seconds | Beats Human World Record | ZO1J",
+      "publisher": "YouTube Sports Central by DRM",
+      "url": "https://www.youtube.com/watch?v=ehgY-JXngwI",
+      "date_published": "2026-08-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title only; does not name a Tiangong variant, so the claim cannot be attached to a specific model."
+    },
+    {
+      "id": "tiangong_source_007",
+      "title": "Chinese Humanoid Robot Tiangong Ultra Breaks Its Own Record, Running 100m in 8.86 Seconds",
+      "publisher": "YouTube Yicai 第一财经",
+      "url": "https://www.youtube.com/watch?v=xZY1DjLQqOI",
+      "date_published": "2026-08-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title, channel and date only; concerns Tiangong Ultra, a different model."
+    },
+    {
+      "id": "tiangong_source_008",
+      "title": "Tiangong Ultra: Chinese humanoid robot trains for half marathon",
+      "publisher": "YouTube CGTN",
+      "url": "https://www.youtube.com/watch?v=wL6yFPt6zXc",
+      "date_published": "2025-10-30",
+      "date_accessed": "2026-10-30",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title, channel and date only; concerns Tiangong Ultra, a different model."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Compiled automatically from public sources on 2026-10-30 and not yet human-reviewed. The original Tiangong is a 163 cm, 43 kg, fully electric research biped from the Beijing Humanoid Robot Innovation Center, publicly shown on 2024-04-27. Its only substantive public evidence is locomotion: a claimed stable 6 km/h run and slope/stair traversal described as 'blind'. The launch robot is reported to lack human-like hands, no manipulation, autonomy, endurance or deployment evidence exists, and the dossier lists it as research-only and not for sale. It has been superseded by 1.1 PRO, 1.2 MAX, Walker, Ultra, Omni, 2.0 and 3.0, and those variants' results must not be scored here.",
+    "strongest_positive_evidence": [
+      "Reported stable running at 6 km/h at launch (tiangong_evidence_002).",
+      "Blind slope and stair traversal with gait adjustment, recorded as a demo (tiangong_evidence_003).",
+      "Launch specifications of 163 cm, 43 kg, 48 V/15 Ah, 550 TOPS and a 3D vision/IMU/force-sensor suite (tiangong_evidence_001, tiangong_evidence_005, tiangong_evidence_006).",
+      "20 total DoF recorded for the launch configuration (tiangong_evidence_007)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No manipulation capability: the launch robot is reported to lack human-like hands.",
+      "No runtime, endurance, reliability or uptime data.",
+      "No task autonomy, intervention count or success-rate evidence.",
+      "No price, customer, pilot or independent benchmark.",
+      "Payload not published."
+    ],
+    "conflicting_claims": [
+      "Running speed: 6 km/h at launch (New Atlas; SteelReel's 'documented claim') versus a 12 km/h 'maximum demonstrated speed' and 3.3333 m/s field on the same SteelReel dossier.",
+      "Joint count: New Atlas describes three DoF per arm and six joints per leg, which does not obviously sum to the 20 total DoF recorded by SteelReel.",
+      "Launch timing: SteelReel records the public debut on 2024-04-27 while the New Atlas article is dated 2024-05-07."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit Tiangong Ultra, Omni, 1.2 MAX, Walker or 3.0 specifications, prices, records or demos to this robot.",
+      "Do not credit the 100 m 8.86 s, 400 m 38.15 s or half-marathon results to the original Tiangong.",
+      "Do not describe the robot as having hands, manipulation skills or general-purpose task capability.",
+      "Do not describe it as purchasable, priced or commercially deployed.",
+      "Do not treat 'world's first electric running humanoid' as verified fact."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "Tiangong 1.1 PRO",
+      "Tiangong 1.2 MAX",
+      "Tiangong Walker",
+      "Tiangong Ultra",
+      "Tiangong Omni",
+      "Tiangong 2.0",
+      "Tiangong 3.0"
+    ],
+    "currentness_notes": "SteelReel's Tiangong record lists all of the above as manufacturer peers, with 1.2 MAX dated 2024-08-22, 3.0 dated 2026-02-10 and Ultra dated 2025-03-16 (tiangong_source_002, tiangong_source_003, tiangong_source_004). The original 163 cm / 43 kg platform is therefore superseded as the current product."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Tiangong Ultra running records: 100 m in 8.86 s, 400 m in 38.15 s, half-marathon training",
+      "reason": "These reports concern later variants (Ultra, and for the half marathon Ultra specifically), not the original 2024 platform; they are also title-only video claims without timing methodology.",
+      "source_ids": [
+        "tiangong_source_007",
+        "tiangong_source_006",
+        "tiangong_source_008"
+      ]
+    },
+    {
+      "claim": "Tiangong Omni 400 m race",
+      "reason": "Omni is a different model in the family; the source provides only a title.",
+      "source_ids": [
+        "tiangong_source_005"
+      ]
+    },
+    {
+      "claim": "Tiangong Walker price of 299,000 yuan (~US$41,000), pre-orders and Q2 2025 deliveries",
+      "reason": "The price and availability belong to Tiangong Walker, a later UBTech-linked research/education product, not to the original Tiangong.",
+      "source_ids": [
+        "tiangong_source_004"
+      ]
+    },
+    {
+      "claim": "Tiangong 1.2 MAX specifications: 173 cm, 60 kg, 42 DoF, 320 N·m hip/knee torque, 6 km/h demonstrated",
+      "reason": "These are 1.2 MAX specifications and must not be transferred to the 163 cm / 43 kg launch configuration.",
+      "source_ids": [
+        "tiangong_source_003"
+      ]
+    },
+    {
+      "claim": "12 km/h maximum demonstrated running speed for Tiangong",
+      "reason": "The dossier's own 'documented claim' for the original platform gives a steady 6 km/h, and the 12 km/h field is described as a generic family value; unresolved and not credited.",
+      "source_ids": [
+        "tiangong_source_002"
+      ]
+    },
+    {
+      "claim": "Tiangong as the 'world's first full-sized humanoid robot capable of running solely on electric drive'",
+      "reason": "Manufacturer marketing claim that the reporting itself notes is contested by Unitree H1 and Boston Dynamics' electric Atlas.",
+      "source_ids": [
+        "tiangong_source_001",
+        "tiangong_source_002"
+      ]
+    },
+    {
+      "claim": "Manipulation and voice-interaction demonstrations",
+      "reason": "The grasp and voice-interaction demonstrations in the reviewed record belong to Tiangong 1.2 MAX, not to the original Tiangong, which is reported to lack human-like hands.",
+      "source_ids": [
+        "tiangong_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 4,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 4,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Tiangong is the first full-size biped from the Beijing Humanoid Robot Innovation Center (X-Humanoid), publicly shown on 2024-04-27 as an open, research-oriented platform: 163 cm, 43 kg, fully electric, with a 48 V/15 Ah pack, 3D vision sensors, a high-precision IMU, six-axis force sensors and a claimed 550 trillion operations per second of onboard compute; a directory records 20 total DoF for the launch configuration. The public evidence is essentially locomotion — a claimed stable 6 km/h run and slope/stair traversal described as 'blind' — with no manipulation (the launch robot is reported to lack human-like hands), no task autonomy, no endurance or reliability data and no human-interaction evidence. It is research-only and not for sale, and has been superseded by later Tiangong variants (1.1 PRO, 1.2 MAX, Walker, Ultra, Omni, 2.0, 3.0) whose records must not be credited to this robot.",
+    "strongest_evidence": [
+      "Reported stable running at 6 km/h on electric drive (tiangong_evidence_002).",
+      "Blind slope and stair traversal with gait adjustment, recorded as a demo (tiangong_evidence_003).",
+      "163 cm / 43 kg / 48 V 15 Ah / 550 TOPS launch specifications (tiangong_evidence_001, tiangong_evidence_006).",
+      "20 total DoF for the 163 cm / 43 kg launch configuration (tiangong_evidence_007)."
+    ],
+    "weakest_evidence": [
+      "No manipulation: the launch robot is reported to lack human-like hands.",
+      "No runtime, endurance or reliability data.",
+      "No autonomy, intervention or success-rate evidence.",
+      "No price, customer or independent measurement."
+    ],
+    "known_do_not_credit": [
+      "Tiangong Ultra's 100 m and 400 m records and half-marathon training footage.",
+      "Tiangong Omni's 400 m race.",
+      "The Tiangong Walker price of 299,000 yuan, pre-orders and deliveries.",
+      "Tiangong 1.2 MAX specifications (173 cm, 60 kg, 42 DoF, 320 N·m).",
+      "The 12 km/h maximum running speed field on the family dossier.",
+      "Any hands, manipulation, autonomous task execution, purchase path or customer deployment."
+    ],
+    "recommended_confidence": "low"
+  }
+}

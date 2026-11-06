@@ -1,0 +1,84 @@
+{
+  "id": "neura-4ne1",
+  "name": "NEURA 4NE1",
+  "aliases": [
+    "4NE-1",
+    "4NE1 Gen 3.5"
+  ],
+  "companyId": "neura-robotics",
+  "companyName": "NEURA Robotics",
+  "country": "Germany",
+  "announced": null,
+  "status": "purchasable",
+  "category": "industrial",
+  "summary": "4NE1 is NEURA Robotics' full-size cognitive humanoid for industrial and collaborative work. NEURA lists it at 180 cm and 80 kg with a 10-20 kg payload, and takes reservations for the Gen 3.5 version at EUR 98,000. Shipping is planned for the end of 2026.",
+  "specs": {
+    "height_cm": {
+      "value": 180,
+      "original": "180 cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 80,
+      "original": "80 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 20,
+      "original": "10-20 kg",
+      "sourceId": "s1"
+    },
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 1.39,
+      "original": "5 km/h",
+      "sourceId": "s1"
+    }
+  },
+  "hands": "Integrated high-dexterity hands; exchangeable forearms.",
+  "sensors": "NEURA describes 360-degree perception and a sensor skin.",
+  "compute": null,
+  "price": {
+    "value": 98000,
+    "currency": "EUR",
+    "priceType": "preorder",
+    "configuration": "4NE1 Gen 3.5, 1-19 units, excl. taxes and shipping (EUR 60,000 for 20+ units)",
+    "sourceId": "s2"
+  },
+  "purchasePath": "preorder",
+  "purchaseUrl": "https://neura-robotics.com/product/4ne1-reservation/",
+  "highlights": [
+    "Refundable EUR 100 reservation fee credited toward the price.",
+    "Third generation premiered at Automatica 2025; smaller 4NE1 Mini shown at CES 2026.",
+    "NEURA raised a EUR 120 million Series B in January 2025."
+  ],
+  "caveats": [
+    "Not yet shipping; availability is stated as end of 2026.",
+    "Total DoF and runtime are not on the official product page."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "4NE1",
+      "publisher": "NEURA Robotics",
+      "url": "https://neura-robotics.com/products/4ne1",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Reserve 4NE1",
+      "publisher": "NEURA Robotics",
+      "url": "https://neura-robotics.com/product/4ne1-reservation/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "Neura Robotics",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neura_Robotics",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

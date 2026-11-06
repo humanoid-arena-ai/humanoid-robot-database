@@ -1,0 +1,1233 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "kepler-k2",
+    "name": "Kepler K2 Bumblebee",
+    "company_id": "kepler-robotics",
+    "company_name": "Kepler Robotics",
+    "country": "China",
+    "generation": "K2 'Bumblebee' industrial humanoid (company refers to its fifth-generation humanoid robot program)",
+    "first_announced_date": "2025-06-05",
+    "release_date": "2025-09-27",
+    "status": "purchasable",
+    "status_notes": "K2 Bumblebee is priced at a $30,000 base model or RMB 248,000 per unit and Kepler announced mass production and customer shipments on 2025-09-27. BigGo Finance reported confirmed orders above 47 million yuan by 2026-05-22, but 2025 revenue was only 4.34 million yuan and the company was acquired by Hangzhou Kelin. No public web checkout was found; purchase appears to be via contact sales.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "intelligent manufacturing",
+      "warehousing and logistics",
+      "material handling",
+      "high-risk or specialized operations",
+      "scientific research and education",
+      "exhibitions and customer engagement",
+      "data collection and training"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "175 cm (68.9 in.)",
+      "value": 175,
+      "unit": "cm",
+      "notes": "Source 1 lists 175 cm.",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "75 kg (165.3 lb.)",
+      "value": 75,
+      "unit": "kg",
+      "notes": "Source 1 lists 75 kg.",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "30 kg with both arms (15 kg per arm)",
+      "value": 30,
+      "unit": "kg",
+      "notes": "Source 1 says 15 kg per arm and up to 30 kg with both arms.",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "Up to 8 hours on a single one-hour charge",
+      "value": 8,
+      "unit": "hours",
+      "notes": "Company claim repeated across sources 1, 4 and 5.",
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity was not published in any reviewed source.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 52,
+      "notes": "Source 1 reports 52 total degrees of freedom.",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No walking speed was found. Sources describe steady autonomous mobility, fluid humanlike motion, and straight-knee bipedal gait but do not give m/s.",
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_003"
+      ]
+    },
+    "hands": {
+      "description": "Kepler Dexterous Hands with 11 degrees of freedom per hand, 25 force-sensing contact points per finger, and a six-axis force/torque sensor at the wrist.",
+      "degrees_of_freedom": 11,
+      "force_feedback": "6-axis wrist force/torque sensor and 25 force-sensing contact points per finger (company claim)",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "More than 80 integrated sensors (company claim)"
+      ],
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Onboard compute reaches 100 TOPS (company claim).",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Hybrid series-parallel architecture combining planetary roller screw linear actuators and rotary actuators; company claims 81.3% energy efficiency and millimeter-level precision for fine motor tasks.",
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 30000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": null,
+      "notes": "The Robot Report lists a $30,000 base price. Source 4 lists RMB 248,000 per unit. Purchase path is contact sales; no public web store found.",
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "K2 has 11-DoF hands with 25 force-sensing points per finger and a 6-axis wrist force/torque sensor. Kepler claims millimeter-level precision via rotary actuators and 15 kg per arm / 30 kg dual-arm payload. Trade-show and press-release demos show gestures, thumbs-up, waving and parade routines, but no long-horizon dexterity tasks are disclosed in the reviewed sources.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_003",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or published task success rates.",
+        "Manipulation demos are company-described trade-show interactions, not detailed industrial tasks.",
+        "No transcript exists for the official on-the-job video titles."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Source 1 says K2 navigated ICRA 2025 with 'steady, autonomous mobility' according to Kepler. Source 4 and Source 5 describe a layered VLA+ model interpreting natural language commands for tasks including sorting, assembly and guided tours. No independent autonomy audit, intervention logs or teleoperation disclosure for most demos was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ],
+      "caveats": [
+        "Autonomy statements are company claims, not independently verified.",
+        "Teleoperation status is not disclosed for most demos.",
+        "No success rate or failure count published."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Source 5 describes a video in which K2 navigates bricks, plastic surfaces and grass and remains stable under external pushes. Source 1 and Source 3 describe humanlike, straight-knee bipedal gait and robot-parade walking. Source 4 production video includes straight-knee gait, obstacle navigation and dynamic performance evaluations.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_003",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ],
+      "caveats": [
+        "Gait demo is described in a paid press release, not independently captured.",
+        "No raw balance, fall-rate or disturbance metrics published.",
+        "Videos noted as no-transcript in the source list should not be used for claims beyond their titles."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Source 4 and Source 5 say K2 uses a layered VLA+ model to interpret semantic commands and carry out tasks. Source 3 describes an integrated multimodal interaction engine combining visual, auditory and tactile data, plus developer tools for vision, navigation and voice.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_003",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ],
+      "caveats": [
+        "No public perception benchmark, object-recognition accuracy or scene-understanding result found.",
+        "Descriptions come from company press releases."
+      ]
+    },
+    "human_interaction": {
+      "summary": "At ICRA/IROS, K2 reportedly greeted attendees with natural gestures, responded with thumbs-up and wave, and interacted fluidly with other robotic systems. No end-user conversational or instruction-following evaluation was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_003"
+      ],
+      "caveats": [
+        "Trade-show interactions are described by company-published or company-influenced sources.",
+        "No robust human-robot interaction study or reliability metric found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Kepler claims up to 8 hours operation on a one-hour charge, near-zero static power consumption from roller screw actuators, 81.3% energy efficiency, and production-video content showing high/low-temperature tests, aging trials, obstacle navigation and thousands of hours of continuous uptime without failure.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004",
+        "kepler-k2_source_005"
+      ],
+      "caveats": [
+        "Endurance figures are company claims; no independent endurance log or raw mean time between failures published.",
+        "Production video claims come from a press-release description, not an independent audit.",
+        "Financial disclosures show very low 2025 revenue, raising uncertainty about long-term support."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "K2 is human-sized at 175 cm and 75 kg, designed for industrial factory floors with a straight-knee bipedal gait and hybrid actuator design. The company markets it for manufacturing, logistics, high-risk operations and exhibitions.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004"
+      ],
+      "caveats": [
+        "No safety certification or third-party human-proximity safety assessment found.",
+        "No detailed workspace safety or collaborative-operation standard disclosed."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Kepler announced mass production and customer shipments on 2025-09-27, with framework agreements for several thousand units. BigGo Finance reports confirmed orders above 47 million yuan and an official Kepler video title refers to an 'On-the-Job Log — Zhaofeng Motor'. The same financial reporting shows 2025 revenue was only about 4.34 million yuan with large net losses.",
+      "evidence_level": 2,
+      "source_ids": [
+        "kepler-k2_source_002",
+        "kepler-k2_source_004",
+        "kepler-k2_source_007",
+        "kepler-k2_source_009",
+        "kepler-k2_source_010"
+      ],
+      "caveats": [
+        "No deployed unit count, operating hours, output metrics or customer press release were found.",
+        "The Zhaofeng Motor reference is a video title only; no transcript or independent confirmation is available.",
+        "Framework agreements are not the same as delivered units."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Kepler lists a $30,000 base price and RMB 248,000 unit price, intended to lower adoption barriers for mass production. Purchase path appears to be contact sales, not an online store.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kepler-k2_source_001",
+        "kepler-k2_source_004"
+      ],
+      "caveats": [
+        "Prices are company listings, not independently confirmed.",
+        "No public warranty, service package or total cost of ownership found.",
+        "Company financial instability may affect value and support."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "kepler-k2_evidence_001",
+      "date": "2025-06-05",
+      "title": "K2 Bumblebee physical specifications at ICRA 2025",
+      "claim": "K2 Bumblebee is 175 cm tall, weighs 75 kg, has 52 degrees of freedom and more than 80 integrated sensors.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "The Robot Report repeats Kepler's stated specifications.",
+      "arena_relevance": "Defines size, weight and DoF for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Purpose-built for industrial settings, the K2 Bumblebee is 175 cm (68.9 in.) tall, weighs 75 kg (165.3 lb.), and features 52 degrees of freedom and more than 80 integrated sensors.",
+      "source_location": "The Robot Report article, 'Kepler designs K2 humanoid for industrial use' section",
+      "verification_notes": "Company specification as reported by trade media; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_002",
+      "date": "2025-06-05",
+      "title": "K2 payload, runtime and precision claims",
+      "claim": "K2 supports 15 kg per arm and up to 30 kg with both arms, up to 8 hours of operation on a one-hour charge, and millimeter-level precision for fine motor tasks.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "These are company performance claims, not independent measurements.",
+      "arena_relevance": "Payload and runtime are important for industrial tasks.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Combined with its innovative series-parallel architecture and advanced actuation system, Kepler said the K2 supports payloads of 15 kg (33.1 lb.) per arm and up to 30 kg (66.1 lb.) with both arms.",
+      "source_location": "The Robot Report article, 'Kepler designs K2 humanoid for industrial use' section",
+      "verification_notes": "Runtime and precision from the same source are not independently tested.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_003",
+      "date": "2025-06-05",
+      "title": "K2 Dexterous Hands",
+      "claim": "K2 has proprietary Dexterous Hands with 11 degrees of freedom per hand, 25 force-sensing contact points per finger, and a six-axis force/torque sensor at the wrist.",
+      "category": [
+        "manipulation_dexterity",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Detailed hand hardware claim from Kepler via The Robot Report.",
+      "arena_relevance": "Hand dexterity is a key differentiation for manipulation.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The Bumblebee also includes Kepler’s proprietary Dexterous Hands, each featuring 11 degrees of freedom, 25 force-sensing contact points per finger, and a six-axis force/torque sensor at the wrist.",
+      "source_location": "The Robot Report article, 'Kepler designs K2 humanoid for industrial use' section",
+      "verification_notes": "No independent hand dexterity benchmark found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_004",
+      "date": "2025-06-05",
+      "title": "K2 price and workload claim",
+      "claim": "The base model of K2 Bumblebee is priced at $30,000 and can perform the equivalent workload of about 1.5 full-time human workers, according to Kepler.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "confidence": 0.65,
+      "notes": "Productivity equivalence is a company claim with no public evidence.",
+      "arena_relevance": "Price and productivity matter for value assessment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The base model of the K2 Bumblebee is priced at $30,000 and can perform the equivalent workload of approximately 1.5 full-time human workers in comparable timeframes, according to Kepler.",
+      "source_location": "The Robot Report article, 'Humanoids take steps toward production' section",
+      "verification_notes": "No independent productivity study or customer return-on-investment data found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_005",
+      "date": "2025-06-05",
+      "title": "ICRA 2025 trade-show mobility and interaction claim",
+      "claim": "At ICRA 2025, K2 greeted attendees with natural gestures, navigated the venue with steady autonomous mobility, and interacted fluidly with other robotic systems, according to the company.",
+      "category": [
+        "mobility_whole_body_control",
+        "autonomy_task_execution",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "This is a company-reported trade-show description, not an independently observed demo video.",
+      "arena_relevance": "Supports mobility and autonomy framing but lacks verification.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The K2 greeted attendees with natural gestures; navigated the venue with steady, autonomous mobility; and interacted fluidly with other robotic systems, according to the company.",
+      "source_location": "The Robot Report article, ICRA 2025 section",
+      "verification_notes": "No teleoperation disclosure, intervention log or raw video available in the reviewed source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_006",
+      "date": "2025-06-05",
+      "title": "Kepler in-house manufacturing and trials",
+      "claim": "Kepler reported that over 80% of K2 core hardware is developed and manufactured in-house, and K2 units are currently being trialed across real-world industrial scenarios.",
+      "category": [
+        "deployment_commercial_proof",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim from a trade-media summary.",
+      "arena_relevance": "Vertical integration and trials suggest early commercial traction.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Kepler reported that over 80% of its robot’s core hardware is developed and manufactured in-house to support vertical integration, reduce costs, and improve supply chain resilience.",
+      "source_location": "The Robot Report article, 'Humanoids take steps toward production' section",
+      "verification_notes": "No customer names or trial data were provided in this source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_007",
+      "date": "2025-10-27",
+      "title": "IROS 2025 K2 walking performance",
+      "claim": "At IROS 2025, K2 Bumblebee walked with fluid humanlike motion and performed during the conference robot parade.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Paid press release from PR Newswire, company claims.",
+      "arena_relevance": "Shows walking in a public academic setting.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "At the Kepler Robotics's booth, the K2 \"Bumblebee\" walked with fluid, humanlike motion.",
+      "source_location": "Yahoo Finance / PR Newswire IROS 2025 release",
+      "verification_notes": "No independent video or teleoperation disclosure in this source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_009",
+      "date": "2025-09-27",
+      "title": "K2 mass production and customer shipments",
+      "claim": "Shanghai Kepler Robotics announced mass production of K2 Bumblebee and confirmed via video that it has begun shipping to customers.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Company press release republished by AI Insider.",
+      "arena_relevance": "Important commercial milestone, but unilateral claim.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Shanghai Kepler Robotics Co., Ltd (“Kepler Robotics”) has announced the start of mass production for its K2 “Bumblebee” model, confirming through a recently released video that the world’s first commercially available hybrid-architecture humanoid robot has begun shipping to customers.",
+      "source_location": "AI Insider press release summary",
+      "verification_notes": "No independent shipment count or customer names were found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_010",
+      "date": "2025-09-27",
+      "title": "K2 production video durability showcase",
+      "claim": "Kepler's production video shows K2 straight-knee gait, assembly line operations, component testing, environmental tests, aging trials, obstacle navigation, thousands of hours of continuous uptime without failure, and dynamic performance evaluations.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "kepler-k2_source_004",
+        "kepler-k2_source_007"
+      ],
+      "confidence": 0.55,
+      "notes": "Video content is described in a press release; the actual video source 7 has no transcript.",
+      "arena_relevance": "Company-produced durability evidence, but not independently audited.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "The production video highlights the K2 “Bumblebee” executing a straight-knee bipedal gait, as well as assembly line operations, component testing, high/low-temperature environmental tests, system aging trials, obstacle navigation, thousands of hours of continuous uptime without failure, and dynamic performance evaluations—all confirming the model’s readiness for real-world deployment.",
+      "source_location": "AI Insider press release summary",
+      "verification_notes": "Supporting source 7 is only the video title 'Kepler Robotics K2 Bumblebee Enters Mass Production'; no transcript or independent verification found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_011",
+      "date": "2025-09-27",
+      "title": "K2 energy efficiency and runtime claims",
+      "claim": "K2 achieves up to 81.3% energy efficiency and up to eight hours of operation on a single charge.",
+      "category": [
+        "endurance_reliability",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Company claim repeated in press release.",
+      "arena_relevance": "Directly affects operational uptime.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The K2 “Bumblebee” achieves up to 81.3% energy efficiency with its hybrid architecture, allowing for up to eight hours of operation on a single charge.",
+      "source_location": "AI Insider press release summary",
+      "verification_notes": "No independent power or runtime measurement published.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_012",
+      "date": "2025-09-27",
+      "title": "K2 RMB 248,000 list price",
+      "claim": "K2 Bumblebee is priced at RMB 248,000 per unit.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Official press release price.",
+      "arena_relevance": "Price evidence for value comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The K2 “Bumblebee” is priced at RMB 248,000 per unit, breaking through the million-yuan threshold of prototype humanoid robots and significantly lowering barriers for large-scale adoption.",
+      "source_location": "AI Insider press release summary",
+      "verification_notes": "Price is company-listed; purchase path is contact sales.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_013",
+      "date": "2025-09-27",
+      "title": "K2 framework agreements",
+      "claim": "Kepler signed framework agreements covering several thousand units with total contract value in the hundreds of millions of yuan.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim; framework agreements may not equal delivered units.",
+      "arena_relevance": "Early commercial traction signal.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "To date, Kepler Robotics has signed framework agreements covering several thousand units, with total contract value in the hundreds of millions of yuan.",
+      "source_location": "AI Insider press release summary",
+      "verification_notes": "No contract details or delivery schedules disclosed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_014",
+      "date": "2025-09-11",
+      "title": "K2 hybrid-architecture disturbance-resistant gait demo",
+      "claim": "In a video, K2 Bumblebee steadily navigated bricks, plastic surfaces and grass, and maintained stable steps when subjected to external pushes.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "kepler-k2_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Company-paid press release describing a demo video; no independent raw footage in reviewed sources.",
+      "arena_relevance": "Strongest locomotion-balance evidence for K2 in this source set.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "In the video, K2 \"Bumblebee\" steadily navigates a variety of complex terrains—including bricks, plastic surfaces, and grass—and maintains stable steps even when subjected to external pushes, documenting the robot's ability to maintain balance and adapt to real-world environments.",
+      "source_location": "Yahoo Finance / PR Newswire gait upgrade release",
+      "verification_notes": "Teleoperation status is not disclosed; no raw metrics or failure counts provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_015",
+      "date": "2025-09-11",
+      "title": "K2 VLA+ natural-language task demo",
+      "claim": "Kepler introduced a VLA+ training platform demonstration showing K2 Bumblebee using a layered VLA+ model to interpret natural language commands and carry out a wide range of tasks.",
+      "category": [
+        "autonomy_task_execution",
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_005"
+      ],
+      "confidence": 0.55,
+      "notes": "Company claim without detailed benchmarking.",
+      "arena_relevance": "Relevant to instruction-following and autonomy.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "At the same time, Kepler introduced a demonstration of its VLA+ training platform, highlighting how K2 \"Bumblebee\" applies a layered VLA+ model to interpret natural language commands and carry out a wide range of tasks.",
+      "source_location": "Yahoo Finance / PR Newswire gait upgrade release",
+      "verification_notes": "No natural language benchmark or teleoperation disclosure found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_016",
+      "date": "2026-05-22",
+      "title": "Kepler confirmed orders above 47 million yuan",
+      "claim": "Kepler holds confirmed orders exceeding 47 million yuan, approximately $6.9 million.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "kepler-k2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Reported by BigGo Finance based on public disclosures.",
+      "arena_relevance": "Shows confirmed commercial interest, but value is modest.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "To date, Kepler holds confirmed orders exceeding 47 million yuan (approximately $6.9 million).",
+      "source_location": "BigGo Finance article, 'From star team to change of control' section",
+      "verification_notes": "Media summary of financial disclosures; no customer names confirmed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_017",
+      "date": "2026-05-22",
+      "title": "Kepler 2025 revenue and loss",
+      "claim": "Kepler generated full-year 2025 revenue of 4.34 million yuan against a net loss of 66.94 million yuan.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "kepler-k2_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Financial data from disclosed audit reports, reported by BigGo Finance.",
+      "arena_relevance": "Financial health is relevant to long-term accessibility and support.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "According to disclosed audit reports, Kepler generated full-year 2025 revenue of just 4.34 million yuan (approximately $637,851), against a net loss of 66.94 million yuan (approximately $9.8 million).",
+      "source_location": "BigGo Finance article, 'Mounting losses and diverging investors' section",
+      "verification_notes": "Financial figures are as reported; not independently audited by this researcher.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_018",
+      "date": "2026-05-22",
+      "title": "Kepler founder/CEO departure",
+      "claim": "Former Kepler CEO Hu Debo has departed to start a new venture.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "kepler-k2_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Reported by BigGo Finance.",
+      "arena_relevance": "Organizational uncertainty may affect product support.",
+      "claim_type": "security_caution",
+      "supporting_excerpt": "Notably, former Kepler CEO Hu Debo has already departed to start a new venture.",
+      "source_location": "BigGo Finance article, 'Hangzhou Kelin's predicament and high-stakes gamble' section",
+      "verification_notes": "No direct Kepler statement found in reviewed sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "kepler-k2_evidence_019",
+      "date": null,
+      "title": "Directory summary of K2 Bumblebee",
+      "claim": "K2 Bumblebee uses a hybrid serial-parallel actuator architecture, is designed for factory floor deployment with a 30 kg dual-arm payload and 8-hour operating time.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kepler-k2_source_006"
+      ],
+      "confidence": 0.4,
+      "notes": "Directory aggregator source; low reliability.",
+      "arena_relevance": "Corroborates specs from less reliable source.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Its flagship K2 \"Bumblebee\" uses a hybrid serial-parallel actuator architecture — combining roller screw linear actuators and rotary actuators — and is designed for factory floor deployment with a 30 kg dual-arm payload and 8-hour operating time.",
+      "source_location": "The Uncanny Squad manufacturer page for Kepler Robotics",
+      "verification_notes": "Directory summary based on Kepler and The Robot Report; no independent verification.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "kepler-k2_deployment_001",
+      "customer_or_partner": "Zhaofeng Motor",
+      "site_or_context": "Zhaofeng Motor production line (named in a Kepler official video title)",
+      "task": "On-the-job log at Zhaofeng Motor; no task details available because video transcript was not provided.",
+      "start_date": "2025-12-29",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "kepler-k2_source_009",
+        "kepler-k2_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only a video title and a directory link to a related article; no transcript.",
+        "Teleoperation status not disclosed.",
+        "No output, hours or unit count published."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "kepler-k2_demo_001",
+      "title": "K2 hybrid-architecture disturbance-resistant gait upgrade",
+      "date": "2025-09-11",
+      "observed_capabilities": [
+        "steady navigation over bricks, plastic surfaces and grass",
+        "maintaining stable steps when subjected to external pushes"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "complex terrains including bricks, plastic surfaces and grass",
+      "source_ids": [
+        "kepler-k2_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Paid press release; no raw video or independent capture reviewed.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Not manually reviewed; demo content is known only from the press-release description.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The release does not state whether the gait was autonomous or teleoperated.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "K2 walking across bricks, plastic surfaces and grass while being externally pushed",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade evidence."
+        }
+      ]
+    },
+    {
+      "id": "kepler-k2_demo_002",
+      "title": "K2 production and durability video",
+      "date": "2025-09-27",
+      "observed_capabilities": [
+        "straight-knee bipedal gait",
+        "assembly line operations",
+        "component testing",
+        "high/low-temperature environmental tests",
+        "system aging trials",
+        "obstacle navigation",
+        "dynamic performance evaluations"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "factory production and testing environments",
+      "source_ids": [
+        "kepler-k2_source_004",
+        "kepler-k2_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Press-release description of video; source 7 is only a video title with no transcript.",
+        "No independent audit of the claimed thousands of hours continuous uptime."
+      ],
+      "editing_notes": "Not manually reviewed; wording from press release cannot be independently confirmed.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No teleoperation or autonomy statement for the production-video content found.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "production line and durability testing segments",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "kepler-k2_demo_003",
+      "title": "K2 on-the-job log at Zhaofeng Motor",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "title indicates an on-the-job log at Zhaofeng Motor"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Zhaofeng Motor production line",
+      "source_ids": [
+        "kepler-k2_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title available; no transcript.",
+        "Task details, duration and teleoperation status unknown."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not disclose execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "on-the-job log at Zhaofeng Motor (title only)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "kepler-k2_demo_004",
+      "title": "K2 at 2025 Zhangjiang Embodied AI Expo",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "title says K2 impressed at 2025 Zhangjiang Embodied AI Expo"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Zhangjiang Embodied AI Expo",
+      "source_ids": [
+        "kepler-k2_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title available; no transcript.",
+        "No specific capabilities can be credited beyond the title."
+      ],
+      "editing_notes": "Not manually reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "The title does not disclose execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "expo appearance (title only)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "kepler-k2_demo_005",
+      "title": "K2 at ICRA 2025 trade show",
+      "date": "2025-06-05",
+      "observed_capabilities": [
+        "natural gestures",
+        "steady autonomous mobility at ICRA venue",
+        "fluid interaction with other robotic systems"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "ICRA 2025 venue, Atlanta",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Company-reported trade-show behavior, not an independent recorded demo.",
+        "Teleoperation status not disclosed; 'autonomous mobility' is a company claim."
+      ],
+      "editing_notes": "Not manually reviewed; no raw video found in the source set.",
+      "teleoperation_status": "partially_disclosed",
+      "teleoperation_notes": "The text says K2 navigated with 'steady, autonomous mobility' according to the company, but no teleoperation disclosure for gestures or interactions was found.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "trade-show greeting, navigation and interaction",
+          "verification_notes": "Timestamp not verified; company claim only."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Walking speed",
+      "description": "No walking speed in m/s was found in any reviewed source.",
+      "impact_on_arena_scoring": "Mobility speed remains unquantified."
+    },
+    {
+      "topic": "Battery capacity",
+      "description": "Battery capacity was not published; only a one-hour charge to eight-hour runtime claim exists.",
+      "impact_on_arena_scoring": "Endurance is only a company claim."
+    },
+    {
+      "topic": "Teleoperation and autonomy",
+      "description": "Most demos, trade shows and video titles do not disclose execution mode. Autonomy and VLA+ task execution are company claims without independent verification or intervention logs.",
+      "impact_on_arena_scoring": "Do not credit full autonomy; keep confidence moderate."
+    },
+    {
+      "topic": "Independent verification",
+      "description": "No independent benchmark, third-party endurance test or safety certification was found.",
+      "impact_on_arena_scoring": "Hardware and reliability claims should be treated as company claims."
+    },
+    {
+      "topic": "Video content",
+      "description": "Several official videos are represented only by titles, with no transcript. Source 8 and source 12 were excluded because titles do not clearly specify the K2 model.",
+      "impact_on_arena_scoring": "Do not infer manipulative or autonomous capabilities from those titles."
+    },
+    {
+      "topic": "Zhaofeng Motor deployment",
+      "description": "The only named deployment evidence is an official video title and a directory link; no customer press release, unit count or output metrics were found.",
+      "impact_on_arena_scoring": "Commercial proof remains weak."
+    },
+    {
+      "topic": "Financial instability",
+      "description": "2025 revenue was 4.34 million yuan against a 66.94 million yuan net loss; Hangzhou Kelin acquired a 51% controlling stake at a lower valuation; former CEO departed.",
+      "impact_on_arena_scoring": "Long-term support and availability are uncertain."
+    },
+    {
+      "topic": "Price conflict",
+      "description": "The Robot Report lists a $30,000 base price; Source 4 lists RMB 248,000 per unit.",
+      "impact_on_arena_scoring": "Use both listings but do not claim a single confirmed retail price."
+    }
+  ],
+  "source_ids": [
+    "kepler-k2_source_001",
+    "kepler-k2_source_002",
+    "kepler-k2_source_003",
+    "kepler-k2_source_004",
+    "kepler-k2_source_005",
+    "kepler-k2_source_006",
+    "kepler-k2_source_007",
+    "kepler-k2_source_009",
+    "kepler-k2_source_010"
+  ],
+  "sources": [
+    {
+      "id": "kepler-k2_source_001",
+      "title": "Kepler Robotics showcases K2 'Bumblebee' humanoid at ICRA 2025 - The Robot Report",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/kepler-robotics-showcases-k2-bumblebee-icra-2025/",
+      "date_published": "2025-06-05",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade media article with company claims; not independent testing."
+    },
+    {
+      "id": "kepler-k2_source_002",
+      "title": "Kepler Robot Sells to Hangzhou Kelin at approximately $106 Million Valuation, Exposing Brutal Shakeout in Embodied AI — BigGo Finance",
+      "publisher": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/b7nCTZ4BX0tZvRTvipmH",
+      "date_published": "2026-05-22",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Financial news reporting public disclosures and audit data."
+    },
+    {
+      "id": "kepler-k2_source_003",
+      "title": "Kepler Robotics Unveils K2 \"Bumblebee\" at IROS 2025, Building a Global Developer Ecosystem Through an Open Robotics Platform",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/kepler-robotics-unveils-k2-bumblebee-081700768.html",
+      "date_published": "2025-10-27",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Paid press release via PR Newswire."
+    },
+    {
+      "id": "kepler-k2_source_004",
+      "title": "Kepler Moves World's First Commercially Available Hybrid-Architecture Humanoid Robot Into Mass Production",
+      "publisher": "AI Insider",
+      "url": "https://theaiinsider.tech/2025/09/27/kepler-moves-worlds-first-commercially-available-hybrid-architecture-humanoid-robot-into-mass-production/",
+      "date_published": "2025-09-27",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company press release republished with media framing."
+    },
+    {
+      "id": "kepler-k2_source_005",
+      "title": "Kepler Robotics Announces Advanced Gait Upgrade for K2 \"Bumblebee,\" Demonstrating the Potential of Hybrid Architecture",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/kepler-robotics-announces-advanced-gait-170000734.html",
+      "date_published": "2025-09-11",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Paid press release via PR Newswire."
+    },
+    {
+      "id": "kepler-k2_source_006",
+      "title": "Kepler Robotics — Humanoid Robot Manufacturer",
+      "publisher": "The Uncanny Squad",
+      "url": "https://www.theuncannysquad.com/manufacturer/kepler-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Aggregator directory page; not a primary source."
+    },
+    {
+      "id": "kepler-k2_source_007",
+      "title": "Kepler Robotics K2 Bumblebee Enters Mass Production",
+      "publisher": "YouTube Kepler Humanoid Robot",
+      "url": "https://www.youtube.com/watch?v=IAdq_1ULIRQ",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Kepler video; title only, no transcript."
+    },
+    {
+      "id": "kepler-k2_source_009",
+      "title": "Kepler K2 “Bumblebee” | On-the-Job Log — Zhaofeng Motor",
+      "publisher": "YouTube Kepler Humanoid Robot",
+      "url": "https://www.youtube.com/watch?v=dJpUTzaRFxk",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Kepler video; title only, no transcript."
+    },
+    {
+      "id": "kepler-k2_source_010",
+      "title": "Kepler K2 “Bumblebee” Impresses at the 2025 Zhangjiang Embodied AI Expo",
+      "publisher": "YouTube Kepler Humanoid Robot",
+      "url": "https://www.youtube.com/watch?v=dQ5lXuTHxrM",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Kepler video; title only, no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Kepler K2 Bumblebee is a 175 cm, 75 kg industrial humanoid with hybrid actuators, 52 DoF and 11-DoF hands. It has a $30,000/RMB 248,000 list price and mass-production announcements, but the evidence base is dominated by company claims and title-only demo videos. The strongest evidence is a company-described gait video on varied terrain with external pushes; commercial proof is weak despite a Zhaofeng Motor video title and confirmed orders, especially given low 2025 revenue and financial instability.",
+    "strongest_positive_evidence": [
+      "Company-described gait-upgrade video showing stable walking over bricks, plastic and grass under external pushes (kepler-k2_evidence_014).",
+      "Official mass-production and customer-shipment announcement (kepler-k2_evidence_009).",
+      "Confirmed orders over 47 million yuan reported by BigGo Finance (kepler-k2_evidence_016).",
+      "Official video title indicating an on-the-job log at Zhaofeng Motor (kepler-k2_evidence_021)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No independent benchmark, autonomy audit, endurance log or safety certification.",
+      "No walking speed, battery capacity, or detailed task success rates.",
+      "Zhaofeng Motor deployment is only a video title, with no transcript or customer press release.",
+      "Most locomotion and manipulation demos have no teleoperation disclosure."
+    ],
+    "conflicting_claims": [
+      "Price: $30,000 (The Robot Report) versus RMB 248,000 (Source 4).",
+      "Productivity claim of 1.5 human workers is company-only and not independently validated.",
+      "Some source 4 language describes K2 as world's first commercially available hybrid-architecture humanoid, but no independent body confirms this."
+    ],
+    "recommended_arena_categories": [
+      "industrial_humanoid",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit K2 as a fully autonomous system; autonomy is company-claimed and mostly not teleop-disclosed.",
+      "Do not treat Zhaofeng Motor as a confirmed customer deployment beyond the official video title.",
+      "Do not present framework agreements as delivered units.",
+      "Do not infer manipulation capabilities from title-only videos.",
+      "Do not use source 8 or source 12 for K2 evidence because K2 is not clearly specified."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "As of 2026-10-29, K2 Bumblebee is Kepler's commercial humanoid. The Kepler channel posted a Qilin debut video in September 2026, but no statement was found that it replaced K2."
+  },
+  "excluded_claims": [
+    {
+      "claim": "World's first human–robot collaborative high-altitude welding video",
+      "reason": "Source 8 title does not explicitly mention K2 Bumblebee, so it cannot be attributed to K2 without speculation.",
+      "source_ids": []
+    },
+    {
+      "claim": "Qilin grand debut video",
+      "reason": "Source 12 concerns a different robot, Qilin, not K2 Bumblebee.",
+      "source_ids": []
+    },
+    {
+      "claim": "1.5 full-time human workers equivalent workload",
+      "reason": "Company productivity claim repeated by The Robot Report; no independent study or customer data found.",
+      "source_ids": [
+        "kepler-k2_source_001"
+      ]
+    },
+    {
+      "claim": "World's first commercially available hybrid-architecture humanoid",
+      "reason": "Company positioning, not independently verified.",
+      "source_ids": [
+        "kepler-k2_source_004"
+      ]
+    },
+    {
+      "claim": "Thousands of hours of continuous uptime without failure",
+      "reason": "Only described in a press-release production-video summary; no raw log or independent audit.",
+      "source_ids": [
+        "kepler-k2_source_004"
+      ]
+    },
+    {
+      "claim": "Several thousand units framework agreements as delivered units",
+      "reason": "Framework agreements are non-binding contracts, not confirmed deliveries.",
+      "source_ids": [
+        "kepler-k2_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 6,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 3,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Kepler K2 Bumblebee is a commercial industrial humanoid from Shanghai. It is 175 cm, 75 kg, 52 DoF, with 11-DoF hands, a hybrid roller-screw/rotary actuator design, 100 TOPS compute, and a claimed 30 kg dual-arm payload and 8-hour runtime on a one-hour charge. Kepler lists a $30,000 base price or RMB 248,000 and announced mass production and shipments in September 2025. The most concrete positive evidence is a company-described gait video showing the robot walking over bricks, plastic and grass and remaining stable under pushes. Commercial proof is limited: confirmed orders of over 47 million yuan are reported, and an official video title suggests a Zhaofeng Motor on-the-job log, but 2025 revenue was only 4.34 million yuan with heavy losses and the company was acquired at a lower valuation. Autonomy, endurance and manipulation claims are mostly company statements without independent verification; many demo videos are title-only with no teleoperation disclosure.",
+    "strongest_evidence": [
+      "Company-described K2 gait demo on varied terrain with external pushes (kepler-k2_evidence_014).",
+      "Official mass-production and customer-shipment announcement (kepler-k2_evidence_009).",
+      "Confirmed orders above 47 million yuan (kepler-k2_evidence_016).",
+      "Official video title indicating Zhaofeng Motor on-the-job log (kepler-k2_evidence_021)."
+    ],
+    "weakest_evidence": [
+      "No independent benchmarks, safety certification, or teleoperation disclosures.",
+      "No walking speed, battery capacity, or detailed autonomy data.",
+      "Zhaofeng Motor deployment is only a video title.",
+      "Financial data shows 2025 revenue of 4.34 million yuan and large losses."
+    ],
+    "known_do_not_credit": [
+      "Do not credit full autonomy; autonomy claims are company-asserted.",
+      "Do not treat Zhaofeng Motor as a confirmed deployment beyond the video title.",
+      "Do not treat framework agreements as delivered units.",
+      "Do not infer capabilities from title-only videos.",
+      "Do not credit source 8 high-altitude welding or source 12 Qilin to K2."
+    ],
+    "recommended_confidence": "low"
+  }
+}

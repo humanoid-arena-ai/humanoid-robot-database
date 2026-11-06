@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "leju-robotics",
+    "name": "Leju Robotics",
+    "country": "China",
+    "website": null,
+    "founded": 2016,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "leju-kuavo"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Raised about 1.5 billion yuan (about $200 million) in October 2025 (The Robot Report); earlier backers include Tencent and Shenzhen Capital Group (Wikipedia)."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "leju-robotics_source_001",
+      "title": "Leju Robot",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Leju_Robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "leju-robotics_source_002",
+      "title": "Leju raises $200M for humanoid production as Unitree unveils H2",
+      "publisher": "therobotreport.com",
+      "url": "https://www.therobotreport.com/leju-raises-200m-humanoid-production-unitree-unveils-h2-robot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "leju-robotics_source_003",
+      "title": "Embodied AI IPO Boom: Building Real Businesses or Riding the Hype?",
+      "publisher": "autonews.gasgoo.com",
+      "url": "https://autonews.gasgoo.com/articles/news/embodied-ai-ipo-boom-building-real-businesses-or-riding-the-hype-2065702333747675136",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

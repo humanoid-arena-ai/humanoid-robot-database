@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "1x-technologies",
+    "name": "1X Technologies",
+    "country": "Norway / United States",
+    "website": "https://www.1x.tech/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "1x-neo",
+    "1x-eve"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "1x-technologies_company_source_001",
+      "title": "1X Technologies website",
+      "publisher": "1X Technologies",
+      "url": "https://www.1x.tech/neo",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

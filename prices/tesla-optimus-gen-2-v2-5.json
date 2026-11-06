@@ -1,0 +1,60 @@
+{
+  "robotId": "tesla-optimus-gen-2-v2-5",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "Tesla does not sell Optimus and has no preorder or waitlist. Elon Musk has said Tesla could start shipping the first commercial Optimus robots by 2027.",
+  "configurations": [
+    {
+      "name": "Optimus (long-term target)",
+      "price": 20000,
+      "currency": "USD",
+      "priceType": "target",
+      "region": "Global",
+      "notes": "Elon Musk said at the October 2024 We, Robot event that Optimus could cost between $20,000 and $30,000 ('less than a car') at scale. The lower bound is stored here. Applies to future production versions, not Gen 2 / v2.5 units.",
+      "sourceLabel": "Built In, reporting Musk at We, Robot",
+      "sourceUrl": "https://builtin.com/robotics/tesla-robot",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [],
+  "rental": [],
+  "priceHistory": [
+    {
+      "date": "2022-09-30",
+      "price": 20000,
+      "currency": "USD",
+      "event": "Musk at Tesla AI Day said Optimus would cost 'less than $20,000' (target, prototype stage)",
+      "sourceUrl": "https://www.foxbusiness.com/technology/tesla-elon-musk-shows-off-humanoid-robot-optimus-prototype-expected-20k-pricetag"
+    },
+    {
+      "date": "2024-10-10",
+      "price": 20000,
+      "currency": "USD",
+      "event": "Musk at We, Robot said Optimus could cost $20,000 to $30,000 (target)",
+      "sourceUrl": "https://builtin.com/robotics/tesla-robot"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy Tesla Optimus?",
+      "a": "No. Optimus is not for sale and Tesla has no preorder. Musk said at Davos in January 2026 that Tesla could start shipping its first commercial Optimus robots by 2027.",
+      "sourceUrl": "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2/"
+    },
+    {
+      "q": "How much will Tesla Optimus cost?",
+      "a": "Musk has said that at scale Optimus would cost $20,000 to $30,000. This is a target, not a list price.",
+      "sourceUrl": "https://www.fool.com/investing/2026/09/14/elon-musk-says-optimus-will-ship-to-customers-in-2/"
+    },
+    {
+      "q": "Has Tesla started making Optimus?",
+      "a": "On the Q1 2026 earnings call Musk said Optimus production would begin at Fremont in late July or August 2026, with slow initial output, and a second factory at Giga Texas around summer 2027.",
+      "sourceUrl": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/"
+    },
+    {
+      "q": "Has the Optimus price target changed?",
+      "a": "In 2022 Musk said Optimus would cost less than $20,000; since 2024 he has given a range of $20,000 to $30,000.",
+      "sourceUrl": "https://www.foxbusiness.com/technology/tesla-elon-musk-shows-off-humanoid-robot-optimus-prototype-expected-20k-pricetag"
+    }
+  ],
+  "notes": "All prices are Musk's targets for future mass production, not prices for Gen 2 or v2.5 units, which are internal R&D and factory robots. Tesla's timelines have slipped repeatedly."
+}

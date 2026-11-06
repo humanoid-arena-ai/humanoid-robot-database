@@ -1,0 +1,929 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "fourier-gr-3",
+    "name": "Fourier GR-3",
+    "company_id": "fourier",
+    "company_name": "Fourier",
+    "country": "China",
+    "generation": "full-size 'Care-bot' humanoid; first full-size companion humanoid from Fourier",
+    "first_announced_date": "2025-08-07",
+    "release_date": null,
+    "status": "pilot",
+    "status_notes": "TechNode reported on 2025-08-07 that Fourier expected deployment in nursing homes and rehabilitation centers; CES demos in Jan 2026; ROBOTio mentions a PERKESO demonstration in June 2026; Robopear states status rests on vendor statements only with no independent pilot/delivery documented as of 2026-10-20.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "service_humanoid",
+    "intended_use_cases": [
+      "companionship",
+      "health monitoring",
+      "rehabilitation support",
+      "nursing homes",
+      "rehabilitation centers",
+      "education and research",
+      "reception and tours"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "165 cm",
+      "value": 165,
+      "unit": "cm",
+      "notes": "Consistent across TechNode, PR Newswire, ROBOTio and Robopear.",
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "71 kg",
+      "value": 71,
+      "unit": "kg",
+      "notes": "All reviewed sources list 71 kg.",
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "3 kg",
+      "value": 3,
+      "unit": "kg",
+      "notes": "Single-hand/arm load capacity per ROBOTio, Robotix Market and Robopear.",
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_005",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "runtime": {
+      "original_value": "approx. 3 h",
+      "value": 3,
+      "unit": "hours",
+      "notes": "Robofy says 3 hours per charge with dual hot-swappable batteries enabling 6 hours continuous operation; conflicting with 3 h runtime claim.",
+      "source_ids": [
+        "fourier-gr-3_source_003",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "battery": {
+      "original_value": "702 Wh + 234 Wh (hot-swap)",
+      "value": null,
+      "unit": null,
+      "notes": "Two batteries listed: 702 Wh main and 234 Wh hot-swap. Robopear also lists 702 / 234 Wh; charging time 1.5 h.",
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 55,
+      "notes": "Published as 55 DoF; Robopear notes this is for 12-DoF hand version, standard hands are 6 DoF per hand.",
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.53 m/s",
+      "value": 1.53,
+      "unit": "m/s",
+      "notes": "Robopear checked fftai.com and lists 1.53 m/s; ROBOTio lists 6.1 km/h (about 1.69 m/s). Version conflict noted.",
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "hands": {
+      "description": "Optional 12-DoF hands with tactile arrays; standard version has 6 DoF per hand; 31 touch and pressure sensors on head and torso.",
+      "degrees_of_freedom": 12,
+      "force_feedback": "tactile arrays on optional 12-DoF hands; 31 touch/pressure sensors",
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "Full-Perception Multimodal Interaction System integrating visual, audio and tactile sensing",
+        "head camera with eye displays",
+        "6-axis IMU",
+        "4-microphone array with voice localisation",
+        "31 touch sensors on head and torso"
+      ],
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004"
+      ]
+    },
+    "compute": {
+      "description": "AMD Ryzen 7 8845HS (8-core/16-thread), Ubuntu 22.04; hybrid decision architecture merging fast reflexive control with language-model reasoning.",
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ]
+    },
+    "actuators": {
+      "description": "55 total DoF; peak joint torque 440 N·m per ROBOTio manufacturer data; 7-DoF arms, 6-DoF legs, 3-DoF waist, 2-DoF head/neck.",
+      "source_ids": [
+        "fourier-gr-3_source_004"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No official public price; ROBOTio says manufacturer price not published and is on request. Robotix Market lists $119,995 and Robofy lists $28K-$120K, but these are third-party reseller/directory figures. Robopear confirms enterprise quote only and no list price on vendor channels checked 2026-10-20.",
+      "source_ids": [
+        "fourier-gr-3_source_003",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_005",
+        "fourier-gr-3_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "GR-3 has two 7-DoF arms, 3 kg per-hand payload, optional 12-DoF hands with tactile arrays and 31 touch sensors on head/torso. A CES video title references dexterous hands. No detailed manipulation task metrics or independent success rates found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_005",
+        "fourier-gr-3_source_009"
+      ],
+      "caveats": [
+        "No transcript or observable video analyzed; dexterity based on specs and video title only.",
+        "3 kg payload is modest for many physical tasks."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Fourier claims a hybrid decision architecture merging fast reflexive control with language-model reasoning; live chess at CES implies perception and planning but execution mode is not disclosed. No autonomous task benchmarks or intervention data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-3_source_002"
+      ],
+      "caveats": [
+        "Teleoperation/autonomy not disclosed for any demo.",
+        "No independent verification of autonomy claims."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "55 DoF; published walking speed 1.53 m/s (Robopear) or 6.1 km/h (ROBOTio); scheduled dance sessions at CES highlighted fluid whole-body movement and balance; a CES video is titled 'Fourier GR-3 Humanoid Robot in Motion'.",
+      "evidence_level": 2,
+      "source_ids": [
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_007"
+      ],
+      "caveats": [
+        "Walking speed sources conflict; not independently measured.",
+        "No stability, fall-rate or disturbance-recovery metrics found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Full-Perception Multimodal Interaction System integrates visual, audio and tactile sensing; Foucault? No, Fourier claims it can localize voices, track users' movements, recognize subtle touch and perceive a chess board in real time.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002"
+      ],
+      "caveats": [
+        "Company claims only; no third-party perception benchmark or independent validation."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Designed for natural conversation, emotion recognition, touch response, dance and chess; CES booth offered conversational/touch activities and live chess. Official videos emphasize caring companion and emotions; soft animal-like head and GFOAM shell lower social barriers.",
+      "evidence_level": 2,
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_008",
+        "fourier-gr-3_source_010",
+        "fourier-gr-3_source_011"
+      ],
+      "caveats": [
+        "No third-party evaluation of emotional intelligence or conversational reliability.",
+        "CES demos are curated booth interactions; video content not transcribed."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Runtime approximately 3 hours per charge; battery 702 Wh + 234 Wh hot-swap; Robofy says dual hot-swappable batteries enable 6 hours continuous operation; charging time 1.5 h. No long-term operation data, failure rates or uptime logs found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-3_source_003",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ],
+      "caveats": [
+        "Directory specs, not independently measured.",
+        "6 h continuous operation claim conflicts with 3 h per charge; source is a comparison directory."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "165 cm, 71 kg, soft upholstered GFOAM shell, Morandi colours, animal-like head and 31 touch sensors; targeted for care homes, public spaces, assisted settings and educational facilities. CES booth allowed public interaction.",
+      "evidence_level": 2,
+      "source_ids": [
+        "fourier-gr-3_source_001",
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_004"
+      ],
+      "caveats": [
+        "No safety certification or collaborative-operation standard found for the full robot.",
+        "A 71 kg humanoid with 440 N·m peak torque may pose risks in close human proximity."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No named customer deployment independently confirmed. ROBOTio mentions a demonstration at PERKESO rehabilitation centre in Malaysia in June 2026, but Robopear states status rests on vendor statements only with no independent pilot or delivery documented.",
+      "evidence_level": 0,
+      "source_ids": [
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_006"
+      ],
+      "caveats": [
+        "PERKESO claim is third-party and unverified.",
+        "No unit counts, operating hours, customer names or outcome metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No official price or purchase path. ROBOTio says manufacturer price is on request and no official EU distribution/service confirmation. Reseller Robotix Market lists $119,995; Robofy lists $28K-$120K. No purchase URL found from Fourier.",
+      "evidence_level": 0,
+      "source_ids": [
+        "fourier-gr-3_source_003",
+        "fourier-gr-3_source_004",
+        "fourier-gr-3_source_005"
+      ],
+      "caveats": [
+        "Reseller prices conflict and are not official manufacturer pricing.",
+        "No confirmed public availability outside enterprise inquiry."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "fourier-gr-3_evidence_001",
+      "date": "2025-08-07",
+      "title": "TechNode reports launch specs and care use cases",
+      "claim": "GR-3 is 165 cm tall, 71 kg, has 55 degrees of freedom, integrates auditory/visual/tactile modules, supports emotion recognition and natural dialogue, and is expected in nursing homes and rehabilitation centers.",
+      "category": [
+        "specs",
+        "human_interaction",
+        "perception_scene_understanding",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-3_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Credible media reporting company launch; values are company claims.",
+      "arena_relevance": "Establishes core size, DoF, sensory system and intended care deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Standing 165cm tall and weighing 71kg, the robot offers 55 degrees of body freedom.",
+      "source_location": "TechNode article body",
+      "verification_notes": "TechNode links to Fourier's Chinese WeChat post; company claims not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-3_evidence_003",
+      "date": null,
+      "title": "ROBOTio aggregates manufacturer specs for GR-3",
+      "claim": "ROBOTio lists GR-3 as 165 cm, 71 kg, 55 DoF, soft upholstered shell, 31 touch sensors, 3 kg arm payload, 6.1 km/h walking, 440 N·m peak joint torque, 702 Wh + 234 Wh hot-swap battery, AMD Ryzen 7 8845HS and Ubuntu 22.04.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-3_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Third-party directory presenting manufacturer data; not independently measured.",
+      "arena_relevance": "Most complete public spec sheet source in the pack.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The \"Care-bot\" from Shanghai-based Fourier — 165 cm, 71 kg, 55 degrees of freedom, a soft upholstered shell and 31 touch sensors for care, rehabilitation and companionship.",
+      "source_location": "ROBOTio product page introduction",
+      "verification_notes": "Names manufacturer data but source is a European event/rental directory; walking speed conflicts with Robopear 1.53 m/s.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-3_evidence_004",
+      "date": null,
+      "title": "ROBOTio mentions PERKESO rehab centre demonstration",
+      "claim": "ROBOTio states GR-3 was demonstrated at the PERKESO rehabilitation centre in Malaysia in June 2026 for cognitive training and guiding.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "fourier-gr-3_source_004"
+      ],
+      "confidence": 0.3,
+      "notes": "Single third-party directory mention; no official confirmation from PERKESO or Fourier.",
+      "arena_relevance": "Potential early care-site validation, but not creditworthy as commercial deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Cognitive training and guiding; demonstrated at the PERKESO rehabilitation centre in Malaysia (June 2026).",
+      "source_location": "ROBOTio 'Where it is deployed' section",
+      "verification_notes": "No primary source, unit count, duration or outcome provided; treat as unverified rumor-tier claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "fourier-gr-3_evidence_005",
+      "date": null,
+      "title": "Robotix Market reseller listing with price",
+      "claim": "Robotix Market lists GR-3 for $119,995, with 55 DoF, 165 cm, 71 kg, 3 kg hand payload and about 3 hours runtime.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "fourier-gr-3_source_005"
+      ],
+      "confidence": 0.4,
+      "notes": "Third-party reseller; not an official Fourier price.",
+      "arena_relevance": "Only public numeric price found, but not official; should be flagged as unverified.",
+      "claim_type": "spec",
+      "supporting_excerpt": "سعر روبوت Fourier-GR-3 بشري: $119,995.",
+      "source_location": "Robotix Market FAQ / price section",
+      "verification_notes": "Reseller site; price may not reflect manufacturer pricing; no source for runtime claim beyond listing.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "fourier-gr-3_evidence_006",
+      "date": null,
+      "title": "Robopear status: vendor claims only",
+      "claim": "Robopear, after checking vendor pages on 2026-10-20, says no list price is published, status rests on vendor statements, and no independent demonstration, pilot or delivery is documented as of 2026-10-20.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value",
+        "status"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "fourier-gr-3_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Independent directory analysis, but still not primary evidence; useful caveat.",
+      "arena_relevance": "Caps deployment and pricing claims.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Status rests on vendor statements only: no independent demonstration, pilot or delivery is documented as of 20 Oct 2026.",
+      "source_location": "Robopear status section",
+      "verification_notes": "Robopear checked fftai.com, support-old.fftai.com and PR Newswire; not a customer or testing source.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "fourier-gr-3_evidence_007",
+      "date": null,
+      "title": "Robofy directory lists conflicting price and runtime",
+      "claim": "Robofy's comparison lists GR-3 at $28K-$120K, 3 hours per charge, and says dual hot-swappable batteries enable 6 hours continuous operation.",
+      "category": [
+        "accessibility_value",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "fourier-gr-3_source_003"
+      ],
+      "confidence": 0.3,
+      "notes": "Directory with estimated values; conflicts with ROBOTio and Robotix.",
+      "arena_relevance": "Additional price range and endurance caveat.",
+      "claim_type": "spec",
+      "supporting_excerpt": "3 hours per charge; dual hot-swappable batteries enable 6 hours continuous operation",
+      "source_location": "Robofy comparison table",
+      "verification_notes": "Estimated/unofficial data; '3 kg payload' from official Fourier documentation per source but not verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "fourier-gr-3_deployment_001",
+      "customer_or_partner": "PERKESO rehabilitation centre",
+      "site_or_context": "Malaysia (claimed by ROBOTio, not confirmed by PERKESO or Fourier)",
+      "task": "Cognitive training and guiding",
+      "start_date": "2026-06",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "fourier-gr-3_source_004"
+      ],
+      "evidence_tier": 0,
+      "caveats": [
+        "Only source is third-party directory ROBOTio.",
+        "No official confirmation from PERKESO or Fourier.",
+        "No unit count, duration, operating hours or outcome metrics."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "fourier-gr-3_demo_001",
+      "title": "CES 2026 booth interactions",
+      "date": "2026-01-07",
+      "observed_capabilities": [
+        "natural conversation",
+        "touch-based interactions",
+        "scheduled dance sessions",
+        "live chess matches"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Fourier booth at CES, Las Vegas",
+      "source_ids": [
+        "fourier-gr-3_source_002"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Press release, not video transcript; no independent review."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; curated public demo description.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Press release does not state whether demos were autonomous or teleoperated.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "visitors engaging in conversation, touch, dance and chess with GR-3",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    },
+    {
+      "id": "fourier-gr-3_demo_002",
+      "title": "Fourier GR-3: How to Be a Good Robot?",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "behavior demonstration implied by title"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company setting",
+      "source_ids": [
+        "fourier-gr-3_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot describe actual contents."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; official video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "GR-3 behavior video",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "fourier-gr-3_demo_003",
+      "title": "Fourier GR-3：A Caring and Capable Companion",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "caring companion behavior implied by title"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "company setting",
+      "source_ids": [
+        "fourier-gr-3_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; official video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "GR-3 companion behavior video",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "fourier-gr-3_demo_004",
+      "title": "CES 2026 | Fourier GR-3 Humanoid Robot in Motion",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "motion demonstration implied by title"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CES 2026",
+      "source_ids": [
+        "fourier-gr-3_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; third-party video."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "GR-3 in motion at CES",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "fourier-gr-3_demo_005",
+      "title": "Fourier Showcases the New GR-3 Care Bot and Dexterous Hands at CES 2026",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "dexterous hands and care bot demonstration implied by title"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "CES 2026",
+      "source_ids": [
+        "fourier-gr-3_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; third-party video."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "GR-3 care bot and dexterous hands at CES",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "fourier-gr-3_demo_006",
+      "title": "Fourier GR 3: The Humanoid Robot With Emotions",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "emotional interaction implied by title"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "fourier-gr-3_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; third-party video."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; video title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "GR-3 emotions demonstration",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No official price, pre-order or retail channel found. Fourier sells via enterprise inquiry only; Robotix Market and Robofy post conflicting third-party prices.",
+      "impact_on_arena_scoring": "Accessibility/value remains at minimal evidence."
+    },
+    {
+      "topic": "Customer deployment metrics",
+      "description": "No confirmed named customer deployment. ROBOTio mentions PERKESO demo but without confirmation; Robopear says status rests on vendor statements only.",
+      "impact_on_arena_scoring": "Commercial proof is effectively absent; do not credit care-site deployment."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "No demo or source states whether GR-3 actions were autonomous or teleoperated. The hybrid decision architecture is a company claim only.",
+      "impact_on_arena_scoring": "Credit interaction and motion demos, but keep autonomy confidence very low."
+    },
+    {
+      "topic": "Care/companionship generality",
+      "description": "No evaluation or metric supports emotion recognition, natural dialogue or care utility beyond company statements and curated CES booth interactions.",
+      "impact_on_arena_scoring": "Human-interaction scores should reflect design intent, not proven reliability."
+    },
+    {
+      "topic": "Specs gaps and conflicts",
+      "description": "Walking speed conflicts: ROBOTio 6.1 km/h vs Robopear 1.53 m/s. Hand DoF is 6 standard/12 optional; total DoF 55 depends on hand configuration. No official price.",
+      "impact_on_arena_scoring": "Do not infer one canonical DoF or speed; use ranges/caveats."
+    },
+    {
+      "topic": "Safety",
+      "description": "No safety certification or risk assessment found for GR-3. A 71 kg humanoid with 440 N·m peak torque requires caution in care settings.",
+      "impact_on_arena_scoring": "Slight caution in human-proximity scenarios."
+    }
+  ],
+  "source_ids": [
+    "fourier-gr-3_source_001",
+    "fourier-gr-3_source_002",
+    "fourier-gr-3_source_003",
+    "fourier-gr-3_source_004",
+    "fourier-gr-3_source_005",
+    "fourier-gr-3_source_006",
+    "fourier-gr-3_source_007",
+    "fourier-gr-3_source_008",
+    "fourier-gr-3_source_009",
+    "fourier-gr-3_source_010",
+    "fourier-gr-3_source_011"
+  ],
+  "sources": [
+    {
+      "id": "fourier-gr-3_source_001",
+      "title": "Fourier Intelligence unveils the “Care-bot” GR-3, its first full-sized companion humanoid robot",
+      "publisher": "TechNode",
+      "url": "https://technode.com/2025/08/07/fourier-intelligence-unveils-the-care-bot-gr-3-its-first-full-sized-companion-humanoid-robot/",
+      "date_published": "2025-08-07",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Credible Chinese tech media; reports company launch claims."
+    },
+    {
+      "id": "fourier-gr-3_source_002",
+      "title": "Fourier Makes CES Debut With GR-3, a Next-Generation Care-Focused Humanoid Robot",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/fourier-makes-ces-debut-with-gr-3-a-next-generation-care-focused-humanoid-robot-302654565.html",
+      "date_published": "2026-01-07",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company press release describing CES booth demos; not independent."
+    },
+    {
+      "id": "fourier-gr-3_source_003",
+      "title": "Fourier Intelligence GR-1 vs Fourier Intelligence GR-3 — Robofy",
+      "publisher": "Robofy",
+      "url": "https://robofy.world/compare/fourier-intelligence-gr-1-vs-fourier-intelligence-gr-3",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party comparison directory; price range and 6h continuous operation conflict with other sources."
+    },
+    {
+      "id": "fourier-gr-3_source_004",
+      "title": "Fourier GR-3 — care humanoid robot: specs, price, availability",
+      "publisher": "ROBOTio",
+      "url": "https://robotio.eu/fourier-gr-3",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "European robot rental/reseller directory with detailed manufacturer specs; PERKESO deployment claim unverified."
+    },
+    {
+      "id": "fourier-gr-3_source_005",
+      "title": "روبوت Fourier-GR-3 الروبوت البشري الآلي | Robotix Market",
+      "publisher": "Robotix Market",
+      "url": "https://robotixmarket.com/ar/products/fourier-gr-3-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Reseller listing with price $119,995; not official manufacturer price."
+    },
+    {
+      "id": "fourier-gr-3_source_006",
+      "title": "Fourier GR-3: enterprise quote, 1.65 m, vendor claims only — price, specs, status",
+      "publisher": "Robopear",
+      "url": "https://robopear.com/robots/fourier-gr-3/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory that checked vendor pages on 2026-10-20; status remains claimed; no independent demo/pilot/delivery documented."
+    },
+    {
+      "id": "fourier-gr-3_source_007",
+      "title": "CES 2026 | Fourier GR-3 Humanoid Robot in Motion",
+      "publisher": "YouTube RobotShopTV",
+      "url": "https://www.youtube.com/watch?v=E7gUrHrkLvI",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "fourier-gr-3_source_008",
+      "title": "Fourier GR 3: The Humanoid Robot With Emotions",
+      "publisher": "YouTube Trend AI Tech",
+      "url": "https://www.youtube.com/watch?v=HdsxEOAKpRI",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "fourier-gr-3_source_009",
+      "title": "Fourier Showcases the New GR-3 Care Bot and Dexterous Hands at CES 2026",
+      "publisher": "YouTube Peter Kappes",
+      "url": "https://www.youtube.com/watch?v=7anWXke_dsc",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript available."
+    },
+    {
+      "id": "fourier-gr-3_source_010",
+      "title": "Fourier GR-3: How to Be a Good Robot?",
+      "publisher": "YouTube Fourier",
+      "url": "https://www.youtube.com/watch?v=xNxtKU7Wq98",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Fourier video title; no transcript available."
+    },
+    {
+      "id": "fourier-gr-3_source_011",
+      "title": "Fourier GR-3：A Caring and Capable Companion",
+      "publisher": "YouTube Fourier",
+      "url": "https://www.youtube.com/watch?v=bkzXjzlEKrU",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official Fourier video title; no transcript available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Fourier GR-3 is a full-size service/care humanoid with strong design and interaction claims, but public evidence is mostly company statements, directory specs and video titles. No independent deployment, autonomy proof or official price exists.",
+    "strongest_positive_evidence": [
+      "Consistent 165 cm, 71 kg, 55 DoF specs across TechNode, PR Newswire and directories.",
+      "CES 2026 public booth interactions (conversation, touch, dance, chess) described in official press release.",
+      "Official Fourier videos titled 'How to Be a Good Robot?' and 'A Caring and Capable Companion'.",
+      "Detailed manufacturer spec sheet via ROBOTio (3h runtime, 31 touch sensors, AMD compute, soft shell)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No confirmed named customer deployment or pilot metrics.",
+      "No autonomy/teleoperation disclosure for any demo.",
+      "No independent verification, benchmark, failure rate or safety certification.",
+      "No official price; reseller prices conflict ($28K-$120K vs $119,995)."
+    ],
+    "conflicting_claims": [
+      "Walking speed: 6.1 km/h (ROBOTio) vs 1.53 m/s (Robopear/fftai.com).",
+      "Runtime: 3 hours per charge vs Robofy claim of 6 hours continuous with hot-swap.",
+      "Price: $119,995 Robotix Market vs $28K-$120K Robofy; no official price."
+    ],
+    "recommended_arena_categories": [
+      "service_humanoid",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit PERKESO as confirmed deployment.",
+      "Do not infer autonomy from video titles or PRNewswire.",
+      "Do not treat directory specs as independently measured.",
+      "Do not use GR-1 or GR-2 specs for GR-3.",
+      "Do not credit GR-3C teleoperation variants as GR-3."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "GR-3 is Fourier's current care-focused full-size humanoid as of 2026-10-29. GR-2 and GR-1 are prior generations. Robopear's check date is 2026-10-20."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Anton Robots GR-1 review details",
+      "reason": "Source 6 is about Fourier GR-1, not GR-3.",
+      "source_ids": []
+    },
+    {
+      "claim": "GR-3C 'Astronaut' variant with ring display and full-body teleoperation",
+      "reason": "ROBOTio mentions a variant, not the standard GR-3; no separate evidence provided.",
+      "source_ids": [
+        "fourier-gr-3_source_004"
+      ]
+    },
+    {
+      "claim": "PERKESO confirmed deployment",
+      "reason": "Only a third-party directory mention; no PERKESO or Fourier primary source.",
+      "source_ids": [
+        "fourier-gr-3_source_004"
+      ]
+    },
+    {
+      "claim": "Official manufacturer price",
+      "reason": "No official Fourier price found; reseller/directory prices are excluded from official availability.",
+      "source_ids": [
+        "fourier-gr-3_source_003",
+        "fourier-gr-3_source_005"
+      ]
+    },
+    {
+      "claim": "Autonomous operation of any demo",
+      "reason": "No source discloses autonomy or teleoperation; video titles cannot establish autonomy.",
+      "source_ids": [
+        "fourier-gr-3_source_002",
+        "fourier-gr-3_source_007",
+        "fourier-gr-3_source_010"
+      ]
+    },
+    {
+      "claim": "Figure 03 vs GR-3 comparison from AI News video",
+      "reason": "Source 10 not used; title only and not GR-3 specific evidence.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 4,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Fourier GR-3 is a full-size service/care humanoid (165 cm, 71 kg, 55 DoF, soft shell, 31 touch sensors) announced August 2025 and shown publicly at CES 2026 in conversation, touch, dance and chess interactions. The strongest evidence is consistent official/company specification and CES booth demo descriptions, plus official videos titled around caring and behavior. However, no autonomous execution proof, no confirmed customer deployment, no independent metrics and no official price exist; directory sources conflict on walking speed, runtime and price. Treat GR-3 as an early-stage care humanoid with design strengths but unverified commercial and autonomy claims.",
+    "strongest_evidence": [
+      "Consistent 165 cm / 71 kg / 55 DoF specs (TechNode, PR Newswire, directories).",
+      "CES 2026 public booth interaction descriptions (PR Newswire).",
+      "Official Fourier video titles 'How to Be a Good Robot?' and 'A Caring and Capable Companion'."
+    ],
+    "weakest_evidence": [
+      "No confirmed named customer deployment or pilot metrics.",
+      "No autonomy/teleoperation disclosure.",
+      "No official price or public purchase path."
+    ],
+    "known_do_not_credit": [
+      "PERKESO rehabilitation centre as confirmed deployment.",
+      "Autonomous operation from video titles or press release.",
+      "Directory/reseller prices as official.",
+      "GR-1/GR-2 specs for GR-3."
+    ],
+    "recommended_confidence": "low"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://humanoid-arena.local/schemas/robot_evidence_pack.schema.json",
+  "title": "Humanoid Arena Robot Evidence Pack",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "robot",
+    "currentness",
+    "specs",
+    "capability_evidence_summary",
+    "evidence_items",
+    "deployments",
+    "demos",
+    "limitations_and_unknowns",
+    "excluded_claims",
+    "evidence_audit",
+    "arena_prompt_summary",
+    "source_ids",
+    "sources",
+    "researcher_notes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "currentness": {
+      "type": "object",
+      "required": [
+        "is_current_robot",
+        "superseded_by",
+        "currentness_notes"
+      ]
+    },
+    "evidence_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim_type",
+          "supporting_excerpt",
+          "source_location",
+          "verification_notes",
+          "arena_scoring_impact"
+        ]
+      }
+    },
+    "demos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "editing_notes",
+          "teleoperation_status",
+          "teleoperation_notes",
+          "observed_segments"
+        ]
+      }
+    },
+    "excluded_claims": {
+      "type": "array"
+    },
+    "evidence_audit": {
+      "type": "object",
+      "required": [
+        "research_depth",
+        "primary_sources_count",
+        "secondary_sources_count",
+        "independent_sources_count",
+        "customer_sources_count",
+        "video_sources_count",
+        "manual_review_required",
+        "last_manual_reviewed"
+      ]
+    },
+    "arena_prompt_summary": {
+      "type": "object",
+      "required": [
+        "one_paragraph_summary",
+        "strongest_evidence",
+        "weakest_evidence",
+        "known_do_not_credit",
+        "recommended_confidence"
+      ]
+    }
+  }
+}

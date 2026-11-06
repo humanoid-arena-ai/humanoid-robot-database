@@ -1,0 +1,766 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "tiangong-ultra",
+    "name": "Tiangong Ultra",
+    "company_id": "x-humanoid",
+    "company_name": "Beijing Humanoid Robot Innovation Center (X-Humanoid)",
+    "country": "China",
+    "generation": "Tiangong Ultra running variant of the Tiangong humanoid platform",
+    "first_announced_date": null,
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "No public price or sales channel found. Tiangong Ultra is a running-focused prototype/research platform that won the 2025 Beijing humanoid half-marathon in 2:40:42 and set speed records at the 2026 World Humanoid Robot Games (9.39s 100m, 2.88m high jump). BaiduWiki reports Tiangang 2.0 achieved small-batch production, but Ultra availability is not disclosed.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "athletic running and humanoid race competition",
+      "research platform for humanoid locomotion and perception",
+      "rescue missions in mountains and disaster zones (company claim)",
+      "special operations, logistics sorting, industrial manufacturing (reported for Tiangong series)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "1.8 meters",
+      "value": 180,
+      "unit": "cm",
+      "notes": "TechNode reports 1.8 meters (180 cm). BaiduWiki also lists 180 cm. No conflict.",
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_005"
+      ]
+    },
+    "weight": {
+      "original_value": "55 kilograms",
+      "value": 55,
+      "unit": "kg",
+      "notes": "TechNode reports 55 kg. BaiduWiki lists 52 kg for Tiangong Ultra. Conflict noted; TechNode value used as primary, but both are from media.",
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_005"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload specification found for Tiangong Ultra in reviewed sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No official runtime published. During the half-marathon, three battery swaps were needed over 21 km, indicating limited single-charge endurance.",
+      "source_ids": [
+        "tiangong-ultra_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity not disclosed. TechNode notes three battery swaps during the half-marathon.",
+      "source_ids": [
+        "tiangong-ultra_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "12 km/h",
+      "value": 3.33,
+      "unit": "m/s",
+      "notes": "Top speed listed by TechNode and Mike Kalil. Race pace in half-marathon was 7-8 km/h (about 2 m/s). Sprint records from 100m races imply much higher instantaneous speeds but are sprint-specific.",
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_002"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "No total DoF published for Tiangong Ultra. BaiduWiki mentions Tiangong 3.0 has 43 DoF but that is a different model.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "No hand or manipulation specifications found for Tiangong Ultra.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": []
+    },
+    "sensors": {
+      "items": [
+        "Real-time vision for perceptual walking (company claim via Mike Kalil)",
+        "Visual perception sensors, high-precision IMU, six-dimensional force sensors (reported for Tiangong platform by BaiduWiki)",
+        "Head-mounted LiDAR and abdominal camera for 50 ms environment updates (reported for Tiangong platform by BaiduWiki)"
+      ],
+      "source_ids": [
+        "tiangong-ultra_source_002",
+        "tiangong-ultra_source_005"
+      ]
+    },
+    "compute": {
+      "description": "No compute details for Tiangong Ultra. BaiduWiki mentions 550 TOPS for Tiangong 1.1 PRO and 2070 TOPS for Tiangong 3.0, but these are not Ultra.",
+      "source_ids": []
+    },
+    "actuators": {
+      "description": "Lightweight build, integrated joints, and air-cooling system to manage joint overheating during long runs (company claim via TechNode).",
+      "source_ids": [
+        "tiangong-ultra_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "No public price, pre-order, or retail channel found. Tiangong Ultra is a research prototype; BaiduWiki notes Tiangang 2.0 has small-batch production but Ultra is not listed for sale.",
+      "source_ids": [
+        "tiangong-ultra_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "No direct manipulation evidence for Tiangong Ultra found. The Tiangong platform series claims applications in logistics sorting and special operations, but Ultra is focused on running and locomotion.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No dexterity demos, hand specs, or manipulation tasks reported for Ultra."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "BaiduWiki states that at the 2025 World Humanoid Robot Games 100m final, Tiangong Ultra was the only competitor using a fully autonomous navigation system with no manual remote control. The half-marathon race likely also involved autonomous operation but was not explicitly stated in TechNode.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tiangong-ultra_source_005"
+      ],
+      "caveats": [
+        "Autonomy claim is from a tertiary encyclopedia source; no independent verification or intervention logs.",
+        "Half-marathon autonomy not explicitly disclosed."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Strong mobility evidence: won the world's first humanoid half-marathon (21 km in 2:40:42), climbed 134 stairs continuously, ran on snow, slopes, gravel, and grass, maintained balance when pushed and hit with 10 kg weight, and achieved sprint records (9.39s 100m). Top speed 12 km/h.",
+      "evidence_level": 3,
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_002",
+        "tiangong-ultra_source_005",
+        "tiangong-ultra_source_010",
+        "tiangong-ultra_source_011",
+        "tiangong-ultra_source_012"
+      ],
+      "caveats": [
+        "Most evidence is from media reports or video titles; no independent technical benchmark.",
+        "Battery swaps during half-marathon indicate endurance limitations.",
+        "Some speed records from titles (8.64s, 8.86s) vary and need verification from full video."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Company claims real-time vision for dynamic step adjustment (perceptual walking) without pre-scanned 3D maps. BaiduWiki mentions head-mounted LiDAR and abdominal camera for 50 ms environment updates for Tiangong platform.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tiangong-ultra_source_002",
+        "tiangong-ultra_source_005"
+      ],
+      "caveats": [
+        "Perception performance not independently benchmarked.",
+        "Specific sensor details for Ultra not published."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No evidence of human interaction capabilities for Tiangong Ultra. The Tiangong series includes interactive versions (1.2 MAX) but Ultra is focused on athletic performance.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No voice, gesture, or social interaction demos found for Ultra."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Completed half-marathon (21 km) in 2:40:42 with three battery swaps. Climbed 134 steps continuously. No long-term reliability data published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_002",
+        "tiangong-ultra_source_005"
+      ],
+      "caveats": [
+        "Battery swaps needed, implying limited per-charge endurance.",
+        "No failure rates, mean time between failures, or long-term deployment data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Humanoid form factor, 1.8 m tall, 55 kg, air-cooled joints, demonstrated walking/running on varied outdoor terrain (grass, gravel, slopes, snow).",
+      "evidence_level": 2,
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_002"
+      ],
+      "caveats": [
+        "No safety certifications or human-proximity interaction testing disclosed.",
+        "Outdoor operation shown but no home/office deployment."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No commercial deployment found. Tiangong Ultra is a prototype. BaiduWiki notes Tiangang 2.0 achieved small-batch production but no named customers or paid deployments for Ultra.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No customer press releases, pilot programs, or purchase orders."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Not for sale. No price, lease, or public availability found.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Research prototype only; no purchase path."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "tiangong-ultra_evidence_001",
+      "date": "2025-04-21",
+      "title": "Tiangong Ultra wins humanoid half-marathon",
+      "claim": "Tiangong Ultra won the world's first humanoid half-marathon in Beijing, completing 21 km in 2 hours 40 minutes with a steady pace of 7-8 km/h. Specs: 1.8 m, 55 kg, top speed 12 km/h, three battery swaps.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability",
+        "specs"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tiangong-ultra_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Reputable media report of a public event with video coverage (CCTV livestream).",
+      "arena_relevance": "Strong evidence of real-world sustained locomotion over varied terrain.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Maintaining a steady pace of seven to eight km/h, Tiangong Robot Ultra, developed by the Beijing Humanoid Robot Innovation Center, won the race by completing the 21-kilometer course in two hours 40 minutes. Tiangong Ultra, developed by the Beijing Humanoid Robot Innovation Center, jointly established by UBTECH, Xiaomi, and other partners, took first place. Standing 1.8 meters tall and weighing 55 kilograms, the model can reach a top speed of 12 km/h. Its lightweight build, integrated joints, and air-cooling system help manage joint overheating during long-distance runs, according to the company. With three battery swaps during the race, Tiangong Ultra completed the 21-kilometer course in two hours and 40 minutes.",
+      "source_location": "TechNode article body",
+      "verification_notes": "Event was livestreamed by CCTV; public result. Battery swaps and race pace reported by media.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "tiangong-ultra_evidence_002",
+      "date": "2025-02-19",
+      "title": "Tiangong upgraded capabilities (pre-race)",
+      "claim": "Tiangong climbed 134 steps continuously, uses real-time vision for dynamic stepping, reaches top speed 12 km/h, navigated snowy and rough terrain, maintained balance when pushed and hit with 10 kg, and is claimed suitable for rescue missions.",
+      "category": [
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tiangong-ultra_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Blog reporting company claims and new footage; video not reviewed.",
+      "arena_relevance": "Demonstrates advanced locomotion and robustness before race.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "X-Humanoid says Tiangong, which is also called Tien Kung, is the first bipedal humanoid robot to climb more than 100 stairs continuously. During the test at Beijing’s Haiziqiang Park, the robot ascended 134 steps without stepping on edges or slipping despite uneven, broken, and loose steps. With real-time vision, Tiangong adjusts its steps dynamically rather than relying in pre-scanned 3D mappings like older robots. According to X-Humanoid, the bipedal robot reaches speeds up to 12 km/h (7.5 mph). In the new footage, Tiangong also navigates snowy terrain as well as challenging slopes and rough surfaces with ease. It stays on its feet in slippery conditions even when pushed. The new and improved Tiangong is also stronger and harder to knock down. It maintains balance when hit with a 10 kg weight and absorbs the force of a boxer without falling. X-Humanoid says the improved capabilities equips Tiangong for rescue missions in the mountains and disaster zones.",
+      "source_location": "Mike Kalil article body",
+      "verification_notes": "Blog summary of video footage; no direct video review. Claims not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "tiangong-ultra_evidence_003",
+      "date": "2026-08-25",
+      "title": "Tiangong Ultra 100m preliminary heat (39 seconds)",
+      "claim": "Tiangong Ultra crossed finish line first in ninth heat of 100m preliminary at 2026 World Humanoid Games, with time reported as 39 seconds.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tiangong-ultra_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Time is ambiguous; article may have omitted decimal or context. Other sources indicate 100m times of 9.39s, 8.64s, etc.",
+      "arena_relevance": "Shows participation in competitive sprint event.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "When the humanoid robot TianGong Ultra from the Beijing Humanoid Robot Innovation Center crossed the finish line first in the ninth heat of the 100-meter preliminary round, cheers erupted from the crowd of more than 10,000. 39 seconds.",
+      "source_location": "MK article body",
+      "verification_notes": "Translated from Korean; possible typo. '39 seconds' conflicts with other reported times like 9.39s. Need original source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tiangong-ultra_evidence_004",
+      "date": null,
+      "title": "Tiangong Ultra competition results and specs (BaiduWiki)",
+      "claim": "Tiangong Ultra won half-marathon in 2:40:42, 2025 100m in 21.50s with fully autonomous navigation, and 2026 100m in 9.39s, high jump 2.88m, 400m heat 39.70s. Specs: 180cm, 52kg, can handle various terrains, visual perception, anti-interference.",
+      "category": [
+        "mobility_whole_body_control",
+        "autonomy_task_execution",
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tiangong-ultra_source_005"
+      ],
+      "confidence": 0.65,
+      "notes": "Tertiary encyclopedia; aggregates information from multiple sources, some possibly official.",
+      "arena_relevance": "Provides detailed performance metrics and autonomy claim.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "On April 19, the world's first Humanoid Robot Half Marathon was held at Beijing Nanhaizi Park. The humanoid robot 'Tiangang Ultra' participated, completing the 21.0975-kilometer course in 2 hours, 40 minutes, and 42 seconds, winning the Humanoid Robot Half Marathon championship. On August 17, at the 100-meter sprint final of the 2025 World Humanoid Robot Games, the 'Embodied Tiangang Ultra' robot from the Beijing Tiangang Team won the championship with a time of 21.50 seconds. This robot was the only competitor on the World Humanoid Robot Games field that utilized a fully autonomous navigation system, running the entire course without any manual remote control. In August 2026, the Tiangang Ultra ran the 100 meters in 9.39 seconds and achieved a high jump of 2.88 meters at the World Humanoid Robot Games, breaking the men's human world records, and placed first in its heat for the 400 meters with a time of 39.70 seconds. In addition to the above versions, the Beijing Humanoid Robot Innovation Center has developed the humanoid robot 'Tiangang Ultra' for half-marathons. This model stands 180 cm tall, weighs 52 kg, and can move steadily across various terrains including slopes, stairs, grass, gravel, and sand. It possesses generalized mobility capabilities with visual perception, enabling it to easily handle complex terrains such as ditches and large height differences, and boasts strong anti-interference capabilities, maintaining stability even when subjected to external force impacts. Other detailed parameters have not been specifically disclosed.",
+      "source_location": "BaiduWiki entry for Tiangang",
+      "verification_notes": "Encyclopedia may mix official and media data. Weight conflict with TechNode (52 vs 55 kg). Times should be cross-checked with video sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "tiangong-ultra_evidence_010",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No DoF, battery capacity, compute, payload, hand specs, or price for Tiangong Ultra found.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from review of all sources.",
+      "arena_relevance": "Judges should reduce confidence on manipulation, autonomy, and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity",
+          "autonomy_task_execution",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "tiangong-ultra_demo_001",
+      "title": "Beijing humanoid half-marathon win",
+      "date": "2025-04-19",
+      "observed_capabilities": [
+        "Sustained bipedal running over 21 km",
+        "Navigation over varied terrain (flat, slopes, gravel, grass)",
+        "Battery swapping during race",
+        "Steady pace of 7-8 km/h",
+        "Top speed capability 12 km/h"
+      ],
+      "appears_edited": false,
+      "teleoperation_disclosed": null,
+      "environment": "Beijing Nanhaizi Park, outdoor course",
+      "source_ids": [
+        "tiangong-ultra_source_001",
+        "tiangong-ultra_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Teleoperation status not explicitly stated for the race; likely autonomous but unverified.",
+        "Three battery swaps means continuous running not sustained."
+      ],
+      "editing_notes": "Event livestreamed by CCTV; media reports confirm result. No direct video review by researcher.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "TechNode does not specify whether the robot was remotely controlled or autonomous. BaiduWiki claims full autonomy for 2025 100m sprint, not for half-marathon.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Robot completing 21 km race, including battery swaps",
+          "verification_notes": "Timestamp not verified; rely on media reports."
+        }
+      ]
+    },
+    {
+      "id": "tiangong-ultra_demo_002",
+      "title": "134-step continuous climb and rough terrain walk",
+      "date": "2025-02-19",
+      "observed_capabilities": [
+        "Ascended 134 steps without slipping",
+        "Real-time vision-based dynamic stepping",
+        "Navigated snowy terrain, slopes, rough surfaces",
+        "Maintained balance when pushed and hit with 10 kg weight"
+      ],
+      "appears_edited": true,
+      "teleoperation_disclosed": null,
+      "environment": "Beijing Haiziqiang Park (outdoor stairs)",
+      "source_ids": [
+        "tiangong-ultra_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video footage described by blog; not directly reviewed.",
+        "Teleoperation status not disclosed."
+      ],
+      "editing_notes": "Curated footage released by X-Humanoid; likely edited.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Mike Kalil does not mention teleoperation or autonomy.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Stair climb, snowy terrain walk, balance tests",
+          "verification_notes": "Timestamp not verified."
+        }
+      ]
+    },
+    {
+      "id": "tiangong-ultra_demo_003",
+      "title": "Tiangong Ultra sprint training (CGTN video)",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "Training for half marathon (implied by title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Unknown",
+      "source_ids": [
+        "tiangong-ultra_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Video not reviewed; only title available."
+      ],
+      "editing_notes": "Cannot assess editing from title alone.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No transcript.",
+      "observed_segments": []
+    },
+    {
+      "id": "tiangong-ultra_demo_004",
+      "title": "100m race 9.39s (CGTN video)",
+      "date": "2026-08-29",
+      "observed_capabilities": [
+        "100m sprint in 9.39 seconds (per title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "World Humanoid Games track",
+      "source_ids": [
+        "tiangong-ultra_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Robot not explicitly named in title; likely Tiangong Ultra.",
+        "No transcript; time and identity need verification."
+      ],
+      "editing_notes": "Video likely unedited full race, but researcher cannot verify.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No transcript.",
+      "observed_segments": []
+    },
+    {
+      "id": "tiangong-ultra_demo_005",
+      "title": "100m 8.64s (VOLT CHINA video)",
+      "date": "2026-09-29",
+      "observed_capabilities": [
+        "100m sprint in 8.64 seconds (per title, Tiangong Ultra)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Unknown track",
+      "source_ids": [
+        "tiangong-ultra_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; time may be unofficial."
+      ],
+      "editing_notes": "Cannot assess editing from title alone.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No transcript.",
+      "observed_segments": []
+    },
+    {
+      "id": "tiangong-ultra_demo_006",
+      "title": "100m 8.86s (Yicai video)",
+      "date": "2026-08-29",
+      "observed_capabilities": [
+        "100m sprint in 8.86 seconds (per title, Tiangong Ultra)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Unknown track",
+      "source_ids": [
+        "tiangong-ultra_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; time may be unofficial."
+      ],
+      "editing_notes": "Cannot assess editing from title alone.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No transcript.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy verification",
+      "description": "Autonomy claimed for 2025 100m sprint (BaiduWiki) but no intervention logs or independent audit. Half-marathon autonomy not disclosed.",
+      "impact_on_arena_scoring": "Credit observable mobility but keep autonomy confidence low."
+    },
+    {
+      "topic": "Specs gaps",
+      "description": "DoF, battery capacity, compute, payload, hand specs not published for Ultra.",
+      "impact_on_arena_scoring": "Cannot assess manipulation or endurance per charge."
+    },
+    {
+      "topic": "Weight conflict",
+      "description": "TechNode says 55 kg, BaiduWiki says 52 kg.",
+      "impact_on_arena_scoring": "Minor; affects human-environment fit slightly."
+    },
+    {
+      "topic": "Sprint times conflict",
+      "description": "Various video titles report 9.39s, 8.86s, 8.64s for 100m. No transcripts to verify exact times or conditions.",
+      "impact_on_arena_scoring": "Mobility speed claims should be treated with caution until verified."
+    },
+    {
+      "topic": "Commercial availability",
+      "description": "No price, purchase path, or customer deployment for Ultra.",
+      "impact_on_arena_scoring": "Accessibility/value remains zero."
+    },
+    {
+      "topic": "Manipulation dexterity",
+      "description": "No manipulation demos or specs for Ultra; platform series claims logistics but not Ultra-specific.",
+      "impact_on_arena_scoring": "Do not infer dexterity from other Tiangong versions."
+    }
+  ],
+  "source_ids": [
+    "tiangong-ultra_source_001",
+    "tiangong-ultra_source_002",
+    "tiangong-ultra_source_003",
+    "tiangong-ultra_source_005",
+    "tiangong-ultra_source_008",
+    "tiangong-ultra_source_009",
+    "tiangong-ultra_source_010",
+    "tiangong-ultra_source_011",
+    "tiangong-ultra_source_012"
+  ],
+  "sources": [
+    {
+      "id": "tiangong-ultra_source_001",
+      "title": "Beijing hosts world’s first half-marathon for humanoid robots · TechNode",
+      "publisher": "TechNode",
+      "url": "https://technode.com/2025/04/21/beijing-hosts-worlds-first-half-marathon-for-humanoid-robots-tiangong-ultra-wins-in-two-hours-40-minutes/",
+      "date_published": "2025-04-21",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable tech media covering public event."
+    },
+    {
+      "id": "tiangong-ultra_source_002",
+      "title": "Beijing’s Tiangong Upgraded as Humanoid Robot Prepares for Race Day",
+      "publisher": "Mike Kalil",
+      "url": "https://mikekalil.com/blog/tiangong-humanoid-updates/",
+      "date_published": "2025-02-19",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Personal tech blog reporting company claims and video footage."
+    },
+    {
+      "id": "tiangong-ultra_source_003",
+      "title": "When the humanoid robot TianGong Ultra from the Beijing Humanoid Robot Innovation Center crossed the.. - MK",
+      "publisher": "매일경제",
+      "url": "https://www.mk.co.kr/en/world/12136118",
+      "date_published": "2026-08-25",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Korean news outlet; translated content may have inaccuracies."
+    },
+    {
+      "id": "tiangong-ultra_source_005",
+      "title": "Tiangang",
+      "publisher": "BaiduWiki",
+      "url": "https://baike.baidu.com/en/item/Tiangang/4929881",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Encyclopedia aggregating official and media info; may contain errors."
+    },
+    {
+      "id": "tiangong-ultra_source_008",
+      "title": "🔥🤖 8.64 Seconds! This Robot Just Beat the Human 100m Record Time! #robot #AI #humanoidrobot",
+      "publisher": "YouTube XRoboHub",
+      "url": "https://www.youtube.com/watch?v=5b3n-d4M998",
+      "date_published": "2026-08-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "YouTube title only; no transcript, robot identity not specified."
+    },
+    {
+      "id": "tiangong-ultra_source_009",
+      "title": "Tiangong Ultra: Chinese humanoid robot trains for half marathon",
+      "publisher": "YouTube CGTN",
+      "url": "https://www.youtube.com/watch?v=wL6yFPt6zXc",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title only; no transcript."
+    },
+    {
+      "id": "tiangong-ultra_source_010",
+      "title": "Full race: Chinese humanoid robot runs 100m in 9.39 seconds, breaks Bolt's record",
+      "publisher": "YouTube CGTN",
+      "url": "https://www.youtube.com/watch?v=B8DyUJagc2M",
+      "date_published": "2026-08-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title only; no transcript, identity inferred."
+    },
+    {
+      "id": "tiangong-ultra_source_011",
+      "title": "Chinese Humanoid Robot Runs 100m in 8.64s (Tiangong Ultra)",
+      "publisher": "YouTube VOLT CHINA",
+      "url": "https://www.youtube.com/watch?v=2Qf3B3uCu74",
+      "date_published": "2026-09-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title only; no transcript."
+    },
+    {
+      "id": "tiangong-ultra_source_012",
+      "title": "Chinese Humanoid Robot Tiangong Ultra Breaks Its Own Record, Running 100m in 8.86 Seconds",
+      "publisher": "YouTube Yicai 第一财经",
+      "url": "https://www.youtube.com/watch?v=xZY1DjLQqOI",
+      "date_published": "2026-08-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Title only; no transcript."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Tiangong Ultra demonstrates exceptional bipedal locomotion and outdoor mobility, with a half-marathon win and sprint records, but manipulation, autonomy verification, and commercial deployment are lacking. It is a research prototype, not for sale.",
+    "strongest_positive_evidence": [
+      "Won world's first humanoid half-marathon (21 km in 2:40:42) per TechNode and BaiduWiki.",
+      "Climbed 134 stairs continuously and maintained balance when pushed/hit (Mike Kalil).",
+      "Sprint times of 9.39s, 8.86s, 8.64s for 100m reported in video titles and BaiduWiki.",
+      "Fully autonomous navigation claimed for 2025 100m sprint (BaiduWiki)."
+    ],
+    "weakest_or_missing_evidence": [
+      "No manipulation dexterity or hand specs.",
+      "No battery capacity, runtime, payload, or compute.",
+      "No independent verification of sprint times or autonomy.",
+      "No commercial deployment or purchase path."
+    ],
+    "conflicting_claims": [
+      "Weight: 55 kg (TechNode) vs 52 kg (BaiduWiki).",
+      "100m times vary: 9.39s (CGTN video title, BaiduWiki), 8.86s (Yicai), 8.64s (VOLT CHINA, XRoboHub).",
+      "MK article reports 39 seconds for 100m heat, likely typo."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit manipulation or dexterity capabilities to Tiangong Ultra.",
+      "Do not treat sprint times as verified without full video review.",
+      "Do not claim autonomy for half-marathon; only 2025 100m sprint has autonomy claim from BaiduWiki.",
+      "Do not suggest commercial availability or deployment."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Tiangong Ultra remains a current running-focused prototype as of 2026-10-29. No newer flagship running robot from X-Humanoid noted in sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Tiangong 3.0 specifications (170 cm, 64.5 kg, 31 DOF, 2070 TOPS, etc.)",
+      "reason": "These belong to Tiangong 3.0, not Tiangong Ultra. Source 6 is about 3.0, and source 5 mentions 3.0 separately.",
+      "source_ids": [
+        "tiangong-ultra_source_005"
+      ]
+    },
+    {
+      "claim": "Unitree G1 falling at race start",
+      "reason": "Not related to Tiangong Ultra.",
+      "source_ids": [
+        "tiangong-ultra_source_001"
+      ]
+    },
+    {
+      "claim": "Robot soccer demonstration at 2026 World Humanoid Games",
+      "reason": "Not specific to Tiangong Ultra.",
+      "source_ids": [
+        "tiangong-ultra_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 9,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 5,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Tiangong Ultra is a bipedal humanoid research prototype from Beijing Humanoid Robot Innovation Center (X-Humanoid), standing 1.8 m and weighing 55 kg (or 52 kg per BaiduWiki). It won the world's first humanoid half-marathon in April 2025 (21 km in 2:40:42) and has demonstrated climbing 134 stairs, navigating rough terrain, and sprinting 100m in reported times as low as 8.64s. However, autonomy is only claimed, manipulation and endurance specs are unknown, and the robot is not for sale. Strongest evidence is the half-marathon win with media coverage; weakest is missing manipulation, commercial deployment, and verified autonomy.",
+    "strongest_evidence": [
+      "Half-marathon win in 2:40:42 (TechNode, BaiduWiki).",
+      "134-step climb and balance under disturbance (Mike Kalil).",
+      "Sprint records 9.39s, 8.86s, 8.64s (video titles, BaiduWiki)."
+    ],
+    "weakest_evidence": [
+      "No manipulation or dexterity evidence.",
+      "No battery capacity, payload, or compute.",
+      "Autonomy claim only from BaiduWiki; no independent audit."
+    ],
+    "known_do_not_credit": [
+      "Manipulation or dexterity capabilities.",
+      "Verified autonomy for half-marathon (only 100m sprint has claim).",
+      "Commercial availability or deployment.",
+      "Tiangong 3.0 specs as Ultra specs."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

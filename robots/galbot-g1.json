@@ -1,0 +1,40 @@
+{
+  "id": "galbot-g1",
+  "name": "Galbot G1",
+  "aliases": ["G1", "Galaxy General G1"],
+  "companyId": "galbot",
+  "companyName": "Galbot",
+  "country": "China",
+  "announced": null,
+  "status": "commercial",
+  "category": "service",
+  "summary": "G1 is a wheeled humanoid with two 7-DoF arms on a four-wheel omnidirectional base and a height-adjustable torso. Galbot uses it in warehouses, hospital pharmacies and its own autonomous retail stores in China.",
+  "specs": {
+    "height_cm": { "value": 173, "original": "Height: 1730 mm (maximum)", "sourceId": "s1" },
+    "weight_kg": { "value": 92.5, "original": "Weight: 92.5 kg", "sourceId": "s1" },
+    "payload_kg": { "value": 10, "original": "Single arm capacity: 5 kg; combined: 10 kg", "sourceId": "s1" },
+    "runtime_h": { "value": 8, "original": "Work duration: 8 hours", "sourceId": "s1" },
+    "dof": { "value": 21, "original": "Total 21 DoF: neck (2), dual arms (7x2), waist (3), legs (2)", "sourceId": "s1" },
+    "hand_dof": null,
+    "speed_mps": { "value": 1.5, "original": "max speed of 1.5 m/s", "sourceId": "s1" }
+  },
+  "hands": "Interchangeable end effectors: dexterous hand, suction cup or gripper.",
+  "sensors": "Head stereo cameras, four torso RGB cameras, two wrist depth cameras, 3D LiDAR, eight ultrasonic sensors.",
+  "compute": "NVIDIA AGX Orin, 64 GB, 275 TOPS.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "The Robot Report says G1 has run 24/7 warehouse operations for over a year.",
+    "Used at Xuanwu Hospital in patient rooms and pharmacies, and in Galbot Store retail locations across 30+ Chinese cities.",
+    "Battery is 48 V 30 Ah with a 3.5-hour charge time."
+  ],
+  "caveats": [
+    "Wheeled base, not a legged humanoid.",
+    "No public price."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Galbot G1 product page", "publisher": "Galbot", "url": "http://www.galbot.com/g1/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Galbot brings in $300M to scale mobile manipulator deployments", "publisher": "The Robot Report", "url": "https://www.therobotreport.com/galbot-brings-in-300m-to-scale-mobile-manipulator-deployments/", "accessed": "2026-10-14" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "robotId": "xpeng-iron",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "not_for_sale",
+  "purchasePathNote": "IRON is not on sale. XPeng opened a production line in September 2026, plans mass production by end of 2026 with first use in its own stores and campuses, and plans launch and deliveries in China and overseas in 2027.",
+  "configurations": [],
+  "sellers": [],
+  "rental": [],
+  "priceHistory": [],
+  "faq": [
+    {
+      "q": "Can you buy XPeng IRON?",
+      "a": "Not yet. XPeng plans to launch IRON and start deliveries in China and overseas markets in 2027.",
+      "sourceUrl": "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/"
+    },
+    {
+      "q": "How much will XPeng IRON cost?",
+      "a": "XPeng has not announced a price. On the Q3 2025 earnings call, CEO He Xiaopeng said the retail price could be 'very similar to car prices'.",
+      "sourceUrl": "https://www.humanoidsdaily.com/news/xpeng-sets-2026-target-for-mass-produced-iron-robot-eyes-1-million-units-by-2030"
+    },
+    {
+      "q": "Where will IRON be used first?",
+      "a": "XPeng says initial deployments will be at its own stores and campuses after mass production starts at the end of 2026.",
+      "sourceUrl": "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/"
+    },
+    {
+      "q": "Is XPeng IRON in production?",
+      "a": "XPeng opened an automated IRON production line in September 2026 and targets mass production by the end of 2026.",
+      "sourceUrl": "https://electrek.co/2026/09/07/xpeng-iron-humanoid-robot-production-line/"
+    }
+  ],
+  "notes": "No official price. Third-party estimates such as $150,000 are not sourced to XPeng and are not included. The 'similar to car prices' remark is a direction, not a number."
+}

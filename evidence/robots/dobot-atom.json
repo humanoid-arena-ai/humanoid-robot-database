@@ -1,0 +1,481 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "dobot-atom",
+    "name": "DOBOT ATOM",
+    "company_id": "dobot",
+    "company_name": "DOBOT",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2025-06-30",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as commercial_deployment based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "about 1650 mm",
+      "value": 1650,
+      "unit": "mm",
+      "source_ids": [
+        "dobot-atom_source_003"
+      ]
+    },
+    "weight": {
+      "original_value": "about 62 kg without dexterous hand/gripper",
+      "value": 62,
+      "unit": "kg",
+      "source_ids": [
+        "dobot-atom_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": "3.5 kg single-arm payload without dexterous hand/gripper",
+      "value": 3.5,
+      "unit": "kg",
+      "source_ids": [
+        "dobot-atom_source_003"
+      ]
+    },
+    "runtime": {
+      "original_value": "about 2 h battery life",
+      "value": 2,
+      "unit": "hours",
+      "source_ids": [
+        "dobot-atom_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "about 2 h battery life; about 2 h charging",
+      "value": null,
+      "unit": null,
+      "notes": "DOBOT-copyrighted user guide lists about 2 h battery life and about 2 h charging for Atom Max/Trainer.",
+      "source_ids": [
+        "dobot-atom_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 41,
+      "notes": "Product page describes Atom Max as 41-DoF; user guide lists 29 body DoF without dexterous hands/gripper.",
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_003"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.5 m/s",
+      "value": 1.5,
+      "unit": "m/s",
+      "source_ids": [
+        "dobot-atom_source_003"
+      ],
+      "notes": "Official figure, added 2026-10-29 by automated spec fill; Maximum walking speed; listed for DOBOT Atom-Max and Atom-Trainer, with '-' for Atom D. Separate arm maximum end speed is also 1.5 m/s.."
+    },
+    "hands": {
+      "description": "Atom Max configuration lists two 6-DoF dexterous hands; Trainer supports optional dexterous hands or grippers.",
+      "degrees_of_freedom": 6,
+      "force_feedback": null,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "head depth camera",
+        "full-HD stereo/binocular camera",
+        "wrist depth cameras",
+        "waist depth cameras",
+        "3D LiDAR",
+        "360-degree omnidirectional microphone",
+        "neodymium speakers"
+      ],
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_003"
+      ]
+    },
+    "compute": {
+      "description": "Basic Intel i5 compute; optional high-compute module lists Intel i9, dedicated GPU, and 1500 TOPS AI module.",
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_003"
+      ]
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.dobot.us/product/dobot-atom/",
+      "source_ids": [
+        "dobot-atom_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 1,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 3,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "evidence_level": 0,
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "dobot-atom_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "$79,000, 28 DoF, precision, straight-knee walking, ROM-1 AI.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "dobot-atom_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "$79,000, 28 DoF, precision, straight-knee walking, ROM-1 AI.",
+      "source_location": "Dobot Atom product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "dobot-atom_evidence_002",
+      "date": null,
+      "title": "Deployment, demo, or independent context",
+      "claim": "Mass production/delivery debuted in Nagoya with first batch delivered live.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "dobot-atom_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Use with caveats from source audit.",
+      "arena_relevance": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Mass production/delivery debuted in Nagoya with first batch delivered live.",
+      "source_location": "DOBOT debuted global delivery of humanoid robot",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "dobot-atom_deployment_001",
+      "customer_or_partner": null,
+      "site_or_context": null,
+      "task": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+      "start_date": "2025-06-30",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "dobot-atom_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Metrics are limited to what is explicitly stated in sources."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "dobot-atom_demo_001",
+      "title": "DOBOT ATOM public demo/context",
+      "date": "2025-06-30",
+      "observed_capabilities": [
+        "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "dobot-atom_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "dobot-atom_source_001",
+        "dobot-atom_source_002"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "dobot-atom_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 0,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+    "strongest_evidence": [
+      "$79,000, 28 DoF, precision, straight-knee walking, ROM-1 AI.",
+      "Mass production/delivery debuted in Nagoya with first batch delivered live."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "Teleoperation/editing details often unclear."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "dobot-atom_source_001",
+    "dobot-atom_source_002"
+  ],
+  "sources": [
+    {
+      "id": "dobot-atom_source_001",
+      "title": "Dobot Atom",
+      "publisher": "Dobot US",
+      "url": "https://www.dobot.us/product/dobot-atom/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "$79,000, 28 DoF, precision, straight-knee walking, ROM-1 AI."
+    },
+    {
+      "id": "dobot-atom_source_002",
+      "title": "DOBOT debuted global delivery of humanoid robot",
+      "publisher": "DOBOT",
+      "url": "https://www.dobot-robots.com/insights/news/dobot-debuted-global-delivery-of-humanoid-robot.html",
+      "date_published": "2025-06-30",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Mass production/delivery debuted in Nagoya with first batch delivered live."
+    },
+    {
+      "id": "dobot-atom_source_003",
+      "title": "DOBOT Atom Humanoid Robot Quick Start V1.1",
+      "publisher": "SHENZHEN DOBOT CORP LTD",
+      "url": "https://autodiscovery.eu/cdn/shop/files/Dobot_Atom_Humanoid_Robot_Quick_Start_V1.1_20250904_en.pdf?v=10005163737711420881",
+      "date_published": "2025-09-04",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "DOBOT-copyrighted user guide mirrored by a reseller; used only for product specs."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Delivery claim exists; teleoperation is a first-class feature and autonomy must be labeled.",
+    "strongest_positive_evidence": [
+      "$79,000, 28 DoF, precision, straight-knee walking, ROM-1 AI.",
+      "Mass production/delivery debuted in Nagoya with first batch delivered live."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Missing intervention/failure-rate data"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

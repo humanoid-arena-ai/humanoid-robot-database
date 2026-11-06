@@ -1,0 +1,14 @@
+{
+  "id": "engineai",
+  "name": "EngineAI",
+  "country": "China",
+  "headquarters": "Shenzhen, China",
+  "founded": 2023,
+  "website": "https://en.engineai.com.cn/",
+  "summary": "EngineAI is a Shenzhen humanoid robot maker founded in October 2023 by CEO Zhao Tongyang. Its lineup includes the SE01, PM01 and T800 humanoids.",
+  "funding": "Seed round in 2024 (about $4.5 million raised by end of 2024, per The Robot Report); Series B of $200 million in April 2026 at about $1.5 billion valuation, per Wikipedia.",
+  "sources": [
+    { "id": "s1", "title": "Engine AI", "url": "https://en.wikipedia.org/wiki/Engine_AI", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "EngineAI releases PM01 humanoid robot for commercial, educational use", "url": "https://www.therobotreport.com/engineai-releases-pm01-humanoid-robot-for-commercial-educational-use/", "accessed": "2026-10-14" }
+  ]
+}

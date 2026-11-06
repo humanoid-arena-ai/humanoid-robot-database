@@ -1,0 +1,830 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "rainbow-rb-y1",
+    "name": "Rainbow Robotics RB-Y1",
+    "company_id": "rainbow-robotics",
+    "company_name": "Rainbow Robotics",
+    "country": "South Korea",
+    "generation": "first-generation RB-Y1 wheeled bimanual mobile manipulator",
+    "first_announced_date": "2024-04-05",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Pre-orders began May 8, 2024; deliveries scheduled to start October 2024. MERA Robotics directory lists status as Shipping as of comparison date. No public deployment or customer report found.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": true,
+    "primary_category": "wheeled_humanoid",
+    "intended_use_cases": [
+      "research platform for AI and manipulation learning",
+      "teleoperation and data collection",
+      "industrial and advanced manufacturing applications",
+      "human-robot interaction research"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "600 x 690 x 1,400mm (W x D x H)",
+      "value": 140,
+      "unit": "cm",
+      "notes": "Height 1,400 mm = 140 cm. Overall dimensions 600 x 690 x 1,400 mm.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "Upper body: 38kg (Arm 11kg x 2, Torso 16kg) Lower body: 42kg Mobile: 51kg Total: 131kg",
+      "value": 131,
+      "unit": "kg",
+      "notes": "Configuration A total 131 kg; Configuration M total 170 kg (Mobile 90 kg).",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "3 kg per arm",
+      "value": 3,
+      "unit": "kg",
+      "notes": "Per-arm payload from official page. MERA Robotics directory lists 20 kg total, conflicting with official spec.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_004"
+      ]
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Runtime not published. Battery capacity provided but no runtime estimate found.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": "50V, 25Ah (1,250Wh) / 50V, 50Ah (2,500Wh)",
+      "value": 1250,
+      "unit": "Wh",
+      "notes": "Configuration A has 1,250 Wh; Configuration M has 2,500 Wh.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "1.5m/s",
+      "value": 1.5,
+      "unit": "m/s",
+      "notes": "Official driving speed. Industrial Automation Magazine reports 2.5m/s, conflict noted.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 20,
+      "notes": "Spec table: total 20 DOF (Configuration A) or 26 DOF (Configuration M). Breakdown: Wheel A 1 DOF x2, Wheel M 1 DOF x4, Leg 6, Arm 7 x2, Head 2. Page text also states 24 DOF overall system configuration; inconsistency noted.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Optional gripper available (no detailed specs on official product page). Force/torque sensors on both arms are built into V1.2 configuration.",
+      "degrees_of_freedom": null,
+      "force_feedback": "dual-arm built-in FT sensors (V1.2)",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "LiDAR system for autonomous movement",
+        "Optional high-performance 3D recognition sensor",
+        "Force/torque sensors on both arms (V1.2)",
+        "Vision sensor bracket provided (camera not included)"
+      ],
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_002"
+      ]
+    },
+    "compute": {
+      "description": "Dual-PC architecture: real-time Robot PC and User PC with ROS 2 and SDK.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Actuator technology verified by cooperative robots; joint brake structure; joint speeds and ranges listed in spec table.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 80000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "notes": "Pre-order price $80,000 research, $120,000 commercial (VAT excluded) announced May 2024; delivery scheduled starting October 2024.",
+      "source_ids": [
+        "rainbow-rb-y1_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official specs list two 7-DoF arms, per-arm payload 3 kg, repeatability ±0.05 mm, and force/torque sensors on both arms (V1.2). Media article references performance videos including water pouring and cup stacking, but videos not directly reviewed.",
+      "evidence_level": 2,
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_003"
+      ],
+      "caveats": [
+        "No direct video analysis; demo details from media titles only.",
+        "Per-arm payload is 3 kg, not 20 kg as some directories state.",
+        "Gripper specifications not detailed on official page."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "PR Newswire states LiDAR system is adopted for autonomous movement. No evidence of autonomous manipulation or end-to-end task execution. Teleoperation video title exists (source 9), but no autonomy demonstration reviewed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_002"
+      ],
+      "caveats": [
+        "Only autonomous movement claimed; no autonomous task execution evidence.",
+        "No intervention logs or independent autonomy validation."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Wheeled base with driving speed 1.5 m/s (official). Spec table shows leg 6 DOF and full-body control architecture. Industrial Automation Magazine reports 2.5 m/s and video demo 'Dynamic driving' exists (source 3).",
+      "evidence_level": 2,
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_003"
+      ],
+      "caveats": [
+        "Wheeled base, not biped; mobility limited to flat surfaces.",
+        "Speed conflict between official (1.5 m/s) and media (2.5 m/s).",
+        "Video not directly reviewed."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official page lists LiDAR, optional high-performance 3D recognition sensor, and force/torque sensors. No perception benchmarks or scene understanding demonstrations found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_002"
+      ],
+      "caveats": [
+        "Sensors are listed but performance not demonstrated.",
+        "No third-party perception evaluation."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Teleoperation via leader arm or VR device is supported (source 1, 5). Product page mentions suitability for human-robot interaction research. No demonstrated social or conversational interaction.",
+      "evidence_level": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_001",
+        "rainbow-rb-y1_source_005"
+      ],
+      "caveats": [
+        "No evidence of autonomous interaction.",
+        "Teleoperation interface is for human control, not autonomous social behavior."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Product page claims actuator technology verified by cooperative robots and joint brake structure for reliable long experiments. No endurance test data or customer reliability reports found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ],
+      "caveats": [
+        "No uptime, MTBF, or long-duration test evidence.",
+        "Company claim only."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Wheeled base, height 140 cm, weight 131 kg (Configuration A), aluminum exterior, safety functions listed (current limits, position errors). Designed for industrial/research environments, not home use.",
+      "evidence_level": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ],
+      "caveats": [
+        "Wheeled base cannot handle stairs or rough terrain.",
+        "Heavy at 131 kg; no safety certification found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Pre-orders announced with delivery schedule, but no named customers or deployed units found. MERA Robotics directory lists status as Shipping, but no commercial deployment evidence.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Pre-orders are not deployment proof.",
+        "No customer press releases or independent reports of RB-Y1 in use."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Official pre-order price: $80,000 (research) and $120,000 (commercial) VAT excluded, with deliveries starting October 2024. Product is purchasable via contact.",
+      "evidence_level": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_002"
+      ],
+      "caveats": [
+        "Price from May 2024 announcement; may have changed.",
+        "No current stock or subsequent pricing confirmed."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "rainbow-rb-y1_evidence_001",
+      "date": null,
+      "title": "RB-Y1 official product page specifications",
+      "claim": "Official product page lists dimensions 600x690x1400mm, per-arm payload 3kg, arm repeatability ±0.05mm, driving speed 1.5m/s, and configurations A (20 DOF, 131kg, 1,250Wh) and M (26 DOF, 170kg, 2,500Wh).",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec page; values not independently measured.",
+      "arena_relevance": "Defines size, payload, speed, DoF and battery for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Arm Payload | 3 kg per arm",
+      "source_location": "Rainbow Robotics RB-Y1 product page, specification table",
+      "verification_notes": "Company spec page. Multiple spec conflicts noted in excluded_claims.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "rainbow-rb-y1_evidence_002",
+      "date": "2024-05-09",
+      "title": "Pre-order pricing and delivery",
+      "claim": "Rainbow Robotics began pre-orders for RB-Y1 on May 8, 2024; research platform $80,000 and commercial platform $120,000 (VAT excluded), with deliveries starting October 2024.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_002"
+      ],
+      "confidence": 0.85,
+      "notes": "Official pre-order announcement via PR Newswire.",
+      "arena_relevance": "Establishes purchasability and price.",
+      "claim_type": "spec",
+      "supporting_excerpt": "During the pre-order period, the research platform is sold for $80,000 USD and the commercial platform is sold for $120,000 USD (VAT excluded).",
+      "source_location": "PR Newswire release, first paragraph",
+      "verification_notes": "Official press release; no later pricing updates found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "rainbow-rb-y1_evidence_003",
+      "date": "2024-05-09",
+      "title": "LiDAR autonomous movement claim",
+      "claim": "Rainbow Robotics states the LiDAR system is adopted for autonomous movement.",
+      "category": [
+        "mobility_whole_body_control",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Company claim; no autonomous navigation demo reviewed.",
+      "arena_relevance": "Indicates intended autonomy for mobility.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The LiDAR system is adopted for autonomous movement, and a high-performance 3D recognition sensor and master ARM are provided as options to increase usability.",
+      "source_location": "PR Newswire release, second paragraph",
+      "verification_notes": "Not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "rainbow-rb-y1_evidence_004",
+      "date": "2024-04-09",
+      "title": "Performance video links",
+      "claim": "Industrial Automation Magazine lists performance videos for dynamic driving, water pouring, and cup stacking on Rainbow Robotics YouTube.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "rainbow-rb-y1_source_003"
+      ],
+      "confidence": 0.55,
+      "notes": "Media article with video links; videos not directly reviewed.",
+      "arena_relevance": "Indicates demonstrated manipulation and mobility, but unverified.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Dynamic driving - https://youtu.be/Y3538CJb6TY?si=ThIsr4TAWfRWSq3F",
+      "source_location": "Reference section of Industrial Automation India article",
+      "verification_notes": "Article titles mention demos; no transcript or content review.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "rainbow-rb-y1_evidence_005",
+      "date": "2024-04-09",
+      "title": "Driving speed conflict",
+      "claim": "Industrial Automation Magazine reports driving operation speed 2.5m/s, conflicting with official 1.5m/s.",
+      "category": [
+        "mobility_whole_body_control",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflict noted; official spec used.",
+      "arena_relevance": "Affects mobility comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The driving operation speed is 2.5m/s, and various types of high-speed turning and sudden acceleration are possible using 20-axis full-body control.",
+      "source_location": "Industrial Automation India article, second paragraph",
+      "verification_notes": "Single media report; not confirmed by company.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "rainbow-rb-y1_evidence_006",
+      "date": null,
+      "title": "Directory payload conflict",
+      "claim": "MERA Robotics directory lists RB-Y1 payload as 20 kg and says no official price, while official sources state 3 kg per arm and pre-order price $80,000.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "rainbow-rb-y1_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Directory page may have incorrect data; conflict documented.",
+      "arena_relevance": "Must not overcredit payload.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Rainbow Robotics RB-Y1 has a higher payload (20 kg vs 2 kg).",
+      "source_location": "MERA Robotics comparison page, first summary line",
+      "verification_notes": "Third-party directory; not authoritative.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "rainbow-rb-y1_demo_001",
+      "title": "Rainbow Robotics Dual-Arm Mobile Manipulator #RB-Y1 Product Introduction",
+      "date": "2026-10-15",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "rainbow-rb-y1_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; video content not reviewed.",
+        "Cannot credit specific capabilities from title alone."
+      ],
+      "editing_notes": "Video not watched; only title known.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": []
+    },
+    {
+      "id": "rainbow-rb-y1_demo_002",
+      "title": "The new Rainbow Robotics RB-Y1 wheeled humanoid demo",
+      "date": "2024-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "rainbow-rb-y1_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; video content not reviewed.",
+        "Third-party demo video; capability unknown."
+      ],
+      "editing_notes": "Video not watched; only title known.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": []
+    },
+    {
+      "id": "rainbow-rb-y1_demo_003",
+      "title": "Dual-arm Mobile Manipulator RB-Y1 ( Highlight )",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "rainbow-rb-y1_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; video content not reviewed.",
+        "Highlight reel likely edited."
+      ],
+      "editing_notes": "Video not watched; only title known.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": []
+    },
+    {
+      "id": "rainbow-rb-y1_demo_004",
+      "title": "Teleoperation of Dual-Arm Mobile Manipulator RB-Y1",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "teleoperation"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title explicitly states Teleoperation; no transcript to confirm execution mode.",
+      "environment": "unknown",
+      "source_ids": [
+        "rainbow-rb-y1_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; cannot confirm if robot is teleoperated in video or if it demonstrates teleoperation interface.",
+        "Title alone suggests teleoperation."
+      ],
+      "editing_notes": "Video not watched; only title known.",
+      "teleoperation_status": "disclosed_teleoperated",
+      "teleoperation_notes": "Based on title only; no transcript to verify.",
+      "observed_segments": []
+    },
+    {
+      "id": "rainbow-rb-y1_demo_005",
+      "title": "RB Y1 Wheeled Humanoid Robot Demo Surprises Everyone!!!",
+      "date": "2024-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "rainbow-rb-y1_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; video content not reviewed.",
+        "Third-party demo video; capability unknown."
+      ],
+      "editing_notes": "Video not watched; only title known.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": []
+    },
+    {
+      "id": "rainbow-rb-y1_demo_006",
+      "title": "Rainbow Robotics RB-Y1 REVEALED: This Humanoid Robot's Insane Agility Is Redefining AI Forever!",
+      "date": "2025-10-29",
+      "observed_capabilities": [],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "rainbow-rb-y1_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; video content not reviewed.",
+        "Sensational title; capability unknown."
+      ],
+      "editing_notes": "Video not watched; only title known.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Execution mode not disclosed.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Video evidence is title-only",
+      "description": "All YouTube sources provide only titles; no transcript or video review was possible. Capabilities shown in videos cannot be credited beyond the title.",
+      "impact_on_arena_scoring": "Demos are not scored for specific capabilities; only existence of a video is noted."
+    },
+    {
+      "topic": "Conflicting specifications",
+      "description": "Driving speed 1.5 m/s (official) vs 2.5 m/s (Industrial Automation Magazine); payload 3 kg per arm (official) vs 20 kg total (MERA Robotics); total DOF 20/26 (spec table) vs 24 (page text).",
+      "impact_on_arena_scoring": "Confidence in spec claims reduced; official specs used as primary."
+    },
+    {
+      "topic": "No autonomy demonstration",
+      "description": "Only autonomous movement via LiDAR is claimed (PR Newswire). No autonomous task execution or manipulation demo reviewed; teleoperation video exists.",
+      "impact_on_arena_scoring": "Autonomy_task_execution dimension limited to low evidence."
+    },
+    {
+      "topic": "No deployment evidence",
+      "description": "Pre-orders announced but no named customers or deployed units found. MERA Robotics directory lists shipping status, but no commercial use report.",
+      "impact_on_arena_scoring": "Deployment_commercial_proof evidence level 0."
+    },
+    {
+      "topic": "Runtime not published",
+      "description": "Battery capacity provided (1,250 Wh / 2,500 Wh) but no runtime estimate found.",
+      "impact_on_arena_scoring": "Endurance_reliability cannot be scored beyond company claims."
+    },
+    {
+      "topic": "Gripper specifications limited",
+      "description": "Optional gripper is listed but no detailed specs from official page. Scribd catalog has some gripper details but OCR garbled and not used.",
+      "impact_on_arena_scoring": "Manipulation capability beyond arm specs uncertain."
+    },
+    {
+      "topic": "Heavy wheeled base",
+      "description": "Weight 131 kg (Configuration A) and wheeled mobility may limit human environment fit and portability.",
+      "impact_on_arena_scoring": "Human_environment_fit score low; suitable for industrial/research settings only."
+    }
+  ],
+  "source_ids": [
+    "rainbow-rb-y1_source_001",
+    "rainbow-rb-y1_source_002",
+    "rainbow-rb-y1_source_003",
+    "rainbow-rb-y1_source_004",
+    "rainbow-rb-y1_source_005",
+    "rainbow-rb-y1_source_006",
+    "rainbow-rb-y1_source_007",
+    "rainbow-rb-y1_source_008",
+    "rainbow-rb-y1_source_009",
+    "rainbow-rb-y1_source_010",
+    "rainbow-rb-y1_source_011"
+  ],
+  "sources": [
+    {
+      "id": "rainbow-rb-y1_source_001",
+      "title": "RB-Y1 | Rainbow Robotics",
+      "publisher": "Rainbow Robotics",
+      "url": "https://rainbow-robotics.com/en/products/rb-y1/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims, specs not independently verified."
+    },
+    {
+      "id": "rainbow-rb-y1_source_002",
+      "title": "Rainbow Robotics begins pre-orders of Bimanual Mobile Manipulator RB-Y1, the world's first research platform for AI experts for $80,000 USD",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/rainbow-robotics-begins-pre-orders-of-bimanual-mobile-manipulator-rb-y1--the-worlds-first-research-platform-for-ai-experts-for-80-000-usd-302139719.html",
+      "date_published": "2024-05-09",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official press release distributed by PR Newswire; company claims."
+    },
+    {
+      "id": "rainbow-rb-y1_source_003",
+      "title": "Rainbow Robotics unveils RB-Y1, first bimanual mobile manipulator from Korea",
+      "publisher": "Industrial Automation Magazine",
+      "url": "https://www.industrialautomationindia.in/news/rainbow-robotics-unveils-rb-y1-first-bimanual-mobile-manipulator-from-korea",
+      "date_published": "2024-04-09",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Industry media report; includes specs and video links, but some specs conflict with official."
+    },
+    {
+      "id": "rainbow-rb-y1_source_004",
+      "title": "Rainbow Robotics RB-Y1 vs Unitree G1: specs and price comparison | MERA Robotics",
+      "publisher": "MERA Robotics",
+      "url": "https://merarobotics.com/blog/humanoids/compare/rainbow-rb-y1--unitree-g1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party directory with potential errors (payload 20 kg, no official price)."
+    },
+    {
+      "id": "rainbow-rb-y1_source_005",
+      "title": "RB-Y1 Dual-Arm Mobile Manipulator | PDF | Robotics | Robot",
+      "publisher": "Scribd",
+      "url": "https://www.scribd.com/document/805653395/Rainbow-Robotics-RB-Y1-Catalog-EN-release-240821",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Scribd upload of official catalog; OCR may have errors but text clear."
+    },
+    {
+      "id": "rainbow-rb-y1_source_006",
+      "title": "Rainbow Robotics Dual-Arm Mobile Manipulator #RB-Y1 Product Introduction",
+      "publisher": "YouTube 레인보우로보틱스 (Rainbow Robotics)",
+      "url": "https://www.youtube.com/watch?v=JAlZ3QpPgIU",
+      "date_published": "2026-10-15",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video, but only title available; no transcript reviewed."
+    },
+    {
+      "id": "rainbow-rb-y1_source_007",
+      "title": "The new Rainbow Robotics RB-Y1 wheeled humanoid demo",
+      "publisher": "YouTube The Robot Report",
+      "url": "https://www.youtube.com/watch?v=I3_GIb7W5UQ",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "medium",
+      "reliability_notes": "Third-party demo video; only title available."
+    },
+    {
+      "id": "rainbow-rb-y1_source_008",
+      "title": "Dual-arm Mobile Manipulator RB-Y1 ( Highlight )",
+      "publisher": "YouTube 레인보우로보틱스 (Rainbow Robotics)",
+      "url": "https://www.youtube.com/watch?v=D6M2IhSLSmY",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official highlight video; only title available."
+    },
+    {
+      "id": "rainbow-rb-y1_source_009",
+      "title": "Teleoperation of Dual-Arm Mobile Manipulator RB-Y1",
+      "publisher": "YouTube 레인보우로보틱스 (Rainbow Robotics)",
+      "url": "https://www.youtube.com/watch?v=Dp0JxQzJ-NM",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title indicates teleoperation, but no transcript reviewed."
+    },
+    {
+      "id": "rainbow-rb-y1_source_010",
+      "title": "RB Y1 Wheeled Humanoid Robot Demo Surprises Everyone!!!",
+      "publisher": "YouTube RajemaTech Tamil",
+      "url": "https://www.youtube.com/watch?v=x2MeEk_Jr3s",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party demo video; only title available."
+    },
+    {
+      "id": "rainbow-rb-y1_source_011",
+      "title": "Rainbow Robotics RB-Y1 REVEALED: This Humanoid Robot's Insane Agility Is Redefining AI Forever!",
+      "publisher": "YouTube AI Horizon Daily",
+      "url": "https://www.youtube.com/watch?v=OlYBCgKm4Rw",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Sensational third-party video; only title available."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "RB-Y1 is a purchasable wheeled bimanual mobile manipulator with strong official specs (two 7-DOF arms, ±0.05 mm repeatability, 20/26 DOF, 1.5 m/s) aimed at research and teleoperation. It has pre-order pricing and delivery, but no named deployments, autonomy demos, or verified video evidence beyond titles. Best used for manipulation and teleoperation research claims.",
+    "strongest_positive_evidence": [
+      "Official product page with detailed specs and dual-arm whole-body control architecture.",
+      "Pre-order announcement with pricing and delivery schedule.",
+      "Media report listing performance videos including water pouring and cup stacking (videos not reviewed).",
+      "Force/torque sensors and LiDAR with optional 3D sensor."
+    ],
+    "weakest_or_missing_evidence": [
+      "No video transcript or content review; only titles.",
+      "No named customers or deployment metrics.",
+      "No autonomy demonstration beyond autonomous movement claim.",
+      "Conflicting specs across sources.",
+      "No runtime or endurance test data."
+    ],
+    "conflicting_claims": [
+      "Driving speed 1.5 m/s (official) vs 2.5 m/s (Industrial Automation Magazine).",
+      "Payload 3 kg per arm (official) vs 20 kg total (MERA Robotics directory).",
+      "Total DOF 20/26 (spec table) vs 24 in page text."
+    ],
+    "recommended_arena_categories": [
+      "wheeled_humanoid",
+      "research_platform",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit specific manipulation capabilities from video titles without content review.",
+      "Do not claim autonomous task execution.",
+      "Do not treat pre-orders as commercial deployment.",
+      "Do not use 20 kg payload; use 3 kg per arm.",
+      "Do not infer runtime from battery capacity alone."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "RB-Y1 is current product as of 2026-10-29; no successor found in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "20 kg total payload",
+      "reason": "MERA Robotics directory lists 20 kg, conflicting with official 3 kg per arm.",
+      "source_ids": [
+        "rainbow-rb-y1_source_004"
+      ]
+    },
+    {
+      "claim": "2.5 m/s driving speed",
+      "reason": "Industrial Automation Magazine reports 2.5 m/s, conflicting with official 1.5 m/s.",
+      "source_ids": [
+        "rainbow-rb-y1_source_003"
+      ]
+    },
+    {
+      "claim": "24 total degrees of freedom",
+      "reason": "Product page text says 24 DOF, but spec table clearly lists 20 (A) and 26 (M). Spec table used.",
+      "source_ids": [
+        "rainbow-rb-y1_source_001"
+      ]
+    },
+    {
+      "claim": "No official price",
+      "reason": "MERA Robotics directory says no official price, but PR Newswire has official pre-order pricing.",
+      "source_ids": [
+        "rainbow-rb-y1_source_002",
+        "rainbow-rb-y1_source_004"
+      ]
+    },
+    {
+      "claim": "Specific capabilities from video titles (e.g., insane agility, surprises)",
+      "reason": "Videos not reviewed; only titles available, cannot credit capabilities.",
+      "source_ids": [
+        "rainbow-rb-y1_source_006",
+        "rainbow-rb-y1_source_007",
+        "rainbow-rb-y1_source_008",
+        "rainbow-rb-y1_source_010",
+        "rainbow-rb-y1_source_011"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 5,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Rainbow Robotics RB-Y1 is a wheeled bimanual mobile manipulator (140 cm tall, 131 kg, two 7-DoF arms, ±0.05 mm repeatability, 20/26 DOF, 1.5 m/s) sold as a research platform for $80,000 (commercial $120,000). It has LiDAR for autonomous movement, force/torque sensors, and supports teleoperation via Master Arm or VR. Evidence includes official specs and pre-order announcement, but no named customer deployments, no autonomous task execution, and all video evidence is title-only without transcript or content review. The robot is purchasable but unproven in real-world use.",
+    "strongest_evidence": [
+      "Official product page with detailed specs and dual-arm whole-body control architecture (rainbow-rb-y1_evidence_001).",
+      "Pre-order announcement with pricing and delivery schedule (rainbow-rb-y1_evidence_002).",
+      "Media report listing performance videos including water pouring and cup stacking (rainbow-rb-y1_evidence_004).",
+      "Force/torque sensors and LiDAR (rainbow-rb-y1_evidence_003)."
+    ],
+    "weakest_evidence": [
+      "No video transcript or content review; only titles.",
+      "No named customers or deployment metrics.",
+      "No autonomy demonstration beyond autonomous movement claim.",
+      "Conflicting specs across sources.",
+      "No runtime or endurance test data."
+    ],
+    "known_do_not_credit": [
+      "20 kg payload (use 3 kg per arm).",
+      "2.5 m/s driving speed (use 1.5 m/s official).",
+      "24 DOF total (use 20 or 26 from spec table).",
+      "Specific capabilities inferred from video titles.",
+      "Autonomous task execution (only autonomous movement claimed)."
+    ],
+    "recommended_confidence": "low"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "magiclab-magicbot-gen1",
+  "name": "MagicLab MagicBot Gen1",
+  "aliases": ["MagicBot", "MagicBot G1", "MagicBot Gen1"],
+  "companyId": "magiclab",
+  "companyName": "MagicLab",
+  "country": "China",
+  "announced": null,
+  "status": "pilot",
+  "category": "industrial",
+  "summary": "MagicBot Gen1 is MagicLab's 174 cm, about 70 kg full-size humanoid with a 42-DoF body and optional 11-DoF tactile hands. It is aimed at industrial assistance, logistics, research and customer service. MagicLab has shown groups of robots training on inspection, transport and assembly at an electronics factory.",
+  "specs": {
+    "height_cm": { "value": 174, "original": "Height: 174 cm", "sourceId": "s1" },
+    "weight_kg": { "value": 70, "original": "Weight: Approximately 70 kg", "sourceId": "s1" },
+    "payload_kg": { "value": 15, "original": "Max Load (Both Arms): 15 kg", "sourceId": "s1" },
+    "runtime_h": { "value": 3, "original": "Runtime: 3-5 hours", "sourceId": "s1" },
+    "dof": { "value": 42, "original": "42-DoF humanoid body", "sourceId": "s1" },
+    "hand_dof": { "value": 11, "original": "Optional Hand: 11-DoF tactile dexterous hand", "sourceId": "s1" },
+    "speed_mps": { "value": 2, "original": "Motion Speed: >=2 m/s", "sourceId": "s1" }
+  },
+  "hands": "Optional 11-DoF tactile dexterous hand.",
+  "sensors": "3D LiDAR, depth camera, three fisheye cameras, microphone and speaker.",
+  "compute": "8-core CPU with a 100 TOPS AI processor.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.magiclabglobal.com/products/magicbot-gen1/",
+  "highlights": [
+    "Max joint torque of 350 N·m or more.",
+    "December 2024 footage showed several units on inspection, material transport, assembly and barcode scanning at an electronics factory (Robozaps).",
+    "MagicBot units reportedly sold out on JD.com after a Spring Festival Gala appearance in February 2026 (Robozaps)."
+  ],
+  "caveats": [
+    "Factory robots were described as still in the skill training phase with human oversight.",
+    "No public price."
+  ],
+  "sources": [
+    { "id": "s1", "title": "MagicBot Gen1 - General-Purpose Humanoid AI Robot", "publisher": "MagicLab", "url": "https://www.magiclabglobal.com/products/magicbot-gen1/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "MagicBot Price 2026: MagicLab Specs & Factory Deployment", "publisher": "Robozaps", "url": "https://blog.robozaps.com/b/magiclab-magicbot-review", "accessed": "2026-10-14" }
+  ]
+}

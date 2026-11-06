@@ -1,0 +1,42 @@
+{
+  "id": "noetix-n2",
+  "name": "Noetix N2",
+  "aliases": ["N2"],
+  "companyId": "noetix-robotics",
+  "companyName": "Noetix Robotics",
+  "country": "China",
+  "announced": "2025-03-17",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "N2 is a small, light humanoid of about 1.2-1.3 m from Beijing startup Noetix Robotics, known for continuous backflips. It is sold for education, research and entertainment at a low price and took part in the 2025 Beijing humanoid half-marathon.",
+  "specs": {
+    "height_cm": { "value": 130, "original": "1.3 meters", "sourceId": "s1" },
+    "weight_kg": { "value": 30, "original": "30 kilograms", "sourceId": "s2" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": { "value": 18, "original": "Degrees of Freedom: 18", "sourceId": "s3" },
+    "hand_dof": null,
+    "speed_mps": { "value": 3.06, "original": "Up to 11 kilometers per hour", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": "Two depth cameras for 3D perception.",
+  "compute": "NVIDIA Jetson Orin.",
+  "price": { "value": 39000, "currency": "CNY", "priceType": "from", "configuration": "Launch starting price", "sourceId": "s1" },
+  "purchasePath": "buy_now",
+  "purchaseUrl": null,
+  "highlights": [
+    "Can perform continuous backflips, runs and jumps on one or two legs.",
+    "Robotics and Automation News reports the N2 drew over 2,500 orders.",
+    "Competed in the 2025 Beijing humanoid robot half-marathon."
+  ],
+  "caveats": [
+    "Published specs conflict: height is given as 1.2 m or 1.3 m, weight as 20 kg or 30 kg.",
+    "TMTPost reported a 59,900 yuan price for N2, while other outlets report 39,000 yuan."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Chinese startup unveils child-sized robot that backflips continuously", "publisher": "Yahoo Finance UK", "url": "https://uk.finance.yahoo.com/news/chinese-startup-unveils-child-sized-175201129.html", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Startup NOETIX Robotics Launches Affordable Humanoid Robot Capable of Backflips", "publisher": "TMTPost", "url": "https://en.tmtpost.com/post/7497178", "accessed": "2026-10-14" },
+    { "id": "s3", "title": "NOETIX Robotics Unveils Humanoid That Can Do Continuous Backflips", "publisher": "Mike Kalil", "url": "https://mikekalil.com/blog/noetix-robotics-n2/", "accessed": "2026-10-14" },
+    { "id": "s4", "title": "China's Noetix Robotics launches $1,400 consumer-grade humanoid robot", "publisher": "Robotics and Automation News", "url": "https://roboticsandautomationnews.com/2025/10/22/beijing-startup-noetix-robotics-launches-consumer-grade-humanoid-robot-at-1400/95731/", "accessed": "2026-10-14" }
+  ]
+}

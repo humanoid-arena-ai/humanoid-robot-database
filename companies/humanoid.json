@@ -1,0 +1,18 @@
+{
+  "id": "humanoid",
+  "name": "Humanoid",
+  "country": "United Kingdom",
+  "headquarters": "London, United Kingdom",
+  "founded": 2024,
+  "website": "https://thehumanoid.ai",
+  "summary": "Humanoid (legal name SKL Robotics Ltd) builds industrial humanoids, starting with the wheeled HMND 01 Alpha. It was founded by Artem Sokolov.",
+  "funding": "$152 million Series A at a $1.35 billion post-money valuation in July 2026; $270 million raised in total.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "U.K.-based Humanoid secures $152M in Series A funding",
+      "url": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

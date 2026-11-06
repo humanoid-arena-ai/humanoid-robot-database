@@ -1,0 +1,70 @@
+{
+  "id": "hugging-face-reachy-mini",
+  "name": "Reachy Mini",
+  "aliases": [
+    "Reachy Mini Lite",
+    "Reachy Mini Wireless"
+  ],
+  "companyId": "pollen-robotics",
+  "companyName": "Pollen Robotics (Hugging Face)",
+  "country": "France",
+  "announced": "2025-07-09",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "Reachy Mini is a small open-source desktop robot from Hugging Face and Pollen Robotics, made for AI experiments, coding and human-robot interaction. It is 28 cm tall with a moving head, rotating body and two antennas, and it does not walk or grasp. It is sold as a Lite kit that plugs into a computer and a Wireless kit with onboard Raspberry Pi.",
+  "specs": {
+    "height_cm": {
+      "value": 28,
+      "original": "11\"/28cm",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 1.5,
+      "original": "3.3 lbs/1.5 kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": "Wide-angle camera, 4 microphones, 5 W speaker, accelerometer (Wireless only).",
+  "compute": "Lite: uses a connected Mac or Linux computer. Wireless: Raspberry Pi onboard.",
+  "price": {
+    "value": 399,
+    "currency": "USD",
+    "priceType": "list",
+    "configuration": "Reachy Mini Lite, plus taxes and shipping (Wireless $499)",
+    "sourceId": "s1"
+  },
+  "purchasePath": "buy_now",
+  "purchaseUrl": "https://huggingface.co/blog/reachy-mini",
+  "highlights": [
+    "Head moves with 6 degrees of freedom, and the body rotates fully.",
+    "Launched at $299 (Lite) and $449 (Wireless); the Hugging Face page now lists $399 and $499.",
+    "Programmable in Python."
+  ],
+  "caveats": [
+    "A desktop robot, not a full humanoid: no legs, arms or hands.",
+    "Shipping time was stated as about 90 days."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Reachy Mini - The Open-Source Robot for Today's and Tomorrow's AI Builders",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/blog/reachy-mini",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Hugging Face Launches Reachy Mini at Just $299 for AI Developers",
+      "publisher": "Tech Times",
+      "url": "https://www.techtimes.com/articles/311286/20250710/hugging-face-launches-reachy-mini-just-299-ai-developers.htm",
+      "accessed": "2026-10-14"
+    }
+  ],
+  "formFactor": "desktop"
+}

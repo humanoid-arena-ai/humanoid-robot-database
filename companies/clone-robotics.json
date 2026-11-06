@@ -1,0 +1,24 @@
+{
+  "id": "clone-robotics",
+  "name": "Clone Robotics",
+  "country": "Poland / United States",
+  "headquarters": "Wroclaw, Poland (second office in Mountain View, California)",
+  "founded": 2021,
+  "website": "https://www.clonerobotics.com",
+  "summary": "Clone Robotics builds musculoskeletal androids driven by water-powered Myofiber artificial muscles. It was co-founded by Dhanush Radhakrishnan and Lukasz Kozlik.",
+  "funding": "About $17 million raised to date, with a $50 million round reported in progress in April 2026.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The Synthetic Human Roadmap: Clone Robotics Eyes Silicon Valley and $20,000 Price Points",
+      "url": "https://www.humanoidsdaily.com/news/the-synthetic-human-roadmap-clone-robotics-eyes-silicon-valley-and-20-000-price-points",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Clone Robotics",
+      "url": "https://www.clonerobotics.com/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

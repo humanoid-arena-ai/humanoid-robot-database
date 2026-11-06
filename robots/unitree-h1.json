@@ -1,0 +1,86 @@
+{
+  "id": "unitree-h1",
+  "name": "Unitree H1",
+  "aliases": [
+    "H1",
+    "H1-2"
+  ],
+  "companyId": "unitree-robotics",
+  "companyName": "Unitree Robotics",
+  "country": "China",
+  "announced": "2023-08-15",
+  "status": "purchasable",
+  "category": "research",
+  "summary": "H1 is Unitree's full-size bipedal humanoid, about 1.8 m tall and 47 kg. It is sold mainly to research and development customers. A later H1-2 variant adds more arm and leg joints and is heavier.",
+  "specs": {
+    "height_cm": {
+      "value": 180,
+      "original": "about 180CM",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 47,
+      "original": "about 47kg",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 30,
+      "original": "30",
+      "sourceId": "s3"
+    },
+    "runtime_h": {
+      "value": 2,
+      "original": "2",
+      "sourceId": "s3"
+    },
+    "dof": {
+      "value": 18,
+      "original": "5 DoF per leg + 4 DoF per arm",
+      "sourceId": "s1"
+    },
+    "hand_dof": null,
+    "speed_mps": {
+      "value": 3.3,
+      "original": "Moving speed of 3.3m/s",
+      "sourceId": "s1"
+    }
+  },
+  "hands": null,
+  "sensors": "3D LiDAR and depth camera.",
+  "compute": "Intel Core i5 or i7 standard; H1-2 can add up to three NVIDIA Orin NX modules.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": "https://www.unitree.com/h1/",
+  "highlights": [
+    "Battery capacity is 864 Wh and the pack is quickly replaceable.",
+    "At the August 2023 reveal, Unitree said the price was expected to be below $90,000.",
+    "The H1-2 variant is about 178 cm and 70 kg with 27 DoF and a rated arm payload of about 7 kg."
+  ],
+  "caveats": [
+    "Unitree does not publish a list price; sales are quote-based.",
+    "The 3.3 m/s figure is the company's stated moving speed, not an independent measurement."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Unitree H1 product page",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/h1/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Unitree teases new H1 humanoid robot",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/unitree-teases-new-h1-humanoid-robot/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "RoboHub — Buy, build and simulate any robot with AI",
+      "publisher": "RoboHub",
+      "url": "https://robohub.app/robots/brands/unitree",
+      "accessed": "2026-10-29"
+    }
+  ]
+}

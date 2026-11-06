@@ -1,0 +1,39 @@
+{
+  "id": "robotera-star1",
+  "name": "RobotEra STAR1",
+  "aliases": ["STAR1", "Robot Era STAR1"],
+  "companyId": "robotera",
+  "companyName": "RobotEra",
+  "country": "China",
+  "announced": null,
+  "status": "superseded",
+  "category": "general",
+  "summary": "STAR1 is RobotEra's earlier full-size humanoid, about 1.7 m and 65 kg, with joints up to 400 N·m. In October 2024 it ran at about 8 mph through the Gobi Desert wearing sneakers. RobotEra's newer L7 now leads its bipedal lineup.",
+  "specs": {
+    "height_cm": { "value": 171, "original": "5.6 feet", "sourceId": "s1" },
+    "weight_kg": { "value": 65, "original": "143 pounds", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": { "value": 3.58, "original": "8 mph", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": "AI compute up to 275 TOPS.",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Ran at about 8 mph for 34 minutes in the Gobi Desert (October 2024).",
+    "Joint torque up to 400 N·m with planetary reducers and high-precision encoders."
+  ],
+  "caveats": [
+    "Speed demo was company-produced; terrain and conditions were chosen by RobotEra.",
+    "Status as superseded is inferred from L7 being the newer full-size bipedal model."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Robot Era's STAR1 Humanoid Robot Puts on Sneakers, Goes Running in Gobi Desert", "publisher": "TechEBlog", "url": "https://www.techeblog.com/robot-era-star1-humanoid-robot-gobi-desert/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "More than a hardware play: Robot Era's founder sets the record straight", "publisher": "KrASIA", "url": "https://kr-asia.com/more-than-a-hardware-play-robot-eras-founder-sets-the-record-straight-on-the-companys-true-ambitions", "accessed": "2026-10-14" }
+  ]
+}

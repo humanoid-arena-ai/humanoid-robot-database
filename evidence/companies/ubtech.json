@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "ubtech",
+    "name": "UBTECH Robotics",
+    "country": "China",
+    "website": "https://www.ubtrobot.com/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-05-16"
+  },
+  "robots": [
+    "ubtech-walker-s2",
+    "ubtech-walker-s1"
+  ],
+  "focus_areas": [
+    "humanoid robotics"
+  ],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [
+    "See robot evidence packs for source-scoped deployment claims."
+  ],
+  "sources": [
+    {
+      "id": "ubtech_company_source_001",
+      "title": "UBTECH Robotics website",
+      "publisher": "UBTECH Robotics",
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Company/product source used for associated robot evidence."
+    }
+  ],
+  "researcher_notes": {
+    "credibility_notes": [
+      "Company pack is an index companion; use robot packs for claim-level evidence."
+    ],
+    "caveats": [
+      "Do not infer deployment beyond robot evidence packs."
+    ]
+  }
+}

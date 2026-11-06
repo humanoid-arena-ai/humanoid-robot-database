@@ -1,0 +1,69 @@
+id,name,company,country,status,announced,height_cm,weight_kg,payload_kg,runtime_h,dof,speed_mps,price,currency,price_type,purchase_path,data_file,page
+1x-eve,1X EVE,1X Technologies,Norway / United States,commercial,2026-10-29,188,87.1,15,6,25,4,,,,,evidence/robots/1x-eve.json,https://humanoidarena.ai/robots/1x-eve
+1x-neo,1X NEO,1X Technologies,Norway / United States,purchasable,2025-10-29,167.6,29.9,18,4,75,1.4,20000,USD,preorder,preorder,evidence/robots/1x-neo.json,https://humanoidarena.ai/robots/1x-neo
+agibot-a2,AgiBot A2,AgiBot,China,commercial,2026-02-02,169,69,,2,40,1.2,44560,USD,list,buy_now,evidence/robots/agibot-a2.json,https://humanoidarena.ai/robots/agibot-a2
+agibot-g2,AgiBot G2,AgiBot,China,commercial,2025-10-29,,,,,26,,,,,,evidence/robots/agibot-g2.json,https://humanoidarena.ai/robots/agibot-g2
+agibot-x2,AgiBot X2,AgiBot,China,purchasable,2025-03-11,131,35,3,2,25,1.8,,,,,evidence/robots/agibot-x2.json,https://humanoidarena.ai/robots/agibot-x2
+agibot-expedition-a3,Expedition A3,AgiBot,China,commercial,,173,55,,10,31,,,,,contact_sales,robots/agibot-expedition-a3.json,https://humanoidarena.ai/robots/agibot-expedition-a3
+agibot-g2-max,G2 Max,AgiBot,China,pilot,2026-10-26,,,40,,,,,,,contact_sales,robots/agibot-g2-max.json,https://humanoidarena.ai/robots/agibot-g2-max
+agility-digit,Digit,Agility Robotics,United States,commercial,2024-06-27,175,65,15.9,4,30,0.4,,,,lease_or_raas,evidence/robots/agility-digit.json,https://humanoidarena.ai/robots/agility-digit
+aldebaran-nao,NAO,Aldebaran,France,purchasable,2006-07-21,58,5.5,,1,25,,,,,,evidence/robots/aldebaran-nao.json,https://humanoidarena.ai/robots/aldebaran-nao
+aldebaran-pepper,Pepper,Aldebaran,France,purchasable,2026-10-29,120,28,,12,19,0.8,,,,,evidence/robots/aldebaran-pepper.json,https://humanoidarena.ai/robots/aldebaran-pepper
+apptronik-apollo,Apptronik Apollo,Apptronik,United States,pilot,2024-03-15,172.8,72.6,24.9,4,71,0.9,50000,USD,target,contact_sales,evidence/robots/apptronik-apollo.json,https://humanoidarena.ai/robots/apptronik-apollo
+astribot-s1,Astribot S1,Astribot (Stardust Intelligence),China,commercial,2024-08,170,80,5,4,23,10,,,,,evidence/robots/astribot-s1.json,https://humanoidarena.ai/robots/astribot-s1
+tiangong,Tiangong,Beijing Humanoid Robot Innovation Center (X-Humanoid),China,superseded,2024-04-27,163,43,,,20,1.7,,,,,evidence/robots/tiangong.json,https://humanoidarena.ai/robots/tiangong
+tiangong-ultra,Tiangong Ultra,Beijing Humanoid Robot Innovation Center (X-Humanoid),China,prototype,2026-10-29,180,55,,,,3.3,,,,,evidence/robots/tiangong-ultra.json,https://humanoidarena.ai/robots/tiangong-ultra
+booster-k1,Booster K1,Booster Robotics,China,purchasable,2025-10-21,95,19.5,,1.2,22,2,,,,,evidence/robots/booster-k1.json,https://humanoidarena.ai/robots/booster-k1
+booster-t1,Booster T1,Booster Robotics,China,superseded,2026-10-29,118,30,0.5,2,23,1,,,,,evidence/robots/booster-t1.json,https://humanoidarena.ai/robots/booster-t1
+booster-t2,Booster T2,Booster Robotics,China,purchasable,2026-07-10,140,42,10,2,31,3,,,,,evidence/robots/booster-t2.json,https://humanoidarena.ai/robots/booster-t2
+boston-dynamics-atlas-electric,Boston Dynamics Electric Atlas,Boston Dynamics,United States,pilot,2024-04-17,190,90,50,4,56,2.5,,,,contact_sales,evidence/robots/boston-dynamics-atlas-electric.json,https://humanoidarena.ai/robots/boston-dynamics-atlas-electric
+clone-alpha,Clone Alpha,Clone Robotics,Poland / United States,prototype,2024-12-05,,,,1.5,200,,,,,,evidence/robots/clone-alpha.json,https://humanoidarena.ai/robots/clone-alpha
+dexmate-vega,Dexmate Vega,Dexmate,United States,purchasable,2025-03-04,220,135,5,20,24,,,,,,evidence/robots/dexmate-vega.json,https://humanoidarena.ai/robots/dexmate-vega
+dobot-atom,DOBOT ATOM,DOBOT,China,commercial,2025-06-30,165,62,3.5,2,41,1.5,27500,USD,reported,buy_now,evidence/robots/dobot-atom.json,https://humanoidarena.ai/robots/dobot-atom
+engineai-pm01,EngineAI PM01,EngineAI,China,purchasable,2024-12-27,138,40,,2,24,2,,,,,evidence/robots/engineai-pm01.json,https://humanoidarena.ai/robots/engineai-pm01
+engineai-se01,EngineAI SE01,EngineAI,China,prototype,2024-10-24,170,55,,2,32,2,,,,,evidence/robots/engineai-se01.json,https://humanoidarena.ai/robots/engineai-se01
+engineai-t800,EngineAI T800,EngineAI,China,purchasable,2025-12-02,173,75,5,4,29,1.5,,,,,evidence/robots/engineai-t800.json,https://humanoidarena.ai/robots/engineai-t800
+engineered-arts-ameca,Ameca,Engineered Arts,United Kingdom,commercial,2021-12-01,187,62,2,4,61,,,,,,evidence/robots/engineered-arts-ameca.json,https://humanoidarena.ai/robots/engineered-arts-ameca
+figure-01,Figure 01,Figure AI,United States,superseded,2023-03-02,167.6,60,20,5,,1.2,,,,not_for_sale,evidence/robots/figure-01.json,https://humanoidarena.ai/robots/figure-01
+figure-02,Figure 02,Figure AI,United States,superseded,2024-08-06,170,70,20,5,,1.3,,,,not_for_sale,evidence/robots/figure-02.json,https://humanoidarena.ai/robots/figure-02
+figure-03,Figure 03,Figure AI,United States,pilot,2025-10-09,173,61,20,5,30,1.2,,,,,evidence/robots/figure-03.json,https://humanoidarena.ai/robots/figure-03
+foundation-phantom-mk1,Foundation Phantom MK-1,Foundation Future Industries,United States,pilot,2026-10-29,175,80,20,4,19,1.7,,,,,evidence/robots/foundation-phantom-mk1.json,https://humanoidarena.ai/robots/foundation-phantom-mk1
+fourier-gr-2,Fourier GR-2,Fourier,China,purchasable,2024-09-30,175,63,3,2,53,1.4,,,,,evidence/robots/fourier-gr-2.json,https://humanoidarena.ai/robots/fourier-gr-2
+fourier-gr-3,Fourier GR-3,Fourier,China,pilot,2025-08-07,165,71,3,3,55,1.5,,,,,evidence/robots/fourier-gr-3.json,https://humanoidarena.ai/robots/fourier-gr-3
+galbot-g1,Galbot G1,Galbot,China,commercial,2026-10-29,173,92.5,10,8,21,1.5,,,,,evidence/robots/galbot-g1.json,https://humanoidarena.ai/robots/galbot-g1
+hanson-sophia,Sophia,Hanson Robotics,Hong Kong,commercial,2016-02-14,167,20,0.6,,83,,,,,,evidence/robots/hanson-sophia.json,https://humanoidarena.ai/robots/hanson-sophia
+honda-asimo,Honda ASIMO,Honda,Japan,superseded,2026-10-29,130,54,1,1,57,0.8,,,,,evidence/robots/honda-asimo.json,https://humanoidarena.ai/robots/honda-asimo
+humanoid-hmnd-01,HMND 01,Humanoid,United Kingdom,pilot,2025-09-18,220,300,15,4,29,2,,,,,evidence/robots/humanoid-hmnd-01.json,https://humanoidarena.ai/robots/humanoid-hmnd-01
+iit-ergocub,ergoCub,Italian Institute of Technology (IIT),Italy,prototype,2023-09-21,150,55.7,10,,17,,,,,,evidence/robots/iit-ergocub.json,https://humanoidarena.ai/robots/iit-ergocub
+k-scale-k-bot,K-Scale K-Bot,K-Scale Labs,United States,superseded,2026-10-29,140,34,10,4,,,,,,,evidence/robots/k-scale-k-bot.json,https://humanoidarena.ai/robots/k-scale-k-bot
+kawasaki-kaleido-9,Kawasaki Kaleido 9,Kawasaki Heavy Industries,Japan,prototype,2025-12-03,190,99,30,3,,1.4,,,,,evidence/robots/kawasaki-kaleido-9.json,https://humanoidarena.ai/robots/kawasaki-kaleido-9
+kepler-k2,Kepler K2 Bumblebee,Kepler Robotics,China,purchasable,2025-06-05,175,75,30,8,52,,,,,,evidence/robots/kepler-k2.json,https://humanoidarena.ai/robots/kepler-k2
+kinisi-kr1,Kinisi KR1,Kinisi Robotics,United Kingdom,prototype,2024-08-19,162,100,10,8,21,2.4,,,,,evidence/robots/kinisi-kr1.json,https://humanoidarena.ai/robots/kinisi-kr1
+leju-kuavo,Leju Kuavo,Leju Robotics,China,commercial,2026-10-29,140,45,5,2,26,1.3,,,,,evidence/robots/leju-kuavo.json,https://humanoidarena.ai/robots/leju-kuavo
+limx-oli,LimX Oli,LimX Dynamics,China,purchasable,2025-07-31,165,55,3,1.5,31,1.4,,,,,evidence/robots/limx-oli.json,https://humanoidarena.ai/robots/limx-oli
+magiclab-magicbot-gen1,MagicLab MagicBot Gen1,MagicLab,China,pilot,2026-10-29,174,70,15,3,42,2,,,,,evidence/robots/magiclab-magicbot-gen1.json,https://humanoidarena.ai/robots/magiclab-magicbot-gen1
+menteebot-v3,MenteeBot V3,Mentee Robotics,Israel,pilot,2026-01-06,175,70,25,4,40,1.5,20000,USD,reported,not_for_sale,evidence/robots/menteebot-v3.json,https://humanoidarena.ai/robots/menteebot-v3
+neura-4ne1,NEURA 4NE1,NEURA Robotics,Germany,purchasable,2026-10-29,180,80,20,6,42,1.4,,,,,evidence/robots/neura-4ne1.json,https://humanoidarena.ai/robots/neura-4ne1
+noetix-bumi,Noetix Bumi,Noetix Robotics,China,purchasable,2025-10-22,94,12,,1,21,,,,,,evidence/robots/noetix-bumi.json,https://humanoidarena.ai/robots/noetix-bumi
+noetix-n2,Noetix N2,Noetix Robotics,China,purchasable,2025-03-17,118,30,5,,18,3.5,,,,,evidence/robots/noetix-n2.json,https://humanoidarena.ai/robots/noetix-n2
+pal-talos,PAL Robotics TALOS,PAL Robotics,Spain,commercial,2026-10-29,175,95,6,1.5,32,0.8,,,,,evidence/robots/pal-talos.json,https://humanoidarena.ai/robots/pal-talos
+persona-ai-humanoid,Persona AI Humanoid,Persona AI,United States,prototype,2026-10-29,,,,,,,,,,,evidence/robots/persona-ai-humanoid.json,https://humanoidarena.ai/robots/persona-ai-humanoid
+pollen-reachy-2,Reachy 2,Pollen Robotics,France,purchasable,2024-10-29,166,50,3,,,,,,,,evidence/robots/pollen-reachy-2.json,https://humanoidarena.ai/robots/pollen-reachy-2
+hugging-face-reachy-mini,Reachy Mini,Pollen Robotics,France,purchasable,2025-07-09,28,1.5,,,6,,,,,,evidence/robots/hugging-face-reachy-mini.json,https://humanoidarena.ai/robots/hugging-face-reachy-mini
+pudu-d9,PUDU D9,PUDU Robotics,China,pilot,2024-12-19,170,65,20,,42,2,,,,contact_sales,evidence/robots/pudu-d9.json,https://humanoidarena.ai/robots/pudu-d9
+rainbow-rb-y1,Rainbow Robotics RB-Y1,Rainbow Robotics,South Korea,purchasable,2024-04-05,140,131,3,,20,1.5,,,,,evidence/robots/rainbow-rb-y1.json,https://humanoidarena.ai/robots/rainbow-rb-y1
+robotera-l7,RobotEra L7,RobotEra,China,prototype,2025-07-29,171,65,20,,55,4,,,,,evidence/robots/robotera-l7.json,https://humanoidarena.ai/robots/robotera-l7
+robotera-star1,RobotEra STAR1,RobotEra,China,superseded,2026-10-29,171,65,160,0.6,55,3.6,,,,,evidence/robots/robotera-star1.json,https://humanoidarena.ai/robots/robotera-star1
+sanctuary-phoenix,Sanctuary Phoenix,Sanctuary AI,Canada,pilot,2023-03-08,170.1,70.3,24.9,,,1.3,,,,not_for_sale,evidence/robots/sanctuary-phoenix.json,https://humanoidarena.ai/robots/sanctuary-phoenix
+spirit-ai-moz1,Spirit AI Moz1,Spirit AI,China,pilot,2026-10-29,160,70,26,3,26,1,,,,,evidence/robots/spirit-ai-moz1.json,https://humanoidarena.ai/robots/spirit-ai-moz1
+tesla-optimus-gen-1,Tesla Optimus Gen 1,Tesla,United States,prototype,2022-09-30,,73,,,28,0.6,,,,not_for_sale,evidence/robots/tesla-optimus-gen-1.json,https://humanoidarena.ai/robots/tesla-optimus-gen-1
+tesla-optimus-gen-2-v2-5,Tesla Optimus Gen 2 / v2.5,Tesla,United States,prototype,2023-12-13,173,57,20,,40,2.2,20000,USD,target,not_for_sale,evidence/robots/tesla-optimus-gen-2-v2-5.json,https://humanoidarena.ai/robots/tesla-optimus-gen-2-v2-5
+ubtech-walker-s1,UBTECH Walker S1,UBTECH Robotics,China,superseded,2026-10-30,172,76,3,2,41,0.8,,,,,evidence/robots/ubtech-walker-s1.json,https://humanoidarena.ai/robots/ubtech-walker-s1
+ubtech-walker-s2,UBTECH Walker S2,UBTECH Robotics,China,commercial,2025-11-17,176,70,15,2.5,42,2,246600,USD,list,contact_sales,evidence/robots/ubtech-walker-s2.json,https://humanoidarena.ai/robots/ubtech-walker-s2
+unitree-g1,Unitree G1,Unitree Robotics,China,purchasable,2024-05-15,132,35,2,2,23,2,13500,USD,list,buy_now,evidence/robots/unitree-g1.json,https://humanoidarena.ai/robots/unitree-g1
+unitree-h1,Unitree H1,Unitree Robotics,China,purchasable,2023-08-15,180,47,30,1,18,3.3,,,,,evidence/robots/unitree-h1.json,https://humanoidarena.ai/robots/unitree-h1
+unitree-h2,Unitree H2,Unitree Robotics,China,purchasable,2025-10-21,182,70,7,3,31,,29900,USD,list,buy_now,evidence/robots/unitree-h2.json,https://humanoidarena.ai/robots/unitree-h2
+unitree-r1,Unitree R1,Unitree Robotics,China,purchasable,2025-07-25,123,29,2,1,26,,4900,USD,list,buy_now,evidence/robots/unitree-r1.json,https://humanoidarena.ai/robots/unitree-r1
+xiaomi-cyberone,Xiaomi CyberOne,Xiaomi,China,superseded,2022-08-11,177,52,2.7,,21,1,,,,,evidence/robots/xiaomi-cyberone.json,https://humanoidarena.ai/robots/xiaomi-cyberone
+xiaomi-cyberone-v2,Xiaomi CyberOne V2,Xiaomi,China,pilot,2026-04-29,170,,,,,,,,,,evidence/robots/xiaomi-cyberone-v2.json,https://humanoidarena.ai/robots/xiaomi-cyberone-v2
+xpeng-iron,XPeng IRON,XPeng,China,prototype,2025-11-05,178,70,,,82,,,,,not_for_sale,evidence/robots/xpeng-iron.json,https://humanoidarena.ai/robots/xpeng-iron

@@ -1,0 +1,912 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "hugging-face-reachy-mini",
+    "name": "Reachy Mini",
+    "company_id": "pollen-robotics",
+    "company_name": "Pollen Robotics (Hugging Face)",
+    "country": "France",
+    "generation": null,
+    "first_announced_date": "2025-07-09",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Announced and available for order July 9, 2025, starting at $399 Lite and $499 Wireless. Company states delivery about 90 days. User comments on the official launch post indicate some orders from December 2025 were still awaiting shipment as of March-April 2026.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "human-robot interaction",
+      "creative coding",
+      "AI experimentation",
+      "education",
+      "research"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "11“/28cm in height",
+      "value": 28,
+      "unit": "cm",
+      "notes": "Official product page lists 11\"/28cm. Tech Times reported 'two feet tall' which conflicts; official value used here.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "3.3 lbs/1.5 kg",
+      "value": 1.5,
+      "unit": "kg",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No payload capacity published; desktop robot without manipulators.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No runtime published; battery capacity not disclosed.",
+      "source_ids": []
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Wireless version includes battery, but capacity and runtime not disclosed. Lite is wired only.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 6,
+      "notes": "Official figure, added 2026-10-29 by automated spec fill; Head only (Stewart platform). No page states a total body DOF figure; P6 additionally lists a body yaw axis and 2 antenna motors, and P1's spec table lists 'Head movement (6 Degrees of Freedom)', 'Full body rotation' and '2 animated antennas'. A separate report (P2) claims 'seven flexible joints', which conflicts with these and is treated as erroneous..",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_011"
+      ],
+      "original_value": "6 DOF: x, y, z, roll, pitch, yaw (via Stewart platform)",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Desktop robot, no locomotion.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "No hands or manipulators; only head and body rotation.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "wide-angle camera",
+        "4 microphones",
+        "5 W speaker",
+        "accelerometer (Wireless only)"
+      ],
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Lite version requires an external Mac or Linux computer; Wireless version has onboard Raspberry Pi 4.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Not disclosed in reviewed sources. Source mentions motorized head and body rotation and animated antennas, implying motors but no detailed specifications.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "for_sale",
+      "price": 399,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://huggingface.co/blog/reachy-mini",
+      "notes": "Sold as a kit. Lite version listed at $399 (+ taxes + shipping), Wireless at $499. Launch post reported earlier price of $299 Lite and $449 Wireless per Tech Times; conflicting. Company states delivery approximately 90 days, but user comments indicate delays beyond that.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001",
+        "hugging-face-reachy-mini_source_002"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "No arms, hands, or grippers are listed in the official specifications; the robot is designed for expressive movement and interaction, not manipulation. Tech Times incorrectly described grabbing objects, conflicting with the official design.",
+      "evidence_level": 0,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001",
+        "hugging-face-reachy-mini_source_002"
+      ],
+      "caveats": [
+        "No manipulation hardware",
+        "Media error noted"
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No evidence of autonomous task execution beyond user-controlled programs; the robot requires external compute (Lite) or onboard Raspberry Pi but no autonomy claims. The 3D voice demo space suggests interactive conversational capabilities, but that is not autonomous task execution.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No autonomy claims from official sources",
+        "User-programmed behaviors only"
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Official source lists 6 degrees of freedom for head movement and full body rotation; no walking or wheeled locomotion. Mobility is limited to upper-body/head articulation.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "caveats": [
+        "No locomotion",
+        "Total body DoF not disclosed"
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official source says Reachy Mini is equipped with a wide-angle camera, four microphones, and speakers, and can use state-of-the-art open-source models for speech and vision through Hugging Face integration.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "caveats": [
+        "No built-in perception model demonstrated; relies on user integration"
+      ]
+    },
+    "human_interaction": {
+      "summary": "Designed for human-robot interaction with expressive movement, microphone/speaker audio interaction, and a public 3D voice demo space showing ongoing conversational development.",
+      "evidence_level": 2,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001",
+        "hugging-face-reachy-mini_source_003",
+        "hugging-face-reachy-mini_source_004"
+      ],
+      "caveats": [
+        "No independent review of interaction quality",
+        "Demo space code indicates ongoing development"
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery capacity, or reliability metrics published; company describes the product as in early development phase and sold as-is without warranties.",
+      "evidence_level": 0,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "caveats": [
+        "No endurance data",
+        "Company warns early development"
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Small desktop form factor (28 cm, 1.5 kg), intended for desk use in homes, classrooms, and labs; no locomotion or grasping, which limits physical risks.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "caveats": [
+        "No safety certification mentioned",
+        "Early development as-is"
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Reachy Mini is available for purchase via Hugging Face (Lite $399, Wireless $499), and user comments indicate orders were placed, but no named commercial deployments or production use are documented.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "caveats": [
+        "No customer case studies",
+        "Shipping delays reported in comments"
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Priced from $399 (Lite) and $499 (Wireless), with open-source hardware/software and Python SDK; aimed at lowering barriers for AI and robotics development.",
+      "evidence_level": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "caveats": [
+        "Price excludes taxes and shipping",
+        "Delivery delayed per comments"
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "hugging-face-reachy-mini_evidence_001",
+      "date": "2025-07-09",
+      "title": "Reachy Mini official specifications and pricing",
+      "claim": "Reachy Mini is 28 cm tall, 1.5 kg, with 6-DoF head movement, full body rotation, camera, 4 microphones, 5W speaker, and is available as Lite ($399) or Wireless ($499) with ~90-day delivery.",
+      "category": [
+        "specs",
+        "human_environment_fit",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official product page. Values are company-provided.",
+      "arena_relevance": "Defines physical form and price for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Reachy Mini measures 11“/28cm in height and 6.3“/16cm in width (approximately 9“/23cm tall when in sleep mode) and weighs 3.3 lbs/1.5 kg.",
+      "source_location": "Hugging Face blog, Robot technical info section",
+      "verification_notes": "Company spec page; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "high",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_003",
+      "date": "2025-07-09",
+      "title": "Early development phase",
+      "claim": "Reachy Mini is sold as-is without warranties, in an early development phase.",
+      "category": [
+        "endurance_reliability",
+        "status"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "confidence": 0.9,
+      "notes": "Official disclaimer.",
+      "arena_relevance": "Caps reliability and support expectations.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Reachy Mini is currently in an early development phase. We’re sharing it as-is, without warranties or guarantees, to engage with early adopters and gather feedback.",
+      "source_location": "Robot technical info section, note",
+      "verification_notes": "Company statement.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_004",
+      "date": "2025-07-09",
+      "title": "Estimated delivery time",
+      "claim": "Company states delivery approximately 90 days for both versions.",
+      "category": [
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Later user comments indicate delays beyond 90 days.",
+      "arena_relevance": "Purchase expectation.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Delivery | ~90 days | ~90 days",
+      "source_location": "Comparison table, Delivery row",
+      "verification_notes": "Company estimate; user reports suggest not always met.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_005",
+      "date": null,
+      "title": "User-reported shipping delays",
+      "claim": "Comments on the official launch post report orders from December 2025 still without delivery information as of March-April 2026.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_001"
+      ],
+      "confidence": 0.5,
+      "notes": "Anonymous user comments; not independently verified.",
+      "arena_relevance": "Signals delivery problems.",
+      "claim_type": "customer_claim",
+      "supporting_excerpt": "I bought mine in December 25, receipt: 2126-5548, still no info about delivery :(",
+      "source_location": "Comments section",
+      "verification_notes": "User comment; represent buyer experiences.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_006",
+      "date": "2025-07-10",
+      "title": "Media-reported launch price",
+      "claim": "Tech Times reported a starting price of $299 at launch, conflicting with the official current price of $399.",
+      "category": [
+        "accessibility_value",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "The official page now lists $399; likely launch promo or error.",
+      "arena_relevance": "Price comparison.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Hugging Face and Pollen Robotis have unveiled Reachy Mini, a fully programmable robot designed to accelerate AI and robotics development with accessible hardware and a starting price of only $299.",
+      "source_location": "Tech Times article, first paragraph",
+      "verification_notes": "Secondary source; conflicts with official page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_007",
+      "date": "2025-07-10",
+      "title": "Media-reported inaccurate specifications",
+      "claim": "Tech Times described Reachy Mini as two feet tall with seven flexible joints, stereo cameras, and object-grabbing ability, which conflicts with official specifications (28 cm, no arms/grippers).",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ],
+      "confidence": 0.4,
+      "notes": "Tech Times appears to have used incorrect information; we do not credit these specs.",
+      "arena_relevance": "Avoid overclaiming capabilities.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Standing at two feet tall, Reachy Mini moves with surprising grace, thanks to its seven flexible joints. It sees the world in 3D through stereo cameras, listens with built-in mics, and can do everything from carefully grabbing objects to chatting with you.",
+      "source_location": "Tech Times article, third paragraph",
+      "verification_notes": "Conflicts with official source; likely error.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_008",
+      "date": null,
+      "title": "3D voice demo space",
+      "claim": "A Hugging Face Space 'pollen-robotics/reachy-mini-3d-voice' exists with commits indicating an interactive 3D voice demo for Reachy Mini.",
+      "category": [
+        "human_interaction",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Official project space; commit messages suggest conversational and companion features.",
+      "arena_relevance": "Evidence of voice interaction development.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Make Reachy aware of its Microduck companion",
+      "source_location": "Commit message in Hugging Face Space repository",
+      "verification_notes": "Code repository listing; functionality not directly tested.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_009",
+      "date": null,
+      "title": "Voice demo conversational improvements",
+      "claim": "A later commit in the Reachy Mini 3D voice Space indicates ongoing development to make Reachy replies more natural.",
+      "category": [
+        "human_interaction"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "hugging-face-reachy-mini_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Official development activity.",
+      "arena_relevance": "Conversational quality improvement.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Make Reachy replies natural without forced closing jokes",
+      "source_location": "Commit message in Hugging Face Space repository",
+      "verification_notes": "Development commit; not independently reviewed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "hugging-face-reachy-mini_evidence_016",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No total DoF, battery capacity, runtime, actuator details, or independent verification were found for Reachy Mini.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on endurance, mobility, and autonomy.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "mobility_whole_body_control",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "hugging-face-reachy-mini_demo_001",
+      "title": "ShortCircuit - I'm totally sold. - Reachy Mini",
+      "date": "2026-03-01",
+      "observed_capabilities": [
+        "Video title indicates positive impression (content not reviewed)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title available; no transcript",
+        "No direct observation of capabilities"
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Teleoperation not applicable to a stationary desktop robot; no disclosure.",
+      "observed_segments": []
+    },
+    {
+      "id": "hugging-face-reachy-mini_demo_002",
+      "title": "Lifey Guy - Microduck vs Reachy Mini: Which Robot Should You Buy?",
+      "date": "2026-10-28",
+      "observed_capabilities": [
+        "Comparison between two robots (content not reviewed)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Only video title available; no transcript",
+        "No direct observation of capabilities"
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Not applicable.",
+      "observed_segments": []
+    },
+    {
+      "id": "hugging-face-reachy-mini_demo_003",
+      "title": "Pollen Robotics - Reachy Mini is working with you now.",
+      "date": "2026-07-29",
+      "observed_capabilities": [
+        "Human-robot collaboration scenario (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Official video; no transcript",
+        "Title suggests collaborative behavior but not verified"
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy or teleoperation disclosure; likely pre-programmed behaviors.",
+      "observed_segments": []
+    },
+    {
+      "id": "hugging-face-reachy-mini_demo_004",
+      "title": "Jeff Geerling - Testing Hugging Face's Raspberry Pi-powered open source robot",
+      "date": "2026-03-01",
+      "observed_capabilities": [
+        "Testing of Raspberry Pi-powered open source robot (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Independent review; no transcript",
+        "Content not directly observed"
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Not applicable.",
+      "observed_segments": []
+    },
+    {
+      "id": "hugging-face-reachy-mini_demo_005",
+      "title": "Pollen Robotics - Your open-source companion - Reachy Mini",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "Promotional demonstration of open-source companion (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Official video; no transcript",
+        "Promotional content"
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Not applicable.",
+      "observed_segments": []
+    },
+    {
+      "id": "hugging-face-reachy-mini_demo_006",
+      "title": "Alex T. Silverstein - LLM in a Robot - Reachy Mini (WIFI Edition) - Quick Demo",
+      "date": "2026-03-01",
+      "observed_capabilities": [
+        "LLM integration in WiFi edition (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Independent demo; no transcript",
+        "LLM integration not verified"
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; no transcript available.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No autonomy disclosure; likely scripted LLM interaction.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "Product is for sale, but delivery times are uncertain; comments indicate orders placed in December 2025 had no delivery info by March 2026.",
+      "impact_on_arena_scoring": "Accessibility/value evidence is high, but delivery reliability is low."
+    },
+    {
+      "topic": "Manipulation capability",
+      "description": "No arms, hands, or grippers; Tech Times incorrectly claimed object grabbing.",
+      "impact_on_arena_scoring": "Manipulation dexterity must be scored zero."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "No claims of autonomous task execution; robot is programmable and requires user control.",
+      "impact_on_arena_scoring": "Autonomy task execution is not demonstrated."
+    },
+    {
+      "topic": "Endurance and reliability",
+      "description": "No runtime, battery capacity, or reliability metrics; product is early development, as-is.",
+      "impact_on_arena_scoring": "Endurance/reliability cannot be scored above minimal."
+    },
+    {
+      "topic": "Independent verification",
+      "description": "Most evidence comes from official sources; video titles exist but no transcripts or independent reviews with detail.",
+      "impact_on_arena_scoring": "Confidence in all capabilities remains low to medium."
+    },
+    {
+      "topic": "Specs gaps",
+      "description": "Total DoF, battery capacity, actuator details not published.",
+      "impact_on_arena_scoring": "Cannot compare detailed hardware specs."
+    }
+  ],
+  "source_ids": [
+    "hugging-face-reachy-mini_source_001",
+    "hugging-face-reachy-mini_source_002",
+    "hugging-face-reachy-mini_source_003",
+    "hugging-face-reachy-mini_source_004",
+    "hugging-face-reachy-mini_source_005",
+    "hugging-face-reachy-mini_source_006",
+    "hugging-face-reachy-mini_source_007",
+    "hugging-face-reachy-mini_source_008",
+    "hugging-face-reachy-mini_source_009",
+    "hugging-face-reachy-mini_source_010",
+    "hugging-face-reachy-mini_source_011"
+  ],
+  "sources": [
+    {
+      "id": "hugging-face-reachy-mini_source_001",
+      "title": "Reachy Mini - The Open-Source Robot for Today's and Tomorrow's AI Builders",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/blog/reachy-mini",
+      "date_published": "2025-07-09",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page/blog; contains company claims and user comments."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_002",
+      "title": "Hugging Face Launches Reachy Mini at Just $299 for AI Developers",
+      "publisher": "Tech Times",
+      "url": "https://www.techtimes.com/articles/311286/20250710/hugging-face-launches-reachy-mini-just-299-ai-developers.htm",
+      "date_published": "2025-07-10",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary coverage with conflicting specs and price."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_003",
+      "title": "pollen-robotics/reachy-mini-3d-voice at a5774d9c484836cf488291b62b5c261b213ebef9",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/spaces/pollen-robotics/reachy-mini-3d-voice/tree/a5774d9c484836cf488291b62b5c261b213ebef9",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Official project repository listing; commit messages only."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_004",
+      "title": "pollen-robotics/reachy-mini-3d-voice at 2966036d5911a703c469184a1bbec8d81eae75cf",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/spaces/pollen-robotics/reachy-mini-3d-voice/tree/2966036d5911a703c469184a1bbec8d81eae75cf",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Official project repository listing; commit messages only."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_005",
+      "title": "I'm totally sold. - Reachy Mini",
+      "publisher": "YouTube ShortCircuit",
+      "url": "https://www.youtube.com/watch?v=_cY1rFrNQpE",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript or description."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_006",
+      "title": "Microduck vs Reachy Mini: Which Robot Should You Buy?",
+      "publisher": "YouTube Lifey Guy",
+      "url": "https://www.youtube.com/watch?v=cSLjqxM2Bao",
+      "date_published": "2026-10-28",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript or description."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_007",
+      "title": "Reachy Mini is working with you now.",
+      "publisher": "YouTube Pollen Robotics",
+      "url": "https://www.youtube.com/watch?v=cMcVAcLF9BM",
+      "date_published": "2026-07-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only, no transcript."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_008",
+      "title": "Testing Hugging Face's Raspberry Pi-powered open source robot",
+      "publisher": "YouTube Jeff Geerling",
+      "url": "https://www.youtube.com/watch?v=yvBbcLCZIhg",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Independent reviewer; title only, no transcript."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_009",
+      "title": "Your open-source companion - Reachy Mini",
+      "publisher": "YouTube Pollen Robotics",
+      "url": "https://www.youtube.com/watch?v=JvdBJZ-qR18",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official video; title only, no transcript."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_010",
+      "title": "LLM in a Robot - Reachy Mini (WIFI Edition) - Quick Demo",
+      "publisher": "YouTube Alex T. Silverstein",
+      "url": "https://www.youtube.com/watch?v=V0trfuf6ODk",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Independent demo; title only, no transcript."
+    },
+    {
+      "id": "hugging-face-reachy-mini_source_011",
+      "title": "reachy_mini/AGENTS.md at main · pollen-robotics/reachy_mini",
+      "publisher": "GitHub",
+      "url": "https://github.com/pollen-robotics/reachy_mini/blob/main/AGENTS.md",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Reachy Mini is a low-cost, open-source desktop robot designed for human-robot interaction and education, with strong accessibility evidence (price, open-source) but no manipulation, autonomy, endurance, or independent verification. Evidence is mostly official and limited by lack of transcripts for videos. Compiled automatically from public sources on 2026-10-29; requires human review.",
+    "strongest_positive_evidence": [
+      "Official product page with clear specs and pricing ($399 Lite, $499 Wireless).",
+      "Open-source hardware/software and Python SDK claim.",
+      "Existence of 3D voice demo Space suggests active conversational development.",
+      "Low price point and educational focus."
+    ],
+    "weakest_or_missing_evidence": [
+      "No manipulation capability (no arms/hands).",
+      "No endurance/reliability data; early development as-is.",
+      "No independent verification; video titles only.",
+      "Delivery delays reported by users.",
+      "Conflicting media reports on specs and price."
+    ],
+    "conflicting_claims": [
+      "Height: 28 cm (official) vs 'two feet tall' (Tech Times).",
+      "Price: $399 official vs $299 Tech Times launch price.",
+      "Joints: 6 DoF head + body rotation (official) vs 'seven flexible joints' (Tech Times).",
+      "Stereo cameras and grabbing objects (Tech Times) not supported by official specs."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "service_humanoid (desktop companion)",
+      "upper_body_humanoid (limited upper-body articulation)"
+    ],
+    "do_not_overclaim": [
+      "Do not credit any manipulation or grasping ability.",
+      "Do not credit autonomy or task execution beyond user programming.",
+      "Do not treat media-reported $299 price as current official price.",
+      "Do not infer battery runtime or total DoF from absence of data.",
+      "Do not treat video titles as verified demonstrations of capabilities."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Reachy Mini is currently offered for sale as of 2026-10-29. No successor announced in reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Reachy Mini can carefully grab objects",
+      "reason": "Conflicts with official design (no arms/hands). Tech Times likely error.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ]
+    },
+    {
+      "claim": "Reachy Mini stands two feet tall",
+      "reason": "Officially 28 cm; Tech Times likely error.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ]
+    },
+    {
+      "claim": "Reachy Mini has seven flexible joints",
+      "reason": "Official source lists 6 DoF head + body rotation; exact total not stated; Tech Times claim not substantiated.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ]
+    },
+    {
+      "claim": "Reachy Mini sees the world in 3D through stereo cameras",
+      "reason": "Official source lists a single wide-angle camera, not stereo; Tech Times likely error.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ]
+    },
+    {
+      "claim": "Reachy Mini has a starting price of $299",
+      "reason": "Official page currently lists $399; likely launch promo or media error.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_002"
+      ]
+    },
+    {
+      "claim": "Specific capabilities from video titles (e.g., LLM integration, collaboration)",
+      "reason": "Only video titles available; no transcripts or descriptions to verify content.",
+      "source_ids": [
+        "hugging-face-reachy-mini_source_005",
+        "hugging-face-reachy-mini_source_006",
+        "hugging-face-reachy-mini_source_007",
+        "hugging-face-reachy-mini_source_008",
+        "hugging-face-reachy-mini_source_009",
+        "hugging-face-reachy-mini_source_010"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "low",
+    "primary_sources_count": 5,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Reachy Mini is a small (28 cm, 1.5 kg) open-source desktop robot from Hugging Face and Pollen Robotics, priced at $399 (Lite) and $499 (Wireless). It features a 6-DoF motorized head, full body rotation, animated antennas, camera, microphones, and speaker, designed for human-robot interaction, education, and AI experimentation. It has no arms, hands, or locomotion, so manipulation and mobility are minimal. The robot is programmable in Python and open-source, with a growing ecosystem including a 3D voice demo Space. Evidence is mostly official and early-development; no independent verification, endurance data, or customer deployments exist. Video titles exist but without transcripts, so capabilities cannot be confirmed. Compiled automatically from public sources on 2026-10-29; requires human review.",
+    "strongest_evidence": [
+      "Official product page with clear specs and pricing (hugging-face-reachy-mini_evidence_001).",
+      "Open-source and programmable claim (hugging-face-reachy-mini_evidence_002).",
+      "Existence of 3D voice demo Space (hugging-face-reachy-mini_evidence_008, 009)."
+    ],
+    "weakest_evidence": [
+      "No manipulation capability (hugging-face-reachy-mini_evidence_001 shows only head/body).",
+      "No endurance/reliability data; early development as-is (hugging-face-reachy-mini_evidence_003).",
+      "Video titles only, no content verification (hugging-face-reachy-mini_evidence_010-015).",
+      "User-reported shipping delays (hugging-face-reachy-mini_evidence_005)."
+    ],
+    "known_do_not_credit": [
+      "Manipulation or grasping ability.",
+      "Autonomous task execution.",
+      "Tech Times' reported two feet height, seven joints, stereo cameras.",
+      "$299 launch price as current price.",
+      "Any capability inferred from video titles without transcript."
+    ],
+    "recommended_confidence": "low"
+  }
+}

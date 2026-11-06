@@ -1,0 +1,630 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "tesla-optimus-gen-1",
+    "name": "Tesla Optimus Gen 1",
+    "company_id": "tesla",
+    "company_name": "Tesla",
+    "country": "United States",
+    "generation": "first Optimus/Bumble C prototype generation",
+    "first_announced_date": "2022-09-30",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Historical 2022 prototype/demo platform; no credible Gen 1 production deployment evidence found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "factory R&D",
+      "general-purpose humanoid research"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": false,
+    "superseded_by": [
+      "tesla-optimus-gen-2-v2-5"
+    ],
+    "currentness_notes": "Historical Optimus prototype generation; later Tesla Optimus facility-task or product-roadmap claims should not be credited to Gen 1 unless explicitly tied to this 2022 prototype."
+  },
+  "specs": {
+    "height": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "weight": {
+      "original_value": "~73 kg",
+      "value": 73,
+      "unit": "kg",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "full day work goal",
+      "value": null,
+      "unit": null,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_003"
+      ]
+    },
+    "battery": {
+      "original_value": "2.3 kWh / 52V torso battery",
+      "value": 2.3,
+      "unit": "kWh",
+      "notes": "Reported from Tesla AI Day presentation coverage.",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_003"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 28,
+      "notes": "Reported by Engineering.com, added 2026-10-29 by automated spec fill; Stated as 'movements overall'; includes 11 hand movements/DOF..",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001"
+      ],
+      "original_value": "28 movements overall",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "1.3 miles per hour",
+      "value": 0.581152,
+      "unit": "m/s",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_007"
+      ],
+      "notes": "Reported by thomasnet.com, added 2026-10-29 by automated spec fill; Walking speed at the time of Gen 1 unveiling.."
+    },
+    "hands": {
+      "description": "Reported 11 hand DoF in AI Day coverage and official AI Day 2 presentation.",
+      "degrees_of_freedom": 11,
+      "force_feedback": null,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [],
+      "source_ids": []
+    },
+    "compute": {
+      "description": null,
+      "source_ids": []
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "not_available",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_004"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Company demo video showed simple manipulation scenes, but they were curated and at least some were tethered; treat as weak manipulation evidence.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Tesla described an autonomy stack goal and showed curated demo clips, but no independent autonomous-task benchmark or intervention rate was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003",
+        "tesla-optimus-gen-1_source_004"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Bumble C publicly walked untethered onstage, while the more production-intent Optimus unit was supported and did not walk independently.",
+      "evidence_level": 2,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Tesla presented perception/planning ambitions and vehicle-AI reuse, but no Gen 1 perception benchmark was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003",
+        "tesla-optimus-gen-1_source_004"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Public interaction evidence is limited to stage presence, waving, and presentation claims.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No Gen 1 endurance, uptime, operating-hours, or intervention-rate evidence was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "The humanoid form factor and factory-like demo clips suggest intended human-environment fit, but useful work was not validated.",
+      "evidence_level": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003",
+        "tesla-optimus-gen-1_source_004"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No credible Gen 1 deployment evidence found; later Tesla statements about Optimus facility tasks are later-generation evidence, not Gen 1 evidence.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_004",
+        "tesla-optimus-gen-1_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "No Gen 1 accessibility, consumer availability, pricing, or assistive-use evidence was found.",
+      "evidence_level": 0,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_004"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "tesla-optimus-gen-1_evidence_001",
+      "date": null,
+      "title": "AI Day Gen 1 technical claims",
+      "claim": "AI Day coverage reported early Optimus/Bumble C specs including about 73 kg weight, 2.3 kWh battery, 28 structural actuators, and 11 hand DoF.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_001",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "confidence": 0.75,
+      "notes": "Presentation-reported specs, not current product specs; official event video improves provenance but not operational validation.",
+      "arena_relevance": "Historical baseline only.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "AI Day coverage reported battery, actuator, and hand figures.",
+      "source_location": "Engineering.com AI Day technical summary; Tesla AI Day 2022 official event video",
+      "verification_notes": "Official event source supports provenance; still not independently measured specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-1_evidence_002",
+      "date": null,
+      "title": "Untethered stage walking demo",
+      "claim": "Optimus Gen 1 walked onstage and waved; a production-intent unit was shown on a stand and did not walk independently.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003",
+        "tesla-optimus-gen-1_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Observable but early and limited.",
+      "arena_relevance": "Shows basic prototype mobility.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Ars reported one prototype walked and waved while another was rolled out on a stand.",
+      "source_location": "Ars Technica AI Day demo report; Tesla AI Day 2022 official event video",
+      "verification_notes": "Visible stage demo and official video provenance; no endurance/autonomy benchmark.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-1_evidence_003",
+      "date": "2022-09-30",
+      "title": "Curated manipulation and factory-like demo clips",
+      "claim": "Tesla's AI Day 2022 presentation and contemporaneous reporting showed Bumble C/Optimus clips involving simple object handling, watering a plant, and moving metal parts, but reporting noted the clips were demo footage and at least some work was tethered rather than deployment proof.",
+      "category": [
+        "manipulation_dexterity",
+        "autonomy_task_execution",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "confidence": 0.62,
+      "notes": "Useful as evidence of what Tesla chose to demonstrate, not as proof of robust autonomous work.",
+      "arena_relevance": "Small positive for existence of early manipulation demos; low confidence for autonomous task execution.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Reports describe demo footage of box handling, plant watering, and moving parts, with tethering caveats.",
+      "source_location": "Tesla AI Day 2022 official video; Ars Technica and InsideEVs AI Day demo reports",
+      "verification_notes": "No raw unedited task run, success rate, task duration, or intervention rate found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-1_evidence_004",
+      "date": "2026-05-16",
+      "title": "Current Tesla page frames Optimus as a development goal",
+      "claim": "Tesla's current AI & Robotics page describes creating a general-purpose, bipedal autonomous humanoid robot as the Optimus goal and recruiting need; it does not provide Gen 1 availability, deployment, benchmarks, or production-customer proof.",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_004"
+      ],
+      "confidence": 0.82,
+      "notes": "Primary source for current product-status caution, not capability evidence.",
+      "arena_relevance": "Supports keeping Gen 1 deployment and accessibility scores at zero.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Current Tesla page states the Optimus goal and hiring needs but no Gen 1 product availability.",
+      "source_location": "Tesla AI & Robotics page",
+      "verification_notes": "Checked current official page during this update; no purchasable Gen 1 or customer deployment details found.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof",
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "tesla-optimus-gen-1_evidence_005",
+      "date": "2024-07-23",
+      "title": "Later Optimus facility-task claims are not Gen 1 evidence",
+      "claim": "Tesla's Q2 2024 update said Optimus was performing tasks or handling batteries in one of its facilities, but that statement postdates and does not identify the 2022 Gen 1 prototype; it should be excluded from Gen 1 scoring.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "tesla-optimus-gen-1_source_005"
+      ],
+      "confidence": 0.78,
+      "notes": "This is negative/guardrail evidence for this robot record: do not transfer later Optimus claims to Gen 1.",
+      "arena_relevance": "Prevents current/later Optimus evidence from inflating historical Gen 1 scoring.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Tesla's 2024 update references Optimus facility tasks, not Gen 1.",
+      "source_location": "Tesla Q2 2024 update",
+      "verification_notes": "Later company filing is credible for later Optimus context but not robot-specific proof for Gen 1.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "small_negative"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "tesla-optimus-gen-1_demo_001",
+      "title": "AI Day 2022 stage demo",
+      "date": "2022-09-30",
+      "observed_capabilities": [
+        "slow biped walking",
+        "waving",
+        "curated simple manipulation clips"
+      ],
+      "appears_edited": true,
+      "editing_notes": "Stage walk was public event footage; task clips were presentation footage and should be treated as curated demo material.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "slow biped walking; waving",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        },
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "presentation clips showed simple object handling and factory-like material movement",
+          "verification_notes": "Use only as curated demo evidence; no continuous raw task run or success-rate data found."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent Gen 1 autonomy benchmark, intervention rate, or raw continuous task run was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "No customer or production deployment evidence was found for Gen 1; later Optimus facility-task statements are not robot-specific Gen 1 evidence.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "AI Day specs are presentation claims and media summaries, not independently measured production specs.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Production deployment or useful factory work",
+      "reason": "No credible Gen 1 deployment evidence was found; later Tesla Optimus facility-task claims do not identify the 2022 Gen 1 prototype.",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_004",
+        "tesla-optimus-gen-1_source_005"
+      ]
+    },
+    {
+      "claim": "Current Optimus capability",
+      "reason": "Gen 1 has been superseded by later Optimus prototypes.",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_004",
+        "tesla-optimus-gen-1_source_005"
+      ]
+    },
+    {
+      "claim": "Untethered autonomous manipulation",
+      "reason": "Reviewed sources show curated demo clips and reporting caveats, not raw untethered autonomous manipulation proof.",
+      "source_ids": [
+        "tesla-optimus-gen-1_source_002",
+        "tesla-optimus-gen-1_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 2,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Tesla Optimus Gen 1 is an early prototype with limited stage mobility evidence and presentation-reported specs, not a deployed or current robot.",
+    "strongest_evidence": [
+      "AI Day stage walking demo with official video provenance",
+      "AI Day technical presentation coverage",
+      "Curated simple manipulation clips with tethering/demo caveats"
+    ],
+    "weakest_evidence": [
+      "No deployment",
+      "No independent benchmark",
+      "No raw continuous autonomous task run",
+      "No current availability"
+    ],
+    "known_do_not_credit": [
+      "Factory productivity",
+      "Current Optimus capability",
+      "Autonomous useful work"
+    ],
+    "recommended_confidence": "low"
+  },
+  "source_ids": [
+    "tesla-optimus-gen-1_source_001",
+    "tesla-optimus-gen-1_source_002",
+    "tesla-optimus-gen-1_source_003",
+    "tesla-optimus-gen-1_source_004",
+    "tesla-optimus-gen-1_source_005",
+    "tesla-optimus-gen-1_source_006",
+    "tesla-optimus-gen-1_source_007"
+  ],
+  "sources": [
+    {
+      "id": "tesla-optimus-gen-1_source_001",
+      "title": "Tesla AI Day 2022: Tesla Is Not a Car Company",
+      "publisher": "Engineering.com",
+      "url": "https://www.engineering.com/tesla-ai-day-2022-tesla-is-not-a-car-company/",
+      "date_published": "2022-10-03",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Media report of Tesla AI Day technical claims."
+    },
+    {
+      "id": "tesla-optimus-gen-1_source_002",
+      "title": "Tesla shows off unfinished humanoid robot prototypes at AI Day 2022",
+      "publisher": "Ars Technica",
+      "url": "https://arstechnica.com/information-technology/2022/09/tesla-shows-off-underwhelming-human-robot-prototype-at-ai-day-2022/",
+      "date_published": "2022-09-30",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Observed demo reporting; useful for what was shown and what was not."
+    },
+    {
+      "id": "tesla-optimus-gen-1_source_003",
+      "title": "Tesla AI Day 2022",
+      "publisher": "Tesla",
+      "url": "https://www.youtube.com/watch?v=ODSJsviD_SU",
+      "date_published": "2022-09-30",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_video",
+      "reliability": "high",
+      "reliability_notes": "Official Tesla event video; primary provenance for what Tesla presented, but still a company demo rather than independent validation."
+    },
+    {
+      "id": "tesla-optimus-gen-1_source_004",
+      "title": "AI & Robotics",
+      "publisher": "Tesla",
+      "url": "https://www.tesla.com/AI",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "high",
+      "reliability_notes": "Current official Tesla page frames Optimus as a general-purpose humanoid development goal and hiring area; does not provide Gen 1 deployment or purchase evidence."
+    },
+    {
+      "id": "tesla-optimus-gen-1_source_005",
+      "title": "Q2 2024 Update",
+      "publisher": "Tesla",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828024032603/tsla-20240723-gen.pdf",
+      "date_published": "2024-07-23",
+      "date_accessed": "2026-05-16",
+      "source_type": "regulatory_or_filing",
+      "reliability": "high",
+      "reliability_notes": "Official investor update; useful only as later Optimus context and exclusion evidence, not as Gen 1 capability proof."
+    },
+    {
+      "id": "tesla-optimus-gen-1_source_006",
+      "title": "Tesla Humanoid Robot Prototype Walks Onto The Stage At AI Day 2022",
+      "publisher": "InsideEVs",
+      "url": "https://insideevs.com/news/613692/tesla-humanoid-robot-ai-day-2022/",
+      "date_published": "2022-10-01",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Corroborating media report for the Bumble C walk, supported Optimus unit, and AI Day spec/demo claims."
+    },
+    {
+      "id": "tesla-optimus-gen-1_source_007",
+      "title": "What We Know About Tesla’s Optimus Robot",
+      "publisher": "thomasnet.com",
+      "url": "https://www.thomasnet.com/insights/tesla-optimus-robot/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Tesla Optimus Gen 1 is best treated as a historical prototype/demo platform.",
+    "strongest_positive_evidence": [
+      "Stage walking demo with official video provenance",
+      "Reported early specs",
+      "Curated simple manipulation clips with tethering/demo caveats"
+    ],
+    "weakest_or_missing_evidence": [
+      "No deployment",
+      "No independent benchmark",
+      "No raw continuous autonomous task run",
+      "No verified useful tasks"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Production deployment or useful factory work",
+      "Current Optimus capability",
+      "Later Optimus facility-task claims unless explicitly tied to Gen 1"
+    ]
+  }
+}

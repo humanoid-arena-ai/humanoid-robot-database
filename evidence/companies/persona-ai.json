@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "persona-ai",
+    "name": "Persona AI",
+    "country": "United States",
+    "website": "https://persona.ai",
+    "founded": 2024,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "persona-ai-humanoid"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "$27 million pre-seed round announced in May 2025."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "persona-ai_source_001",
+      "title": "Persona AI",
+      "publisher": "persona.ai",
+      "url": "https://persona.ai/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "persona-ai_source_002",
+      "title": "Persona AI Raises $27M Oversubscribed Pre-Seed",
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/persona-ai-raises-27m-oversubscribed-pre-seed-to-deliver-the-future-of-humanoid-robotics-302455330.html",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "persona-ai_source_003",
+      "title": "How Persona AI Makes Humanoids Pay Off In Welding",
+      "publisher": "spectrum.ieee.org",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

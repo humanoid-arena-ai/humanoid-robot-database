@@ -1,0 +1,14 @@
+{
+  "id": "xiaomi",
+  "name": "Xiaomi",
+  "country": "China",
+  "headquarters": "Beijing, China",
+  "founded": null,
+  "website": "https://www.mi.com/global/",
+  "summary": "Xiaomi is a Chinese consumer electronics and electric vehicle maker. It showed the CyberOne humanoid in 2022 and a second generation, trained at its EV factory, in 2026.",
+  "funding": null,
+  "sources": [
+    { "id": "s1", "title": "Xiaomi Builds a Humanoid Robot for Some Reason", "url": "https://spectrum.ieee.org/humanoid-robot-xiaomi-cyberone", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Xiaomi Robotics company profile and news", "url": "https://www.humanoidsdaily.com/companies/xiaomi-robotics", "accessed": "2026-10-14" }
+  ]
+}

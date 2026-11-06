@@ -1,0 +1,189 @@
+{
+  "robotId": "unitree-h2",
+  "checkedAt": "2026-10-14",
+  "purchasePath": "buy_now",
+  "purchasePathNote": "The Unitree shop lists the H2 at $29,900 but the item is not currently available to order there. Regional dealers sell it at higher prices: US Robot Store shows it in stock at $40,500, RobotShop takes on-demand orders and Generation Robots lists it from EUR 45,000 excl. VAT.",
+  "configurations": [
+    {
+      "name": "H2",
+      "price": 29900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Base version. Not available to add to cart on the Unitree shop on the check date. Customs duties, tax and shipping extra. Only the EDU version supports secondary development.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-h2",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "H2 EDU",
+      "price": null,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Supports secondary development. Unitree says 'Contact Sales' for price.",
+      "sourceLabel": "Unitree H2 product page",
+      "sourceUrl": "https://www.unitree.com/H2/",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "H2 Plus",
+      "price": 100000,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "Global",
+      "notes": "Listed on the Unitree shop as Unitree H2 Plus; not available to order on the check date.",
+      "sourceLabel": "Unitree official shop",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-h2-plus",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "H2 (US dealer)",
+      "price": 40500,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "US Robot Store price, shown as available to add to cart.",
+      "sourceLabel": "US Robot Store",
+      "sourceUrl": "https://www.usrobotstore.com/products/unitree-h2-humanoid-robot",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "H2 EDU (US dealer)",
+      "price": 68900,
+      "currency": "USD",
+      "priceType": "list",
+      "region": "US",
+      "notes": "Same price at US Robot Store (available) and RoboStore (sold out).",
+      "sourceLabel": "US Robot Store",
+      "sourceUrl": "https://www.usrobotstore.com/products/unitree-h2-humanoid-robot",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "H2 (EU dealer)",
+      "price": 45000,
+      "currency": "EUR",
+      "priceType": "from",
+      "region": "EU",
+      "notes": "'From EUR 54,000.00 VAT incl. / EUR 45,000.00 VAT excl.'",
+      "sourceLabel": "Generation Robots",
+      "sourceUrl": "https://www.generationrobots.com/en/404449-unitree-robotics-h2-humanoid-robot.html",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "H2 Plus (EU dealer)",
+      "price": 55000,
+      "currency": "EUR",
+      "priceType": "from",
+      "region": "EU",
+      "notes": "'From EUR 66,000.00 VAT incl. / EUR 55,000.00 VAT excl.'",
+      "sourceLabel": "Generation Robots",
+      "sourceUrl": "https://www.generationrobots.com/en/404470-unitree-h2-plus-humanoid-robot.html",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sellers": [
+    {
+      "name": "Unitree official shop",
+      "type": "official",
+      "url": "https://shop.unitree.com/products/unitree-h2",
+      "region": "Global",
+      "offers": "Unitree H2 - $29,900.00 USD (not available to order on check date); Unitree H2 Plus - $100,000.00 USD (not available); H2 EDU - contact sales_global@unitree.cc.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "US Robot Store",
+      "type": "authorized_reseller",
+      "url": "https://www.usrobotstore.com/products/unitree-h2-humanoid-robot",
+      "region": "US",
+      "offers": "States 'Official U.S. distributor of Unitree'. H2 - $40,500.00; H2 Edu - $68,900.00.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RoboStore",
+      "type": "authorized_reseller",
+      "url": "https://robostore.com/collections/humanoid-robots",
+      "region": "US",
+      "offers": "Unitree H2 Destiny Awakening Humanoid - $40,900.00 (Sold Out); H2 EDU - $68,900.00 (Sold Out); H2 PLUS - $150,000.00 (Sold Out).",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotShop",
+      "type": "reseller",
+      "url": "https://www.robotshop.com/products/unitree-h2-humanoid-robot",
+      "region": "US",
+      "offers": "Unitree H2 Humanoid Robot - $40,500; H2 EDU - $68,900. On-demand item, phased deliveries from Q3 2026.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "RobotLAB",
+      "type": "reseller",
+      "url": "https://www.robotlab.com/store/unitree-h2-humanoid-robot/",
+      "region": "US",
+      "offers": "'$39,900 - $240,000' across 31 configurations; base H2 from $39,900, H2 Plus Ultimate-N up to $240,000. Lease and subscription options mentioned.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "Generation Robots",
+      "type": "reseller",
+      "url": "https://www.generationrobots.com/en/404449-unitree-robotics-h2-humanoid-robot.html",
+      "region": "EU",
+      "offers": "Unitree H2 - From EUR 54,000.00 VAT incl. / EUR 45,000.00 VAT excl.; H2 Plus - From EUR 66,000.00 VAT incl. / EUR 55,000.00 VAT excl.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "rental": [
+    {
+      "name": "Weston Robot event rental",
+      "url": "https://www.westonrobot.com/services/event/",
+      "region": "Singapore / global",
+      "notes": "Unitree H2 - $18,000 / day, USD, transport extra outside Singapore. Lead time 4 weeks."
+    },
+    {
+      "name": "RobotLAB",
+      "url": "https://www.robotlab.com/store/unitree-h2-humanoid-robot/",
+      "region": "US",
+      "notes": "Says lease and subscription options are available; no public lease price."
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2025-10-25",
+      "price": 29900,
+      "currency": "USD",
+      "event": "H2 announced; base model reported as starting at $29,900",
+      "sourceUrl": "https://mikekalil.com/blog/unitree-h2-full-sized-humanoid-robot/"
+    },
+    {
+      "date": "2026-10-14",
+      "price": 29900,
+      "currency": "USD",
+      "event": "Official shop still lists $29,900 but the item cannot be ordered; US dealers list $39,900-$40,900",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-h2"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can you buy the Unitree H2?",
+      "a": "Yes, through dealers. The Unitree shop lists it but it was not orderable on 2026-10-14, while US Robot Store showed it in stock at $40,500.",
+      "sourceUrl": "https://www.usrobotstore.com/products/unitree-h2-humanoid-robot"
+    },
+    {
+      "q": "How much does the Unitree H2 cost?",
+      "a": "Unitree lists the base H2 at $29,900 before tax, shipping and duties. US dealers charge $39,900-$40,900 for the base robot and $68,900 for the H2 EDU.",
+      "sourceUrl": "https://shop.unitree.com/collections/humanoid-robot"
+    },
+    {
+      "q": "What is the difference between H2 and H2 EDU?",
+      "a": "Only the EDU version supports secondary development. Unitree asks buyers to contact sales for the EDU price.",
+      "sourceUrl": "https://shop.unitree.com/products/unitree-h2"
+    },
+    {
+      "q": "Can you rent a Unitree H2?",
+      "a": "Weston Robot rents the H2 for events at $18,000 per day plus transport. RobotLAB says it offers lease and subscription options.",
+      "sourceUrl": "https://www.westonrobot.com/services/event/"
+    }
+  ],
+  "notes": "Several third-party sites say the base H2 ships with placeholder hands; the official pages do not say what hands are included, so this is not confirmed here. The October 2025 launch price comes from a blog, not a Unitree release. Dealer prices vary widely by compute and hand options (RobotLAB lists up to $240,000).",
+  "researchNotes": "from search listing; page blocks automated access RobotShop prices come from search listings."
+}

@@ -1,0 +1,522 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "unitree-h2",
+    "name": "Unitree H2",
+    "company_id": "unitree-robotics",
+    "company_name": "Unitree Robotics",
+    "country": "China",
+    "generation": "H2 Destiny Awakening",
+    "first_announced_date": "2025-10-21",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Official product page lists base price; deployment evidence is demo/company claim only.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "research",
+      "education",
+      "service demos"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Current Unitree H-series humanoid product as of reviewed page."
+  },
+  "specs": {
+    "height": {
+      "original_value": "1820 x 456 x 218 mm standing dimensions",
+      "value": 182,
+      "unit": "cm",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "~70 kg",
+      "value": 70,
+      "unit": "kg",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "peak/rated arm payload ~15/~7 kg",
+      "value": 7,
+      "unit": "kg",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "~3 hr",
+      "value": 3,
+      "unit": "hours",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": "15Ah (0.972KWh), maximum voltage 75.6 V",
+      "value": 0.972,
+      "unit": "kWh",
+      "notes": "Official product page lists premium lithium battery with low internal resistance, 15Ah capacity, 0.972KWh energy, and 75.6 V maximum voltage.",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 31,
+      "notes": "Official page lists 31 DoF.",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "hands": {
+      "description": "Base H2 table lists no dexterous hand; H2 EDU lists dexterous hand with multiple model options. Unitree's Gala PR says robots used newly self-developed dexterous hands for prop handling, but does not prove this for the base purchasable H2 configuration.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "humanoid binocular camera with wide field of view",
+        "array microphone",
+        "high-power speaker"
+      ],
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Official page lists PC1 Intel Core i5 for platform capabilities, PC2 Intel Core i7 for custom development, and H2 EDU high-power compute module options up to Jetson AGX Thor at 2070 TOPS.",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Official page lists low-inertia high-speed internal-rotor PMSM joint motors, industrial-grade crossed roller bearings, 120 N.m maximum arm-joint torque, and 360 N.m maximum leg-joint torque.",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 29900,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.unitree.com/H2/",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002",
+        "unitree-h2_source_003"
+      ],
+      "caveats": [
+        "Base H2 product table does not list dexterous hands; dexterous hand options are listed for H2 EDU.",
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Strong staged mobility demos, no useful task deployment evidence.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002",
+        "unitree-h2_source_003",
+        "unitree-h2_source_004"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001"
+      ],
+      "caveats": [
+        "Official source lists binocular camera and audio hardware, but not scene-understanding benchmark results.",
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001"
+      ],
+      "caveats": [
+        "Official source lists microphone/speaker voice-interaction hardware, but not dialogue quality, safety, or user-study results.",
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 0,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-h2_source_001",
+        "unitree-h2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "unitree-h2_evidence_001",
+      "date": null,
+      "title": "Official H2 specs and price",
+      "claim": "Unitree lists H2 at about 70 kg, 31 DoF, about 3 hours battery, and 29900 USD base price.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-h2_source_001"
+      ],
+      "confidence": 0.82,
+      "notes": "Official product specs.",
+      "arena_relevance": "Core accessibility/spec evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official page lists price, dimensions, weight, DoF, payload, battery capacity/runtime, compute, sensors, motors, and torque.",
+      "source_location": "Unitree H2 product table",
+      "verification_notes": "Company source; not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h2_evidence_002",
+      "date": null,
+      "title": "Staged performance demos",
+      "claim": "Public H2 demos show poses, pirouettes, karate-style moves, and staged martial-arts performance claims.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "unitree-h2_source_002",
+        "unitree-h2_source_003",
+        "unitree-h2_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Staged/company demos.",
+      "arena_relevance": "Mobility demo evidence only.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Live Science, Unitree PR, and CGTN describe H2/G1 martial-arts performance appearances and H2's main/sub-venue role.",
+      "source_location": "Live Science report, Unitree PR, and CGTN video report",
+      "verification_notes": "Treat autonomy and choreographic generalization cautiously; the clearest autonomy claim comes from Unitree's own PR.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-h2_evidence_003",
+      "date": "2026-02-17",
+      "title": "2026 Spring Festival Gala H2 appearance",
+      "claim": "Unitree and CGTN report that H2 appeared at the 2026 China Media Group Spring Festival Gala main venue and Yiwu sub-venue, including a sword-grandmaster role and a Great Sage/Somersault Cloud staging with B2W robot dogs.",
+      "category": [
+        "mobility_whole_body_control",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "unitree-h2_source_003",
+        "unitree-h2_source_004"
+      ],
+      "confidence": 0.64,
+      "notes": "Event appearance corroborated by Unitree PR and CGTN; still a staged broadcast performance rather than field deployment.",
+      "arena_relevance": "Supports staged whole-body motion and human-facing performance context only.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Unitree describes H2's main-venue and Yiwu appearances; CGTN separately reports H2's debut at both venues and Somersault Cloud staging.",
+      "source_location": "Unitree PR sections II-III; CGTN video article",
+      "verification_notes": "No raw continuous footage, teleoperation disclosure, or task-success metrics found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "unitree-h2_demo_001",
+      "title": "H2 performance demos",
+      "date": "2025-10-21",
+      "observed_capabilities": [
+        "posing",
+        "pirouettes",
+        "karate-style movement"
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "unitree-h2_source_002",
+        "unitree-h2_source_003",
+        "unitree-h2_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "posing; pirouettes; karate-style movement; sword/Great Sage staged appearance reported at 2026 Spring Festival Gala",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence. CGTN reports H2 appeared at the main venue and Yiwu sub-venue."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Configuration",
+      "description": "Official page distinguishes base H2 from H2 EDU; dexterous hands and high-power compute options are not proven for the base $29,900 H2 configuration.",
+      "impact_on_arena_scoring": "Avoid crediting base H2 with EDU-only options unless a configuration-specific source is added."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "General autonomous service capability",
+      "reason": "Evidence is primarily specs and staged performance demos.",
+      "source_ids": [
+        "unitree-h2_source_002"
+      ]
+    },
+    {
+      "claim": "Independent payload/runtime verification",
+      "reason": "No independent measurements found.",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    },
+    {
+      "claim": "Base H2 dexterous manipulation",
+      "reason": "The official table lists dexterous hand options for H2 EDU, while the base H2 row shows no dexterous hand.",
+      "source_ids": [
+        "unitree-h2_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 2,
+    "independent_sources_count": 1,
+    "customer_sources_count": 0,
+    "video_sources_count": 3,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Unitree H2 is a current purchasable full-size humanoid with official specs and staged athletic demos, but no customer deployment or independent benchmark proof.",
+    "strongest_evidence": [
+      "Official specs/price, including battery, compute, sensors, motors, and torque",
+      "Public performance demos corroborated by Unitree PR, Live Science, and CGTN"
+    ],
+    "weakest_evidence": [
+      "No deployment metrics",
+      "No independent benchmark",
+      "No useful task evidence"
+    ],
+    "known_do_not_credit": [
+      "General autonomy",
+      "Commercial deployment"
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "unitree-h2_source_001",
+    "unitree-h2_source_002",
+    "unitree-h2_source_003",
+    "unitree-h2_source_004"
+  ],
+  "sources": [
+    {
+      "id": "unitree-h2_source_001",
+      "title": "Unitree H2 Destiny Awakening",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/H2/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official specs and price."
+    },
+    {
+      "id": "unitree-h2_source_002",
+      "title": "Unitree H2 robot poses, pirouettes and pulls off deft karate moves",
+      "publisher": "Live Science",
+      "url": "https://www.livescience.com/technology/unitrees-h2-robot-poses-pirouettes-and-pulls-off-deft-karate-moves-with-eerily-lifelike-movement",
+      "date_published": "2025-10-21",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Demo context and caution."
+    },
+    {
+      "id": "unitree-h2_source_003",
+      "title": "Kung Fu Meets Spring",
+      "publisher": "Unitree via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/kung-fu-meets-spring--unitree-spring-festival-gala-robots-present-cyber-real-kung-fu-in-the-year-of-the-horse-302689281.html",
+      "date_published": "2026-02-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company claim about autonomous staged performance."
+    },
+    {
+      "id": "unitree-h2_source_004",
+      "title": "Cyber kung fu show at Chinese New Year Gala",
+      "publisher": "CGTN",
+      "url": "https://news.cgtn.com/news/2026-02-17/Cyber-kung-fu-show-at-Chinese-New-Year-Gala-1KPyAHKEk2Q/index.html",
+      "date_published": "2026-02-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Video/news corroboration of the staged Gala performance and H2 appearance; not an independent robotics benchmark."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Unitree H2 is a current Unitree humanoid product with strong official specs and weak deployment proof.",
+    "strongest_positive_evidence": [
+      "Official specs and price, now including battery, compute, sensors, motors, and torque",
+      "Staged Spring Festival Gala H2 appearance corroborated by Unitree PR and CGTN"
+    ],
+    "weakest_or_missing_evidence": [
+      "No customer deployment",
+      "No independent benchmark or raw continuous demo review",
+      "Base H2 dexterous manipulation remains unproven; dexterous-hand options are listed for H2 EDU"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "General autonomous service capability",
+      "Independent payload/runtime verification",
+      "Base H2 dexterous-hand capability"
+    ]
+  }
+}

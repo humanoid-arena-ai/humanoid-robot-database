@@ -1,0 +1,39 @@
+{
+  "id": "robotera-l7",
+  "name": "RobotEra L7",
+  "aliases": ["L7", "Robot Era L7"],
+  "companyId": "robotera",
+  "companyName": "RobotEra",
+  "country": "China",
+  "announced": null,
+  "status": "purchasable",
+  "category": "general",
+  "summary": "L7 is RobotEra's 171 cm full-size bipedal humanoid with 55 DoF and 12-DoF dexterous hands, run by the company's ERA-42 vision-language-action model. It is pitched for industrial sorting and handling as well as dynamic demos such as spin jumps.",
+  "specs": {
+    "height_cm": { "value": 171, "original": "171 cm", "sourceId": "s1" },
+    "weight_kg": null,
+    "payload_kg": { "value": 20, "original": "20 kg (double-arm load)", "sourceId": "s1" },
+    "runtime_h": null,
+    "dof": { "value": 55, "original": "55 (full-body)", "sourceId": "s1" },
+    "hand_dof": { "value": 12, "original": "12 (dexterous hand)", "sourceId": "s1" },
+    "speed_mps": { "value": 4, "original": "Running speed: 4 m/s", "sourceId": "s1" }
+  },
+  "hands": "12-DoF five-finger dexterous hands.",
+  "sensors": "Binocular vision and 3D LiDAR with 360-degree field of view.",
+  "compute": null,
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Runs RobotEra's ERA-42 end-to-end embodied AI model.",
+    "RobotEra reported over 200 robot units delivered across its products by June 2025 (KrASIA)."
+  ],
+  "caveats": [
+    "No official public price; reseller estimates vary.",
+    "Weight and runtime are not published in the sources checked."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Robot Era L7", "publisher": "Humanoid Robotics Technology", "url": "https://humanoidroboticstechnology.com/company/robot-era/l7/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "More than a hardware play: Robot Era's founder sets the record straight", "publisher": "KrASIA", "url": "https://kr-asia.com/more-than-a-hardware-play-robot-eras-founder-sets-the-record-straight-on-the-companys-true-ambitions", "accessed": "2026-10-14" }
+  ]
+}

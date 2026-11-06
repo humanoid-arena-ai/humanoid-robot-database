@@ -1,0 +1,772 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "fourier-gr-2",
+    "name": "Fourier GR-2",
+    "company_id": "fourier",
+    "company_name": "Fourier",
+    "country": "China",
+    "generation": "second-generation Fourier GRx humanoid",
+    "first_announced_date": "2024-09-30",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Fourier launched GR-2 on 2024-09-30. Third-party resellers list it as 'In stock' with a price of $125,000, indicating purchasable status through those channels. Official Fourier purchase requires contacting sales; no official list price was found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "research and education",
+      "embodied AI development",
+      "teleoperation data collection",
+      "reception and light service tasks",
+      "manufacturing pilot projects"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "175 cm (68.9 in.)",
+      "value": 175,
+      "unit": "cm",
+      "notes": "Reported by The Robot Report, Interesting Engineering, New Atlas, and reseller brochures.",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "63 kg (139 lb.)",
+      "value": 63,
+      "unit": "kg",
+      "notes": "Multiple sources confirm 63 kg.",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "3 kg (6.6 lb.) single-arm",
+      "value": 3,
+      "unit": "kg",
+      "notes": "Single-arm load capacity; some sources say single-hand.",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "runtime": {
+      "original_value": "Up to 2 hours",
+      "value": 2,
+      "unit": "hours",
+      "notes": "Official launch mentions up to 2 hours; reseller brochure says average about 2 hours.",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "battery": {
+      "original_value": "~950 Wh detachable lithium-ion",
+      "value": 950,
+      "unit": "Wh",
+      "notes": "Battery capacity from third-party reseller brochure; official launch only says detachable battery with doubled capacity.",
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "5 km/h maximum",
+      "value": 5,
+      "unit": "km/h",
+      "notes": "Walking speed appears only in reseller brochures, not in official launch coverage from The Robot Report or New Atlas.",
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 53,
+      "notes": "Reported by The Robot Report and others; Fourier's official launch did not provide a total DoF in the reviewed media.",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "hands": {
+      "description": "12-DoF dexterous hands with six array-type tactile sensors per hand; electrically actuated; tactile force sensing enables real-time grip adjustment.",
+      "degrees_of_freedom": 12,
+      "force_feedback": "tactile force sensing",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "six array-type tactile sensors per hand",
+        "six RGB cameras (per Inspenet: 360-degree view, BEV)",
+        "stereo or binocular camera system (per reseller brochure)",
+        "6-axis IMU",
+        "Ethernet",
+        "Wi-Fi 6"
+      ],
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_004",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "compute": {
+      "description": "Ubuntu 20.04, 14-core Intel Core i7 base computing platform, optional higher-performance compute module. Details from third-party reseller documentation.",
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "actuators": {
+      "description": "FSA 2.0 actuators, seven distinct types, peak torque exceeding 380 N·m; reseller documentation lists maximum joint peak torque 436 N·m; dual encoders.",
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_006"
+      ]
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": 125000,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://www.americansatellite.us/sp/Fourier-GR2.htm",
+      "notes": "Third-party resellers list GR-2 at $125,000 with free shipping and 'In stock'. Official Fourier purchase requires contacting sales; no official list price found.",
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "12-DoF hands with six array-type tactile sensors per hand; claims of doubling/quadrupling dexterity over previous models; tactile sensing for force, shape, material; supports teleoperation modes for data collection.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_005",
+        "fourier-gr-2_source_006"
+      ],
+      "caveats": [
+        "No independent dexterity benchmark or published success rates.",
+        "No video transcript available to observe manipulation."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No evidence of autonomous task execution in reviewed sources. Fourier emphasizes teleoperation modes (VR remote control, lead-through programming, direct command) for data collection and teaching, not autonomy.",
+      "evidence_level": 0,
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002"
+      ],
+      "caveats": [
+        "No autonomous demo or autonomous task claim found.",
+        "The robot's SDK supports development but not autonomous behavior by default."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "53 DoF, FSA 2.0 actuators with peak torque >380 Nm, maximum walking speed 5 km/h (per third-party brochure). No video demonstration analyzed.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ],
+      "caveats": [
+        "Walking speed from third-party reseller, not confirmed in official launch coverage.",
+        "No fall/recovery metrics or whole-body control demo observed."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Six RGB cameras capture 360-degree view with BEV and transformer/occupancy networks (per Inspenet). Stereo camera, IMU from reseller. No independent perception test.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-2_source_004",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ],
+      "caveats": [
+        "Perception claims are from media reports, not official Fourier release.",
+        "No object recognition benchmark or SLAM performance data."
+      ]
+    },
+    "human_interaction": {
+      "summary": "No evidence of natural human-robot interaction, conversation, or social behavior. VR teleoperation enables human control but not autonomous interaction.",
+      "evidence_level": 0,
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_002"
+      ],
+      "caveats": [
+        "Designed for research; no interaction demo or claims."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Detachable lithium-ion battery ~950 Wh, average runtime 2 hours, charging 2 hours (per reseller); official claims 2-hour runtime and swappable battery.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ],
+      "caveats": [
+        "Runtime is company/third-party claim, not independently tested.",
+        "No continuous operation or reliability data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-scale 175 cm, 63 kg, integrated cabling, enclosed body panels; intended for research and service environments.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001",
+        "fourier-gr-2_source_005"
+      ],
+      "caveats": [
+        "No safety certification or impact testing found.",
+        "3 kg single-arm payload limits physical tasks."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No named customer deployments found. Third-party resellers list the robot for sale ($125,000), indicating availability but not proven commercial use.",
+      "evidence_level": 0,
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ],
+      "caveats": [
+        "Reseller listings are not proof of actual customer deployments.",
+        "No case studies or pilot metrics published."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Third-party resellers list GR-2 at $125,000 with free shipping; official purchase requires contact sales; no official list price from Fourier.",
+      "evidence_level": 1,
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ],
+      "caveats": [
+        "Price is from reseller, may not reflect official price.",
+        "No financing, leasing, or availability outside research markets."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "fourier-gr-2_evidence_001",
+      "date": "2024-09-30",
+      "title": "Fourier launches GR-2: height and weight",
+      "claim": "GR-2 height is 175 cm and weight is 63 kg.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report of official launch.",
+      "arena_relevance": "Defines human-scale size.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The GR-2 stands 175 cm (68.9 in.) tall and weighs 63 kg (139 lb.), whereas the GR-1 is 165 cm (65 in.) tall and weighs 55 kg (121 lb.).",
+      "source_location": "The Robot Report article, hardware design section",
+      "verification_notes": "Reputable media quoting Fourier; values not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_002",
+      "date": "2024-09-30",
+      "title": "GR-2 degrees of freedom and payload",
+      "claim": "GR-2 has 53 degrees of freedom and single-arm load capacity of 3 kg.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report of official launch.",
+      "arena_relevance": "Indicates whole-body flexibility and arm strength.",
+      "claim_type": "spec",
+      "supporting_excerpt": "GR-2 offers 53 degrees of freedom and a single-arm load capacity of 3 kg (6.6 lb.).",
+      "source_location": "The Robot Report article, hardware design section",
+      "verification_notes": "Reputable media quoting Fourier; values not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_003",
+      "date": "2024-09-30",
+      "title": "GR-2 12-DoF hands",
+      "claim": "GR-2 hands have 12 degrees of freedom.",
+      "category": [
+        "specs",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report of official launch.",
+      "arena_relevance": "Fine dexterity evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot includes hands with 12 degrees of freedom, doubling the dexterity of previous models.",
+      "source_location": "The Robot Report article, dexterous hands section",
+      "verification_notes": "Reputable media quoting Fourier.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_004",
+      "date": "2024-09-30",
+      "title": "GR-2 tactile sensors",
+      "claim": "GR-2 fingers have six array-type tactile sensors that sense force and identify object shapes and materials.",
+      "category": [
+        "specs",
+        "manipulation_dexterity",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report of official launch.",
+      "arena_relevance": "Supports fine manipulation and object recognition.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The fingers on GR-2 also have six array-type tactile sensors that sense force and can identify object shapes and materials.",
+      "source_location": "The Robot Report article, dexterous hands section",
+      "verification_notes": "Reputable media quoting Fourier.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_005",
+      "date": "2024-09-30",
+      "title": "GR-2 FSA 2.0 actuators torque",
+      "claim": "GR-2 FSA 2.0 actuators have peak torque exceeding 380 N·m.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report of official launch.",
+      "arena_relevance": "Indicates dynamic movement capability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "With peak torques exceeding 380 N.m (280.3 ft.-lb.), the FSA 2.0 actuators boost GR-2’s agility and dynamic capabilities.",
+      "source_location": "The Robot Report article, FSA 2.0 section",
+      "verification_notes": "Reputable media quoting Fourier.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_006",
+      "date": "2024-09-30",
+      "title": "GR-2 teaching modes",
+      "claim": "GR-2 supports VR remote control, lead-through programming, and direct command for upper-limb teaching.",
+      "category": [
+        "manipulation_dexterity",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Teleoperation/teaching methods, not autonomy.",
+      "arena_relevance": "Shows data collection and human control capabilities.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Supporting multiple upper-limb teaching modes—virtual reality remote control, lead-through programming, and direct command—GR-2 can record a comprehensive set of operational data, from motion paths to tactile responses.",
+      "source_location": "The Robot Report article, teaching modes section",
+      "verification_notes": "Reputable media quoting Fourier.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_007",
+      "date": "2024-09-30",
+      "title": "GR-2 developer SDK support",
+      "claim": "GR-2 SDK supports ROS, NVIDIA Isaac Lab, and MuJoCo.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Developer-friendly platform.",
+      "arena_relevance": "Important for research and development accessibility.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Supporting frameworks such as NVIDIA Isaac Lab and Mujoco, the new platform empowers developers to focus on innovation, streamlining their workflows, claimed Fourier.",
+      "source_location": "The Robot Report article, software development section",
+      "verification_notes": "Reputable media quoting Fourier.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_008",
+      "date": null,
+      "title": "Conflict: hand dexterity doubling vs quadrupling",
+      "claim": "Interesting Engineering states GR-2's 12-DoF hands quadruple the dexterity of earlier models, while The Robot Report states they double it.",
+      "category": [
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicting media summaries; do not rely on exact multiplier.",
+      "arena_relevance": "Minor inconsistency.",
+      "claim_type": "correction",
+      "supporting_excerpt": "GR-2 attributes 12-DoF dexterous hands that can mimic human flexibility for precise task handling while quadrupling the dexterity of earlier models.",
+      "source_location": "Interesting Engineering article, precision task handling section",
+      "verification_notes": "Second-hand report; The Robot Report says doubling.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_011",
+      "date": null,
+      "title": "GR-2 compute platform",
+      "claim": "GR-2 runs Ubuntu 20.04 and includes a 14-core Intel Core i7 base computing platform with optional higher-performance module.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "fourier-gr-2_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Third-party reseller listing.",
+      "arena_relevance": "Compute spec for developer audience.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Fourier states that the GR-2 runs Ubuntu 20.04 and includes a 14-core Intel Core i7 base computing platform, with an optional higher-performance compute module.",
+      "source_location": "American Satellite product page, compute section",
+      "verification_notes": "Directory listing; may be based on Fourier brochure but not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "fourier-gr-2_evidence_013",
+      "date": null,
+      "title": "Missing evidence summary",
+      "claim": "No autonomous task execution, official price from Fourier, independent verification, or customer deployment evidence found.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, deployment, and accessibility.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "autonomy_task_execution",
+          "deployment_commercial_proof",
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Official pricing",
+      "description": "No official list price from Fourier; third-party resellers list $125,000.",
+      "impact_on_arena_scoring": "Accessibility/value evidence is from directory source only."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "No autonomous behavior demonstrated; teleoperation modes are the primary control methods.",
+      "impact_on_arena_scoring": "Autonomy dimension remains at zero evidence."
+    },
+    {
+      "topic": "Walking speed",
+      "description": "5 km/h from reseller brochure, not in official launch coverage.",
+      "impact_on_arena_scoring": "Mobility spec confidence low."
+    },
+    {
+      "topic": "Perception details",
+      "description": "Six RGB cameras claim from Inspenet media, not in official launch, needs verification.",
+      "impact_on_arena_scoring": "Perception dimension speculative."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "YouTube videos exist but no transcripts available for analysis.",
+      "impact_on_arena_scoring": "Cannot credit demo video evidence."
+    }
+  ],
+  "source_ids": [
+    "fourier-gr-2_source_001",
+    "fourier-gr-2_source_002",
+    "fourier-gr-2_source_003",
+    "fourier-gr-2_source_004",
+    "fourier-gr-2_source_005",
+    "fourier-gr-2_source_006"
+  ],
+  "sources": [
+    {
+      "id": "fourier-gr-2_source_001",
+      "title": "Fourier launches GR-2 humanoid, software platform",
+      "publisher": "The Robot Report",
+      "url": "https://www.therobotreport.com/fourier-launches-gr-2-humanoid-software-platform/",
+      "date_published": "2024-09-30",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reputable robotics trade publication; reports official launch claims but not independent verification."
+    },
+    {
+      "id": "fourier-gr-2_source_002",
+      "title": "Fourier's new GR-2 robot displays human-like motion and flexibility",
+      "publisher": "Interesting Engineering",
+      "url": "https://interestingengineering.com/innovation/fouriers-gr-2-upgraded-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Popular tech media; may have inaccuracies (quadrupling vs doubling)."
+    },
+    {
+      "id": "fourier-gr-2_source_003",
+      "title": "Fourier GR2 Humanoid Robot",
+      "publisher": "American Satellite",
+      "url": "https://www.americansatellite.us/sp/Fourier-GR2.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party reseller listing; specifications may be from Fourier brochure but unverified."
+    },
+    {
+      "id": "fourier-gr-2_source_004",
+      "title": "Have you seen Fourier's new robot? It's called GR-2",
+      "publisher": "Inspenet",
+      "url": "https://inspenet.com/en/news/you-seen-the-new-robot-of-fourier-gr-2/",
+      "date_published": "2024-09-04",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Energy/industry news; reports Fourier claims but no primary verification."
+    },
+    {
+      "id": "fourier-gr-2_source_005",
+      "title": "Bigger, stronger, smarter GR-2 humanoid launches with major hand upgrades",
+      "publisher": "New Atlas",
+      "url": "https://newatlas.com/ai-humanoids/fourier-gr-2-humanoid-robot/",
+      "date_published": "2024-10-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Tech publication; provides independent commentary but not verification."
+    },
+    {
+      "id": "fourier-gr-2_source_006",
+      "title": "Fourier GR2 Humanoid Robot",
+      "publisher": "Asia Satellite Co",
+      "url": "https://www.asiasatellite.co/Fourier-GR2.htm",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Third-party reseller listing; same as American Satellite; unverified."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "GR-2 is a developer-focused humanoid with strong hardware specs (53 DoF, 12-DoF tactile hands, 380 Nm actuators) and open software support, but evidence is limited to manufacturer/third-party claims and media coverage; no autonomous demos or customer deployments were found.",
+    "strongest_positive_evidence": [
+      "Detailed launch specs from The Robot Report",
+      "Explicit developer SDK/framework support",
+      "Tactile hands with 12 DoF",
+      "Availability through resellers at $125k"
+    ],
+    "weakest_or_missing_evidence": [
+      "No autonomous task demo",
+      "No customer deployment proof",
+      "Walking speed and compute from third-party reseller only",
+      "No independent verification"
+    ],
+    "conflicting_claims": [
+      "Hand dexterity: The Robot Report says doubling, Interesting Engineering says quadrupling.",
+      "Payload: single-arm vs single-hand wording; 3 kg either way.",
+      "Walking speed not present in official launch media."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit autonomous behavior.",
+      "Do not treat reseller price as official.",
+      "Do not infer walking speed from official sources.",
+      "Do not claim customer deployment."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "GR-2 is current as of 2026-10-29, but GR-3 Care-Bot appears on reseller sites; no official GR-3 launch found in these sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "GR-1 capabilities (patient transfer, etc.) are not GR-2.",
+      "reason": "References to GR-1 are for comparison only.",
+      "source_ids": [
+        "fourier-gr-2_source_001"
+      ]
+    },
+    {
+      "claim": "Video content from YouTube is excluded due to no transcript.",
+      "reason": "Cannot observe capabilities without transcript.",
+      "source_ids": []
+    },
+    {
+      "claim": "Claims of quadrupling dexterity are inconsistent and not used for scoring.",
+      "reason": "Conflicting with The Robot Report; treat as unknown.",
+      "source_ids": [
+        "fourier-gr-2_source_002"
+      ]
+    },
+    {
+      "claim": "Reseller price is not official.",
+      "reason": "Directory listings may be inflated or inaccurate.",
+      "source_ids": [
+        "fourier-gr-2_source_003",
+        "fourier-gr-2_source_006"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 0,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 0,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Fourier GR-2 is a second-generation biped humanoid (175 cm, 63 kg, 53 DoF) with 12-DoF tactile hands, FSA 2.0 actuators (peak torque >380 Nm), and developer support for ROS, Isaac Lab, and MuJoCo. Launch coverage from reputable media confirms core specs and teleoperation teaching modes, but no autonomous task execution or customer deployment has been shown. Third-party resellers list it for $125,000, but official pricing is not available. Perception claims of 360-degree RGB camera coverage are reported by one media outlet but not confirmed by Fourier's official launch release.",
+    "strongest_evidence": [
+      "Official launch specs via The Robot Report (height, weight, DoF, payload, runtime).",
+      "Hand details (12 DoF, tactile sensors) from multiple sources.",
+      "Developer SDK and framework support explicitly stated."
+    ],
+    "weakest_evidence": [
+      "No autonomous demo or autonomous capability evidence.",
+      "Walking speed, battery capacity, compute only from third-party reseller brochure.",
+      "No independent verification of any spec."
+    ],
+    "known_do_not_credit": [
+      "Autonomous behavior (not shown).",
+      "Official price or official purchase path.",
+      "Customer deployments (none found).",
+      "Walking speed as official."
+    ],
+    "recommended_confidence": "low"
+  }
+}

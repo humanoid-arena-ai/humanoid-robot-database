@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "honda",
+    "name": "Honda",
+    "country": "Japan",
+    "website": null,
+    "founded": 1946,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "honda-asimo"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Publicly listed company."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "honda_source_001",
+      "title": "Honda",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Honda",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "honda_source_002",
+      "title": "ASIMO",
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/ASIMO",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

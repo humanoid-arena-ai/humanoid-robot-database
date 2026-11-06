@@ -1,0 +1,18 @@
+{
+  "id": "foundation-future-industries",
+  "name": "Foundation Future Industries",
+  "country": "United States",
+  "headquarters": "San Francisco, California, United States",
+  "founded": 2024,
+  "website": "https://www.foundation.bot",
+  "summary": "Foundation builds the Phantom humanoid for heavy industry and defense. It holds US military research contracts.",
+  "funding": "About $21 million raised as of April 2026, plus $24 million in US military research contracts.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Foundation Future Industries wins $24M Pentagon contracts for humanoid robot soldiers",
+      "url": "https://thenextweb.com/news/foundation-humanoid-robot-soldiers-pentagon",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

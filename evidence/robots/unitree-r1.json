@@ -1,0 +1,614 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "unitree-r1",
+    "name": "Unitree R1",
+    "company_id": "unitree-robotics",
+    "company_name": "Unitree Robotics",
+    "country": "China",
+    "generation": "R1",
+    "first_announced_date": "2025-07-25",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Official Unitree shop lists R1 as a pre-sale product, with shipments beginning in June 2026; base versions do not support secondary development.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "education",
+      "developer platform",
+      "consumer/research demos"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Current low-cost Unitree humanoid product family."
+  },
+  "specs": {
+    "height": {
+      "original_value": "1230 x 357 x 190 mm",
+      "value": 123,
+      "unit": "cm",
+      "source_ids": [
+        "unitree-r1_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "~27 kg Air / ~29 kg R1",
+      "value": 29,
+      "unit": "kg",
+      "source_ids": [
+        "unitree-r1_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "About 2kg",
+      "value": 2,
+      "unit": "kg",
+      "source_ids": [
+        "unitree-r1_source_006"
+      ],
+      "notes": "Official figure, added 2026-10-29 by automated spec fill; per arm; maximum arm load varies by extension posture."
+    },
+    "runtime": {
+      "original_value": "~1 hr",
+      "value": 1,
+      "unit": "hours",
+      "source_ids": [
+        "unitree-r1_source_001"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 26,
+      "notes": "R1 listed at 26 DoF; R1 Air 20; EDU 26-40.",
+      "source_ids": [
+        "unitree-r1_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "source_ids": []
+    },
+    "hands": {
+      "description": "No dexterous hand on R1 Air or R1; dexterous hand is optional on R1 EDU only.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "2-DoF head on R1 and EDU",
+        "4-microphone array",
+        "speaker",
+        "Wi-Fi 6",
+        "Bluetooth 5.2",
+        "monocular camera on R1 Air",
+        "binocular camera on R1 and R1 EDU"
+      ],
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ]
+    },
+    "compute": {
+      "description": "Official parameter table lists an 8-core high-performance CPU across R1 Air, R1, and R1 EDU; NVIDIA Jetson Orin 40-100 TOPS is optional for R1 EDU only.",
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ]
+    },
+    "actuators": {
+      "description": "Official table lists low-inertia high-speed internal-rotor PMSM joint motors, 6 DoF per leg, 4-5 DoF per arm, and crossed-roller/double-hook ball bearings.",
+      "source_ids": [
+        "unitree-r1_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "pre_sale",
+      "price": 4900,
+      "price_currency": "USD",
+      "purchase_or_waitlist_url": "https://shop.unitree.com/en-ca/products/unitree-r1",
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Base R1 Air/R1 lack dexterous hands; Unitree lists dexterous hands only as an R1 EDU option, so manipulation evidence is very weak for retail base models.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ],
+      "caveats": [
+        "No public R1 task-manipulation benchmark was found.",
+        "Do not credit base R1 Air/R1 with dexterous manipulation.",
+        "EDU hand options are not evidence of shipped autonomous manipulation performance."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Unitree markets multimodal speech/image functions and open joint/sensor interfaces, but no independent task-autonomy benchmark or real deployment data was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ],
+      "caveats": [
+        "Marketing claims about multimodal AI are not task-completion metrics.",
+        "Base shop listing explicitly says the product does not support secondary development.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Company demo evidence for dynamic mobility; no useful deployment.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_002",
+        "unitree-r1_source_005"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official specs list cameras, audio I/O, Wi-Fi/Bluetooth, and multimodal speech/image claims, but no independent scene-understanding benchmark was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ],
+      "caveats": [
+        "Sensor presence is not evidence of robust perception.",
+        "No public benchmark for object recognition, localization, or scene understanding was found.",
+        "No third-party test of the multimodal model was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official sources claim integrated speech/image multimodal AI and list microphone/speaker hardware; evidence remains hardware/marketing-level only.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ],
+      "caveats": [
+        "No independent dialogue or HRI benchmark was found.",
+        "No customer deployment involving human-facing tasks was found.",
+        "Marketing copy should not be scored as reliable interaction autonomy."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Official runtime is about 1 hour and warranty is 6-12 months depending on model; no reliability, uptime, or field-hour data was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-r1_source_001"
+      ],
+      "caveats": [
+        "Runtime is a company specification.",
+        "Warranty is not a reliability benchmark.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "R1 is a compact 123 cm, 27-29 kg biped aimed at early-stage research and software developers, but lacks proof of useful work in homes or workplaces.",
+      "evidence_level": 2,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_005"
+      ],
+      "caveats": [
+        "Human-scale form factor is not proof of human-environment task success.",
+        "No home, office, or industrial R1 deployment metrics were found.",
+        "No payload spec was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Official Unitree shop lists R1 as a pre-sale product with June 2026 shipments, and media reports overseas sales via AliExpress; no customer operations were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003",
+        "unitree-r1_source_004"
+      ],
+      "caveats": [
+        "Pre-sale availability is not operational deployment.",
+        "No named customer deployment with task, hours, or output was found.",
+        "AliExpress/media price references vary with import fees and configuration."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Official pricing starts at $4,900 for R1 Air and $5,900 for R1, with direct shop pre-sale availability, making accessibility the strongest R1 evidence category.",
+      "evidence_level": 3,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003",
+        "unitree-r1_source_004"
+      ],
+      "caveats": [
+        "Tax, shipping, customs, import clearance, and configuration can materially change delivered cost.",
+        "EDU and advanced configurations require sales contact.",
+        "Low price does not imply useful autonomous task performance."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "unitree-r1_evidence_001",
+      "date": null,
+      "title": "Official R1 specs and price",
+      "claim": "Unitree lists R1 Air at 4900 USD and R1 at 5900 USD, with 1230 x 357 x 190 mm dimensions, about 27-29 kg weight, 20-26 DoF, and about 1 hour battery life.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-r1_source_001"
+      ],
+      "confidence": 0.84,
+      "notes": "Official page includes configuration caveats and price excludes tax and shipping.",
+      "arena_relevance": "Strong accessibility evidence.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official R1 page lists model tiers, dimensions, weight, DoF, battery, and pricing.",
+      "source_location": "Unitree R1 product table",
+      "verification_notes": "Company source; current price should be rechecked.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-r1_evidence_002",
+      "date": null,
+      "title": "Acrobatic launch demo",
+      "claim": "Launch coverage described company video showing cartwheels, handstands, shadowboxing, and rough-terrain running.",
+      "category": [
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "unitree-r1_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Company-controlled demo via media coverage.",
+      "arena_relevance": "Mobility demo only.",
+      "claim_type": "observable_demo",
+      "supporting_excerpt": "Notebookcheck describes launch video capabilities and viewer skepticism.",
+      "source_location": "Notebookcheck launch article",
+      "verification_notes": "No independent benchmark or useful task proof.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "unitree-r1_evidence_003",
+      "date": "2026-05-16",
+      "title": "Official shop pre-sale and base model limitations",
+      "claim": "Unitree's official shop lists R1 pre-sale at 4900 USD, says shipments begin in June 2026, and states that the product does not support secondary development unless buyers choose the EDU edition via sales contact.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-r1_source_003"
+      ],
+      "confidence": 0.9,
+      "notes": "Primary source for current purchase flow and base-model caveat; not evidence of completed deliveries or field deployment.",
+      "arena_relevance": "Strong evidence for purchasability/pre-sale and a negative caveat for base developer autonomy.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Official shop lists $4,900, June 2026 shipments, shipping/import caveats, and no secondary development for the non-EDU product.",
+      "source_location": "Unitree shop R1 pre-sale page",
+      "verification_notes": "Company storefront; availability and shipment timing should be rechecked because pre-sale listings can change.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value",
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "high",
+        "rating_effect": "mixed"
+      }
+    },
+    {
+      "id": "unitree-r1_evidence_004",
+      "date": null,
+      "title": "Official sensors, compute, and dexterous hand configuration",
+      "claim": "Unitree lists microphone array, speaker, Wi-Fi 6, Bluetooth 5.2, cameras, 8-core CPU, and optional EDU-only Jetson Orin and dexterous hand configurations; R1 Air and R1 show no dexterous hand.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "human_interaction",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ],
+      "confidence": 0.86,
+      "notes": "Hardware and configuration evidence only; does not establish robust perception, interaction, or manipulation performance.",
+      "arena_relevance": "Clarifies what can and cannot be credited on base R1 models.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Official parameter table lists cameras, audio, wireless, CPU, optional EDU compute, and dexterous-hand availability.",
+      "source_location": "Unitree R1 parameter table and shop description",
+      "verification_notes": "Primary source; no third-party teardown or benchmark found.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs",
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "mixed"
+      }
+    },
+    {
+      "id": "unitree-r1_evidence_005",
+      "date": "2025-09-01",
+      "title": "Independent framing as early-stage research/software platform",
+      "claim": "Engineering magazine described the R1 as a 121 cm robot that Unitree planned to sell for 5900 USD and aimed at early-stage research groups and software engineers building on the H1/G1 software stack.",
+      "category": [
+        "human_environment_fit",
+        "accessibility_value"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "unitree-r1_source_005"
+      ],
+      "confidence": 0.72,
+      "notes": "Credible independent framing, but it does not add R1 deployment or benchmark proof.",
+      "arena_relevance": "Supports classifying R1 as a research/developer platform rather than a proven service robot.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Engineering describes R1's price/size and target audience as early-stage researchers and software engineers.",
+      "source_location": "Engineering 54 (2025), Chinese Robotics Take a Big (Dance) Step Forward",
+      "verification_notes": "Secondary technical magazine source; use for positioning, not performance scoring.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "unitree-r1_demo_001",
+      "title": "R1 launch demo",
+      "date": "2025-07-25",
+      "observed_capabilities": [
+        "cartwheels",
+        "handstands",
+        "shadowboxing",
+        "rough-terrain running reported"
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "unitree-r1_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "cartwheels; handstands; shadowboxing; rough-terrain running reported",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "Official sources claim multimodal speech/image functions, but no independent task-execution benchmark was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Official shop pre-sale and media-reported overseas sales do not establish any completed customer deployment or operating-hour record.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Reliability",
+      "description": "No public failure-rate, uptime, intervention-rate, or field-hour data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Base model capability",
+      "description": "Official sources indicate R1 Air/R1 lack dexterous hands and secondary development support; those are reserved for EDU/contact-sales configurations.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Commercial service deployment",
+      "reason": "No credible deployment evidence found.",
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003",
+        "unitree-r1_source_004"
+      ]
+    },
+    {
+      "claim": "Base model developer/dexterous capability",
+      "reason": "Official page and shop reserve secondary development and advanced options for EDU/contact-sales configurations.",
+      "source_ids": [
+        "unitree-r1_source_001",
+        "unitree-r1_source_003"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 2,
+    "secondary_sources_count": 3,
+    "independent_sources_count": 3,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Unitree R1 is a low-cost humanoid in official pre-sale, with strong price/accessibility evidence, clear base-model limitations, and company-controlled mobility demos; no useful task deployment, independent autonomy benchmark, or field reliability evidence was found.",
+    "strongest_evidence": [
+      "Official $4,900 R1 Air / $5,900 R1 price table",
+      "Official shop pre-sale with June 2026 shipment timing",
+      "Official base-model caveat: no secondary development and no dexterous hand"
+    ],
+    "weakest_evidence": [
+      "No completed customer deployment",
+      "No independent autonomy or manipulation benchmark",
+      "No reliability or intervention-rate data"
+    ],
+    "known_do_not_credit": [
+      "Commercial deployment",
+      "Base dexterous manipulation"
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "unitree-r1_source_001",
+    "unitree-r1_source_002",
+    "unitree-r1_source_003",
+    "unitree-r1_source_004",
+    "unitree-r1_source_005",
+    "unitree-r1_source_006"
+  ],
+  "sources": [
+    {
+      "id": "unitree-r1_source_001",
+      "title": "Unitree R1",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/mobile/R1/",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official current specs, pricing, and caveats."
+    },
+    {
+      "id": "unitree-r1_source_002",
+      "title": "Humanoid robot for consumers: Unitree R1 launches",
+      "publisher": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/Humanoid-robot-for-consumers-Unitree-R1-launches-starting-at-US-5-900.1069005.0.html",
+      "date_published": "2025-07-26",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Launch/demo context and skepticism."
+    },
+    {
+      "id": "unitree-r1_source_003",
+      "title": "Unitree R1 (Pre-sale)",
+      "publisher": "Unitree Robotics Shop",
+      "url": "https://shop.unitree.com/en-ca/products/unitree-r1",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "high",
+      "reliability_notes": "Primary source for current pre-sale price, shipment timing, purchase caveats, and secondary-development limitation."
+    },
+    {
+      "id": "unitree-r1_source_004",
+      "title": "Unitree launches humanoid robot global sales on AliExpress",
+      "publisher": "CnTechPost",
+      "url": "https://cntechpost.com/2026/04/16/unitree-launches-humanoid-robot-global-sales-aliexpress/",
+      "date_published": "2026-04-16",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Current media report on overseas sales via AliExpress and price including import fees; use as distribution context, not deployment proof."
+    },
+    {
+      "id": "unitree-r1_source_005",
+      "title": "Chinese Robotics Take a Big (Dance) Step Forward",
+      "publisher": "Engineering",
+      "url": "https://www.engineering.org.cn/engi/EN/PDF/10.1016/j.eng.2025.09.013",
+      "date_published": "2025-09-01",
+      "date_accessed": "2026-05-16",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Independent technical context for R1 positioning as a low-cost early-stage research/software platform."
+    },
+    {
+      "id": "unitree-r1_source_006",
+      "title": "Unitree R1 | Unitree Robotics",
+      "publisher": "unitree.com",
+      "url": "https://www.unitree.com/R1",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Unitree R1 is a current low-cost pre-sale humanoid platform with strong accessibility evidence but weak task/deployment proof.",
+    "strongest_positive_evidence": [
+      "Official $4,900 entry price and shop pre-sale",
+      "Official June 2026 shipment timing",
+      "Dynamic launch demo"
+    ],
+    "weakest_or_missing_evidence": [
+      "No useful task deployment",
+      "No independent autonomy/manipulation benchmark",
+      "No reliability or field-hour data"
+    ],
+    "conflicting_claims": [
+      "Some launch coverage says starting at 5900 USD, while current official pages list R1 Air at 4900 USD and R1 at 5900 USD.",
+      "AliExpress/global-sale reports include import fees and configuration differences, so delivered prices can be higher than official base price."
+    ],
+    "recommended_arena_categories": [
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Commercial service deployment",
+      "Base model developer/dexterous capability",
+      "Autonomous useful household or industrial task execution"
+    ]
+  }
+}

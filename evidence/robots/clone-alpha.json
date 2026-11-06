@@ -1,0 +1,936 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "clone-alpha",
+    "name": "Clone Alpha",
+    "company_id": "clone-robotics",
+    "company_name": "Clone Robotics",
+    "country": "Poland / United States",
+    "generation": "first-generation Alpha Edition (Protoclone precursor)",
+    "first_announced_date": "2024-12-05",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Clone Robotics has opened limited reservations for the first 279 units, but no complete Alpha has been publicly demonstrated. Protoclone V1 was shown hanging in a workshop video in February 2025. Company roadmap targets 2028 for first commercial products. No price or delivery date published.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "biped_humanoid",
+    "intended_use_cases": [
+      "household chores (sandwich making, laundry, vacuuming, dishwashing)",
+      "personal assistance (following, holding items, retrieving items)",
+      "human-robot interaction research",
+      "enterprise hotel 'Robo Butler' (future, 2028)"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Height not published in reviewed sources.",
+      "source_ids": []
+    },
+    "weight": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Weight not published in reviewed sources.",
+      "source_ids": []
+    },
+    "payload": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Payload not published in reviewed sources.",
+      "source_ids": []
+    },
+    "runtime": {
+      "original_value": "~1.5 hours per charge",
+      "value": 1.5,
+      "unit": "hours",
+      "notes": "Third-party Alibaba buying guide states current prototypes sustain about 1.5 hours per charge; not an official spec.",
+      "source_ids": [
+        "clone-alpha_source_005"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Battery capacity not published.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 200,
+      "notes": "TechEBlog reports Protoclone with '200+ degrees of freedom'; other sources state 164 DoF in upper body alone. Total DoF for full Alpha not officially confirmed.",
+      "source_ids": [
+        "clone-alpha_source_002",
+        "clone-alpha_source_003",
+        "clone-alpha_source_006",
+        "clone-alpha_source_007"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Walking speed not published; company claims 'walks naturally' but no speed.",
+      "source_ids": []
+    },
+    "hands": {
+      "description": "Clone Hand with Myofiber artificial muscles. Reports vary: 26 degrees of freedom in each hand/wrist/elbow (Protoclone) and 27 DoF for standalone Clone Hand. Human-level grip force claimed.",
+      "degrees_of_freedom": 26,
+      "force_feedback": "320 pressure sensors provide force feedback (company claim)",
+      "source_ids": [
+        "clone-alpha_source_004",
+        "clone-alpha_source_005",
+        "clone-alpha_source_006",
+        "clone-alpha_source_007"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "4 depth cameras in skull",
+        "70 inertial sensors",
+        "320 pressure sensors",
+        "microcontrollers linked to sensors"
+      ],
+      "source_ids": [
+        "clone-alpha_source_004",
+        "clone-alpha_source_007"
+      ]
+    },
+    "compute": {
+      "description": "NVIDIA Jetson Thor GPU (reported). Runs Clone's 'Cybernet' visuomotor foundation model; edge-localized AI (company claim).",
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_007"
+      ]
+    },
+    "actuators": {
+      "description": "Myofiber water-powered artificial muscles. Company claims: response <50 ms, >30% unloaded contraction, at least 1 kg force per 3 g fiber. Protoclone reported with over 1,000 Myofibers. Hydraulic pump: 500W, 40 SLPM at 100 psi.",
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_002",
+        "clone-alpha_source_004",
+        "clone-alpha_source_007"
+      ]
+    },
+    "availability": {
+      "availability_status": "pre_order_waitlist",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "http://www.clonerobotics.com/android/",
+      "notes": "Official page accepts reservations for first 279 units. No official price. Media mentions $20,000 target (not confirmed). No retail channel; B2B only per Alibaba guide.",
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_002",
+        "clone-alpha_source_005"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Clone claims human-level finger strength. Component demos include hand and torso (video titles only). Tasks listed include sandwich making, laundry, but no full Alpha demo shown.",
+      "evidence_level": 2,
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_004",
+        "clone-alpha_source_005",
+        "clone-alpha_source_006",
+        "clone-alpha_source_009",
+        "clone-alpha_source_010",
+        "clone-alpha_source_011",
+        "clone-alpha_source_012",
+        "clone-alpha_source_013"
+      ],
+      "caveats": [
+        "No full Alpha manipulation demo; video titles unverified; no success rates."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "No autonomous task execution demonstrated. Telekinesis training platform described but no execution shown.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "No evidence of autonomous operation."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Company claims 'walks naturally' but no public walking demo. Protoclone shown hanging only. Roadmap targets 2027 for natural walking.",
+      "evidence_level": 1,
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_002",
+        "clone-alpha_source_003"
+      ],
+      "caveats": [
+        "No walking speed or demonstration; company claim only."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Sensors include 4 depth cameras, 70 inertial, 320 pressure; runs Cybernet visuomotor model. No scene understanding demo.",
+      "evidence_level": 1,
+      "source_ids": [
+        "clone-alpha_source_004",
+        "clone-alpha_source_007"
+      ],
+      "caveats": [
+        "No perception benchmark or demonstration."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Company claims natural language interface ('speak to Clone in plain English') and witty dialogue via Telekinesis.",
+      "evidence_level": 1,
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_004"
+      ],
+      "caveats": [
+        "No interaction demo shown."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No reliability data. Third-party guide states ~1.5 hours runtime; no endurance testing published.",
+      "evidence_level": 0,
+      "source_ids": [
+        "clone-alpha_source_005"
+      ],
+      "caveats": [
+        "Runtime from unofficial source; no MTBF or failure data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Company claims soft, plush, featherweight, won't damage floor. No safety certification.",
+      "evidence_level": 1,
+      "source_ids": [
+        "clone-alpha_source_001"
+      ],
+      "caveats": [
+        "No independent safety testing."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No named customer deployments. Only limited reservations open (279 units).",
+      "evidence_level": 0,
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_002"
+      ],
+      "caveats": [
+        "No deliveries or commercial use."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Reservation page exists but no price or delivery date. $20,000 target mentioned in media, not official.",
+      "evidence_level": 1,
+      "source_ids": [
+        "clone-alpha_source_001",
+        "clone-alpha_source_005"
+      ],
+      "caveats": [
+        "Not publicly purchasable; price unconfirmed."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "clone-alpha_evidence_001",
+      "date": null,
+      "title": "Clone Alpha official reservation page",
+      "claim": "Clone Robotics accepts reservations for the first 279 Alpha Edition units; Myofiber specs include <50 ms response, >30% contraction, 1 kg force per 3 g fiber.",
+      "category": [
+        "specs",
+        "actuators",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product page; company claims.",
+      "arena_relevance": "Defines artificial muscle performance and reservation availability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Reserve one of the first 279 Clones ever made, in its Alpha Edition.",
+      "source_location": "Clone Robotics Android product page, hero section",
+      "verification_notes": "Company spec page; Myofiber metrics not independently measured.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value",
+          "actuators"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_002",
+      "date": "2025-02-20",
+      "title": "Protoclone unveiling specs",
+      "claim": "TechEBlog reports Protoclone has 200+ degrees of freedom, over 1,000 Myofibers, and more than 200 sensors; pre-orders set to begin later in 2025, no price announced.",
+      "category": [
+        "specs",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Media report of company claims; prototype only.",
+      "arena_relevance": "Provides quantitative DoF and sensor counts from a secondary source.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "This anatomically accurate robot is essentially a synthetic human with 200+ degrees of freedom, over 1,000 Myofibers, and more than 200 sensors.",
+      "source_location": "TechEBlog article, first paragraph",
+      "verification_notes": "Secondary source; numbers not confirmed by Clone Robotics directly.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_004",
+      "date": "2025-01-03",
+      "title": "Orders opened and task list",
+      "claim": "Clone Robotics opened limited orders for Alpha; Telekinesis training platform teaches skills like shaking hands, pouring drinks, making sandwiches, laundry, vacuuming, dishwashing, and witty dialogue.",
+      "category": [
+        "manipulation_dexterity",
+        "human_interaction",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Thomasnet video transcript; company marketing claims.",
+      "arena_relevance": "Lists intended household capabilities, but no demonstration shown.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "The robots come with the Telekinesis training platform that’s used to learn and master skills like shaking hands, pouring drinks, making sandwiches, doing laundry, vacuuming floors, turning on and off lights, setting the table, loading and unloading the dishwasher, and firing off some witty dialogue.",
+      "source_location": "Thomasnet article, video transcript",
+      "verification_notes": "Marketing language; no task execution demonstrated.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_005",
+      "date": "2025-01-03",
+      "title": "Sensor and vascular specs",
+      "claim": "Alpha has 4 depth cameras in skull, 70 inertial sensors, 320 pressure sensors, and a 500-watt pump delivering 40 SLPM.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_004"
+      ],
+      "confidence": 0.75,
+      "notes": "Company-provided specs via Thomasnet.",
+      "arena_relevance": "Defines perception hardware and hydraulic power.",
+      "claim_type": "spec",
+      "supporting_excerpt": "It relies on 4 depth cameras in the skull for vision, 70 inertial sensors that sense the body’s position and movement, and 320 pressure sensors that provide force feedback.",
+      "source_location": "Thomasnet article, 'Alpha’s artificial nervous system' section",
+      "verification_notes": "Specs from company, not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_006",
+      "date": "2026-09-03",
+      "title": "Runtime and pricing from buying guide",
+      "claim": "Alibaba.com guide states current Clone Alpha prototypes sustain ~1.5 hours per charge, target price $20,000, B2B only, Clone Hand starts at $2,800.",
+      "category": [
+        "specs",
+        "endurance_reliability",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_005"
+      ],
+      "confidence": 0.5,
+      "notes": "Third-party buying guide; not official specs.",
+      "arena_relevance": "Only runtime figure found, but low reliability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Current prototypes sustain ~1.5 hours per charge — insufficient for shift-long operation.",
+      "source_location": "Alibaba.com buying guide, table row 'Runtime & Endurance'",
+      "verification_notes": "Directory content; may be inaccurate or based on early prototypes.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_007",
+      "date": "2024-12-05",
+      "title": "No complete Alpha demonstrated",
+      "claim": "Scribd article notes Clone has yet to publicly demonstrate a complete Alpha robot in action; preorders open for 279 units; upper body 164 points, 26 DoF hand/wrist/elbow.",
+      "category": [
+        "status",
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_006"
+      ],
+      "confidence": 0.7,
+      "notes": "Republished article from Maginative; content dated Dec 5, 2024.",
+      "arena_relevance": "Confirms prototype status and lack of full demonstration.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "However, potential customers and industry observers should note that Clone has yet to publicly demonstrate a complete Alpha robot in action.",
+      "source_location": "Scribd document, body text",
+      "verification_notes": "Secondary source; statement as of late 2024.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "status"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_008",
+      "date": "2024-12-12",
+      "title": "Upper body DoF details",
+      "claim": "Impact Lab reports upper torso has 164 DoF including 20 shoulder, 6 per vertebra, 26 hand/wrist/elbow; uses NVIDIA Jetson Thor and Cybernet visuomotor model.",
+      "category": [
+        "specs",
+        "compute"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_007"
+      ],
+      "confidence": 0.65,
+      "notes": "Media report of company specs.",
+      "arena_relevance": "Provides detailed articulation breakdown.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The robot's upper torso offers 164 degrees of freedom, including 20 degrees in the shoulder, 6 degrees of movement per vertebra in the spine, and 26 degrees in the hand, wrist, and elbow.",
+      "source_location": "Impact Lab article, paragraph on upper torso",
+      "verification_notes": "Secondary; numbers not independently confirmed.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_009",
+      "date": "2024-12-12",
+      "title": "Vascular system pump specs",
+      "claim": "Impact Lab reports a 500-watt pump delivers 40 SLPM at 100 psi; Aquajet valves operate under 1 watt.",
+      "category": [
+        "actuators"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "clone-alpha_source_007"
+      ],
+      "confidence": 0.7,
+      "notes": "Hydraulic system details from media.",
+      "arena_relevance": "Actuation power system spec.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The robot's vascular system, mimicking the human circulatory system, is powered by a compact, 500-watt electric pump that delivers 40 SLPM at 100 psi, closely resembling the function of a human heart.",
+      "source_location": "Impact Lab article, vascular system paragraph",
+      "verification_notes": "Company figures through media.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "actuators"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "clone-alpha_evidence_011",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No height, weight, payload, walking speed, battery capacity, or official price were found in reviewed sources.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on specs and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "specs"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "clone-alpha_demo_001",
+      "title": "Clone Robotics Is Building a 'Synthetic Human' Just $20,000",
+      "date": "2026-04-29",
+      "observed_capabilities": [
+        "No observable capabilities; video title only"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "clone-alpha_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot assess content or autonomy."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "clone-alpha_demo_002",
+      "title": "Clone Alpha Teaser",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "No observable capabilities; video title only"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "clone-alpha_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot assess content or autonomy."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "clone-alpha_demo_003",
+      "title": "I Met Protoclone. It’s Actually Insane",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "No observable capabilities; video title only"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "clone-alpha_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot assess content or autonomy."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "clone-alpha_demo_004",
+      "title": "New Clone AI Robot With Artificial Muscles Shocks The World: Torso 4",
+      "date": "2026-10-08",
+      "observed_capabilities": [
+        "No observable capabilities; video title only"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "clone-alpha_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot assess content or autonomy."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "clone-alpha_demo_005",
+      "title": "Proto Clone by Clone SHOCKS with Bipedal Musculoskeletal Android V1 AI Robot",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "No observable capabilities; video title only"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "clone-alpha_source_012"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript available; cannot assess content or autonomy."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on execution mode.",
+      "observed_segments": []
+    },
+    {
+      "id": "clone-alpha_demo_006",
+      "title": "Thumb Motion - Artificial Muscles Robotic Arm",
+      "date": "2021-10-29",
+      "observed_capabilities": [
+        "No observable capabilities; video title only"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "clone-alpha_source_013"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Early component demo (robotic arm), not Clone Alpha.",
+        "No transcript available; cannot assess content or autonomy."
+      ],
+      "editing_notes": "Not reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No information on execution mode.",
+      "observed_segments": []
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Physical specs",
+      "description": "Height, weight, payload, walking speed, and battery capacity are not published in any reviewed source.",
+      "impact_on_arena_scoring": "Cannot compare physical size or endurance; spec scoring limited."
+    },
+    {
+      "topic": "Full system demonstration",
+      "description": "No complete Alpha robot has been publicly demonstrated. Only Protoclone shown hanging and component videos exist.",
+      "impact_on_arena_scoring": "Major limitation; mobility and manipulation cannot be credited beyond company claims."
+    },
+    {
+      "topic": "Autonomy",
+      "description": "No demonstration of autonomous task execution. Telekinesis training platform described but not shown.",
+      "impact_on_arena_scoring": "Autonomy dimension remains at minimal evidence."
+    },
+    {
+      "topic": "Commercial availability",
+      "description": "Reservations open but no official price or delivery date. $20,000 target from media not confirmed.",
+      "impact_on_arena_scoring": "Accessibility value low."
+    },
+    {
+      "topic": "Spec conflicts",
+      "description": "Total DoF reported as 200+ (Protoclone) vs 164 upper body only; hand DoF reported as 26 vs 27.",
+      "impact_on_arena_scoring": "Judges should avoid over-precise DoF claims."
+    },
+    {
+      "topic": "Video evidence quality",
+      "description": "Six YouTube videos exist but no transcripts, so no observable evidence can be extracted.",
+      "impact_on_arena_scoring": "Demo tier evidence cannot be used for detailed scoring."
+    }
+  ],
+  "source_ids": [
+    "clone-alpha_source_001",
+    "clone-alpha_source_002",
+    "clone-alpha_source_003",
+    "clone-alpha_source_004",
+    "clone-alpha_source_005",
+    "clone-alpha_source_006",
+    "clone-alpha_source_007",
+    "clone-alpha_source_008",
+    "clone-alpha_source_009",
+    "clone-alpha_source_010",
+    "clone-alpha_source_011",
+    "clone-alpha_source_012",
+    "clone-alpha_source_013"
+  ],
+  "sources": [
+    {
+      "id": "clone-alpha_source_001",
+      "title": "Android – Clone",
+      "publisher": "Clone Robotics",
+      "url": "https://www.clonerobotics.com/android/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims not independently verified."
+    },
+    {
+      "id": "clone-alpha_source_002",
+      "title": "Clone Robotics Unveils Protoclone, a Slightly Creepy Faceless Bipedal Musculoskeletal Android",
+      "publisher": "TechEBlog",
+      "url": "https://www.techeblog.com/clone-robotics-protoclone-bipedal-android/",
+      "date_published": "2025-02-20",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary coverage of prototype unveiling."
+    },
+    {
+      "id": "clone-alpha_source_003",
+      "title": "The \"Synthetic Human\" Roadmap: Clone Robotics Eyes Silicon Valley and $20,000 Price Points",
+      "publisher": "Humanoids Daily",
+      "url": "https://www.humanoidsdaily.com/news/the-synthetic-human-roadmap-clone-robotics-eyes-silicon-valley-and-20-000-price-points",
+      "date_published": "2026-04-08",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Reports company statements from Abundance Summit."
+    },
+    {
+      "id": "clone-alpha_source_004",
+      "title": "Clone Robotics Opens Orders for Humanoid Robot with Synthetic Organs (Video)",
+      "publisher": "Thomasnet",
+      "url": "https://www.thomasnet.com/insights/clone-robotics-robot-synthetic-organs-orders/",
+      "date_published": "2025-01-03",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Trade publication with video transcript; company claims relayed."
+    },
+    {
+      "id": "clone-alpha_source_005",
+      "title": "How to Choose Clone Robotics Products: A Practical Guide",
+      "publisher": "Alibaba.com",
+      "url": "https://electronics.alibaba.com/buyingguides/clone-robotics-guide-androids,-myofiber-tech-buying-advice",
+      "date_published": "2026-09-03",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Buying guide; may contain unverified or promotional information."
+    },
+    {
+      "id": "clone-alpha_source_006",
+      "title": "Meet Clone Alpha - A Humanoid Robot Built With Synthetic Organs and Artificial Muscles | PDF | Robotics | Robot",
+      "publisher": "Scribd",
+      "url": "https://www.scribd.com/document/804002994/Meet-Clone-Alpha-a-Humanoid-Robot-Built-With-Synthetic-Organs-and-Artificial-Muscles",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Republished article from Maginative, dated Dec 5, 2024 in content."
+    },
+    {
+      "id": "clone-alpha_source_007",
+      "title": "Clone Robotics Unveils Humanoid Robot Clone Alpha: A Leap Toward Human-like Movement in Robotics – Impact Lab",
+      "publisher": "impactlab.com",
+      "url": "https://www.impactlab.com/2024/12/12/clone-robotics-unveils-humanoid-robot-clone-alpha-a-leap-toward-human-like-movement-in-robotics/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Secondary article with detailed specs; no date on page, URL suggests Dec 12, 2024."
+    },
+    {
+      "id": "clone-alpha_source_008",
+      "title": "Clone Robotics Is Building a “Synthetic Human” Just $20,000",
+      "publisher": "OTOFOOTAGE",
+      "url": "https://www.youtube.com/watch?v=UZBFzRfrSUU",
+      "date_published": "2026-04-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "YouTube video; title only, no transcript."
+    },
+    {
+      "id": "clone-alpha_source_009",
+      "title": "Clone Alpha Teaser",
+      "publisher": "Maginative",
+      "url": "https://www.youtube.com/watch?v=C6u08rIa8o4",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "YouTube video; title only, no transcript."
+    },
+    {
+      "id": "clone-alpha_source_010",
+      "title": "I Met Protoclone. It’s Actually Insane",
+      "publisher": "Anastasi In Tech",
+      "url": "https://www.youtube.com/watch?v=E1theCfcFsA",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "YouTube video; title only, no transcript."
+    },
+    {
+      "id": "clone-alpha_source_011",
+      "title": "New Clone AI Robot With Artificial Muscles Shocks The World: Torso 4",
+      "publisher": "MACHINEKIND and AI Revolution",
+      "url": "https://www.youtube.com/watch?v=EpY5GTH4SLY",
+      "date_published": "2026-10-08",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "YouTube video; title only, no transcript."
+    },
+    {
+      "id": "clone-alpha_source_012",
+      "title": "Proto Clone by Clone SHOCKS with Bipedal Musculoskeletal Android V1 AI Robot",
+      "publisher": "AI Tech Academy",
+      "url": "https://www.youtube.com/watch?v=DjuAG1NL2gw",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "YouTube video; title only, no transcript."
+    },
+    {
+      "id": "clone-alpha_source_013",
+      "title": "Thumb Motion - Artificial Muscles Robotic Arm",
+      "publisher": "Clone",
+      "url": "https://www.youtube.com/watch?v=d4lVAMHqHQU",
+      "date_published": "2021-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Early component demonstration; YouTube video, title only."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Clone Alpha is a prototype bipedal humanoid with unique Myofiber artificial muscles. No complete robot has been publicly demonstrated, and all specs and capabilities are company claims or media reports. Evidence is thin and mostly tier 1.",
+    "strongest_positive_evidence": [
+      "Official reservation page confirms 279-unit limited edition.",
+      "Detailed upper-body DoF and sensor specs reported consistently.",
+      "Company claims natural language and household tasks via Telekinesis (unverified).",
+      "Multiple YouTube videos exist, but no content assessed."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full Alpha demonstration; Protoclone shown hanging only.",
+      "No height, weight, payload, walking speed, or battery capacity.",
+      "No autonomy demonstration.",
+      "No price or delivery date; $20,000 is media target only.",
+      "No independent verification of Myofiber performance or runtime."
+    ],
+    "conflicting_claims": [
+      "Total DoF: 200+ (TechEBlog) vs 164 upper body only (multiple sources); not clearly reconciled.",
+      "Hand DoF: 26 per hand/wrist/elbow (Scribd) vs 27 DoF standalone Clone Hand (Alibaba).",
+      "Runtime: ~1.5 hours from Alibaba guide, but no other source; not official.",
+      "Announcement date: Thomasnet article Jan 3 2025 vs Scribd content Dec 5 2024; used earliest."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "research_platform"
+    ],
+    "do_not_overclaim": [
+      "Do not credit walking or task execution; no demonstration exists.",
+      "Do not treat $20,000 as official price.",
+      "Do not use video titles as evidence of capabilities.",
+      "Do not infer total DoF from conflicting reports without caveat."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Clone Alpha is the current full-body humanoid prototype from Clone Robotics as of 2026-10-29. Torso 4 shown in video title but no details. No new full robot announced."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Protoclone walking demo",
+      "reason": "No video or description of walking; only hanging shown in TechEBlog article.",
+      "source_ids": [
+        "clone-alpha_source_002"
+      ]
+    },
+    {
+      "claim": "$20,000 official price",
+      "reason": "Only mentioned in media and buying guide as target; no official listing.",
+      "source_ids": [
+        "clone-alpha_source_003",
+        "clone-alpha_source_005"
+      ]
+    },
+    {
+      "claim": "1.5 hours runtime as official spec",
+      "reason": "Only from Alibaba buying guide, not Clone Robotics.",
+      "source_ids": [
+        "clone-alpha_source_005"
+      ]
+    },
+    {
+      "claim": "Full Alpha demonstrated",
+      "reason": "Multiple sources confirm no complete Alpha shown.",
+      "source_ids": [
+        "clone-alpha_source_004",
+        "clone-alpha_source_006"
+      ]
+    },
+    {
+      "claim": "Autonomous task execution",
+      "reason": "No evidence of autonomy; Telekinesis described but not shown.",
+      "source_ids": [
+        "clone-alpha_source_004"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "shallow",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 6,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Clone Alpha is Clone Robotics' prototype bipedal humanoid that uses water-powered Myofiber artificial muscles instead of electric motors. The company accepts reservations for 279 units but has not demonstrated a complete robot. Specs (200+ DoF, 4 depth cameras, 70 inertial sensors, 320 pressure sensors, NVIDIA Jetson Thor) come from media reports. No walking, task execution, or autonomy has been shown. A $20,000 target price is mentioned but not official. Evidence is weak and primarily company claims at tier 1.",
+    "strongest_evidence": [
+      "Official reservation page for 279 Alpha Edition units.",
+      "Detailed sensor and actuator specs reported by multiple secondary sources.",
+      "Company roadmap with target dates (torso 2026, walking 2027, commercial 2028)."
+    ],
+    "weakest_evidence": [
+      "No full robot demonstration.",
+      "No official physical specs (height, weight, payload, speed, battery).",
+      "No autonomy evidence.",
+      "Runtime figure from low-reliability directory only."
+    ],
+    "known_do_not_credit": [
+      "Walking or natural motion (no demo).",
+      "Task execution or household chores (not shown).",
+      "Official price of $20,000.",
+      "Total DoF as 200+ without caveat (conflicting 164 upper body)."
+    ],
+    "recommended_confidence": "very_low"
+  }
+}

@@ -1,0 +1,961 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "limx-oli",
+    "name": "LimX Oli",
+    "company_id": "limx-dynamics",
+    "company_name": "LimX Dynamics",
+    "country": "China",
+    "generation": "first-generation LimX full-size humanoid",
+    "first_announced_date": "2025-07-31",
+    "release_date": null,
+    "status": "purchasable",
+    "status_notes": "Pre-orders opened in July 2025. Oli is offered in Lite, EDU and Super versions for AI researchers, robotics developers and solution integrators. No shipping confirmation or global availability was found in the reviewed sources.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "research_platform",
+    "intended_use_cases": [
+      "AI research",
+      "robotics development",
+      "solution integration",
+      "warehousing experiments",
+      "locomotion research",
+      "manipulation research",
+      "human-robot interaction",
+      "intelligent tour guide solution"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "165 cm",
+      "value": 165,
+      "unit": "cm",
+      "notes": "Multiple sources list 165 cm; source 2 also gives 1.65 m (5-foot-5).",
+      "source_ids": [
+        "limx-oli_source_001",
+        "limx-oli_source_002",
+        "limx-oli_source_003",
+        "limx-oli_source_004",
+        "limx-oli_source_007"
+      ]
+    },
+    "weight": {
+      "original_value": "around 55 kg",
+      "value": 55,
+      "unit": "kg",
+      "notes": "Source 2 says around 55 kg; source 3 says under 55 kg including battery.",
+      "source_ids": [
+        "limx-oli_source_002",
+        "limx-oli_source_003",
+        "limx-oli_source_004",
+        "limx-oli_source_007"
+      ]
+    },
+    "payload": {
+      "original_value": "3 kg",
+      "value": 3,
+      "unit": "kg",
+      "notes": "Reported by skyteamlabs.com, added 2026-10-29 by automated spec fill; Per arm, per P7..",
+      "source_ids": [
+        "limx-oli_source_014"
+      ]
+    },
+    "runtime": {
+      "original_value": "about 1.5 h runtime",
+      "value": 1.5,
+      "unit": "h",
+      "notes": "Reported by skyteamlabs.com, added 2026-10-29 by automated spec fill.",
+      "source_ids": [
+        "limx-oli_source_014"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Official brochure mentions a slide-out battery module, but no capacity or chemistry was published.",
+      "source_ids": [
+        "limx-oli_source_005"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": 31,
+      "notes": "31 DoF excluding end effectors. Emergent Mind gives breakdown: 6 per leg, 7 per arm, 3 waist, 2 head. Official brochure simply lists 31 DoF.",
+      "source_ids": [
+        "limx-oli_source_001",
+        "limx-oli_source_002",
+        "limx-oli_source_003",
+        "limx-oli_source_004",
+        "limx-oli_source_005",
+        "limx-oli_source_007"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "5.0 km/h",
+      "value": 1.389,
+      "unit": "m/s",
+      "notes": "Reported by skyteamlabs.com, added 2026-10-29 by automated spec fill; Converted from 5.0 km/h; page lists 'Speed' without specifying walking vs top speed..",
+      "source_ids": [
+        "limx-oli_source_014"
+      ]
+    },
+    "hands": {
+      "description": "Multiple end-effector options available; no hand-specific degrees of freedom or force feedback specifications were published.",
+      "degrees_of_freedom": 6,
+      "force_feedback": null,
+      "source_ids": [
+        "limx-oli_source_005",
+        "limx-oli_source_007",
+        "limx-oli_source_014"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "self-developed 6-axis IMU",
+        "head-mounted Intel RealSense D435i depth camera",
+        "chest-mounted Intel RealSense D435i depth camera",
+        "rotary encoders for joint position/velocity (reported by Emergent Mind)",
+        "motor current-based torque sensing (reported by Emergent Mind)"
+      ],
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_005",
+        "limx-oli_source_007"
+      ]
+    },
+    "compute": {
+      "description": "Emergent Mind reports onboard computation distributed across an NVIDIA Jetson Orin NX and a Rockchip RK3588 SBC, communicating by UDP at up to 100 Hz. Humanoid Press states no CPU/GPU/TOPS details were published by LimX, which conflicts with the Emergent Mind technical summary.",
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_007"
+      ]
+    },
+    "actuators": {
+      "description": "Emergent Mind reports brushless DC motors with harmonic-drive reduction and low-backlash gearboxes. Humanoid Press says actuator type is not published by LimX.",
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_007"
+      ]
+    },
+    "availability": {
+      "availability_status": "preorder",
+      "price": 158000,
+      "price_currency": "CNY",
+      "purchase_or_waitlist_url": null,
+      "notes": "Pre-orders began in July 2025 at RMB 158,000 (~$21,800) for the Lite version. EDU and Super versions cost more but prices were not published. LimX indicates a global version is in development; initial rollout is mainland China first. No purchase URL was found in reviewed sources.",
+      "source_ids": [
+        "limx-oli_source_001",
+        "limx-oli_source_002",
+        "limx-oli_source_003",
+        "limx-oli_source_007"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Official brochure advertises multiple end-effector options; third-party directory lists object handling and research-grade manipulation tasks. Official video title claims a 'Fully Autonomous Tennis Ball Picks Up & Tosses' demo. No hand specifications, grip force, payload or success rates were found.",
+      "evidence_level": 2,
+      "source_ids": [
+        "limx-oli_source_005",
+        "limx-oli_source_007",
+        "limx-oli_source_010"
+      ],
+      "caveats": [
+        "Only video title reviewed; no transcript, failure rate or manipulation metrics.",
+        "End-effector details and hand DoF are not published by LimX."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Official video titles claim 'Fully Autonomous' tennis ball operation and 'World’s First Scalable Autonomous Deployment'. Emergent Mind describes RL-based velocity tracking and stair climbing, but does not state execution mode. No intervention logs, success rates or independent audit were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_010",
+        "limx-oli_source_011"
+      ],
+      "caveats": [
+        "Autonomy claims come from video titles and company materials; not independently verified.",
+        "No transcript or operational details for autonomy demos."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "31-DoF biped with official video title showing self-standing. Emergent Mind reports stair climbing on a 33-step spiral staircase (17 cm rise/step) in 12 seconds with zero falls, and velocity tracking benchmarks up to 1.65 m/s during stair ascent. No official walking speed, incline or step-height specifications were published.",
+      "evidence_level": 2,
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_005",
+        "limx-oli_source_007",
+        "limx-oli_source_009"
+      ],
+      "caveats": [
+        "Stair climbing figures are from a secondary research summary, not the primary papers.",
+        "No flat-ground walking speed or obstacle recovery data from LimX."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Official brochure lists 6-axis IMU, head and chest Intel RealSense D435i depth cameras; Emergent Mind mentions real-time elevation maps and exteroceptive sensing. No independent perception benchmarks or camera resolution/FOV details were published.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_005",
+        "limx-oli_source_007"
+      ],
+      "caveats": [
+        "No object detection, SLAM or navigation success rates found.",
+        "Perception hardware is company-published; no independent measurement."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Official brochure highlights an intelligent tour guide solution and chest-mounted depth camera for human-robot interaction. Humanoid Press mentions human-robot interaction demos. No specific conversational or interaction reliability metrics were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_005",
+        "limx-oli_source_007"
+      ],
+      "caveats": [
+        "No demo video transcript or interaction success rates in reviewed sources."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery capacity or long-duration reliability data were published. Emergent Mind reports zero falls over repeated stair trials, but this is task-specific and secondary. No uptime, charge time or maintenance data found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_007"
+      ],
+      "caveats": [
+        "Zero-falls stair result is from a research summary, not a primary reliability test.",
+        "Runtime and battery capacity are entirely unknown."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Human-sized (165 cm, 55 kg), modular design with slide-out battery and power interfaces. Official brochure says fast disassembly/assembly. No safety certifications, environmental ratings, collision safety or IP ratings were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_001",
+        "limx-oli_source_002",
+        "limx-oli_source_003",
+        "limx-oli_source_005",
+        "limx-oli_source_007"
+      ],
+      "caveats": [
+        "No safety certification or collision testing evidence found.",
+        "No IP, temperature or humidity ratings published."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Pre-orders open, three configurations available. No named external customer, pilot deployment or operational metrics were found. LimX has funding and product lineup including Oli, but no evidence of paid commercial deployment.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_001",
+        "limx-oli_source_002",
+        "limx-oli_source_003"
+      ],
+      "caveats": [
+        "Pre-order availability is not proof of deployed commercial use.",
+        "No customer press release or named deployment found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Published base price RMB 158,000 (~$21,800) for Lite version; pre-order path open in mainland China. EDU and Super prices not public. Global version is in development.",
+      "evidence_level": 1,
+      "source_ids": [
+        "limx-oli_source_001",
+        "limx-oli_source_002",
+        "limx-oli_source_003"
+      ],
+      "caveats": [
+        "Price is company-announced and media-reported; no purchase URL found in sources.",
+        "Global availability not confirmed."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "limx-oli_evidence_001",
+      "date": "2025-07-31",
+      "title": "TechNode launch report: height and DoF",
+      "claim": "LimX Dynamics announced Oli, a full-size humanoid robot, standing 165 cm tall with 31 degrees of freedom excluding end effectors.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "limx-oli_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "TechNode is reputable media relaying company announcement.",
+      "arena_relevance": "Core size and DoF specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Standing at 165 cm tall, LimX Oli features 31 degrees of freedom (excluding end effectors).",
+      "source_location": "TechNode article body",
+      "verification_notes": "Media report, not official product page; values match other sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_002",
+      "date": "2025-08-01",
+      "title": "Robotics & Automation News: weight and versions",
+      "claim": "Oli is 1.65 m tall, weighs around 55 kg, has 31 DoF, and is offered in Lite, EDU and Super configurations.",
+      "category": [
+        "specs",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "limx-oli_source_002"
+      ],
+      "confidence": 0.75,
+      "notes": "Secondary media report.",
+      "arena_relevance": "Weight and availability tiers.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Standing 1.65 m (5‑foot‑5) tall and weighing around 55 kg, Oli contains 31 degrees of freedom (not counting end-effectors) and is designed as a general-purpose research and integration platform for AI researchers, robotics developers, and solution integrators.",
+      "source_location": "Robotics & Automation News article body",
+      "verification_notes": "Matches other sources; third-party media.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_003",
+      "date": "2026-02-02",
+      "title": "CnEVPost: pre-order and price",
+      "claim": "LimX Oli began accepting pre-orders in July 2025, priced starting at RMB 158,000 ($22,730).",
+      "category": [
+        "deployment_commercial_proof",
+        "accessibility_value"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "limx-oli_source_003"
+      ],
+      "confidence": 0.8,
+      "notes": "Media report of company pricing.",
+      "arena_relevance": "Public price and purchase availability.",
+      "claim_type": "spec",
+      "supporting_excerpt": "The LimX Oli full-size general-purpose humanoid robot began accepting pre-orders in July 2025, priced starting at RMB 158,000 ($22,730).",
+      "source_location": "CnEVPost article body",
+      "verification_notes": "Price consistent with TechNode; exchange rate cited in source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "accessibility_value"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_004",
+      "date": null,
+      "title": "Emergent Mind: 31 DoF kinematic breakdown",
+      "claim": "Oli has 31 independently actuated joints: 6 per leg, 7 per arm, 3 at the waist, and 2 in the head.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "limx-oli_source_004"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary research summary based on papers; breakdown not independently confirmed by LimX official sources.",
+      "arena_relevance": "Detailed DoF distribution useful for capability comparison.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "LimX Oli stands 1.65 m tall, weighing 55 kg, with a kinematic structure that supports 31 independently actuated joints: 6 per leg, 7 per arm, 3 at the waist, and 2 in the head.",
+      "source_location": "Emergent Mind topic page, section 1",
+      "verification_notes": "Emergent Mind is not an official LimX source; details may derive from papers or partners.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_005",
+      "date": null,
+      "title": "Emergent Mind: onboard compute",
+      "claim": "Onboard computation is distributed across an NVIDIA Jetson Orin NX and a Rockchip RK3588 SBC, communicating by UDP at up to 100 Hz.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "limx-oli_source_004"
+      ],
+      "confidence": 0.65,
+      "notes": "Secondary technical disclosure; Humanoid Press says no CPU/GPU details published by LimX, so treat with caution.",
+      "arena_relevance": "Compute hardware for onboard policy inference and terrain reconstruction.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "Onboard computation is distributed across an NVIDIA Jetson Orin NX (terrain reconstruction) and a Rockchip RK3588 SBC (policy inference, low-level joint control), communicating by UDP at up to 100 Hz.",
+      "source_location": "Emergent Mind topic page, section 1",
+      "verification_notes": "Not confirmed by official LimX product page; may come from research papers.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_006",
+      "date": null,
+      "title": "Emergent Mind: stair climbing benchmark",
+      "claim": "Oli maintained commanded speed up to 1.65 m/s, traversed a 33-step spiral staircase (17 cm rise/step) in 12 seconds with zero falls over repeated trials.",
+      "category": [
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "limx-oli_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Secondary report of FastStair research; not an official LimX claim or independent verification.",
+      "arena_relevance": "Strongest mobility evidence: stair climbing speed and zero falls.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "For stair ascent, Oli maintains commanded speed up to 1.65 m/s, traverses a 33-step spiral staircase (17 cm rise/step) in 12 s with zero falls over repeated trials.",
+      "source_location": "Emergent Mind topic page, section 5",
+      "verification_notes": "No primary paper or video reviewed; secondary summary only.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "medium_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_007",
+      "date": null,
+      "title": "Emergent Mind: RL benchmark results",
+      "claim": "In velocity tracking, PPO+PvP reaches average return 0.85 after 200k steps; in motion imitation, PPO+PvP converges to about 0.78.",
+      "category": [
+        "autonomy_task_execution",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "limx-oli_source_004"
+      ],
+      "confidence": 0.6,
+      "notes": "Secondary summary of internal research benchmarks; not peer-reviewed or independently replicated.",
+      "arena_relevance": "Quantified policy performance in simulation/real robot tasks.",
+      "claim_type": "research_result",
+      "supporting_excerpt": "In velocity tracking, PPO+PvP reaches average return of 0.85 after 200k steps (vanilla PPO at ≈ 0.6). In motion imitation, PPO+PvP converges to ≈ 0.78 (PPO alone ≈ 0.65).",
+      "source_location": "Emergent Mind topic page, section 5",
+      "verification_notes": "Results from a research summary; no full methods or variance details in source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "autonomy_task_execution",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_008",
+      "date": null,
+      "title": "Official brochure: perception sensors",
+      "claim": "Oli has a head-mounted Intel RealSense D435i depth camera for large-scale environment perception and autonomous navigation.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "limx-oli_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product brochure.",
+      "arena_relevance": "Perception hardware announced by manufacturer.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Head-Mounted Depth Camera Intel® RealSense™ D435i: Large-scale environment perception & autonomous navigation",
+      "source_location": "LimX Oli brochure, perception section",
+      "verification_notes": "Company spec sheet; no independent measurement of perception quality.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_009",
+      "date": null,
+      "title": "Official brochure: modular design and battery",
+      "claim": "Oli has 31 DoF, multiple end-effector options, modular fast disassembly, and a slide-out battery module.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "limx-oli_source_005"
+      ],
+      "confidence": 0.8,
+      "notes": "Official product brochure.",
+      "arena_relevance": "Modularity and battery access for maintenance and upgrade.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Full-Size Human-Sized 31 DoF End-Effectors: Multiple Options Available Modular Design: Fast Disassembly & Assembly Slide-Out Battery Module Comprehensive Developer Support",
+      "source_location": "LimX Oli brochure, specs section",
+      "verification_notes": "Company spec sheet; actual configurations may vary as noted in brochure.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "limx-oli_evidence_010",
+      "date": null,
+      "title": "Humanoid Press: missing specs",
+      "claim": "LimX Dynamics has not published walking speed, incline or step-height metrics.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [
+        "limx-oli_source_007"
+      ],
+      "confidence": 0.8,
+      "notes": "Directory identifies absence of official specs.",
+      "arena_relevance": "Limits mobility and endurance scoring.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Note: No published walking speed, incline, or step‑height metrics.",
+      "source_location": "Humanoid Press Oli database, mobility section",
+      "verification_notes": "Absence of official data is not proof of inability, but it limits evidence.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "mobility_whole_body_control",
+          "endurance_reliability"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "limx-oli_demo_001",
+      "title": "Full-Size Humanoid Oli🦾| Fully Autonomous Tennis Ball Picks Up & Tosses🎾",
+      "date": "2025-10-29",
+      "observed_capabilities": [
+        "autonomous tennis ball picking and tossing (per video title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title states fully autonomous.",
+      "environment": "unknown",
+      "source_ids": [
+        "limx-oli_source_010"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title-only review; no transcript or visual confirmation.",
+        "Autonomy is company-asserted."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Title states fully autonomous, but no details or independent verification.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "autonomous tennis ball pick and toss (from title)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "limx-oli_demo_002",
+      "title": "Oli Demonstrates the World’s First Scalable Autonomous Deployment",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "scalable autonomous deployment (per video title)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": "Title states autonomous.",
+      "environment": "unknown",
+      "source_ids": [
+        "limx-oli_source_011"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title-only review; no transcript or deployment context.",
+        "'World’s first' is a company claim."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo.",
+      "teleoperation_status": "disclosed_autonomous",
+      "teleoperation_notes": "Title implies autonomy, but no operational details disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "autonomous deployment demonstration (from title)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    },
+    {
+      "id": "limx-oli_demo_003",
+      "title": "Full-Size Humanoid Robot LimX Oli | Unboxing and Self-standing",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "unboxing",
+        "self-standing"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "unknown",
+      "source_ids": [
+        "limx-oli_source_009"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Title-only review; no transcript or visual confirmation."
+      ],
+      "editing_notes": "Not manually timestamp-reviewed; treat as a curated public demo.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode mentioned in title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "unboxing and self-standing (from title)",
+          "verification_notes": "Timestamp not verified; manual video review required."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Performance specs",
+      "description": "No payload, runtime, battery capacity, walking speed, step height, incline, turning radius, grip force, joint torque, joint speed, camera resolution, FOV, environmental ratings or charge time were published in official sources.",
+      "impact_on_arena_scoring": "Significantly limits mobility, manipulation, endurance and human-environment fit scores."
+    },
+    {
+      "topic": "Hands and end-effectors",
+      "description": "LimX advertises multiple end-effector options but does not publish hand DoF, force feedback, grip force or payload.",
+      "impact_on_arena_scoring": "Manipulation dexterity cannot be assessed beyond basic claims."
+    },
+    {
+      "topic": "Autonomy verification",
+      "description": "Official video titles claim fully autonomous tennis ball task and scalable autonomous deployment, but no transcripts, intervention logs, success rates or independent audit were found.",
+      "impact_on_arena_scoring": "Autonomy should be credited cautiously; claims are company statements."
+    },
+    {
+      "topic": "Secondary technical details",
+      "description": "Emergent Mind provides detailed specs (compute, actuators, stair climbing) but it is a secondary research summary, not an official LimX source. Humanoid Press states LimX has not published CPU/GPU or actuator details.",
+      "impact_on_arena_scoring": "Conflict on compute/actuator disclosure; primary official sources take precedence, but useful research-based capability evidence exists."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "Pre-order availability is published, but no named customer, fleet size, operating hours or deployment metrics were found.",
+      "impact_on_arena_scoring": "Deployment commercial proof remains minimal."
+    },
+    {
+      "topic": "Safety",
+      "description": "No safety certifications, collision safety data or IP/environmental ratings were found.",
+      "impact_on_arena_scoring": "Human-environment fit remains unverified for safety."
+    }
+  ],
+  "source_ids": [
+    "limx-oli_source_001",
+    "limx-oli_source_002",
+    "limx-oli_source_003",
+    "limx-oli_source_004",
+    "limx-oli_source_005",
+    "limx-oli_source_006",
+    "limx-oli_source_007",
+    "limx-oli_source_008",
+    "limx-oli_source_009",
+    "limx-oli_source_010",
+    "limx-oli_source_011",
+    "limx-oli_source_012",
+    "limx-oli_source_013",
+    "limx-oli_source_014"
+  ],
+  "sources": [
+    {
+      "id": "limx-oli_source_001",
+      "title": "LimX Dynamics launches humanoid robot LimX Oli starting at $21,800",
+      "publisher": "TechNode",
+      "url": "https://technode.com/2025/07/31/limx-dynamics-launches-humanoid-robot-limx-oli-starting-at-21800/",
+      "date_published": "2025-07-31",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "high",
+      "reliability_notes": "Reputable China tech media; reports company announcement."
+    },
+    {
+      "id": "limx-oli_source_002",
+      "title": "LimX Dynamics debuts full‑size humanoid robot starting at $21,800",
+      "publisher": "Robotics and Automation News",
+      "url": "https://roboticsandautomationnews.com/2025/08/01/limx-dynamics-debuts-full%E2%80%91size-humanoid-robot-starting-at-21800/93453/",
+      "date_published": "2025-08-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "Industry media; provides additional detail on versions and weight."
+    },
+    {
+      "id": "limx-oli_source_003",
+      "title": "Chinese humanoid robot maker LimX secures $200 million in Series B funding, with Nio Capital participating",
+      "publisher": "CnEVPost",
+      "url": "https://cnevpost.com/2026/02/02/chinese-humanoid-robot-maker-limx-secures-200-million-in-series-b-funding/",
+      "date_published": "2026-02-02",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "EV/tech media; confirms pre-order price and latest specs."
+    },
+    {
+      "id": "limx-oli_source_004",
+      "title": "LimX Oli Humanoid Robot",
+      "publisher": "Emergent Mind",
+      "url": "https://www.emergentmind.com/topics/oli-humanoid-robot",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Secondary research summary aggregator; provides detailed technical disclosures from papers, not official LimX claims."
+    },
+    {
+      "id": "limx-oli_source_005",
+      "title": "【逐际动力】折页（英文）oli 产品页_阅读",
+      "publisher": "逐际动力",
+      "url": "https://www.limxdynamics.com/pdf/LimX_Oli_Brochure_20260625.pdf",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product brochure; company-published specs and features."
+    },
+    {
+      "id": "limx-oli_source_006",
+      "title": "LimX Dynamics: Redefining Physical AI",
+      "publisher": "RealSense",
+      "url": "https://www.realsenseai.com/case-studies/limx-dynamics-redefining-physical-ai/",
+      "date_published": "2026-03-12",
+      "date_accessed": "2026-10-29",
+      "source_type": "unknown",
+      "reliability": "low",
+      "reliability_notes": "The provided text contained only cookie banners and navigation, not the actual case study body, so no factual claims were extracted."
+    },
+    {
+      "id": "limx-oli_source_007",
+      "title": "Oli Humanoid Robot by LimX Dynamics",
+      "publisher": "Humanoid Press",
+      "url": "https://humanoid.press/database/humanoid-press-database-oli-limx/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party humanoid database; notes missing official specs."
+    },
+    {
+      "id": "limx-oli_source_008",
+      "title": "Humanoid Robot Oli's New Update in Action!",
+      "publisher": "YouTube LimX Dynamics",
+      "url": "https://www.youtube.com/watch?v=x9ZF3fq2Ccs",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo video; title only reviewed, no transcript."
+    },
+    {
+      "id": "limx-oli_source_009",
+      "title": "Full-Size Humanoid Robot LimX Oli | Unboxing and Self-standing",
+      "publisher": "YouTube LimX Dynamics",
+      "url": "https://www.youtube.com/watch?v=AsBL9xMPQ_E",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo video; title only reviewed, no transcript."
+    },
+    {
+      "id": "limx-oli_source_010",
+      "title": "Full-Size Humanoid Oli🦾| Fully Autonomous Tennis Ball Picks Up & Tosses🎾",
+      "publisher": "YouTube LimX Dynamics",
+      "url": "https://www.youtube.com/watch?v=NDCt3xwXl8o",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo video; title only reviewed, no transcript."
+    },
+    {
+      "id": "limx-oli_source_011",
+      "title": "Oli Demonstrates the World’s First Scalable Autonomous Deployment",
+      "publisher": "YouTube LimX Dynamics",
+      "url": "https://www.youtube.com/watch?v=vYl-CPlnYp0",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official demo video; title only reviewed, no transcript."
+    },
+    {
+      "id": "limx-oli_source_012",
+      "title": "LimX Oli Robot Just Changed Everything About Humanoids",
+      "publisher": "YouTube DPCcars",
+      "url": "https://www.youtube.com/watch?v=vBxooNlHSxM",
+      "date_published": "2025-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title is hype-oriented, no transcript provided."
+    },
+    {
+      "id": "limx-oli_source_013",
+      "title": "LimX Oli Robot: What’s Really Inside the Humanoid Control System",
+      "publisher": "YouTube Cybernetic",
+      "url": "https://www.youtube.com/watch?v=V3aQgUeffqE",
+      "date_published": "2026-09-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Third-party YouTube channel; title is hype-oriented, no transcript provided."
+    },
+    {
+      "id": "limx-oli_source_014",
+      "title": "LimX Oli price and specs — BotRegistry",
+      "publisher": "skyteamlabs.com",
+      "url": "https://skyteamlabs.com/robots/limx-oli/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "LimX Oli is a pre-order research-focused biped humanoid with published pricing and open SDK, but most performance and reliability metrics are missing; the strongest public capability evidence comes from a secondary research summary reporting agile stair climbing.",
+    "strongest_positive_evidence": [
+      "Stair climbing: 33-step spiral staircase (17 cm rise/step) in 12 seconds with zero falls (secondary research summary).",
+      "Published base price RMB 158,000 (~$21,800) and pre-order availability.",
+      "Official video title claims autonomous tennis ball pick & toss.",
+      "Official product brochure confirms dual RealSense depth cameras, 6-axis IMU, modular design and slide-out battery."
+    ],
+    "weakest_or_missing_evidence": [
+      "No payload, runtime, battery capacity, walking speed, incline, step height, grip force, joint torque, camera resolution or safety certifications.",
+      "No named customer deployment or commercial fleet metrics.",
+      "Autonomy claims are title-only, not independently verified.",
+      "Compute/actuator specs conflict between secondary research summary and directory stating not published."
+    ],
+    "conflicting_claims": [
+      "Weight: source 2 says around 55 kg; source 3 says under 55 kg including battery (minor).",
+      "Compute: Emergent Mind provides Jetson Orin NX + RK3588; Humanoid Press says no CPU/GPU/TOPS details published by LimX.",
+      "Actuator type: Emergent Mind reports brushless DC with harmonic drives; Humanoid Press says actuator type not published."
+    ],
+    "recommended_arena_categories": [
+      "research_platform",
+      "biped_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not treat the stair climbing figures as official LimX specifications; they come from a secondary research summary.",
+      "Do not treat 'World’s First Scalable Autonomous Deployment' as independently verified or as proof of commercial deployment.",
+      "Do not credit payload, runtime, battery capacity or walking speed; none were published in official sources.",
+      "Do not infer hand dexterity beyond multiple end-effector options."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Oli is LimX Dynamics' current full-size general-purpose humanoid as of 2026-10-29, with pre-orders open and a global version in development. No successor model was found in the reviewed sources."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Claims from RealSense case study",
+      "reason": "The provided RealSense source text contained only cookie banners and navigation, not the actual case study body, so no factual claims were extracted.",
+      "source_ids": [
+        "limx-oli_source_006"
+      ]
+    },
+    {
+      "claim": "Claims from YouTube video 'Humanoid Robot Oli's New Update in Action!'",
+      "reason": "Title is too vague to extract specific capabilities; no transcript was provided.",
+      "source_ids": [
+        "limx-oli_source_008"
+      ]
+    },
+    {
+      "claim": "Claims from DPCcars and Cybernetic third-party YouTube videos",
+      "reason": "Titles are hype-oriented and no transcript was provided; not used for factual evidence.",
+      "source_ids": [
+        "limx-oli_source_012",
+        "limx-oli_source_013"
+      ]
+    },
+    {
+      "claim": "Any specific walking speed or payload value",
+      "reason": "No official source published these figures; only a secondary research summary provided a stair ascent speed benchmark, which is not a general walking speed.",
+      "source_ids": [
+        "limx-oli_source_004",
+        "limx-oli_source_007"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 4,
+    "secondary_sources_count": 9,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 3,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "LimX Oli is a pre-order, 165 cm, 55 kg, 31-DoF biped research humanoid from LimX Dynamics, priced from RMB 158,000 (~$21,800). It has dual Intel RealSense depth cameras, a 6-axis IMU, modular design and slide-out battery, but no official payload, runtime, battery capacity or walking speed. The strongest public evidence is a secondary research summary reporting stair climbing of a 33-step spiral staircase in 12 seconds with zero falls, and benchmark returns of 0.85 for velocity tracking. Official video titles claim fully autonomous tennis ball picking and scalable autonomous deployment, but no transcripts or independent verification were found. No named customer deployment exists.",
+    "strongest_evidence": [
+      "Secondary summary of stair climbing performance (33 steps, 17 cm rise, 12 s, zero falls).",
+      "Published pre-order price and availability.",
+      "Official video titles claiming autonomous tennis ball pick & toss and scalable deployment.",
+      "Official product brochure sensor and modularity specs."
+    ],
+    "weakest_evidence": [
+      "No payload, runtime, battery, walking speed or safety certifications.",
+      "No customer deployment or independent verification.",
+      "Autonomy claims are title-only.",
+      "Secondary research summary conflicts with directory on compute/actuator disclosure."
+    ],
+    "known_do_not_credit": [
+      "Do not credit a specific walking speed or payload.",
+      "Do not treat 'World’s First Scalable Autonomous Deployment' as verified.",
+      "Do not treat Emergent Mind research summary as an official LimX source.",
+      "Do not credit battery capacity or runtime."
+    ],
+    "recommended_confidence": "low"
+  }
+}

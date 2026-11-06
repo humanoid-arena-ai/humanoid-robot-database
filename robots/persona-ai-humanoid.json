@@ -1,0 +1,62 @@
+{
+  "id": "persona-ai-humanoid",
+  "name": "Persona AI Humanoid",
+  "aliases": [
+    "Persona Humanoid",
+    "PA-1"
+  ],
+  "companyId": "persona-ai",
+  "companyName": "Persona AI",
+  "country": "United States",
+  "announced": null,
+  "status": "prototype",
+  "category": "industrial",
+  "summary": "Persona AI in Houston is building a rugged humanoid for shipyard welding and heavy industry. The robot has done teleoperated welding tests to collect training data. HD Hyundai and POSCO are named as partners, but no official specs have been published.",
+  "specs": {
+    "height_cm": null,
+    "weight_kg": null,
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": null
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Co-founded by Nicolaus Radford and Jerry Pratt.",
+    "Joint development with HD Hyundai on shipyard welding humanoids.",
+    "Raised a $27 million pre-seed round in 2025."
+  ],
+  "caveats": [
+    "Prototype; welding demos so far are teleoperated.",
+    "No official height, weight or payload published."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "How Persona AI Makes Humanoids Pay Off In Welding",
+      "publisher": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/persona-ai-humanoid-robot-welding",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Persona AI",
+      "publisher": "Persona AI",
+      "url": "https://persona.ai/",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s3",
+      "title": "Persona AI Raises $27M Oversubscribed Pre-Seed",
+      "publisher": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/persona-ai-raises-27m-oversubscribed-pre-seed-to-deliver-the-future-of-humanoid-robotics-302455330.html",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

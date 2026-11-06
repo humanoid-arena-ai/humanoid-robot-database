@@ -1,0 +1,1098 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "kawasaki-kaleido-9",
+    "name": "Kawasaki Kaleido 9",
+    "company_id": "kawasaki-heavy-industries",
+    "company_name": "Kawasaki Heavy Industries",
+    "country": "Japan",
+    "generation": "ninth-generation Kaleido humanoid",
+    "first_announced_date": "2025-12-03",
+    "release_date": null,
+    "status": "prototype",
+    "status_notes": "Kaleido 9 is currently listed as a prototype. It was publicly unveiled at iREX 2025 in Tokyo and remains in the testing phase, with no commercial sale or deployment found.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "disaster response and hazardous environment operations",
+      "industrial material handling and sorting",
+      "humanoid robotics research",
+      "remote operation and teleoperation tasks"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "190 cm",
+      "value": 190,
+      "unit": "cm",
+      "notes": "Humanoid.guide lists 190 cm for Kaleido 9. Robot Overflow lists approximately 5 ft 11 in (~180 cm) for the broader Kaleido family, creating a conflict; the Kaleido 9-specific value is used here.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "weight": {
+      "original_value": "99 kg",
+      "value": 99,
+      "unit": "kg",
+      "notes": "Humanoid.guide lists 99 kg. Robot Overflow lists approximately 187 lbs (~85 kg) for the broader Kaleido platform; the Kaleido 9-specific value is used here.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "payload": {
+      "original_value": "30 kg",
+      "value": 30,
+      "unit": "kg",
+      "notes": "Humanoid.guide states 30 kg payload. Robot Overflow describes a Kaleido 9 variant with an 18 kg payload and an earlier generation with a 60 kg arm payload; these are recorded as conflicts, not used for the primary spec.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "runtime": {
+      "original_value": "up to 3 hours per charge",
+      "value": 3,
+      "unit": "hours",
+      "notes": "Humanoid.guide lists up to 3 hours per charge. Robot Overflow says battery life has not been published by Kawasaki, creating a conflict.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No battery capacity or chemistry was published in the reviewed sources. Robot Overflow explicitly states battery life is not specified.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "degrees_of_freedom": {
+      "value": null,
+      "notes": "No total degrees of freedom for Kaleido 9 was found. Robot Overflow mentions 32 degrees of freedom for the broader Kaleido platform, but this is not clearly tied to Kaleido 9 and is excluded.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "walking_speed": {
+      "original_value": "up to 5 km/h",
+      "value": 5,
+      "unit": "km/h",
+      "notes": "Humanoid.guide lists speeds of up to 5 kilometres per hour. Robot Overflow says maximum speed is not specified by Kawasaki, creating a conflict.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    "hands": {
+      "description": "No detailed hand specifications were found. A disaster rescue demonstration description mentions 'shiny fingers' and gently picking up a toy cat, but hand DoF or tactile capabilities are not disclosed.",
+      "degrees_of_freedom": null,
+      "force_feedback": null,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_004"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "enhanced stereo cameras",
+        "LiDAR"
+      ],
+      "notes": "Humanoid.guide states enhanced stereo cameras and LiDAR support three-dimensional mapping.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ]
+    },
+    "compute": {
+      "description": "No onboard compute was specified in the reviewed sources. The robot supports Ethernet and WiFi for operational connections.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "Fully electric platform with a magnesium alloy skeleton and 3D printed resin exterior panels. Reinforced waist and leg joints are mentioned for balance recovery.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "not_for_sale",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": null,
+      "notes": "Research and development prototype. Robot Overflow states the robot is not for sale and is an internal R&D platform available free to partner institutions through the YouComeLab programme.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Humanoid.guide rates Manipulation 1 out of 5 and confirms sorting goods as an early applied handling capability. A disaster rescue demonstration description says the robot gently picked up a toy cat and handed it to an MC.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_004"
+      ],
+      "caveats": [
+        "Very low third-party manipulation score.",
+        "Only one brief demonstration description found; no success rates or controlled benchmarks."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Current autonomy is not demonstrated in the reviewed text. Humanoid.guide lists VR headset teleoperation as an operational connection. Ground News reports Kawasaki plans to use Noetra's physical AI to make Kaleido fully autonomous, targeting industrial deployment as early as 2030.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_005"
+      ],
+      "caveats": [
+        "Existing demos do not clearly state autonomous operation; teleoperation status is not always disclosed.",
+        "2030 autonomy is a future media-reported plan, not a current capability."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Humanoid.guide lists speeds up to 5 km/h, confirmed walking stairs, and reinforced waist and leg joints for improved balance recovery.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "caveats": [
+        "No fall rate, disturbance recovery data, or independently verified walking demo found in text sources.",
+        "Video titles may show mobility but no transcripts are available for verification."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Humanoid.guide states enhanced stereo cameras and LiDAR support three-dimensional mapping.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "caveats": [
+        "No perception benchmarks or scene-understanding results were found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Kawasaki's official iREX concept mentions AI, autonomous mobility, voice interaction, and remote operation. A Kawasaki employee article describes a future where Kaleido can engage in conversation while doing heavy labor in an elderly care facility.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_002",
+        "kawasaki-kaleido-9_source_003"
+      ],
+      "caveats": [
+        "Voice interaction is part of a booth concept and not specifically demonstrated for Kaleido 9 in the reviewed sources.",
+        "The employee article is a vision statement and not current product capability."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Humanoid.guide lists up to 3 hours per charge. No hardware failure rates, continuous operation data, or reliability benchmarks were found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "caveats": [
+        "Runtime is a directory figure, not independently verified.",
+        "No uptime or intervention logs are available."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Kaleido 9 is 190 cm tall and 99 kg, with a magnesium alloy skeleton and reinforced waist and leg joints. Disaster response and demanding industrial environments are the intended use cases.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "caveats": [
+        "No full-robot safety certification was found.",
+        "At 99 kg, human-proximity safety is not independently established."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "No commercial deployment or named customer was found. Robot Overflow states there are no known industrial or commercial deployments and the robot is research-only.",
+      "evidence_level": 0,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001",
+        "kawasaki-kaleido-9_source_006"
+      ],
+      "caveats": [
+        "Prototype status with no public deployment metrics."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Robot Overflow states the robot is not for sale and is available free to partner institutions through Kawasaki's YouComeLab programme. No price or public purchase path exists.",
+      "evidence_level": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ],
+      "caveats": [
+        "Access is limited to approved university or research partners and is not a public offer."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "kawasaki-kaleido-9_evidence_001",
+      "date": null,
+      "title": "Kaleido 9 core specifications",
+      "claim": "Kaleido 9 is a 190 cm, 99 kg fully electric humanoid with a stated 30 kg payload, up to 5 km/h speed, and up to 3 hours runtime per charge.",
+      "category": [
+        "specs",
+        "mobility_whole_body_control",
+        "endurance_reliability"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Directory spec listing; not independently measured. Conflicts with Robot Overflow are recorded separately.",
+      "arena_relevance": "Primary spec baseline for comparison.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Kaleido 9 is a 190 centimetre humanoid robot from Kawasaki Robotics, created for disaster response and demanding industrial environments. The fully electric platform weighs 99 kilograms, has a stated payload strength of 30 kilograms, reaches speeds of up to 5 kilometres per hour, and operates for up to three hours per charge.",
+      "source_location": "Humanoid.guide Welcome Kaleido 9 article, first paragraph",
+      "verification_notes": "Directory source; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit",
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_002",
+      "date": null,
+      "title": "Kaleido 9 materials and sensors",
+      "claim": "Kaleido 9 uses a magnesium alloy skeleton, 3D printed resin exterior panels, enhanced stereo cameras, LiDAR, and supports Ethernet, WiFi, and VR headset teleoperation.",
+      "category": [
+        "specs",
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Directory spec claims; not independently verified.",
+      "arena_relevance": "Hardware basis for perception and remote operation.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Enhanced stereo cameras and LiDAR support three dimensional mapping, while Ethernet, WiFi, and VR headset teleoperation provide multiple operational connections.",
+      "source_location": "Humanoid.guide Welcome Kaleido 9 article, first paragraph",
+      "verification_notes": "Directory source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_003",
+      "date": null,
+      "title": "Humanoid.guide skill scores",
+      "claim": "Kaleido 9 is rated 3 out of 10 on the Humanoid.guide Skill Score, with Navigation 2 out of 5 and Manipulation 1 out of 5.",
+      "category": [
+        "manipulation_dexterity",
+        "mobility_whole_body_control"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "confidence": 0.5,
+      "notes": "Third-party directory assessment, not an official benchmark.",
+      "arena_relevance": "Shows low early capability profile.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Kaleido 9 is rated 3 out of 10 on the Humanoid.Guide Skill Score, placing it in a developing stage. Its Navigation rating is 2 out of 5 and its Manipulation rating is 1 out of 5, reflecting an early capability profile focused on core mobility and whole body work rather than broad general purpose performance.",
+      "source_location": "Humanoid.guide Welcome Kaleido 9 article, first paragraph",
+      "verification_notes": "Directory assessment methodology not provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "low",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_004",
+      "date": null,
+      "title": "Confirmed walking stairs and sorting goods",
+      "claim": "Kaleido 9's confirmed capabilities include walking stairs and sorting goods.",
+      "category": [
+        "mobility_whole_body_control",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "confidence": 0.6,
+      "notes": "Directory statement; no supporting demo details.",
+      "arena_relevance": "Basic mobility and manipulation capability claim.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Kaleido 9’s confirmed capabilities include walking stairs and sorting goods.",
+      "source_location": "Humanoid.guide Welcome Kaleido 9 article, second paragraph",
+      "verification_notes": "No video or benchmark linked in text.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "mobility_whole_body_control"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_005",
+      "date": null,
+      "title": "Kaleido 9 prototype status and unveiling",
+      "claim": "Kaleido 9 is currently listed as a prototype and was unveiled at the 2025 International Robot Exhibition in Tokyo after development beginning in 2015.",
+      "category": [
+        "status",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "confidence": 0.8,
+      "notes": "Prototype status consistent with official event page.",
+      "arena_relevance": "Confirms no commercial deployment.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Kaleido 9 is currently listed as a prototype. Kawasaki Heavy Industries unveiled the ninth generation Kaleido humanoid at the 2025 International Robot Exhibition in Tokyo, representing nearly a decade of dedicated Kaleido development beginning in 2015.",
+      "source_location": "Humanoid.guide Welcome Kaleido 9 article, third paragraph",
+      "verification_notes": "Directory statement aligns with Kawasaki official event page.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_006",
+      "date": "2025-11-12",
+      "title": "Official iREX 2025 event page",
+      "claim": "Kawasaki will exhibit at iREX 2025 under the concept 'Meet Your New Buddy' and will present the first public unveiling of the new humanoid RHP Kaleido.",
+      "category": [
+        "status",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_002"
+      ],
+      "confidence": 0.85,
+      "notes": "Official Kawasaki Robotics event page.",
+      "arena_relevance": "Primary confirmation of public unveiling and booth concept.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Under the concept “Meet Your New Buddy,” Kawasaki will present robots evolving into your buddy through AI, autonomous mobility, voice interaction, and remote operation. Highlights include the latest industrial robots, the first public unveiling of the new humanoid RHP Kaleido, and CORLEO, featured at the Osaka-Kansai Expo.",
+      "source_location": "Kawasaki Robotics iREX2025 event page, main section",
+      "verification_notes": "Official source. The exhibit list includes 'Humanoid Robot: RHP Kaleido 9'.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_007",
+      "date": null,
+      "title": "Kawasaki employee vision for Kaleido",
+      "claim": "Kawasaki envisions Kaleido robots engaging in conversation while doing heavy labor in elderly care facilities and wearing protective suits during disaster operations.",
+      "category": [
+        "human_interaction",
+        "intended_use_cases"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_003"
+      ],
+      "confidence": 0.6,
+      "notes": "Official Kawasaki vision article from 2022, not a current product claim.",
+      "arena_relevance": "Shows intended use cases and long-term human-robot collaboration vision.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "For example, these robots can engage in conversation while doing heavy labor in an elderly care facility and, in the event of a disaster, they can wear the same protective suits as humans during operations.",
+      "source_location": "Kawasaki ANSWERS article, employee interview section",
+      "verification_notes": "Article information current as of December 2022.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_008",
+      "date": "2025-12-03",
+      "title": "Kaleido 9 disaster rescue demonstration description",
+      "claim": "At a demonstration, Kaleido 9 reached over to gently pick up a toy cat and handed it to an MC, showcasing rescue capabilities; the robot is still in the testing phase and meant for disaster areas where access is difficult.",
+      "category": [
+        "manipulation_dexterity",
+        "status",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_004"
+      ],
+      "confidence": 0.5,
+      "notes": "Forum post quoting an unnamed article; secondary/social source.",
+      "arena_relevance": "Only textual description of a manipulation demo found.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "It reaches over to gently pick up a toy cat—handing it over to an MC at a demonstration showcasing the humanoid robot’s rescue capabilities during a disaster.",
+      "source_location": "PR.ai forum post, embedded quote from Dec 3, 2025",
+      "verification_notes": "Original article not licensed or identified in the forum excerpt; low confidence.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [
+          "deployment_commercial_proof"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_009",
+      "date": "2026-10-05",
+      "title": "Future autonomy plan with Noetra physical AI",
+      "claim": "Kawasaki plans to use Noetra's physical AI in its Kaleido humanoid, targeting industrial deployment as early as 2030.",
+      "category": [
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_005"
+      ],
+      "confidence": 0.6,
+      "notes": "Ground News aggregation of multiple media reports; not an official Kawasaki statement.",
+      "arena_relevance": "Indicates future autonomy goal, not current capability.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Kawasaki plans to use Noetra’s physical AI in its Kaleido humanoid, targeting industrial deployment as early as 2030.",
+      "source_location": "Ground News summary line",
+      "verification_notes": "Aggregated from Interesting Engineering and other outlets.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_010",
+      "date": null,
+      "title": "Kaleido research platform availability",
+      "claim": "Kawasaki Kaleido is not for sale and is an internal R&D platform available free to partner institutions.",
+      "category": [
+        "accessibility_value",
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ],
+      "confidence": 0.65,
+      "notes": "Robot Overflow directory page; no official Kawasaki source found in reviewed set.",
+      "arena_relevance": "Confirms no public price or purchase path.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Price: Not for sale; it is an internal R&D platform available free to partner institutions.",
+      "source_location": "Robot Overflow Kawasaki Kaleido page, top summary",
+      "verification_notes": "Directory source; conflicting with Humanoid.guide on some specs.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "medium",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_011",
+      "date": null,
+      "title": "Kaleido 9 payload conflict",
+      "claim": "Robot Overflow states a Kaleido 9 variant emerged with an 18 kg payload, conflicting with Humanoid.guide's 30 kg payload figure.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006",
+        "kawasaki-kaleido-9_source_001"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflict between directory sources; no official Kawasaki payload specification found.",
+      "arena_relevance": "Payload uncertainty affects manipulation and strength scoring.",
+      "claim_type": "correction",
+      "supporting_excerpt": "By 2025, a Kaleido 9 variant emerged with a lighter but improved 18‑kg payload (a 35% increase over its predecessor) and enhanced safety software.",
+      "source_location": "Robot Overflow Kawasaki Kaleido history section",
+      "verification_notes": "Non-breaking hyphen in '18‑kg' retained as in source.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "manipulation_dexterity"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_012",
+      "date": null,
+      "title": "Missing official battery and speed specs",
+      "claim": "Robot Overflow states Kawasaki has not published battery life, maximum speed, or other performance figures for Kaleido.",
+      "category": [
+        "specs",
+        "missing_evidence"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ],
+      "confidence": 0.6,
+      "notes": "Conflicts with Humanoid.guide's published 5 km/h and 3-hour runtime.",
+      "arena_relevance": "Uncertain endurance and mobility specs.",
+      "claim_type": "correction",
+      "supporting_excerpt": "Battery life, maximum speed, and other performance figures have not been published by Kawasaki.",
+      "source_location": "Robot Overflow Kawasaki Kaleido FAQ section",
+      "verification_notes": "Directory statement; no official source.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "endurance_reliability",
+          "mobility_whole_body_control"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "kawasaki-kaleido-9_evidence_013",
+      "date": null,
+      "title": "Missing disclosures",
+      "claim": "No total DoF, hand DoF, battery capacity, onboard compute, price, intervention rate, or independent benchmark were found for Kaleido 9.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Judges should reduce confidence on autonomy, endurance, and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value",
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [],
+  "demos": [
+    {
+      "id": "kawasaki-kaleido-9_demo_001",
+      "title": "iREX 2025 public unveiling and disaster rescue demonstration",
+      "date": "2025-12-03",
+      "observed_capabilities": [
+        "gently picking up a toy cat and handing it to an MC",
+        "flexing fingers and turning body in a rescue demonstration"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "iREX 2025 demonstration, Tokyo",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_002",
+        "kawasaki-kaleido-9_source_004"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "Description is from a forum post quoting an unnamed article; no official video transcript was available.",
+        "Teleoperation status was not disclosed in the reviewed text."
+      ],
+      "editing_notes": "No video transcript available; manual review required before using as audit-grade evidence.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Humanoid.guide lists VR headset teleoperation as an operational connection, but this demo does not state execution mode.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Toy cat pick-up and handover described in text",
+          "verification_notes": "Timestamp not verified."
+        }
+      ]
+    },
+    {
+      "id": "kawasaki-kaleido-9_demo_002",
+      "title": "【iREX2025】川崎重工 ヒューマノイドロボット RHP Kaleido 9｜Highlight",
+      "date": "2026-03-01",
+      "observed_capabilities": [
+        "iREX2025 Kawasaki Heavy Industries humanoid RHP Kaleido 9 highlight (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "iREX 2025 highlight video",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_007"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; only title can be used.",
+        "Cannot describe observed capabilities beyond the title."
+      ],
+      "editing_notes": "Official Kawasaki Robotics JP YouTube video; no transcript provided in source.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No execution mode information in title or source metadata.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title only",
+          "verification_notes": "No transcript available."
+        }
+      ]
+    },
+    {
+      "id": "kawasaki-kaleido-9_demo_003",
+      "title": "Japan’s Kawasaki Unveils Kaleido 9 Robot For Disaster Rescue | VERTEX",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "disaster rescue unveiling (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Media video",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_008"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; title only.",
+        "Cannot verify rescue capabilities from the source."
+      ],
+      "editing_notes": "VERTEX YouTube video; no transcript provided.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No execution mode information in title or source metadata.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title only",
+          "verification_notes": "No transcript available."
+        }
+      ]
+    },
+    {
+      "id": "kawasaki-kaleido-9_demo_004",
+      "title": "Japan’s Kaleido 9: Robot That Thinks and Adapts | WION World DNA",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "robot that thinks and adapts (title claim only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Media video",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_009"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; title is a claim, not an observation.",
+        "Do not credit autonomy or adaptation from title alone."
+      ],
+      "editing_notes": "WION YouTube video; no transcript provided.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No execution mode information in title or source metadata.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title only",
+          "verification_notes": "No transcript available."
+        }
+      ]
+    },
+    {
+      "id": "kawasaki-kaleido-9_demo_005",
+      "title": "Kawasaki's INSANE AI Robot Army: Japanese Humanoid Robots, Hydrogen Power, and Robotic Horses",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "AI robot army and Japanese humanoid robots (title claim only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Media video",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_010"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; broad title not specific enough to verify Kaleido 9 capabilities.",
+        "Do not credit 'AI robot army' as a current deployment."
+      ],
+      "editing_notes": "Kalil 4.0 YouTube video; no transcript provided.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No execution mode information in title or source metadata.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title only",
+          "verification_notes": "No transcript available."
+        }
+      ]
+    },
+    {
+      "id": "kawasaki-kaleido-9_demo_006",
+      "title": "Japan Starts New Robotic Trend | Best Tech at IREX Expo",
+      "date": "2025-12-29",
+      "observed_capabilities": [
+        "IREX Expo technology trend (title only)"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "Media video of IREX Expo",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_012"
+      ],
+      "evidence_tier": 1,
+      "caveats": [
+        "No transcript available; title only.",
+        "Not specific to Kaleido 9."
+      ],
+      "editing_notes": "PRO ROBOTS YouTube video; no transcript provided.",
+      "teleoperation_status": "unknown",
+      "teleoperation_notes": "No execution mode information in title or source metadata.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Title only",
+          "verification_notes": "No transcript available."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Specification conflicts",
+      "description": "Humanoid.guide and Robot Overflow conflict on payload (30 kg vs 18 kg), speed (5 km/h vs not published), runtime (3 h vs not published), height/weight, and DoF. No official Kawasaki specification page was found in the reviewed sources.",
+      "impact_on_arena_scoring": "Specs should be treated as uncertain; use directory figures with low confidence."
+    },
+    {
+      "topic": "Video evidence without transcripts",
+      "description": "Several YouTube sources are titles only. They cannot be used to verify mobility, manipulation, or autonomy claims.",
+      "impact_on_arena_scoring": "Do not credit video demos beyond their titles; teleoperation and performance remain unverified."
+    },
+    {
+      "topic": "Autonomy status",
+      "description": "No current fully autonomous operation was found; Humanoid.guide lists VR headset teleoperation as a primary input. Ground News reports a future plan for full autonomy by 2030 using Noetra physical AI.",
+      "impact_on_arena_scoring": "Current autonomy evidence is minimal; only future plan can be noted."
+    },
+    {
+      "topic": "Commercial deployment",
+      "description": "No named customer, no industrial deployment, no field rescue use, and no public sales channel were found. Robot Overflow states it is research-only.",
+      "impact_on_arena_scoring": "Deployment and accessibility scores remain at evidence level 0 or 1."
+    },
+    {
+      "topic": "Missing technical data",
+      "description": "Total DoF, hand DoF, battery capacity, onboard compute, price, and independent benchmarks are absent.",
+      "impact_on_arena_scoring": "Cannot infer hidden strength or endurance."
+    },
+    {
+      "topic": "Safety and human proximity",
+      "description": "At 99 kg, Kaleido 9 is heavy; no full-robot safety certification or human-proximity test data was found.",
+      "impact_on_arena_scoring": "Caution for human-environment fit claims."
+    }
+  ],
+  "source_ids": [
+    "kawasaki-kaleido-9_source_001",
+    "kawasaki-kaleido-9_source_002",
+    "kawasaki-kaleido-9_source_003",
+    "kawasaki-kaleido-9_source_004",
+    "kawasaki-kaleido-9_source_005",
+    "kawasaki-kaleido-9_source_006",
+    "kawasaki-kaleido-9_source_007",
+    "kawasaki-kaleido-9_source_008",
+    "kawasaki-kaleido-9_source_009",
+    "kawasaki-kaleido-9_source_010",
+    "kawasaki-kaleido-9_source_011",
+    "kawasaki-kaleido-9_source_012"
+  ],
+  "sources": [
+    {
+      "id": "kawasaki-kaleido-9_source_001",
+      "title": "Welcome, Kaleido 9! - Humanoid.guide",
+      "publisher": "Humanoid.guide",
+      "url": "https://humanoid.guide/welcome-kaleido-9/",
+      "date_published": "2026-09-13",
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Third-party directory with specific Kaleido 9 specs; not independently verified."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_002",
+      "title": "International Robot Exhibition (iREX2025) | Industrial Robots by Kawasaki Robotics",
+      "publisher": "Kawasaki Robotics",
+      "url": "https://kawasakirobotics.com/in/event/international-robot-exhibition-irex2025/",
+      "date_published": "2025-11-12",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "high",
+      "reliability_notes": "Official Kawasaki event page for iREX 2025."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_003",
+      "title": "Flying humanoids as colleagues? This is not as far-fetched as you may think | ANSWERS | Kawasaki's Solutions for the Future | Kawasaki Heavy Industries",
+      "publisher": "川崎重工業株式会社",
+      "url": "https://answers.khi.co.jp/en/voices/visionmap2030_1_en/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Official Kawasaki vision article; information current as of December 2022."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_004",
+      "title": "Kaleido, humanoid robot, Kawasaki Heavy Industries Ltd., Minato, Tokyo, Japan",
+      "publisher": "Portal of Robotics and Artificial Intelligence",
+      "url": "https://pr.ai/threads/kaleido-humanoid-robot-kawasaki-heavy-industries-ltd-minato-tokyo-japan.21396/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Forum thread quoting an unnamed article; low confidence."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_005",
+      "title": "Kawasaki Bets on Physical AI to Make Kaleido Humanoid Fully Autonomous",
+      "publisher": "Ground News",
+      "url": "https://ground.news/article/kawasaki-heavy-plans-fully-autonomous-ai-humanoid-robot-by-2030",
+      "date_published": "2026-10-05",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "medium",
+      "reliability_notes": "News aggregator summarizing media reports; no official Kawasaki statement."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_006",
+      "title": "Kawasaki Kaleido",
+      "publisher": "Robot Overflow",
+      "url": "https://robotoverflow.com/en/robot-database/kawasaki-kaleido/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "medium",
+      "reliability_notes": "Directory with detailed but conflicting information; not official."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_007",
+      "title": "【iREX2025】川崎重工 ヒューマノイドロボット RHP Kaleido 9｜Highlight",
+      "publisher": "YouTube Kawasaki Robotics JP",
+      "url": "https://www.youtube.com/watch?v=iJffdB9EWPU",
+      "date_published": "2026-03-01",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "low",
+      "reliability_notes": "Official video title only; no transcript provided."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_008",
+      "title": "Japan’s Kawasaki Unveils Kaleido 9 Robot For Disaster Rescue | VERTEX",
+      "publisher": "YouTube VERTEX",
+      "url": "https://www.youtube.com/watch?v=T6RZmRayYD8",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript provided."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_009",
+      "title": "Japan’s Kaleido 9: Robot That Thinks and Adapts | WION World DNA",
+      "publisher": "YouTube WION",
+      "url": "https://www.youtube.com/watch?v=OIj-jM1QDS0",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Video title only; no transcript provided."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_010",
+      "title": "Kawasaki's INSANE AI Robot Army: Japanese Humanoid Robots, Hydrogen Power, and Robotic Horses",
+      "publisher": "YouTube Kalil 4.0",
+      "url": "https://www.youtube.com/watch?v=Ht7cTg8wy2Q",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Video title only; broad and not specific to verified capabilities."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_011",
+      "title": "This NEW Hydrogen Powered Robot Horse by Kawasaki Will Blow Your Mind",
+      "publisher": "YouTube Prime Frontier",
+      "url": "https://www.youtube.com/watch?v=aTmWlVmbqb0",
+      "date_published": "2026-10-16",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Video title only; not directly about Kaleido 9."
+    },
+    {
+      "id": "kawasaki-kaleido-9_source_012",
+      "title": "Japan Starts New Robotic Trend | Best Tech at IREX Expo",
+      "publisher": "YouTube PRO ROBOTS",
+      "url": "https://www.youtube.com/watch?v=Tvw8waR7aPY",
+      "date_published": "2025-12-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "social_media",
+      "reliability": "low",
+      "reliability_notes": "Video title only; not specific to Kaleido 9."
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Kaleido 9 is a Kawasaki heavy-lift-capable bipedal prototype focused on disaster response and industrial use, but current public evidence is thin and mostly directory-based. It is not for sale and has no commercial deployment or verified autonomous operation.",
+    "strongest_positive_evidence": [
+      "Official Kawasaki event page confirms first public unveiling at iREX 2025.",
+      "Humanoid.guide lists core specs: 190 cm, 99 kg, 30 kg payload, up to 5 km/h, 3 hours runtime.",
+      "Disaster rescue demonstration description includes gentle toy cat pick-up, suggesting basic manipulation.",
+      "Kawasaki has a long-term vision for humanoid collaboration and a future physical AI autonomy plan."
+    ],
+    "weakest_or_missing_evidence": [
+      "No current autonomous demo or disclosure of teleoperation status in most sources.",
+      "No named customer, deployment, or field test.",
+      "No price, DoF, battery capacity, or compute specs.",
+      "Video titles cannot be used to verify capabilities."
+    ],
+    "conflicting_claims": [
+      "Payload: 30 kg (Humanoid.guide) vs 18 kg Kaleido 9 variant (Robot Overflow).",
+      "Speed: up to 5 km/h (Humanoid.guide) vs not published (Robot Overflow).",
+      "Runtime: up to 3 hours (Humanoid.guide) vs not published (Robot Overflow).",
+      "Height/weight: 190 cm / 99 kg (Humanoid.guide) vs ~5'11\" / 187 lbs (Robot Overflow for broader Kaleido)."
+    ],
+    "recommended_arena_categories": [
+      "biped_humanoid",
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit current full autonomy or adaptation from video titles alone.",
+      "Do not credit 32 DoF or 60 kg arm payload to Kaleido 9; these refer to earlier/broader platform data.",
+      "Do not describe Kaleido 9 as commercially deployed or field-tested.",
+      "Do not treat the disaster rescue toy cat demo as verified without the original article or video."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Kaleido 9 is the latest publicly shown Kaleido generation as of the reviewed sources; no newer Kawasaki humanoid generation was found."
+  },
+  "excluded_claims": [
+    {
+      "claim": "32 degrees of freedom for Kaleido 9",
+      "reason": "Robot Overflow mentions 32 DoF for the broader Kaleido platform, not clearly for Kaleido 9; no official DoF found.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    {
+      "claim": "60 kg or 132 lbs arm payload",
+      "reason": "These figures belong to earlier Kaleido generations or original claims, not Kaleido 9. Robot Overflow notes the Kaleido 9 payload as 18 kg, conflicting with Humanoid.guide's 30 kg.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006"
+      ]
+    },
+    {
+      "claim": "Kaleido 9 is fully autonomous today",
+      "reason": "No current autonomy evidence was found; only a future plan for 2030 full autonomy via Noetra physical AI.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_005"
+      ]
+    },
+    {
+      "claim": "Commercial deployment or field rescue use",
+      "reason": "No named customer or field deployment was found; Robot Overflow states there are no known industrial deployments.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_006",
+        "kawasaki-kaleido-9_source_001"
+      ]
+    },
+    {
+      "claim": "Video-observed mobility or manipulation from no-transcript sources",
+      "reason": "Video titles only; no transcripts or descriptions were available to verify any observed capability.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_007",
+        "kawasaki-kaleido-9_source_008",
+        "kawasaki-kaleido-9_source_009",
+        "kawasaki-kaleido-9_source_010",
+        "kawasaki-kaleido-9_source_012"
+      ]
+    },
+    {
+      "claim": "Hydrogen powered robot horse is part of Kaleido 9 evidence",
+      "reason": "Source 11 title refers to a robot horse, not Kaleido 9.",
+      "source_ids": [
+        "kawasaki-kaleido-9_source_011"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 9,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Kawasaki Kaleido 9 is a 190 cm, 99 kg bipedal industrial humanoid prototype, publicly unveiled at iREX 2025 and still in the testing phase. Humanoid.guide lists a stated 30 kg payload, up to 5 km/h speed, and up to 3 hours runtime, but Robot Overflow conflicts on several specs and says Kawasaki has not published official battery or speed figures. A textual disaster rescue description says it gently picked up a toy cat, and Humanoid.guide confirms walking stairs and sorting goods as capabilities, with low manipulation and navigation scores. Current autonomy is not demonstrated; VR headset teleoperation is listed, and Ground News reports a 2030 plan for full autonomy using Noetra physical AI. The robot is not for sale and has no commercial deployment or named customer.",
+    "strongest_evidence": [
+      "Official Kawasaki iREX 2025 event page confirms first public unveiling.",
+      "Disaster rescue demonstration description shows basic gentle pick-up.",
+      "Humanoid.guide confirms walking stairs and sorting goods.",
+      "Kawasaki employee article documents long-term disaster and elderly care vision."
+    ],
+    "weakest_evidence": [
+      "No current autonomous operation or clear teleoperation disclosure.",
+      "No independent battery/speed verification; directory conflicts.",
+      "No commercial deployment, field test, or customer.",
+      "Video sources lack transcripts and cannot be used for verification."
+    ],
+    "known_do_not_credit": [
+      "Full autonomy today.",
+      "32 DoF or 60 kg arm payload for Kaleido 9.",
+      "Commercial deployment or field rescue use.",
+      "Capabilities from video titles without transcripts."
+    ],
+    "recommended_confidence": "low"
+  }
+}

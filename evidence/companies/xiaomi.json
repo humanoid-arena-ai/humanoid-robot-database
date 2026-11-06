@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "xiaomi",
+    "name": "Xiaomi",
+    "country": "China",
+    "website": "https://www.mi.com/global/",
+    "founded": null,
+    "status": "active",
+    "last_updated": "2026-10-30"
+  },
+  "robots": [
+    "xiaomi-cyberone-v2",
+    "xiaomi-cyberone"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "xiaomi_source_001",
+      "title": "Xiaomi Builds a Humanoid Robot for Some Reason",
+      "publisher": "spectrum.ieee.org",
+      "url": "https://spectrum.ieee.org/humanoid-robot-xiaomi-cyberone",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "xiaomi_source_002",
+      "title": "Xiaomi Robotics company profile and news",
+      "publisher": "humanoidsdaily.com",
+      "url": "https://www.humanoidsdaily.com/companies/xiaomi-robotics",
+      "date_published": null,
+      "date_accessed": "2026-10-30",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-30; needs human review."
+  ]
+}

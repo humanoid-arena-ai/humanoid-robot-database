@@ -1,0 +1,1099 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "engineered-arts-ameca",
+    "name": "Ameca",
+    "company_id": "engineered-arts",
+    "company_name": "Engineered Arts",
+    "country": "United Kingdom",
+    "generation": "First generation 2021; official page lists Generation 2.6 (2024). Wikipedia mentions Generation 3 at ICRA 2025 but no primary source in this pack.",
+    "first_announced_date": "2021-12-01",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Engineered Arts lists Ameca for enterprise, education, hospitality, and healthcare applications and offers demo booking. No public price or direct purchase was found; sales/rentals appear to be by quotation. Wikipedia documents public deployments including the National Robotarium and an ESA ambassador role.",
+    "is_biped": false,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "upper_body_humanoid",
+    "intended_use_cases": [
+      "face-to-face social interaction",
+      "events and exhibitions",
+      "education and research",
+      "hospitality and concierge",
+      "healthcare interaction",
+      "AI development platform"
+    ],
+    "last_updated": "2026-10-29"
+  },
+  "specs": {
+    "height": {
+      "original_value": "73.6 in | 1870 mm (h)",
+      "value": 187,
+      "unit": "cm",
+      "notes": "Official spec table lists 73.6 in / 1870 mm.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "weight": {
+      "original_value": "137.7 lbs | 62 kg",
+      "value": 62,
+      "unit": "kg",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "payload": {
+      "original_value": "~2 kg per arm (independent listing)",
+      "value": 2,
+      "unit": "kg",
+      "notes": "Reported by humanoid.press, added 2026-10-29 by automated spec fill; per arm; independent listing, not an official Engineered Arts rating.",
+      "source_ids": [
+        "engineered-arts-ameca_source_009"
+      ]
+    },
+    "runtime": {
+      "original_value": "4–6 hours per charge (independent listing)",
+      "value": 4,
+      "unit": "h",
+      "notes": "Reported by humanoid.press, added 2026-10-29 by automated spec fill; reported range 4–6 hours per charge; value shown is the lower bound.",
+      "source_ids": [
+        "engineered-arts-ameca_source_009"
+      ]
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "No battery capacity was published in the reviewed sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 61,
+      "notes": "61 actuated movements per official spec. Source also lists 27 DoF in head and facial features and 34 DoF in upper body.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "walking_speed": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not specified. Ameca is a stationary social humanoid and does not walk.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "hands": {
+      "description": "Articulated arms and fingers are mentioned by Wikipedia; hands are included in the 61 actuated movements but hand-specific DoF is not published.",
+      "degrees_of_freedom": 4,
+      "force_feedback": null,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002",
+        "engineered-arts-ameca_source_010"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "2 x 8 MP cameras (one in each eye)",
+        "2 x microphones (one in each ear)",
+        "1 x 4-channel microphone (chest)",
+        "1 x 20W speaker (chest)",
+        "LiDAR safety sensors",
+        "proximity sensors and position encoders"
+      ],
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Embedded Robot PC, cloud-based robotOS, Tritium software suite, custom Linux distribution created with Yocto, dedicated software in C++, Rust, and Python.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "actuators": {
+      "description": "61 actuated movements; no actuator type, torque, or force specifications were published.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    "availability": {
+      "availability_status": "contact_sales",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://engineeredarts.com/demo?robots_interest=Ameca",
+      "notes": "No public price or self-serve purchase path was found. Engineered Arts offers a demo booking form.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Engineered Arts specifies 61 actuated movements, 27 DoF in the head/face and 34 DoF in the upper body, with articulated arms and fingers and customizable gestures and expressions. Official interaction videos exist but transcripts were unavailable, so only titles are considered.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002"
+      ],
+      "caveats": [
+        "No dexterity benchmarks or independent review of video content.",
+        "Hand-specific DoF is not published."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Ameca's interactions can be driven by Tritium AI or by human telepresence, and Wikipedia states interactions may be governed by OpenAI's GPT-3 or human telepresence. Modes and Roles script behavior, but no autonomous task execution beyond scripted interaction was found.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002"
+      ],
+      "caveats": [
+        "No autonomous task execution, intervention rates, or success rates were found.",
+        "Telepresence mode means a human may be controlling the robot; per-demo disclosure is not present."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Ameca does not walk and no walking speed is published. Lower body features listed by Engineered Arts are ports, embedded PC, LiDAR safety sensors, and power controls, not locomotion.",
+      "evidence_level": 0,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "caveats": [
+        "No whole-body mobility. Ameca is a stationary social humanoid."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Engineered Arts lists 2x8 MP eye cameras, binaural microphones, LiDAR, and proximity sensors, and the accessibility section mentions advanced computer vision and object recognition. Wikipedia mentions facial recognition software.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002"
+      ],
+      "caveats": [
+        "No perception benchmarks or independent evaluation were found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Strongest dimension. Ameca has over 50 pre-programmed facial expressions, 70+ language support, parallel conversation, gestures, autonomous passive human behaviors, and multiple public appearances and videos. Privacy and safety features support interaction.",
+      "evidence_level": 2,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002",
+        "engineered-arts-ameca_source_003",
+        "engineered-arts-ameca_source_004",
+        "engineered-arts-ameca_source_005",
+        "engineered-arts-ameca_source_006",
+        "engineered-arts-ameca_source_007",
+        "engineered-arts-ameca_source_008"
+      ],
+      "caveats": [
+        "Video transcripts were unavailable; only video titles can be credited.",
+        "No independent study of interaction quality was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "No runtime, battery, uptime, failure, or reliability data was found in any reviewed source.",
+      "evidence_level": 0,
+      "source_ids": [],
+      "caveats": [
+        "Absence of published endurance or reliability data."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Full-size humanoid at 187 cm and 62 kg, with grey rubber skin, emergency stop, LiDAR, fail-safe mechanisms, proximity sensors, and privacy compliance. Designed for stationary face-to-face use.",
+      "evidence_level": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002"
+      ],
+      "caveats": [
+        "No full-robot safety certification was found.",
+        "Stationary design limits human-environment fit to non-mobile contexts."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Wikipedia lists public installations and appearances including Edinburgh's National Robotarium, Computer History Museum, Heinz Nixdorf MuseumsForum, Deutsches Museum, and an ESA ambassador role. Engineered Arts lists enterprise, education, hospitality, and healthcare applications with demo booking.",
+      "evidence_level": 2,
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002"
+      ],
+      "caveats": [
+        "Wikipedia is a secondary/tertiary source; no primary customer deployment release is included in this pack.",
+        "No customer metrics or deployment counts are available."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Ameca is offered via demo booking and contact, but no public price or direct purchase path was found in the reviewed sources.",
+      "evidence_level": 0,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "caveats": [
+        "No price, lease, or self-serve purchase option; sales are by quote/demo."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "engineered-arts-ameca_evidence_001",
+      "date": null,
+      "title": "Official Ameca specifications",
+      "claim": "Engineered Arts lists Ameca as full-size humanoid, Generation 2.6 (2024), grey rubber skin, 1870 mm tall, 62 kg, 61 actuated movements.",
+      "category": [
+        "specs",
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec table values; not independently measured.",
+      "arena_relevance": "Defines size, weight, generation, and DoF.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Model | Ameca\nGeneration | 2.6 (2024)\nRobot Size | Full Size humanoid robot\nSkin | Grey\nHeight | 73.6 in | 1870 mm (h)\nWeight | 137.7 lbs | 62 kg\nActuated Movements | 61 Actuated Movements",
+      "source_location": "Specifications table",
+      "verification_notes": "Company spec page; no independent measurement.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_002",
+      "date": null,
+      "title": "Ameca camera and audio specifications",
+      "claim": "Engineered Arts specifies 2 x 8 MP eye cameras, two ear microphones, one 4-channel chest microphone, one 20W chest speaker, and wired ports.",
+      "category": [
+        "specs",
+        "perception_scene_understanding",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.85,
+      "notes": "Official spec table values.",
+      "arena_relevance": "Hardware basis for perception and interaction.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Camera | 2 x 8 MP cameras (one in each eye)\nAudio | 2 x microphones (one in each ear), 1 x 4-channel microphone (chest), 1 x 20W speaker (chest)\nPorts | RJ45 Ethernet, Thunderbolt (x2), USB (x2) HDMI (x2), 3.5mm jack",
+      "source_location": "Specifications table",
+      "verification_notes": "Company spec sheet.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding",
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_003",
+      "date": null,
+      "title": "HD audio/video feature",
+      "claim": "Ameca has binocular eye-mounted cameras and binaural microphones for natural interaction.",
+      "category": [
+        "perception_scene_understanding"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Company modular feature claim.",
+      "arena_relevance": "Supports natural audiovisual interaction.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Binocular eye-mounted cameras and binaural microphones for natural interaction.",
+      "source_location": "HD Audio Video modular feature",
+      "verification_notes": "Company claim.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "perception_scene_understanding"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_004",
+      "date": null,
+      "title": "Tritium OS software stack",
+      "claim": "Ameca runs a robot operating system built on a custom Linux distribution created with Yocto, with dedicated software written in C++, Rust, and Python, plus an embedded robot PC and cloud-based robotOS.",
+      "category": [
+        "specs",
+        "compute"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official software description.",
+      "arena_relevance": "Indicates programmability and platform openness.",
+      "claim_type": "spec",
+      "supporting_excerpt": "A robot operating system built on a custom Linux distribution created with Yocto. Dedicated software is written in a combination of C++, Rust, and Python.",
+      "source_location": "Software section",
+      "verification_notes": "Company technical description.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [],
+        "confidence_effect": "neutral",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_005",
+      "date": null,
+      "title": "Tritium AI speech and language",
+      "claim": "Tritium AI enables Ameca to talk, listen, translate and generate responses using integrated AI technologies, and the system supports 70+ languages, natural accents, and parallel conversation.",
+      "category": [
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Company AI integration claims.",
+      "arena_relevance": "Core interaction capability.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Tritium AI enables Ameca to talk, listen, translate and generate responses using integrated AI technologies.",
+      "source_location": "AI Innovation section",
+      "verification_notes": "Company claim; not independently verified.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_006",
+      "date": null,
+      "title": "Pre-programmed expressions and gestures",
+      "claim": "Ameca comes with over 50 pre-programmed realistic facial expressions, customizable gestures, and autonomous passive human behaviors like posture, eye contact, blinking, and simulated breathing.",
+      "category": [
+        "manipulation_dexterity",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Company product claims.",
+      "arena_relevance": "Human-robot interaction core.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Ameca comes pre-programmed with over 50 realistic facial expressions, conveying a wide range of natural human emotions.",
+      "source_location": "Expressions section",
+      "verification_notes": "Company claim; no independent interaction study provided.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_007",
+      "date": null,
+      "title": "Operating modes",
+      "claim": "Ameca has Interaction Mode (default), Conference Mode, and Telepresence Mode, selected with one click.",
+      "category": [
+        "human_interaction",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official control modes.",
+      "arena_relevance": "Shows telepresence is a first-party mode; autonomy not assumed.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Three distinct operating modes put you in total control.",
+      "source_location": "Modes section",
+      "verification_notes": "Company spec.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_008",
+      "date": null,
+      "title": "Safety system",
+      "claim": "Ameca includes emergency stop buttons, LiDAR sensors, fail-safe mechanisms, proximity sensors, and position encoders for human safety.",
+      "category": [
+        "human_environment_fit"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ],
+      "confidence": 0.7,
+      "notes": "Official safety claims.",
+      "arena_relevance": "Human-proximity safety in stationary settings.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Ameca is engineered to ensure safe operations in various environments at all times, incorporating safety features such as emergency stop buttons, LIDAR sensors, and fail-safe mechanisms to prevent accidents and ensure the well-being of both Ameca and its human users.",
+      "source_location": "Specs & Safety",
+      "verification_notes": "Company safety claim; no full-robot certification in reviewed sources.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_environment_fit"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_009",
+      "date": null,
+      "title": "Ameca first public reveal",
+      "claim": "Wikipedia states the Ameca project started in February 2021 and the first video was revealed publicly on 1 December 2021, with first public demonstration at CES 2022.",
+      "category": [
+        "status",
+        "human_interaction"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary source for historical timeline.",
+      "arena_relevance": "Establishes public presence.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "The project started in February 2021, with the first video revealed publicly on 1 December 2021.",
+      "source_location": "History",
+      "verification_notes": "Wikipedia summary; primary source not included in pack for first reveal date.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "low",
+        "rating_effect": "none"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_010",
+      "date": null,
+      "title": "Interaction control modes",
+      "claim": "Wikipedia states Ameca interactions can be governed by either OpenAI's GPT-3 or human telepresence, and it has articulated motorized arms, fingers, neck and facial features.",
+      "category": [
+        "autonomy_task_execution",
+        "manipulation_dexterity"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "engineered-arts-ameca_source_002"
+      ],
+      "confidence": 0.7,
+      "notes": "Secondary source; directly relevant to teleoperation status.",
+      "arena_relevance": "Shows interaction may be human-controlled.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "Interactions can be governed by either OpenAI's GPT-3 or human telepresence.",
+      "source_location": "Features",
+      "verification_notes": "Wikipedia summary; no primary source in pack confirms exact current software integrations.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "human_interaction",
+          "manipulation_dexterity"
+        ],
+        "negative_categories": [
+          "autonomy_task_execution"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "small_negative"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_011",
+      "date": null,
+      "title": "National Robotarium installation",
+      "claim": "Wikipedia says an Ameca unit was installed at Edinburgh's National Robotarium in 2024.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "engineered-arts-ameca_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Secondary source deployment mention.",
+      "arena_relevance": "Named public deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "In 2024, an Ameca unit was installed in Edinburgh in the UK to reside at the National Robotarium.",
+      "source_location": "Lead section",
+      "verification_notes": "Secondary source; no primary customer release in this pack.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_012",
+      "date": null,
+      "title": "ESA ambassador appearance",
+      "claim": "Wikipedia says Ameca served as an ambassador for the European Space Agency at the 18th European Space Conference in January 2026.",
+      "category": [
+        "deployment_commercial_proof"
+      ],
+      "evidence_tier": 2,
+      "source_ids": [
+        "engineered-arts-ameca_source_002"
+      ],
+      "confidence": 0.6,
+      "notes": "Secondary source deployment mention.",
+      "arena_relevance": "Institutional public deployment.",
+      "claim_type": "media_summary",
+      "supporting_excerpt": "In January 2026, Ameca served as an ambassador for the European Space Agency (ESA) at the 18th European Space Conference.",
+      "source_location": "Lead section",
+      "verification_notes": "Secondary source; no primary ESA release in this pack.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "engineered-arts-ameca_evidence_013",
+      "date": null,
+      "title": "Missing public data",
+      "claim": "No public price, runtime, battery capacity, payload, walking speed, hand DoF, or independent benchmark was found in the reviewed sources.",
+      "category": [
+        "missing_evidence"
+      ],
+      "evidence_tier": 0,
+      "source_ids": [],
+      "confidence": 0.8,
+      "notes": "Gap list from this review.",
+      "arena_relevance": "Reduces confidence on autonomy, endurance, and value.",
+      "claim_type": "missing_evidence",
+      "supporting_excerpt": "Gaps identified across all reviewed primary and secondary sources.",
+      "source_location": "Researcher gap analysis",
+      "verification_notes": "Absence of disclosure, not evidence of inability.",
+      "arena_scoring_impact": {
+        "positive_categories": [],
+        "negative_categories": [
+          "accessibility_value"
+        ],
+        "confidence_effect": "lowers_confidence",
+        "rating_effect": "none"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "engineered-arts-ameca_deployment_001",
+      "customer_or_partner": "National Robotarium, Edinburgh",
+      "site_or_context": "Edinburgh, UK",
+      "task": "Public engagement and human-robot interaction installation",
+      "start_date": "2024",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 1,
+      "output_metrics": [],
+      "source_ids": [
+        "engineered-arts-ameca_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Secondary source only; no primary National Robotarium release in this pack.",
+        "No operating hours or interaction metrics published."
+      ]
+    },
+    {
+      "id": "engineered-arts-ameca_deployment_002",
+      "customer_or_partner": "European Space Agency",
+      "site_or_context": "18th European Space Conference",
+      "task": "Ambassador role at conference",
+      "start_date": "2026-01",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": 1,
+      "output_metrics": [],
+      "source_ids": [
+        "engineered-arts-ameca_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Secondary source only; no primary ESA release in this pack.",
+        "No performance metrics."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "engineered-arts-ameca_demo_001",
+      "title": "EA’s Ameca, the AI Powered Robot, Discusses the Future",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "social discussion/interview - title only, transcript unavailable"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "YouTube video",
+      "source_ids": [
+        "engineered-arts-ameca_source_003"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; video content not reviewed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in available title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Video title indicates a discussion about the future.",
+          "verification_notes": "Transcript/timestamp not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "engineered-arts-ameca_demo_002",
+      "title": "Ameca Interaction",
+      "date": "2022-10-29",
+      "observed_capabilities": [
+        "interaction - title only, transcript unavailable"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "YouTube video",
+      "source_ids": [
+        "engineered-arts-ameca_source_004"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; video content not reviewed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Official Engineered Arts video; no execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Official video titled 'Ameca Interaction'.",
+          "verification_notes": "Transcript/timestamp not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "engineered-arts-ameca_demo_003",
+      "title": "Meet Ameca: Most Advanced Social Humanoid Robot",
+      "date": "2026-01-29",
+      "observed_capabilities": [
+        "social humanoid demonstration - title only, transcript unavailable"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "YouTube video",
+      "source_ids": [
+        "engineered-arts-ameca_source_005"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; video content not reviewed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in available title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Video title describes Ameca as most advanced social humanoid robot.",
+          "verification_notes": "Transcript/timestamp not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "engineered-arts-ameca_demo_004",
+      "title": "Meet Ameca! The World’s Most Advanced Robot | This Morning",
+      "date": "2023-10-29",
+      "observed_capabilities": [
+        "television appearance - title only, transcript unavailable"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "YouTube video",
+      "source_ids": [
+        "engineered-arts-ameca_source_006"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; video content not reviewed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No execution mode disclosed in available title.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "This Morning television appearance featuring Ameca.",
+          "verification_notes": "Transcript/timestamp not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "engineered-arts-ameca_demo_005",
+      "title": "Ameca and Azi having a chat",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "conversation between two robots - title only, transcript unavailable"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "YouTube video",
+      "source_ids": [
+        "engineered-arts-ameca_source_007"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; video content not reviewed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "Official Engineered Arts video; no execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Video titled 'Ameca and Azi having a chat'.",
+          "verification_notes": "Transcript/timestamp not reviewed."
+        }
+      ]
+    },
+    {
+      "id": "engineered-arts-ameca_demo_006",
+      "title": "Meet the world's 'most advanced' humanoid robot",
+      "date": "2024-10-29",
+      "observed_capabilities": [
+        "media demonstration - title only, transcript unavailable"
+      ],
+      "appears_edited": null,
+      "teleoperation_disclosed": null,
+      "environment": "YouTube video",
+      "source_ids": [
+        "engineered-arts-ameca_source_008"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "No transcript; video content not reviewed."
+      ],
+      "editing_notes": "Not manually reviewed; title only.",
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "CNBC International video; no execution mode disclosed.",
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "CNBC International video titled 'Meet the world's most advanced humanoid robot'.",
+          "verification_notes": "Transcript/timestamp not reviewed."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Public availability",
+      "description": "No price, self-serve purchase, lease, or rental pricing was found. Engineered Arts offers a demo booking.",
+      "impact_on_arena_scoring": "Accessibility/value remains at minimal evidence."
+    },
+    {
+      "topic": "Endurance and reliability",
+      "description": "No runtime, battery capacity, uptime, failure rate, or maintenance data was found.",
+      "impact_on_arena_scoring": "Cannot credit endurance/reliability."
+    },
+    {
+      "topic": "Mobility",
+      "description": "Ameca is stationary and does not walk. Lower body features are not locomotion.",
+      "impact_on_arena_scoring": "Whole-body mobility is zero evidence."
+    },
+    {
+      "topic": "Autonomy vs teleoperation",
+      "description": "Wikipedia says interactions can be governed by GPT-3 or human telepresence. The official page includes a Telepresence Mode. Demo videos do not disclose execution mode.",
+      "impact_on_arena_scoring": "Do not assume autonomy from interaction demos."
+    },
+    {
+      "topic": "Deployment source quality",
+      "description": "Named deployments rely on Wikipedia, a secondary/tertiary source. No primary customer release is included in this pack.",
+      "impact_on_arena_scoring": "Commercial deployment proof remains moderate."
+    },
+    {
+      "topic": "Video evidence",
+      "description": "No transcripts were available for any video source, so video content cannot be used to support specific behaviors beyond titles.",
+      "impact_on_arena_scoring": "Human-interaction evidence relies primarily on official specs, not observed video."
+    }
+  ],
+  "source_ids": [
+    "engineered-arts-ameca_source_001",
+    "engineered-arts-ameca_source_002",
+    "engineered-arts-ameca_source_003",
+    "engineered-arts-ameca_source_004",
+    "engineered-arts-ameca_source_005",
+    "engineered-arts-ameca_source_006",
+    "engineered-arts-ameca_source_007",
+    "engineered-arts-ameca_source_008",
+    "engineered-arts-ameca_source_009",
+    "engineered-arts-ameca_source_010"
+  ],
+  "sources": [
+    {
+      "id": "engineered-arts-ameca_source_001",
+      "title": "Engineered Arts: Embodied AI Social Humanoid Robots",
+      "publisher": "Engineered Arts",
+      "url": "https://engineeredarts.com/robots/ameca",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Official product page; company claims and specs."
+    },
+    {
+      "id": "engineered-arts-ameca_source_002",
+      "title": "Ameca (robot) - Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ameca_(robot)",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "directory",
+      "reliability": "low",
+      "reliability_notes": "Tertiary source; useful for public timeline and deployments, not primary evidence."
+    },
+    {
+      "id": "engineered-arts-ameca_source_003",
+      "title": "EA’s Ameca, the AI Powered Robot, Discusses the Future",
+      "publisher": "YouTube Bloomberg Live",
+      "url": "https://www.youtube.com/watch?v=xD7hAbBJst8",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "News video; no transcript available."
+    },
+    {
+      "id": "engineered-arts-ameca_source_004",
+      "title": "Ameca Interaction",
+      "publisher": "YouTube Engineered Arts",
+      "url": "https://www.youtube.com/watch?v=RiTfe-ckD_g",
+      "date_published": "2022-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company video; no transcript available."
+    },
+    {
+      "id": "engineered-arts-ameca_source_005",
+      "title": "Meet Ameca: Most Advanced Social Humanoid Robot",
+      "publisher": "YouTube Bots & Drones: Robots, Drones, Autonomous Systems",
+      "url": "https://www.youtube.com/watch?v=QJ55Jr4VArk",
+      "date_published": "2026-01-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "demo_video",
+      "reliability": "low",
+      "reliability_notes": "Third-party video; no transcript available."
+    },
+    {
+      "id": "engineered-arts-ameca_source_006",
+      "title": "Meet Ameca! The World’s Most Advanced Robot | This Morning",
+      "publisher": "YouTube This Morning",
+      "url": "https://www.youtube.com/watch?v=vE9tIYGyRE8",
+      "date_published": "2023-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "Television news video; no transcript available."
+    },
+    {
+      "id": "engineered-arts-ameca_source_007",
+      "title": "Ameca and Azi having a chat",
+      "publisher": "YouTube Engineered Arts",
+      "url": "https://www.youtube.com/watch?v=oN3Y_iKmgZA",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "official_video",
+      "reliability": "medium",
+      "reliability_notes": "Official company video; no transcript available."
+    },
+    {
+      "id": "engineered-arts-ameca_source_008",
+      "title": "Meet the world's 'most advanced' humanoid robot",
+      "publisher": "YouTube CNBC International",
+      "url": "https://www.youtube.com/watch?v=JIxSON5l9Ec",
+      "date_published": "2024-10-29",
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media",
+      "reliability": "low",
+      "reliability_notes": "News video; no transcript available."
+    },
+    {
+      "id": "engineered-arts-ameca_source_009",
+      "title": "Ameca – Expressive Humanoid Robot for Human Interaction",
+      "publisher": "humanoid.press",
+      "url": "https://www.humanoid.press/database/robots-ameca/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "engineered-arts-ameca_source_010",
+      "title": "Engineered Arts: Embodied AI Social Humanoid Robots",
+      "publisher": "Engineered Arts",
+      "url": "https://engineeredarts.com/robots/ameca/specs",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "official_product_page"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Ameca has strong human-interaction and face-to-face social features and documented public deployments, but it is not mobile and lacks autonomy, endurance, and value evidence.",
+    "strongest_positive_evidence": [
+      "Official spec confirms 61 total DoF, 27 head/face DoF, 34 upper-body DoF, 2x8MP eye cameras, LiDAR, and 50+ pre-programmed expressions.",
+      "Wikipedia documents a named installation at Edinburgh's National Robotarium and an ESA ambassador role in 2026.",
+      "Multiple official and media videos exist, although transcripts were unavailable."
+    ],
+    "weakest_or_missing_evidence": [
+      "No public price or purchase path beyond demo booking.",
+      "No runtime, battery, payload, or walking speed.",
+      "No independent interaction benchmark or autonomy verification.",
+      "No primary customer deployment release in this pack.",
+      "No video transcript, so video observations are title-only."
+    ],
+    "conflicting_claims": [
+      "Generation: official page lists Generation 2.6 (2024), while Wikipedia mentions Generation 3 at ICRA 2025. Official page used for spec claims.",
+      "Autonomy: official page has AI-driven modes but also Telepresence Mode; Wikipedia says interactions can be GPT-3 or human telepresence. Treat autonomy as not verified."
+    ],
+    "recommended_arena_categories": [
+      "upper_body_humanoid",
+      "service_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Do not credit walking or whole-body mobility.",
+      "Do not describe Ameca as autonomous beyond scripted/social interaction.",
+      "Do not imply a public price or direct purchase.",
+      "Do not treat video titles as evidence of specific behaviors.",
+      "Do not treat Wikipedia deployment mentions as primary customer proof."
+    ]
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "As of 2026-10-29, Ameca remains in Engineered Arts' current lineup. Official page lists Generation 2.6 (2024); Wikipedia mentions Generation 3 at ICRA 2025 but that is not supported by a primary source in this pack."
+  },
+  "excluded_claims": [
+    {
+      "claim": "Ameca can walk or has locomotion",
+      "reason": "No walking speed or locomotion was found in any reviewed source. Lower body features are ports, PC, LiDAR, and power controls.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    {
+      "claim": "Ameca Generation 3 is current or replacing Generation 2.6",
+      "reason": "Only Wikipedia mentions Generation 3; the official product page lists Generation 2.6 (2024).",
+      "source_ids": [
+        "engineered-arts-ameca_source_001",
+        "engineered-arts-ameca_source_002"
+      ]
+    },
+    {
+      "claim": "Public price or rental price exists",
+      "reason": "No price was found; only demo booking/contact sales.",
+      "source_ids": [
+        "engineered-arts-ameca_source_001"
+      ]
+    },
+    {
+      "claim": "Independent verification of AI conversation quality",
+      "reason": "No benchmark or independent study was found; video transcripts were unavailable.",
+      "source_ids": []
+    },
+    {
+      "claim": "Video demos demonstrate specific autonomous behavior",
+      "reason": "No transcript or execution mode disclosure was available; teleoperation status is not_disclosed.",
+      "source_ids": [
+        "engineered-arts-ameca_source_003",
+        "engineered-arts-ameca_source_004",
+        "engineered-arts-ameca_source_005",
+        "engineered-arts-ameca_source_006",
+        "engineered-arts-ameca_source_007",
+        "engineered-arts-ameca_source_008"
+      ]
+    },
+    {
+      "claim": "Ameca has verified endurance/reliability",
+      "reason": "No runtime, battery, uptime, or failure data was found.",
+      "source_ids": []
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 3,
+    "secondary_sources_count": 5,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 6,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Ameca is a stationary full-size social humanoid from Engineered Arts (UK), listed at 187 cm, 62 kg, 61 actuated movements, with 27 DoF in head/face and 34 in upper body. It has 2x8MP eye cameras, binaural microphones, LiDAR, 50+ facial expressions, 70+ language support, and modes for interaction/conference/telepresence. Wikipedia documents public deployments including the National Robotarium and an ESA ambassador role. Video appearances exist but transcripts were unavailable. It does not walk, has no public price/runtime/battery, and no independent interaction benchmark.",
+    "strongest_evidence": [
+      "Official Engineered Arts spec: 61 DoF, 27 head/face DoF, 34 upper-body DoF, 2x8MP cameras, LiDAR.",
+      "Official page: 50+ pre-programmed facial expressions, 70+ languages, Tritium AI speech.",
+      "Wikipedia deployment mentions: National Robotarium 2024, ESA ambassador 2026.",
+      "Multiple official and media video appearances."
+    ],
+    "weakest_evidence": [
+      "No price, runtime, battery, payload, or walking speed.",
+      "No independent interaction benchmark or autonomy verification.",
+      "Video transcripts unavailable; only titles can be credited.",
+      "No primary customer deployment release included."
+    ],
+    "known_do_not_credit": [
+      "Walking or whole-body mobility.",
+      "Autonomous task execution beyond scripted social interaction.",
+      "Public price or direct purchase.",
+      "Independent verification of AI or video behavior.",
+      "Generation 3 as current if relying only on this pack."
+    ],
+    "recommended_confidence": "medium"
+  }
+}

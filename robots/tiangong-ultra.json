@@ -1,0 +1,40 @@
+{
+  "id": "tiangong-ultra",
+  "name": "Tiangong Ultra",
+  "aliases": ["Tiangong", "Tien Kung Ultra"],
+  "companyId": "x-humanoid",
+  "companyName": "Beijing Humanoid Robot Innovation Center (X-Humanoid)",
+  "country": "China",
+  "announced": null,
+  "status": "prototype",
+  "category": "research",
+  "summary": "Tiangong Ultra is the running version of the Tiangong humanoid platform from the Beijing Humanoid Robot Innovation Center. About 1.8 m and 55 kg, it won the world's first humanoid half-marathon in Beijing in April 2025 in 2 hours 40 minutes. The Tiangong line is positioned as an open, electric general-purpose platform.",
+  "specs": {
+    "height_cm": { "value": 180, "original": "1.8 meters", "sourceId": "s1" },
+    "weight_kg": { "value": 55, "original": "55 kilograms", "sourceId": "s1" },
+    "payload_kg": null,
+    "runtime_h": null,
+    "dof": null,
+    "hand_dof": null,
+    "speed_mps": { "value": 3.33, "original": "Top speed: 12 km/h", "sourceId": "s1" }
+  },
+  "hands": null,
+  "sensors": null,
+  "compute": null,
+  "price": null,
+  "purchasePath": "not_for_sale",
+  "purchaseUrl": null,
+  "highlights": [
+    "Won the April 2025 Beijing humanoid half-marathon (21 km) in about 2 h 40 min, with three battery swaps.",
+    "Lightweight build, integrated joints and air cooling to manage joint heat on long runs.",
+    "An earlier Tiangong climbed 134 steps continuously, per Mike Kalil."
+  ],
+  "caveats": [
+    "Battery swaps were needed during the half-marathon.",
+    "No public price or sales channel for the Ultra version."
+  ],
+  "sources": [
+    { "id": "s1", "title": "Beijing hosts world's first half-marathon for humanoid robots, Tiangong Ultra wins in two hours 40 minutes", "publisher": "TechNode", "url": "https://technode.com/2025/04/21/beijing-hosts-worlds-first-half-marathon-for-humanoid-robots-tiangong-ultra-wins-in-two-hours-40-minutes/", "accessed": "2026-10-14" },
+    { "id": "s2", "title": "Beijing's Tiangong Upgraded as Humanoid Robot Prepares for Race Day", "publisher": "Mike Kalil", "url": "https://mikekalil.com/blog/tiangong-humanoid-updates/", "accessed": "2026-10-14" }
+  ]
+}

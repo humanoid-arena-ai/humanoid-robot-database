@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1",
+  "company": {
+    "id": "pollen-robotics",
+    "name": "Pollen Robotics",
+    "country": "France",
+    "website": "https://pollen-robotics.com",
+    "founded": 2016,
+    "status": "active",
+    "last_updated": "2026-10-29"
+  },
+  "robots": [
+    "hugging-face-reachy-mini",
+    "pollen-reachy-2"
+  ],
+  "focus_areas": [],
+  "notable_partnerships": [],
+  "funding_or_financial_notes": [
+    "Acquired by Hugging Face in April 2025 for an undisclosed amount."
+  ],
+  "deployment_notes": [],
+  "sources": [
+    {
+      "id": "pollen-robotics_source_001",
+      "title": "Hugging Face buys a humanoid robotics startup",
+      "publisher": "techcrunch.com",
+      "url": "https://techcrunch.com/2025/04/14/hugging-face-buys-a-humanoid-robotics-startup",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    },
+    {
+      "id": "pollen-robotics_source_002",
+      "title": "Hugging Face to sell open-source robots thanks to Pollen Robotics acquisition",
+      "publisher": "huggingface.co",
+      "url": "https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": [
+    "Created automatically from the catalog record on 2026-10-29; needs human review."
+  ]
+}

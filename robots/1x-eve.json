@@ -1,0 +1,83 @@
+{
+  "id": "1x-eve",
+  "name": "1X EVE",
+  "aliases": [
+    "EVE"
+  ],
+  "companyId": "1x-technologies",
+  "companyName": "1X Technologies",
+  "country": "Norway / United States",
+  "announced": null,
+  "status": "commercial",
+  "category": "service",
+  "summary": "EVE is 1X Technologies' earlier wheeled humanoid with a self-balancing base, two arms and simple grippers, aimed at security, logistics and facility work. 1X listed it at 6 ft 2 in and 192 lb with a 9 mph top speed and up to 6 hours of runtime. It runs in a shared-autonomy mode where a remote operator can take control.",
+  "specs": {
+    "height_cm": {
+      "value": 188,
+      "original": "6 foot 2 inches",
+      "sourceId": "s1"
+    },
+    "weight_kg": {
+      "value": 87.1,
+      "original": "192 pounds",
+      "sourceId": "s1"
+    },
+    "payload_kg": {
+      "value": 15,
+      "original": "33 pounds",
+      "sourceId": "s1"
+    },
+    "runtime_h": {
+      "value": 6,
+      "original": "6 hours",
+      "sourceId": "s1"
+    },
+    "dof": {
+      "value": 25,
+      "original": "25 DoF",
+      "sourceId": "s2"
+    },
+    "hand_dof": {
+      "value": 1,
+      "original": "1 DoF per hand",
+      "sourceId": "s2"
+    },
+    "speed_mps": {
+      "value": 4.0,
+      "original": "9 miles/hour",
+      "sourceId": "s1"
+    }
+  },
+  "hands": "Simple grippers, 1 DoF per hand.",
+  "sensors": "HDR cameras: two front and one rear.",
+  "compute": "Intel i7 for real-time control, Nvidia Xavier for AI inference (per robotsguide.com).",
+  "price": null,
+  "purchasePath": "contact_sales",
+  "purchaseUrl": null,
+  "highlights": [
+    "Self-balancing two-wheeled base; can go down stairs but not up them.",
+    "1.05 kWh lithium-ion battery.",
+    "Shared autonomy: an operator can take over remotely."
+  ],
+  "caveats": [
+    "1X now focuses on NEO; current EVE availability is unclear and the specs come from an older 1X site.",
+    "No public price.",
+    "Announcement date not confirmed from a primary source."
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "EVE by 1X Technologies",
+      "publisher": "1X Technologies (older Webflow site)",
+      "url": "https://1x-tech.webflow.io/androids/eve",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "EVE",
+      "publisher": "IEEE ROBOTS guide",
+      "url": "https://robotsguide.com/robots/eve",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "schema_version": "0.1",
+  "robot": {
+    "id": "ubtech-walker-s2",
+    "name": "UBTECH Walker S2",
+    "company_id": "ubtech",
+    "company_name": "UBTECH Robotics",
+    "country": "China",
+    "generation": null,
+    "first_announced_date": "2025-11-17",
+    "release_date": null,
+    "status": "commercial_deployment",
+    "status_notes": "Strong company delivery/order claims, but not independent productivity data.",
+    "is_biped": true,
+    "is_wheeled_or_hybrid": false,
+    "primary_category": "industrial_humanoid",
+    "intended_use_cases": [
+      "humanoid robotics",
+      "industrial or service tasks",
+      "research and development"
+    ],
+    "last_updated": "2026-05-16"
+  },
+  "currentness": {
+    "is_current_robot": true,
+    "superseded_by": [],
+    "currentness_notes": "Treated as commercial_deployment based on reviewed sources as of 2026-05-16."
+  },
+  "specs": {
+    "height": {
+      "original_value": "176 cm",
+      "value": 176,
+      "unit": "cm",
+      "source_ids": [
+        "ubtech-walker-s2_source_003"
+      ]
+    },
+    "weight": {
+      "original_value": "70 kg excluding dexterous hand",
+      "value": 70,
+      "unit": "kg",
+      "source_ids": [
+        "ubtech-walker-s2_source_003"
+      ]
+    },
+    "payload": {
+      "original_value": "15 kg payload within 0-1.8 m workspace",
+      "value": 15,
+      "unit": "kg",
+      "source_ids": [
+        "ubtech-walker-s2_source_001"
+      ]
+    },
+    "runtime": {
+      "original_value": "2.5h",
+      "value": 2.5,
+      "unit": "h",
+      "source_ids": [
+        "ubtech-walker-s2_source_003"
+      ],
+      "notes": "Reported by robotsusa.com, added 2026-10-29 by automated spec fill; Comprehensive endurance; P6 separately lists >=3.5 h stepping mode and >=2 h transport mode.."
+    },
+    "battery": {
+      "original_value": null,
+      "value": null,
+      "unit": null,
+      "notes": "Not found in reviewed public sources.",
+      "source_ids": []
+    },
+    "degrees_of_freedom": {
+      "value": 42,
+      "notes": "Reported by robotsusa.com, added 2026-10-29 by automated spec fill; P6 reports 52 DOF total (30 active without hands), conflicting with the SDK document's 42..",
+      "source_ids": [
+        "ubtech-walker-s2_source_003"
+      ],
+      "original_value": "42 degrees of freedom (DoF)",
+      "unit": "count"
+    },
+    "walking_speed": {
+      "original_value": "7.2 km/h",
+      "value": 2,
+      "unit": "m/s",
+      "source_ids": [
+        "ubtech-walker-s2_source_004"
+      ],
+      "notes": "Reported by skyteamlabs.com, added 2026-10-29 by automated spec fill; Top speed; loaded speed listed as <=2.5 km/h.."
+    },
+    "hands": {
+      "description": "Industrial humanoid arms for payload handling; dexterous-hand details are not text-exposed on the official Walker S2 product page.",
+      "degrees_of_freedom": 6,
+      "force_feedback": null,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_003"
+      ]
+    },
+    "sensors": {
+      "items": [
+        "pure RGB binocular stereo vision in head",
+        "passive binocular depth estimation",
+        "dense depth map generation",
+        "real-time battery monitoring"
+      ],
+      "source_ids": [
+        "ubtech-walker-s2_source_001"
+      ]
+    },
+    "compute": {
+      "description": "Official page describes UBTECH Co-Agent and BrainNet 2.0 task-driven swarm intelligence; no public chipset or TOPS spec was found.",
+      "source_ids": [
+        "ubtech-walker-s2_source_001"
+      ]
+    },
+    "actuators": {
+      "description": null,
+      "source_ids": []
+    },
+    "availability": {
+      "availability_status": "purchasable",
+      "price": null,
+      "price_currency": null,
+      "purchase_or_waitlist_url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+      "source_ids": [
+        "ubtech-walker-s2_source_001"
+      ]
+    }
+  },
+  "capability_evidence_summary": {
+    "manipulation_dexterity": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "autonomy_task_execution": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "mobility_whole_body_control": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "perception_scene_understanding": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_interaction": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "endurance_reliability": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "human_environment_fit": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "deployment_commercial_proof": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 3,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    },
+    "accessibility_value": {
+      "summary": "Strong company delivery/order claims, but not independent productivity data.",
+      "evidence_level": 0,
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ],
+      "caveats": [
+        "No independent benchmark was found in this pass.",
+        "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+        "No public failure-rate or intervention-rate data was found."
+      ]
+    }
+  },
+  "evidence_items": [
+    {
+      "id": "ubtech-walker-s2_evidence_001",
+      "date": null,
+      "title": "Official product/spec source",
+      "claim": "Autonomous hot-swappable dual-battery industrial humanoid claims.",
+      "category": [
+        "specs"
+      ],
+      "evidence_tier": 1,
+      "source_ids": [
+        "ubtech-walker-s2_source_001"
+      ],
+      "confidence": 0.75,
+      "notes": "Official source; not independently measured.",
+      "arena_relevance": "Establishes product identity and claimed specs.",
+      "claim_type": "spec",
+      "supporting_excerpt": "Autonomous hot-swappable dual-battery industrial humanoid claims.",
+      "source_location": "Walker S2 Humanoid Robot product/spec page",
+      "verification_notes": "Company source.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "specs"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    },
+    {
+      "id": "ubtech-walker-s2_evidence_002",
+      "date": null,
+      "title": "Deployment, demo, or independent context",
+      "claim": "Company claims several hundred units and RMB 800M+ orders.",
+      "category": [
+        "deployment_commercial_proof",
+        "autonomy_task_execution"
+      ],
+      "evidence_tier": 3,
+      "source_ids": [
+        "ubtech-walker-s2_source_002"
+      ],
+      "confidence": 0.65,
+      "notes": "Use with caveats from source audit.",
+      "arena_relevance": "Strong company delivery/order claims, but not independent productivity data.",
+      "claim_type": "company_claim",
+      "supporting_excerpt": "Company claims several hundred units and RMB 800M+ orders.",
+      "source_location": "UBTECH Walker S2 Begins Mass Production and Delivery",
+      "verification_notes": "Source-backed but scoped to reported context.",
+      "arena_scoring_impact": {
+        "positive_categories": [
+          "deployment_commercial_proof",
+          "autonomy_task_execution"
+        ],
+        "negative_categories": [],
+        "confidence_effect": "medium",
+        "rating_effect": "small_positive"
+      }
+    }
+  ],
+  "deployments": [
+    {
+      "id": "ubtech-walker-s2_deployment_001",
+      "customer_or_partner": null,
+      "site_or_context": null,
+      "task": "Strong company delivery/order claims, but not independent productivity data.",
+      "start_date": "2025-11-17",
+      "end_date": null,
+      "operating_hours": null,
+      "units_deployed": null,
+      "output_metrics": [],
+      "source_ids": [
+        "ubtech-walker-s2_source_002"
+      ],
+      "evidence_tier": 3,
+      "caveats": [
+        "Metrics are limited to what is explicitly stated in sources."
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "id": "ubtech-walker-s2_demo_001",
+      "title": "UBTECH Walker S2 public demo/context",
+      "date": "2025-11-17",
+      "observed_capabilities": [
+        "Strong company delivery/order claims, but not independent productivity data."
+      ],
+      "appears_edited": null,
+      "editing_notes": "Not manually timestamp-reviewed in this update; treat as curated unless future review verifies continuity.",
+      "teleoperation_disclosed": null,
+      "teleoperation_status": "not_disclosed",
+      "teleoperation_notes": "No explicit teleoperation disclosure found in reviewed sources.",
+      "environment": "public company demo or reported demonstration",
+      "source_ids": [
+        "ubtech-walker-s2_source_002"
+      ],
+      "evidence_tier": 2,
+      "caveats": [
+        "Demo evidence is not a sustained deployment or independent benchmark."
+      ],
+      "observed_segments": [
+        {
+          "timestamp_start": null,
+          "timestamp_end": null,
+          "observation": "Strong company delivery/order claims, but not independent productivity data.",
+          "verification_notes": "Timestamp not verified; manual video review required before using as audit-grade timestamp evidence."
+        }
+      ]
+    }
+  ],
+  "limitations_and_unknowns": [
+    {
+      "topic": "Autonomy",
+      "description": "No independent benchmark was found in this pass.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Deployment",
+      "description": "Public demos may be edited, staged, or teleoperation-ambiguous unless specifically noted.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    },
+    {
+      "topic": "Specs",
+      "description": "No public failure-rate or intervention-rate data was found.",
+      "impact_on_arena_scoring": "Score conservatively; do not infer missing capability."
+    }
+  ],
+  "excluded_claims": [
+    {
+      "claim": "Broad autonomous useful-task capability",
+      "reason": "Reviewed sources do not independently verify broad autonomy.",
+      "source_ids": [
+        "ubtech-walker-s2_source_001",
+        "ubtech-walker-s2_source_002"
+      ]
+    },
+    {
+      "claim": "Independent benchmark across all arena dimensions",
+      "reason": "No full independent benchmark was found.",
+      "source_ids": [
+        "ubtech-walker-s2_source_001"
+      ]
+    }
+  ],
+  "evidence_audit": {
+    "research_depth": "medium",
+    "primary_sources_count": 1,
+    "secondary_sources_count": 0,
+    "independent_sources_count": 0,
+    "customer_sources_count": 0,
+    "video_sources_count": 1,
+    "manual_review_required": true,
+    "last_manual_reviewed": null
+  },
+  "arena_prompt_summary": {
+    "one_paragraph_summary": "Strong company delivery/order claims, but not independent productivity data.",
+    "strongest_evidence": [
+      "Autonomous hot-swappable dual-battery industrial humanoid claims.",
+      "Company claims several hundred units and RMB 800M+ orders."
+    ],
+    "weakest_evidence": [
+      "No full independent arena benchmark.",
+      "Teleoperation/editing details often unclear."
+    ],
+    "known_do_not_credit": [
+      "Broad autonomy beyond source context.",
+      "Deployment metrics not explicitly sourced."
+    ],
+    "recommended_confidence": "medium_low"
+  },
+  "source_ids": [
+    "ubtech-walker-s2_source_001",
+    "ubtech-walker-s2_source_002",
+    "ubtech-walker-s2_source_004"
+  ],
+  "sources": [
+    {
+      "id": "ubtech-walker-s2_source_001",
+      "title": "Walker S2 Humanoid Robot",
+      "publisher": "UBTECH Robotics",
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Autonomous hot-swappable dual-battery industrial humanoid claims."
+    },
+    {
+      "id": "ubtech-walker-s2_source_002",
+      "title": "UBTECH Walker S2 Begins Mass Production and Delivery",
+      "publisher": "UBTECH via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/ubtech-humanoid-robot-walker-s2-begins-mass-production-and-delivery-with-orders-exceeding-800-million-yuan-302616924.html",
+      "date_published": "2025-11-17",
+      "date_accessed": "2026-05-16",
+      "source_type": "official_press_release",
+      "reliability": "medium",
+      "reliability_notes": "Company claims several hundred units and RMB 800M+ orders."
+    },
+    {
+      "id": "ubtech-walker-s2_source_003",
+      "title": "Walker S2 SDK Secondary Development Document",
+      "publisher": "UBTECH Robotics via RobotsUSA mirror",
+      "url": "https://www.robotsusa.com/mwdownloads/download/link/id/490",
+      "date_published": null,
+      "date_accessed": "2026-05-16",
+      "source_type": "official_product_page",
+      "reliability": "medium",
+      "reliability_notes": "Secondary-development document mirror; used only for physical specs surfaced from the document."
+    },
+    {
+      "id": "ubtech-walker-s2_source_004",
+      "title": "UBTECH Walker S2 price and specs — BotRegistry",
+      "publisher": "skyteamlabs.com",
+      "url": "https://skyteamlabs.com/robots/ubtech-walker-s2/",
+      "date_published": null,
+      "date_accessed": "2026-10-29",
+      "source_type": "reputable_media"
+    }
+  ],
+  "researcher_notes": {
+    "short_verdict_for_arena": "Strong company delivery/order claims, but not independent productivity data.",
+    "strongest_positive_evidence": [
+      "Autonomous hot-swappable dual-battery industrial humanoid claims.",
+      "Company claims several hundred units and RMB 800M+ orders."
+    ],
+    "weakest_or_missing_evidence": [
+      "No full independent benchmark",
+      "Missing intervention/failure-rate data"
+    ],
+    "conflicting_claims": [],
+    "recommended_arena_categories": [
+      "industrial_humanoid"
+    ],
+    "do_not_overclaim": [
+      "Broad autonomous useful-task capability",
+      "Independent benchmark across all arena dimensions"
+    ]
+  }
+}

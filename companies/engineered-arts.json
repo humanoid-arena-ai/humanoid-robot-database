@@ -1,0 +1,24 @@
+{
+  "id": "engineered-arts",
+  "name": "Engineered Arts",
+  "country": "United Kingdom",
+  "headquarters": "Falmouth, Cornwall, United Kingdom",
+  "founded": 2004,
+  "website": "https://engineeredarts.com",
+  "summary": "Engineered Arts designs and builds entertainment and social humanoids, including Ameca and RoboThespian. It was founded by Will Jackson.",
+  "funding": null,
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Engineered Arts",
+      "url": "https://en.wikipedia.org/wiki/Engineered_Arts",
+      "accessed": "2026-10-14"
+    },
+    {
+      "id": "s2",
+      "title": "Ameca",
+      "url": "https://engineeredarts.com/robot/ameca/",
+      "accessed": "2026-10-14"
+    }
+  ]
+}
