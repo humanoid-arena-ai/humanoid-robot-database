@@ -30,6 +30,23 @@ print(robots.sort_values("price").head())
 curl -s https://raw.githubusercontent.com/humanoid-arena-ai/humanoid-robot-database/main/data/robots.json | jq '.[] | select(.status=="purchasable") | .name'
 ```
 
+## Humanoid robot leaderboard
+
+Top 10 of the [Humanoid Arena leaderboard](https://humanoidarena.ai/arena/leaderboard). Full table with confidence intervals and evidence grades: [`leaderboard/ratings.csv`](leaderboard/ratings.csv); head-to-head results: [`leaderboard/pairwise.csv`](leaderboard/pairwise.csv). How robots are rated: [methodology](https://humanoidarena.ai/methodology).
+
+| # | Robot | Company | Rating | Evidence |
+|---|---|---|---|---|
+| 1 | [Figure 03](https://humanoidarena.ai/robots/figure-03) | Figure AI | 1366 ±16 | B- |
+| 2 | [Figure 02](https://humanoidarena.ai/robots/figure-02) | Figure AI | 1364 ±22 | A- |
+| 3 | [AgiBot G2](https://humanoidarena.ai/robots/agibot-g2) | AgiBot | 1348 ±17 | B- |
+| 4 | [HMND 01](https://humanoidarena.ai/robots/humanoid-hmnd-01) | Humanoid | 1299 ±19 | B- |
+| 5 | [Galbot G1](https://humanoidarena.ai/robots/galbot-g1) | Galbot | 1285 ±13 | B- |
+| 6 | [Unitree G1](https://humanoidarena.ai/robots/unitree-g1) | Unitree Robotics | 1268 ±27 | B+ |
+| 7 | [1X NEO](https://humanoidarena.ai/robots/1x-neo) | 1X Technologies | 1243 ±20 | C |
+| 8 | [Boston Dynamics Electric Atlas](https://humanoidarena.ai/robots/boston-dynamics-atlas-electric) | Boston Dynamics | 1220 ±19 | B- |
+| 9 | [Leju Kuavo](https://humanoidarena.ai/robots/leju-kuavo) | Leju Robotics | 1204 ±36 | B+ |
+| 10 | [Spirit AI Moz1](https://humanoidarena.ai/robots/spirit-ai-moz1) | Spirit AI | 1204 ±19 | B- |
+
 ## Humanoid robot prices
 
 Public USD prices, cheapest first. Price type in brackets when it is not a list price.
@@ -132,6 +149,7 @@ Machine-readable: [`data/robots.csv`](data/robots.csv), [`data/robots.json`](dat
 | `prices/` | Configurations, list prices, sellers, rental options and price history |
 | `schemas/` | JSON schemas the files follow |
 | `data/` | Generated summary tables (do not edit, rebuilt on every sync) |
+| `leaderboard/` | Published Humanoid Arena ratings and pairwise results (generated, do not edit) |
 
 ## Contributing
 
